@@ -1,0 +1,89 @@
+{
+    "hero": {
+        "headline": "STOP GUESSING. START SCALING.",
+        "subhead": "The Revenue Engine Architect for high-growth enterprises. I don't just build websites; I build commercial infrastructure that converts.",
+        "cta_text": "Audit Your Engine",
+        "cta_url": "/audit"
+    },
+    "ideology": {
+        "title": "The 5-Stage Revenue Journey",
+        "description": "Most businesses are broken. They have pieces, but no engine. We fix the flow.",
+        "stages": [
+            {
+                "id": 1,
+                "title": "Awareness",
+                "desc": "The Handshake. Logic: 'I have a problem.'",
+                "icon": "Eye",
+                "color": "#f43f5e",
+                "cssVar": "var(--color-awareness)"
+            },
+            {
+                "id": 2,
+                "title": "Consideration",
+                "desc": "The Conversation. Logic: 'Who can solve it?'",
+                "icon": "MessageSquare",
+                "color": "#f97316",
+                "cssVar": "var(--color-consideration)"
+            },
+            {
+                "id": 3,
+                "title": "Decision",
+                "desc": "The Agreement. Logic: 'Show me the roadmap.'",
+                "icon": "FileCheck",
+                "color": "#eab308",
+                "cssVar": "var(--color-decision)"
+            },
+            {
+                "id": 4,
+                "title": "Delivery",
+                "desc": "The Experience. Logic: 'Wow, this works.'",
+                "icon": "Package",
+                "color": "#10b981",
+                "cssVar": "var(--color-delivery)"
+            },
+            {
+                "id": 5,
+                "title": "Advocacy",
+                "desc": "The Echo. Logic: 'You have to try this.'",
+                "icon": "Megaphone",
+                "color": "#3b82f6",
+                "cssVar": "var(--color-advocacy)"
+            }
+        ]
+    },
+    "social_proof": {
+        "title": "Engineering Outcomes, Not Just Outputs",
+        "metrics": [
+            {
+                "label": "Revenue Generated",
+                "value": "$50M+"
+            },
+            {
+                "label": "Engines Built",
+                "value": "120+"
+            },
+            {
+                "label": "Avg. Conversion Lift",
+                "value": "3x"
+            }
+        ],
+        "testimonials": [
+            {
+                "quote": "Richard didn't just build a site; he fixed our entire sales process. The RJAT tool alone is worth the investment.",
+                "author": "CEO, TechFlow",
+                "role": "SaaS Founder"
+            },
+            {
+                "quote": "The definition of a force multiplier. Our operational efficiency doubled in 90 days.",
+                "author": "Director of Ops, ScaleUp",
+                "role": "Series B Startup"
+            }
+        ]
+    },
+    "about": {
+        "title": "The Architect",
+        "bio": "I am Richard Norwood. I fuse Design, Logic, and Capital into a single Revenue Architecture. I don't work with everyone. I work with those ready to build an engine.",
+        "cta_text": "Apply for Partnership",
+        "cta_url": "/services"
+    }
+}

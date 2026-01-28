@@ -1,0 +1,141 @@
+{
+    "hero": {
+        "title": "The 90-Day Partnership",
+        "subtitle": "We don’t just consult. We architect, build, and deploy your Revenue Engine.",
+        "cta_text": "View Engagement Options",
+        "cta_href": "#tiers"
+    },
+    "tiers": [
+        {
+            "id": "blueprint",
+            "name": "The Blueprint",
+            "price": "$5k",
+            "description": "For founders who need the plan but have the team to build it.",
+            "features": [
+                "Full Revenue Journey Audit",
+                "Custom Architecture Diagram",
+                "Action Plan & Backlog",
+                "1 Strategy Workshop"
+            ],
+            "cta": "Get the Blueprint",
+            "popular": false
+        },
+        {
+            "id": "accelerator",
+            "name": "The Accelerator",
+            "price": "$15k",
+            "description": "We build the core engine. You scale it. The perfect balance of speed and control.",
+            "features": [
+                "Everything in Blueprint",
+                "Core Tech Stack Setup (CRM/Auto)",
+                "3 High-Converting Landing Pages",
+                "Weekly Implementation Calls"
+            ],
+            "cta": "Start Accelerator",
+            "popular": true
+        },
+        {
+            "id": "transformation",
+            "name": "The Transformation",
+            "price": "$40k+",
+            "description": "Full-service architecture, build, and deployment. We become your Growth Dept.",
+            "features": [
+                "Everything in Accelerator",
+                "Full Content Production",
+                "Ad Creative & Management",
+                "Daily Slack Access",
+                "Revenue Share Option"
+            ],
+            "cta": "Apply for Transformation",
+            "popular": false
+        }
+    ],
+    "timeline": {
+        "title": "The 90-Day Roadmap",
+        "phases": [
+            {
+                "name": "Phase 1: Diagnosis & Architecture",
+                "duration": "Days 1-30",
+                "description": "We audit every leak in your bucket and design the new flow."
+            },
+            {
+                "name": "Phase 2: The Build",
+                "duration": "Days 31-60",
+                "description": "We install the tech, write the copy, and build the pages."
+            },
+            {
+                "name": "Phase 3: The Launch & Scale",
+                "duration": "Days 61-90",
+                "description": "We turn on the faucet. Traffic meets conversion."
+            }
+        ]
+    },
+    "curriculum": [
+        {
+            "week": 1,
+            "topic": "Revenue Audit & Leak Detection",
+            "desc": "Identifying where money is slipping through the cracks."
+        },
+        {
+            "week": 2,
+            "topic": "Ideal Customer Profile 2.0",
+            "desc": "Defining exactly who we are building for."
+        },
+        {
+            "week": 3,
+            "topic": "The 'Unignorable' Offer",
+            "desc": "Packaging your value so it sells itself."
+        },
+        {
+            "week": 4,
+            "topic": "Awareness Architecture",
+            "desc": "Traffic sources that convert cold to sold."
+        },
+        {
+            "week": 5,
+            "topic": "Consideration Mechanics",
+            "desc": "Building the trust bridge."
+        },
+        {
+            "week": 6,
+            "topic": "Decision Logic",
+            "desc": "Removing friction from the 'Buy' button."
+        },
+        {
+            "week": 7,
+            "topic": "Delivery Experience",
+            "desc": "Turning customers into raving fans."
+        },
+        {
+            "week": 8,
+            "topic": "Advocacy Loops",
+            "desc": "Engineering referrals and viral growth."
+        },
+        {
+            "week": 9,
+            "topic": "Tech Stack Integration",
+            "desc": "Connecting the pipes (CRM, Email, Analytics)."
+        },
+        {
+            "week": 10,
+            "topic": "Data & Dashboards",
+            "desc": "If you can't measure it, you can't scale it."
+        },
+        {
+            "week": 11,
+            "topic": "The Launch Sequence",
+            "desc": "Executing the go-to-market strategy."
+        },
+        {
+            "week": 12,
+            "topic": "Handover & Autopilot",
+            "desc": "Training your team to run the engine."
+        }
+    ],
+    "cta": {
+        "title": "Ready to Build?",
+        "subtitle": "We only take 4 partners per quarter to ensure maximum focus.",
+        "button_text": "Apply for Partnership",
+        "button_href": "/contact"
+    }
+}

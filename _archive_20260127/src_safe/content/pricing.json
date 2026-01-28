@@ -1,0 +1,105 @@
+{
+    "hero": {
+        "title": "Transparent ROI",
+        "subhead": "Choose the level of architecture your business needs."
+    },
+    "tiers": [
+        {
+            "name": "Standard",
+            "price": "$49",
+            "period": "/month",
+            "description": "Visibility into your revenue engine.",
+            "features": [
+                "Full Dashboard Access",
+                "Top 5 Leak Detection",
+                "Monthly History",
+                "Standard Support"
+            ],
+            "cta": "Start Standard",
+            "href": "/checkout?plan=standard",
+            "highlight": false
+        },
+        {
+            "name": "Pro",
+            "price": "$149",
+            "period": "/month",
+            "description": "Tools to fix the leaks yourself.",
+            "features": [
+                "Everything in Standard",
+                "Pro Tools (Chat & Generator)",
+                "AI Action Plans",
+                "Priority Support"
+            ],
+            "cta": "Start Pro",
+            "href": "/checkout?plan=pro",
+            "highlight": true
+        },
+        {
+            "name": "Battleship",
+            "price": "$499",
+            "period": "/one-time",
+            "description": "Deep dive audit credit.",
+            "features": [
+                "One-Time Deep Audit",
+                "1-Hour Strategy Call",
+                "Custom Blueprint",
+                "3 Months Pro Access"
+            ],
+            "cta": "Buy Credit",
+            "href": "/checkout?plan=battleship",
+            "highlight": false
+        }
+    ],
+    "comparison": {
+        "title": "Feature Comparison",
+        "features": [
+            {
+                "name": "Dashboard Access",
+                "standard": true,
+                "pro": true,
+                "battleship": true
+            },
+            {
+                "name": "Leak Detection",
+                "standard": "Top 5",
+                "pro": "Unlimited",
+                "battleship": "Unlimited"
+            },
+            {
+                "name": "AI Chat Assistant",
+                "standard": false,
+                "pro": true,
+                "battleship": true
+            },
+            {
+                "name": "Landing Page Generator",
+                "standard": false,
+                "pro": true,
+                "battleship": true
+            },
+            {
+                "name": "Human Strategy Call",
+                "standard": false,
+                "pro": false,
+                "battleship": true
+            }
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+            {
+                "question": "Can I upgrade later?",
+                "answer": "Yes, you can upgrade from Standard to Pro at any time. Your billing will be prorated."
+            },
+            {
+                "question": "What is the Battleship plan?",
+                "answer": "It is a one-time purchase that gives you a deep human-audit of your business plus 3 months of Pro software access."
+            },
+            {
+                "question": "Do I need technical skills?",
+                "answer": "No. The dashboard connects to your existing tools (GA4, Stripe) or you can manually input data."
+            }
+        ]
+    }
+}

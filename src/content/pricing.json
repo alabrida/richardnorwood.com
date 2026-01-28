@@ -1,0 +1,176 @@
+{
+    "hero": {
+        "subtitle": "Fair & Transparent",
+        "title": "Invest in Your Infrastructure",
+        "description": "Choose the plan that fits your growth stage. Stop paying for tools you don't use and start building a Revenue Engine that scales."
+    },
+    "pricing": {
+        "tiers": [
+            {
+                "id": "snapshot",
+                "name": "Snapshot",
+                "description": "For founders who need a quick diagnostic of their current engine.",
+                "price": {
+                    "monthly": 0,
+                    "annual": 0
+                },
+                "features": [
+                    "Basic Revenue Audit",
+                    "5 Core Metrics Analysis",
+                    "Weekly Newsletter",
+                    "Community Access"
+                ],
+                "cta": "Get Free Snapshot",
+                "popular": false
+            },
+            {
+                "id": "member",
+                "name": "Member",
+                "description": "For operators building their first scalable revenue architecture.",
+                "price": {
+                    "monthly": 97,
+                    "annual": 970
+                },
+                "features": [
+                    "Full Revenue Audit Tool",
+                    "Unlimited Scenarios",
+                    "Access to Pro Tools (Chat & Generator)",
+                    "Monthly Group Strategy Call",
+                    "Template Library Access"
+                ],
+                "cta": "Become a Member",
+                "popular": true
+            },
+            {
+                "id": "agency",
+                "name": "Agency",
+                "description": "For teams deploying revenue engines for multiple clients.",
+                "price": {
+                    "monthly": 497,
+                    "annual": 4970
+                },
+                "features": [
+                    "Everything in Member",
+                    "5 Team Seats",
+                    "White-label Reports",
+                    "Client Management Dashboard",
+                    "API Access"
+                ],
+                "cta": "Start Agency Plan",
+                "popular": false
+            },
+            {
+                "id": "battleship",
+                "name": "Battleship",
+                "description": "For enterprises requiring custom infrastructure and dedicated support.",
+                "price": {
+                    "monthly": "Custom",
+                    "annual": "Custom"
+                },
+                "features": [
+                    "Everything in Agency",
+                    "Dedicated Solutions Architect",
+                    "Custom Integrations",
+                    "SLA Support",
+                    "On-premise Deployment Option"
+                ],
+                "cta": "Contact Sales",
+                "popular": false
+            }
+        ]
+    },
+    "comparison": {
+        "features": [
+            {
+                "name": "Revenue Audit",
+                "tiers": {
+                    "snapshot": true,
+                    "member": true,
+                    "agency": true,
+                    "battleship": true
+                }
+            },
+            {
+                "name": "Scenario Modeling",
+                "tiers": {
+                    "snapshot": false,
+                    "member": true,
+                    "agency": true,
+                    "battleship": true
+                }
+            },
+            {
+                "name": "AI Architect (Chat)",
+                "tiers": {
+                    "snapshot": false,
+                    "member": true,
+                    "agency": true,
+                    "battleship": true
+                }
+            },
+            {
+                "name": "Landing Page Generator",
+                "tiers": {
+                    "snapshot": false,
+                    "member": true,
+                    "agency": true,
+                    "battleship": true
+                }
+            },
+            {
+                "name": "Team Members",
+                "tiers": {
+                    "snapshot": "1",
+                    "member": "1",
+                    "agency": "5",
+                    "battleship": "Unlimited"
+                }
+            },
+            {
+                "name": "White-labeling",
+                "tiers": {
+                    "snapshot": false,
+                    "member": false,
+                    "agency": true,
+                    "battleship": true
+                }
+            },
+            {
+                "name": "API Access",
+                "tiers": {
+                    "snapshot": false,
+                    "member": false,
+                    "agency": true,
+                    "battleship": true
+                }
+            },
+            {
+                "name": "Dedicated Support",
+                "tiers": {
+                    "snapshot": false,
+                    "member": false,
+                    "agency": false,
+                    "battleship": true
+                }
+            }
+        ]
+    },
+    "faq": [
+        {
+            "question": "What is the difference between Member and Agency?",
+            "answer": "Member is designed for individual founders or single companies building their own engine. Agency is for consultants or firms who manage revenue architectures for multiple clients and need white-label capabilities."
+        },
+        {
+            "question": "Can I upgrade or downgrade at any time?",
+            "answer": "Yes. If you upgrade, the prorated amount will be charged immediately. If you downgrade, the credit will be applied to your next billing cycle."
+        },
+        {
+            "question": "Is the Snapshot really free?",
+            "answer": "Yes. The Snapshot audit gives you a high-level view of your funnel efficiency without any cost. It's our way of showing you where the leaks are before you invest in fixing them."
+        },
+        {
+            "question": "Do you offer enterprise SLAs?",
+            "answer": "Yes, our Battleship plan includes custom SLAs, dedicated infrastructure, and priority support channels."
+        }
+    ]
+}

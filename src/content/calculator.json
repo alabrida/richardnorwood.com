@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "title": "Revenue Architecture Audit",
+        "description": "Answer 5 questions to diagnose the health of your revenue engine and get a personalized roadmap."
+    },
+    "questions": [
+        {
+            "id": "awareness",
+            "stage": "Awareness",
+            "text": "How do you currently generate new leads?",
+            "options": [
+                {
+                    "value": 1,
+                    "label": "I rely mostly on referrals and word of mouth."
+                },
+                {
+                    "value": 2,
+                    "label": "I have one consistent channel (e.g., Ads or Content) but it fluctuates."
+                },
+                {
+                    "value": 3,
+                    "label": "I have multiple predictable channels feeding a centralized pipeline."
+                }
+            ]
+        },
+        {
+            "id": "consideration",
+            "stage": "Consideration",
+            "text": "What happens when a lead enters your world?",
+            "options": [
+                {
+                    "value": 1,
+                    "label": "I manually follow up when I have time."
+                },
+                {
+                    "value": 2,
+                    "label": "They get a generic automated email sequence."
+                },
+                {
+                    "value": 3,
+                    "label": "They enter a segmented nurture journey based on their behavior."
+                }
+            ]
+        },
+        {
+            "id": "decision",
+            "stage": "Decision",
+            "text": "How is your sales process structured?",
+            "options": [
+                {
+                    "value": 1,
+                    "label": "It's different every time; I wing it."
+                },
+                {
+                    "value": 2,
+                    "label": "I have a general script but often deviate."
+                },
+                {
+                    "value": 3,
+                    "label": "I follow a documented methodology with defined stages and exit criteria."
+                }
+            ]
+        },
+        {
+            "id": "conversion",
+            "stage": "Conversion",
+            "text": "How frictionless is your closing/payment process?",
+            "options": [
+                {
+                    "value": 1,
+                    "label": "I send manual invoices and wait for checks/wires."
+                },
+                {
+                    "value": 2,
+                    "label": "I use a basic payment link but onboarding is manual."
+                },
+                {
+                    "value": 3,
+                    "label": "Automated checkout triggers immediate onboarding and provisioning."
+                }
+            ]
+        },
+        {
+            "id": "retention",
+            "stage": "Retention",
+            "text": "How do you handle customer success and upsells?",
+            "options": [
+                {
+                    "value": 1,
+                    "label": "I react to problems as they arise."
+                },
+                {
+                    "value": 2,
+                    "label": "I have scheduled check-ins but no formal expansion plan."
+                },
+                {
+                    "value": 3,
+                    "label": "Automated health checks drive proactive expansion opportunities."
+                }
+            ]
+        }
+    ],
+    "results": {
+        "fractured": {
+            "min": 5,
+            "max": 8,
+            "title": "Fractured Engine",
+            "description": "Your revenue relies heavily on manual effort and heroics. You have pieces of the puzzle, but they aren't connected.",
+            "recommendation": "We recommend the Blueprint Partnership to build your foundational infrastructure.",
+            "cta": "View Blueprint Options",
+            "link": "/services"
+        },
+        "fragmented": {
+            "min": 9,
+            "max": 11,
+            "title": "Fragmented Engine",
+            "description": "You have some systems in place, but leaks in the handoffs are costing you growth. You're working harder than you need to.",
+            "recommendation": "The Accelerator Program is designed to optimize your existing flows and plug the leaks.",
+            "cta": "Explore Accelerator",
+            "link": "/services"
+        },
+        "unified": {
+            "min": 12,
+            "max": 15,
+            "title": "Unified Engine",
+            "description": "You have a solid architecture. The next step is scaling volume and optimizing unit economics.",
+            "recommendation": "You are ready for the Battleship implementation or a custom Strategy Call.",
+            "cta": "Book Strategy Call",
+            "link": "/contact"
+        }
+    }
+}

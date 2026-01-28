@@ -1,0 +1,112 @@
+_archive_20260127/src_safe/app/(auth)/forgot-password/page.tsx(1,36): error TS2307: Cannot find module '@/components/forms/ForgotPasswordForm' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/forgot-password/page.tsx(2,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/login/page.tsx(1,26): error TS2307: Cannot find module '@/components/forms/AuthForm' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/login/page.tsx(2,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/reset-password/page.tsx(1,35): error TS2307: Cannot find module '@/components/forms/ResetPasswordForm' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/reset-password/page.tsx(2,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/signup/page.tsx(1,26): error TS2307: Cannot find module '@/components/forms/AuthForm' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(auth)/signup/page.tsx(2,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/(dashboard)/dashboard/page.tsx(6,30): error TS2307: Cannot find module '@/components/dashboard/HistoryTable' or its corresponding type declarations.
+_archive_20260127/src_safe/app/blog/[slug]/page.tsx(1,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/blog/[slug]/page.tsx(2,31): error TS2307: Cannot find module '@/lib/wordpress' or its corresponding type declarations.
+_archive_20260127/src_safe/app/blog/page.tsx(1,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/blog/page.tsx(2,36): error TS2307: Cannot find module '@/lib/wordpress' or its corresponding type declarations.
+_archive_20260127/src_safe/app/blog/page.tsx(29,37): error TS7006: Parameter 'post' implicitly has an 'any' type.
+_archive_20260127/src_safe/app/calculator/page.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/calculator/result/page.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/contact/page.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/layout.tsx(4,32): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/page.tsx(8,8): error TS2307: Cannot find module '@/components/sections' or its corresponding type declarations.
+_archive_20260127/src_safe/app/page.tsx(9,33): error TS2307: Cannot find module '@/components/sections/DoctrineSection' or its corresponding type declarations.
+_archive_20260127/src_safe/app/page.tsx(10,38): error TS2307: Cannot find module '@/components/sections/RubricPreviewSection' or its corresponding type declarations.
+_archive_20260127/src_safe/app/pricing/page.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/pricing/page.tsx(5,32): error TS2307: Cannot find module '@/components/ui/LiquidTiltCard' or its corresponding type declarations.
+_archive_20260127/src_safe/app/rjat/page.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/app/rjat/page.tsx(7,32): error TS2307: Cannot find module '@/components/rjat/ResultsPreview' or its corresponding type declarations.
+_archive_20260127/src_safe/app/rjat/page.tsx(42,22): error TS2739: Type '{}' is missing the following properties from type 'ProcessingStateProps': progress, stage
+_archive_20260127/src_safe/app/rjat/page.tsx(50,34): error TS2322: Type '{ onUnlock: () => void; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'onUnlock' does not exist on type 'IntrinsicAttributes'.
+_archive_20260127/src_safe/components/dashboard/ScoreRadarChart.tsx(10,8): error TS2307: Cannot find module 'recharts' or its corresponding type declarations.
+_archive_20260127/src_safe/components/dashboard/Sidebar.tsx(6,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/forms/AuthForm.tsx(7,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/forms/ContactForm.tsx(4,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/forms/ForgotPasswordForm.tsx(5,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/forms/ResetPasswordForm.tsx(6,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/forms/RJATForm.tsx(4,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/layout/Container.tsx(6,16): error TS2503: Cannot find namespace 'JSX'.
+_archive_20260127/src_safe/components/layout/Container.tsx(15,10): error TS2604: JSX element type 'Component' does not have any construct or call signatures.
+_archive_20260127/src_safe/components/layout/Container.tsx(15,10): error TS2786: 'Component' cannot be used as a JSX component.
+  Its type 'string | number | symbol' is not a valid JSX element type.
+    Type 'number' is not assignable to type 'ElementType'.
+_archive_20260127/src_safe/components/layout/Header.tsx(4,68): error TS2307: Cannot find module 'react-aria-components' or its corresponding type declarations.
+_archive_20260127/src_safe/components/layout/Header.tsx(76,37): error TS7031: Binding element 'close' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/pro-tools/ChatMessage.tsx(1,27): error TS2307: Cannot find module 'react-markdown' or its corresponding type declarations.
+_archive_20260127/src_safe/components/pro-tools/LandingPageGenerator.tsx(4,32): error TS2307: Cannot find module '@/components/pro-tools/LandingPreview' or its corresponding type declarations.
+_archive_20260127/src_safe/components/pro-tools/LandingPageGenerator.tsx(5,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+_archive_20260127/src_safe/components/rjat/ResultsPreview.tsx(36,25): error TS2322: Type '{ children: Element; isLocked: true; title: string; description: string; ctaText: string; ctaHref: string; }' is not assignable to type 'IntrinsicAttributes & BlurGateProps'.
+  Property 'ctaText' does not exist on type 'IntrinsicAttributes & BlurGateProps'.
+_archive_20260127/src_safe/components/sections/AboutSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/AboutSection.tsx(15,88): error TS2339: Property 'name' does not exist on type '{ title: string; bio: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/AboutSection.tsx(20,95): error TS2339: Property 'name' does not exist on type '{ title: string; bio: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/CurriculumSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/CurriculumSection.tsx(16,85): error TS2339: Property 'title' does not exist on type '{ week: number; topic: string; desc: string; }[]'.
+_archive_20260127/src_safe/components/sections/CurriculumSection.tsx(18,49): error TS2339: Property 'description' does not exist on type '{ week: number; topic: string; desc: string; }[]'.
+_archive_20260127/src_safe/components/sections/CurriculumSection.tsx(29,45): error TS2339: Property 'modules' does not exist on type '{ week: number; topic: string; desc: string; }[]'.
+_archive_20260127/src_safe/components/sections/CurriculumSection.tsx(29,58): error TS7006: Parameter 'module' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/CurriculumSection.tsx(29,66): error TS7006: Parameter 'index' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/DoctrineSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(6,23): error TS2307: Cannot find module '@/components/ui/Globe' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(55,39): error TS2339: Property 'badge' does not exist on type '{ headline: string; subhead: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(70,48): error TS2339: Property 'primaryCta' does not exist on type '{ headline: string; subhead: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(73,43): error TS2339: Property 'primaryCta' does not exist on type '{ headline: string; subhead: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(78,48): error TS2339: Property 'secondaryCta' does not exist on type '{ headline: string; subhead: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/HeroSection.tsx(81,43): error TS2339: Property 'secondaryCta' does not exist on type '{ headline: string; subhead: string; cta_text: string; cta_url: string; }'.
+_archive_20260127/src_safe/components/sections/IdeologySection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/IdeologySection.tsx(37,29): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+_archive_20260127/src_safe/components/sections/IdeologySection.tsx(38,29): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+_archive_20260127/src_safe/components/sections/IdeologySection.tsx(39,29): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+_archive_20260127/src_safe/components/sections/IdeologySection.tsx(64,52): error TS2339: Property 'description' does not exist on type '{ id: number; title: string; desc: string; icon: string; color: string; cssVar: string; }'.
+_archive_20260127/src_safe/components/sections/PricingComparison.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/PricingComparison.tsx(10,90): error TS2339: Property 'title' does not exist on type '{ features: ({ name: string; tiers: { snapshot: boolean; member: boolean; agency: boolean; battleship: boolean; }; } | { name: string; tiers: { snapshot: string; member: string; agency: string; battleship: string; }; })[]; }'.
+_archive_20260127/src_safe/components/sections/PricingFAQ.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/PricingFAQ.tsx(10,83): error TS2339: Property 'title' does not exist on type '{ question: string; answer: string; }[]'.
+_archive_20260127/src_safe/components/sections/PricingFAQ.tsx(13,34): error TS2339: Property 'items' does not exist on type '{ question: string; answer: string; }[]'.
+_archive_20260127/src_safe/components/sections/PricingFAQ.tsx(13,45): error TS7006: Parameter 'item' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/PricingHero.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/PricingHero.tsx(14,35): error TS2339: Property 'subhead' does not exist on type '{ subtitle: string; title: string; description: string; }'.
+_archive_20260127/src_safe/components/sections/PricingHero.tsx(19,30): error TS2339: Property 'tiers' does not exist on type '{ hero: { subtitle: string; title: string; description: string; }; pricing: { tiers: ({ id: string; name: string; description: string; price: { monthly: number; annual: number; }; features: string[]; cta: string; popular: boolean; } | { ...; })[]; }; comparison: { ...; }; faq: { ...; }[]; }'.
+_archive_20260127/src_safe/components/sections/PricingHero.tsx(19,41): error TS7006: Parameter 'tier' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/PricingHero.tsx(39,53): error TS7006: Parameter 'feature' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/RJATHero.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/RubricPreviewSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/ServicesCTA.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/ServicesHero.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/ServicesHero.tsx(15,35): error TS2339: Property 'subhead' does not exist on type '{ title: string; subtitle: string; cta_text: string; cta_href: string; }'.
+_archive_20260127/src_safe/components/sections/ServicesHero.tsx(21,35): error TS2339: Property 'cta' does not exist on type '{ title: string; subtitle: string; cta_text: string; cta_href: string; }'.
+_archive_20260127/src_safe/components/sections/ServiceTiers.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/ServiceTiers.tsx(6,32): error TS2307: Cannot find module '@/components/ui/LiquidTiltCard' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/SocialProofSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/SocialProofSection.tsx(39,70): error TS2551: Property 'socialProof' does not exist on type '{ hero: { headline: string; subhead: string; cta_text: string; cta_url: string; }; ideology: { title: string; description: string; stages: { id: number; title: string; desc: string; icon: string; color: string; cssVar: string; }[]; }; social_proof: { ...; }; about: { ...; }; }'. Did you mean 'social_proof'?
+_archive_20260127/src_safe/components/sections/SocialProofSection.tsx(41,34): error TS2551: Property 'socialProof' does not exist on type '{ hero: { headline: string; subhead: string; cta_text: string; cta_url: string; }; ideology: { title: string; description: string; stages: { id: number; title: string; desc: string; icon: string; color: string; cssVar: string; }[]; }; social_proof: { ...; }; about: { ...; }; }'. Did you mean 'social_proof'?
+_archive_20260127/src_safe/components/sections/SocialProofSection.tsx(62,30): error TS2551: Property 'socialProof' does not exist on type '{ hero: { headline: string; subhead: string; cta_text: string; cta_url: string; }; ideology: { title: string; description: string; stages: { id: number; title: string; desc: string; icon: string; color: string; cssVar: string; }[]; }; social_proof: { ...; }; about: { ...; }; }'. Did you mean 'social_proof'?
+_archive_20260127/src_safe/components/sections/SocialProofSection.tsx(62,59): error TS7006: Parameter 'study' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/SocialProofSection.tsx(62,66): error TS7006: Parameter 'index' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/sections/TimelineSection.tsx(3,27): error TS2307: Cannot find module '@/components/layout' or its corresponding type declarations.
+_archive_20260127/src_safe/components/sections/TimelineSection.tsx(20,49): error TS2339: Property 'phase' does not exist on type '{ name: string; duration: string; description: string; }'.
+_archive_20260127/src_safe/components/sections/TimelineSection.tsx(27,87): error TS2339: Property 'phase' does not exist on type '{ name: string; duration: string; description: string; }'.
+_archive_20260127/src_safe/components/ui/Globe.tsx(3,25): error TS2307: Cannot find module 'cobe' or its corresponding type declarations.
+_archive_20260127/src_safe/components/ui/Globe.tsx(68,32): error TS7006: Parameter 'state' implicitly has an 'any' type.
+_archive_20260127/src_safe/components/ui/KineticHeadline.tsx(51,21): error TS2322: Type '{ visible: { opacity: number; y: number; transition: { type: string; damping: number; stiffness: number; }; }; hidden: { opacity: number; y: number; transition: { type: string; damping: number; stiffness: number; }; }; }' is not assignable to type 'Variants'.
+  Property 'visible' is incompatible with index signature.
+    Type '{ opacity: number; y: number; transition: { type: string; damping: number; stiffness: number; }; }' is not assignable to type 'Variant'.
+      Type '{ opacity: number; y: number; transition: { type: string; damping: number; stiffness: number; }; }' is not assignable to type 'TargetAndTransition'.
+        Type '{ opacity: number; y: number; transition: { type: string; damping: number; stiffness: number; }; }' is not assignable to type '{ transition?: Transition<any> | undefined; transitionEnd?: ResolvedValues$1 | undefined; }'.
+          Types of property 'transition' are incompatible.
+            Type '{ type: string; damping: number; stiffness: number; }' is not assignable to type 'Transition<any> | undefined'.
+              Type '{ type: string; damping: number; stiffness: number; }' is not assignable to type 'TransitionWithValueOverrides<any>'.
+                Type '{ type: string; damping: number; stiffness: number; }' is not assignable to type 'ValueAnimationTransition<any>'.
+                  Types of property 'type' are incompatible.
+                    Type 'string' is not assignable to type 'AnimationGeneratorType | undefined'.
+src/components/forms/RJATForm.tsx(5,23): error TS2307: Cannot find module '@/components/ui/input' or its corresponding type declarations.
+src/components/pro-tools/ChatInterface.tsx(5,23): error TS2307: Cannot find module '@/components/ui/input' or its corresponding type declarations.
