@@ -22,6 +22,13 @@ export const ENDPOINTS = {
         CATEGORIES: `${WP_API_ROOT}/categories`,
     },
 
+    // Webhooks / Automation
+    WEBHOOKS: {
+        CONTACT_FORM: process.env.NEXT_PUBLIC_WEBHOOK_CONTACT || "https://hooks.zapier.com/hooks/catch/example/contact",
+        NEWSLETTER: process.env.NEXT_PUBLIC_WEBHOOK_NEWSLETTER || "https://hooks.zapier.com/hooks/catch/example/newsletter",
+        ASSESSMENT: process.env.NEXT_PUBLIC_WEBHOOK_ASSESSMENT || "https://hooks.zapier.com/hooks/catch/example/assessment",
+    },
+
     // Third Party
     THIRD_PARTY: {
         // Add other external services here (e.g. Stripe, Calendly wrapper)

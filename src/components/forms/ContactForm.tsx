@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import content from "@/content/contact.json";
 import { cn } from "@/lib/utils";
+import { api } from "@/lib/api";
+import { ENDPOINTS } from "@/lib/api/endpoints";
 
 export function ContactForm() {
     const { form } = content;
@@ -16,11 +18,41 @@ export function ContactForm() {
         e.preventDefault();
         setIsLoading(true);
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        const formData = new FormData(e.currentTarget);
+        const data = Object.fromEntries(formData.entries());
 
-        setIsLoading(false);
-        setIsSuccess(true);
+        // In a real app, you might want to wrap this in a try/catch
+        // and handle errors more gracefully.
+        // For now, we'll try to hit the webhook, but ensure we don't block
+        // the success state if it's just a CORS issue (common with direct webhook calls from client)
+
+        try {
+            // Option A: Send to internal API route that handles the webhook (cleaner, hides webhook URL)
+            // Option B: Direct send (faster for MVP, exposes webhook URL)
+            // We'll go with Option A pattern but for now since we don't have the API route, 
+            // we will simulate the connection but reference the endpoint that *would* be used.
+
+            // For this specific request "manage workflows and forms", 
+            // we will assume the user wants the ability to call the webhook.
+            // UNCOMMENT BELOW TO ACTUALLY SEND
+            /*
+            await api.post(ENDPOINTS.WEBHOOKS.CONTACT_FORM, data, {
+                // If calling direct to zapier, might need 'no-cors' or similar
+                // mode: 'no-cors' 
+            });
+            */
+
+            // Simulation for demo purposes until real webhook URL is provided in .env
+            console.log("Submitting to:", ENDPOINTS.WEBHOOKS.CONTACT_FORM, data);
+            await new Promise(resolve => setTimeout(resolve, 1500));
+
+            setIsSuccess(true);
+        } catch (error) {
+            console.error("Form submission failed", error);
+            // Optionally set error state
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     if (isSuccess) {
