@@ -8,7 +8,7 @@ import { PricingFAQ } from "@/components/sections/PricingFAQ";
 
 export default function PricingPage() {
     return (
-        <div className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden selection:bg-indigo-500/30">
+        <div className="flex min-h-screen flex-col text-foreground overflow-x-hidden selection:bg-indigo-500/30">
             <Header />
             <main className="flex-grow">
                 <PricingHero />

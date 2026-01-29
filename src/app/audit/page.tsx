@@ -5,7 +5,7 @@ import { CalculatorForm } from "@/components/forms/CalculatorForm";
 
 export default function AuditPage() {
     return (
-        <div className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden selection:bg-emerald-500/30">
+        <div className="flex min-h-screen flex-col text-foreground overflow-x-hidden selection:bg-emerald-500/30">
             <Header />
             <main className="flex-grow pt-32 pb-24 relative overflow-hidden">
                 {/* Background Decor */}

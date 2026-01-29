@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google"; // Using Outfit as display font per Manifesto
 import "./globals.css";
+import { AntigravityParticles } from "@/components/ui/AntigravityParticles";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -60,6 +61,7 @@ export default function RootLayout({
             })
           }}
         />
+        <AntigravityParticles />
         {children}
       </body>
     </html>

@@ -87,7 +87,7 @@
 
 @layer base {
     body {
-        background-color: var(--background);
+        background-color: transparent;
         color: var(--foreground);
         @apply font-sans antialiased;
     }

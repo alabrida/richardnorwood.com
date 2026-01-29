@@ -8,7 +8,7 @@ import { ContactInfo } from "@/components/sections/ContactInfo";
 
 export default function ContactPage() {
     return (
-        <div className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden selection:bg-emerald-500/30">
+        <div className="flex min-h-screen flex-col text-foreground overflow-x-hidden selection:bg-emerald-500/30">
             <Header />
             <main className="flex-grow">
                 <ContactHero />

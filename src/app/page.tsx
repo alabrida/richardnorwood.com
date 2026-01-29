@@ -8,7 +8,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 
 export default function Home() {
     return (
-        <div className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden selection:bg-white/20">
+        <div className="flex min-h-screen flex-col text-foreground overflow-x-hidden selection:bg-white/20">
             <Header />
             <main className="flex-grow">
                 <HeroSection />
