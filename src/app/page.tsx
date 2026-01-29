@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { IdeologySection } from "@/components/sections/IdeologySection";
 import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { AboutSection } from "@/components/sections/AboutSection";
+import { RubricMatrixSection } from "@/components/sections/RubricMatrixSection";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Header />
             <main className="flex-grow">
                 <HeroSection />
+                <RubricMatrixSection />
                 <IdeologySection />
                 <SocialProofSection />
                 <AboutSection />

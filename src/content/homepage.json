@@ -51,6 +51,57 @@
             }
         ]
     },
+    "rubric_preview": {
+        "title": "We Don't Guess. We Inspect.",
+        "subtitle": "Your business is a system. We audit 40+ vital signals against the Revenue Journey Rubric to find exactly where your engine is stalling.",
+        "vital_signals": [
+            {
+                "stage": "Awareness",
+                "signal": "Active Multi-Platform",
+                "logic": ">2 Platforms (Active < 7d)",
+                "weight": "15%",
+                "color": "text-rose-500",
+                "border": "border-rose-500/20",
+                "bg": "bg-rose-500/10"
+            },
+            {
+                "stage": "Consideration",
+                "signal": "Evidence Freshness",
+                "logic": "Case Study < 30 days old",
+                "weight": "20%",
+                "color": "text-orange-500",
+                "border": "border-orange-500/20",
+                "bg": "bg-orange-500/10"
+            },
+            {
+                "stage": "Decision",
+                "signal": "Reputation Velocity",
+                "logic": "Review Response Rate > 90%",
+                "weight": "20%",
+                "color": "text-yellow-500",
+                "border": "border-yellow-500/20",
+                "bg": "bg-yellow-500/10"
+            },
+            {
+                "stage": "Conversion",
+                "signal": "Speed to Lead ($Δt1$)",
+                "logic": "Response Time < 5 min",
+                "weight": "CRITICAL",
+                "color": "text-emerald-500",
+                "border": "border-emerald-500/20",
+                "bg": "bg-emerald-500/10"
+            },
+            {
+                "stage": "Retention",
+                "signal": "Net Rev Retention",
+                "logic": "Upsell % > Churn %",
+                "weight": "Growth",
+                "color": "text-blue-500",
+                "border": "border-blue-500/20",
+                "bg": "bg-blue-500/10"
+            }
+        ]
+    },
     "social_proof": {
         "title": "Engineering Outcomes, Not Just Outputs",
         "metrics": [
