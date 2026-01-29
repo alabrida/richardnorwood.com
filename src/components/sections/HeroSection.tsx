@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import content from "@/content/homepage.json";
+import { KineticTypography } from "@/components/ui/KineticTypography";
 
 export function HeroSection() {
     const { hero } = content;
@@ -25,14 +26,12 @@ export function HeroSection() {
                     Accepting New Architectures
                 </motion.div>
 
-                <motion.h1
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="max-w-5xl text-5xl md:text-8xl font-display font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 mb-8"
-                >
-                    {hero.headline}
-                </motion.h1>
+                <div className="mb-8">
+                    <KineticTypography
+                        text={hero.headline}
+                        className="max-w-5xl text-5xl md:text-8xl font-display font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 text-center"
+                    />
+                </div>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}

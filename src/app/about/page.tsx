@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { GraduationCap, Award, BarChart3 } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -48,6 +49,34 @@ export default function AboutPage() {
                             <p className="text-zinc-400">
                                 When not architecting revenue systems, Richard is likely exploring the frontiers of Agentic AI and its application in automating complex business logic.
                             </p>
+                        </div>
+
+                        {/* Credentials / Trust Badges */}
+                        <div className="mt-16 pt-16 border-t border-white/5">
+                            <h3 className="text-xl font-display font-bold text-white mb-8">Credentials & Certifications</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div className="p-6 rounded-xl bg-zinc-900/40 border border-white/5 hover:border-indigo-500/30 transition-colors group">
+                                    <div className="h-10 w-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 group-hover:scale-110 transition-transform">
+                                        <GraduationCap size={20} />
+                                    </div>
+                                    <h4 className="font-bold text-white mb-1">B.S. Marketing</h4>
+                                    <p className="text-sm text-zinc-500">Jacksonville State University</p>
+                                </div>
+                                <div className="p-6 rounded-xl bg-zinc-900/40 border border-white/5 hover:border-purple-500/30 transition-colors group">
+                                    <div className="h-10 w-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 transition-transform">
+                                        <Award size={20} />
+                                    </div>
+                                    <h4 className="font-bold text-white mb-1">PMP® Certified</h4>
+                                    <p className="text-sm text-zinc-500">Project Management Institute</p>
+                                </div>
+                                <div className="p-6 rounded-xl bg-zinc-900/40 border border-white/5 hover:border-blue-500/30 transition-colors group">
+                                    <div className="h-10 w-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                                        <BarChart3 size={20} />
+                                    </div>
+                                    <h4 className="font-bold text-white mb-1">Data Analytics</h4>
+                                    <p className="text-sm text-zinc-500">Google Certified Professional</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Container>

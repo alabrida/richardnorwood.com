@@ -124,8 +124,8 @@
             "max": 15,
             "title": "Unified Engine",
             "description": "You have a solid architecture. The next step is scaling volume and optimizing unit economics.",
-            "recommendation": "You are ready for the Battleship implementation or a custom Strategy Call.",
-            "cta": "Book Strategy Call",
+            "recommendation": "You are ready for the Battleship implementation or a custom Architecture Review.",
+            "cta": "Book Engine Diagnostic",
             "link": "/contact"
         }
     }

@@ -37,11 +37,33 @@ export function AboutSection() {
                         <p className="text-xl text-zinc-400 leading-relaxed mb-8">
                             {about.bio}
                         </p>
-                        <Link href={about.cta_url}>
-                            <Button size="lg" className="rounded-full px-8 bg-white text-black hover:bg-zinc-200">
-                                {about.cta_text}
-                            </Button>
-                        </Link>
+
+                        {/* Trust Badges - Moved above CTA for reduced friction */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-y border-white/5 py-8 my-8">
+                            {about.badges.map((badge) => (
+                                <div key={badge.id} className="flex items-start gap-3 group">
+                                    <div className="p-2 rounded-lg bg-zinc-800/50 text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                                        {/* Dynamic Icon Mapping would go here, simplified for now since we know the icons */}
+                                        {badge.icon === "GraduationCap" && <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" /></svg>}
+                                        {badge.icon === "Award" && <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7" /><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" /></svg>}
+                                        {badge.icon === "BarChart3" && <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg>}
+                                    </div>
+                                    <div>
+                                        <div className="font-medium text-white text-sm">{badge.label}</div>
+                                        <div className="text-xs text-zinc-500">{badge.issuer}</div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row gap-4 mb-10">
+                            <Link href={about.cta_url}>
+                                <Button size="lg" className="rounded-full px-8 bg-white text-black hover:bg-zinc-200 w-full sm:w-auto">
+                                    {about.cta_text}
+                                </Button>
+                            </Link>
+                        </div>
+
                     </motion.div>
                 </div>
             </Container>

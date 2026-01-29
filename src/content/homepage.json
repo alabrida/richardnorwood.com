@@ -107,15 +107,18 @@
         "metrics": [
             {
                 "label": "Revenue Generated",
-                "value": "$50M+"
+                "value": "$50M+",
+                "description": "Proven revenue impact delivered across Series B+ SaaS portfolios."
             },
             {
                 "label": "Engines Built",
-                "value": "120+"
+                "value": "120+",
+                "description": "Custom revenue architectures deployed for high-growth enterprises."
             },
             {
                 "label": "Avg. Conversion Lift",
-                "value": "3x"
+                "value": "3x",
+                "description": "Consistent conversion rate improvement within 90 days of launch."
             }
         ],
         "testimonials": [
@@ -148,6 +151,26 @@
     "about": {
         "title": "The Architect",
         "bio": "I am Richard Norwood. I fuse Design, Logic, and Capital into a single Revenue Architecture. I don't work with everyone. I work with those ready to build an engine.",
+        "badges": [
+            {
+                "id": "jsu",
+                "label": "B.S. Marketing",
+                "issuer": "Jacksonville State University",
+                "icon": "GraduationCap"
+            },
+            {
+                "id": "pmp",
+                "label": "PMP® Certified",
+                "issuer": "Project Management Institute",
+                "icon": "Award"
+            },
+            {
+                "id": "google",
+                "label": "Data Analytics",
+                "issuer": "Google Certified Professional",
+                "icon": "BarChart3"
+            }
+        ],
         "cta_text": "Apply for Partnership",
         "cta_url": "/services"
     }

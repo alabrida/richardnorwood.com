@@ -54,7 +54,8 @@
         "hours": "Mon-Fri, 9am - 5pm EST"
     },
     "calendly": {
-        "title": "Book a Strategy Call",
+        "title": "Book an Engine Diagnostic",
+        "subtitle": "Direct access to the Architect. No sales team. Pure engineering.",
         "description": "Skip the back-and-forth. Schedule a 15-minute discovery call directly on my calendar.",
         "url": "#"
     }
