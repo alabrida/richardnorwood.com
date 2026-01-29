@@ -136,8 +136,8 @@ export function IdeologySection() {
 
                                     {/* Desktop Arrow Connector */}
                                     {index !== ideology.stages.length - 1 && (
-                                        <div className="hidden md:flex items-center justify-center px-2 text-zinc-800 relative z-20">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 opacity-50">
+                                        <div className="hidden md:flex items-center justify-center px-2 text-zinc-500 relative z-20">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 opacity-80">
                                                 <path d="M13 17l5-5-5-5" />
                                                 <path d="M6 17l5-5-5-5" />
                                             </svg>
