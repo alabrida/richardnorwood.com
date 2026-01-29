@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { NewsletterForm } from "@/components/forms/NewsletterForm";
 
 export function Footer() {
     return (
@@ -40,6 +41,10 @@ export function Footer() {
                             <li><Link href="/privacy" className="text-sm text-zinc-400 hover:text-white">Privacy Policy</Link></li>
                             <li><Link href="/terms" className="text-sm text-zinc-400 hover:text-white">Terms of Service</Link></li>
                         </ul>
+                    </div>
+
+                    <div className="md:col-span-1">
+                        <NewsletterForm />
                     </div>
                 </div>
 

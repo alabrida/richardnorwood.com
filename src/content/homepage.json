@@ -12,7 +12,7 @@
             {
                 "id": 1,
                 "title": "Awareness",
-                "desc": "The Handshake. Logic: 'I have a problem.'",
+                "desc": "The Initial Discovery. Logic: 'I have a problem.'",
                 "icon": "Eye",
                 "color": "#f43f5e",
                 "cssVar": "var(--color-awareness)"
@@ -20,7 +20,7 @@
             {
                 "id": 2,
                 "title": "Consideration",
-                "desc": "The Conversation. Logic: 'Who can solve it?'",
+                "desc": "The Evaluation Phase. Logic: 'Who can solve it?'",
                 "icon": "MessageSquare",
                 "color": "#f97316",
                 "cssVar": "var(--color-consideration)"
@@ -28,26 +28,26 @@
             {
                 "id": 3,
                 "title": "Decision",
-                "desc": "The Agreement. Logic: 'Show me the roadmap.'",
+                "desc": "The Final Validation. Logic: 'Show me the roadmap.'",
                 "icon": "FileCheck",
                 "color": "#eab308",
                 "cssVar": "var(--color-decision)"
             },
             {
                 "id": 4,
-                "title": "Delivery",
-                "desc": "The Experience. Logic: 'Wow, this works.'",
+                "title": "Conversion",
+                "desc": "The Seamless Activation. Logic: 'Wow, this works.'",
                 "icon": "Package",
                 "color": "#10b981",
-                "cssVar": "var(--color-delivery)"
+                "cssVar": "var(--color-conversion)"
             },
             {
                 "id": 5,
-                "title": "Advocacy",
-                "desc": "The Echo. Logic: 'You have to try this.'",
+                "title": "Retention",
+                "desc": "The Strategic Partnership. Logic: 'You have to try this.'",
                 "icon": "Megaphone",
                 "color": "#3b82f6",
-                "cssVar": "var(--color-advocacy)"
+                "cssVar": "var(--color-retention)"
             }
         ]
     },
@@ -70,13 +70,27 @@
         "testimonials": [
             {
                 "quote": "Richard didn't just build a site; he fixed our entire sales process. The RJAT tool alone is worth the investment.",
-                "author": "CEO, TechFlow",
-                "role": "SaaS Founder"
+                "author": "Sarah Jenkins",
+                "role": "CEO, TechFlow (SaaS)"
             },
             {
-                "quote": "The definition of a force multiplier. Our operational efficiency doubled in 90 days.",
-                "author": "Director of Ops, ScaleUp",
-                "role": "Series B Startup"
+                "quote": "The definition of a force multiplier. Our operational efficiency doubled in 90 days, and our lead quality skyrocketed.",
+                "author": "Marcus Thorne",
+                "role": "Director of Ops, ScaleUp Inc."
+            }
+        ],
+        "case_studies": [
+            {
+                "title": "Scaling SaaS to Series B",
+                "client": "TechFlow",
+                "result": "220% Revenue Increase",
+                "description": "Rebuilt their fragmented HubSpot setup into a unified Revenue Engine."
+            },
+            {
+                "title": "Automating Agency Operations",
+                "client": "PixelPerfect",
+                "result": "40hrs/week Saved",
+                "description": "Implemented the 5-Stage Journey to automate client onboarding and reporting."
             }
         ]
     },

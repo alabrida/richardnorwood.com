@@ -43,6 +43,29 @@ export function SocialProofSection() {
                         ))}
                     </div>
 
+                    {/* Case Studies Section */}
+                    <div className="mb-24">
+                        <h3 className="text-2xl font-bold text-white mb-8">Recent wins</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {/* @ts-ignore */}
+                            {social_proof.case_studies?.map((study, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: 0.2 + index * 0.1 }}
+                                    className="p-6 rounded-xl bg-zinc-900/60 border border-white/5 text-left hover:border-indigo-500/30 transition-colors"
+                                >
+                                    <div className="text-indigo-400 text-sm font-mono mb-2">{study.client}</div>
+                                    <h4 className="text-xl font-bold text-white mb-2">{study.title}</h4>
+                                    <div className="text-3xl font-bold text-white mb-3 tracking-tight">{study.result}</div>
+                                    <p className="text-zinc-400 text-sm">{study.description}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {social_proof.testimonials.map((t, index) => (
                             <motion.figure

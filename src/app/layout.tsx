@@ -28,6 +28,38 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${outfit.variable} antialiased bg-background text-foreground`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  "name": "Richard Norwood",
+                  "jobTitle": "Revenue Engine Architect",
+                  "url": "https://richardnorwood.com",
+                  "sameAs": [
+                    "https://www.linkedin.com/in/richardnorwood",
+                    "https://twitter.com/richardnorwood"
+                  ],
+                  "description": "Architecting Revenue Engines for the modern enterprise. Specializing in the 5-Stage Revenue Journey."
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Richard Norwood",
+                  "url": "https://richardnorwood.com",
+                  "logo": "https://richardnorwood.com/logo.png",
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "hello@richardnorwood.com",
+                    "contactType": "customer service"
+                  }
+                }
+              ]
+            })
+          }}
+        />
         {children}
       </body>
     </html>
