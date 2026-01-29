@@ -1,3 +1,5 @@
+import { ENDPOINTS } from "./api/endpoints";
+
 export interface WPPost {
     id: number;
     date: string;
@@ -19,18 +21,10 @@ export interface WPPost {
     };
 }
 
-const WP_API_URL = process.env.WP_API_URL;
-
-if (!WP_API_URL) {
-    console.error("WP_API_URL is not defined in .env.local");
-}
-
 export async function getAllPosts(): Promise<WPPost[]> {
-    if (!WP_API_URL) return [];
-
     try {
         // Fetch posts with embedded media (for featured images)
-        const res = await fetch(`${WP_API_URL}/posts?_embed&per_page=10`, {
+        const res = await fetch(`${ENDPOINTS.WORDPRESS.POSTS}?_embed&per_page=10`, {
             next: { revalidate: 3600 }, // ISR: Revalidate every hour
         });
 
@@ -46,10 +40,8 @@ export async function getAllPosts(): Promise<WPPost[]> {
 }
 
 export async function getPostBySlug(slug: string): Promise<WPPost | null> {
-    if (!WP_API_URL) return null;
-
     try {
-        const res = await fetch(`${WP_API_URL}/posts?_embed&slug=${slug}`, {
+        const res = await fetch(`${ENDPOINTS.WORDPRESS.POSTS}?_embed&slug=${slug}`, {
             next: { revalidate: 3600 },
         });
 
