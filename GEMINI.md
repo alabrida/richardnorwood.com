@@ -72,8 +72,8 @@
 | `/build-pricing` | Frontend Builder, Content Strategist | SaaS tiers, comparison |
 | `/build-contact` | Frontend Builder, Logic Engineer | Contact form, Calendly |
 | `/build-blog` | Content Strategist, Logic Engineer | WordPress/MDX blog |
-| `/build-calculator` | Logic Engineer | 5-question prequalifier |
-| `/build-rjat` | Logic Engineer, Frontend Builder | Assessment tool engine |
+| `/build-calculator` | Logic Engineer, Content Strategist | 5-question prequalifier |
+| `/build-rjat` | Logic Engineer, Frontend Builder, Content Strategist | Assessment tool engine |
 | `/build-dashboard` | FullStack Dev | Scorecard, Leak List, BlurGate |
 | `/build-pro-tools` | FullStack Dev, Logic Engineer | Chat, Generator |
 | `/build-hero` | Frontend Builder | Hero section only |
