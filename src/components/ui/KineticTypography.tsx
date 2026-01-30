@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface KineticTypographyProps {
@@ -11,12 +11,16 @@ interface KineticTypographyProps {
 
 export function KineticTypography({ text, className, as: Component = "h1" }: KineticTypographyProps) {
     const words = text.split(" ");
+    const shouldReduceMotion = useReducedMotion();
 
     const container = {
         hidden: { opacity: 0 },
         visible: (i = 1) => ({
             opacity: 1,
-            transition: { staggerChildren: 0.05, delayChildren: 0.04 * i },
+            transition: {
+                staggerChildren: shouldReduceMotion ? 0 : 0.05,
+                delayChildren: shouldReduceMotion ? 0 : 0.04 * i
+            },
         }),
     };
 
@@ -28,15 +32,17 @@ export function KineticTypography({ text, className, as: Component = "h1" }: Kin
                 type: "spring" as const,
                 damping: 12,
                 stiffness: 100,
+                duration: shouldReduceMotion ? 0 : undefined
             },
         },
         hidden: {
             opacity: 0,
-            y: 20,
+            y: shouldReduceMotion ? 0 : 20,
             transition: {
                 type: "spring" as const,
                 damping: 12,
                 stiffness: 100,
+                duration: shouldReduceMotion ? 0 : undefined
             },
         },
     };

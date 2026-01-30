@@ -73,74 +73,132 @@ export function IdeologySection() {
 
                             return (
                                 <div key={stage.id} className="contents md:flex md:items-center md:flex-1">
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 30 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ delay: index * 0.15 }} // Sequential entry
-                                        className="group relative flex-1 h-full"
-                                    >
-                                        {/* Card Container */}
-                                        <div
-                                            className="h-full p-6 bg-zinc-900 border border-white/10 rounded-2xl transition-all duration-500 hover:border-[var(--stage-color-40)] hover:shadow-[0_0_30px_-10px_var(--stage-color-40)] relative overflow-hidden flex flex-col"
-                                            style={style}
+                                    <div className="group/card relative h-full perspective-1000">
+                                        <motion.div
+                                            className="relative h-full w-full transition-all duration-500 transform-style-3d group-hover/card:rotate-y-180"
+                                            initial={{ opacity: 0, y: 30 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: index * 0.15 }}
                                         >
-                                            {/* Harmonic Wave Overlay - Synchronized with the beam */}
-                                            <motion.div
-                                                className="absolute inset-0 bg-gradient-to-br from-[var(--stage-color)]/20 to-transparent opacity-0 mix-blend-soft-light"
-                                                animate={{
-                                                    opacity: [0, 0.4, 0] // Gentle swell
-                                                }}
-                                                transition={{
-                                                    duration: 4,
-                                                    repeat: Infinity,
-                                                    ease: "easeInOut",
-                                                    delay: (index * 0.5) + 0.5, // Tightly synchronized delay
-                                                    repeatDelay: 0
-                                                }}
-                                            />
+                                            {/* FRONT FACE */}
+                                            <div
+                                                className="h-full p-6 bg-zinc-900 border border-white/10 rounded-2xl relative overflow-hidden flex flex-col backface-hidden"
+                                                style={style}
+                                            >
+                                                {/* Harmonic Wave Overlay */}
+                                                <motion.div
+                                                    className="absolute inset-0 bg-gradient-to-br from-[var(--stage-color)]/20 to-transparent opacity-0 mix-blend-soft-light"
+                                                    animate={{ opacity: [0, 0.4, 0] }}
+                                                    transition={{
+                                                        duration: 4,
+                                                        repeat: Infinity,
+                                                        ease: "easeInOut",
+                                                        delay: (index * 0.5) + 0.5,
+                                                        repeatDelay: 0
+                                                    }}
+                                                />
 
-                                            {/* Glow Effect */}
-                                            <div className="absolute -right-10 -top-10 w-24 h-24 rounded-full blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-[var(--stage-color)]" />
+                                                {/* Glow Effect */}
+                                                <div className="absolute -right-10 -top-10 w-24 h-24 rounded-full blur-2xl opacity-0 group-hover/card:opacity-20 transition-opacity duration-500 bg-[var(--stage-color)]" />
 
-                                            {/* Content */}
-                                            <div className="relative z-10 flex flex-col items-center text-center md:items-start md:text-left h-full flex-grow">
-
-                                                {/* Icon & Number Row */}
-                                                <div className="w-full flex justify-between items-start mb-6">
-                                                    <div className="p-3 rounded-xl bg-zinc-800/50 text-zinc-400 group-hover:text-[var(--stage-color)] group-hover:bg-[var(--stage-color-20)] transition-all duration-300 mb-4 md:mb-0">
-                                                        <Icon className="w-6 h-6" />
+                                                {/* Content */}
+                                                <div className="relative z-10 flex flex-col items-center text-center md:items-start md:text-left h-full flex-grow">
+                                                    <div className="w-full flex justify-between items-start mb-6">
+                                                        <div className="p-3 rounded-xl bg-zinc-800/50 text-zinc-400 group-hover/card:text-[var(--stage-color)] group-hover/card:bg-[var(--stage-color-20)] transition-all duration-300 mb-4 md:mb-0">
+                                                            <Icon className="w-6 h-6" />
+                                                        </div>
+                                                        <div className="text-5xl font-bold text-zinc-800 font-display select-none group-hover/card:text-white/10 transition-colors">
+                                                            0{stage.id}
+                                                        </div>
                                                     </div>
-                                                    <div className="text-5xl font-bold text-zinc-800 font-display select-none group-hover:text-white/10 transition-colors">
-                                                        0{stage.id}
-                                                    </div>
+
+                                                    <h3 className="text-lg font-bold text-white mb-3 group-hover/card:text-[var(--stage-color)] transition-colors">
+                                                        {stage.title}
+                                                    </h3>
+
+                                                    <p className="text-sm text-zinc-500 leading-relaxed group-hover/card:text-zinc-300 transition-colors flex-grow">
+                                                        {stage.desc}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* BACK FACE */}
+                                            <div
+                                                className="absolute inset-0 h-full w-full p-6 bg-zinc-950 border border-[var(--stage-color)]/50 rounded-2xl rotate-y-180 backface-hidden flex flex-col justify-center items-center text-center"
+                                                style={style}
+                                            >
+                                                <div className="absolute inset-0 bg-[var(--stage-color-20)] opacity-20" />
+
+                                                {/* Stat Value */}
+                                                <div className="relative z-10 mb-2">
+                                                    <span className="text-4xl font-bold text-[var(--stage-color)] font-display block mb-1">
+                                                        {stage.stats?.value || "N/A"}
+                                                    </span>
+                                                    <span className="text-xs uppercase tracking-widest text-zinc-500 font-semibold">
+                                                        Target Metric
+                                                    </span>
                                                 </div>
 
-                                                <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[var(--stage-color)] transition-colors">
-                                                    {stage.title}
-                                                </h3>
+                                                {/* Stat Title */}
+                                                <h4 className="relative z-10 text-white font-bold text-lg mb-4">
+                                                    {stage.stats?.title || "Friction Point"}
+                                                </h4>
 
-                                                <p className="text-sm text-zinc-500 leading-relaxed group-hover:text-zinc-300 transition-colors flex-grow">
-                                                    {stage.desc}
-                                                </p>
-                                            </div>
-                                        </div>
+                                                {/* Logic */}
+                                                <div className="relative z-10 px-3 py-2 bg-zinc-900/80 rounded-lg border border-white/10">
+                                                    <code className="text-xs text-zinc-400 font-mono">
+                                                        {stage.stats?.logic || "Analyze Signal"}
+                                                    </code>
+                                                </div>
 
-                                        {/* Mobile Connector (Vertical) */}
-                                        {index !== ideology.stages.length - 1 && (
-                                            <div className="md:hidden absolute left-1/2 bottom-0 w-0.5 h-6 bg-zinc-800 translate-y-full -translate-x-1/2 flex items-end justify-center overflow-visible">
-                                                <div className="w-2 h-2 border-b border-r border-zinc-600 rotate-45 mb-1" />
+                                                <div className="absolute bottom-4 text-[10px] text-[var(--stage-color)] uppercase tracking-wider font-bold opacity-60">
+                                                    Lowers Friction
+                                                </div>
                                             </div>
-                                        )}
-                                    </motion.div>
+                                        </motion.div>
+                                    </div>
 
                                     {/* Desktop Arrow Connector */}
                                     {index !== ideology.stages.length - 1 && (
-                                        <div className="hidden md:flex items-center justify-center px-2 text-zinc-500 relative z-20">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 opacity-80">
-                                                <path d="M13 17l5-5-5-5" />
-                                                <path d="M6 17l5-5-5-5" />
-                                            </svg>
+                                        <div
+                                            className="hidden md:flex items-center justify-center px-2 relative z-20"
+                                            style={style} // Apply stage colors to this container
+                                        >
+                                            <motion.svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                className="w-6 h-6"
+                                            >
+                                                <motion.path
+                                                    d="M6 17l5-5-5-5"
+                                                    initial={{ stroke: "#52525b", opacity: 0.3 }}
+                                                    animate={{ stroke: "var(--stage-color)", opacity: 1 }}
+                                                    transition={{
+                                                        duration: 1,
+                                                        repeat: Infinity,
+                                                        repeatType: "reverse",
+                                                        ease: "easeInOut"
+                                                    }}
+                                                />
+                                                <motion.path
+                                                    d="M13 17l5-5-5-5"
+                                                    initial={{ stroke: "#52525b", opacity: 0.3 }}
+                                                    animate={{ stroke: "var(--stage-color)", opacity: 1 }}
+                                                    transition={{
+                                                        duration: 1,
+                                                        repeat: Infinity,
+                                                        repeatType: "reverse",
+                                                        ease: "easeInOut",
+                                                        delay: 0.2 // Stagger specifically for flow
+                                                    }}
+                                                />
+                                            </motion.svg>
                                         </div>
                                     )}
                                 </div>

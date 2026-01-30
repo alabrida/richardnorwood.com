@@ -12,6 +12,25 @@ description: Build the Pricing page (SaaS tiers and feature breakdown)
 - **Frontend Builder**: Pricing grid, feature comparison
 - **Content Strategist**: Pricing copy, feature descriptions
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] `content/pricing.json` exists with tier definitions.
+- [ ] Stripe keys configured (if payment integration needed).
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] All tiers render from `pricing.json`.
+- [ ] Feature checkmarks display correctly.
+- [ ] Tier toggle (monthly/annual) works if applicable.
+- [ ] FAQ accordion expands/collapses.
+- [ ] JSON-LD FAQPage schema present in page head.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -27,8 +46,7 @@ Ensure `content/pricing.json` exists with:
 
 ### 3. Build Pricing Hero
 Create `components/sections/PricingHero.tsx`:
-- Page title ("Simple, Transparent Pricing")
-- Toggle: Monthly / Annual (if applicable)
+- Page title ("Simple,- Toggle: Monthly / Annual (if applicable)
 - Subhead
 
 ### 4. Build Features Breakdown
@@ -77,3 +95,5 @@ Navigate to `localhost:3000/pricing` and:
 
 ### 10. Report Completion
 Notify user with screenshots.
+
+

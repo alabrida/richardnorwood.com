@@ -12,6 +12,24 @@ description: Build the Services page (90-Day Partnership offering)
 - **Content Strategist**: Service descriptions, pricing copy
 - **Frontend Builder**: Visual components
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] `content/services.json` exists with tier and timeline data.
+- [ ] Calculator workflow exists for qualification routing.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] All 3 tiers render from `services.json`.
+- [ ] Timeline shows 90-day roadmap with milestones.
+- [ ] Curriculum accordion expands/collapses correctly.
+- [ ] CTA links to `/calculator`.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -74,3 +92,5 @@ Navigate to `localhost:3000/services` and:
 
 ### 10. Report Completion
 Notify user with screenshots.
+
+

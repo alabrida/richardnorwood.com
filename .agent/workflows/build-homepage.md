@@ -12,6 +12,22 @@ description: Build the complete Homepage with Hero, Ideology, Social Proof, and 
 - **Frontend Builder**: Hero, Ideology, Social Proof sections
 - **Content Strategist**: Copy for all sections
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] `content/homepage.json` exists with all sections (hero, ideology, social_proof, about).
+- [ ] Layout components render correctly.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] All 5 stages render with correct colors and descriptions.
+- [ ] Hero, Ideology, Social Proof, About sections all visible.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -69,3 +85,5 @@ Navigate to `localhost:3000` and:
 
 ### 9. Report Completion
 Notify user with screenshots and section inventory.
+
+

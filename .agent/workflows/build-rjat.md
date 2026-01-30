@@ -15,6 +15,26 @@ description: Build the RJAT (Revenue Journey Assessment Tool) engine page
 - **Frontend Builder**: Processing UI, animations
 - **FullStack Dev**: Payment gate integration
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] n8n workflow deployed and webhook accessible.
+- [ ] Supabase `revenue_journey_assessments` table created.
+- [ ] Stripe keys configured for payment gate.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] Form submission triggers n8n webhook.
+- [ ] Processing animation shows stage progress.
+- [ ] Payment gate displays blurred results.
+- [ ] Stripe checkout redirects correctly.
+- [ ] Post-payment redirect to Dashboard.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -84,3 +104,5 @@ Navigate to `localhost:3000/rjat` and:
 
 ### 11. Report Completion
 Notify user with screenshots.
+
+

@@ -15,6 +15,27 @@ description: Build the Pro Tools (Chat Interface and Landing Page Generator)
 - **FullStack Dev**: Chat interface, Generator
 - **Logic Engineer**: AI integration, GitHub deployment
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] User logged in with valid session.
+- [ ] Pinecone index populated with Rubric context.
+- [ ] Gemini API key configured in `.env.local`.
+- [ ] GitHub token configured for deployment.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] Chat sends message and receives streamed response.
+- [ ] Chat response cites Rubric context.
+- [ ] Generator produces valid HTML preview.
+- [ ] "Deploy to GitHub Pages" creates/updates repo and returns URL.
+- [ ] BlurGate hides Pro Tools for Free/Standard users.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -84,3 +105,5 @@ Navigate to `localhost:3000/dashboard` and:
 
 ### 11. Report Completion
 Notify user with screenshots.
+
+

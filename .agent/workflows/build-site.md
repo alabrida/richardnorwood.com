@@ -7,8 +7,7 @@ description: Master orchestrator to build the entire site with parallel executio
 ## Complete Workflow Inventory
 
 | Workflow | Agent(s) | Purpose |
-|---|---|---|
-| `/build-layout` | Layout Architect | Design tokens, Header, Footer |
+|---| `/build-layout` | Layout Architect | Design tokens, Header, Footer |
 | `/build-auth` | Logic Engineer | Login, Signup, Password Reset |
 | `/build-homepage` | Frontend Builder, Content Strategist | Hero, Ideology, Social Proof, About |
 | `/build-services` | Content Strategist, Frontend Builder | 90-Day Partnership page |
@@ -58,6 +57,32 @@ PHASE 3: APP LAYER (Sequential after Auth)
 
 ---
 
+## Pre-Flight Checks
+- [ ] Node.js v18+ installed.
+- [ ] Git repository initialized.
+- [ ] `credentials/.env` exists with all required keys.
+- [ ] All agent skills reviewed and understood.
+
+## Rules of Engagement (Master Orchestrator)
+> All rules from workspace `GEMINI.md` apply. All rules apply at site level.
+
+
+**Additional Orchestrator Rules:**
+- Phase Dependencies: Foundation → Public Pages → App Layer (strict order).
+- Parallel Execution: Phase 2 workflows run in parallel.
+- Lint Gate: No workflow marked complete if `npm run lint` fails.
+
+## Validation (Site-Level)
+> See common validation for full checklist.
+
+- [ ] All 12 workflows completed with Validation checklists passed.
+- [ ] Full navigation test complete (all pages reachable).
+- [ ] Screenshot gallery captured (desktop + mobile for every page).
+- [ ] `walkthrough.md` generated with page/component inventory.
+- [ ] Passes `npm run lint` and `npm run build`.
+
+---
+
 ## Prerequisites
 
 ### 1. Project Initialization
@@ -104,7 +129,6 @@ Creates: Login, Signup, Password Reset, Middleware.
 Execute these workflows **simultaneously**:
 
 | Workflow | Output |
-|---|---|
 | `/build-homepage` | Homepage with all sections |
 | `/build-services` | Services page (90-Day) |
 | `/build-pricing` | Pricing page with tiers |
@@ -173,3 +197,5 @@ Start-Job { cd d:\richardnorwood.com; # invoke /build-calculator }
 ```
 
 Or use `waitForPreviousTools: false` when invoking sub-agents.
+
+

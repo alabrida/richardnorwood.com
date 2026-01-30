@@ -12,6 +12,24 @@ description: Build the Contact page with form and Calendly integration
 - **Frontend Builder**: Contact form, Calendly embed
 - **Logic Engineer**: Form submission logic
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] n8n webhook URL or Airtable API configured in `.env.local`.
+- [ ] Calendly scheduling link available.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] Form submits successfully and stores data.
+- [ ] Success toast appears after submission.
+- [ ] Calendly widget loads and is bookable.
+- [ ] Form validation prevents empty submissions.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -71,3 +89,5 @@ Navigate to `localhost:3000/contact` and:
 
 ### 9. Report Completion
 Notify user with screenshots.
+
+

@@ -12,6 +12,24 @@ description: Build the Blog system with MDX support and WordPress API integratio
 - **Logic Engineer**: WordPress API client (`lib/wp.ts`)
 - **Frontend Builder**: Blog Index and Single Post templates
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] `WP_API_URL` set in `.env.local` and accessible.
+- [ ] WordPress has at least one published post.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] Blog index loads posts from WordPress.
+- [ ] Single post renders title, date, content correctly.
+- [ ] Content styled with `prose` class.
+- [ ] SEO meta tags present in page head.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -59,3 +77,5 @@ Navigate to `localhost:3000/blog` and:
 
 ### 8. Report Completion
 Notify user with findings.
+
+

@@ -8,6 +8,23 @@ description: Build the Hero Section with animations and kinetic typography
 - Layout components exist (run `/build-layout` first)
 - Dev server running on `localhost:3000`
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running and accessible at `localhost:3000`.
+- [ ] `content/homepage.json` exists with `hero` section defined.
+- [ ] User has confirmed target headline and CTA copy.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply. Key requirements:
+> - **Trust:** Content from `homepage.json`, no hardcoding
+> - **Frontend:** Framer Motion animation required, `prefers-reduced-motion` respected
+> - **Single CTA:** One primary CTA per fold
+
+## Validation
+- [ ] Headline and CTA text match `content/homepage.json`.
+- [ ] At least one animation visible on load.
+- [ ] Animation respects `prefers-reduced-motion`.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read the Frontend Builder Skill
@@ -53,3 +70,5 @@ Navigate to `localhost:3000` and:
 
 ### 8. Report Completion
 Notify user with screenshots/video and component list.
+
+

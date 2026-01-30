@@ -8,6 +8,24 @@ description: Build the 5-Question Calculator Prequalifier Form
 - Layout components exist
 - Dev server running on `localhost:3000`
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] Rubric Master document reviewed for scoring logic.
+- [ ] 5-Stage definitions understood (Awareness→Retention).
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] All 5 questions render correctly.
+- [ ] Scoring matches Rubric tiers (5-8→Services, 9-11→RJAT, 12-15→Calendly).
+- [ ] Each routing path triggers correctly.
+- [ ] Progress indicator updates per step.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read the Logic Engineer Skill
@@ -64,3 +82,5 @@ Navigate to `localhost:3000/calculator` and:
 
 ### 8. Report Completion
 Notify user with screenshots and routing logic verification.
+
+

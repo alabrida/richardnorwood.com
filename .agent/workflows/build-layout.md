@@ -8,6 +8,25 @@ description: Build the foundational layout components (Header, Footer, Design To
 - Next.js project initialized
 - Dev server running on `localhost:3000`
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] Tailwind CSS is configured.
+- [ ] Google Fonts (Inter, Outfit) are available.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+ CSS vars in `:root`, no inline colors |
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] CSS variables defined in `globals.css` for all colors, spacing, typography.
+- [ ] Header renders correctly (logo, nav, CTA).
+- [ ] Footer renders correctly (links, social, legal).
+- [ ] Mobile hamburger menu functional.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read the Layout Architect Skill
@@ -59,3 +78,5 @@ Navigate to `localhost:3000` and take screenshots of:
 
 ### 8. Report Completion
 Notify user with screenshots and component list.
+
+

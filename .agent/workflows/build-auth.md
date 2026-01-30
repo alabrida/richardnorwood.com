@@ -13,6 +13,24 @@ description: Build the Authentication system (Login, Signup, Password Reset)
 - **Logic Engineer**: Auth logic, Supabase integration
 - **Frontend Builder**: Auth UI components
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] `SUPABASE_URL` and `SUPABASE_ANON_KEY` set in `.env.local`.
+- [ ] Supabase project has Auth enabled with email/password.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] Signup creates user in Supabase.
+- [ ] Login sets session cookie correctly.
+- [ ] Protected routes redirect unauthenticated users.
+- [ ] Password reset email sends successfully.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read Required Skills
@@ -93,3 +111,5 @@ Navigate to `localhost:3000/login` and:
 
 ### 11. Report Completion
 Notify user with screenshots.
+
+

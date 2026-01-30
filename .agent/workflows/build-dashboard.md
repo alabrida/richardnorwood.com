@@ -9,6 +9,24 @@ description: Build the SaaS Dashboard with Scorecard, Leak List, and Blur Gate
 - Database tables exist (`revenue_journey_assessments`)
 - Dev server running on `localhost:3000`
 
+## Pre-Flight Checks
+- [ ] `npm run dev` is running at `localhost:3000`.
+- [ ] User can log in and session is valid.
+- [ ] `revenue_journey_assessments` table has sample data.
+
+## Rules of Engagement
+> All rules from workspace `GEMINI.md` apply.
+
+
+## Validation
+> See common validation for full checklist.
+
+- [ ] Radar chart plots all 5 stages correctly.
+- [ ] BlurGate shows/hides content based on `subscription_tier`.
+- [ ] LeakList displays top 5 gaps from assessment.
+- [ ] HistoryTable sorts and paginates correctly.
+- [ ] Passes common validation (lint, build, screenshots).
+
 ## Steps
 
 ### 1. Read the FullStack Developer Skill
@@ -69,3 +87,5 @@ Navigate to `localhost:3000/dashboard` and:
 
 ### 9. Report Completion
 Notify user with screenshots and tier verification.
+
+

@@ -15,7 +15,12 @@
                 "desc": "The Initial Discovery. Logic: 'I have a problem.'",
                 "icon": "Eye",
                 "color": "#f43f5e",
-                "cssVar": "var(--color-awareness)"
+                "cssVar": "var(--color-awareness)",
+                "stats": {
+                    "value": "15%",
+                    "title": "Active Multi-Platform",
+                    "logic": ">2 Platforms (Active < 7d)"
+                }
             },
             {
                 "id": 2,
@@ -23,7 +28,12 @@
                 "desc": "The Evaluation Phase. Logic: 'Who can solve it?'",
                 "icon": "MessageSquare",
                 "color": "#f97316",
-                "cssVar": "var(--color-consideration)"
+                "cssVar": "var(--color-consideration)",
+                "stats": {
+                    "value": "20%",
+                    "title": "Evidence Freshness",
+                    "logic": "Case Study < 30 days old"
+                }
             },
             {
                 "id": 3,
@@ -31,7 +41,12 @@
                 "desc": "The Final Validation. Logic: 'Show me the roadmap.'",
                 "icon": "FileCheck",
                 "color": "#eab308",
-                "cssVar": "var(--color-decision)"
+                "cssVar": "var(--color-decision)",
+                "stats": {
+                    "value": "20%",
+                    "title": "Reputation Velocity",
+                    "logic": "Review Response Rate > 90%"
+                }
             },
             {
                 "id": 4,
@@ -39,7 +54,12 @@
                 "desc": "The Seamless Activation. Logic: 'Wow, this works.'",
                 "icon": "Package",
                 "color": "#10b981",
-                "cssVar": "var(--color-conversion)"
+                "cssVar": "var(--color-conversion)",
+                "stats": {
+                    "value": "CRITICAL",
+                    "title": "Speed to Lead",
+                    "logic": "Response Time < 5 min"
+                }
             },
             {
                 "id": 5,
@@ -47,7 +67,12 @@
                 "desc": "The Strategic Partnership. Logic: 'You have to try this.'",
                 "icon": "Megaphone",
                 "color": "#3b82f6",
-                "cssVar": "var(--color-retention)"
+                "cssVar": "var(--color-retention)",
+                "stats": {
+                    "value": "GROWTH",
+                    "title": "Net Rev Retention",
+                    "logic": "Upsell % > Churn %"
+                }
             }
         ]
     },
