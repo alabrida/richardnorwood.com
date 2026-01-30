@@ -7,7 +7,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export default async function DashboardPage() {
-    const { profile, assessment, isPro } = await getDashboardData();
+    const { profile, assessment, isPro, computed } = await getDashboardData();
 
     // Redirect to assessment if no data found
     if (!assessment) {
@@ -59,8 +59,8 @@ export default async function DashboardPage() {
                 </div>
                 <div className="text-right hidden md:block">
                     <span className={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${isPro
-                            ? "text-indigo-400 bg-indigo-500/10 border-indigo-500/20"
-                            : "text-orange-500 bg-orange-500/10 border-orange-500/20"
+                        ? "text-indigo-400 bg-indigo-500/10 border-indigo-500/20"
+                        : "text-orange-500 bg-orange-500/10 border-orange-500/20"
                         }`}>
                         {profile?.subscription_tier} Plan
                     </span>
@@ -70,12 +70,35 @@ export default async function DashboardPage() {
             {/* Quick Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
-                    { label: "Rev Score", value: `${currentScore}/100`, icon: Zap, color: "text-amber-400" },
-                    { label: "Active Leaks", value: `${leakCount} Detected`, icon: TrendingUp, color: "text-red-400" },
-                    // Conditional Logic
+                    {
+                        label: "Rev Score",
+                        value: `${currentScore}/100`,
+                        subtext: computed?.status || "Fragmented",
+                        icon: Zap,
+                        color: "text-amber-400"
+                    },
+                    {
+                        label: "Status",
+                        value: computed?.status || "Fragmented",
+                        subtext: "System Health",
+                        icon: Activity,
+                        color: "text-blue-400"
+                    },
                     isPro
-                        ? { label: "Projected Loss", value: "~$12k/mo", icon: DollarSign, color: "text-emerald-400" }
-                        : { label: "Optimization Status", value: "Action Required", icon: Activity, color: "text-blue-400" },
+                        ? {
+                            label: "Projected Loss",
+                            value: "~$12k/mo",
+                            subtext: "Based on leaks",
+                            icon: DollarSign,
+                            color: "text-emerald-400"
+                        }
+                        : {
+                            label: "Priority Focus",
+                            value: computed?.gaps[0]?.name || "None",
+                            subtext: "Weakest Link",
+                            icon: TrendingUp,
+                            color: "text-red-400"
+                        },
                 ].map((stat) => (
                     <div key={stat.label} className="p-6 bg-zinc-900/50 border border-white/5 rounded-2xl flex items-center gap-4">
                         <div className={`p-3 rounded-xl bg-zinc-950 border border-white/5 ${stat.color}`}>
@@ -84,6 +107,7 @@ export default async function DashboardPage() {
                         <div>
                             <p className="text-sm text-zinc-500 font-medium">{stat.label}</p>
                             <p className="text-2xl font-bold text-white">{stat.value}</p>
+                            <p className="text-xs text-zinc-600">{stat.subtext}</p>
                         </div>
                     </div>
                 ))}
