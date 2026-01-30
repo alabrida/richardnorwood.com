@@ -1,141 +1,139 @@
 {
+    "meta": {
+        "title": "The 90-Day Revenue Partnership",
+        "description": "Architect, Install, and Scale your Revenue Engine in 90 days or less.",
+        "og_params": {
+            "image_url": "/images/og-services.jpg"
+        }
+    },
     "hero": {
-        "title": "The 90-Day Partnership",
-        "subtitle": "We don’t just consult. We architect, build, and deploy your Revenue Engine.",
-        "cta_text": "View Engagement Options",
-        "cta_href": "#tiers"
+        "title": "We Don't Just Advise. We Architect.",
+        "subtitle": "Join the 90-Day Partnership to install a permanent, scalable Revenue Engine into your business.",
+        "cta_text": "Apply for Partnership",
+        "cta_url": "#apply"
     },
     "tiers": [
         {
-            "id": "blueprint",
+            "id": "diy",
             "name": "The Blueprint",
-            "price": "$5k",
-            "description": "For founders who need the plan but have the team to build it.",
+            "subtitle": "Do It Yourself",
+            "price": "$2,500",
+            "period": "one-time",
+            "description": "Full access to our Revenue Architecture curriculum and templates. Build it at your own pace.",
             "features": [
-                "Full Revenue Journey Audit",
-                "Custom Architecture Diagram",
-                "Action Plan & Backlog",
-                "1 Strategy Workshop"
+                "Full Video Curriculum (50+ Hours)",
+                "Notion Operating System Templates",
+                "Weekly Q&A Archive Access",
+                "Private Community Access"
             ],
-            "cta": "Get the Blueprint",
-            "popular": false
+            "cta_text": "Buy Course",
+            "cta_url": "/checkout/blueprint",
+            "recommended": false
         },
         {
-            "id": "accelerator",
+            "id": "dwy",
             "name": "The Accelerator",
-            "price": "$15k",
-            "description": "We build the core engine. You scale it. The perfect balance of speed and control.",
+            "subtitle": "Done With You",
+            "price": "$7,500",
+            "period": "or 3x $2,800",
+            "description": "Join a cohort of founders building alongside you. Weekly live coaching and direct feedback.",
             "features": [
-                "Everything in Blueprint",
-                "Core Tech Stack Setup (CRM/Auto)",
-                "3 High-Converting Landing Pages",
-                "Weekly Implementation Calls"
+                "Everything in The Blueprint",
+                "Weekly Live Implementation Calls",
+                "Direct Slack Access to Coaches",
+                "Audit & Feedback on Your Build"
             ],
-            "cta": "Start Accelerator",
-            "popular": true
+            "cta_text": "Join Cohort",
+            "cta_url": "/checkout/accelerator",
+            "recommended": true
         },
         {
-            "id": "transformation",
-            "name": "The Transformation",
-            "price": "$40k+",
-            "description": "Full-service architecture, build, and deployment. We become your Growth Dept.",
+            "id": "dfy",
+            "name": "The Installation",
+            "subtitle": "Done For You",
+            "price": "$25,000",
+            "period": "+ 10% Rev Share",
+            "description": "We embed into your team and build the engine for you. Limited to 2 partners per quarter.",
             "features": [
-                "Everything in Accelerator",
-                "Full Content Production",
-                "Ad Creative & Management",
-                "Daily Slack Access",
-                "Revenue Share Option"
+                "Full Engine Installation",
+                "Hiring & Training Your Sales Team",
+                "Custom Tech Stack Integration",
+                "Daily Standups & Execution"
             ],
-            "cta": "Apply for Transformation",
-            "popular": false
+            "cta_text": "Apply for Agency",
+            "cta_url": "/apply",
+            "recommended": false
         }
     ],
     "timeline": {
         "title": "The 90-Day Roadmap",
+        "description": "From chaos to clarity in 12 weeks.",
         "phases": [
             {
-                "name": "Phase 1: Diagnosis & Architecture",
-                "duration": "Days 1-30",
-                "description": "We audit every leak in your bucket and design the new flow."
+                "phase": "Phase 1: Foundation",
+                "weeks": "Weeks 1-4",
+                "focus": "Architecture & Systems",
+                "color": "indigo"
             },
             {
-                "name": "Phase 2: The Build",
-                "duration": "Days 31-60",
-                "description": "We install the tech, write the copy, and build the pages."
+                "phase": "Phase 2: Validation",
+                "weeks": "Weeks 5-8",
+                "focus": "Testing & Tuning",
+                "color": "violet"
             },
             {
-                "name": "Phase 3: The Launch & Scale",
-                "duration": "Days 61-90",
-                "description": "We turn on the faucet. Traffic meets conversion."
+                "phase": "Phase 3: Scale",
+                "weeks": "Weeks 9-12",
+                "focus": "Growth & Automation",
+                "color": "fuchsia"
             }
         ]
     },
     "curriculum": [
         {
-            "week": 1,
-            "topic": "Revenue Audit & Leak Detection",
-            "desc": "Identifying where money is slipping through the cracks."
+            "week": "Week 1",
+            "title": "The Revenue Audit",
+            "description": "Deconstruct your current performance. Identify leaks. Set specific KPI targets for the program."
         },
         {
-            "week": 2,
-            "topic": "Ideal Customer Profile 2.0",
-            "desc": "Defining exactly who we are building for."
+            "week": "Week 2",
+            "title": "Avatar & Offer Alignment",
+            "description": "Ensure you are selling the right thing to the right person. Refine your value proposition."
         },
         {
-            "week": 3,
-            "topic": "The 'Unignorable' Offer",
-            "desc": "Packaging your value so it sells itself."
+            "week": "Week 3",
+            "title": "Tech Stack Installation",
+            "description": "Setup CRM, Automation, and Data Analytics. No more spreadsheets."
         },
         {
-            "week": 4,
-            "topic": "Awareness Architecture",
-            "desc": "Traffic sources that convert cold to sold."
+            "week": "Week 4",
+            "title": "Inbound Engine Construction",
+            "description": "Building the content and ad assets that drive awareness at scale."
         },
         {
-            "week": 5,
-            "topic": "Consideration Mechanics",
-            "desc": "Building the trust bridge."
+            "week": "Week 5",
+            "title": "Outbound Systems",
+            "description": "Cold outreach that actually works. Scripting, list building, and sending."
         },
         {
-            "week": 6,
-            "topic": "Decision Logic",
-            "desc": "Removing friction from the 'Buy' button."
+            "week": "Week 6",
+            "title": "Sales Process Engineering",
+            "description": "Scripting the perfect demo. Handling objections. Closing frameworks."
         },
         {
-            "week": 7,
-            "topic": "Conversion Experience",
-            "desc": "Turning customers into raving fans."
+            "week": "Week 7",
+            "title": "Nurture Sequences",
+            "description": "Automated email and SMS flows to convert mid-funnel leads."
         },
         {
-            "week": 8,
-            "topic": "Retention & Advocacy",
-            "desc": "Engineering referrals and viral growth."
+            "week": "Week 8",
+            "title": "Talent & Delegation",
+            "description": "How to hire your first SDR or Account Executive."
         },
         {
-            "week": 9,
-            "topic": "Tech Stack Integration",
-            "desc": "Connecting the pipes (CRM, Email, Analytics)."
-        },
-        {
-            "week": 10,
-            "topic": "Data & Dashboards",
-            "desc": "If you can't measure it, you can't scale it."
-        },
-        {
-            "week": 11,
-            "topic": "The Launch Sequence",
-            "desc": "Executing the go-to-market strategy."
-        },
-        {
-            "week": 12,
-            "topic": "Handover & Autopilot",
-            "desc": "Training your team to run the engine."
+            "week": "Week 9-12",
+            "title": "The Growth Sprint",
+            "description": "Aggressive execution. We turn up the volume and optimize live campaigns."
         }
-    ],
-    "cta": {
-        "title": "Ready to Build?",
-        "subtitle": "We only take 4 partners per quarter to ensure maximum focus.",
-        "button_text": "Apply for Partnership",
-        "button_href": "/contact"
-    }
+    ]
 }
