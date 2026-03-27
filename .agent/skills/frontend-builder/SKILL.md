@@ -108,3 +108,17 @@ Based on industry leaders (Figma, Lovable, Wix), prioritize these aesthetics:
 *   `components/ui/AnimatedButton.tsx`
 *   `components/ui/KineticHeadline.tsx`
 *   `components/ui/Toaster.tsx` (Sonner wrapper)
+
+## XP Project Additions
+
+### Additional Toolkit
+
+| Category | Library | Notes |
+|---|---|---|
+| **State Management** | `zustand` | Lightweight store for window/desktop state |
+| **Retro UI** | Custom CSS | XP Luna theme, Tahoma font, gradient title bars |
+
+### Design Trend: Nostalgic UI / Retro Computing
+- **Concept**: Pixel-perfect recreation of legacy OS interfaces as a deliberate design choice. Maximum skeuomorphism — the opposite of modern minimalism.
+- **Implementation**: When building for the XP project, the "Wow Factor" comes from **fidelity**, not from modern animations. The goal is to make users believe they are using actual Windows XP.
+- **Coordinate with**: [XP Shell Architect](file:///d:/richardnorwood.com/.agent/skills/xp-shell-architect/SKILL.md) for shell components, [Retro App Builder](file:///d:/richardnorwood.com/.agent/skills/retro-app-builder/SKILL.md) for app components.

@@ -79,3 +79,18 @@ The output of this skill must align with the Revenue Architecture Doctrine. Befo
 ## 2026 Logic Trends
 1. **Adaptive Logic (AI Personalization):** Move beyond static rules. Logic should eventually accept user behavior signals (time on site, scroll depth) to adjust the "Next Best Action" dynamically.
 2. **Performance First:** Logic must be optimized to not block the main thread. Heavy computations (like Rubric scoring) must be offloaded to Edge Functions or Web Workers.
+
+## XP Project Additions
+
+### Updated API Access
+
+| API | Env Variable | Use Case |
+|---|---|---|
+| **Supabase (Auth)** | `SUPABASE_AUTH_URL`, `SUPABASE_AUTH_ANON_KEY`, `SUPABASE_AUTH_SERVICE_KEY` | Auth, lead capture, user profiles |
+| **Supabase (RJAT)** | `SUPABASE_RJAT_URL`, `SUPABASE_RJAT_ANON_KEY`, `SUPABASE_RJAT_SERVICE_KEY` | Assessment results, scoring, dashboard data |
+| **WordPress REST API** | `WP_API_URL`, `WP_API_KEY` | Headless CMS — blog posts, case studies, FAQ content |
+
+### Additional Core Knowledge
+- **Dual Supabase Architecture**: Auth project (PMP, `vupbjbrviiilqvgqtqlw`) handles login/profiles. RJAT project (Crawlee Social Scraper, `wraqaqyqqeswufbarhcz`) stores assessment data. Create separate Supabase clients for each.
+- **Headless WordPress Integration**: CMS content fetched via WP REST API from Hostinger. Blog posts, case studies, and FAQ content flow through `lib/wordpress/client.ts`.
+- **Window Manager State**: Zustand store at `lib/wms/WindowManager.ts` manages all open windows, their positions, z-index, and states. Coordinate with [XP Shell Architect](file:///d:/richardnorwood.com/.agent/skills/xp-shell-architect/SKILL.md).

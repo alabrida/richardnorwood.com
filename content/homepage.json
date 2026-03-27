@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "headline": "Stop Losing Revenue You've Already Earned",
+    "subhead": "The Revenue Architect identifies the hidden leaks in your business and builds systems to fix them — turning chaos into predictable growth.",
+    "cta_text": "Start Your Journey",
+    "cta_url": "/calculator"
+  },
+  "ideology": {
+    "title": "The 5-Stage Revenue Journey",
+    "description": "Every business operates somewhere on this map. The question isn't where you are — it's how fast you can move forward.",
+    "stages": [
+      {
+        "number": 1,
+        "name": "Awareness",
+        "description": "Your market doesn't know you exist. You're invisible to the people who need you most.",
+        "color": "#FF6B6B",
+        "icon": "eye"
+      },
+      {
+        "number": 2,
+        "name": "Acquisition",
+        "description": "People know you, but they're not buying. Your funnel has holes you can't see.",
+        "color": "#FFA94D",
+        "icon": "funnel"
+      },
+      {
+        "number": 3,
+        "name": "Activation",
+        "description": "They bought once, but never came back. First impressions are everything.",
+        "color": "#FFD43B",
+        "icon": "zap"
+      },
+      {
+        "number": 4,
+        "name": "Revenue",
+        "description": "Money is coming in, but you're leaving more on the table than you realize.",
+        "color": "#69DB7C",
+        "icon": "dollar"
+      },
+      {
+        "number": 5,
+        "name": "Retention",
+        "description": "Growth is real and repeatable. Your systems run while you sleep.",
+        "color": "#4DABF7",
+        "icon": "repeat"
+      }
+    ]
+  },
+  "social_proof": {
+    "headline": "Real Results, Real Revenue",
+    "case_studies": [
+      {
+        "client": "SaaS Startup",
+        "metric": "312%",
+        "description": "Revenue increase in 90 days by fixing Stage 2-3 leaks"
+      },
+      {
+        "client": "E-Commerce Brand",
+        "metric": "$2.4M",
+        "description": "Recovered annual revenue from retention system rebuild"
+      },
+      {
+        "client": "Agency Owner",
+        "metric": "47 Days",
+        "description": "From chaos to predictable pipeline with Revenue Journey mapping"
+      }
+    ]
+  },
+  "about": {
+    "title": "The Architect",
+    "name": "Richard Norwood",
+    "credentials": ["PMP Certified", "Revenue Architect", "Growth Strategist"],
+    "bio": "I've spent 15+ years in the trenches of revenue optimization — from Fortune 500 consulting to building my own businesses from zero. I don't teach theory. I build systems that print money.",
+    "cta_text": "Book a Strategy Call",
+    "cta_url": "/contact"
+  }
+}

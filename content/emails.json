@@ -1,0 +1,34 @@
+{
+  "inbox": [
+    {
+      "id": "welcome-1",
+      "from": "Revenue Architect <noreply@richardnorwood.com>",
+      "to": "Guest",
+      "subject": "Welcome to the Revenue Architect Platform",
+      "date": "2025-01-15T09:00:00Z",
+      "body": "Welcome!\n\nThank you for exploring the Revenue Architect platform. This system is designed to help you identify and fix the revenue leaks in your business.\n\nHere's what you can do:\n\n• Run the Revenue Journey Assessment (Calculator app)\n• View your Dashboard (My Computer > C: Drive)\n• Book a Strategy Call (AIM > Richard Norwood)\n• Browse our Blog (Internet Explorer)\n\nTo get started, try opening the Calculator from the desktop.\n\nBest,\nRichard Norwood\nRevenue Architect",
+      "read": false,
+      "folder": "Inbox"
+    },
+    {
+      "id": "welcome-2",
+      "from": "System <system@richardnorwood.com>",
+      "to": "Guest",
+      "subject": "Your Revenue Journey Starts Here",
+      "date": "2025-01-15T09:05:00Z",
+      "body": "The 5-Stage Revenue Journey:\n\n1. AWARENESS — Does your market know you exist?\n2. ACQUISITION — Are they buying?\n3. ACTIVATION — Do they come back?\n4. REVENUE — Are you maximizing what comes in?\n5. RETENTION — Is growth repeatable?\n\nMost businesses are stuck at Stage 2 or 3 without knowing it. The Assessment Tool will tell you exactly where you are and what to fix first.\n\nRun your assessment now: Open Calculator from the desktop.",
+      "read": false,
+      "folder": "Inbox"
+    },
+    {
+      "id": "welcome-3",
+      "from": "Richard Norwood <richard@richardnorwood.com>",
+      "to": "Guest",
+      "subject": "Re: Quick question about the 90-Day Partnership",
+      "date": "2025-01-14T14:30:00Z",
+      "body": "Great question!\n\nThe 90-Day Partnership is our done-with-you program where we:\n\n• Map your complete Revenue Journey\n• Identify your top 5 revenue leaks\n• Build systems to plug each one\n• Train your team to maintain them\n\nIt's not coaching. It's architecture. We build the systems together, and you own them forever.\n\nInterested? Book a call: Open AIM and message me directly.\n\n— Richard",
+      "read": true,
+      "folder": "Inbox"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+.desktop {
+  position: fixed;
+  inset: 0;
+  bottom: var(--xp-taskbar-height);
+  z-index: var(--xp-z-desktop);
+  overflow: hidden;
+}
+
+.wallpaper {
+  position: absolute;
+  inset: 0;
+  background: var(--xp-desktop-bg);
+  background-image: url('/wallpaper/bliss.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.iconGrid {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 8px;
+  gap: 4px;
+  z-index: 1;
+}
+
+.desktopIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: var(--xp-desktop-icon-gap);
+  height: var(--xp-desktop-icon-gap);
+  padding: 4px 2px;
+  cursor: default;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.desktopIcon:hover {
+  background: rgba(49, 106, 197, 0.15);
+  border-color: rgba(49, 106, 197, 0.4);
+}
+
+.desktopIcon.selected {
+  background: rgba(49, 106, 197, 0.3);
+  border-color: rgba(49, 106, 197, 0.6);
+}
+
+.iconImage {
+  width: var(--xp-icon-size);
+  height: var(--xp-icon-size);
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.iconLabel {
+  margin-top: 2px;
+  font-size: var(--xp-font-size-icon);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  word-wrap: break-word;
+  max-width: 68px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* ── Windows Layer (above icons) ── */
+.windowsLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.windowsLayer > * {
+  pointer-events: auto;
+}

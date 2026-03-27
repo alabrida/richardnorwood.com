@@ -1,0 +1,205 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--xp-z-start-menu);
+}
+
+.startMenu {
+  position: fixed;
+  bottom: var(--xp-taskbar-height);
+  left: 0;
+  width: 380px;
+  background: var(--xp-start-menu-bg);
+  border: 2px solid #0054e3;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: var(--xp-z-start-menu);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Header (User bar) ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    to right,
+    var(--xp-start-menu-header-start),
+    var(--xp-start-menu-header-end)
+  );
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  object-fit: cover;
+}
+
+.username {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Body (two columns) ── */
+.body {
+  display: flex;
+  min-height: 300px;
+}
+
+.leftColumn {
+  flex: 1;
+  background: #ffffff;
+  padding: 6px 0;
+  border-right: 1px solid #d6dff7;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightColumn {
+  width: 180px;
+  background: var(--xp-start-menu-right);
+  padding: 6px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Section Label ── */
+.sectionLabel {
+  font-size: 10px;
+  color: #808080;
+  padding: 4px 10px 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.separator {
+  height: 1px;
+  background: var(--xp-start-menu-separator);
+  margin: 4px 8px;
+}
+
+/* ── Menu Item ── */
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  cursor: default;
+  font-size: var(--xp-font-size);
+  color: #000000;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--xp-font-family);
+}
+
+.menuItem:hover {
+  background: var(--xp-selection-bg);
+  color: var(--xp-selection-text);
+}
+
+.menuItemIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.menuItemSmIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.menuItemLabel {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menuItemBold {
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.disabledItem {
+  color: #808080;
+  cursor: default;
+}
+
+/* ── All Programs ── */
+.allPrograms {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  cursor: default;
+  font-size: var(--xp-font-size);
+  color: #000000;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--xp-font-family);
+}
+
+.allPrograms:hover {
+  background: var(--xp-selection-bg);
+  color: var(--xp-selection-text);
+}
+
+.allProgramsArrow {
+  margin-left: auto;
+  font-size: 10px;
+}
+
+/* ── Footer (Log Off / Shut Down) ── */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 6px 10px;
+  background: linear-gradient(
+    to right,
+    #4682d5,
+    #3068c4
+  );
+  border-top: 1px solid #0054e3;
+}
+
+.footerBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: var(--xp-font-family);
+  font-size: var(--xp-font-size);
+  cursor: default;
+  border-radius: 2px;
+}
+
+.footerBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.footerIcon {
+  width: 16px;
+  height: 16px;
+}

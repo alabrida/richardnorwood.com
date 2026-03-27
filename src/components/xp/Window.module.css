@@ -1,0 +1,199 @@
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--xp-titlebar-radius) var(--xp-titlebar-radius) 0 0;
+  box-shadow: var(--xp-window-shadow);
+  overflow: hidden;
+}
+
+.window.minimized {
+  display: none;
+}
+
+/* ── Title Bar ── */
+.titleBar {
+  display: flex;
+  align-items: center;
+  height: var(--xp-titlebar-height);
+  padding: 0 3px;
+  gap: 3px;
+  background: linear-gradient(
+    to right,
+    var(--xp-titlebar-active-start),
+    var(--xp-titlebar-active-end)
+  );
+  cursor: default;
+  flex-shrink: 0;
+}
+
+.titleBar.inactive {
+  background: linear-gradient(
+    to right,
+    var(--xp-titlebar-inactive-start),
+    var(--xp-titlebar-inactive-end)
+  );
+}
+
+.titleIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.titleText {
+  flex: 1;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: var(--xp-font-size-title);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.titleButtons {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+/* ── Window Buttons (Min/Max/Close) ── */
+.windowBtn {
+  width: 21px;
+  height: 21px;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  padding: 0;
+  position: relative;
+}
+
+.windowBtn svg {
+  width: 9px;
+  height: 9px;
+}
+
+.btnMinMax {
+  background: linear-gradient(180deg, #3d97f2 0%, #1565c0 100%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btnMinMax:hover {
+  background: linear-gradient(180deg, #64b5f6 0%, #1976d2 100%);
+}
+
+.btnMinMax:active {
+  background: linear-gradient(180deg, #1565c0 0%, #0d47a1 100%);
+}
+
+.btnClose {
+  background: linear-gradient(
+    180deg,
+    var(--xp-close-btn-start) 0%,
+    var(--xp-close-btn-end) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btnClose:hover {
+  background: linear-gradient(
+    180deg,
+    var(--xp-close-btn-hover-start) 0%,
+    var(--xp-close-btn-hover-end) 100%
+  );
+}
+
+.btnClose:active {
+  background: #a03030;
+}
+
+.titleBar.inactive .btnMinMax,
+.titleBar.inactive .btnClose {
+  opacity: 0.7;
+}
+
+/* ── Window Body ── */
+.windowBody {
+  flex: 1;
+  background: var(--xp-window-bg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* ── Resize Handles ── */
+.resizeHandle {
+  position: absolute;
+  z-index: 1;
+}
+
+.resizeN {
+  top: 0;
+  left: var(--xp-resize-handle);
+  right: var(--xp-resize-handle);
+  height: var(--xp-resize-handle);
+  cursor: n-resize;
+}
+
+.resizeS {
+  bottom: 0;
+  left: var(--xp-resize-handle);
+  right: var(--xp-resize-handle);
+  height: var(--xp-resize-handle);
+  cursor: s-resize;
+}
+
+.resizeE {
+  top: var(--xp-resize-handle);
+  right: 0;
+  bottom: var(--xp-resize-handle);
+  width: var(--xp-resize-handle);
+  cursor: e-resize;
+}
+
+.resizeW {
+  top: var(--xp-resize-handle);
+  left: 0;
+  bottom: var(--xp-resize-handle);
+  width: var(--xp-resize-handle);
+  cursor: w-resize;
+}
+
+.resizeNE {
+  top: 0;
+  right: 0;
+  width: var(--xp-resize-handle);
+  height: var(--xp-resize-handle);
+  cursor: ne-resize;
+}
+
+.resizeNW {
+  top: 0;
+  left: 0;
+  width: var(--xp-resize-handle);
+  height: var(--xp-resize-handle);
+  cursor: nw-resize;
+}
+
+.resizeSE {
+  bottom: 0;
+  right: 0;
+  width: var(--xp-resize-handle);
+  height: var(--xp-resize-handle);
+  cursor: se-resize;
+}
+
+.resizeSW {
+  bottom: 0;
+  left: 0;
+  width: var(--xp-resize-handle);
+  height: var(--xp-resize-handle);
+  cursor: sw-resize;
+}

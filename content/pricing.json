@@ -1,0 +1,76 @@
+{
+  "tiers": [
+    {
+      "id": "free",
+      "name": "Snapshot",
+      "tagline": "See the problem",
+      "price": 0,
+      "period": "free forever",
+      "features": [
+        "Revenue Journey Assessment",
+        "Top 5 Revenue Leaks Report",
+        "Stage Score Breakdown"
+      ],
+      "locked_features": [
+        "Full Dashboard Access",
+        "Assessment History",
+        "AI Strategy Chat",
+        "Landing Page Generator"
+      ],
+      "cta_text": "Start Free",
+      "highlighted": false
+    },
+    {
+      "id": "standard",
+      "name": "Membership",
+      "tagline": "Understand the pattern",
+      "price": 49,
+      "period": "per month",
+      "features": [
+        "Everything in Snapshot",
+        "Full Dashboard Access",
+        "Assessment History & Trends",
+        "Monthly Revenue Insights Email"
+      ],
+      "locked_features": [
+        "AI Strategy Chat",
+        "Landing Page Generator"
+      ],
+      "cta_text": "Get Started",
+      "highlighted": true
+    },
+    {
+      "id": "pro",
+      "name": "Agency",
+      "tagline": "Fix the leaks",
+      "price": 149,
+      "period": "per month",
+      "features": [
+        "Everything in Membership",
+        "AI Strategy Chat (unlimited)",
+        "Landing Page Generator",
+        "Priority Support"
+      ],
+      "locked_features": [],
+      "cta_text": "Go Pro",
+      "highlighted": false
+    },
+    {
+      "id": "battleship",
+      "name": "Battleship",
+      "tagline": "Build the machine",
+      "price": null,
+      "period": "custom pricing",
+      "features": [
+        "Everything in Agency",
+        "1:1 Revenue Architecture Sessions",
+        "Custom System Integrations",
+        "90-Day Partnership Access",
+        "Credit-Based Unlock System"
+      ],
+      "locked_features": [],
+      "cta_text": "Contact Sales",
+      "highlighted": false
+    }
+  ]
+}

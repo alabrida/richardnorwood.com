@@ -1,0 +1,55 @@
+{
+  "categories": [
+    {
+      "name": "Getting Started",
+      "topics": [
+        {
+          "question": "What is the Revenue Journey Assessment?",
+          "answer": "The Revenue Journey Assessment Tool (RJAT) analyzes your business across 5 stages: Awareness, Acquisition, Activation, Revenue, and Retention. It identifies the specific revenue leaks holding you back and provides a prioritized action plan."
+        },
+        {
+          "question": "How do I run an assessment?",
+          "answer": "Open the Calculator app from the desktop. The first time you press '=', it will guide you through 5 quick questions. Answer each using the number buttons 1-5 (1 = needs work, 5 = strong). Press '=' after the final question to see your results."
+        },
+        {
+          "question": "Is the assessment free?",
+          "answer": "Yes! The Snapshot tier is completely free and includes your Revenue Journey Assessment, Top 5 Revenue Leaks report, and Stage Score Breakdown. Upgrade to Membership or Agency for full dashboard access and AI-powered tools."
+        }
+      ]
+    },
+    {
+      "name": "Account & Billing",
+      "topics": [
+        {
+          "question": "How do I upgrade my plan?",
+          "answer": "Open Product Activation from the Start Menu or All Programs. Select your desired tier and follow the checkout process. Your dashboard will unlock immediately after payment."
+        },
+        {
+          "question": "Can I cancel my subscription?",
+          "answer": "Yes, you can cancel anytime. Go to Control Panel > User Accounts to manage your subscription. You'll retain access until the end of your billing period."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "We accept all major credit cards, Apple Pay, and Google Pay through our secure Stripe integration."
+        }
+      ]
+    },
+    {
+      "name": "Tools & Features",
+      "topics": [
+        {
+          "question": "What is the AI Strategy Chat?",
+          "answer": "Available on the Agency tier and above, the AI Strategy Chat (accessible via AIM > Strategy Bot) provides personalized revenue optimization advice based on your assessment results and industry."
+        },
+        {
+          "question": "What does the Landing Page Generator do?",
+          "answer": "The Landing Page Generator creates conversion-optimized landing pages based on your Revenue Journey stage. It outputs ready-to-deploy HTML that matches your brand and targets your specific revenue leaks."
+        },
+        {
+          "question": "How do I book a strategy call?",
+          "answer": "Open the AIM Buddy List from the desktop and double-click 'Richard Norwood'. This opens a chat window with an embedded Calendly scheduler where you can book a free 30-minute strategy session."
+        }
+      ]
+    }
+  ]
+}
