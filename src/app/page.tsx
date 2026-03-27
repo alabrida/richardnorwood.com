@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { AnimatePresence } from 'motion/react';
+import '@/lib/apps/registerAll';
 import BootLogin from '@/components/xp/BootLogin';
 import Desktop from '@/components/xp/Desktop';
 import Taskbar from '@/components/xp/Taskbar';

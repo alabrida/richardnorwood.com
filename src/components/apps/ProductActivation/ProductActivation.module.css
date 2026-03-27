@@ -1,0 +1,188 @@
+.wizard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--xp-button-face);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #3A6EA5 0%, #1D3B6F 100%);
+}
+
+.headerIcon {
+  font-size: 28px;
+}
+
+.headerTitle {
+  color: #ffffff;
+  font-family: 'Trebuchet MS', var(--xp-font-family);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.headerSub {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  background: #e8ecf0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.progressDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c0c0c0;
+  border: 1px solid #a0a0a0;
+}
+
+.progressDot.active {
+  background: #3A6EA5;
+  border-color: #1D3B6F;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.stepContent {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.stepTitle {
+  font-family: var(--xp-font-family);
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1D3B6F;
+}
+
+.stepDesc {
+  font-family: var(--xp-font-family);
+  font-size: 11px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+/* ── Tier Selection ── */
+.tierGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tierCard {
+  padding: 12px;
+  border: 2px solid #d0d0d0;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--xp-font-family);
+}
+
+.tierCard:hover {
+  border-color: #3A6EA5;
+  background: #f0f4ff;
+}
+
+.tierCard.selectedTier {
+  border-color: #3A6EA5;
+  background: #e0e8f8;
+}
+
+.tierName {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1D3B6F;
+  margin-bottom: 4px;
+}
+
+.tierPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.tierTagline {
+  font-size: 10px;
+  color: #808080;
+}
+
+/* ── Confirm ── */
+.confirmBox {
+  padding: 12px;
+  background: #f8f8f0;
+  border: 1px solid #d0d0c0;
+  border-radius: 4px;
+  font-family: var(--xp-font-family);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.successIcon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-top: 1px solid #c0c0c0;
+  background: var(--xp-button-face);
+}
+
+.wizBtn {
+  padding: 4px 16px;
+  font-family: var(--xp-font-family);
+  font-size: 11px;
+  cursor: default;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+.wizBtn:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #e8e8e8 100%);
+}
+
+.wizBtn:disabled {
+  color: #a0a0a0;
+  cursor: default;
+}
+
+.wizBtn.primary {
+  background: linear-gradient(180deg, #5090D0 0%, #3A6EA5 100%);
+  color: #ffffff;
+  border-color: #1D3B6F;
+}
+
+.wizBtn.primary:hover {
+  background: linear-gradient(180deg, #60A0E0 0%, #4A7EB5 100%);
+}
+
+.wizBtn.primary:disabled {
+  background: #c0c0c0;
+  color: #808080;
+  border-color: #999;
+}

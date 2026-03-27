@@ -1,0 +1,41 @@
+.notepad {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 4px 6px;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  font-size: 10pt;
+  line-height: 1.4;
+  background: #ffffff;
+  color: #000000;
+  overflow: auto;
+}
+
+.textarea.wordWrap {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.textarea:not(.wordWrap) {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20px;
+  padding: 0 8px;
+  background: var(--xp-button-face);
+  border-top: 1px solid var(--xp-button-shadow);
+  font-size: 10px;
+  color: #666666;
+}

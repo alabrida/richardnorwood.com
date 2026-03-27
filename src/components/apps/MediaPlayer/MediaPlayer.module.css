@@ -1,0 +1,166 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1a1a2e;
+}
+
+.viewport {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #0a0a1a 0%, #1a1a3e 50%, #0a0a1a 100%);
+  min-height: 120px;
+  position: relative;
+}
+
+.visualizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 80px;
+}
+
+.vizBar {
+  width: 8px;
+  background: linear-gradient(180deg, #4A9EFF 0%, #2060A0 100%);
+  border-radius: 2px 2px 0 0;
+  animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+.vizBar:nth-child(2n) {
+  animation-delay: 0.3s;
+}
+
+.vizBar:nth-child(3n) {
+  animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.nowPlaying {
+  color: #4A9EFF;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 11px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* ── Transport ── */
+.transport {
+  padding: 4px 8px;
+  background: #111122;
+  border-top: 1px solid #333366;
+}
+
+.seekBar {
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.seekFill {
+  height: 100%;
+  background: #4A9EFF;
+  border-radius: 2px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ctrlBtn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: none;
+  color: #cccccc;
+  font-size: 14px;
+  cursor: default;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctrlBtn:hover {
+  background: rgba(74, 158, 255, 0.2);
+  color: #ffffff;
+}
+
+.playBtn {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  border: 2px solid #4A9EFF;
+}
+
+.timeDisplay {
+  color: #808080;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+/* ── Playlist ── */
+.playlist {
+  max-height: 140px;
+  overflow-y: auto;
+  background: #0a0a1a;
+  border-top: 1px solid #333366;
+}
+
+.playlistTitle {
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #4A9EFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #1a1a3e;
+}
+
+.playlistItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  color: #cccccc;
+  font-size: 11px;
+  cursor: default;
+  border-bottom: 1px solid #1a1a3e;
+}
+
+.playlistItem:hover {
+  background: rgba(74, 158, 255, 0.1);
+  color: #ffffff;
+}
+
+.trackNum {
+  color: #808080;
+  width: 18px;
+}
+
+.trackTitle {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trackDuration {
+  color: #808080;
+  font-size: 10px;
+}
