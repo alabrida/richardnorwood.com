@@ -1,0 +1,23 @@
+.xpWorkspace {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 200px); /* Leave room for header and footer */
+  min-height: 600px;
+  max-height: 1000px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-16);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--xp-desktop-bg, #004e98);
+}
+
+.xpWorkspace:fullscreen {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}

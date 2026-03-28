@@ -1,5 +1,5 @@
 .desktop {
-  position: fixed;
+  position: absolute;
   inset: 0;
   bottom: var(--xp-taskbar-height);
   z-index: var(--xp-z-desktop);

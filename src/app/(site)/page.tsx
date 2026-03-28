@@ -14,10 +14,10 @@ export default function HomePage() {
           display: 'flex',
           flexDirection: 'column' as const,
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           textAlign: 'center' as const,
           padding: 'var(--space-8)',
-          paddingTop: 'calc(var(--header-height) + var(--space-12))',
+          paddingTop: 'calc(var(--space-20) + var(--space-20))',
           gap: 'var(--space-6)',
         }}
       >

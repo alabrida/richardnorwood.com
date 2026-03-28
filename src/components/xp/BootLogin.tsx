@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import styles from './BootLogin.module.css';
 
@@ -10,22 +10,6 @@ interface BootLoginProps {
 
 export default function BootLogin({ onEnterDesktop }: BootLoginProps) {
   const [isVisible, setIsVisible] = useState(true);
-  const [cookiesAccepted, setCookiesAccepted] = useState(false);
-
-  const handleEnter = useCallback(() => {
-    // Only allow enter if cookies are accepted, or just proceed anyway?
-    // "need to add a cookie consent banner instead" implies they should accept or acknowledge it.
-    // If they haven't checked it, we can alert them, or we can just make the Enter button disabled until checked.
-    if (!cookiesAccepted) {
-      alert("Please accept the cookie consent to enter the site.");
-      return;
-    }
-    setIsVisible(false);
-    // Slight delay to allow fade out before unmounting
-    setTimeout(() => {
-      onEnterDesktop('guest');
-    }, 500);
-  }, [cookiesAccepted, onEnterDesktop]);
 
   if (!isVisible && false) return null; // Let Framer Motion handle unmount gracefully
 
@@ -61,25 +45,32 @@ export default function BootLogin({ onEnterDesktop }: BootLoginProps) {
 
             <div className={styles.consentBox}>
               <div className={styles.consentRow}>
-                <input
-                  type="checkbox"
-                  id="cookie-consent"
-                  checked={cookiesAccepted}
-                  onChange={(e) => setCookiesAccepted(e.target.checked)}
-                />
-                <label htmlFor="cookie-consent" className={styles.consentLabel}>
-                  I accept the use of cookies for necessary site operations, analytics, and personalized experiences. 
-                  (Revenue Architecture demands perception, so we use trackers to establish our Managed Nervous System).
+                <label className={styles.consentLabel}>
+                  We use cookies for necessary operations and analytics to establish our Managed Nervous System. 
+                  You may opt out, but doing so may limit personalized experiences.
                 </label>
               </div>
 
-              <button 
-                className={styles.enterButton} 
-                onClick={handleEnter}
-                disabled={!cookiesAccepted}
-              >
-                Enter Desktop
-              </button>
+              <div className={styles.buttonContainer}>
+                <button 
+                  className={styles.enterButton} 
+                  onClick={() => {
+                    setIsVisible(false);
+                    setTimeout(() => onEnterDesktop('guest'), 500);
+                  }}
+                >
+                  Accept & Enter
+                </button>
+                <button 
+                  className={`${styles.enterButton} ${styles.declineButton}`}
+                  onClick={() => {
+                    setIsVisible(false);
+                    setTimeout(() => onEnterDesktop('guest'), 500);
+                  }}
+                >
+                  Decline & Enter
+                </button>
+              </div>
             </div>
             
             <div className={styles.copyright}>

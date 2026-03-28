@@ -1,11 +1,11 @@
 .overlay {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: var(--xp-z-start-menu);
 }
 
 .startMenu {
-  position: fixed;
+  position: absolute;
   bottom: var(--xp-taskbar-height);
   left: 0;
   width: 380px;
@@ -64,7 +64,8 @@
 }
 
 .rightColumn {
-  width: 180px;
+  min-width: 180px;
+  width: auto;
   background: var(--xp-start-menu-right);
   padding: 6px 0;
   display: flex;

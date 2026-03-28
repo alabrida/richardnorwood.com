@@ -7,9 +7,10 @@ import styles from './Taskbar.module.css';
 interface TaskbarProps {
   onStartClick: () => void;
   startMenuOpen: boolean;
+  onFullscreenClick?: () => void;
 }
 
-export default function Taskbar({ onStartClick, startMenuOpen }: TaskbarProps) {
+export default function Taskbar({ onStartClick, startMenuOpen, onFullscreenClick }: TaskbarProps) {
   const windows = useWMSStore((s) => s.windows);
   const focusWindow = useWMSStore((s) => s.focusWindow);
   const minimizeWindow = useWMSStore((s) => s.minimizeWindow);
@@ -69,6 +70,11 @@ export default function Taskbar({ onStartClick, startMenuOpen }: TaskbarProps) {
         <button className={styles.quickIcon} title="Show Desktop">
           <img src="/icons/quick-desktop.png" alt="Show Desktop" />
         </button>
+        {onFullscreenClick && (
+          <button className={styles.quickIcon} title="Fullscreen Toggle" onClick={onFullscreenClick}>
+            <span style={{ fontSize: '12px' }}>🔲</span>
+          </button>
+        )}
       </div>
 
       {/* Task Buttons */}
