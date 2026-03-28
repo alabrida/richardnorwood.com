@@ -10,7 +10,7 @@ import StartMenu from '@/components/xp/StartMenu';
 
 type AppPhase = 'boot-login' | 'desktop';
 
-export default function Home() {
+export default function DesktopPage() {
   const [phase, setPhase] = useState<AppPhase>('boot-login');
   const [startMenuOpen, setStartMenuOpen] = useState(false);
   const [userName, setUserName] = useState('Guest');

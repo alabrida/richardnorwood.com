@@ -199,7 +199,7 @@ export default function MyComputer({ onTitleChange }: AppProps) {
                 <thead>
                   <tr style={{ background: '#f0f0f0', borderBottom: '1px solid #ccc' }}>
                     <th style={{ padding: '6px 8px', textAlign: 'left' }}>Date</th>
-                    <th style={{ padding: '6px 8px', textAlign: 'left' }}>URL</th>
+                    <th style={{ padding: '6px 8px', textAlign: 'left' }}>Tier</th>
                     <th style={{ padding: '6px 8px', textAlign: 'right' }}>Score</th>
                   </tr>
                 </thead>
@@ -207,7 +207,7 @@ export default function MyComputer({ onTitleChange }: AppProps) {
                   {dashboardData.history.map((entry, i) => (
                     <tr key={i} style={{ borderBottom: '1px solid #eee' }}>
                       <td style={{ padding: '6px 8px' }}>{entry.date}</td>
-                      <td style={{ padding: '6px 8px' }}>{entry.url}</td>
+                      <td style={{ padding: '6px 8px' }}>{entry.maturity_tier}</td>
                       <td
                         style={{
                           padding: '6px 8px',
