@@ -1,21 +1,45 @@
 'use client';
 
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
 import '@/lib/apps/registerAll';
+import { JsonLd } from '@/components/seo/JsonLd';
 import BootLogin from '@/components/xp/BootLogin';
 import Desktop from '@/components/xp/Desktop';
 import Taskbar from '@/components/xp/Taskbar';
 import StartMenu from '@/components/xp/StartMenu';
+import { useWMSStore } from '@/lib/wms/WindowManager';
 import styles from './DesktopPage.module.css';
 
 type AppPhase = 'boot-login' | 'desktop';
+
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Revenue Architect Platform",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Premium Revenue Journey Assessment Tool and Commercial Engine Management SaaS.",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/OnlineOnly"
+  }
+};
 
 export default function DesktopPage() {
   const [phase, setPhase] = useState<AppPhase>('boot-login');
   const [startMenuOpen, setStartMenuOpen] = useState(false);
   const [userName, setUserName] = useState('Guest');
   const workspaceRef = useRef<HTMLDivElement>(null);
+  
+  const setHeaderVisible = useWMSStore((s) => s.setHeaderVisible);
+
+  useEffect(() => {
+    // Hide header on boot, show it when on desktop
+    setHeaderVisible(phase === 'desktop');
+    // Cleanup when leaving the immersive component entirely
+    return () => setHeaderVisible(true);
+  }, [phase, setHeaderVisible]);
 
   const toggleFullscreen = useCallback(() => {
     if (!document.fullscreenElement) {
@@ -43,6 +67,7 @@ export default function DesktopPage() {
   if (phase === 'boot-login') {
     return (
       <div id="xp-workspace" className={styles.xpWorkspace} ref={workspaceRef}>
+        <JsonLd data={softwareSchema} />
         <BootLogin onEnterDesktop={handleEnterDesktop} />
       </div>
     );

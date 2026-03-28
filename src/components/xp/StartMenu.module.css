@@ -8,7 +8,7 @@
   position: absolute;
   bottom: var(--xp-taskbar-height);
   left: 0;
-  width: 380px;
+  width: 460px;
   background: var(--xp-start-menu-bg);
   border: 2px solid #0054e3;
   border-bottom: none;
@@ -64,7 +64,7 @@
 }
 
 .rightColumn {
-  min-width: 180px;
+  min-width: 250px;
   width: auto;
   background: var(--xp-start-menu-right);
   padding: 6px 0;
@@ -124,9 +124,8 @@
 
 .menuItemLabel {
   flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .menuItemBold {

@@ -3,41 +3,75 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
-const PLATFORM_LINKS = [
+const HEADER_LINKS = [
   { label: 'Services', href: '/services' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Calculator', href: '/calculator' },
-  { label: 'Dashboard', href: '/dashboard' },
-];
-
-const COMPANY_LINKS = [
-  { label: 'About', href: '/#about' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 
+const SYSTEM_LINKS = [
+  { label: 'System Login', href: '/login' },
+  { label: 'Client Dashboard', href: '/dashboard' },
+  { label: 'EKG Calculator', href: '/calculator' },
+  { label: 'The Architect', href: '/#about' },
+];
+
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer id="site-footer" className={styles.footer}>
+      {/* ── Footer Header (Appears as main nav replacement) ── */}
+      <div className={styles.footerHeaderWrapper}>
+        <div className={styles.footerHeader}>
+          <Link href="/" className={styles.brandLogo}>
+            <span className={styles.logoMark}>RN</span>
+            <span className={styles.logoText}>Richard Norwood</span>
+          </Link>
+          
+          <nav className={styles.footerNav} aria-label="Footer main navigation">
+            {HEADER_LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className={styles.footerNavLink}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          <Link href="/calculator" className={styles.footerCta}>
+            Get Your EKG
+          </Link>
+        </div>
+      </div>
+
       <div className={styles.footerInner}>
         <div className={styles.footerTop}>
           {/* ── Brand Column ── */}
           <div className={styles.brand}>
-            <Link href="/" className={styles.brandLogo}>
-              <span className={styles.logoMark}>RN</span>
-              <span className={styles.logoText}>Richard Norwood</span>
-            </Link>
-            <p className={styles.tagline}>
-              Revenue Architecture for the Modern Builder. Identify leaks.
-              Orchestrate your engine. Build what converts.
-            </p>
-
-            <div className={styles.pmpBadge}>
-              <span className={styles.pmpDot} aria-hidden="true" />
-              PMP Certified
+            
+            {/* ── Newsletter Embedded in Brand ── */}
+            <div className={`${styles.newsletter} ${styles.newsletterEmbedded}`}>
+              <span className={styles.newsletterLabel}>Stay Updated</span>
+              <p className={`${styles.tagline} ${styles.taglineEmbedded}`}>
+                Weekly insights on revenue architecture and commercial strategy.
+              </p>
+              <form className={styles.newsletterForm} onSubmit={(e) => e.preventDefault()}>
+                <input
+                  type="email"
+                  placeholder="you@company.com"
+                  className={styles.newsletterInput}
+                  aria-label="Email for newsletter"
+                  required
+                />
+                <button type="submit" className={styles.newsletterButton}>
+                  Subscribe
+                </button>
+              </form>
             </div>
 
             <div className={styles.socials}>
+              <div className={`${styles.pmpBadge} ${styles.pmpBadgeEmbedded}`}>
+                <span className={styles.pmpDot} aria-hidden="true" />
+                PMP Certified
+              </div>
               <a
                 href="https://linkedin.com/in/richardnorwood"
                 target="_blank"
@@ -63,45 +97,38 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── Platform Column ── */}
+          {/* ── Video Column ── */}
+          <div className={styles.videoColumn}>
+            <div className={styles.videoWrapper}>
+              <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" 
+                title="Revenue Architect Intro" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                className={styles.videoFrame}
+              ></iframe>
+            </div>
+          </div>
+
+          {/* ── System Access Column ── */}
           <div className={styles.navColumn}>
-            <span className={styles.navColumnTitle}>Platform</span>
-            {PLATFORM_LINKS.map((link) => (
+            <span className={styles.navColumnTitle}>System Access</span>
+            {SYSTEM_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className={styles.navColumnLink}>
                 {link.label}
               </Link>
             ))}
+
+            <div className={styles.seoHeadingContainer}>
+              <h2 className={styles.seoHeading}>
+                Revenue Architecture &<br />
+                Commercial Strategy
+              </h2>
+            </div>
           </div>
 
-          {/* ── Company Column ── */}
-          <div className={styles.navColumn}>
-            <span className={styles.navColumnTitle}>Company</span>
-            {COMPANY_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className={styles.navColumnLink}>
-                {link.label}
-              </Link>
-            ))}
-          </div>
 
-          {/* ── Newsletter Column ── */}
-          <div className={styles.newsletter}>
-            <span className={styles.newsletterLabel}>Stay Updated</span>
-            <p className={styles.tagline}>
-              Weekly insights on revenue architecture and commercial strategy.
-            </p>
-            <form className={styles.newsletterForm} onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="you@company.com"
-                className={styles.newsletterInput}
-                aria-label="Email for newsletter"
-                required
-              />
-              <button type="submit" className={styles.newsletterButton}>
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
 
         {/* ── Bottom Bar ── */}

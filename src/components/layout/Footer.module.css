@@ -5,7 +5,6 @@
 
 .footer {
   position: relative;
-  padding: var(--space-16) 0 0;
   background: var(--color-primary);
   border-top: 1px solid var(--color-border);
 }
@@ -13,33 +12,108 @@
 .footerInner {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 var(--space-4);
+  padding: var(--space-12) var(--space-4) 0;
 }
 
 @media (min-width: 768px) {
   .footerInner {
-    padding: 0 var(--space-6);
+    padding: var(--space-16) var(--space-6) 0;
   }
 }
 
 @media (min-width: 1024px) {
   .footerInner {
-    padding: 0 var(--space-8);
+    padding: var(--space-20) var(--space-8) 0;
   }
+}
+
+/* ── Footer Header (Landing Page Top) ── */
+.footerHeaderWrapper {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.footerHeader {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-6) var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .footerHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerHeader {
+    padding: var(--space-4) var(--space-8);
+  }
+}
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .footerNav {
+    gap: var(--space-8);
+  }
+}
+
+.footerNavLink {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.footerNavLink:hover {
+  color: var(--color-text);
+}
+
+.footerCta {
+  padding: 10px 24px;
+  background: var(--color-secondary);
+  color: var(--color-text-inverse);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: transform var(--duration-fast) var(--ease-out), background var(--duration-fast) var(--ease-out);
+  box-shadow: 0 4px 12px rgba(224, 169, 58, 0.25);
+}
+
+.footerCta:hover {
+  transform: translateY(-2px);
+  background: var(--color-secondary-dark);
 }
 
 /* ── Top Section: Logo + Columns ── */
 .footerTop {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-10);
   padding-bottom: var(--space-12);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footerTop {
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: var(--space-8);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-12);
   }
 }
 
@@ -94,6 +168,35 @@
   gap: var(--space-3);
 }
 
+/* ── Embedded Video Styles ── */
+.videoColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px; /* Reduced from 480px dynamically */
+  margin: 0 auto;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.videoFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .socialLink {
   display: flex;
   align-items: center;
@@ -143,6 +246,23 @@
   color: var(--color-text);
 }
 
+.seoHeadingContainer {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.seoHeading {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-relaxed);
+  opacity: 0.8;
+}
+
 /* ── Newsletter ── */
 .newsletter {
   display: flex;
@@ -159,9 +279,20 @@
   letter-spacing: var(--tracking-wider);
 }
 
+.newsletterEmbedded {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.taglineEmbedded {
+  margin-top: 0;
+  font-size: var(--text-sm);
+}
+
 .newsletterForm {
   display: flex;
   gap: var(--space-2);
+  max-width: 400px;
 }
 
 .newsletterInput {
@@ -219,6 +350,14 @@
   color: var(--color-accent);
   font-weight: var(--font-weight-medium);
   width: fit-content;
+}
+
+.pmpBadgeEmbedded {
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  border: none;
+  background: transparent;
 }
 
 .pmpDot {

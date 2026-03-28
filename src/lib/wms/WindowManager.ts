@@ -10,7 +10,9 @@ import type { WindowState, AppConfig } from './types';
 interface WMSStore {
   windows: WindowState[];
   nextZIndex: number;
+  headerVisible: boolean;
 
+  setHeaderVisible: (visible: boolean) => void;
   openWindow: (app: AppConfig, initialProps?: Partial<Pick<WindowState, 'position' | 'size'>>) => string;
   closeWindow: (id: string) => void;
   minimizeWindow: (id: string) => void;
@@ -38,6 +40,9 @@ function getCascadePosition(index: number): { x: number; y: number } {
 export const useWMSStore = create<WMSStore>((set, get) => ({
   windows: [],
   nextZIndex: 100,
+  headerVisible: false,
+
+  setHeaderVisible: (visible) => set({ headerVisible: visible }),
 
   openWindow: (app, initialProps) => {
     const { windows, nextZIndex } = get();

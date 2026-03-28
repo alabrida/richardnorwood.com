@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'motion/react';
+import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react';
+import { useWMSStore } from '@/lib/wms/WindowManager';
 import styles from './Header.module.css';
 
 const NAV_ITEMS = [
@@ -13,8 +15,25 @@ const NAV_ITEMS = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
+  const headerVisible = useWMSStore((s) => s.headerVisible);
+
+  // We only want the floating capsule interaction during the XP clone
+  const isDesktop = pathname === '/desktop';
+
+  const { scrollYProgress } = useScroll();
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    // Only auto-hide the header if it's the floating one (XP clone interaction)
+    if (isDesktop) {
+      setHideHeader(latest > 0.75);
+    } else {
+      setHideHeader(false); // Never hide the traditional header based on scroll progress
+    }
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +43,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Lock body scroll when drawer is open
   useEffect(() => {
     if (drawerOpen) {
       document.body.style.overflow = 'hidden';
@@ -44,12 +62,25 @@ export default function Header() {
     setDrawerOpen(false);
   }, []);
 
+  // Hide the global header on the immersive XP Clone boot screen
+  if (isDesktop && !headerVisible) return null;
+
+  // Determine the interactive context
+  const headerClass = isDesktop 
+      ? `${styles.header} ${scrolled ? styles.scrolled : ''}` 
+      : `${styles.traditionalHeader} ${scrolled ? styles.scrolled : ''}`;
+
+  const initialAnimation = isDesktop ? { y: -80, opacity: 0 } : { y: 0, opacity: 1 };
+  const animateAnimation = isDesktop 
+      ? { y: hideHeader ? -120 : 0, opacity: hideHeader ? 0 : 1 } 
+      : { y: 0, opacity: 1 };
+
   return (
     <>
       <motion.header
-        className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}
-        initial={{ y: -80, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        className={headerClass}
+        initial={initialAnimation}
+        animate={animateAnimation}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
         {/* ── Logo ── */}
@@ -71,12 +102,9 @@ export default function Header() {
 
         {/* ── Actions ── */}
         <div className={styles.actions}>
-          <Link href="/login" className={styles.loginLink}>
-            Login
-          </Link>
-          <Link href="/calculator" className={styles.ctaButton}>
+          <Link href={isDesktop ? "/calculator" : "/desktop"} className={styles.ctaButton}>
             <span className={styles.ctaPulse} aria-hidden="true" />
-            Get Your EKG
+            {isDesktop ? "Run Diagnostic" : "Experience the Engine"}
           </Link>
 
           {/* Mobile hamburger */}
@@ -84,7 +112,7 @@ export default function Header() {
             className={styles.menuButton}
             onClick={toggleDrawer}
             aria-label={drawerOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={drawerOpen}
+            aria-expanded={drawerOpen ? 'true' : 'false'}
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
               <motion.path
@@ -119,16 +147,15 @@ export default function Header() {
       {/* ── Mobile Drawer ── */}
       <AnimatePresence>
         {drawerOpen && (
-          <>
-            <motion.div
-              className={styles.drawerOverlay}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25 }}
-              onClick={closeDrawer}
-              aria-hidden="true"
-            />
+          <motion.div
+            className={styles.drawerOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={closeDrawer}
+            aria-hidden="true"
+          >
             <motion.div
               className={styles.drawer}
               initial={{ x: '100%' }}
@@ -138,61 +165,48 @@ export default function Header() {
               role="dialog"
               aria-modal="true"
               aria-label="Mobile navigation menu"
+              onClick={(e) => e.stopPropagation()} // Prevent clicking inside drawer from closing it
             >
               <div className={styles.drawerHeader}>
                 <span className={styles.drawerTitle}>Menu</span>
                 <button
-                  className={styles.closeButton}
+                  className={styles.closeDrawerButton}
                   onClick={closeDrawer}
                   aria-label="Close menu"
                 >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                    <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M18 6L6 18M6 6L18 18"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
                   </svg>
                 </button>
               </div>
 
-              <nav className={styles.drawerNav} aria-label="Mobile navigation">
-                {NAV_ITEMS.map((item, i) => (
+              <div className={styles.drawerBody}>
+                {NAV_ITEMS.map((item, index) => (
                   <motion.div
                     key={item.href}
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.1 + i * 0.05, duration: 0.3 }}
+                    transition={{ delay: 0.1 + index * 0.05 }}
                   >
-                    <Link
-                      href={item.href}
-                      className={styles.drawerLink}
-                      onClick={closeDrawer}
-                    >
+                    <Link href={item.href} onClick={closeDrawer} className={styles.drawerLink}>
                       {item.label}
                     </Link>
                   </motion.div>
                 ))}
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 + NAV_ITEMS.length * 0.05, duration: 0.3 }}
-                >
-                  <Link
-                    href="/login"
-                    className={styles.drawerLink}
-                    onClick={closeDrawer}
-                  >
-                    Login
-                  </Link>
-                </motion.div>
-              </nav>
+              </div>
 
-              <Link
-                href="/calculator"
-                className={styles.drawerCta}
-                onClick={closeDrawer}
-              >
-                Get Your EKG
-              </Link>
+              <div className={styles.drawerFooter}>
+                <Link href={isDesktop ? "/calculator" : "/desktop"} onClick={closeDrawer} className={styles.drawerCta}>
+                  {isDesktop ? "Run Diagnostic" : "Experience the Engine"}
+                </Link>
+              </div>
             </motion.div>
-          </>
+          </motion.div>
         )}
       </AnimatePresence>
     </>

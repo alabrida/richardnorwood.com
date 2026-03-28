@@ -1,0 +1,87 @@
+.bannerContainer {
+  position: fixed;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%) !important;
+  width: calc(100% - var(--space-8));
+  max-width: 900px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2xl);
+  z-index: 9999;
+}
+
+.bannerInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .bannerInner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.textContent {
+  flex: 1;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.disclaimer {
+  font-size: var(--text-sm);
+  color: var(--color-text-subtle);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.acceptButton,
+.declineButton {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.acceptButton {
+  background: var(--color-secondary);
+  color: var(--color-surface);
+  border: 1px solid var(--color-secondary);
+}
+
+.acceptButton:hover {
+  background: var(--color-secondary-light);
+  transform: translateY(-1px);
+}
+
+.declineButton {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.declineButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--color-text-muted);
+}

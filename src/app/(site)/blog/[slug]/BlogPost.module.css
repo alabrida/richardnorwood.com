@@ -1,0 +1,19 @@
+.article h2 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-size: var(--text-2xl);
+  margin: var(--space-12) 0 var(--space-4);
+}
+.article p {
+  margin-bottom: var(--space-6);
+}
+.article ul, .article ol {
+  margin-left: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+.article li {
+  margin-bottom: var(--space-2);
+}
+.article strong {
+  color: var(--color-text);
+}

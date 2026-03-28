@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,6 +24,67 @@ export const metadata: Metadata = {
   },
 };
 
+const globalSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://richardnorwood.com/#person",
+      "name": "Richard Norwood",
+      "jobTitle": "Revenue Architect",
+      "description": "Certified PMP and Revenue Architect specializing in Commercial Strategy, Data Analytics, and Managed Nervous Systems.",
+      "url": "https://richardnorwood.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/richardnorwoodpmp/",
+        "https://github.com/richwood911",
+        "https://x.com/richnorwoodpmp",
+        "https://www.youtube.com/@richardnorwoodpmp",
+        "https://www.instagram.com/richardnorwoodpmp/",
+        "https://www.facebook.com/profile.php?id=61574711377210",
+        "https://www.tiktok.com/@richardnorwoodpmp",
+        "https://share.google/njwSUidXoDAXya4ui"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "PMP Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Project Management Institute"
+          },
+          "url": "https://www.credly.com/badges/08947dff-1909-4bc0-97c5-3228020092f8/public_url"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Data Analytics Certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Google"
+          },
+          "url": "https://coursera.org/share/380889997f4b4bcf04d4a250d5ce7df9"
+        }
+      ],
+      "knowsAbout": [
+        "Revenue Architecture",
+        "Commercial Strategy",
+        "Go-To-Market Strategy",
+        "Managed Nervous Systems",
+        "Data Analytics",
+        "Systems Thinking"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://richardnorwood.com/#website",
+      "url": "https://richardnorwood.com/",
+      "name": "Richard Norwood - Revenue Architect",
+      "publisher": {
+        "@id": "https://richardnorwood.com/#person"
+      }
+    }
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,6 +92,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+      <head>
+        <JsonLd data={globalSchema} />
+      </head>
       <body>{children}</body>
     </html>
   );
