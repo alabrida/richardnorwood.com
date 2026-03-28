@@ -1,75 +1,62 @@
 {
   "tiers": [
     {
-      "id": "free",
-      "name": "Snapshot",
-      "tagline": "See the problem",
-      "price": 0,
-      "period": "free forever",
+      "id": "phase-1",
+      "name": "Phase I: Diagnostic EKG",
+      "tagline": "Foundations",
+      "price": 2500,
+      "period": "per month (90 days)",
       "features": [
-        "Revenue Journey Assessment",
-        "Top 5 Revenue Leaks Report",
-        "Stage Score Breakdown"
+        "2 Optimized Social Profiles",
+        "Branded Microsite (Carrd)",
+        "Full HTML Website",
+        "Custom CRM (Airtable/Supabase)",
+        "Signature, Business Card, Lead Magnet",
+        "Reclaim 15 hours/week of admin waste"
       ],
       "locked_features": [
-        "Full Dashboard Access",
-        "Assessment History",
-        "AI Strategy Chat",
-        "Landing Page Generator"
+        "Phase II: Engine Orchestration",
+        "Phase III: Unified Engine"
       ],
-      "cta_text": "Start Free",
+      "cta_text": "Schedule Discovery",
       "highlighted": false
     },
     {
-      "id": "standard",
-      "name": "Membership",
-      "tagline": "Understand the pattern",
-      "price": 49,
-      "period": "per month",
+      "id": "phase-2",
+      "name": "Phase II: Engine Orchestration",
+      "tagline": "Harmony (Recommended)",
+      "price": 4500,
+      "period": "per month (6 months)",
       "features": [
-        "Everything in Snapshot",
-        "Full Dashboard Access",
-        "Assessment History & Trends",
-        "Monthly Revenue Insights Email"
+        "Everything in Phase I",
+        "3 Additional Socials (Total 5)",
+        "4 Siloed Landing Pages for Ads",
+        "90-Day Content Calendar & Templates",
+        "Lead Nurture & Reputation Management",
+        "Real-time Buyer Behavior Perception"
       ],
       "locked_features": [
-        "AI Strategy Chat",
-        "Landing Page Generator"
+        "Phase III: Unified Engine"
       ],
-      "cta_text": "Get Started",
+      "cta_text": "Apply for Partnership",
       "highlighted": true
     },
     {
-      "id": "pro",
-      "name": "Agency",
-      "tagline": "Fix the leaks",
-      "price": 149,
-      "period": "per month",
+      "id": "phase-3",
+      "name": "Phase III: Unified Engine",
+      "tagline": "Sovereignty Proof",
+      "price": 8000,
+      "period": "per month (12 months)",
       "features": [
-        "Everything in Membership",
-        "AI Strategy Chat (unlimited)",
-        "Landing Page Generator",
-        "Priority Support"
+        "Everything in Phase II",
+        "Migration to Managed Cloud Hosting",
+        "Replace Six-Figure SaaS Dependencies",
+        "Custom Architecture for CPQ/Billing",
+        "The Alabrida Bridge Handoff",
+        "Full Cloud Sovereignty Prep"
       ],
       "locked_features": [],
-      "cta_text": "Go Pro",
-      "highlighted": false
-    },
-    {
-      "id": "battleship",
-      "name": "Battleship",
-      "tagline": "Build the machine",
-      "price": null,
-      "period": "custom pricing",
-      "features": [
-        "Everything in Agency",
-        "1:1 Revenue Architecture Sessions",
-        "Custom System Integrations",
-        "90-Day Partnership Access",
-        "Credit-Based Unlock System"
-      ],
-      "locked_features": [],
-      "cta_text": "Contact Sales",
+      "cta_text": "Request Review",
       "highlighted": false
     }
   ]

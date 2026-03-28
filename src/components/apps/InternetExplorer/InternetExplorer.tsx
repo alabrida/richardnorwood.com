@@ -1,35 +1,89 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import type { AppProps, AppConfig } from '@/lib/wms/types';
 import MenuBar from '@/components/apps/shared/MenuBar';
 import type { MenuGroup } from '@/components/apps/shared/MenuBar';
-import blogData from '@/../content/blog-stub.json';
+import type { NormalizedPost } from '@/lib/wordpress/types';
 import styles from './InternetExplorer.module.css';
 
 type View = 'list' | 'article';
 
 export default function InternetExplorer({ onTitleChange }: AppProps) {
   const [view, setView] = useState<View>('list');
-  const [selectedPost, setSelectedPost] = useState<(typeof blogData)[0] | null>(null);
+  const [posts, setPosts] = useState<NormalizedPost[]>([]);
+  const [selectedPost, setSelectedPost] = useState<NormalizedPost | null>(null);
   const [url, setUrl] = useState('http://blog.richardnorwood.com/');
+  const [isLoading, setIsLoading] = useState(true);
+  const hasFetched = useRef(false);
 
-  const openPost = useCallback(
-    (post: (typeof blogData)[0]) => {
-      setSelectedPost(post);
-      setView('article');
-      setUrl(`http://blog.richardnorwood.com/${post.slug}`);
-      onTitleChange?.(`${post.title} - Internet Explorer`);
-    },
-    [onTitleChange]
-  );
+  // Stable ref for onTitleChange to avoid infinite loops
+  const titleRef = useRef(onTitleChange);
+  useEffect(() => { titleRef.current = onTitleChange; }, [onTitleChange]);
+
+  // Fetch posts from the API route on mount (once only)
+  useEffect(() => {
+    if (hasFetched.current) return;
+    hasFetched.current = true;
+
+    async function load() {
+      try {
+        const res = await fetch('/api/blog');
+        const data: NormalizedPost[] = await res.json();
+        setPosts(data);
+      } catch {
+        // If the API route itself fails, we'll show an empty list
+        setPosts([]);
+      }
+      setIsLoading(false);
+    }
+    load();
+  }, []);
 
   const goHome = useCallback(() => {
     setView('list');
     setSelectedPost(null);
     setUrl('http://blog.richardnorwood.com/');
-    onTitleChange?.('Revenue Architect Blog - Internet Explorer');
-  }, [onTitleChange]);
+    setIsLoading(false);
+    titleRef.current?.('Revenue Architect Blog - Internet Explorer');
+  }, []);
+
+  const openPost = useCallback((post: NormalizedPost) => {
+    setSelectedPost(post);
+    setView('article');
+    setUrl(`http://blog.richardnorwood.com/${post.slug}`);
+    titleRef.current?.(`${post.title} - Internet Explorer`);
+  }, []);
+
+  const navigateAddress = useCallback(async () => {
+    const cleanUrl = url.replace(/https?:\/\//, '').replace(/\/$/, '');
+
+    if (cleanUrl === 'blog.richardnorwood.com' || cleanUrl === 'www.richardnorwood.com') {
+      goHome();
+      return;
+    }
+
+    const slugMatch = url.match(/blog\.richardnorwood\.com\/([^/]+)/);
+    if (slugMatch && slugMatch[1]) {
+      setIsLoading(true);
+      try {
+        const res = await fetch(`/api/blog?slug=${encodeURIComponent(slugMatch[1])}`);
+        const post: NormalizedPost | null = await res.json();
+        if (post) {
+          setSelectedPost(post);
+          setView('article');
+          titleRef.current?.(`${post.title} - Internet Explorer`);
+        } else {
+          goHome();
+        }
+      } catch {
+        goHome();
+      }
+      setIsLoading(false);
+    } else {
+      goHome();
+    }
+  }, [url, goHome]);
 
   const menus: MenuGroup[] = [
     {
@@ -89,7 +143,7 @@ export default function InternetExplorer({ onTitleChange }: AppProps) {
         <button className={styles.toolBtn} onClick={goHome} title="Back">◀</button>
         <button className={styles.toolBtn} disabled title="Forward">▶</button>
         <button className={styles.toolBtn} disabled title="Stop">✕</button>
-        <button className={styles.toolBtn} onClick={goHome} title="Refresh">↻</button>
+        <button className={styles.toolBtn} onClick={navigateAddress} title="Refresh">↻</button>
         <div className={styles.toolSep} />
         <button className={styles.toolBtn} onClick={goHome} title="Home">🏠</button>
       </div>
@@ -103,64 +157,79 @@ export default function InternetExplorer({ onTitleChange }: AppProps) {
           onChange={(e) => setUrl(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === 'Enter') {
-              goHome();
+              navigateAddress();
             }
           }}
         />
-        <button className={styles.goBtn} onClick={goHome}>Go</button>
+        <button className={styles.goBtn} onClick={navigateAddress}>Go</button>
       </div>
 
       {/* Content */}
       <div className={styles.content}>
-        {view === 'list' && (
+        {isLoading ? (
+          <div className={styles.loadingState}>
+            <div className={styles.loadingIcon}>⏳</div>
+            <div>Connecting to site...</div>
+          </div>
+        ) : (
           <>
-            <h1 style={{ fontSize: '20px', color: '#003399', marginBottom: '8px' }}>
-              Revenue Architect Blog
-            </h1>
-            <ul className={styles.blogList}>
-              {blogData.map((post) => (
-                <li key={post.id} className={styles.blogItem}>
-                  <div
-                    className={styles.blogTitle}
-                    onClick={() => openPost(post)}
-                    role="link"
-                    tabIndex={0}
-                    onKeyDown={(e) => e.key === 'Enter' && openPost(post)}
-                  >
-                    {post.title}
-                  </div>
-                  <div className={styles.blogMeta}>
-                    By {post.author} • {new Date(post.date).toLocaleDateString()} • {post.category}
-                  </div>
-                  <div className={styles.blogExcerpt}>{post.excerpt}</div>
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
+            {view === 'list' && (
+              <>
+                <h1 className={styles.pageTitle}>
+                  Revenue Architect Blog
+                </h1>
+                <ul className={styles.blogList}>
+                  {posts.map((post) => (
+                    <li key={post.id} className={styles.blogItem}>
+                      <div
+                        className={styles.blogTitle}
+                        onClick={() => openPost(post)}
+                        role="link"
+                        tabIndex={0}
+                        onKeyDown={(e) => e.key === 'Enter' && openPost(post)}
+                      >
+                        {post.title}
+                      </div>
+                      <div className={styles.blogMeta}>
+                        By {post.author} • {new Date(post.date).toLocaleDateString()} • {post.category}
+                      </div>
+                      <div className={styles.blogExcerpt}>{post.excerpt}</div>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
 
-        {view === 'article' && selectedPost && (
-          <>
-            <span className={styles.backLink} onClick={goHome} role="link" tabIndex={0}>
-              ← Back to Blog
-            </span>
-            <h1 style={{ fontSize: '20px', color: '#003399', marginBottom: '4px' }}>
-              {selectedPost.title}
-            </h1>
-            <div className={styles.blogMeta}>
-              By {selectedPost.author} • {new Date(selectedPost.date).toLocaleDateString()} • {selectedPost.category}
-            </div>
-            <div
-              className={styles.articleBody}
-              dangerouslySetInnerHTML={{ __html: selectedPost.body }}
-            />
+            {view === 'article' && selectedPost && (
+              <>
+                <span
+                  className={styles.backLink}
+                  onClick={goHome}
+                  role="link"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === 'Enter' && goHome()}
+                >
+                  ← Back to Blog
+                </span>
+                <h1 className={styles.pageTitle}>
+                  {selectedPost.title}
+                </h1>
+                <div className={styles.blogMeta}>
+                  By {selectedPost.author} • {new Date(selectedPost.date).toLocaleDateString()} • {selectedPost.category}
+                </div>
+                <div
+                  className={styles.articleBody}
+                  dangerouslySetInnerHTML={{ __html: selectedPost.body }}
+                />
+              </>
+            )}
           </>
         )}
       </div>
 
       {/* Status Bar */}
       <div className={styles.statusBar}>
-        <span>Done</span>
+        <span>{isLoading ? 'Opening page http://blog.richardnorwood.com/...' : 'Done'}</span>
       </div>
     </div>
   );

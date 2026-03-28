@@ -1,14 +1,19 @@
 {
-  "name": "Richard Norwood",
-  "title": "Revenue Architect",
-  "credentials": ["PMP Certified", "Revenue Architect", "Growth Strategist"],
-  "bio": "I've spent 15+ years in the trenches of revenue optimization — from Fortune 500 consulting to building my own businesses from zero. I don't teach theory. I build systems that print money.\n\nMy approach is simple: find where revenue leaks out, plug the holes, and build systems that scale. The Revenue Journey Assessment Tool (RJAT) is the distillation of everything I've learned into a 5-stage diagnostic framework.\n\nEvery business has a Revenue Journey. Most don't know where they are on it. That's where I come in.",
-  "contact": {
-    "email": "richard@richardnorwood.com",
-    "calendly": "https://calendly.com/richardnorwood"
-  },
-  "social": {
-    "linkedin": "https://linkedin.com/in/richardnorwood",
-    "twitter": "https://twitter.com/richardnorwood"
-  }
+  "name": "Richard Norwood, PMP",
+  "title": "Revenue Journey Guide & Navigator",
+  "bio": "Certified Project Management Professional and Revenue Architect dedicated to guiding agencies through the transition from fragmented, 'hero-led' operations to orchestrated growth. By merging the rigor of the PMBOK with the Revenue Journey Framework, Richard proves that Architecture works by implementing the initial 'connective tissue' that stops revenue leaks.",
+  "mission": "Bridging the Maturity Gap for Solopreneurs & Startups.",
+  "credentials": [
+    "PMP Certified (Project Management Institute)",
+    "B.S. in Marketing (Jacksonville State University)",
+    "Google Data Analytics Certified",
+    "Candidate: Google Professional Solution Architect"
+  ],
+  "expertise": [
+    "Commercial EKG Diagnostics",
+    "Managed Nervous System (MNS) Orchestration",
+    "PMBOK Implementation & Governance",
+    "Eliminating the Manual Entry Tax"
+  ],
+  "image": "/images/richard-norwood.jpg"
 }

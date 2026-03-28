@@ -1,88 +1,85 @@
 {
   "hero": {
-    "title": "The 90-Day Revenue Partnership",
-    "subtitle": "We don't coach. We architect. In 90 days, your revenue systems will run while you sleep."
+    "title": "Bridging the Maturity Gap",
+    "subtitle": "We don’t build websites; we build proprietary machines that sit on your balance sheet. Identify your leaks and orchestrate your engine."
   },
   "tiers": [
     {
-      "id": "tier-1",
-      "name": "Done-For-You",
-      "subtitle": "We build it. You own it.",
-      "description": "Full revenue system architecture built by our team. You focus on running your business while we engineer your growth machine.",
+      "id": "phase-1",
+      "name": "Phase I: The Diagnostic EKG",
+      "subtitle": "Foundations & Perception",
+      "description": "Establish your perimeter, set up your digital gateway, and reclaim 15 hours a week in manual admin waste.",
       "includes": [
-        "Complete Revenue Journey Mapping",
-        "Custom CRM & Pipeline Setup",
-        "Automated Follow-Up Systems",
-        "Weekly Strategy Sessions",
-        "Full System Documentation"
+        "Target: Emerging Cohesion (Maturity 41-60)",
+        "2 Optimized Social Profiles",
+        "Branded Microsite & Full HTML Site",
+        "Custom CRM Setup (Airtable/Supabase)"
       ]
     },
     {
-      "id": "tier-2",
-      "name": "Done-With-You",
-      "subtitle": "We guide. You build.",
-      "description": "Hands-on partnership where we architect the blueprint and guide your team through implementation. You build the muscle memory.",
+      "id": "phase-2",
+      "name": "Phase II: Engine Orchestration",
+      "subtitle": "Harmony & Execution",
+      "description": "Stop marketing decorating. Start revenue engineering. A balanced 60% brand building and 40% sales activation approach.",
       "includes": [
-        "Revenue Journey Assessment",
-        "Weekly Group Classes",
-        "Implementation Roadmap",
-        "Template Library Access",
-        "Community Support"
+        "Target: Orchestrated Cohesion (Maturity 61-80)",
+        "4 Siloed Microsite Ad Landing Pages",
+        "90-Day Content Calendar + Templates",
+        "Lead Nurture & Reputation Automation"
       ]
     },
     {
-      "id": "tier-3",
-      "name": "Do-It-Yourself",
-      "subtitle": "The blueprint. Your pace.",
-      "description": "Complete access to our curriculum, templates, and tools. Self-paced with community support.",
+      "id": "phase-3",
+      "name": "Phase III: Unified Engine",
+      "subtitle": "Sovereignty & The Alabrida Bridge",
+      "description": "Replace six-figure legacy SaaS dependencies with your own sovereign infrastructure. Full preparation for Alabrida handoff.",
       "includes": [
-        "Revenue Journey Self-Assessment",
-        "12-Week Video Curriculum",
-        "Template & Swipe File Library",
-        "Community Forum Access"
+        "Target: Unified State (Maturity 81-100)",
+        "Managed Cloud Hosting Transfer",
+        "Custom Infrastructure for Billing/CPQ",
+        "Complete Tool Consolidation"
       ]
     }
   ],
   "timeline": {
-    "title": "The 90-Day Roadmap",
+    "title": "The Path to Orchestration",
     "phases": [
       {
-        "name": "Ramp Phase",
-        "days": "Days 1-30",
-        "description": "Discovery, mapping, and foundation building.",
+        "name": "The Self-Assessment",
+        "days": "Step 1",
+        "description": "The Commercial EKG.",
         "milestones": [
-          "Complete Revenue Journey Assessment",
-          "Identify Top Revenue Leaks",
-          "Build System Architecture Blueprint",
-          "Set Up Core Tools & Integrations"
+          "Execute the 250+ point Revenue Journey Rubric",
+          "Identify Missing Indicators",
+          "Pinpoint your Maturity Tier",
+          "Understand the 'Manual Entry Tax'"
         ]
       },
       {
-        "name": "Sprint Phase",
-        "days": "Days 31-90",
-        "description": "System implementation and optimization.",
+        "name": "MNS Onboarding",
+        "days": "Step 2",
+        "description": "Establishing the Managed Nervous System.",
         "milestones": [
-          "Build & Launch Revenue Systems",
-          "Automate Follow-Up Workflows",
-          "Train Team on New Processes",
-          "Measure & Optimize Results",
-          "Handoff & Documentation"
+          "Orchestrate current tools into a single truth source",
+          "Apply PMBOK Governance standards",
+          "Deliver projects on-time and in-scope",
+          "Transition out of 'Frankenstein Stacks'"
         ]
       }
     ]
   },
   "curriculum": [
-    { "week": 1, "topic": "Revenue Journey Mapping", "description": "Diagnose your current stage and identify your top 3 leaks." },
-    { "week": 2, "topic": "Awareness Systems", "description": "Build visibility engines that put you in front of the right people." },
-    { "week": 3, "topic": "Acquisition Funnels", "description": "Design frictionless pathways from stranger to buyer." },
-    { "week": 4, "topic": "Activation Sequences", "description": "Turn first-time buyers into repeat customers." },
-    { "week": 5, "topic": "Revenue Optimization", "description": "Maximize what comes in — pricing, upsells, cross-sells." },
-    { "week": 6, "topic": "Retention & Referral", "description": "Build loyalty loops that compound over time." },
-    { "week": 7, "topic": "Automation & Integration", "description": "Remove yourself from the bottleneck positions." },
-    { "week": 8, "topic": "Measurement & KPIs", "description": "What gets measured gets managed — build your dashboard." },
-    { "week": 9, "topic": "Team Enablement", "description": "Train your team to run the systems without you." },
-    { "week": 10, "topic": "Scale & Delegate", "description": "Identify what to keep, what to delegate, what to automate." },
-    { "week": 11, "topic": "Stress Testing", "description": "Pressure-test your systems before going full speed." },
-    { "week": 12, "topic": "Launch & Optimize", "description": "Go live, measure results, and iterate." }
+    { "week": 1, "topic": "The Commercial EKG", "description": "Running the 250+ point diagnostic to find electrical failure in your revenue." },
+    { "week": 2, "topic": "The Perimeter", "description": "Securing your 2-5 social profiles for optimal Signal Capture." },
+    { "week": 3, "topic": "Gateway Defenses", "description": "Deploying the Friction-free Carrd microsite." },
+    { "week": 4, "topic": "The Authority Engine", "description": "Building the core HTML website meant for deep deliberation." },
+    { "week": 5, "topic": "The Managed Nervous System", "description": "Implementing your Custom CRM and ending manual entry bias." },
+    { "week": 6, "topic": "Entry Points", "description": "Digitizing offline networking with signatures and lead magnets." },
+    { "week": 7, "topic": "Information Fusion (IF)", "description": "Installing Clarity and Google Tags for real-time buyer perception." },
+    { "week": 8, "topic": "Siloed Landing Pages", "description": "Building the 4 ad-specific endpoints to close intent." },
+    { "week": 9, "topic": "The 90-Day Cadence", "description": "Executing the operational content calendar and templates." },
+    { "week": 10, "topic": "Reputation Automation", "description": "Deploying lead nurture and review management sequences." },
+    { "week": 11, "topic": "The Frankenstein Index", "description": "Calculating the hidden cost of your overlapping SaaS tools." },
+    { "week": 12, "topic": "The Alabrida Bridge", "description": "Preparing the jump to self-hosted sovereign infrastructure." }
   ]
 }

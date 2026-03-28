@@ -1,0 +1,21 @@
+﻿
+D:\richardnorwood.com\src\components\apps\ControlPanel\ControlPanel.tsx
+  23:38  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\apps\HelpCenter\HelpCenter.tsx
+  8:36  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\apps\MediaPlayer\MediaPlayer.tsx
+  15:37  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\apps\Minesweeper\Minesweeper.tsx
+  62:37  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\apps\Notepad\Notepad.tsx
+  21:35  warning  'onTitleChange' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\apps\ProductActivation\ProductActivation.tsx
+  10:43  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 6 problems (0 errors, 6 warnings)
+

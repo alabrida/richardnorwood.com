@@ -1,77 +1,49 @@
 {
   "hero": {
-    "headline": "Stop Losing Revenue You've Already Earned",
-    "subhead": "The Revenue Architect identifies the hidden leaks in your business and builds systems to fix them — turning chaos into predictable growth.",
-    "cta_text": "Start Your Journey",
+    "headline": "Did you see that? I think your revenue engine just misfired.",
+    "subhead": "We don’t build websites; we build proprietary machines that sit on your balance sheet. Identify your leaks and orchestrate your engine with a certified PMP.",
+    "cta_text": "Schedule Discovery",
     "cta_url": "/calculator"
   },
   "ideology": {
-    "title": "The 5-Stage Revenue Journey",
-    "description": "Every business operates somewhere on this map. The question isn't where you are — it's how fast you can move forward.",
+    "title": "The Path to Orchestration",
     "stages": [
       {
-        "number": 1,
-        "name": "Awareness",
-        "description": "Your market doesn't know you exist. You're invisible to the people who need you most.",
-        "color": "#FF6B6B",
-        "icon": "eye"
+        "title": "Fragmented (0-40)",
+        "description": "Your engine is a collection of isolated musicians with no shared sheet music.",
+        "icon": "fragmented"
       },
       {
-        "number": 2,
-        "name": "Acquisition",
-        "description": "People know you, but they're not buying. Your funnel has holes you can't see.",
-        "color": "#FFA94D",
-        "icon": "funnel"
+        "title": "Emerging (41-60)",
+        "description": "The first indicators of digital cohesion are visible but fragile.",
+        "icon": "emerging"
       },
       {
-        "number": 3,
-        "name": "Activation",
-        "description": "They bought once, but never came back. First impressions are everything.",
-        "color": "#FFD43B",
-        "icon": "zap"
+        "title": "Orchestrated (61-80)",
+        "description": "A Managed Nervous System is in place. Visibility is high, but sovereignty is still missing.",
+        "icon": "orchestrated"
       },
       {
-        "number": 4,
-        "name": "Revenue",
-        "description": "Money is coming in, but you're leaving more on the table than you realize.",
-        "color": "#69DB7C",
-        "icon": "dollar"
-      },
-      {
-        "number": 5,
-        "name": "Retention",
-        "description": "Growth is real and repeatable. Your systems run while you sleep.",
-        "color": "#4DABF7",
-        "icon": "repeat"
+        "title": "Unified (81-100)",
+        "description": "A complete Sovereign Engine. Self-healing, proprietary, and compounding.",
+        "icon": "unified"
       }
     ]
   },
   "social_proof": {
-    "headline": "Real Results, Real Revenue",
-    "case_studies": [
-      {
-        "client": "SaaS Startup",
-        "metric": "312%",
-        "description": "Revenue increase in 90 days by fixing Stage 2-3 leaks"
-      },
-      {
-        "client": "E-Commerce Brand",
-        "metric": "$2.4M",
-        "description": "Recovered annual revenue from retention system rebuild"
-      },
-      {
-        "client": "Agency Owner",
-        "metric": "47 Days",
-        "description": "From chaos to predictable pipeline with Revenue Journey mapping"
-      }
+    "title": "The Alabrida Bridge",
+    "description": "Every agency we guide serves as a living proof of the Alabrida philosophy, documenting the transition from a 'Frankenstein Stack' to a Unified Engine.",
+    "metrics": [
+      { "label": "Admin Tax Removed", "value": "15 hrs/wk" },
+      { "label": "Unified CRMs", "value": "50+" },
+      { "label": "Engine Sovereignty", "value": "100%" }
     ]
   },
   "about": {
-    "title": "The Architect",
-    "name": "Richard Norwood",
-    "credentials": ["PMP Certified", "Revenue Architect", "Growth Strategist"],
-    "bio": "I've spent 15+ years in the trenches of revenue optimization — from Fortune 500 consulting to building my own businesses from zero. I don't teach theory. I build systems that print money.",
-    "cta_text": "Book a Strategy Call",
-    "cta_url": "/contact"
+    "title": "The Navigator",
+    "name": "Richard Norwood, PMP",
+    "role": "Chief Revenue Architect",
+    "bio": "Where Alabrida is the industrial shipyard, Richard is the professional captain. Operating as your 'Air Traffic Controller', he establishes the Managed Nervous System to stop leaks before a full-scale cloud migration is required.",
+    "cta_text": "Read My Bio"
   }
 }

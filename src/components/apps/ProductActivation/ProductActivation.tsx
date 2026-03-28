@@ -7,26 +7,38 @@ import styles from './ProductActivation.module.css';
 
 type Step = 1 | 2 | 3 | 4;
 
-export default function ProductActivation(_props: AppProps) {
+export default function ProductActivation({ onTitleChange }: AppProps) {
   const [step, setStep] = useState<Step>(1);
   const [selectedTier, setSelectedTier] = useState<string | null>(null);
 
+  // Update window title dynamically
+  const updateTitle = useCallback(
+    (newStep: Step) => {
+      onTitleChange?.(`Partnership Application - Step ${newStep}`);
+    },
+    [onTitleChange]
+  );
+
   const next = useCallback(() => {
     if (step === 2 && !selectedTier) return;
-    setStep((prev) => Math.min(prev + 1, 4) as Step);
-  }, [step, selectedTier]);
+    const nextStep = Math.min(step + 1, 4) as Step;
+    setStep(nextStep);
+    updateTitle(nextStep);
+  }, [step, selectedTier, updateTitle]);
 
   const back = useCallback(() => {
-    setStep((prev) => Math.max(prev - 1, 1) as Step);
-  }, []);
+    const prevStep = Math.max(step - 1, 1) as Step;
+    setStep(prevStep);
+    updateTitle(prevStep);
+  }, [step, updateTitle]);
 
   return (
     <div className={styles.wizard}>
       {/* Header */}
       <div className={styles.header}>
-        <span className={styles.headerIcon}>🔑</span>
+        <span className={styles.headerIcon}>🤝</span>
         <div>
-          <div className={styles.headerTitle}>Revenue Architect Product Activation</div>
+          <div className={styles.headerTitle}>Apply for Partnership</div>
           <div className={styles.headerSub}>Step {step} of 4</div>
         </div>
       </div>
@@ -46,21 +58,21 @@ export default function ProductActivation(_props: AppProps) {
         {step === 1 && (
           <div className={styles.stepContent}>
             <h3 className={styles.stepTitle}>
-              Let&apos;s activate your Revenue Architect license
+              Let&apos;s architect your Revenue Engine
             </h3>
             <p className={styles.stepDesc}>
-              Choose a plan that fits your needs. You can always upgrade later as your
-              business grows.
+              We don&apos;t build websites; we build proprietary machines that sit on your balance sheet. 
+              The journey begins by diagnosing your commercial leaks and establishing a Sovereign Engine.
             </p>
             <p className={styles.stepDesc}>
-              Click &quot;Next&quot; to see available plans.
+              Click &quot;Next&quot; to review the 3 Phases of our B2B Productized Consultancy.
             </p>
           </div>
         )}
 
         {step === 2 && (
           <div className={styles.stepContent}>
-            <h3 className={styles.stepTitle}>Choose your plan</h3>
+            <h3 className={styles.stepTitle}>Which Phase aligns with your Maturity?</h3>
             <div className={styles.tierGrid}>
               {pricingData.tiers.map((tier) => (
                 <button
@@ -72,44 +84,37 @@ export default function ProductActivation(_props: AppProps) {
                 >
                   <div className={styles.tierName}>{tier.name}</div>
                   <div className={styles.tierPrice}>
-                    {tier.price === 0
-                      ? 'Free'
-                      : tier.price
-                      ? `$${tier.price}/mo`
-                      : 'Custom'}
+                    ${tier.price.toLocaleString()}/mo
                   </div>
-                  <div className={styles.tierTagline}>{tier.tagline}</div>
+                  <div className={styles.tierTagline}>{tier.period}</div>
                 </button>
               ))}
             </div>
+            {selectedTier && (
+              <p className={styles.stepDesc} style={{ marginTop: '12px', textAlign: 'center' }}>
+                You selected: <strong>{pricingData.tiers.find(t => t.id === selectedTier)?.name}</strong>
+              </p>
+            )}
           </div>
         )}
 
         {step === 3 && (
           <div className={styles.stepContent}>
-            <h3 className={styles.stepTitle}>Confirm your selection</h3>
+            <h3 className={styles.stepTitle}>Schedule your Discovery Session</h3>
             <div className={styles.confirmBox}>
               <p>
-                <strong>Plan:</strong>{' '}
+                <strong>Focus:</strong>{' '}
                 {pricingData.tiers.find((t) => t.id === selectedTier)?.name}
               </p>
               <p>
-                <strong>Price:</strong>{' '}
-                {(() => {
-                  const t = pricingData.tiers.find((t) => t.id === selectedTier);
-                  return t?.price === 0
-                    ? 'Free'
-                    : t?.price
-                    ? `$${t.price}/month`
-                    : 'Custom pricing';
-                })()}
+                <strong>Investment:</strong>{' '}
+                ${pricingData.tiers.find((t) => t.id === selectedTier)?.price.toLocaleString()} {pricingData.tiers.find((t) => t.id === selectedTier)?.period}
+              </p>
+              <p className={styles.stepDesc} style={{ marginTop: '12px' }}>
+                You are requesting a 1:1 strategy session with Richard Norwood, PMP, to discuss your Commercial EKG and evaluate if this Phase is the right fit. 
               </p>
               <p className={styles.stepDesc}>
-                {selectedTier === 'free'
-                  ? 'No credit card required. Start immediately.'
-                  : selectedTier === 'battleship'
-                  ? 'A team member will contact you to discuss pricing.'
-                  : 'You will be redirected to secure checkout via Stripe.'}
+                Click &quot;Schedule&quot; to confirm your intent and open the booking calendar.
               </p>
             </div>
           </div>
@@ -117,15 +122,16 @@ export default function ProductActivation(_props: AppProps) {
 
         {step === 4 && (
           <div className={styles.stepContent}>
-            <div className={styles.successIcon}>✅</div>
-            <h3 className={styles.stepTitle}>Your product is now activated!</h3>
+            <div className={styles.successIcon}>📅</div>
+            <h3 className={styles.stepTitle}>Intent Captured</h3>
             <p className={styles.stepDesc}>
-              Thank you for choosing Revenue Architect. Your{' '}
-              {pricingData.tiers.find((t) => t.id === selectedTier)?.name} plan is now
-              active.
+              Thank you for exploring the {pricingData.tiers.find((t) => t.id === selectedTier)?.name} with us.
             </p>
             <p className={styles.stepDesc}>
-              You can manage your subscription anytime from Control Panel → User Accounts.
+              Your next step is to click the link below or open the AIM Buddy List to chat directly with our team to finalize your booking time.
+            </p>
+            <p className={styles.stepDesc} style={{ marginTop: '16px', textAlign: 'center' }}>
+              <a href="#" style={{ color: '#3A6EA5', fontWeight: 'bold' }}>Open Booking Calendar →</a>
             </p>
           </div>
         )}
@@ -143,7 +149,7 @@ export default function ProductActivation(_props: AppProps) {
             onClick={next}
             disabled={step === 2 && !selectedTier}
           >
-            {step === 3 ? 'Activate' : 'Next →'}
+            {step === 3 ? 'Schedule' : 'Next →'}
           </button>
         )}
         {step === 4 && (
@@ -158,9 +164,9 @@ export default function ProductActivation(_props: AppProps) {
 
 export const productActivationConfig: AppConfig = {
   id: 'product-activation',
-  title: 'Product Activation',
+  title: 'Partnership App',
   icon: '/icons/activation.png',
   defaultSize: { width: 500, height: 420 },
-  minSize: { width: 400, height: 350 },
+  minSize: { width: 450, height: 350 },
   component: ProductActivation,
 };

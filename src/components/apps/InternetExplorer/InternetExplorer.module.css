@@ -152,6 +152,24 @@
   color: #808080;
 }
 
+.loadingState {
+  padding: 40px;
+  text-align: center;
+  font-family: var(--xp-font-family);
+  color: #333333;
+}
+
+.loadingIcon {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.pageTitle {
+  font-size: 20px;
+  color: #003399;
+  margin-bottom: 8px;
+}
+
 /* ── Status Bar ── */
 .statusBar {
   display: flex;

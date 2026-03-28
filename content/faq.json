@@ -1,53 +1,53 @@
 {
   "categories": [
     {
-      "name": "Getting Started",
+      "name": "The Diagnosis",
       "topics": [
         {
-          "question": "What is the Revenue Journey Assessment?",
-          "answer": "The Revenue Journey Assessment Tool (RJAT) analyzes your business across 5 stages: Awareness, Acquisition, Activation, Revenue, and Retention. It identifies the specific revenue leaks holding you back and provides a prioritized action plan."
+          "question": "What is the Commercial EKG?",
+          "answer": "The Commercial EKG (Revenue Journey Assessment) is a high-fidelity diagnostic that monitors the flow of data across your 5-Stage Revenue Journey. It identifies systemic 'flatlines'—places where your business is bleeding revenue due to fragmented tools or missing indicators."
         },
         {
           "question": "How do I run an assessment?",
-          "answer": "Open the Calculator app from the desktop. The first time you press '=', it will guide you through 5 quick questions. Answer each using the number buttons 1-5 (1 = needs work, 5 = strong). Press '=' after the final question to see your results."
+          "answer": "Open the Calculator app, answer the 5 immediate questions, and press '=' to reveal your initial Maturity Tier. This baseline uncovers your most critical revenue leak."
         },
         {
-          "question": "Is the assessment free?",
-          "answer": "Yes! The Snapshot tier is completely free and includes your Revenue Journey Assessment, Top 5 Revenue Leaks report, and Stage Score Breakdown. Upgrade to Membership or Agency for full dashboard access and AI-powered tools."
+          "question": "What happens after the EKG?",
+          "answer": "Once we identify your Maturity Tier (Fragmented, Emerging, Orchestrated, or Unified), we provide a customized Blueprint. If you are a fit, we map you to the appropriate Phase of our consultancy to orchestrate your 'Frankenstein Stack' into a unified engine."
         }
       ]
     },
     {
-      "name": "Account & Billing",
+      "name": "The Navigator",
       "topics": [
         {
-          "question": "How do I upgrade my plan?",
-          "answer": "Open Product Activation from the Start Menu or All Programs. Select your desired tier and follow the checkout process. Your dashboard will unlock immediately after payment."
+          "question": "Who is Richard Norwood?",
+          "answer": "Richard Norwood, PMP, operates as the 'Air Traffic Controller' for scaling agencies. He provides the human judgment, governance, and project management required to steer an agency out of data chaos."
         },
         {
-          "question": "Can I cancel my subscription?",
-          "answer": "Yes, you can cancel anytime. Go to Control Panel > User Accounts to manage your subscription. You'll retain access until the end of your billing period."
+          "question": "Why work with a PMP instead of a marketing agency?",
+          "answer": "We sell project governance, not 'marketing decorating'. By applying the PMBOK (Project Management Body of Knowledge) to your Revenue Architecture, we deliver systems on time, within scope, and eliminate the 'Manual Entry Tax'."
         },
         {
-          "question": "What payment methods do you accept?",
-          "answer": "We accept all major credit cards, Apple Pay, and Google Pay through our secure Stripe integration."
+          "question": "What is the Alabrida Bridge?",
+          "answer": "Richard is the high-trust entry brand that establishes your initial Managed Nervous System (MNS). Once you are stabilized into the 'Orchestrated' tier, the Alabrida Bridge prepares you for a complete transition to sovereign, self-hosted infrastructure."
         }
       ]
     },
     {
-      "name": "Tools & Features",
+      "name": "The System",
       "topics": [
         {
-          "question": "What is the AI Strategy Chat?",
-          "answer": "Available on the Agency tier and above, the AI Strategy Chat (accessible via AIM > Strategy Bot) provides personalized revenue optimization advice based on your assessment results and industry."
+          "question": "What is the 'Manual Entry Tax'?",
+          "answer": "If you or your team manually move data between emails, CRMs, and billing software, you are paying a massive hidden tax. Our systems use Information Fusion (IF) to automate perception, reclaiming ~15+ hours a week."
         },
         {
-          "question": "What does the Landing Page Generator do?",
-          "answer": "The Landing Page Generator creates conversion-optimized landing pages based on your Revenue Journey stage. It outputs ready-to-deploy HTML that matches your brand and targets your specific revenue leaks."
+          "question": "How do I book a Strategy Session?",
+          "answer": "Open the AIM Buddy List app on the desktop, double click 'Richard Norwood', and use the chat window to directly schedule your discovery call."
         },
         {
-          "question": "How do I book a strategy call?",
-          "answer": "Open the AIM Buddy List from the desktop and double-click 'Richard Norwood'. This opens a chat window with an embedded Calendly scheduler where you can book a free 30-minute strategy session."
+          "question": "What is Sovereign Infrastructure?",
+          "answer": "Sovereign Infrastructure means removing six-figure legacy SaaS dependencies (where your data is held hostage) and building proprietary machines that sit purely on your balance sheet as a corporate asset."
         }
       ]
     }

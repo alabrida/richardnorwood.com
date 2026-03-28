@@ -14,8 +14,9 @@ ${aboutData.bio}
 
 Credentials: ${aboutData.credentials.join(', ')}
 
-Contact: ${aboutData.contact.email}
-LinkedIn: ${aboutData.social.linkedin}
+Expertise: ${aboutData.expertise.join(', ')}
+
+Mission: ${aboutData.mission}
 `;
 
 export default function Notepad({ onTitleChange }: AppProps) {

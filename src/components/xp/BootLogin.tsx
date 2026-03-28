@@ -1,109 +1,90 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import styles from './BootLogin.module.css';
-
-type ScreenState = 'boot' | 'login' | 'desktop';
 
 interface BootLoginProps {
   onEnterDesktop: (mode: 'guest' | 'signin') => void;
 }
 
 export default function BootLogin({ onEnterDesktop }: BootLoginProps) {
-  const [screen, setScreen] = useState<ScreenState>('boot');
-  const [emailConsent, setEmailConsent] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
 
-  // ── Boot timer ──
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setScreen('login');
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+  const handleEnter = useCallback(() => {
+    // Only allow enter if cookies are accepted, or just proceed anyway?
+    // "need to add a cookie consent banner instead" implies they should accept or acknowledge it.
+    // If they haven't checked it, we can alert them, or we can just make the Enter button disabled until checked.
+    if (!cookiesAccepted) {
+      alert("Please accept the cookie consent to enter the site.");
+      return;
+    }
+    setIsVisible(false);
+    // Slight delay to allow fade out before unmounting
+    setTimeout(() => {
+      onEnterDesktop('guest');
+    }, 500);
+  }, [cookiesAccepted, onEnterDesktop]);
 
-  const handleGuest = useCallback(() => {
-    onEnterDesktop('guest');
-  }, [onEnterDesktop]);
-
-  const handleSignIn = useCallback(() => {
-    // Stage 3 wires this to Supabase OAuth
-    console.log('[Auth Stub] Sign In clicked — OAuth not yet wired');
-    console.log('[Auth Stub] Email consent:', emailConsent);
-    onEnterDesktop('signin');
-  }, [onEnterDesktop, emailConsent]);
-
-  if (screen === 'desktop') return null;
+  if (!isVisible && false) return null; // Let Framer Motion handle unmount gracefully
 
   return (
     <AnimatePresence mode="wait">
-      {screen === 'boot' && (
+      {isVisible && (
         <motion.div
-          key="boot"
-          className={styles.bootScreen}
-          initial={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className={styles.logo}>
-            Revenue <span className={styles.logoAccent}>Architect</span>
-          </div>
-          <div className={styles.progressBar}>
-            <div className={styles.progressDots} />
-          </div>
-          <div className={styles.copyright}>
-            © 2025 Richard Norwood • Revenue Architect
-          </div>
-        </motion.div>
-      )}
-
-      {screen === 'login' && (
-        <motion.div
-          key="login"
-          className={styles.loginScreen}
+          key="entry"
+          className={styles.entryScreen}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
+          exit={{ opacity: 0, scale: 1.05 }}
+          transition={{ duration: 0.6 }}
         >
-          <div className={styles.loginHeader}>To begin, click your user name</div>
+          <div className={styles.container}>
+            <div className={styles.logo}>
+              Richard Norwood, <span className={styles.logoAccent}>PMP</span>
+            </div>
+            
+            <div className={styles.videoWrapper}>
+              {/* Replace src with the actual YouTube embed link once uploaded */}
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" 
+                title="Revenue Architect Intro" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                className={styles.videoFrame}
+              ></iframe>
+            </div>
 
-          <div className={styles.userList}>
-            {/* Guest */}
-            <button className={styles.userCard} onClick={handleGuest}>
-              <div className={styles.userAvatar}>
-                <span>👤</span>
+            <div className={styles.consentBox}>
+              <div className={styles.consentRow}>
+                <input
+                  type="checkbox"
+                  id="cookie-consent"
+                  checked={cookiesAccepted}
+                  onChange={(e) => setCookiesAccepted(e.target.checked)}
+                />
+                <label htmlFor="cookie-consent" className={styles.consentLabel}>
+                  I accept the use of cookies for necessary site operations, analytics, and personalized experiences. 
+                  (Revenue Architecture demands perception, so we use trackers to establish our Managed Nervous System).
+                </label>
               </div>
-              <span className={styles.userName}>Guest</span>
-              <span className={styles.userHint}>Browse without signing in</span>
-            </button>
 
-            {/* Sign In */}
-            <button className={styles.userCard} onClick={handleSignIn}>
-              <div className={styles.userAvatar}>
-                <span>🔐</span>
-              </div>
-              <span className={styles.userName}>Sign In</span>
-              <span className={styles.userHint}>Google or Apple account</span>
-            </button>
-          </div>
-
-          {/* Email consent */}
-          <div className={styles.consentRow}>
-            <input
-              type="checkbox"
-              id="email-consent"
-              checked={emailConsent}
-              onChange={(e) => setEmailConsent(e.target.checked)}
-            />
-            <label htmlFor="email-consent" className={styles.consentLabel}>
-              I agree to receive occasional emails about revenue optimization insights
-              and product updates. You can unsubscribe at any time.
-            </label>
-          </div>
-
-          <div className={styles.loginFooter}>
-            After you log on, you can add or change accounts.
+              <button 
+                className={styles.enterButton} 
+                onClick={handleEnter}
+                disabled={!cookiesAccepted}
+              >
+                Enter Desktop
+              </button>
+            </div>
+            
+            <div className={styles.copyright}>
+              © 2025 Richard Norwood • Revenue Architect
+            </div>
           </div>
         </motion.div>
       )}

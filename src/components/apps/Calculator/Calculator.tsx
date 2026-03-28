@@ -110,12 +110,12 @@ export default function Calculator({ onTitleChange }: AppProps) {
 
   const getVerdict = () => {
     if (percentage >= 80)
-      return { title: 'Revenue Machine', desc: 'Your systems are strong. Fine-tune and scale with our Agency tier.' };
+      return { title: 'Unified State (81-100)', desc: 'Your Sovereign Engine is strong. You are ready to discuss the Alabrida Bridge.' };
     if (percentage >= 60)
-      return { title: 'Growing Pains', desc: 'You have a foundation but there are leaks. The 90-Day Partnership can fix them.' };
+      return { title: 'Orchestrated Cohesion (61-80)', desc: 'A Managed Nervous System is running. Phase II: Engine Orchestration is recommended.' };
     if (percentage >= 40)
-      return { title: 'Revenue Leak Alert', desc: 'Significant revenue is falling through the cracks. Start with a free assessment.' };
-    return { title: 'Emergency Mode', desc: 'Critical leaks detected. Book a strategy call immediately.' };
+      return { title: 'Emerging Cohesion (41-60)', desc: 'Digital cohesion is fragile. Start with Phase I: Diagnostic EKG.' };
+    return { title: 'Fragmented (0-40)', desc: 'Critical leaks detected. Your engine is disconnected. Book a discovery call immediately.' };
   };
 
   const menus: MenuGroup[] = [
