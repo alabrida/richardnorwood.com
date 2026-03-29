@@ -71,7 +71,7 @@ export default function ContactPage() {
               </p>
             </div>
             
-            <div style={{ flexGrow: 1, minHeight: 1200 }}>
+            <div style={{ flexGrow: 1, height: 850 }}>
               <GoogleCalendarEmbed />
             </div>
           </div>

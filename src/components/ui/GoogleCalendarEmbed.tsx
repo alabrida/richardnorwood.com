@@ -5,12 +5,12 @@ import React from 'react'
 export default function GoogleCalendarEmbed() {
   // TODO: Replace this URL with your actual Google Workspace Appointment Schedule link
   // e.g., 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ...xyz?gv=true'
-  const appointmentUrl = 'https://calendar.app.google/fdgEMc2rsP7wr79R8'
+  const appointmentUrl = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2IUrfLBntA3iUYdPVHGDJwltQwjr4Pm03h7dCEVJvwgzMW-fvCTU-2tN-y81X-N4R0DxXqDr0V?gv=true'
 
   const isPlaceholder = appointmentUrl === 'YOUR_GOOGLE_CALENDAR_APPOINTMENT_URL'
 
   return (
-    <div style={{ width: '100%', height: '100%', background: 'var(--color-surface)', border: '1px solid var(--color-surface-elevated)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', position: 'relative' }}>
+    <div style={{ width: '100%', height: '100%', background: '#ffffff', border: '1px solid var(--color-surface-elevated)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', position: 'relative' }}>
       {!isPlaceholder ? (
         <iframe 
           src={appointmentUrl} 
