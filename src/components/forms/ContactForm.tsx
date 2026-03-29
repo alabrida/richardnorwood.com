@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useForm } from '@tanstack/react-form'
 import { toast } from 'sonner'
 import styles from './AuthForm.module.css' // Reusing established glass styles
@@ -37,35 +37,46 @@ export default function ContactForm() {
     },
   })
 
+  // Set values from EKG if present
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      if (params.get('source') === 'ekg') {
+        form.setFieldValue('message', params.get('payload') || '')
+        form.setFieldValue('inquiryType', 'Partnership')
+      }
+    }
+  }, [form])
+
   return (
-    <div className={styles.formContainer} style={{ width: '100%' }}>
+    <div style={{ width: '100%' }}>
       <form
         onSubmit={(e) => {
           e.preventDefault()
           e.stopPropagation()
           form.handleSubmit()
         }}
-        className={styles.formElement}
+        className={styles.authForm}
       >
         {/* Name Field */}
         <form.Field
           name="name"
           validators={{ onChange: ({ value }) => !value ? 'Name is required' : undefined }}
           children={(field) => (
-            <div className={styles.inputGroup}>
-              <label htmlFor={field.name} className={styles.labelClass}>Full Name</label>
+            <div className={styles.formGroup}>
+              <label htmlFor={field.name}>Full Name</label>
               <input
                 id={field.name}
                 name={field.name}
                 value={field.state.value}
                 onBlur={field.handleBlur}
                 onChange={(e) => field.handleChange(e.target.value)}
-                className={styles.inputClass}
+                className={styles.inputField}
                 placeholder="Richard Norwood"
                 disabled={isSubmitting}
               />
               {field.state.meta.errors ? (
-                <span className={styles.errorClass}>{field.state.meta.errors.join(', ')}</span>
+                <span className={styles.fieldError}>{field.state.meta.errors.join(', ')}</span>
               ) : null}
             </div>
           )}
@@ -80,8 +91,8 @@ export default function ContactForm() {
             )
           }}
           children={(field) => (
-            <div className={styles.inputGroup}>
-              <label htmlFor={field.name} className={styles.labelClass}>Email Address</label>
+            <div className={styles.formGroup}>
+              <label htmlFor={field.name}>Email Address</label>
               <input
                 id={field.name}
                 name={field.name}
@@ -89,12 +100,12 @@ export default function ContactForm() {
                 value={field.state.value}
                 onBlur={field.handleBlur}
                 onChange={(e) => field.handleChange(e.target.value)}
-                className={styles.inputClass}
+                className={styles.inputField}
                 placeholder="mail@alabrida.org"
                 disabled={isSubmitting}
               />
               {field.state.meta.errors ? (
-                <span className={styles.errorClass}>{field.state.meta.errors.join(', ')}</span>
+                <span className={styles.fieldError}>{field.state.meta.errors.join(', ')}</span>
               ) : null}
             </div>
           )}
@@ -105,15 +116,15 @@ export default function ContactForm() {
           <form.Field
             name="company"
             children={(field) => (
-              <div className={styles.inputGroup}>
-                <label htmlFor={field.name} className={styles.labelClass}>Company (Optional)</label>
+              <div className={styles.formGroup}>
+                <label htmlFor={field.name}>Company (Optional)</label>
                 <input
                   id={field.name}
                   name={field.name}
                   value={field.state.value}
                   onBlur={field.handleBlur}
                   onChange={(e) => field.handleChange(e.target.value)}
-                  className={styles.inputClass}
+                  className={styles.inputField}
                   placeholder="Alabrida Revenue"
                   disabled={isSubmitting}
                 />
@@ -125,15 +136,15 @@ export default function ContactForm() {
           <form.Field
             name="inquiryType"
             children={(field) => (
-              <div className={styles.inputGroup}>
-                <label htmlFor={field.name} className={styles.labelClass}>Inquiry Type</label>
+              <div className={styles.formGroup}>
+                <label htmlFor={field.name}>Inquiry Type</label>
                 <select
                   id={field.name}
                   name={field.name}
                   value={field.state.value}
                   onBlur={field.handleBlur}
                   onChange={(e) => field.handleChange(e.target.value)}
-                  className={styles.inputClass}
+                  className={styles.inputField}
                   style={{ height: '42px', appearance: 'none' }}
                   disabled={isSubmitting}
                 >
@@ -151,21 +162,21 @@ export default function ContactForm() {
           name="message"
           validators={{ onChange: ({ value }) => !value ? 'Message is required' : undefined }}
           children={(field) => (
-            <div className={styles.inputGroup}>
-              <label htmlFor={field.name} className={styles.labelClass}>Message</label>
+            <div className={styles.formGroup}>
+              <label htmlFor={field.name}>Message</label>
               <textarea
                 id={field.name}
                 name={field.name}
                 value={field.state.value}
                 onBlur={field.handleBlur}
                 onChange={(e) => field.handleChange(e.target.value)}
-                className={styles.inputClass}
+                className={styles.inputField}
                 style={{ height: '120px', padding: 'var(--space-3)', resize: 'vertical' }}
                 placeholder="How can we orchestrate your engine?"
                 disabled={isSubmitting}
               />
               {field.state.meta.errors ? (
-                <span className={styles.errorClass}>{field.state.meta.errors.join(', ')}</span>
+                <span className={styles.fieldError}>{field.state.meta.errors.join(', ')}</span>
               ) : null}
             </div>
           )}

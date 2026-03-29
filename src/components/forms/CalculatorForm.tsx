@@ -27,12 +27,24 @@ export default function CalculatorForm() {
       setTimeout(() => {
         setAnalyzing(false)
         toast.message('Analysis Complete', {
-          description: 'Based on your diagnostic, we have isolated severe operational leaks in your architecture. Redirecting to calendar.'
+          description: 'Diagnostic appended to encrypted dispatch. Redirecting...'
         })
         
-        // Push user to contact to book
+        // Push user to contact to book with payload
         setTimeout(() => {
-          window.location.href = '/contact' 
+          const formattedPayload = `[ COMMERCIAL EKG RESULTS ]
+Data Migration: ${value.q1}
+Central Repository: ${value.q2}
+Attribution: ${value.q3}
+Infrastructure: ${value.q4}
+Estimated AARR: ${value.q5}
+
+I'm ready to review my operational baseline.`
+
+          const params = new URLSearchParams()
+          params.set('source', 'ekg')
+          params.set('payload', formattedPayload)
+          window.location.href = `/contact?${params.toString()}`
         }, 3000)
       }, 5000)
     }

@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieBanner from '@/components/layout/CookieBanner';
+import StarFieldWrapper from '@/components/ui/StarFieldWrapper';
 
 export default function SiteLayout({
   children,
@@ -9,6 +10,7 @@ export default function SiteLayout({
 }>) {
   return (
     <div className="site-body">
+      <StarFieldWrapper />
       <Header />
       <main>{children}</main>
       <Footer />
