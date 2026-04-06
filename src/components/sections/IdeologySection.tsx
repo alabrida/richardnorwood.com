@@ -6,6 +6,7 @@ import styles from './Sections.module.css'
 
 interface Stage {
   title: string
+  subtitle?: string
   description: string
   icon: string
 }
@@ -13,6 +14,7 @@ interface Stage {
 interface IdeologyProps {
   data: {
     title: string
+    subtitle?: string
     stages: Stage[]
   }
 }
@@ -41,11 +43,13 @@ function TiltCard({
   index,
   color,
   glow,
+  bentoClass,
 }: {
   stage: Stage
   index: number
   color: string
   glow: { r: number; g: number; b: number }
+  bentoClass?: string
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 })
@@ -62,8 +66,8 @@ function TiltCard({
     const centerY = rect.height / 2
 
     setTilt({
-      rotateX: ((centerY - y) / centerY) * 6,
-      rotateY: ((x - centerX) / centerX) * 6,
+      rotateX: ((centerY - y) / centerY) * 2.5,
+      rotateY: ((x - centerX) / centerX) * 2.5,
     })
     setGlowPos({
       x: (x / rect.width) * 100,
@@ -85,7 +89,7 @@ function TiltCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, delay: index * 0.12 }}
-      className={styles.tiltCardWrapper}
+      className={`${styles.tiltCardWrapper} ${bentoClass || ''}`}
     >
       <div
         ref={cardRef}
@@ -125,6 +129,9 @@ function TiltCard({
         />
 
         <div className={styles.stageContent}>
+          {stage.subtitle && (
+            <span className={styles.stageSubtitle} style={{ color }}>{stage.subtitle}</span>
+          )}
           <h3 className={styles.stageTitle}>{stage.title}</h3>
           <p className={styles.stageDescription}>{stage.description}</p>
         </div>
@@ -146,18 +153,46 @@ export default function IdeologySection({ data }: IdeologyProps) {
         >
           <h2 className={styles.sectionTitle}>{data.title}</h2>
           <div className={styles.titleDecoration} />
+          {data.subtitle && (
+            <p className={styles.sectionDescription}>{data.subtitle}</p>
+          )}
         </motion.div>
 
         <div className={styles.timelineGrid}>
-          {data.stages.map((stage, i) => (
-            <TiltCard
-              key={i}
-              stage={stage}
-              index={i}
-              color={stageColors[i % stageColors.length]}
-              glow={stageGlowColors[i % stageGlowColors.length]}
-            />
-          ))}
+          {data.stages.map((stage, i) => {
+            const bentoMap = [
+              styles.bentoWide,   // Awareness — spans 2 cols
+              styles.bentoTall,   // Consideration — spans 2 rows
+              '',                  // Decision — normal
+              '',                  // Conversion — normal
+              '',                  // Retention — normal (balanced with CTA)
+            ]
+            return (
+              <TiltCard
+                key={i}
+                stage={stage}
+                index={i}
+                color={stageColors[i % stageColors.length]}
+                glow={stageGlowColors[i % stageGlowColors.length]}
+                bentoClass={bentoMap[i] || ''}
+              />
+            )
+          })}
+
+          {/* CTA card to balance the bento grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className={styles.tiltCardWrapper}
+          >
+            <a href="/calculator" className={styles.bentoCta}>
+              <span className={styles.bentoCtaLabel}>Ready?</span>
+              <span className={styles.bentoCtaHeadline}>Run Your Commercial EKG</span>
+              <span className={styles.bentoCtaArrow}>→</span>
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

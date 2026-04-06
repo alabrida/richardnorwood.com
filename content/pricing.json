@@ -3,15 +3,16 @@
     {
       "id": "phase-1",
       "name": "Phase I: Diagnostic EKG",
-      "tagline": "Foundations",
+      "tagline": "Emerging Cohesion",
       "term": "90 Days",
       "features": [
-        "2 Optimized Social Profiles",
-        "Branded Microsite (Carrd)",
-        "Full HTML Website",
-        "Custom CRM (Airtable/Supabase)",
-        "Signature, Business Card, Lead Magnet",
-        "Reclaim 15 hours/week of admin waste"
+        "Commercial EKG (250+ point Revenue Journey Rubric)",
+        "Perimeter Architecture (2 social Signal Nodes)",
+        "Gateway Microsite (friction-free intent routing)",
+        "Digital Sales Channel (Authority Engine)",
+        "Custom CRM eliminating Manual Entry Tax",
+        "O2O Entry Points (signatures, cards, lead magnets)",
+        "Reclaim 15+ hours/week of administrative waste"
       ],
       "locked_features": [
         "Phase II: Engine Orchestration",
@@ -23,15 +24,16 @@
     {
       "id": "phase-2",
       "name": "Phase II: Engine Orchestration",
-      "tagline": "Harmony (Recommended)",
+      "tagline": "Orchestrated Cohesion — Recommended",
       "term": "6 Months",
       "features": [
         "Everything in Phase I",
-        "3 Additional Socials (Total 5)",
-        "4 Siloed Landing Pages for Ads",
-        "90-Day Content Calendar & Templates",
-        "Lead Nurture & Reputation Management",
-        "Real-time Buyer Behavior Perception"
+        "Managed Nervous System (MNS) installation",
+        "Information Fusion via Clarity + Google Tags",
+        "4 Siloed Gateway Microsites for ad campaigns",
+        "90-Day Content Calendar & Operational Cadence",
+        "Lead Nurture & Reputation Management automation",
+        "Real-time Situation Awareness dashboard"
       ],
       "locked_features": [
         "Phase III: Unified Engine"
@@ -42,18 +44,19 @@
     {
       "id": "phase-3",
       "name": "Phase III: Unified Engine",
-      "tagline": "Sovereignty Proof",
+      "tagline": "Commercial Sovereignty",
       "term": "12 Months",
       "features": [
         "Everything in Phase II",
-        "Migration to Managed Cloud Hosting",
-        "Replace Six-Figure Vendor Dependencies",
+        "Sovereign Engine proof-of-concept deployment",
+        "Migration to proprietary managed hosting",
+        "Frankenstein Stack rationalization (replace legacy vendors)",
         "Custom Architecture for CPQ/Billing",
-        "The Alabrida Bridge Handoff",
-        "Full Cloud Sovereignty Prep"
+        "The Alabrida Bridge handoff preparation",
+        "Full path to Commercial Sovereignty"
       ],
       "locked_features": [],
-      "cta_text": "Request Review",
+      "cta_text": "Request Architecture Review",
       "highlighted": false
     }
   ]

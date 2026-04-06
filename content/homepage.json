@@ -1,49 +1,60 @@
 {
   "hero": {
-    "headline": "Did you see that? I think your revenue engine just misfired.",
-    "subhead": "We don’t build websites; we build proprietary machines that sit on your balance sheet. Identify your leaks and orchestrate your engine with a certified PMP.",
-    "cta_text": "Run Diagnostic",
+    "headline": "Your Revenue Engine Is an Architecture Problem.",
+    "subhead": "I'm Richard Norwood — a certified PMP and Revenue Architect. I install Unified Commercial Engines that use Information Fusion to automate perception, eliminate the Manual Entry Tax, and turn your digital presence into a high-value financial asset on your balance sheet.",
+    "cta_text": "Run Your Commercial EKG",
     "cta_url": "/calculator"
   },
   "ideology": {
-    "title": "The Path to Orchestration",
+    "title": "The 5-Stage Revenue Journey",
+    "subtitle": "The Unified Commercial Engine accompanies your buyer through a non-linear journey — from invisible signal to compounding advocacy. Each stage is powered by Information Fusion and engineered to maximize Information Velocity.",
     "stages": [
       {
-        "title": "Fragmented (0-40)",
-        "description": "Your engine is a collection of isolated musicians with no shared sheet music.",
-        "icon": "fragmented"
+        "title": "Awareness",
+        "subtitle": "The Perimeter",
+        "description": "83% of the buyer journey happens before you're ever contacted. We deploy Perimeter Architecture — optimized social profiles and link-in-bio hubs — as Signal Nodes that capture intent from the Dark Funnel without friction.",
+        "icon": "awareness"
       },
       {
-        "title": "Emerging (41-60)",
-        "description": "The first indicators of digital cohesion are visible but fragile.",
-        "icon": "emerging"
+        "title": "Consideration",
+        "subtitle": "The Gateway",
+        "description": "We bridge the Maturity Gap with Gateway Microsites — precision-engineered deliberation sandboxes that teach buyers how to evaluate their own architecture using your proprietary rubric. This is where the 'Aha Moment' is manufactured.",
+        "icon": "consideration"
       },
       {
-        "title": "Orchestrated (61-80)",
-        "description": "A Managed Nervous System is in place. Visibility is high, but sovereignty is still missing.",
-        "icon": "orchestrated"
+        "title": "Decision",
+        "subtitle": "The Core",
+        "description": "Your Digital Sales Channel replaces the static brochure with an Authority Engine — housing case studies, diagnostic tools, and Proof-as-a-Service widgets that resolve objections before they're ever voiced. The Risk Tax is eliminated.",
+        "icon": "decision"
       },
       {
-        "title": "Unified (81-100)",
-        "description": "A complete Sovereign Engine. Self-healing, proprietary, and compounding.",
-        "icon": "unified"
+        "title": "Conversion",
+        "subtitle": "Seamless Activation",
+        "description": "Speed to Lead is the most unforgiving variable. We automate Quote-to-Cash with Information Velocity — a 5-minute response delay causes 10x decay in qualification. Your engine activates instantly at the moment of Mutual Commit.",
+        "icon": "conversion"
+      },
+      {
+        "title": "Retention",
+        "subtitle": "The Infinity Loop",
+        "description": "The close is the center of the Bowtie, not the finish line. We install a Managed Nervous System that monitors usage telemetry, triggers expansion playbooks at peak impact, and drives 110%+ Net Revenue Retention.",
+        "icon": "retention"
       }
     ]
   },
   "social_proof": {
-    "title": "The Alabrida Bridge",
-    "description": "Every agency we guide serves as a living proof of the Alabrida philosophy, documenting the transition from a 'Frankenstein Stack' to a Unified Engine.",
+    "title": "From Frankenstein Stack to Unified Engine",
+    "description": "Every agency we guide serves as a living case study — documenting the ascent from Fragmented operations through the Maturity Staircase to Commercial Sovereignty. The data doesn't lie; the architecture works.",
     "metrics": [
-      { "label": "Admin Tax Removed", "value": "15 hrs/wk" },
-      { "label": "Unified CRMs", "value": "50+" },
-      { "label": "Engine Sovereignty", "value": "100%" }
+      { "label": "Manual Entry Tax Eliminated", "value": "15 hrs/wk" },
+      { "label": "Information Velocity Increase", "value": "6x" },
+      { "label": "Commercial Sovereignty", "value": "100%" }
     ]
   },
   "about": {
     "title": "The Navigator",
     "name": "Richard Norwood, PMP",
-    "role": "Chief Revenue Architect",
-    "bio": "Where Alabrida is the industrial shipyard, Richard is the professional captain. Operating as your 'Air Traffic Controller', he establishes the Managed Nervous System to stop leaks before a full-scale cloud migration is required.",
-    "cta_text": "Read My Bio"
+    "role": "Revenue Architect",
+    "bio": "Most consultants fix your marketing — the paint job. I fix your Architecture — the engine. Operating as your Air Traffic Controller, I merge PMBOK governance with the Revenue Journey Framework to install the Managed Nervous System that gives you Situation Awareness, kills the Manual Entry Tax, and proves the Unified Commercial Engine philosophy before a single line of sovereign infrastructure is deployed.",
+    "cta_text": "Read My Full Bio"
   }
 }

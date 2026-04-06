@@ -5,8 +5,8 @@ import AboutSection from '@/components/sections/AboutSection'
 import homepageData from '../../../content/homepage.json'
 
 export const metadata = {
-  title: 'Revenue Architecture & Commercial Strategy | Richard Norwood',
-  description: 'Identify your leaks and orchestrate your engine with a certified PMP. Stop marketing decorating and start revenue engineering.',
+  title: 'Revenue Architect | Unified Commercial Engine | Richard Norwood, PMP',
+  description: 'Richard Norwood, PMP — Revenue Architect installing Unified Commercial Engines that use Information Fusion to eliminate the Manual Entry Tax and turn your digital presence into a high-value financial asset.',
 }
 
 export default function HomePage() {

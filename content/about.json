@@ -1,19 +1,21 @@
 {
   "name": "Richard Norwood, PMP",
-  "title": "Revenue Journey Guide & Navigator",
-  "bio": "Certified Project Management Professional and Revenue Architect dedicated to guiding agencies through the transition from fragmented, 'hero-led' operations to orchestrated growth. By merging the rigor of the PMBOK with the Revenue Journey Framework, Richard proves that Architecture works by implementing the initial 'connective tissue' that stops revenue leaks.",
-  "mission": "Bridging the Maturity Gap for Solopreneurs & Startups.",
+  "title": "Revenue Architect & Navigator",
+  "bio": "Most consultants try to fix your Marketing — the paint job. I'm here to fix your Architecture — the engine. As a certified Project Management Professional, I merge the rigor of the PMBOK with the Revenue Journey Framework to guide agencies from fragmented, 'hero-led' operations to orchestrated, compounding growth. I install the Managed Nervous System that delivers Situation Awareness, deploys Information Fusion to automate perception, and proves the Unified Commercial Engine philosophy before a single line of sovereign infrastructure is written.",
+  "mission": "Installing Unified Commercial Engines that transform digital presence from recurring overhead into high-value financial assets.",
   "credentials": [
     "PMP Certified (Project Management Institute)",
-    "B.S. in Marketing (Jacksonville State University)",
+    "B.S. in Marketing (Jacksonville State University, 2008)",
     "Google Data Analytics Certified",
     "Candidate: Google Professional Solution Architect"
   ],
   "expertise": [
-    "Commercial EKG Diagnostics",
+    "Commercial EKG Diagnostics (250+ point Revenue Journey Rubric)",
     "Managed Nervous System (MNS) Orchestration",
-    "PMBOK Implementation & Governance",
-    "Eliminating the Manual Entry Tax"
+    "Information Fusion & Automated Perception",
+    "Revenue Performance Model (Volume × Conversion × Velocity)",
+    "PMBOK Governance & Project Delivery",
+    "Frankenstein Stack Rationalization"
   ],
   "image": "/images/richard-norwood.jpg"
 }
