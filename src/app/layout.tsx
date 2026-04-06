@@ -74,6 +74,42 @@ const globalSchema = {
       ]
     },
     {
+      "@type": "ProfessionalService",
+      "@id": "https://richardnorwood.com/#organization",
+      "name": "Richard Norwood, PMP - Revenue Architecture",
+      "url": "https://richardnorwood.com",
+      "description": "Strategic consulting for revenue architecture, commercial infrastructure, and operational sovereignty. 90-day to 12-month partnership engagements.",
+      "founder": { "@id": "https://richardnorwood.com/#person" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "serviceType": [
+        "Revenue Architecture",
+        "Commercial Strategy",
+        "Project Management",
+        "Digital Infrastructure"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Strategic Partnership Tiers",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Phase I: Diagnostic EKG",
+            "description": "90-day foundational engagement for revenue infrastructure assessment and optimization."
+          },
+          {
+            "@type": "Offer",
+            "name": "Phase II: Engine Orchestration",
+            "description": "6-month engagement for full revenue engine orchestration and marketing infrastructure."
+          },
+          {
+            "@type": "Offer",
+            "name": "Phase III: Unified Engine",
+            "description": "12-month engagement for sovereign infrastructure migration and operational independence."
+          }
+        ]
+      }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://richardnorwood.com/#website",
       "url": "https://richardnorwood.com/",

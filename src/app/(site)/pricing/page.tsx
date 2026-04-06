@@ -1,14 +1,12 @@
 import React from 'react'
 import PricingHero from '@/components/sections/PricingHero'
-import FeaturesBreakdown from '@/components/sections/FeaturesBreakdown'
 import PricingGrid from '@/components/sections/PricingGrid'
-import ComparisonTable from '@/components/sections/ComparisonTable'
 import PricingFAQ from '@/components/sections/PricingFAQ'
 import pricingData from '../../../../content/pricing.json'
 
 export const metadata = {
-  title: 'Pricing & Packages | Richard Norwood',
-  description: 'Simple, transparent pricing for Revenue Architecture bridging.',
+  title: 'Strategic Partnership | Richard Norwood, PMP',
+  description: 'Partnership tiers for Revenue Architecture consulting. 90-day, 6-month, and 12-month strategic engagements.',
 }
 
 export default function PricingPage() {
@@ -31,6 +29,14 @@ export default function PricingPage() {
           '@type': 'Answer',
           text: 'Yes. Phase engagements are month-to-month after the initial commitment period is met.'
         }
+      },
+      {
+        '@type': 'Question',
+        name: 'Do I get access to a client portal?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, all active partnership clients receive a dedicated client portal with project tracking, asset delivery, and direct communication channels with your Revenue Architect.'
+        }
       }
     ]
   }
@@ -43,8 +49,7 @@ export default function PricingPage() {
     offers: pricingData.tiers.map(tier => ({
       '@type': 'Offer',
       name: tier.name,
-      price: tier.price,
-      priceCurrency: 'USD'
+      description: `${tier.term} strategic partnership engagement`,
     }))
   }
 
@@ -60,8 +65,6 @@ export default function PricingPage() {
       />
       <PricingHero />
       <PricingGrid data={pricingData.tiers} />
-      <FeaturesBreakdown />
-      <ComparisonTable />
       <PricingFAQ />
     </>
   )

@@ -1,12 +1,12 @@
 ---
-description: Build the Authentication system (Login, Signup, Password Reset)
+description: Build the Authentication system (Client Login, Password Reset)
 ---
 
 # Build Auth Workflow
 
 ## Prerequisites
 - Layout components exist
-- Supabase project configured
+- Supabase PMP project configured
 - Dev server running on `localhost:3000`
 
 ## Agent Assignments
@@ -15,19 +15,18 @@ description: Build the Authentication system (Login, Signup, Password Reset)
 
 ## Pre-Flight Checks
 - [ ] `npm run dev` is running at `localhost:3000`.
-- [ ] `SUPABASE_URL` and `SUPABASE_ANON_KEY` set in `.env.local`.
+- [ ] `SUPABASE_AUTH_URL` and `SUPABASE_AUTH_ANON_KEY` set in `.env.local`.
 - [ ] Supabase project has Auth enabled with email/password.
 
 ## Rules of Engagement
 > All rules from workspace `GEMINI.md` apply.
-
+> No public signup. Client accounts are admin-created during onboarding.
 
 ## Validation
 > See common validation for full checklist.
 
-- [ ] Signup creates user in Supabase.
 - [ ] Login sets session cookie correctly.
-- [ ] Protected routes redirect unauthenticated users.
+- [ ] Protected routes (`/portal`) redirect unauthenticated users.
 - [ ] Password reset email sends successfully.
 - [ ] Passes common validation (lint, build, screenshots).
 
@@ -40,8 +39,8 @@ View `.agent/skills/logic-engineer/SKILL.md`.
 ### 2. Configure Supabase Auth
 Verify Supabase Auth settings:
 - Email/Password enabled
-- OAuth providers (Google, etc.) if needed
 - Email templates configured
+- No public signup (admin-created accounts only)
 
 ### 3. Create Auth Utilities
 Create `lib/supabase/client.ts`:
@@ -63,53 +62,39 @@ Create `app/(auth)/login/page.tsx`:
 - "Remember me" checkbox
 - Login button
 - "Forgot password" link
-- OAuth buttons (if enabled)
-- "Don't have an account? Sign up" link
+- NOTE: No public signup. Client accounts are admin-created.
 
-### 5. Build Signup Page
-Create `app/(auth)/signup/page.tsx`:
-- Name input
-- Email input
-- Password input
-- Confirm password
-- Terms checkbox
-- Signup button
-- "Already have an account? Login" link
-
-### 6. Build Forgot Password Page
+### 5. Build Forgot Password Page
 Create `app/(auth)/forgot-password/page.tsx`:
 - Email input
 - Submit button
 - Success message
 
-### 7. Build Reset Password Page
+### 6. Build Reset Password Page
 Create `app/(auth)/reset-password/page.tsx`:
 - New password input
 - Confirm password
 - Submit button
 
-### 8. Create Auth Middleware
+### 7. Create Auth Middleware
 Create `middleware.ts`:
 - Check for session
-- Redirect unauthenticated users from /dashboard
+- Redirect unauthenticated users from /portal
 - Redirect authenticated users from /login
 
-### 9. Build Auth Form Component
+### 8. Build Auth Form Component
 Create `components/forms/AuthForm.tsx`:
-- Reusable form for login/signup
+- Reusable form for login
 - Use `@tanstack/react-form`
 - Error handling
 - Loading states
 
-### 10. Test Auth Flow
+### 9. Test Auth Flow
 Navigate to `localhost:3000/login` and:
-- Test signup flow
 - Test login flow
 - Test password reset
-- Verify protected route redirect
+- Verify protected route redirect (/portal)
 - Take screenshots
 
-### 11. Report Completion
+### 10. Report Completion
 Notify user with screenshots.
-
-

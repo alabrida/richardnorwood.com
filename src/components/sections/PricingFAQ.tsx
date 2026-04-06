@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const faqs = [
   { q: "What is the difference between Phase II and Phase III?", a: "Phase II is focused on generating intent through landing pages and active marketing. Phase III transfers everything over to your own sovereign AWS/Cloud infrastructure so you own the code explicitly without Alabrida holding it." },
   { q: "Can I cancel at any time?", a: "Yes. Phase engagements are month-to-month after the initial commitment period is met." },
-  { q: "Is the Alabrida SaaS included?", a: "Yes, all active engagements come with Battleship-tier access to the Alabrida Dashboard, including historical tracking and the AI Landing Page generator." }
+  { q: "Do I get access to a client portal?", a: "Yes, all active partnership clients receive a dedicated client portal with project tracking, asset delivery, and direct communication channels with your Revenue Architect." }
 ]
 
 export default function PricingFAQ() {

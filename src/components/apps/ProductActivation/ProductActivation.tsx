@@ -84,9 +84,9 @@ export default function ProductActivation({ onTitleChange }: AppProps) {
                 >
                   <div className={styles.tierName}>{tier.name}</div>
                   <div className={styles.tierPrice}>
-                    ${tier.price.toLocaleString()}/mo
+                    {tier.term}
                   </div>
-                  <div className={styles.tierTagline}>{tier.period}</div>
+                  <div className={styles.tierTagline}>{tier.tagline}</div>
                 </button>
               ))}
             </div>
@@ -107,8 +107,8 @@ export default function ProductActivation({ onTitleChange }: AppProps) {
                 {pricingData.tiers.find((t) => t.id === selectedTier)?.name}
               </p>
               <p>
-                <strong>Investment:</strong>{' '}
-                ${pricingData.tiers.find((t) => t.id === selectedTier)?.price.toLocaleString()} {pricingData.tiers.find((t) => t.id === selectedTier)?.period}
+                <strong>Engagement:</strong>{' '}
+                {pricingData.tiers.find((t) => t.id === selectedTier)?.term}
               </p>
               <p className={styles.stepDesc} style={{ marginTop: '12px' }}>
                 You are requesting a 1:1 strategy session with Richard Norwood, PMP, to discuss your Commercial EKG and evaluate if this Phase is the right fit. 

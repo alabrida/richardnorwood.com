@@ -12,7 +12,7 @@ interface CPItem {
 }
 
 const ITEMS: CPItem[] = [
-  { id: 'user-accounts', icon: '👤', label: 'User Accounts', description: 'Manage your account settings and subscription' },
+  { id: 'user-accounts', icon: '👤', label: 'User Accounts', description: 'Manage your account and partnership settings' },
   { id: 'display', icon: '🖥️', label: 'Display', description: 'Change Luna theme color (Blue/Silver/Olive)' },
   { id: 'sounds', icon: '🔊', label: 'Sounds and Audio', description: 'Toggle sound effects on/off' },
   { id: 'internet', icon: '🌐', label: 'Internet Options', description: 'Privacy and cookie preferences' },

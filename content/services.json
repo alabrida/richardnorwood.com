@@ -32,7 +32,7 @@
       "id": "phase-3",
       "name": "Phase III: Unified Engine",
       "subtitle": "Sovereignty & The Alabrida Bridge",
-      "description": "Replace six-figure legacy SaaS dependencies with your own sovereign infrastructure. Full preparation for Alabrida handoff.",
+      "description": "Replace six-figure legacy vendor dependencies with your own sovereign infrastructure. Full preparation for Alabrida handoff.",
       "includes": [
         "Target: Unified State (Maturity 81-100)",
         "Managed Cloud Hosting Transfer",
@@ -79,7 +79,7 @@
     { "week": 8, "topic": "Siloed Landing Pages", "description": "Building the 4 ad-specific endpoints to close intent." },
     { "week": 9, "topic": "The 90-Day Cadence", "description": "Executing the operational content calendar and templates." },
     { "week": 10, "topic": "Reputation Automation", "description": "Deploying lead nurture and review management sequences." },
-    { "week": 11, "topic": "The Frankenstein Index", "description": "Calculating the hidden cost of your overlapping SaaS tools." },
+    { "week": 11, "topic": "The Frankenstein Index", "description": "Calculating the hidden cost of your overlapping software tools." },
     { "week": 12, "topic": "The Alabrida Bridge", "description": "Preparing the jump to self-hosted sovereign infrastructure." }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-description: Build the 5-Question Calculator Prequalifier Form
+description: Build the 5-Question Calculator Lead Qualification Form
 ---
 
 # Build Calculator Workflow
@@ -10,20 +10,21 @@ description: Build the 5-Question Calculator Prequalifier Form
 
 ## Pre-Flight Checks
 - [ ] `npm run dev` is running at `localhost:3000`.
-- [ ] Rubric Master document reviewed for scoring logic.
-- [ ] 5-Stage definitions understood (Awareness→Retention).
+- [ ] 5-Stage Revenue Journey definitions understood (Awareness→Retention).
 
 ## Rules of Engagement
 > All rules from workspace `GEMINI.md` apply.
-
+> Calculator is a lead qualification tool — routes to Services or Calendly.
+> No RJAT or SaaS routing. This is a consulting prequalifier.
 
 ## Validation
 > See common validation for full checklist.
 
 - [ ] All 5 questions render correctly.
-- [ ] Scoring matches Rubric tiers (5-8→Services, 9-11→RJAT, 12-15→Calendly).
+- [ ] Scoring logic works (5-10→Services, 11-15→Calendly).
 - [ ] Each routing path triggers correctly.
 - [ ] Progress indicator updates per step.
+- [ ] Lead data stored to `website_leads` table.
 - [ ] Passes common validation (lint, build, screenshots).
 
 ## Steps
@@ -33,7 +34,7 @@ description: Build the 5-Question Calculator Prequalifier Form
 View the skill instructions at `.agent/skills/logic-engineer/SKILL.md`.
 
 ### 2. Define Calculator Questions
-The 5-Question Prequalifier should assess the user's revenue engine maturity.
+The 5-Question Prequalifier assesses the user's revenue engine maturity.
 Questions map to the 5 Stages:
 1. Awareness (Lead Generation)
 2. Consideration (Lead Nurturing)
@@ -56,16 +57,16 @@ Create `app/api/calculate/route.ts`:
 - Accept form submission
 - Calculate total score (5-15 range)
 - Determine routing:
-  - **5-8 (Bottom Third):** Fractured -> Push to Services
-  - **9-11 (Middle Third):** Fragmented -> Push to RJAT
-  - **12-15 (Top Third):** Unified -> Push to Strategy Call
+  - **5-10 (Lower Half):** Needs foundational work → Push to Services page
+  - **11-15 (Upper Half):** Ready for partnership → Push to Calendly / Contact
+- Store lead data in `website_leads` table via Supabase
 - Return result + redirect URL
 
 ### 5. Create Results Component
 Create `components/forms/CalculatorResult.tsx`:
 - Display score visualization
 - Show personalized recommendation
-- CTA to next step (Services, RJAT, or Calendly)
+- CTA to next step (Services or Calendly)
 
 ### 6. Create Calculator Page
 Create `app/calculator/page.tsx`:
@@ -82,5 +83,3 @@ Navigate to `localhost:3000/calculator` and:
 
 ### 8. Report Completion
 Notify user with screenshots and routing logic verification.
-
-

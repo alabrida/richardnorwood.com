@@ -122,7 +122,7 @@ export default function InternetExplorer({ onTitleChange }: AppProps) {
       label: 'F&avorites',
       items: [
         { label: '&Revenue Architect Blog', onClick: goHome },
-        { label: '&RJAT Assessment', disabled: true },
+        { label: '&Revenue EKG', disabled: true },
         { label: '&Book a Strategy Call', disabled: true },
       ],
     },

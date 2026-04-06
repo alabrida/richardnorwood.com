@@ -12,7 +12,7 @@ const HEADER_LINKS = [
 
 const SYSTEM_LINKS = [
   { label: 'System Login', href: '/login' },
-  { label: 'Client Dashboard', href: '/dashboard' },
+  { label: 'Client Portal', href: '/portal' },
   { label: 'EKG Calculator', href: '/calculator' },
   { label: 'The Architect', href: '/#about' },
 ];

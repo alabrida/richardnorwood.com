@@ -10,7 +10,7 @@ const questions = [
   { id: 'q1', text: 'How much time per week does your team spend manually migrating data between tools?', options: ['0-5 Hours', '5-15 Hours', '15+ Hours (Critical Leak)'] },
   { id: 'q2', text: 'Do you have a managed central repository containing all customer metrics?', options: ['Yes', 'Partially, but fragmented', 'No, strictly isolated tools'] },
   { id: 'q3', text: 'How do you measure marketing attribution today?', options: ['First/Last touch deterministic accuracy', 'Rough heuristics and guesswork', 'No systematic attribution'] },
-  { id: 'q4', text: 'How secure is your infrastructure sovereignly? If a SaaS provider doubled rates tomorrow, could you easily port away?', options: ['Fully sovereign (Own DB/Cloud)', 'Slightly entangled', 'Totally locked into commercial SaaS providers'] },
+  { id: 'q4', text: 'How secure is your infrastructure sovereignty? If a vendor doubled rates tomorrow, could you easily port away?', options: ['Fully sovereign (Own DB/Cloud)', 'Slightly entangled', 'Totally locked into third-party vendors'] },
   { id: 'q5', text: 'Identify your estimated Annual Revenue (AARR)', options: ['$0 - $1MM (Emerging)', '$1MM - $5MM (Orchestrating)', '$5MM+ (Scale)'] },
 ]
 
@@ -23,11 +23,11 @@ export default function CalculatorForm() {
     onSubmit: async ({ value }) => {
       setAnalyzing(true)
       
-      // Simulate heavy processing mapping back to the RJAT algorithm
+      // Calculate qualification score and route to appropriate next step
       setTimeout(() => {
         setAnalyzing(false)
         toast.message('Analysis Complete', {
-          description: 'Diagnostic appended to encrypted dispatch. Redirecting...'
+          description: 'Your Revenue EKG results are ready. Routing to next step...'
         })
         
         // Push user to contact to book with payload

@@ -7,7 +7,7 @@ export default function GoogleCalendarEmbed() {
   // e.g., 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ...xyz?gv=true'
   const appointmentUrl = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2IUrfLBntA3iUYdPVHGDJwltQwjr4Pm03h7dCEVJvwgzMW-fvCTU-2tN-y81X-N4R0DxXqDr0V?gv=true'
 
-  const isPlaceholder = appointmentUrl === 'YOUR_GOOGLE_CALENDAR_APPOINTMENT_URL'
+  const isPlaceholder = !appointmentUrl || appointmentUrl.includes('YOUR_GOOGLE')
 
   return (
     <div style={{ width: '100%', height: '100%', background: '#ffffff', border: '1px solid var(--color-surface-elevated)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', position: 'relative' }}>

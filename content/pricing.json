@@ -4,8 +4,7 @@
       "id": "phase-1",
       "name": "Phase I: Diagnostic EKG",
       "tagline": "Foundations",
-      "price": 2500,
-      "period": "per month (90 days)",
+      "term": "90 Days",
       "features": [
         "2 Optimized Social Profiles",
         "Branded Microsite (Carrd)",
@@ -25,8 +24,7 @@
       "id": "phase-2",
       "name": "Phase II: Engine Orchestration",
       "tagline": "Harmony (Recommended)",
-      "price": 4500,
-      "period": "per month (6 months)",
+      "term": "6 Months",
       "features": [
         "Everything in Phase I",
         "3 Additional Socials (Total 5)",
@@ -45,12 +43,11 @@
       "id": "phase-3",
       "name": "Phase III: Unified Engine",
       "tagline": "Sovereignty Proof",
-      "price": 8000,
-      "period": "per month (12 months)",
+      "term": "12 Months",
       "features": [
         "Everything in Phase II",
         "Migration to Managed Cloud Hosting",
-        "Replace Six-Figure SaaS Dependencies",
+        "Replace Six-Figure Vendor Dependencies",
         "Custom Architecture for CPQ/Billing",
         "The Alabrida Bridge Handoff",
         "Full Cloud Sovereignty Prep"

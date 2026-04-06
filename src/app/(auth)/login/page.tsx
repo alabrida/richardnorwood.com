@@ -1,8 +1,8 @@
 import AuthForm from '@/components/forms/AuthForm'
 
 export const metadata = {
-  title: 'Sign In - Revenue Architecture',
-  description: 'Log in to your master dashboard.'
+  title: 'Client Login - Richard Norwood, PMP',
+  description: 'Access your partnership client portal.'
 }
 
 export default function LoginPage() {

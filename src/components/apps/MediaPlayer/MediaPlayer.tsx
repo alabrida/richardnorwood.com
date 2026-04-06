@@ -6,7 +6,7 @@ import type { MenuGroup } from '@/components/apps/shared/MenuBar';
 import styles from './MediaPlayer.module.css';
 
 const PLAYLIST = [
-  { id: 1, title: 'Client Testimonial — SaaS Startup (312% Growth)', duration: '3:42' },
+  { id: 1, title: 'Client Testimonial — Tech Startup (312% Growth)', duration: '3:42' },
   { id: 2, title: 'Revenue Journey Overview', duration: '5:15' },
   { id: 3, title: 'Case Study — E-Commerce $2.4M Recovery', duration: '4:28' },
   { id: 4, title: '90-Day Partnership Walkthrough', duration: '7:03' },

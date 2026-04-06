@@ -1,0 +1,20 @@
+﻿Γû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 6.4s
+  Running TypeScript ...
+Failed to type check.
+System.Management.Automation.RemoteException
+./src/components/apps/MyComputer/MyComputer.tsx:172:34
+Type error: Property 'rank' does not exist on type '{ stage: string; label: string; severity: string; }'.
+System.Management.Automation.RemoteException
+  [90m170 |[0m               <div className={styles.leakList}>
+  [90m171 |[0m                 {dashboardData.leaks.map((leak) => (
+[31m[1m>[0m [90m172 |[0m                   <div key={leak.rank} className={styles.leakItem}>
+  [90m    |[0m                                  [31m[1m^[0m
+  [90m173 |[0m                     <div className={styles.leakHeader}>
+  [90m174 |[0m                       <span
+  [90m175 |[0m                         className={[32m`[0m${styles.leakRank[32m} [0m${
+Next.js build worker exited with code: 1 and signal: null

@@ -1,53 +1,21 @@
 {
-  "overall_score": 54,
-  "maturity_tier": "Emerging Cohesion",
+  "overall_score": 72,
   "stage_scores": [
-    { "stage": "Awareness", "score": 68, "max": 100, "color": "#FF6B6B" },
-    { "stage": "Acquisition", "score": 45, "max": 100, "color": "#FFA94D" },
-    { "stage": "Activation", "score": 52, "max": 100, "color": "#FFD43B" },
-    { "stage": "Revenue", "score": 61, "max": 100, "color": "#69DB7C" },
-    { "stage": "Retention", "score": 44, "max": 100, "color": "#4DABF7" }
+    { "stage": "Awareness", "score": 85, "color": "#4CAF50" },
+    { "stage": "Consideration", "score": 68, "color": "#2196F3" },
+    { "stage": "Decision", "score": 74, "color": "#FF9800" },
+    { "stage": "Conversion", "score": 62, "color": "#9C27B0" },
+    { "stage": "Retention", "score": 71, "color": "#F44336" }
   ],
   "leaks": [
-    {
-      "rank": 1,
-      "stage": "Acquisition",
-      "title": "Manual Data Entry Bottleneck",
-      "severity": "critical",
-      "description": "Your team suffers from the 'Manual Entry Tax'. Over 10 hours a week are wasted manually porting leads from forms to a scattered CRM."
-    },
-    {
-      "rank": 2,
-      "stage": "Retention",
-      "title": "Rented Infrastructure Dependency",
-      "severity": "critical",
-      "description": "You are exposed to six-figure SaaS 'app tax' increases. It is time to graduate to Sovereign Infrastructure."
-    },
-    {
-      "rank": 3,
-      "stage": "Awareness",
-      "title": "Broken Perimeter Signals",
-      "severity": "high",
-      "description": "Inconsistent 'Information Fusion' across your 5 primary social profiles hurts buyer conviction before they arrive at your gateway."
-    },
-    {
-      "rank": 4,
-      "stage": "Activation",
-      "title": "Missing Governance",
-      "severity": "medium",
-      "description": "High 'Frankenstein Index'. You have overlapping SaaS tools creating data silos rather than a Managed Nervous System (MNS)."
-    },
-    {
-      "rank": 5,
-      "stage": "Revenue",
-      "title": "No Unified Commercial Engine",
-      "severity": "high",
-      "description": "Lack of real-time buyer behavior perception (Clarity/SA) is obscuring drop-off points in your pricing tier page."
-    }
+    { "rank": 1, "stage": "Consideration", "title": "No Lead Nurture Sequence", "description": "Leads are not being nurtured through automated email or messaging workflows.", "severity": "high" },
+    { "rank": 2, "stage": "Conversion", "title": "Manual Invoice Processing", "description": "Revenue is delayed due to manual invoicing instead of automated billing.", "severity": "medium" },
+    { "rank": 3, "stage": "Decision", "title": "No Case Study Page", "description": "Potential clients have no social proof to evaluate during the decision stage.", "severity": "low" }
   ],
   "history": [
-    { "date": "2025-01-15", "overall_score": 54, "maturity_tier": "Emerging Cohesion" },
-    { "date": "2024-12-01", "overall_score": 38, "maturity_tier": "Fragmented" },
-    { "date": "2024-10-15", "overall_score": 32, "maturity_tier": "Fragmented" }
+    { "date": "2026-01-15", "maturity_tier": "Fragmented", "overall_score": 45 },
+    { "date": "2026-02-01", "maturity_tier": "Emerging", "overall_score": 58 },
+    { "date": "2026-03-01", "maturity_tier": "Emerging", "overall_score": 67 },
+    { "date": "2026-04-01", "maturity_tier": "Orchestrated", "overall_score": 72 }
   ]
 }

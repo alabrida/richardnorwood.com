@@ -1,0 +1,13 @@
+﻿.next/dev/types/validator.ts(80,39): error TS2307: Cannot find module '../../../src/app/(auth)/signup/page.js' or its corresponding type declarations.
+src/components/apps/MyComputer/MyComputer.tsx(172,34): error TS2339: Property 'rank' does not exist on type '{ stage: string; label: string; severity: string; }'.
+src/components/apps/MyComputer/MyComputer.tsx(183,31): error TS2339: Property 'rank' does not exist on type '{ stage: string; label: string; severity: string; }'.
+src/components/apps/MyComputer/MyComputer.tsx(185,64): error TS2339: Property 'title' does not exist on type '{ stage: string; label: string; severity: string; }'.
+src/components/apps/MyComputer/MyComputer.tsx(188,60): error TS2339: Property 'description' does not exist on type '{ stage: string; label: string; severity: string; }'.
+src/components/apps/MyComputer/MyComputer.tsx(210,65): error TS2339: Property 'maturity_tier' does not exist on type '{ date: string; score: number; }'.
+src/components/apps/MyComputer/MyComputer.tsx(216,54): error TS2339: Property 'overall_score' does not exist on type '{ date: string; score: number; }'.
+src/components/apps/MyComputer/MyComputer.tsx(219,32): error TS2339: Property 'overall_score' does not exist on type '{ date: string; score: number; }'.
+src/components/apps/ProductActivation/ProductActivation.tsx(87,28): error TS2339: Property 'price' does not exist on type '{ id: string; name: string; tagline: string; term: string; features: string[]; locked_features: string[]; cta_text: string; highlighted: boolean; }'.
+src/components/apps/ProductActivation/ProductActivation.tsx(89,61): error TS2339: Property 'period' does not exist on type '{ id: string; name: string; tagline: string; term: string; features: string[]; locked_features: string[]; cta_text: string; highlighted: boolean; }'.
+src/components/apps/ProductActivation/ProductActivation.tsx(111,73): error TS2339: Property 'price' does not exist on type '{ id: string; name: string; tagline: string; term: string; features: string[]; locked_features: string[]; cta_text: string; highlighted: boolean; }'.
+src/components/apps/ProductActivation/ProductActivation.tsx(111,152): error TS2339: Property 'period' does not exist on type '{ id: string; name: string; tagline: string; term: string; features: string[]; locked_features: string[]; cta_text: string; highlighted: boolean; }'.
+src/components/ui/GoogleCalendarEmbed.tsx(10,25): error TS2367: This comparison appears to be unintentional because the types '"https://calendar.google.com/calendar/appointments/schedules/AcZssZ2IUrfLBntA3iUYdPVHGDJwltQwjr4Pm03h7dCEVJvwgzMW-fvCTU-2tN-y81X-N4R0DxXqDr0V?gv=true"' and '"YOUR_GOOGLE_CALENDAR_APPOINTMENT_URL"' have no overlap.

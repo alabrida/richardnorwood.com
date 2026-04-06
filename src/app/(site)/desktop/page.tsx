@@ -16,10 +16,10 @@ type AppPhase = 'boot-login' | 'desktop';
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Revenue Architect Platform",
+  "name": "Revenue Architect — Living Case Study",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Premium Revenue Journey Assessment Tool and Commercial Engine Management SaaS.",
+  "description": "Interactive Windows XP case study demonstrating Revenue Architecture methodology and commercial engine diagnostics.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/OnlineOnly"

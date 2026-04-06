@@ -24,8 +24,8 @@ export async function middleware(request: NextRequest) {
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  // Guard Dashboard
-  if (request.nextUrl.pathname.startsWith('/dashboard')) {
+  // Guard Client Portal
+  if (request.nextUrl.pathname.startsWith('/portal')) {
     if (!user) {
       url.pathname = '/login'
       return NextResponse.redirect(url)
@@ -33,9 +33,9 @@ export async function middleware(request: NextRequest) {
   }
 
   // Bounce auth users from auth pages
-  if (['/login', '/signup', '/forgot-password', '/reset-password'].includes(request.nextUrl.pathname)) {
+  if (['/login', '/forgot-password', '/reset-password'].includes(request.nextUrl.pathname)) {
     if (user) {
-      url.pathname = '/dashboard'
+      url.pathname = '/portal'
       return NextResponse.redirect(url)
     }
   }

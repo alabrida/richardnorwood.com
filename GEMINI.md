@@ -12,7 +12,7 @@
 - Align all features to the 5-Stage Revenue Journey (Awareness → Retention).
 - Use Revenue Journey Stage Colors from `globals.css` for visualizations.
 - Error messages must be meaningful, not generic "failed" text.
-- Pricing must be transparent — no hidden fees.
+- Pricing engagements are discussed in discovery — no hidden fees.
 - Content freshness: ≤30 days = Fresh, 31-90 days = Current, >90 days = Aging.
 
 ### Results
@@ -31,21 +31,18 @@
 - Never use pre-styled component libraries (shadcn, DaisyUI). Custom only.
 - Mobile-first CSS using `min-width` breakpoints.
 
-### FullStack Developer
+### Microservice Architecture
 - Use Next.js Server Components for data fetching.
 - Show skeleton loaders during data fetch, never blank states.
-- BlurGate logic must match tier definitions:
-  - Free: Blur all except Top 5 leaks
-  - Standard: Unblur dashboard + history
-  - Pro: Unblur all + Chat + Generator
-  - Battleship: Credit-based unlock
-- Real-time updates via Supabase subscriptions where applicable.
+- This website is a standalone microservice within the larger platform.
+- Auth is for onboarded partnership clients only (admin-created accounts).
+- Client portal links to externally-provisioned dashboards (Terraform).
+- No SaaS subscription logic, BlurGate, or credit-based unlocks on this site.
 
 ### Logic Engineer
 - All TypeScript. Generate types from Supabase schema.
-- Scoring must follow Revenue Journey Rubric Master exactly.
 - Use `@tanstack/react-form` for form state management.
-- API integrations: Supabase, Stripe, n8n webhooks, Apify, SERP API.
+- API integrations: Supabase (auth + leads), n8n webhooks, WordPress (blog).
 - Secure API routes with authentication middleware.
 
 ## Common Validation Checklist
@@ -65,18 +62,19 @@
 #### Complete Workflow Inventory
 
 | Workflow | Agent(s) | Purpose |
-|---| `/build-layout` | Layout Architect | Design tokens, Header, Footer |
-| `/build-auth` | Logic Engineer | Login, Signup, Password Reset |
+|---|---|---|
+| `/build-layout` | Layout Architect | Design tokens, Header, Footer |
+| `/build-auth` | Logic Engineer | Client login, password reset (onboarded clients only) |
 | `/build-homepage` | Frontend Builder, Content Strategist | Hero, Ideology, Social Proof, About |
-| `/build-services` | Content Strategist, Frontend Builder | 90-Day Partnership page |
-| `/build-pricing` | Frontend Builder, Content Strategist | SaaS tiers, comparison |
+| `/build-services` | Content Strategist, Frontend Builder | Strategic Partnership page |
+| `/build-pricing` | Frontend Builder, Content Strategist | Partnership tiers (no prices) |
 | `/build-contact` | Frontend Builder, Logic Engineer | Contact form, Calendly |
-| `/build-blog` | Content Strategist, Logic Engineer | WordPress/MDX blog |
+| `/build-blog` | Content Strategist, Logic Engineer | WordPress headless blog |
 | `/build-calculator` | Logic Engineer, Content Strategist | 5-question prequalifier |
-| `/build-rjat` | Logic Engineer, Frontend Builder, Content Strategist | Assessment tool engine |
-| `/build-dashboard` | FullStack Dev | Scorecard, Leak List, BlurGate |
-| `/build-pro-tools` | FullStack Dev, Logic Engineer | Chat, Generator |
 | `/build-hero` | Frontend Builder | Hero section only |
+| `/build-xp-shell` | XP Shell Architect | Desktop, Taskbar, Start Menu |
+| `/build-xp-apps` | Retro App Builder | IE6, Outlook, AIM, etc. |
+| `/build-xp-integration` | Logic Engineer | Supabase, sounds, polish |
 
 ---
 
@@ -85,32 +83,22 @@
 ```
 PHASE 1: FOUNDATION (Sequential)
 ┌─────────────────┐     ┌─────────────────┐
-│  /build-layout  │ ──▶ │   /build-auth   │
+│  /build-layout  │ ──▶ │   /build-auth   │ (client-only)
 └─────────────────┘     └─────────────────┘
 
 PHASE 2: PUBLIC PAGES (Parallel)
 ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
 │ /build-homepage │  │ /build-services │  │ /build-pricing  │
 └─────────────────┘  └─────────────────┘  └─────────────────┘
-         │                   │                    │
-         └───────────────────┼────────────────────┘
-                             │
+
 ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
 │ /build-contact  │  │   /build-blog   │  │/build-calculator│
 └─────────────────┘  └─────────────────┘  └─────────────────┘
 
-PHASE 3: APP LAYER (Sequential after Auth)
-┌─────────────────┐
-│   /build-rjat   │  (Payment Gate)
-└────────┬────────┘
-         │
-┌────────▼────────┐
-│ /build-dashboard│
-└────────┬────────┘
-         │
-┌────────▼────────┐
-│/build-pro-tools │
-└─────────────────┘
+PHASE 3: CASE STUDY (Sequential — after Layout)
+┌─────────────────┐     ┌─────────────────┐     ┌───────────────────────┐
+│ /build-xp-shell │ ──▶ │ /build-xp-apps  │ ──▶ │ /build-xp-integration │
+└─────────────────┘     └─────────────────┘     └───────────────────────┘
 ```
 
 ---
@@ -126,14 +114,15 @@ PHASE 3: APP LAYER (Sequential after Auth)
 
 
 **Additional Orchestrator Rules:**
-- Phase Dependencies: Foundation → Public Pages → App Layer (strict order).
+- Phase Dependencies: Foundation → Public Pages → Case Study (strict order).
 - Parallel Execution: Phase 2 workflows run in parallel.
 - Lint Gate: No workflow marked complete if `npm run lint` fails.
+- This website is a microservice — no SaaS logic (RJAT, Dashboard, Pro Tools).
 
 #### Validation (Site-Level)
 > See common validation for full checklist.
 
-- [ ] All 12 workflows completed with Validation checklists passed.
+- [ ] All 12 workflows completed with Validation checklists passed (9 website + 3 XP case study).
 - [ ] Full navigation test complete (all pages reachable).
 - [ ] Screenshot gallery captured (desktop + mobile for every page).
 - [ ] `walkthrough.md` generated with page/component inventory.
@@ -152,7 +141,7 @@ npx -y create-next-app@latest ./ --typescript --tailwind --eslint --app --src-di
 ##### 2. Install Dependencies
 // turbo
 ```bash
-npm install framer-motion @tanstack/react-form @tanstack/react-table recharts sonner @supabase/supabase-js downshift ai
+npm install framer-motion @tanstack/react-form @tanstack/react-table recharts sonner @supabase/supabase-js @supabase/ssr downshift
 npm install -D @types/node
 ```
 
@@ -177,7 +166,7 @@ Creates: Design tokens, Header, Footer, Container, BentoGrid.
 **WAIT FOR COMPLETION**
 
 ##### 1.2 Execute /build-auth
-Creates: Login, Signup, Password Reset, Middleware.
+Creates: Client Login, Password Reset, Portal, Middleware (onboarded clients only — no public signup).
 **WAIT FOR COMPLETION**
 
 ---
@@ -198,18 +187,18 @@ Execute these workflows **simultaneously**:
 
 ---
 
-#### Phase 3: App Layer (Sequential)
+#### Phase 3: Case Study (Sequential)
 
-##### 3.1 Execute /build-rjat
-Creates: URL input, processing state, payment gate.
+##### 3.1 Execute /build-xp-shell
+Creates: Desktop, Taskbar, Start Menu, Window Manager, Luna theme.
 **WAIT FOR COMPLETION**
 
-##### 3.2 Execute /build-dashboard
-Creates: Scorecard, Leak List, History, BlurGate.
+##### 3.2 Execute /build-xp-apps
+Creates: IE6, Outlook Express, AIM, Calculator, Notepad, etc.
 **WAIT FOR COMPLETION**
 
-##### 3.3 Execute /build-pro-tools
-Creates: Chat Interface, Landing Page Generator.
+##### 3.3 Execute /build-xp-integration
+Creates: Supabase wiring, sounds, BSOD, mobile support, polish.
 
 ---
 
@@ -218,13 +207,13 @@ Creates: Chat Interface, Landing Page Generator.
 ##### 4.1 Full Site Navigation Test
 Navigate through every page:
 1. Homepage (all sections)
-2. Services
-3. Pricing (tier toggle)
+2. Services (partnership phases)
+3. Pricing (partnership tiers — no prices)
 4. Contact (form + Calendly)
 5. Blog (list + post)
-6. Calculator (all paths)
-7. RJAT (processing + gate)
-8. Dashboard (all tier views)
+6. Calculator (prequalifier → services or calendly)
+7. Desktop (XP case study)
+8. Login → Portal (authenticated clients only)
 
 ##### 4.2 Screenshot Gallery
 Capture screenshots of every page:
@@ -397,19 +386,9 @@ Create `app/(auth)/login/page.tsx`:
 - Login button
 - "Forgot password" link
 - OAuth buttons (if enabled)
-- "Don't have an account? Sign up" link
+- NOTE: No public signup page. Client accounts are admin-created.
 
-##### 5. Build Signup Page
-Create `app/(auth)/signup/page.tsx`:
-- Name input
-- Email input
-- Password input
-- Confirm password
-- Terms checkbox
-- Signup button
-- "Already have an account? Login" link
-
-##### 6. Build Forgot Password Page
+##### 5. Build Forgot Password Page
 Create `app/(auth)/forgot-password/page.tsx`:
 - Email input
 - Submit button
@@ -421,28 +400,27 @@ Create `app/(auth)/reset-password/page.tsx`:
 - Confirm password
 - Submit button
 
-##### 8. Create Auth Middleware
+##### 7. Create Auth Middleware
 Create `middleware.ts`:
 - Check for session
-- Redirect unauthenticated users from /dashboard
+- Redirect unauthenticated users from /portal
 - Redirect authenticated users from /login
 
-##### 9. Build Auth Form Component
+##### 8. Build Auth Form Component
 Create `components/forms/AuthForm.tsx`:
-- Reusable form for login/signup
+- Reusable form for login
 - Use `@tanstack/react-form`
 - Error handling
 - Loading states
 
-##### 10. Test Auth Flow
+##### 9. Test Auth Flow
 Navigate to `localhost:3000/login` and:
-- Test signup flow
 - Test login flow
 - Test password reset
-- Verify protected route redirect
+- Verify protected route redirect (/portal)
 - Take screenshots
 
-##### 11. Report Completion
+##### 10. Report Completion
 Notify user with screenshots.
 
 

@@ -9,8 +9,7 @@ interface Tier {
   id: string
   name: string
   tagline: string
-  price: number
-  period: string
+  term: string
   features: string[]
   locked_features: string[]
   cta_text: string
@@ -35,9 +34,8 @@ export default function PricingGrid({ data }: { data: Tier[] }) {
           <p className={styles.tierTagline}>{tier.tagline}</p>
           
           <div className={styles.priceBlock}>
-            <span className={styles.currency}>$</span>
-            <span className={styles.price}>{tier.price.toLocaleString()}</span>
-            <span className={styles.period}>{tier.period}</span>
+            <span className={styles.termLabel}>Engagement Term</span>
+            <span className={styles.price}>{tier.term}</span>
           </div>
           
           <ul className={styles.featuresList}>

@@ -8,7 +8,7 @@ import Link from 'next/link'
 import styles from './AuthForm.module.css'
 
 interface AuthFormProps {
-  type: 'login' | 'signup' | 'forgot-password' | 'reset-password'
+  type: 'login' | 'forgot-password' | 'reset-password'
 }
 
 export default function AuthForm({ type }: AuthFormProps) {
@@ -29,30 +29,13 @@ export default function AuthForm({ type }: AuthFormProps) {
       setSuccessMsg(null)
 
       try {
-        if (type === 'signup') {
-          if (value.password !== value.confirmPassword) {
-            setServerError("Passwords do not match.")
-            return
-          }
-          const { error } = await supabase.auth.signUp({
-            email: value.email,
-            password: value.password,
-            options: {
-              data: { full_name: value.fullName }
-            }
-          })
-          if (error) throw error
-          setSuccessMsg('Account created successfully. You can now login.')
-          // Auto route to dashboard if email verification is off, otherwise prompt to check email
-          router.push('/dashboard')
-        } 
-        else if (type === 'login') {
+        if (type === 'login') {
           const { error } = await supabase.auth.signInWithPassword({
             email: value.email,
             password: value.password,
           })
           if (error) throw error
-          router.push('/dashboard')
+          router.push('/portal')
           router.refresh()
         }
         else if (type === 'forgot-password') {
@@ -84,14 +67,12 @@ export default function AuthForm({ type }: AuthFormProps) {
     <div className={styles.authCard}>
       <div className={styles.authHeader}>
         <h1 className={styles.authTitle}>
-          {type === 'login' && 'Sign In'}
-          {type === 'signup' && 'Create Account'}
+          {type === 'login' && 'Client Sign In'}
           {type === 'forgot-password' && 'Reset Password'}
           {type === 'reset-password' && 'Set New Password'}
         </h1>
         <p className={styles.authSubhead}>
-          {type === 'login' && 'Access the Revenue Architecture platform.'}
-          {type === 'signup' && 'Join the definitive commercial engine.'}
+          {type === 'login' && 'Access your partnership client portal.'}
         </p>
       </div>
 
@@ -106,33 +87,9 @@ export default function AuthForm({ type }: AuthFormProps) {
         }}
         className={styles.authForm}
       >
-        {type === 'signup' && (
-          <form.Field
-            name="fullName"
-            validators={{
-              onChange: ({ value }) => !value ? 'Name is required' : undefined
-            }}
-            children={(field) => (
-              <div className={styles.formGroup}>
-                <label htmlFor={field.name}>Full Name</label>
-                <input
-                  id={field.name}
-                  name={field.name}
-                  value={field.state.value}
-                  onBlur={field.handleBlur}
-                  onChange={(e) => field.handleChange(e.target.value)}
-                  className={styles.inputField}
-                  placeholder="Richard Norwood"
-                />
-                {field.state.meta.errors ? (
-                  <span className={styles.fieldError}>{field.state.meta.errors.join(', ')}</span>
-                ) : null}
-              </div>
-            )}
-          />
-        )}
 
-        {(type === 'login' || type === 'signup' || type === 'forgot-password') && (
+
+        {(type === 'login' || type === 'forgot-password') && (
           <form.Field
             name="email"
             validators={{
@@ -159,7 +116,7 @@ export default function AuthForm({ type }: AuthFormProps) {
           />
         )}
 
-        {(type === 'login' || type === 'signup' || type === 'reset-password') && (
+        {(type === 'login' || type === 'reset-password') && (
           <form.Field
             name="password"
             validators={{
@@ -186,7 +143,7 @@ export default function AuthForm({ type }: AuthFormProps) {
           />
         )}
 
-        {(type === 'signup' || type === 'reset-password') && (
+        {type === 'reset-password' && (
           <form.Field
             name="confirmPassword"
             validators={{
@@ -223,7 +180,6 @@ export default function AuthForm({ type }: AuthFormProps) {
             >
               {isSubmitting ? 'Processing...' : (
                 type === 'login' ? 'Sign In' :
-                type === 'signup' ? 'Create Account' :
                 type === 'forgot-password' ? 'Send Instructions' :
                 'Update Password'
               )}
@@ -234,14 +190,7 @@ export default function AuthForm({ type }: AuthFormProps) {
 
       <div className={styles.authLinks}>
         {type === 'login' && (
-          <>
-            <Link href="/forgot-password" className={styles.linkClass}>Forgot your password?</Link>
-            <span className={styles.divider}>|</span>
-            <Link href="/signup" className={styles.linkClass}>Need an account?</Link>
-          </>
-        )}
-        {type === 'signup' && (
-          <Link href="/login" className={styles.linkClass}>Already have an account? Sign In</Link>
+          <Link href="/forgot-password" className={styles.linkClass}>Forgot your password?</Link>
         )}
         {(type === 'forgot-password' || type === 'reset-password') && (
           <Link href="/login" className={styles.linkClass}>Return to Sign In</Link>

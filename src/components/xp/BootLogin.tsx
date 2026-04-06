@@ -69,7 +69,7 @@ export default function BootLogin({ onEnterDesktop }: BootLoginProps) {
                 </div>
                 <div className={styles.userInfo}>
                   <span className={styles.userName}>Client Portal</span>
-                  <span className={styles.userDetails}>Secure SaaS Login</span>
+                  <span className={styles.userDetails}>Secure Client Login</span>
                 </div>
               </button>
 
