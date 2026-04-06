@@ -165,7 +165,7 @@ export default function IdeologySection({ data }: IdeologyProps) {
               styles.bentoTall,   // Consideration — spans 2 rows
               '',                  // Decision — normal
               '',                  // Conversion — normal
-              '',                  // Retention — normal (balanced with CTA)
+              styles.bentoWide,   // Retention — spans 2 cols (rectangle)
             ]
             return (
               <TiltCard
