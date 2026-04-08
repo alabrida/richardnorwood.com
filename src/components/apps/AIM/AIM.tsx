@@ -100,7 +100,33 @@ export default function AIMBuddyList({ onTitleChange }: AppProps) {
 
     // Bot response after delay
     setTimeout(() => {
-      const response = BOT_RESPONSES[Math.floor(Math.random() * BOT_RESPONSES.length)];
+      let response: string;
+
+      if (chatWith === 'Richard Norwood') {
+        // Calendly-style: direct booking link
+        const calendarUrl = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2IUrfLBntA3iUYdPVHGDJwltQwjr4Pm03h7dCEVJvwgzMW-fvCTU-2tN-y81X-N4R0DxXqDr0V?gv=true';
+        const calendarResponses = [
+          `Great to connect! Let's get you on the calendar. Book your strategy call here:\n\n📅 ${calendarUrl}`,
+          `I'd love to dig into that with you. Pick a time that works:\n\n📅 ${calendarUrl}`,
+          `That sounds like an architecture problem — exactly what I solve. Let's talk:\n\n📅 ${calendarUrl}`,
+        ];
+        response = calendarResponses[Math.floor(Math.random() * calendarResponses.length)];
+      } else {
+        // Strategy Bot: scripted conversation tree
+        const lowerInput = input.toLowerCase();
+        if (lowerInput.includes('revenue') || lowerInput.includes('growth')) {
+          response = "Revenue leaks come from 5 stages: Awareness → Acquisition → Activation → Revenue → Retention. Most businesses have 2-3 disconnected stages. Run the Calculator (desktop icon) to find yours.";
+        } else if (lowerInput.includes('service') || lowerInput.includes('partnership') || lowerInput.includes('pricing')) {
+          response = "We offer a structured 90-Day Partnership in three phases: Phase I (Commercial EKG), Phase II (MNS Orchestration), and Phase III (Sovereign Engine). Open Internet Explorer from the desktop to read more.";
+        } else if (lowerInput.includes('assessment') || lowerInput.includes('calculator') || lowerInput.includes('ekg')) {
+          response = "The Commercial EKG is a 250+ point diagnostic. For a quick preview, try the Calculator app on the desktop — it's a 5-question prequalifier that maps your Revenue Journey stage.";
+        } else if (lowerInput.includes('book') || lowerInput.includes('call') || lowerInput.includes('schedule') || lowerInput.includes('meet')) {
+          response = "You can book a strategy call with Richard directly! Double-click 'Richard Norwood' in the buddy list to get his calendar link.";
+        } else {
+          response = BOT_RESPONSES[Math.floor(Math.random() * BOT_RESPONSES.length)];
+        }
+      }
+
       setMessages((prev) => [
         ...prev,
         {
@@ -213,8 +239,8 @@ export default function AIMBuddyList({ onTitleChange }: AppProps) {
 
 export const aimConfig: AppConfig = {
   id: 'aim',
-  title: 'AIM Buddy List',
-  icon: '/icons/aim.png',
+  title: 'Partnership Ecosystem',
+  icon: '/icons/icons/aim.png',
   defaultSize: { width: 220, height: 400 },
   minSize: { width: 180, height: 300 },
   component: AIMBuddyList,

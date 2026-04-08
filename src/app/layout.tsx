@@ -17,10 +17,23 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'Richard Norwood, PMP — Revenue Architect',
-  description:
-    'Revenue Architecture for the Modern Builder. Identify your revenue leaks and orchestrate your commercial engine with a certified PMP.',
+  description: 'Install a Unified Commercial Engine that transforms digital presence from recurring overhead into high-value financial assets.',
+  metadataBase: new URL('https://richardnorwood.com'),
+  openGraph: {
+    title: 'Richard Norwood, PMP — Revenue Architect',
+    description: 'Transform your agency from fragmented operations into orchestrated, compounding growth.',
+    url: 'https://richardnorwood.com',
+    siteName: 'Richard Norwood',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Richard Norwood, PMP — Revenue Architect',
+    description: 'Transform your agency from fragmented operations into orchestrated, compounding growth.',
+  },
   icons: {
-    icon: '/icons/start-flag.png',
+    icon: '/icons/icons/wheel.png',
   },
 };
 

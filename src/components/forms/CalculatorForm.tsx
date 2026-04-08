@@ -50,11 +50,6 @@ I'm ready to review my operational baseline.`
     }
   })
 
-  // Basic progression
-  const nextStep = (field: any) => {
-    if (field.state.value) setStep(prev => Math.min(prev + 1, questions.length))
-  }
-
   return (
     <div className={styles.formContainer} style={{ width: '100%', maxWidth: 700, minHeight: 400, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       
@@ -87,14 +82,16 @@ I'm ready to review my operational baseline.`
                 </h3>
   
                 <form.Field
-                  name={questions[step].id as any}
-                  children={(field) => (
+                  name={questions[step].id as "q1"|"q2"|"q3"|"q4"|"q5"}
+                >
+                  {(field) => (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
                       {questions[step].options.map((opt, i) => (
                         <button
                           key={i}
                           type="button"
                           onClick={() => {
+                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
                             field.handleChange(opt as any)
                             setTimeout(() => setStep(step + 1), 300)
                           }}
@@ -114,7 +111,7 @@ I'm ready to review my operational baseline.`
                       ))}
                     </div>
                   )}
-                />
+                </form.Field>
               </motion.div>
             </AnimatePresence>
           ) : (
@@ -124,12 +121,13 @@ I'm ready to review my operational baseline.`
               
               <form.Subscribe
                 selector={(state) => [state.canSubmit, state.isSubmitting]}
-                children={([canSubmit, isSubmitting]) => (
+              >
+                {([canSubmit, isSubmitting]) => (
                   <button type="submit" disabled={!canSubmit || isSubmitting} className={styles.submitBtn} style={{ width: '100%', maxWidth: 300, margin: '0 auto' }}>
                     Run Diagnostic Engine
                   </button>
                 )}
-              />
+              </form.Subscribe>
             </motion.div>
           )}
         </form>

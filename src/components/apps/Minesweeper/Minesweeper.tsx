@@ -220,8 +220,8 @@ export default function Minesweeper(_props: AppProps) {
 
 export const minesweeperConfig: AppConfig = {
   id: 'minesweeper',
-  title: 'Minesweeper',
-  icon: '/icons/minesweeper.png',
+  title: 'Risk & Compliance',
+  icon: '/icons/icons/waste_basket.png',
   defaultSize: { width: 230, height: 340 },
   minSize: { width: 220, height: 320 },
   component: Minesweeper,

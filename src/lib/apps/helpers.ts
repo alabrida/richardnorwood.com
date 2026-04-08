@@ -1,36 +1,46 @@
 /* ── App Helper Abstraction Layer ──
-   Stage 2 stubs. Stage 3 replaces implementations with real backends.
+   Stage 3: Real implementations.
    App components call these helpers — they NEVER import backends directly. */
 
+import { SoundManager } from '@/lib/sounds/SoundManager';
+import { useBalloonStore } from '@/lib/xp/balloonStore';
+
 /**
- * Play a sound effect.
- * Stage 2: console.log
- * Stage 3: SoundManager.getInstance().play(id)
+ * Play a sound effect via the SoundManager singleton.
  */
 export function playSound(id: string): void {
-  console.log(`🔊 sound: ${id}`);
+  if (typeof window === 'undefined') return;
+  SoundManager.getInstance().play(id);
 }
 
 /**
  * Show a balloon tip notification in the System Tray.
- * Stage 2: console.log
- * Stage 3: balloonTipStore.show({ title, body, icon })
  */
-export function showBalloonTip(title: string, body: string): void {
-  console.log(`💬 balloon: ${title} — ${body}`);
+export function showBalloonTip(title: string, body: string, icon?: string): void {
+  useBalloonStore.getState().show(title, body, icon);
 }
 
 /**
- * Submit form data to an endpoint.
- * Stage 2: console.log + return mock success
- * Stage 3: fetch(endpoint, { method: 'POST', body })
+ * Submit form data to an endpoint via POST.
  */
 export async function submitForm(
   endpoint: string,
   data: Record<string, unknown>
-): Promise<{ success: boolean; message: string }> {
-  console.log(`📤 form: ${endpoint}`, data);
-  // Simulate network delay
-  await new Promise((resolve) => setTimeout(resolve, 500));
-  return { success: true, message: 'Submitted successfully (stub)' };
+): Promise<{ success: boolean; message?: string; error?: string }> {
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!res.ok) {
+      return { success: false, error: `Request failed: ${res.status}` };
+    }
+
+    return await res.json();
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Network error';
+    return { success: false, error: message };
+  }
 }

@@ -165,7 +165,7 @@ export default function IdeologySection({ data }: IdeologyProps) {
               styles.bentoTall,   // Consideration — spans 2 rows
               '',                  // Decision — normal
               '',                  // Conversion — normal
-              styles.bentoWide,   // Retention — spans 2 cols (rectangle)
+              styles.bentoWideTablet1,   // Retention — spans 2 cols (desktop) but 1 on tablet
             ]
             return (
               <TiltCard
@@ -185,7 +185,7 @@ export default function IdeologySection({ data }: IdeologyProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className={styles.tiltCardWrapper}
+            className={`${styles.tiltCardWrapper} ${styles.ctaTabletWide}`}
           >
             <a href="/calculator" className={styles.bentoCta}>
               <span className={styles.bentoCtaLabel}>Ready?</span>

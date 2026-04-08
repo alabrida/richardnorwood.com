@@ -17,7 +17,7 @@ export default function CalculatorPage() {
             The Commercial EKG
           </h1>
           <p style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-lg)', lineHeight: 'var(--leading-relaxed)' }}>
-            We've developed a proprietary 250+ point diagnostic sequence to objectively grade your revenue flow. 
+            We&apos;ve developed a proprietary 250+ point diagnostic sequence to objectively grade your revenue flow. 
             Before we enter the boardroom, answer these 5 calibrator signals to arm our team with your operational baseline.
           </p>
         </div>

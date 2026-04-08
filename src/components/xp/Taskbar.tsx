@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { useWMSStore } from '@/lib/wms/WindowManager';
+import BalloonTip from './BalloonTip';
 import styles from './Taskbar.module.css';
 
 interface TaskbarProps {
@@ -57,7 +58,7 @@ export default function Taskbar({ onStartClick, startMenuOpen, onFullscreenClick
         onClick={onStartClick}
       >
         <img
-          src="/icons/start-flag.png"
+          src="/icons/icons/wheel.png"
           alt=""
           className={styles.startLogo}
           draggable={false}
@@ -99,6 +100,7 @@ export default function Taskbar({ onStartClick, startMenuOpen, onFullscreenClick
 
       {/* System Tray */}
       <div className={styles.systemTray}>
+        <BalloonTip />
         <span className={styles.clock}>{clock}</span>
       </div>
     </div>

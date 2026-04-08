@@ -2,6 +2,8 @@
 
 import { useState, useCallback } from 'react';
 import type { AppProps, AppConfig } from '@/lib/wms/types';
+import { useWMSStore } from '@/lib/wms/WindowManager';
+import { getApp } from '@/lib/apps/registry';
 import MenuBar from '@/components/apps/shared/MenuBar';
 import type { MenuGroup } from '@/components/apps/shared/MenuBar';
 import { playSound, showBalloonTip } from '@/lib/apps/helpers';
@@ -49,6 +51,7 @@ export default function Calculator({ onTitleChange }: AppProps) {
   const [display, setDisplay] = useState('0');
   const [currentQ, setCurrentQ] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
+  const openWindow = useWMSStore((s) => s.openWindow);
 
   // ── Calculator logic ──
   const handleNumber = useCallback(
@@ -177,9 +180,23 @@ export default function Calculator({ onTitleChange }: AppProps) {
             </div>
           ))}
 
-          <button className={styles.resultAction} onClick={handleClear}>
-            ↻ Take Assessment Again
-          </button>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '8px', width: '100%' }}>
+            <button className={styles.resultAction} onClick={() => {
+              const app = getApp('aim');
+              if (app) openWindow(app);
+            }}>
+              📞 Book a Strategy Call
+            </button>
+            <button className={styles.resultAction} onClick={() => {
+              const app = getApp('internet-explorer');
+              if (app) openWindow(app);
+            }}>
+              🌐 View Services
+            </button>
+            <button className={styles.resultAction} onClick={handleClear}>
+              ↻ Take Assessment Again
+            </button>
+          </div>
         </div>
       )}
 
@@ -224,8 +241,8 @@ export default function Calculator({ onTitleChange }: AppProps) {
 
 export const calculatorConfig: AppConfig = {
   id: 'calculator',
-  title: 'Calculator',
-  icon: '/icons/calculator.png',
+  title: 'Pricing & Monetization',
+  icon: '/icons/icons/abacus.png',
   defaultSize: { width: 260, height: 320 },
   minSize: { width: 230, height: 290 },
   component: Calculator,

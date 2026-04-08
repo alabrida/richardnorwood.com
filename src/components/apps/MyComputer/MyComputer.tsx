@@ -242,8 +242,8 @@ export default function MyComputer({ onTitleChange }: AppProps) {
 
 export const myComputerConfig: AppConfig = {
   id: 'my-computer',
-  title: 'My Computer',
-  icon: '/icons/mycomputer.png',
+  title: 'Core Infrastructure',
+  icon: '/icons/icons/servers.png',
   defaultSize: { width: 750, height: 500 },
   minSize: { width: 400, height: 300 },
   component: MyComputer,

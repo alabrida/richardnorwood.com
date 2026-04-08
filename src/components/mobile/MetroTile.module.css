@@ -1,0 +1,79 @@
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: left;
+  overflow: hidden;
+  min-height: 80px;
+}
+
+/* Sizes */
+.small {
+  grid-column: span 1;
+  min-height: 80px;
+}
+
+.medium {
+  grid-column: span 2;
+  min-height: 96px;
+}
+
+.wide {
+  grid-column: span 4;
+  min-height: 96px;
+}
+
+.icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 24px;
+  opacity: 0.9;
+}
+
+.small .icon {
+  font-size: 28px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.label {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  z-index: 1;
+}
+
+.small .label {
+  font-size: 10px;
+  text-align: center;
+  align-self: center;
+  margin-top: auto;
+}
+
+.subtitle {
+  font-size: 10px;
+  opacity: 0.7;
+  font-weight: 300;
+  margin-top: 1px;
+}
+
+/* Ripple-like press effect */
+.tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.1s;
+}
+
+.tile:active::after {
+  background: rgba(255, 255, 255, 0.15);
+}

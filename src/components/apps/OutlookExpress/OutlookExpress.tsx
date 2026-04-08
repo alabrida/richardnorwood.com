@@ -263,8 +263,8 @@ export default function OutlookExpress({ onTitleChange }: AppProps) {
 
 export const outlookExpressConfig: AppConfig = {
   id: 'outlook-express',
-  title: 'Inbox - Outlook Express',
-  icon: '/icons/outlook.png',
+  title: 'Lifecycle Messaging',
+  icon: '/icons/icons/briefcase.png',
   defaultSize: { width: 700, height: 500 },
   minSize: { width: 500, height: 350 },
   component: OutlookExpress,

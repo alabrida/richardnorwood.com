@@ -172,6 +172,10 @@
   grid-column: span 2;
 }
 
+.bentoWideTablet1 {
+  grid-column: span 2;
+}
+
 .bentoTall {
   grid-row: span 2;
   display: flex;
@@ -184,11 +188,20 @@
   justify-content: center;
 }
 
+/* CTA gets standard span 1 on desktop but span 2 on tablet */
+.ctaTabletWide {}
+
 @media (max-width: 900px) {
   .timelineGrid {
     grid-template-columns: repeat(2, 1fr);
   }
   .bentoWide {
+    grid-column: span 2;
+  }
+  .bentoWideTablet1 {
+    grid-column: span 1;
+  }
+  .ctaTabletWide {
     grid-column: span 2;
   }
   .bentoTall {
@@ -201,7 +214,9 @@
     grid-template-columns: 1fr;
   }
   .bentoWide,
-  .bentoTall {
+  .bentoTall,
+  .bentoWideTablet1,
+  .ctaTabletWide {
     grid-column: span 1;
     grid-row: span 1;
   }
@@ -380,9 +395,15 @@
 
 .metricsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-6);
   margin-top: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .metricCardWrapper {

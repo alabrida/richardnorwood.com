@@ -57,8 +57,9 @@ export default function AuthForm({ type }: AuthFormProps) {
           setSuccessMsg('Password successfully updated.')
           router.push('/login')
         }
-      } catch (err: any) {
-        setServerError(err.message || 'An unexpected error occurred.')
+      } catch (err: unknown) {
+        const error = err as Error
+        setServerError(error.message || 'An unexpected error occurred.')
       }
     },
   })
@@ -95,7 +96,8 @@ export default function AuthForm({ type }: AuthFormProps) {
             validators={{
               onChange: ({ value }) => !value ? 'Email is required' : undefined
             }}
-            children={(field) => (
+          >
+            {(field) => (
               <div className={styles.formGroup}>
                 <label htmlFor={field.name}>Email Address</label>
                 <input
@@ -113,7 +115,7 @@ export default function AuthForm({ type }: AuthFormProps) {
                 ) : null}
               </div>
             )}
-          />
+          </form.Field>
         )}
 
         {(type === 'login' || type === 'reset-password') && (
@@ -122,7 +124,8 @@ export default function AuthForm({ type }: AuthFormProps) {
             validators={{
               onChange: ({ value }) => !value ? 'Password is required' : undefined
             }}
-            children={(field) => (
+          >
+            {(field) => (
               <div className={styles.formGroup}>
                 <label htmlFor={field.name}>Password</label>
                 <input
@@ -140,7 +143,7 @@ export default function AuthForm({ type }: AuthFormProps) {
                 ) : null}
               </div>
             )}
-          />
+          </form.Field>
         )}
 
         {type === 'reset-password' && (
@@ -149,7 +152,8 @@ export default function AuthForm({ type }: AuthFormProps) {
             validators={{
               onChange: ({ value }) => !value ? 'Please confirm your password' : undefined
             }}
-            children={(field) => (
+          >
+            {(field) => (
               <div className={styles.formGroup}>
                 <label htmlFor={field.name}>Confirm Password</label>
                 <input
@@ -167,12 +171,13 @@ export default function AuthForm({ type }: AuthFormProps) {
                 ) : null}
               </div>
             )}
-          />
+          </form.Field>
         )}
 
         <form.Subscribe
           selector={(state) => [state.canSubmit, state.isSubmitting]}
-          children={([canSubmit, isSubmitting]) => (
+        >
+          {([canSubmit, isSubmitting]) => (
             <button 
               type="submit" 
               disabled={!canSubmit || isSubmitting}
@@ -185,7 +190,7 @@ export default function AuthForm({ type }: AuthFormProps) {
               )}
             </button>
           )}
-        />
+        </form.Subscribe>
       </form>
 
       <div className={styles.authLinks}>

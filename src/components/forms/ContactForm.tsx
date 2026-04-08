@@ -29,7 +29,7 @@ export default function ContactForm() {
 
         toast.success("Signal captured. The orchestrator will reach out shortly.")
         form.reset()
-      } catch (err) {
+      } catch {
         toast.error("Signal lost. Please try submitting your inquiry again.")
       } finally {
         setIsSubmitting(false)
@@ -62,7 +62,8 @@ export default function ContactForm() {
         <form.Field
           name="name"
           validators={{ onChange: ({ value }) => !value ? 'Name is required' : undefined }}
-          children={(field) => (
+        >
+          {(field) => (
             <div className={styles.formGroup}>
               <label htmlFor={field.name}>Full Name</label>
               <input
@@ -80,7 +81,7 @@ export default function ContactForm() {
               ) : null}
             </div>
           )}
-        />
+        </form.Field>
 
         {/* Email Field */}
         <form.Field
@@ -90,7 +91,8 @@ export default function ContactForm() {
               !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? 'Invalid email format' : undefined
             )
           }}
-          children={(field) => (
+        >
+          {(field) => (
             <div className={styles.formGroup}>
               <label htmlFor={field.name}>Email Address</label>
               <input
@@ -109,13 +111,14 @@ export default function ContactForm() {
               ) : null}
             </div>
           )}
-        />
+        </form.Field>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-4)' }}>
           {/* Company Field */}
           <form.Field
             name="company"
-            children={(field) => (
+          >
+            {(field) => (
               <div className={styles.formGroup}>
                 <label htmlFor={field.name}>Company (Optional)</label>
                 <input
@@ -130,12 +133,13 @@ export default function ContactForm() {
                 />
               </div>
             )}
-          />
+          </form.Field>
 
           {/* Inquiry Type */}
           <form.Field
             name="inquiryType"
-            children={(field) => (
+          >
+            {(field) => (
               <div className={styles.formGroup}>
                 <label htmlFor={field.name}>Inquiry Type</label>
                 <select
@@ -154,14 +158,15 @@ export default function ContactForm() {
                 </select>
               </div>
             )}
-          />
+          </form.Field>
         </div>
 
         {/* Message Field */}
         <form.Field
           name="message"
           validators={{ onChange: ({ value }) => !value ? 'Message is required' : undefined }}
-          children={(field) => (
+        >
+          {(field) => (
             <div className={styles.formGroup}>
               <label htmlFor={field.name}>Message</label>
               <textarea
@@ -180,11 +185,12 @@ export default function ContactForm() {
               ) : null}
             </div>
           )}
-        />
+        </form.Field>
 
         <form.Subscribe
           selector={(state) => [state.canSubmit, state.isSubmitting]}
-          children={([canSubmit, isFormSubmitting]) => (
+        >
+          {([canSubmit]) => (
             <button 
               type="submit" 
               disabled={!canSubmit || isSubmitting} 
@@ -193,7 +199,7 @@ export default function ContactForm() {
               {isSubmitting ? 'Transmitting...' : 'Dispatch Signal'}
             </button>
           )}
-        />
+        </form.Subscribe>
       </form>
     </div>
   )

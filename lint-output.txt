@@ -1,6 +1,13 @@
 ﻿
-D:\richardnorwood.com\src\components\apps\ControlPanel\ControlPanel.tsx
-  23:38  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+> temp-xp-init@0.1.0 lint
+> eslint
+
+
+D:\richardnorwood.com\src\app\(site)\calculator\page.tsx
+  20:15  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\richardnorwood.com\src\app\api\auth\signout\route.ts
+  2:10  warning  'redirect' is defined but never used  @typescript-eslint/no-unused-vars
 
 D:\richardnorwood.com\src\components\apps\HelpCenter\HelpCenter.tsx
   8:36  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
@@ -12,10 +19,78 @@ D:\richardnorwood.com\src\components\apps\Minesweeper\Minesweeper.tsx
   62:37  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
 
 D:\richardnorwood.com\src\components\apps\Notepad\Notepad.tsx
-  21:35  warning  'onTitleChange' is defined but never used  @typescript-eslint/no-unused-vars
+  22:35  warning  'onTitleChange' is defined but never used  @typescript-eslint/no-unused-vars
 
-D:\richardnorwood.com\src\components\apps\ProductActivation\ProductActivation.tsx
-  10:43  warning  '_props' is defined but never used  @typescript-eslint/no-unused-vars
+D:\richardnorwood.com\src\components\forms\AuthForm.tsx
+   60:21  error  Unexpected any. Specify a different type                                                    @typescript-eslint/no-explicit-any
+   98:13  error  Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  125:13  error  Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  152:13  error  Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  175:11  error  Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
 
-Γ£û 6 problems (0 errors, 6 warnings)
+D:\richardnorwood.com\src\components\forms\CalculatorForm.tsx
+   54:9   warning  'nextStep' is assigned a value but never used                                               @typescript-eslint/no-unused-vars
+   54:28  error    Unexpected any. Specify a different type                                                    @typescript-eslint/no-explicit-any
+   90:47  error    Unexpected any. Specify a different type                                                    @typescript-eslint/no-explicit-any
+   91:19  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+   98:55  error    Unexpected any. Specify a different type                                                    @typescript-eslint/no-explicit-any
+  127:17  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+
+D:\richardnorwood.com\src\components\forms\ContactForm.tsx
+   32:16  warning  'err' is defined but never used                                                             @typescript-eslint/no-unused-vars
+   65:11  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+   93:11  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  118:13  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  138:13  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  164:11  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  187:11  error    Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+  187:34  warning  'isFormSubmitting' is defined but never used                                                @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\layout\CookieBanner.tsx
+  14:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\richardnorwood.com\src\components\layout\CookieBanner.tsx:14:7
+  12 |     const consent = localStorage.getItem('rn-cookie-consent');
+  13 |     if (!consent) {
+> 14 |       setIsVisible(true);
+     |       ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  15 |     }
+  16 |   }, []);
+  17 |  react-hooks/set-state-in-effect
+
+D:\richardnorwood.com\src\components\sections\ServiceTiers.tsx
+  6:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\richardnorwood.com\src\components\seo\JsonLd.tsx
+  4:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  4:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\richardnorwood.com\src\components\ui\StarField.tsx
+  159:21  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\richardnorwood.com\src\components\ui\StarField.tsx:159:21
+  157 |   }, []);
+  158 |
+> 159 |   useEffect(() => { setMounted(true); }, []);
+      |                     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  160 |
+  161 |   useEffect(() => {
+  162 |     if (!mounted) return;  react-hooks/set-state-in-effect
+
+D:\richardnorwood.com\src\lib\supabase\middleware.ts
+  18:48  warning  'options' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 31 problems (21 errors, 10 warnings)
 

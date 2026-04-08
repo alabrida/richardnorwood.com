@@ -98,7 +98,7 @@ export default function HelpCenter(_props: AppProps) {
 export const helpCenterConfig: AppConfig = {
   id: 'help-center',
   title: 'Help and Support Center',
-  icon: '/icons/help.png',
+  icon: '/icons/icons/journey.png',
   defaultSize: { width: 650, height: 450 },
   minSize: { width: 400, height: 300 },
   component: HelpCenter,

@@ -11,8 +11,8 @@ const HEADER_LINKS = [
 ];
 
 const SYSTEM_LINKS = [
-  { label: 'System Login', href: '/login' },
   { label: 'Client Portal', href: '/portal' },
+  { label: 'Blog', href: '/blog' },
   { label: 'EKG Calculator', href: '/calculator' },
   { label: 'The Architect', href: '/#about' },
 ];
@@ -111,9 +111,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── System Access Column ── */}
+          {/* ── Resources Column ── */}
           <div className={styles.navColumn}>
-            <span className={styles.navColumnTitle}>System Access</span>
+            <span className={styles.navColumnTitle}>Resources</span>
             {SYSTEM_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className={styles.navColumnLink}>
                 {link.label}

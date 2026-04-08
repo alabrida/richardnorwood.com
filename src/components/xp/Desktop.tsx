@@ -5,6 +5,7 @@ import { AnimatePresence } from 'motion/react';
 import { useWMSStore } from '@/lib/wms/WindowManager';
 import { desktopIcons, getApp } from '@/lib/apps/registry';
 import Window from './Window';
+import { useIsMobile } from '@/hooks/useIsMobile';
 import styles from './Desktop.module.css';
 
 export default function Desktop() {
@@ -21,6 +22,8 @@ export default function Desktop() {
     [openWindow]
   );
 
+  const isMobile = useIsMobile();
+
   return (
     <div className={styles.desktop}>
       {/* Wallpaper */}
@@ -32,7 +35,8 @@ export default function Desktop() {
           <button
             key={icon.appId}
             className={styles.desktopIcon}
-            onDoubleClick={() => handleIconDoubleClick(icon.appId)}
+            onClick={() => isMobile && handleIconDoubleClick(icon.appId)}
+            onDoubleClick={() => !isMobile && handleIconDoubleClick(icon.appId)}
             title={icon.label}
           >
             <img

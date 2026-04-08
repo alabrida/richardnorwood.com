@@ -3,8 +3,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react';
+import { useMotionValueEvent, useScroll, motion, AnimatePresence } from 'motion/react';
 import { useWMSStore } from '@/lib/wms/WindowManager';
+import { useIsMobile } from '@/hooks/useIsMobile';
 import styles from './Header.module.css';
 
 const NAV_ITEMS = [
@@ -61,9 +62,10 @@ export default function Header() {
   const closeDrawer = useCallback(() => {
     setDrawerOpen(false);
   }, []);
+  const isMobile = useIsMobile();
 
-  // Hide the global header on the immersive XP Clone boot screen
-  if (isDesktop && !headerVisible) return null;
+  // Hide the global header on the immersive XP Clone boot screen, and always hide it completely on mobile desktop view
+  if (isDesktop && (!headerVisible || isMobile)) return null;
 
   // Determine the interactive context
   const headerClass = isDesktop 

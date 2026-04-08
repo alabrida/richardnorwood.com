@@ -165,7 +165,7 @@ export default function ProductActivation({ onTitleChange }: AppProps) {
 export const productActivationConfig: AppConfig = {
   id: 'product-activation',
   title: 'Partnership App',
-  icon: '/icons/activation.png',
+  icon: '/icons/icons/stats.png',
   defaultSize: { width: 500, height: 420 },
   minSize: { width: 450, height: 350 },
   component: ProductActivation,

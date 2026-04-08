@@ -50,14 +50,38 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
     const id = generateWindowId();
     const cascadePos = getCascadePosition(windows.length);
 
+    let startWidth = initialProps?.size?.width ?? app.defaultSize.width;
+    let startHeight = initialProps?.size?.height ?? app.defaultSize.height;
+    let startX = initialProps?.position?.x ?? cascadePos.x;
+    let startY = initialProps?.position?.y ?? cascadePos.y;
+    let clampMinWidth = app.minSize.width;
+    let clampMinHeight = app.minSize.height;
+
+    if (typeof window !== 'undefined') {
+      const maxWidth = window.innerWidth;
+      const maxHeight = window.innerHeight - 30; // taskbar height
+
+      startWidth = Math.min(startWidth, maxWidth);
+      startHeight = Math.min(startHeight, maxHeight);
+      clampMinWidth = Math.min(clampMinWidth, maxWidth);
+      clampMinHeight = Math.min(clampMinHeight, maxHeight);
+
+      if (startX + startWidth > maxWidth) {
+        startX = Math.max(0, maxWidth - startWidth);
+      }
+      if (startY + startHeight > maxHeight) {
+        startY = Math.max(0, maxHeight - startHeight);
+      }
+    }
+
     const newWindow: WindowState = {
       id,
       appId: app.id,
       title: app.title,
       icon: app.icon,
-      position: initialProps?.position ?? cascadePos,
-      size: initialProps?.size ?? { ...app.defaultSize },
-      minSize: { ...app.minSize },
+      position: { x: startX, y: startY },
+      size: { width: startWidth, height: startHeight },
+      minSize: { width: clampMinWidth, height: clampMinHeight },
       zIndex: nextZIndex,
       state: 'normal',
       isActive: true,

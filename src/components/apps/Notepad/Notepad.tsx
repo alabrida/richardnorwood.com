@@ -97,8 +97,8 @@ export default function Notepad({ onTitleChange }: AppProps) {
 
 export const notepadConfig: AppConfig = {
   id: 'notepad',
-  title: 'about-richard.txt - Notepad',
-  icon: '/icons/notepad.png',
+  title: 'CRM & User Notes',
+  icon: '/icons/icons/professional_docs.png',
   defaultSize: { width: 600, height: 450 },
   minSize: { width: 300, height: 200 },
   component: Notepad,

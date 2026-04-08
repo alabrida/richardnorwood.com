@@ -237,8 +237,8 @@ export default function InternetExplorer({ onTitleChange }: AppProps) {
 
 export const internetExplorerConfig: AppConfig = {
   id: 'internet-explorer',
-  title: 'Revenue Architect Blog - Internet Explorer',
-  icon: '/icons/ie6.png',
+  title: 'Acquisition Channels',
+  icon: '/icons/icons/compass.png',
   defaultSize: { width: 800, height: 600 },
   minSize: { width: 400, height: 300 },
   component: InternetExplorer,
