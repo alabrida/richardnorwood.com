@@ -7,7 +7,7 @@ import styles from './ProductActivation.module.css';
 
 type Step = 1 | 2 | 3 | 4;
 
-export default function ProductActivation({ onTitleChange }: AppProps) {
+export default function ProductActivation({ onTitleChange, onClose }: AppProps) {
   const [step, setStep] = useState<Step>(1);
   const [selectedTier, setSelectedTier] = useState<string | null>(null);
 
@@ -153,7 +153,7 @@ export default function ProductActivation({ onTitleChange }: AppProps) {
           </button>
         )}
         {step === 4 && (
-          <button className={styles.wizBtn} onClick={() => setStep(1)}>
+          <button className={styles.wizBtn} onClick={() => onClose?.()}>
             Close
           </button>
         )}

@@ -57,6 +57,7 @@
   height: var(--xp-icon-size);
   image-rendering: pixelated;
   pointer-events: none;
+  object-fit: contain;
 }
 
 .iconLabel {

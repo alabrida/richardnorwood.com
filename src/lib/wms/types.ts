@@ -6,6 +6,7 @@ export interface AppProps {
   windowId: string;
   isActive: boolean;
   onTitleChange?: (title: string) => void;
+  onClose?: () => void;
 }
 
 /* ── App Config ──

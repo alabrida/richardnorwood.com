@@ -265,6 +265,7 @@ export default function Window({ windowState }: WindowProps) {
             windowId: id,
             isActive,
             onTitleChange: handleTitleChange,
+            onClose: handleClose,
           })}
       </div>
 

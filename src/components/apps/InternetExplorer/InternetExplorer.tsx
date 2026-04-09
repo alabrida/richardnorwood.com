@@ -238,7 +238,7 @@ export default function InternetExplorer({ onTitleChange }: AppProps) {
 export const internetExplorerConfig: AppConfig = {
   id: 'internet-explorer',
   title: 'Acquisition Channels',
-  icon: '/icons/icons/compass.png',
+  icon: '/icons/icons/explorer.png',
   defaultSize: { width: 800, height: 600 },
   minSize: { width: 400, height: 300 },
   component: InternetExplorer,

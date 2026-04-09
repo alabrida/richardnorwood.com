@@ -9,7 +9,7 @@ import styles from './MyComputer.module.css';
 
 type View = 'drives' | 'dashboard' | 'history';
 
-export default function MyComputer({ onTitleChange }: AppProps) {
+export default function MyComputer({ onTitleChange, onClose }: AppProps) {
   const [view, setView] = useState<View>('drives');
 
   const navigate = useCallback(
@@ -28,7 +28,7 @@ export default function MyComputer({ onTitleChange }: AppProps) {
   const menus: MenuGroup[] = [
     {
       label: '&File',
-      items: [{ label: '&Close', onClick: () => {} }],
+      items: [{ label: '&Close', onClick: () => onClose?.() }],
     },
     {
       label: '&Edit',

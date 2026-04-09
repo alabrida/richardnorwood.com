@@ -98,7 +98,7 @@ export default function MediaPlayer(_props: AppProps) {
 export const mediaPlayerConfig: AppConfig = {
   id: 'media-player',
   title: 'Content Marketing',
-  icon: '/icons/icons/clapperboard.png',
+  icon: '/icons/icons/media_player.png',
   defaultSize: { width: 420, height: 500 },
   minSize: { width: 320, height: 380 },
   component: MediaPlayer,

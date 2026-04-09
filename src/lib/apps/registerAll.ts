@@ -33,13 +33,13 @@ apps.forEach(registerApp);
 
 // ── Desktop Icons (left column, top to bottom) ──
 addDesktopIcon({ appId: 'my-computer',        icon: '/icons/icons/servers.png',             label: 'Core Infrastructure',        gridPosition: [0, 0] });
-addDesktopIcon({ appId: 'internet-explorer',  icon: '/icons/icons/compass.png',             label: 'Acquisition Channels',       gridPosition: [0, 1] });
+addDesktopIcon({ appId: 'internet-explorer',  icon: '/icons/icons/explorer.png',             label: 'Acquisition Channels',       gridPosition: [0, 1] });
 addDesktopIcon({ appId: 'outlook-express',    icon: '/icons/icons/briefcase.png',           label: 'Lifecycle Messaging',        gridPosition: [0, 2] });
 addDesktopIcon({ appId: 'aim',                icon: '/icons/icons/aim.png',                label: 'Partnership Ecosystem',      gridPosition: [0, 3] });
 addDesktopIcon({ appId: 'calculator',         icon: '/icons/icons/abacus.png',              label: 'Pricing & Monetization',     gridPosition: [0, 4] });
 addDesktopIcon({ appId: 'notepad',            icon: '/icons/icons/professional_docs.png',   label: 'CRM & User Notes',           gridPosition: [0, 5] });
 addDesktopIcon({ appId: 'minesweeper',        icon: '/icons/icons/waste_basket.png',        label: 'Risk & Compliance',          gridPosition: [0, 6] });
-addDesktopIcon({ appId: 'media-player',       icon: '/icons/icons/clapperboard.png',        label: 'Content Marketing',          gridPosition: [0, 7] });
+addDesktopIcon({ appId: 'media-player',       icon: '/icons/icons/media_player.png',        label: 'Content Marketing',          gridPosition: [0, 7] });
 // ── Start Menu — Pinned (top section, most-used business apps) ──
 addStartMenuEntry({ appId: 'internet-explorer',   section: 'pinned' });
 addStartMenuEntry({ appId: 'outlook-express',      section: 'pinned' });

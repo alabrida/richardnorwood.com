@@ -19,7 +19,7 @@ Expertise: ${aboutData.expertise.join(', ')}
 Mission: ${aboutData.mission}
 `;
 
-export default function Notepad({ onTitleChange }: AppProps) {
+export default function Notepad({ onTitleChange, onClose }: AppProps) {
   const [content, setContent] = useState(defaultContent);
   const [wordWrap, setWordWrap] = useState(true);
 
@@ -39,7 +39,7 @@ export default function Notepad({ onTitleChange }: AppProps) {
         { label: 'Page Set&up...', disabled: true },
         { label: '&Print...', shortcut: 'Ctrl+P', disabled: true },
         { label: '', separator: true },
-        { label: 'E&xit', onClick: () => {} },
+        { label: 'E&xit', onClick: () => onClose?.() },
       ],
     },
     {
