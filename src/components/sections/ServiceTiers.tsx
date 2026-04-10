@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import styles from './Services.module.css'
+import styles from './ServiceTiers.module.css'
 import Link from 'next/link'
 
 interface Tier {

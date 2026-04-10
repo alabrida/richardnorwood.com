@@ -1,105 +1,58 @@
 {
   "hero": {
     "title": "Architecture Over Apps",
-    "subtitle": "We don't build websites — we install Unified Commercial Engines. Your digital presence becomes a proprietary Digital Sales Channel that sits on your balance sheet as a high-value financial asset, not a recurring overhead cost."
+    "subtitle": "We don't build websites — we install Unified Commercial Engines. Choose your partnership depth to reclaim your commercial sovereignty."
   },
   "tiers": [
     {
-      "id": "phase-1",
-      "name": "Phase I: The Diagnostic EKG",
-      "subtitle": "Foundations & Perception",
-      "description": "Every transformation begins with the Commercial EKG — a 250+ point Revenue Journey Assessment that identifies exactly where your revenue body is flatlining. We establish the Perimeter, set up your Gateway, and reclaim 15 hours a week by killing the Manual Entry Tax.",
+      "id": "90-days",
+      "name": "90-Day Partnership",
+      "subtitle": "The Diagnostic EKG & Foundations",
+      "description": "Establish your perimeter and kill the manual entry tax. We execute the 250+ point Revenue Journey Assessment and install your high-fidelity operational radar.",
       "includes": [
-        "Target: Emerging Cohesion (Maturity 41-60)",
-        "Commercial EKG — full Revenue Journey Rubric",
-        "Perimeter Architecture (2 optimized social profiles)",
-        "Gateway Microsite (friction-free intent routing)",
-        "Digital Sales Channel (Authority Engine)",
-        "Custom CRM eliminating Manual Entry Tax"
-      ]
+        "Full Commercial EKG Assessment",
+        "Perimeter Architecture (Social Optimization)",
+        "Gateway Microsite Deployment",
+        "Custom CRM Integration",
+        "Weekly Strategy Sprints"
+      ],
+      "cta": "Start 90-Day Journey"
     },
     {
-      "id": "phase-2",
-      "name": "Phase II: Engine Orchestration",
-      "subtitle": "Harmony & Execution — Recommended",
-      "description": "Stop marketing decorating. Start revenue engineering. We install the Managed Nervous System — your operational radar — and achieve 60% automation across the lead-to-expansion lifecycle using Information Fusion.",
+      "id": "6-months",
+      "name": "6-Month Partnership",
+      "subtitle": "Engine Orchestration & Velocity",
+      "description": "Stop decorating and start engineering. We achieve 60% automation across your lead-to-expansion lifecycle and install the Managed Nervous System.",
       "includes": [
-        "Target: Orchestrated Cohesion (Maturity 61-80)",
-        "Information Fusion install (Clarity + Google Tags)",
-        "4 Siloed Gateway Microsites for ad campaigns",
-        "90-Day Content Calendar & Templates",
-        "Lead Nurture & Reputation Management automation",
-        "Balanced 60/40 Brand Building / Sales Activation"
-      ]
+        "Everything in 90-Day Tier",
+        "Information Fusion (IF) Install",
+        "4 Siloed Gateway Microsites",
+        "90-Day Content Velocity Plan",
+        "Automated Reputation Management"
+      ],
+      "cta": "Scale with 6-Month Partnership"
     },
     {
-      "id": "phase-3",
-      "name": "Phase III: Unified Engine",
-      "subtitle": "Sovereignty & The Alabrida Bridge",
-      "description": "Replace the Frankenstein Tech Stack with your own Sovereign Engine. We migrate to proprietary infrastructure, eliminate six-figure vendor dependencies, and prepare the full Alabrida handoff to Commercial Sovereignty.",
+      "id": "12-months",
+      "name": "12-Month Partnership",
+      "subtitle": "The Unified Engine & Sovereignty",
+      "description": "Complete Commercial Sovereignty. We migrate your entire stack to proprietary infrastructure, eliminating vendor lock-in and six-figure dependency costs.",
       "includes": [
-        "Target: Unified State (Maturity 81-100)",
-        "Sovereign Engine proof-of-concept deployment",
-        "Managed Cloud Hosting migration",
-        "Custom Architecture replacing legacy CPQ/Billing",
-        "Complete Frankenstein Stack rationalization",
-        "The Alabrida Bridge — full sovereignty preparation"
-      ]
+        "Everything in 6-Month Tier",
+        "Sovereign Engine Deployment",
+        "Managed Cloud Migration",
+        "Custom Architecture (CPQ/Billing)",
+        "The Alabrida Bridge Handoff"
+      ],
+      "cta": "Achieve 12-Month Sovereignty"
     }
   ],
   "timeline": {
     "title": "The Path to Commercial Sovereignty",
     "phases": [
-      {
-        "name": "The Commercial EKG",
-        "days": "Step 1",
-        "description": "High-fidelity diagnostic of your revenue operating system.",
-        "milestones": [
-          "Execute the 250+ point Revenue Journey Rubric",
-          "Identify Missing Indicators across all 5 stages",
-          "Calculate your Frankenstein Index (tool overlap cost)",
-          "Pinpoint your Maturity Tier on the Staircase",
-          "Quantify the Manual Entry Tax draining your team"
-        ]
-      },
-      {
-        "name": "MNS Orchestration",
-        "days": "Step 2",
-        "description": "Installing the Managed Nervous System — your operational radar.",
-        "milestones": [
-          "Orchestrate current tools into a Single Source of Truth",
-          "Apply PMBOK Governance standards to all deliverables",
-          "Install Information Fusion for automated perception",
-          "Achieve Situation Awareness across the engine",
-          "Transition from Frankenstein Stack to Unified Engine"
-        ]
-      },
-      {
-        "name": "The Sovereign Engine",
-        "days": "Step 3",
-        "description": "Replacing rented vendor space with proprietary infrastructure you own.",
-        "milestones": [
-          "Deploy Sovereign Engine proof-of-concept on your cloud",
-          "Migrate to managed hosting — eliminate vendor lock-in",
-          "Build custom architecture replacing legacy CPQ/Billing",
-          "Execute the Alabrida Bridge handoff",
-          "Achieve full Commercial Sovereignty (Maturity 81-100)"
-        ]
-      }
+      { "name": "Phase I: The EKG", "days": "Days 1-30", "description": "High-fidelity diagnostic and perimeter establishment." },
+      { "name": "Phase II: Orchestration", "days": "Days 31-180", "description": "Installing the Managed Nervous System and IF APIs." },
+      { "name": "Phase III: Sovereignty", "days": "Days 181-365", "description": "Transitioning to proprietary Sovereign Engine infrastructure." }
     ]
-  },
-  "curriculum": [
-    { "week": 1, "topic": "The Commercial EKG", "description": "Running the 250+ point Revenue Journey Rubric to find the structural flatlines in your revenue body." },
-    { "week": 2, "topic": "Perimeter Architecture", "description": "Deploying 2-5 optimized social profiles as Signal Nodes for Dark Funnel capture." },
-    { "week": 3, "topic": "Gateway Engineering", "description": "Building the friction-free microsite that routes prospect intent to the correct conversion point." },
-    { "week": 4, "topic": "The Authority Engine", "description": "Architecting the Digital Sales Channel — the multi-page Core designed for B2B deliberation." },
-    { "week": 5, "topic": "Managed Nervous System", "description": "Installing the Custom CRM and achieving Information Fusion to end Manual Entry Tax." },
-    { "week": 6, "topic": "O2O Entry Points", "description": "Digitizing offline networking instantly — signatures, business cards, and lead magnets with trackable QR codes." },
-    { "week": 7, "topic": "Information Fusion (IF)", "description": "Installing Clarity and Google Tags to achieve real-time buyer behavior perception via API." },
-    { "week": 8, "topic": "Gateway Microsites", "description": "Building 4 siloed landing pages — intent-isolated deliberation sandboxes that eliminate Decision Fatigue." },
-    { "week": 9, "topic": "The 90-Day Cadence", "description": "Executing the operational content calendar to maintain Information Velocity across the Perimeter." },
-    { "week": 10, "topic": "Reputation Automation", "description": "Deploying Proof-as-a-Service — automated review requests that feed social proof into the Gateway and Core." },
-    { "week": 11, "topic": "The Frankenstein Index", "description": "Auditing the hidden cost of overlapping SaaS tools and calculating your Complexity Tax." },
-    { "week": 12, "topic": "The Alabrida Bridge", "description": "Preparing the transition from Managed Nervous System to full Sovereign Engine — the path to Commercial Sovereignty." }
-  ]
+  }
 }
