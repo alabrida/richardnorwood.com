@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import styles from './Sections.module.css'
+import styles from './Hero.module.css'
 
 interface HeroProps {
   data: {

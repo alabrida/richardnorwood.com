@@ -3,7 +3,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import styles from './Sections.module.css'
+import styles from './About.module.css'
+import common from './SectionCommon.module.css'
 
 interface AboutProps {
   data: {

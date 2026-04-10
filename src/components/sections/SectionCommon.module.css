@@ -1,0 +1,29 @@
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-4);
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.titleDecoration {
+  height: 4px;
+  width: 60px;
+  background: var(--color-secondary);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-8);
+}
+
+.sectionDescription {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin-bottom: var(--space-12);
+}

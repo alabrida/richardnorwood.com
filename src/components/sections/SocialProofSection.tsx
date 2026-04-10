@@ -2,7 +2,8 @@
 
 import React, { useRef, useState, useCallback } from 'react'
 import { motion } from 'framer-motion'
-import styles from './Sections.module.css'
+import styles from './SocialProof.module.css'
+import common from './SectionCommon.module.css'
 
 interface Metric {
   label: string
@@ -17,7 +18,6 @@ interface SocialProofProps {
   }
 }
 
-/* ─── Glow Metric Card ─── */
 function GlowMetricCard({ metric, index }: { metric: Metric; index: number }) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [glowPos, setGlowPos] = useState({ x: 50, y: 50 })
@@ -51,7 +51,6 @@ function GlowMetricCard({ metric, index }: { metric: Metric; index: number }) {
           setGlowPos({ x: 50, y: 50 })
         }}
       >
-        {/* Edge glow that radiates from borders toward cursor */}
         <div
           className={styles.metricEdgeGlow}
           style={{
@@ -61,7 +60,6 @@ function GlowMetricCard({ metric, index }: { metric: Metric; index: number }) {
           }}
         />
 
-        {/* Soft inner highlight near cursor */}
         <div
           className={styles.metricInnerGlow}
           style={{
@@ -77,7 +75,6 @@ function GlowMetricCard({ metric, index }: { metric: Metric; index: number }) {
   )
 }
 
-/* ─── Main Section ─── */
 export default function SocialProofSection({ data }: SocialProofProps) {
   return (
     <section className={styles.socialProofSection}>

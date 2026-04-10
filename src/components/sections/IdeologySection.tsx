@@ -2,7 +2,8 @@
 
 import React, { useRef, useCallback, useState } from 'react'
 import { motion } from 'framer-motion'
-import styles from './Sections.module.css'
+import styles from './Ideology.module.css'
+import common from './SectionCommon.module.css'
 
 interface Stage {
   title: string
@@ -102,7 +103,6 @@ function TiltCard({
           borderColor: hovering ? color : undefined,
         }}
       >
-        {/* Edge glow — radiates from borders toward cursor, tinted by stage color */}
         <div
           className={styles.tiltEdgeGlow}
           style={{
@@ -113,7 +113,6 @@ function TiltCard({
           }}
         />
 
-        {/* Soft inner highlight near cursor */}
         <div
           className={styles.tiltInnerGlow}
           style={{
@@ -122,7 +121,6 @@ function TiltCard({
           }}
         />
 
-        {/* Border pulse */}
         <div
           className={`${styles.tiltBorderPulse} ${hovering ? styles.tiltBorderPulseActive : ''}`}
           style={{ '--stage-color': color } as React.CSSProperties}
@@ -140,7 +138,6 @@ function TiltCard({
   )
 }
 
-/* ─── Main Section ─── */
 export default function IdeologySection({ data }: IdeologyProps) {
   return (
     <section className={styles.ideologySection} id="ideology">
@@ -161,11 +158,11 @@ export default function IdeologySection({ data }: IdeologyProps) {
         <div className={styles.timelineGrid}>
           {data.stages.map((stage, i) => {
             const bentoMap = [
-              styles.bentoWide,   // Awareness — spans 2 cols
-              styles.bentoTall,   // Consideration — spans 2 rows
-              '',                  // Decision — normal
-              '',                  // Conversion — normal
-              styles.bentoWideTablet1,   // Retention — spans 2 cols (desktop) but 1 on tablet
+              styles.bentoWide,
+              styles.bentoTall,
+              '',
+              '',
+              styles.bentoWideTablet1,
             ]
             return (
               <TiltCard
@@ -179,7 +176,6 @@ export default function IdeologySection({ data }: IdeologyProps) {
             )
           })}
 
-          {/* CTA card to balance the bento grid */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

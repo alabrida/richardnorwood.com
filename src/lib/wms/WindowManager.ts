@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import type { WindowState, AppConfig } from './types';
+import { generateWindowId, getCascadePosition } from './utils';
 
 /* ── WMS Store ──
    Global state for all open windows. The single source of truth
@@ -25,18 +26,6 @@ interface WMSStore {
   minimizeAll: () => void;
 }
 
-let instanceCounter = 0;
-function generateWindowId(): string {
-  instanceCounter += 1;
-  return `win-${Date.now()}-${instanceCounter}`;
-}
-
-/** Cascade offset for new windows so they don't stack perfectly */
-function getCascadePosition(index: number): { x: number; y: number } {
-  const offset = (index % 8) * 30;
-  return { x: 50 + offset, y: 50 + offset };
-}
-
 export const useWMSStore = create<WMSStore>((set, get) => ({
   windows: [],
   nextZIndex: 100,
@@ -46,7 +35,6 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
 
   openWindow: (app, initialProps) => {
     const { windows, nextZIndex } = get();
-
     const id = generateWindowId();
     const cascadePos = getCascadePosition(windows.length);
 
@@ -60,58 +48,35 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
     if (typeof window !== 'undefined') {
       const maxWidth = window.innerWidth;
       const maxHeight = window.innerHeight - 30; // taskbar height
-
       startWidth = Math.min(startWidth, maxWidth);
       startHeight = Math.min(startHeight, maxHeight);
       clampMinWidth = Math.min(clampMinWidth, maxWidth);
       clampMinHeight = Math.min(clampMinHeight, maxHeight);
-
-      if (startX + startWidth > maxWidth) {
-        startX = Math.max(0, maxWidth - startWidth);
-      }
-      if (startY + startHeight > maxHeight) {
-        startY = Math.max(0, maxHeight - startHeight);
-      }
+      if (startX + startWidth > maxWidth) startX = Math.max(0, maxWidth - startWidth);
+      if (startY + startHeight > maxHeight) startY = Math.max(0, maxHeight - startHeight);
     }
 
     const newWindow: WindowState = {
-      id,
-      appId: app.id,
-      title: app.title,
-      icon: app.icon,
+      id, appId: app.id, title: app.title, icon: app.icon,
       position: { x: startX, y: startY },
       size: { width: startWidth, height: startHeight },
       minSize: { width: clampMinWidth, height: clampMinHeight },
-      zIndex: nextZIndex,
-      state: 'normal',
-      isActive: true,
+      zIndex: nextZIndex, state: 'normal', isActive: true,
     };
 
     set({
-      windows: [
-        ...windows.map((w) => ({ ...w, isActive: false })),
-        newWindow,
-      ],
+      windows: [...windows.map((w) => ({ ...w, isActive: false })), newWindow],
       nextZIndex: nextZIndex + 1,
     });
-
     return id;
   },
 
   closeWindow: (id) => {
     set((state) => {
       const remaining = state.windows.filter((w) => w.id !== id);
-      // Focus the top-most remaining window
       if (remaining.length > 0) {
-        const topWindow = remaining.reduce((a, b) =>
-          a.zIndex > b.zIndex ? a : b
-        );
-        return {
-          windows: remaining.map((w) => ({
-            ...w,
-            isActive: w.id === topWindow.id,
-          })),
-        };
+        const topWindow = remaining.reduce((a, b) => (a.zIndex > b.zIndex ? a : b));
+        return { windows: remaining.map((w) => ({ ...w, isActive: w.id === topWindow.id })) };
       }
       return { windows: remaining };
     });
@@ -122,18 +87,10 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
       const remaining = state.windows.map((w) =>
         w.id === id ? { ...w, state: 'minimized' as const, isActive: false } : w
       );
-      // Focus next visible window
       const visible = remaining.filter((w) => w.state !== 'minimized');
       if (visible.length > 0) {
-        const topVisible = visible.reduce((a, b) =>
-          a.zIndex > b.zIndex ? a : b
-        );
-        return {
-          windows: remaining.map((w) => ({
-            ...w,
-            isActive: w.id === topVisible.id,
-          })),
-        };
+        const topVisible = visible.reduce((a, b) => (a.zIndex > b.zIndex ? a : b));
+        return { windows: remaining.map((w) => ({ ...w, isActive: w.id === topVisible.id })) };
       }
       return { windows: remaining };
     });
@@ -144,19 +101,12 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
       windows: state.windows.map((w) =>
         w.id === id
           ? {
-              ...w,
-              state: 'maximized' as const,
-              prevBounds: {
-                x: w.position.x,
-                y: w.position.y,
-                width: w.size.width,
-                height: w.size.height,
-              },
+              ...w, state: 'maximized' as const,
+              prevBounds: { x: w.position.x, y: w.position.y, width: w.size.width, height: w.size.height },
               position: { x: 0, y: 0 },
               size: {
                 width: typeof window !== 'undefined' ? window.innerWidth : 1024,
-                height:
-                  (typeof window !== 'undefined' ? window.innerHeight : 768) - 30, // subtract taskbar
+                height: (typeof window !== 'undefined' ? window.innerHeight : 768) - 30,
               },
             }
           : w
@@ -169,25 +119,14 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
     set((state) => ({
       windows: state.windows.map((w) => {
         if (w.id !== id) return { ...w, isActive: false };
-
         if (w.state === 'maximized' && w.prevBounds) {
           return {
-            ...w,
-            state: 'normal' as const,
-            position: { x: w.prevBounds.x, y: w.prevBounds.y },
+            ...w, state: 'normal' as const, position: { x: w.prevBounds.x, y: w.prevBounds.y },
             size: { width: w.prevBounds.width, height: w.prevBounds.height },
-            prevBounds: undefined,
-            isActive: true,
-            zIndex: nextZIndex,
+            prevBounds: undefined, isActive: true, zIndex: nextZIndex,
           };
         }
-        // Restore from minimized
-        return {
-          ...w,
-          state: 'normal' as const,
-          isActive: true,
-          zIndex: nextZIndex,
-        };
+        return { ...w, state: 'normal' as const, isActive: true, zIndex: nextZIndex };
       }),
       nextZIndex: nextZIndex + 1,
     }));
@@ -197,10 +136,7 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
     const { nextZIndex } = get();
     set((state) => ({
       windows: state.windows.map((w) => ({
-        ...w,
-        isActive: w.id === id,
-        zIndex: w.id === id ? nextZIndex : w.zIndex,
-        // Un-minimize if minimized and being focused
+        ...w, isActive: w.id === id, zIndex: w.id === id ? nextZIndex : w.zIndex,
         state: w.id === id && w.state === 'minimized' ? 'normal' as const : w.state,
       })),
       nextZIndex: nextZIndex + 1,
@@ -208,44 +144,22 @@ export const useWMSStore = create<WMSStore>((set, get) => ({
   },
 
   updatePosition: (id, position) => {
-    set((state) => ({
-      windows: state.windows.map((w) =>
-        w.id === id ? { ...w, position } : w
-      ),
-    }));
+    set((state) => ({ windows: state.windows.map((w) => (w.id === id ? { ...w, position } : w)) }));
   },
 
   updateSize: (id, size) => {
     set((state) => ({
       windows: state.windows.map((w) =>
-        w.id === id
-          ? {
-              ...w,
-              size: {
-                width: Math.max(size.width, w.minSize.width),
-                height: Math.max(size.height, w.minSize.height),
-              },
-            }
-          : w
+        w.id === id ? { ...w, size: { width: Math.max(size.width, w.minSize.width), height: Math.max(size.height, w.minSize.height) } } : w
       ),
     }));
   },
 
   updateTitle: (id, title) => {
-    set((state) => ({
-      windows: state.windows.map((w) =>
-        w.id === id ? { ...w, title } : w
-      ),
-    }));
+    set((state) => ({ windows: state.windows.map((w) => (w.id === id ? { ...w, title } : w)) }));
   },
 
   minimizeAll: () => {
-    set((state) => ({
-      windows: state.windows.map((w) => ({
-        ...w,
-        state: 'minimized' as const,
-        isActive: false,
-      })),
-    }));
+    set((state) => ({ windows: state.windows.map((w) => ({ ...w, state: 'minimized' as const, isActive: false })) }));
   },
 }));
