@@ -16,7 +16,8 @@
         "Gateway Microsite (friction-free intent routing)",
         "Digital Sales Channel (Authority Engine)",
         "Custom CRM eliminating Manual Entry Tax"
-      ]
+      ],
+      "cta": "Schedule a Discovery Call"
     },
     {
       "id": "phase-2",
@@ -30,7 +31,8 @@
         "90-Day Content Calendar & Templates",
         "Lead Nurture & Reputation Management automation",
         "Balanced 60/40 Brand Building / Sales Activation"
-      ]
+      ],
+      "cta": "Schedule a Discovery Call"
     },
     {
       "id": "phase-3",
@@ -44,7 +46,8 @@
         "Custom Architecture replacing legacy CPQ/Billing",
         "Complete Frankenstein Stack rationalization",
         "The Alabrida Bridge — full sovereignty preparation"
-      ]
+      ],
+      "cta": "Take the Assessment"
     }
   ],
   "timeline": {

@@ -54,7 +54,7 @@ export default function PricingGrid({ data }: { data: Tier[] }) {
           </ul>
           
           <Link 
-            href="/contact" 
+            href={`/services/${tier.id}`} 
             className={`${styles.ctaBtn} ${tier.highlighted ? styles.highlightedBtn : styles.primaryBtn}`}
           >
             {tier.cta_text}

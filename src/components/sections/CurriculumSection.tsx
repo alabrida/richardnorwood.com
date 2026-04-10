@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import styles from './Services.module.css'
+import styles from './Curriculum.module.css'
 
 interface CurriculumWeek {
   week: number

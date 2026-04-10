@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import styles from './Services.module.css'
+import styles from './ServicesCTA.module.css'
 
 export default function ServicesCTA() {
   return (
