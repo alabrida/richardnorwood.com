@@ -144,17 +144,17 @@ function TiltCard({
 export default function IdeologySection({ data }: IdeologyProps) {
   return (
     <section className={styles.ideologySection} id="ideology">
-      <div className={styles.sectionContainer}>
+      <div className={common.sectionContainer}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className={styles.sectionTitle}>{data.title}</h2>
-          <div className={styles.titleDecoration} />
+          <h2 className={common.sectionTitle}>{data.title}</h2>
+          <div className={common.titleDecoration} />
           {data.subtitle && (
-            <p className={styles.sectionDescription}>{data.subtitle}</p>
+            <p className={common.sectionDescription}>{data.subtitle}</p>
           )}
         </motion.div>
 
@@ -194,6 +194,11 @@ export default function IdeologySection({ data }: IdeologyProps) {
             </a>
           </motion.div>
         </div>
+      </div>
+    </section>
+  )
+}
+       </div>
       </div>
     </section>
   )

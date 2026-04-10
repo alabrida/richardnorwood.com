@@ -81,13 +81,13 @@ function GlowMetricCard({ metric, index }: { metric: Metric; index: number }) {
 export default function SocialProofSection({ data }: SocialProofProps) {
   return (
     <section className={styles.socialProofSection}>
-      <div className={styles.sectionContainer}>
+      <div className={common.sectionContainer}>
         <div className={styles.socialProofHeader}>
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className={styles.sectionTitle}
+            className={common.sectionTitle}
           >
             {data.title}
           </motion.h2>
@@ -96,7 +96,7 @@ export default function SocialProofSection({ data }: SocialProofProps) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className={styles.sectionDescription}
+            className={common.sectionDescription}
           >
             {data.description}
           </motion.p>
@@ -106,6 +106,12 @@ export default function SocialProofSection({ data }: SocialProofProps) {
           {data.metrics.map((metric, i) => (
             <GlowMetricCard key={i} metric={metric} index={i} />
           ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+}
         </div>
       </div>
     </section>
