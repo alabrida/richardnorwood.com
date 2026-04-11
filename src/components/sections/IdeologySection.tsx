@@ -2,8 +2,8 @@
 
 import React, { useRef, useCallback, useState } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import styles from './Ideology.module.css'
-import common from './SectionCommon.module.css'
 
 interface Stage {
   title: string
@@ -83,6 +83,7 @@ function TiltCard({
   }, [])
 
   const { r, g, b } = glow
+  const stageSlug = stage.title.toLowerCase();
 
   return (
     <motion.div
@@ -92,52 +93,58 @@ function TiltCard({
       transition={{ duration: 0.5, delay: index * 0.12 }}
       className={`${styles.tiltCardWrapper} ${bentoClass || ''}`}
     >
-      <div
-        ref={cardRef}
-        className={styles.tiltCard}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={() => setHovering(true)}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          transform: `perspective(800px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
-          borderColor: hovering ? color : undefined,
-        }}
-      >
+      <Link href={`/revenue-journey/${stageSlug}`} className="block h-full outline-none">
         <div
-          className={styles.tiltEdgeGlow}
+          ref={cardRef}
+          className={styles.tiltCard}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() => setHovering(true)}
+          onMouseLeave={handleMouseLeave}
           style={{
-            opacity: hovering ? 1 : 0,
-            boxShadow: `inset 0 0 30px 8px rgba(${r},${g},${b},0.08)`,
-            mask: `radial-gradient(ellipse at ${glowPos.x}% ${glowPos.y}%, transparent 20%, black 70%)`,
-            WebkitMask: `radial-gradient(ellipse at ${glowPos.x}% ${glowPos.y}%, transparent 20%, black 70%)`,
+            transform: `perspective(800px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
+            borderColor: hovering ? color : undefined,
           }}
-        />
+        >
+          {/* Edge glow — radiates from borders toward cursor, tinted by stage color */}
+          <div
+            className={styles.tiltEdgeGlow}
+            style={{
+              opacity: hovering ? 1 : 0,
+              boxShadow: `inset 0 0 30px 8px rgba(${r},${g},${b},0.08)`,
+              mask: `radial-gradient(ellipse at ${glowPos.x}% ${glowPos.y}%, transparent 20%, black 70%)`,
+              WebkitMask: `radial-gradient(ellipse at ${glowPos.x}% ${glowPos.y}%, transparent 20%, black 70%)`,
+            }}
+          />
 
-        <div
-          className={styles.tiltInnerGlow}
-          style={{
-            opacity: hovering ? 1 : 0,
-            background: `radial-gradient(circle at ${glowPos.x}% ${glowPos.y}%, rgba(${r},${g},${b},0.06) 0%, transparent 50%)`,
-          }}
-        />
+          {/* Soft inner highlight near cursor */}
+          <div
+            className={styles.tiltInnerGlow}
+            style={{
+              opacity: hovering ? 1 : 0,
+              background: `radial-gradient(circle at ${glowPos.x}% ${glowPos.y}%, rgba(${r},${g},${b},0.06) 0%, transparent 50%)`,
+            }}
+          />
 
-        <div
-          className={`${styles.tiltBorderPulse} ${hovering ? styles.tiltBorderPulseActive : ''}`}
-          style={{ '--stage-color': color } as React.CSSProperties}
-        />
+          {/* Border pulse */}
+          <div
+            className={`${styles.tiltBorderPulse} ${hovering ? styles.tiltBorderPulseActive : ''}`}
+            style={{ '--stage-color': color } as React.CSSProperties}
+          />
 
-        <div className={styles.stageContent}>
-          {stage.subtitle && (
-            <span className={styles.stageSubtitle} style={{ color }}>{stage.subtitle}</span>
-          )}
-          <h3 className={styles.stageTitle}>{stage.title}</h3>
-          <p className={styles.stageDescription}>{stage.description}</p>
+          <div className={styles.stageContent}>
+            {stage.subtitle && (
+              <span className={styles.stageSubtitle} style={{ color }}>{stage.subtitle}</span>
+            )}
+            <h3 className={styles.stageTitle}>{stage.title}</h3>
+            <p className={styles.stageDescription}>{stage.description}</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </motion.div>
   )
 }
 
+/* ─── Main Section ─── */
 export default function IdeologySection({ data }: IdeologyProps) {
   return (
     <section className={styles.ideologySection} id="ideology">
@@ -158,11 +165,11 @@ export default function IdeologySection({ data }: IdeologyProps) {
         <div className={styles.timelineGrid}>
           {data.stages.map((stage, i) => {
             const bentoMap = [
-              styles.bentoWide,
-              styles.bentoTall,
-              '',
-              '',
-              styles.bentoWideTablet1,
+              styles.bentoWide,   // Awareness — spans 2 cols
+              styles.bentoTall,   // Consideration — spans 2 rows
+              '',                  // Decision — normal
+              '',                  // Conversion — normal
+              styles.bentoWideTablet1,   // Retention — spans 2 cols (desktop) but 1 on tablet
             ]
             return (
               <TiltCard
@@ -176,6 +183,7 @@ export default function IdeologySection({ data }: IdeologyProps) {
             )
           })}
 
+          {/* CTA card to balance the bento grid */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -183,11 +191,11 @@ export default function IdeologySection({ data }: IdeologyProps) {
             transition={{ duration: 0.5, delay: 0.6 }}
             className={`${styles.tiltCardWrapper} ${styles.ctaTabletWide}`}
           >
-            <a href="/calculator" className={styles.bentoCta}>
+            <Link href="/calculator" className={styles.bentoCta}>
               <span className={styles.bentoCtaLabel}>Ready?</span>
               <span className={styles.bentoCtaHeadline}>Run Your Commercial EKG</span>
               <span className={styles.bentoCtaArrow}>→</span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

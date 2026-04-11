@@ -1,0 +1,127 @@
+{
+  "awareness": {
+    "title": "Stage 1: Awareness",
+    "headline": "Reveal Your Digital Indicators",
+    "tagline": "The Initial Discovery",
+    "fabs": [
+      {
+        "feature": "Perimeter Architecture",
+        "advantage": "Captures interest in the 'Dark Funnel' where 83% of research happens.",
+        "benefit": "Becomes visible to prospects before they ever contact a vendor."
+      },
+      {
+        "feature": "Education-Centric Content",
+        "advantage": "Builds brand equity through high-value insights rather than noise.",
+        "benefit": "Ensures your name is the first point of reference when buyers are ready."
+      },
+      {
+        "feature": "Signal Perception",
+        "advantage": "Detects early indicators of interest via automated social hubs.",
+        "benefit": "Moves prospects from being unaware of pain to recognizing your story."
+      }
+    ],
+    "cta": "Audit Your Awareness",
+    "cta_url": "/calculator",
+    "color": "var(--stage-awareness)"
+  },
+  "consideration": {
+    "title": "Stage 2: Consideration",
+    "headline": "Validate Your Methodology",
+    "tagline": "The Evaluation Phase",
+    "fabs": [
+      {
+        "feature": "Digital Sales Channel",
+        "advantage": "Provides cases, service descriptions, and ROI calculators for B2B deliberation.",
+        "benefit": "Moves beyond a 'business card' to a high-fidelity decision engine."
+      },
+      {
+        "feature": "Lead Nurture Workflows",
+        "advantage": "Delivers relevant, personalized messages throughout the evaluation.",
+        "benefit": "Keeps your solution top-of-mind during complex weighted decisions."
+      },
+      {
+        "feature": "Evidence-Based Proof Points",
+        "advantage": "Systematically validates your expertise with specific commercial evidence.",
+        "benefit": "Reduces buyer uncertainty and establishes authority early."
+      }
+    ],
+    "cta": "Build Your Authority Engine",
+    "cta_url": "/services/phase-1",
+    "color": "var(--stage-consideration)"
+  },
+  "decision": {
+    "title": "Stage 3: Decision",
+    "headline": "Remove the Friction to Commit",
+    "tagline": "The Final Validation",
+    "fabs": [
+      {
+        "feature": "Retargeting Infrastructure",
+        "advantage": "Maintains presence during the final high-intent decision windows.",
+        "benefit": "Increases conversion rates by staying top-of-mind at the finish line."
+      },
+      {
+        "feature": "Reputation Management",
+        "advantage": "Showcases verified social proof and user-generated outcomes.",
+        "benefit": "Triggers up to a 6x increase in trust and commitment speed."
+      },
+      {
+        "feature": "Objection Resolution",
+        "advantage": "Proactively identifies and resolves lingering buyer concerns.",
+        "benefit": "Provides total reassurance for a high-value commercial partnership."
+      }
+    ],
+    "cta": "Secure Your Decision Path",
+    "cta_url": "/services/phase-2",
+    "color": "var(--stage-decision)"
+  },
+  "conversion": {
+    "title": "Stage 4: Conversion",
+    "headline": "The Seamless Activation",
+    "tagline": "The Fulcrum Event",
+    "fabs": [
+      {
+        "feature": "Cloud Solution Architecture",
+        "advantage": "Automates the entire quote-to-cash and onboarding cycle.",
+        "benefit": "Eliminates administrative friction and latency during sign-up."
+      },
+      {
+        "feature": "Automated Activation",
+        "advantage": "Ensures clients experience 'initial impact' within minutes, not days.",
+        "benefit": "Secures the customer relationship through immediate realized value."
+      },
+      {
+        "feature": "Engine Integration",
+        "advantage": "Aligns technical systems to fulfill the technical and strategy promise.",
+        "benefit": "Ensures a flawless transition from prospect to active partner."
+      }
+    ],
+    "cta": "Automate Your Conversion",
+    "cta_url": "/services/phase-3",
+    "color": "var(--stage-conversion)"
+  },
+  "retention": {
+    "title": "Stage 5: Retention",
+    "headline": "Drive Compounding Results",
+    "tagline": "The Strategic Partnership",
+    "fabs": [
+      {
+        "feature": "Usage Telemetry",
+        "advantage": "Monitors heartbeats and engagement signals at the API level.",
+        "benefit": "Predicts and prevents churn before the client even realizes it."
+      },
+      {
+        "feature": "The Bowtie Expansion",
+        "advantage": "Automates the transition from satisfied client to vocal advocate.",
+        "benefit": "Triggers 110%+ NRR through referrals and cross-selling."
+      },
+      {
+        "feature": "Continuous Perception",
+        "advantage": "Replaces archaic reviews with a state of constant understanding.",
+        "benefit": "Turns your service into a high-value financial asset."
+      }
+    ],
+    "cta": "Scale Your NRR Engine",
+    "cta_url": "/contact",
+    "color": "var(--stage-retention)"
+  }
+}
