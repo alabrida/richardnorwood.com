@@ -15,7 +15,7 @@ const HEADER_LINKS = [
 const SYSTEM_LINKS = [
   { label: 'Client Portal', href: '/portal' },
   { label: 'Blog', href: '/blog' },
-  { label: 'EKG Calculator', href: '/calculator' },
+  { label: 'Health Check', href: '/calculator' },
   { label: 'The Guide', href: '/#about' },
 ];
 
@@ -33,7 +33,7 @@ export default function Footer() {
               <Link key={link.href} href={link.href} className={styles.footerNavLink}>{link.label}</Link>
             ))}
           </nav>
-          <Link href="/calculator" className={styles.footerCta}>Get Your EKG</Link>
+          <Link href="/calculator" className={styles.footerCta}>Take the Assessment</Link>
         </div>
       </div>
 

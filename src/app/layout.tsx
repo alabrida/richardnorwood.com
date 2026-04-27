@@ -16,12 +16,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Richard Norwood, PMP — Guide & Revenue Architecture Advisor',
-  description: 'Helping agencies and service businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.',
+  title: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+  description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
   metadataBase: new URL('https://richardnorwood.com'),
   openGraph: {
-    title: 'Richard Norwood, PMP — Guide & Revenue Architecture Advisor',
-    description: 'Helping agencies and service businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.',
+    title: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+    description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
     url: 'https://richardnorwood.com',
     siteName: 'Richard Norwood',
     locale: 'en_US',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Richard Norwood, PMP — Guide & Revenue Architecture Advisor',
-    description: 'Helping agencies and service businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.',
+    title: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+    description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
   },
   icons: {
     icon: '/icons/icons/wheel.png',
@@ -44,8 +44,8 @@ const globalSchema = {
       "@type": "Person",
       "@id": "https://richardnorwood.com/#person",
       "name": "Richard Norwood",
-      "jobTitle": "Guide & Revenue Architecture Advisor",
-      "description": "Certified PMP and Guide who helps agencies move from fragmented growth to visible, governable commercial systems.",
+      "jobTitle": "Revenue Architecture Advisor",
+      "description": "Certified PMP who helps agencies and service businesses build commercial systems that connect marketing, sales, delivery, and retention.",
       "url": "https://richardnorwood.com",
       "sameAs": [
         "https://www.linkedin.com/in/richardnorwoodpmp/",
@@ -80,44 +80,44 @@ const globalSchema = {
       "knowsAbout": [
         "Revenue Architecture",
         "Commercial Strategy",
-        "Managed Nervous Systems",
-        "Information Fusion",
+        "Buyer Journey Optimization",
+        "Cross-Team Alignment",
         "Data Analytics",
-        "Governance & Tool Rationalization"
+        "Governance & Process Design"
       ]
     },
     {
       "@type": "ProfessionalService",
       "@id": "https://richardnorwood.com/#organization",
-      "name": "Richard Norwood, PMP - Guide & Revenue Architecture Advisor",
+      "name": "Richard Norwood, PMP — Revenue Architecture Advisor",
       "url": "https://richardnorwood.com",
-      "description": "Strategic consulting for revenue architecture, commercial system design, and operational improvement. 90-day to 12-month partnership engagements.",
+      "description": "Strategic consulting to align, build, and hand off commercial systems that connect marketing, sales, delivery, and retention into one revenue engine.",
       "founder": { "@id": "https://richardnorwood.com/#person" },
       "areaServed": { "@type": "Country", "name": "United States" },
       "serviceType": [
         "Revenue Architecture",
         "Commercial Strategy",
         "Project Management",
-        "Digital Infrastructure"
+        "Buyer Journey Optimization"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Strategic Partnership Tiers",
+        "name": "Partnership Tiers",
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "Phase I: Diagnostic & Stabilization",
-            "description": "90-day engagement for commercial system assessment, clarity, and first-layer improvements."
+            "name": "Align",
+            "description": "90-day engagement to diagnose the revenue system, establish positioning, and make the first high-impact improvements."
           },
           {
             "@type": "Offer",
-            "name": "Phase II: Orchestration",
-            "description": "6-month engagement for Managed Nervous System installation and structured follow-through."
+            "name": "Build",
+            "description": "6-month partnership to install the operating layer — visibility, automation, and cross-team alignment."
           },
           {
             "@type": "Offer",
-            "name": "Phase III: Transition",
-            "description": "12-month engagement for governance strengthening and deeper architecture readiness."
+            "name": "Command",
+            "description": "12-month engagement to strengthen governance, simplify the stack, and transition to full team independence."
           }
         ]
       }
@@ -126,7 +126,7 @@ const globalSchema = {
       "@type": "WebSite",
       "@id": "https://richardnorwood.com/#website",
       "url": "https://richardnorwood.com/",
-      "name": "Richard Norwood - Revenue Architect",
+      "name": "Richard Norwood — Revenue Architecture Advisor",
       "publisher": {
         "@id": "https://richardnorwood.com/#person"
       }

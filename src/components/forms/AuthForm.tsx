@@ -108,7 +108,7 @@ export default function AuthForm({ type }: AuthFormProps) {
                   onBlur={field.handleBlur}
                   onChange={(e) => field.handleChange(e.target.value)}
                   className={styles.inputField}
-                  placeholder="mail@alabrida.org"
+                  placeholder="name@company.com"
                 />
                 {field.state.meta.errors ? (
                   <span className={styles.fieldError}>{field.state.meta.errors.join(', ')}</span>

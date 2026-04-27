@@ -193,7 +193,7 @@ export default function IdeologySection({ data }: IdeologyProps) {
           >
             <Link href="/calculator" className={styles.bentoCta}>
               <span className={styles.bentoCtaLabel}>Ready?</span>
-              <span className={styles.bentoCtaHeadline}>Run Your Commercial EKG</span>
+              <span className={styles.bentoCtaHeadline}>Take the Assessment</span>
               <span className={styles.bentoCtaArrow}>→</span>
             </Link>
           </motion.div>

@@ -27,19 +27,19 @@ export default function CalculatorForm() {
       setTimeout(() => {
         setAnalyzing(false)
         toast.message('Analysis Complete', {
-          description: 'Your Revenue EKG results are ready. Routing to next step...'
+          description: 'Your results are ready. Redirecting you to book a review...'
         })
         
         // Push user to contact to book with payload
         setTimeout(() => {
-          const formattedPayload = `[ COMMERCIAL EKG RESULTS ]
+          const formattedPayload = `[ REVENUE HEALTH CHECK RESULTS ]
 Data Migration: ${value.q1}
 Central Repository: ${value.q2}
 Attribution: ${value.q3}
 Infrastructure: ${value.q4}
 Estimated AARR: ${value.q5}
 
-I'm ready to review my operational baseline.`
+I'd like to review my results together.`
 
           const params = new URLSearchParams()
           params.set('source', 'ekg')
@@ -56,8 +56,8 @@ I'm ready to review my operational baseline.`
       {analyzing ? (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={styles.inputGroup} style={{ textAlign: 'center' }}>
           <div style={{ color: 'var(--color-secondary)', fontSize: 'var(--text-4xl)', marginBottom: 'var(--space-4)' }}>⟳</div>
-          <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)' }}>Running Diagnostic Engine...</h2>
-          <p style={{ color: 'var(--color-text-subtle)', marginTop: 'var(--space-2)' }}>Compiling your 5-point data signature into the Revenue Architecture matrix.</p>
+          <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)' }}>Analyzing Your Responses...</h2>
+          <p style={{ color: 'var(--color-text-subtle)', marginTop: 'var(--space-2)' }}>Building your personalized assessment based on your answers.</p>
         </motion.div>
       ) : (
         <form 
@@ -116,15 +116,15 @@ I'm ready to review my operational baseline.`
             </AnimatePresence>
           ) : (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ textAlign: 'center' }}>
-              <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)' }}>Data Captured Successfully.</h2>
-              <p style={{ color: 'var(--color-text-subtle)', margin: 'var(--space-4) 0 var(--space-8)' }}>Initialize the diagnostic sweep to compute your commercial baseline and receive strategic instructions.</p>
+              <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)' }}>All Set.</h2>
+              <p style={{ color: 'var(--color-text-subtle)', margin: 'var(--space-4) 0 var(--space-8)' }}>Submit your answers to see where your commercial system is strongest — and where to focus next.</p>
               
               <form.Subscribe
                 selector={(state) => [state.canSubmit, state.isSubmitting]}
               >
                 {([canSubmit, isSubmitting]) => (
                   <button type="submit" disabled={!canSubmit || isSubmitting} className={styles.submitBtn} style={{ width: '100%', maxWidth: 300, margin: '0 auto' }}>
-                    Run Diagnostic Engine
+                    See My Results
                   </button>
                 )}
               </form.Subscribe>

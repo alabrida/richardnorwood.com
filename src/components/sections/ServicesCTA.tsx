@@ -14,10 +14,10 @@ export default function ServicesCTA() {
         viewport={{ once: true }}
       >
         <h2 style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'var(--text-4xl)', marginBottom: 'var(--space-4)' }}>
-          Ready to See Where Friction Lives?
+          Ready to See Where the Friction Lives?
         </h2>
         <p style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-xl)', maxWidth: '600px', margin: '0 auto' }}>
-          Stop guessing and start with a clear diagnosis. Take the Commercial EKG to identify what to fix first.
+          A short diagnostic to identify what's working, what's stalling, and where to focus first.
         </p>
         
         <Link href="/calculator" className={styles.ctaBtn}>

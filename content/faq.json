@@ -1,61 +1,53 @@
 {
   "categories": [
     {
-      "name": "The Diagnosis",
+      "name": "Getting Started",
       "topics": [
         {
-          "question": "What is the Commercial EKG?",
-          "answer": "The Commercial EKG is the Guide's diagnostic for showing where the commercial journey is strong, weak, or disconnected. It reviews the business across the five canonical stages — Awareness, Consideration, Decision, Conversion, and Retention — looking at both the visible signals a buyer can see and the structural conditions underneath. The result is a staged plan that replaces vague frustration with specific, actionable next steps."
+          "question": "What kind of businesses do you work with?",
+          "answer": "Agencies, consultancies, and service businesses between $1M–$20M in revenue that have outgrown their current commercial setup. Typically, marketing, sales, and delivery are working hard but not working together — and leadership knows the system needs to evolve."
         },
         {
-          "question": "What are the Maturity Tiers?",
-          "answer": "Based on the Commercial EKG, we place your business in one of four maturity tiers: Fragmented (0-40) — activity exists, but the journey is unreliable and siloed; Emerging (41-60) — useful pieces are visible, but cohesion is still fragile; Orchestrated (61-80) — the system is becoming governable and repeatable; Unified (81-100) — the business can see and steer the journey deliberately. The right recommendation is always the next workable improvement, not the most ambitious future-state build."
+          "question": "How do I know if this is the right fit?",
+          "answer": "Take the Revenue Health Check on this site. It's a short diagnostic that identifies where your commercial system is strongest and where friction is costing you the most. From there, we'll schedule a discovery call to discuss whether an engagement makes sense."
         },
         {
-          "question": "How do I run the assessment?",
-          "answer": "Navigate to the Prequalifier on this site, answer the diagnostic questions, and receive your initial Maturity Tier. This baseline reveals your most critical area of friction and helps determine which Phase of the partnership addresses it. From there, we schedule a Discovery Session to run the full Commercial EKG."
+          "question": "What does a typical engagement look like?",
+          "answer": "Every engagement starts with Align — a focused 90-day diagnostic and stabilization phase. From there, businesses that want to build an operating system for their revenue continue into Build (6 months) and Command (12 months). Each phase builds on the last."
         }
       ]
     },
     {
-      "name": "The Guide",
+      "name": "The Work",
       "topics": [
         {
-          "question": "Who is Richard Norwood?",
-          "answer": "Richard Norwood, PMP, is a Guide who helps leaders see where commercial friction lives, what to fix first, and how to move from scattered activity to an orchestrated system. By merging PMP governance with Revenue Architecture thinking, he provides the delivery discipline and diagnostic clarity required to steer businesses toward compounding, repeatable growth."
+          "question": "Do you replace our existing tools?",
+          "answer": "No. We work with the tools your team already uses. The goal is to make your current stack work as a system — not to sell you new software. If a tool isn't serving the operating model, we'll flag it, but the decision is always yours."
         },
         {
-          "question": "Why work with a Guide instead of a marketing agency?",
-          "answer": "Marketing agencies tend to optimize tactics in isolation. A Guide fixes the system those tactics live inside — governance, handoffs, proof, tool fit, and follow-through across the entire journey. The result is a Unified Commercial Engine where marketing, sales, delivery, and retention work as one coordinated system, not a collection of disconnected campaigns."
+          "question": "How is this different from hiring a marketing agency?",
+          "answer": "Agencies tend to optimize one channel — ads, SEO, email. We fix the system those channels live inside. That means aligning how marketing, sales, delivery, and retention work together — so improvements in one area compound across the business instead of creating new bottlenecks."
         },
         {
-          "question": "What is the Alabrida Bridge?",
-          "answer": "Richard's personal brand is the approachable entry point. He establishes the Managed Nervous System — the first reliable layer of visibility and automation — and proves the value of structure using the tools the business already has. When the business needs deeper data ownership, custom infrastructure, or a broader system rebuild, the work moves to Alabrida Revenue Architects for deeper architecture-led engagement."
+          "question": "How long does it take to see results?",
+          "answer": "Most clients see meaningful improvements within the first 90 days of Align — clearer positioning, better follow-through, and a website that actually supports the sales process. The deeper operational gains come during Build and Command as the system matures."
         }
       ]
     },
     {
-      "name": "The System",
+      "name": "Working Together",
       "topics": [
         {
-          "question": "What is a Unified Commercial Engine?",
-          "answer": "A Unified Commercial Engine is the coordinated operating system that turns marketing, sales, delivery, and retention into one journey rather than a series of disconnected departments. It includes a shared stage model, a shared source of truth, Information Fusion to preserve useful context, clean handoffs at Conversion, and retention logic that protects adoption and appropriate expansion."
+          "question": "What's the investment?",
+          "answer": "Engagements are scoped during the discovery call based on business size and complexity. There are no published price lists — every partnership is structured around the outcomes that matter most to your business."
         },
         {
-          "question": "What is Information Fusion?",
-          "answer": "Information Fusion is the design principle of capturing useful buyer and customer signals automatically, so the business does not rely on late or incomplete manual updates. Instead of asking a team to remember every interaction, the system captures useful signals from the tools where those interactions already happen. The result is better visibility, cleaner follow-through, and less time spent reconstructing what happened."
+          "question": "Who do I work with directly?",
+          "answer": "You work directly with Richard Norwood, PMP. This is not a team of junior consultants. Strategy, diagnostic, and execution guidance come from the same person — which means nothing is lost in translation."
         },
         {
-          "question": "What is the Managed Nervous System?",
-          "answer": "The Managed Nervous System is the first operating layer of the doctrine. It uses the current stack to improve visibility, protect context, and automate the most important follow-through work — without requiring a full rebuild on day one. It is the bridge between the current state and a stronger, more orchestrated commercial system."
-        },
-        {
-          "question": "What is a Digital Sales Channel?",
-          "answer": "A Digital Sales Channel is a website or microsite estate designed to help buyers learn, validate, and act — not just browse. It supports the buyer's movement through the five stages by providing evaluation-ready structure, relevant proof, and clear next steps. It replaces the static brochure with a purposeful decision-support environment."
-        },
-        {
-          "question": "How do I book a Strategy Session?",
-          "answer": "Navigate to the Contact page and use the embedded calendar to book your Discovery Session directly. You can also reach out through the contact form — we respond within 24 hours."
+          "question": "How do I get started?",
+          "answer": "Take the Revenue Health Check to establish a baseline, then book a Discovery Session through the contact page. We'll review your results together and determine whether an engagement is the right next step."
         }
       ]
     }

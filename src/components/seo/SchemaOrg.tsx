@@ -12,9 +12,9 @@ const baseSchema = {
     {
       '@type': 'ProfessionalService',
       '@id': 'https://richardnorwood.com/#organization',
-      name: 'Richard Norwood, PMP - Guide & Revenue Architecture Advisor',
+      name: 'Richard Norwood, PMP — Revenue Architecture Advisor',
       url: 'https://richardnorwood.com',
-      description: 'Strategic consulting for revenue architecture, commercial system design, and operational improvement. 90-day to 12-month partnership engagements.',
+      description: 'Strategic consulting to align, build, and hand off commercial systems that connect marketing, sales, delivery, and retention into one revenue engine.',
       areaServed: {
         '@type': 'Country',
         name: 'United States',
@@ -34,18 +34,18 @@ const baseSchema = {
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Phase I: Diagnostic & Stabilization',
-            description: '90-day engagement for commercial system assessment, clarity, and first-layer improvements.',
+            name: 'Align',
+            description: '90-day engagement to diagnose the revenue system, establish positioning, and make the first high-impact improvements.',
           },
           {
             '@type': 'Offer',
-            name: 'Phase II: Orchestration',
-            description: '6-month engagement for Managed Nervous System installation and structured follow-through.',
+            name: 'Build',
+            description: '6-month partnership to install the operating layer — visibility, automation, and cross-team alignment.',
           },
           {
             '@type': 'Offer',
-            name: 'Phase III: Transition',
-            description: '12-month engagement for governance strengthening and deeper architecture readiness.',
+            name: 'Command',
+            description: '12-month engagement to strengthen governance, simplify the stack, and transition to full team independence.',
           },
         ],
       },
@@ -54,7 +54,7 @@ const baseSchema = {
       '@type': 'Person',
       '@id': 'https://richardnorwood.com/#person',
       name: 'Richard Norwood',
-      jobTitle: 'Guide & Revenue Architecture Advisor',
+      jobTitle: 'Revenue Architecture Advisor',
       url: 'https://richardnorwood.com',
       sameAs: [
         'https://linkedin.com/in/richardnorwood',
@@ -64,8 +64,8 @@ const baseSchema = {
         'Revenue Architecture',
         'Project Management',
         'Commercial Strategy',
-        'Information Fusion',
-        'Digital Infrastructure',
+        'Buyer Journey Optimization',
+        'Cross-Team Alignment',
       ],
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',

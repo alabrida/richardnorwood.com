@@ -103,7 +103,7 @@ export default function ContactForm() {
                 onBlur={field.handleBlur}
                 onChange={(e) => field.handleChange(e.target.value)}
                 className={styles.inputField}
-                placeholder="mail@alabrida.org"
+                placeholder="name@company.com"
                 disabled={isSubmitting}
               />
               {field.state.meta.errors ? (
@@ -128,7 +128,7 @@ export default function ContactForm() {
                   onBlur={field.handleBlur}
                   onChange={(e) => field.handleChange(e.target.value)}
                   className={styles.inputField}
-                  placeholder="Alabrida Revenue"
+                  placeholder="Acme Corp"
                   disabled={isSubmitting}
                 />
               </div>

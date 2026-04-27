@@ -35,8 +35,8 @@ export default function CookieBanner() {
             <div className={styles.textContent}>
               <h4 className={styles.title}>Cookie Consent</h4>
               <p className={styles.disclaimer}>
-                We use cookies for necessary operations and analytics to establish our Managed Nervous System. 
-                You may opt out, but doing so may limit personalized experiences.
+                We use cookies for essential site operations and analytics to improve your experience. 
+                You may opt out, but doing so may limit personalized features.
               </p>
             </div>
             <div className={styles.buttonGroup}>

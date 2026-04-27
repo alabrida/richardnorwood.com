@@ -14647,3 +14647,302 @@ https://react.dev/link/hydration-mismatch
                   ...
  
 [browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068230"
+                        >
+                          <head>
+                          <body
+-                           className="antigravity-scroll-lock"
+                          >
+                  ...
+ 
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068232"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068232"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068232"
+                        >
+                  ...
+ 
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068232"
+                        >
+                  ...
+ 
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068232"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

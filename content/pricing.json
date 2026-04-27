@@ -1,62 +1,59 @@
 {
   "tiers": [
     {
-      "id": "phase-1",
-      "name": "Phase I: Diagnostic & Stabilization",
-      "tagline": "Fragmented to Emerging",
+      "id": "align",
+      "name": "Align",
+      "tagline": "See Clearly. Fix First.",
       "term": "90 Days",
       "features": [
-        "Commercial EKG — full stage-by-stage audit",
-        "Clear positioning across profiles and owned properties",
-        "Gateway routing for low-friction buyer entry",
-        "Website structure built for buyer evaluation",
-        "First-layer visibility and follow-through improvements",
-        "Offline-to-online entry points (signatures, cards, lead magnets)",
-        "Messaging and proof cleanup across the journey"
+        "Full revenue system diagnostic",
+        "Positioning and messaging clarity",
+        "Website restructured for buyer evaluation",
+        "Buyer-facing proof and trust signals",
+        "First-layer visibility improvements",
+        "Prioritized action plan"
       ],
       "locked_features": [
-        "Phase II: Orchestration",
-        "Phase III: Transition"
+        "Build",
+        "Command"
       ],
       "cta_text": "Schedule Discovery",
       "highlighted": false
     },
     {
-      "id": "phase-2",
-      "name": "Phase II: Orchestration",
-      "tagline": "Emerging to Orchestrated — Recommended",
+      "id": "build",
+      "name": "Build",
+      "tagline": "Activate the Engine — Recommended",
       "term": "6 Months",
       "features": [
-        "Everything in Phase I",
-        "Managed Nervous System (MNS) installation",
-        "Information Fusion for automated signal capture",
-        "Website or microsite restructuring around the canonical journey",
-        "Nurture, review, and follow-up automation",
-        "Recurring operating reviews tied to buyer and customer signals",
-        "Stronger stage definitions and handoff improvements"
+        "Everything in Align",
+        "Operating system for visibility and automation",
+        "Automated signal capture across the journey",
+        "Nurture, follow-up, and review automation",
+        "Cross-team handoff improvements",
+        "Recurring reviews tied to real signals"
       ],
       "locked_features": [
-        "Phase III: Transition"
+        "Command"
       ],
       "cta_text": "Apply for Partnership",
       "highlighted": true
     },
     {
-      "id": "phase-3",
-      "name": "Phase III: Transition",
-      "tagline": "Orchestrated to Unified",
+      "id": "command",
+      "name": "Command",
+      "tagline": "Own It. Run It. Scale It.",
       "term": "12 Months",
       "features": [
-        "Everything in Phase II",
-        "Stronger governance and ownership rules",
+        "Everything in Build",
+        "Governance framework and ownership rules",
         "Tool rationalization and workflow simplification",
-        "Data model hardening and system documentation",
-        "Transition planning for deeper architecture work",
-        "The Alabrida Bridge — readiness for owned infrastructure",
-        "Full path to a Unified Commercial Engine"
+        "System documentation and data model hardening",
+        "Transition to full team independence",
+        "A system that improves without outside help"
       ],
       "locked_features": [],
-      "cta_text": "Request Architecture Review",
+      "cta_text": "Request Consultation",
       "highlighted": false
     }
   ]

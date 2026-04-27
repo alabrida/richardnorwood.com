@@ -1,51 +1,46 @@
 {
   "hero": {
     "headline": "Revenue Problems Are Structural Before They Are Tactical.",
-    "subhead": "I'm Richard Norwood, PMP — a Guide who helps agencies and service businesses see where commercial friction lives, what to fix first, and how to move from scattered activity to an orchestrated system that grows with confidence.",
-    "cta_text": "Run Your Commercial EKG",
+    "subhead": "I help agencies and service businesses find the friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.",
+    "cta_text": "Take the Assessment",
     "cta_url": "/calculator"
   },
   "ideology": {
-    "title": "The 5-Stage Revenue Journey",
-    "subtitle": "A Unified Commercial Engine accompanies your buyer through a complete journey — from early awareness to long-term retention. Each stage is supported by Information Fusion and designed to keep the system coherent.",
+    "title": "Five Stages. One System.",
+    "subtitle": "Most businesses optimize individual tactics. We align the entire buyer journey — from first impression to long-term relationship — into one coherent commercial system.",
     "stages": [
       {
         "title": "Awareness",
-        "subtitle": "The Perimeter",
-        "description": "Buyers do substantial research before they ever speak with a seller. We help you become visible, relevant, and easy to understand at the discovery surfaces where the right buyers are already looking.",
+        "description": "Get found by the right buyers in the right places — before they ever talk to a salesperson.",
         "icon": "awareness"
       },
       {
         "title": "Consideration",
-        "subtitle": "The Gateway",
-        "description": "Your digital presence needs to act like a guide, not a brochure. We build evaluation-ready structures that teach buyers how to think about the problem and assess whether your approach is the right fit.",
+        "description": "Make it easy for buyers to evaluate your approach, understand the problem, and see why you're the right fit.",
         "icon": "consideration"
       },
       {
         "title": "Decision",
-        "subtitle": "The Core",
-        "description": "Decision is about risk removal. We replace static pages with transparent proof, practical FAQs, and simple next steps that resolve buyer objections before they become blockers.",
+        "description": "Remove the friction that stalls deals — unclear proof, unanswered objections, and complicated next steps.",
         "icon": "decision"
       },
       {
         "title": "Conversion",
-        "subtitle": "The Fulcrum",
-        "description": "Conversion is the center of the bowtie — where commitment becomes a clean start. We make sure quote-to-cash, onboarding, and internal ownership are clear so momentum is never lost at the handoff.",
+        "description": "Turn a signed deal into a clean start — clear ownership, smooth onboarding, and zero lost momentum.",
         "icon": "conversion"
       },
       {
         "title": "Retention",
-        "subtitle": "The Right Side",
-        "description": "The sale is the midpoint, not the finish line. We help protect adoption, surface recovery needs early, and create responsible expansion — because if the right side is weak, the left side becomes more expensive.",
+        "description": "Protect the relationship after the sale. Surface risks early, strengthen adoption, and grow accounts responsibly.",
         "icon": "retention"
       }
     ]
   },
   "about": {
-    "title": "The Guide",
+    "title": "Your Guide",
     "name": "Richard Norwood, PMP",
-    "role": "Guide & Revenue Architecture Advisor",
-    "bio": "Most consultants optimize isolated tactics. I help fix the system those tactics live inside. As a certified PMP, I merge delivery discipline with Revenue Architecture thinking to help businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.",
-    "cta_text": "Read My Full Bio"
+    "role": "Revenue Architecture Advisor",
+    "bio": "Most consultants optimize a channel. I fix the system those channels live inside. As a certified Project Management Professional, I bring the delivery discipline that turns strategy into outcomes — not just another set of recommendations collecting dust.",
+    "cta_text": "Learn More"
   }
 }

@@ -1,127 +1,222 @@
 {
   "awareness": {
     "title": "Stage 1: Awareness",
-    "headline": "Become Visible to the Right Buyers",
-    "tagline": "The Perimeter",
+    "headline": "Get Found by the Right Buyers",
+    "tagline": "Visibility",
+    "seo_title": "Awareness Stage — Get Found by the Right Buyers | Richard Norwood, PMP",
+    "seo_description": "Most buyers do extensive research before they ever talk to a salesperson. If your business isn't visible where they're looking, you don't exist. Learn how to fix your awareness stage.",
+    "og_description": "Your buyers are researching right now. Are they finding you — or your competitors?",
+    "problem_hook": "Your team is great at what they do. But the right buyers can't find you.",
+    "symptoms": [
+      "Leads come from referrals — and only referrals",
+      "Your website gets traffic but not from your ideal buyer",
+      "Competitors with weaker offerings outrank you in search",
+      "Your LinkedIn presence generates likes, not conversations",
+      "You've invested in content but can't connect it to pipeline"
+    ],
+    "solution_summary": "Awareness isn't about volume. It's about being visible to the right people, in the right places, with the right message — before a conversation ever starts. We help you build a positioning strategy that puts your business where buyers are already looking and gives them a reason to pay attention.",
+    "stat_callout": {
+      "number": "77%",
+      "label": "of B2B buyers complete their research before talking to sales.",
+      "source": "Gartner"
+    },
     "fabs": [
       {
         "feature": "Clear Positioning",
-        "advantage": "Places your business across the discovery surfaces where buyers are already looking.",
-        "benefit": "Becomes visible and relevant before a conversation ever becomes urgent."
+        "advantage": "Places your business where buyers are already looking — search, social, and referral surfaces.",
+        "benefit": "You become visible and relevant before a conversation ever starts."
       },
       {
-        "feature": "Educational Content",
-        "advantage": "Helps buyers name the problem with useful, accessible insights rather than noise.",
+        "feature": "Useful Content",
+        "advantage": "Helps buyers name the problem with practical, accessible insights.",
         "benefit": "Builds early trust so your business is the first point of reference."
       },
       {
         "feature": "Low-Friction Entry Points",
-        "advantage": "Routes early attention from social and offline touchpoints to purposeful next steps.",
-        "benefit": "Captures useful first-party signals without creating friction."
+        "advantage": "Routes early attention from offline and online touchpoints to a meaningful next step.",
+        "benefit": "Captures interest without creating friction."
       }
     ],
-    "cta": "Audit Your Awareness",
+    "cta": "Take the Assessment",
     "cta_url": "/calculator",
-    "color": "var(--stage-awareness)"
+    "color": "var(--stage-awareness)",
+    "next_stage": { "slug": "consideration", "label": "Consideration" },
+    "prev_stage": null
   },
   "consideration": {
     "title": "Stage 2: Consideration",
-    "headline": "Make the Problem Easier to Evaluate",
-    "tagline": "The Gateway",
+    "headline": "Make It Easy to Evaluate You",
+    "tagline": "Credibility",
+    "seo_title": "Consideration Stage — Make It Easy to Evaluate You | Richard Norwood, PMP",
+    "seo_description": "Your website looks fine, but it's not helping buyers decide. They're comparing you against two or three alternatives right now. Here's how to win the evaluation.",
+    "og_description": "Your buyers are comparing you right now. Is your website helping them decide — or sending them to a competitor?",
+    "problem_hook": "Buyers visit your site, browse for a minute, and leave. They're evaluating — and you're not making it easy.",
+    "symptoms": [
+      "Prospects say 'we went with someone else' without explaining why",
+      "Your website describes what you do but not why it matters",
+      "You rely on sales calls to explain what the website should have already communicated",
+      "There's no structured path from 'interested' to 'let's talk'",
+      "You have no way to stay present during a long evaluation cycle"
+    ],
+    "solution_summary": "Consideration is where buyers decide whether you're worth a deeper look. Your website needs to act like a guide — not a brochure. We help you build evaluation-ready structures that show proof, teach how to think about the problem, and make it obvious why your approach is the right fit.",
+    "stat_callout": {
+      "number": "67%",
+      "label": "of the buyer journey is now completed digitally, without talking to sales.",
+      "source": "Sirius Decisions"
+    },
     "fabs": [
       {
         "feature": "Evaluation-Ready Structure",
-        "advantage": "Provides proof, framing, and examples that help buyers understand fit — not just browse.",
-        "benefit": "Moves beyond a static brochure to a genuine decision-support environment."
+        "advantage": "Provides proof, context, and examples that help buyers understand fit — not just browse.",
+        "benefit": "Your website becomes a decision-support tool, not a digital brochure."
       },
       {
         "feature": "Structured Follow-Up",
-        "advantage": "Delivers relevant, helpful messages that continue the conversation without pressure.",
-        "benefit": "Keeps your solution present during complex evaluation without forcing a sales conversation."
+        "advantage": "Continues the conversation with relevant, helpful messages — no pressure.",
+        "benefit": "Keeps you present during complex evaluation without forcing a sales call."
       },
       {
-        "feature": "Relevant Proof Points",
-        "advantage": "Systematically validates your expertise with proof aligned to the buyer's concerns.",
-        "benefit": "Reduces buyer uncertainty and establishes authority early."
+        "feature": "Relevant Proof",
+        "advantage": "Validates your expertise with proof aligned to the buyer's actual concerns.",
+        "benefit": "Reduces uncertainty and builds authority early."
       }
     ],
-    "cta": "Build Your Evaluation Structure",
-    "cta_url": "/services/phase-1",
-    "color": "var(--stage-consideration)"
+    "cta": "See How We Build This",
+    "cta_url": "/services",
+    "color": "var(--stage-consideration)",
+    "next_stage": { "slug": "decision", "label": "Decision" },
+    "prev_stage": { "slug": "awareness", "label": "Awareness" }
   },
   "decision": {
     "title": "Stage 3: Decision",
-    "headline": "Remove the Risk to Move Forward",
-    "tagline": "The Core",
+    "headline": "Remove the Risk",
+    "tagline": "Confidence",
+    "seo_title": "Decision Stage — Remove the Risk That Stalls Deals | Richard Norwood, PMP",
+    "seo_description": "Deals stall when buyers can't resolve their concerns on their own. Unclear pricing, missing proof, and complicated next steps cost you revenue every month.",
+    "og_description": "Deals don't die because of competition. They die because buyers can't resolve their concerns.",
+    "problem_hook": "Proposals go out. Then silence. The deal doesn't die — it just stops moving.",
+    "symptoms": [
+      "Proposals sit untouched for weeks",
+      "You win on relationship but lose when buyers compare on paper",
+      "Prospects ghost after what felt like a strong meeting",
+      "Your close rate depends on who's selling, not the system",
+      "Buyers can't find answers to basic questions without calling you"
+    ],
+    "solution_summary": "Decision is about risk removal, not persuasion. Buyers don't need more pressure — they need clarity. We replace static pages with transparent proof, practical FAQs, and simple next steps that resolve objections before they become blockers.",
+    "stat_callout": {
+      "number": "60%",
+      "label": "of deals in the pipeline are lost to 'no decision' — not to a competitor.",
+      "source": "Sales Benchmark Index"
+    },
     "fabs": [
       {
         "feature": "Transparent Proof",
-        "advantage": "Provides trust signals, FAQs, and proof relevant to the buyer's specific concerns.",
-        "benefit": "Lets a buyer validate fit without unnecessary back-and-forth."
+        "advantage": "Provides trust signals, FAQs, and evidence relevant to the buyer's specific concerns.",
+        "benefit": "Buyers can validate fit without unnecessary back-and-forth."
       },
       {
         "feature": "Objection Resolution",
-        "advantage": "Handles concerns consistently, not just when a strong seller happens to be involved.",
-        "benefit": "Reduces decision risk through clarity rather than increasing pressure."
+        "advantage": "Handles concerns consistently — not just when a strong seller happens to be in the room.",
+        "benefit": "Reduces decision risk through clarity, not pressure."
       },
       {
-        "feature": "Simple Qualification",
-        "advantage": "Creates clear next steps that protect both sides from a poor fit.",
-        "benefit": "Makes it safe and straightforward for the right buyer to move forward."
+        "feature": "Clear Next Steps",
+        "advantage": "Makes it safe and straightforward for the right buyer to move forward.",
+        "benefit": "Protects both sides from a poor fit."
       }
     ],
-    "cta": "Strengthen Your Decision Stage",
-    "cta_url": "/services/phase-2",
-    "color": "var(--stage-decision)"
+    "cta": "Take the Assessment",
+    "cta_url": "/calculator",
+    "color": "var(--stage-decision)",
+    "next_stage": { "slug": "conversion", "label": "Conversion" },
+    "prev_stage": { "slug": "consideration", "label": "Consideration" }
   },
   "conversion": {
     "title": "Stage 4: Conversion",
     "headline": "Turn Commitment Into a Clean Start",
-    "tagline": "The Fulcrum",
+    "tagline": "Momentum",
+    "seo_title": "Conversion Stage — Turn Signed Deals Into Clean Starts | Richard Norwood, PMP",
+    "seo_description": "The deal is signed. Now what? Clunky onboarding, unclear ownership, and lost context turn wins into churn risks. Here's how to protect the momentum.",
+    "og_description": "A signed deal isn't a win. It's a promise. Here's how to keep it.",
+    "problem_hook": "You celebrate the close — then scramble to figure out what happens next.",
+    "symptoms": [
+      "Onboarding is different every time depending on who's running it",
+      "Context from the sales process gets lost in the handoff",
+      "New clients feel confused about what happens after they sign",
+      "Your team argues about who owns the relationship post-sale",
+      "First impressions as a vendor don't match the sales experience"
+    ],
+    "solution_summary": "Conversion is the center of the journey — where commitment becomes a relationship. We make sure the path from signature to kickoff is smooth, professional, and preserves every ounce of context from the sales process. No lost momentum. No confused handoffs.",
+    "stat_callout": {
+      "number": "1 in 3",
+      "label": "new clients consider switching providers within the first 90 days — usually because of onboarding friction.",
+      "source": "HBR"
+    },
     "fabs": [
       {
-        "feature": "Friction-Aware Booking",
-        "advantage": "Simplifies quote-to-cash so the moment of commitment feels smooth and professional.",
-        "benefit": "Eliminates unnecessary admin at the point of agreement."
+        "feature": "Smooth Booking & Close",
+        "advantage": "Simplifies the path from agreement to action so the commitment feels professional.",
+        "benefit": "Eliminates unnecessary admin at the most important moment."
       },
       {
         "feature": "Clear Ownership",
-        "advantage": "Defines who owns the relationship after the sale so context is never lost.",
-        "benefit": "Preserves momentum from pre-sale through onboarding without a confusing handoff."
+        "advantage": "Defines who owns the relationship after the sale so nothing is lost.",
+        "benefit": "Preserves momentum from pre-sale through onboarding."
       },
       {
         "feature": "Onboarding That Works",
-        "advantage": "Moves from agreement to action with steps that keep the buyer's context intact.",
-        "benefit": "Ensures a good decision becomes a good experience from day one."
+        "advantage": "Moves from agreement to action with clear steps and intact context.",
+        "benefit": "A good decision becomes a good experience from day one."
       }
     ],
-    "cta": "Improve Your Conversion",
-    "cta_url": "/services/phase-3",
-    "color": "var(--stage-conversion)"
+    "cta": "See How We Build This",
+    "cta_url": "/services",
+    "color": "var(--stage-conversion)",
+    "next_stage": { "slug": "retention", "label": "Retention" },
+    "prev_stage": { "slug": "decision", "label": "Decision" }
   },
   "retention": {
     "title": "Stage 5: Retention",
-    "headline": "Protect and Expand the Relationship",
-    "tagline": "The Right Side",
+    "headline": "Protect and Grow the Relationship",
+    "tagline": "Durability",
+    "seo_title": "Retention Stage — Protect and Grow the Relationship | Richard Norwood, PMP",
+    "seo_description": "Customer churn is a revenue problem hiding in plain sight. Most businesses treat retention as an afterthought. Here's why the right side of the journey matters more than the left.",
+    "og_description": "Your biggest growth lever isn't new logos. It's the customers you already have.",
+    "problem_hook": "You're so focused on new business that your best customers are quietly drifting away.",
+    "symptoms": [
+      "Churn surprises you — you didn't see it coming",
+      "Renewals depend on the account manager's memory, not a system",
+      "Upsell attempts feel forced and damage trust",
+      "You don't know which accounts are thriving and which are at risk",
+      "Your best customers haven't referred anyone in over a year"
+    ],
+    "solution_summary": "Retention isn't an afterthought — it's the other half of the revenue engine. We help you build visibility into customer health, surface risks before they become churn, and create expansion pathways rooted in real value. Because if the right side is weak, the left side gets more expensive every quarter.",
+    "stat_callout": {
+      "number": "5×",
+      "label": "more expensive to acquire a new customer than to retain an existing one.",
+      "source": "Bain & Company"
+    },
     "fabs": [
       {
         "feature": "Customer Health Visibility",
-        "advantage": "Surfaces adoption gaps and drift before they become churn stories.",
-        "benefit": "Protects value realization so the promise of the left side is confirmed."
+        "advantage": "Surfaces adoption gaps and drift before they become churn.",
+        "benefit": "Protects the value you promised during the sale."
       },
       {
         "feature": "Recovery & Renewal",
         "advantage": "Creates structured plays for accounts that need attention or are approaching renewal.",
-        "benefit": "Manages retention intentionally, not just reactively."
+        "benefit": "Manages retention intentionally, not reactively."
       },
       {
         "feature": "Responsible Expansion",
-        "advantage": "Identifies expansion opportunities rooted in real value, not forced upsell pressure.",
-        "benefit": "Turns satisfied customers into a future source of trust and referral."
+        "advantage": "Identifies growth opportunities rooted in real value, not forced upsells.",
+        "benefit": "Turns satisfied customers into a reliable source of referrals and revenue."
       }
     ],
-    "cta": "Strengthen Your Retention",
-    "cta_url": "/contact",
-    "color": "var(--stage-retention)"
+    "cta": "Take the Assessment",
+    "cta_url": "/calculator",
+    "color": "var(--stage-retention)",
+    "next_stage": null,
+    "prev_stage": { "slug": "conversion", "label": "Conversion" }
   }
 }

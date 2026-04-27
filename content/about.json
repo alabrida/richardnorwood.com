@@ -1,8 +1,8 @@
 {
   "name": "Richard Norwood, PMP",
-  "title": "Guide & Revenue Architecture Advisor",
-  "bio": "Most consultants optimize isolated tactics. I help fix the system those tactics live inside. As a certified PMP, I merge delivery discipline with Revenue Architecture thinking to help businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time. I install the Managed Nervous System that creates the first reliable layer of visibility and automation — proving the value of structure before a deeper infrastructure decision is required.",
-  "mission": "Guiding businesses from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.",
+  "title": "Revenue Architecture Advisor",
+  "bio": "Most consultants optimize a channel. I fix the system those channels live inside. As a certified Project Management Professional, I bring the delivery discipline that turns strategy into outcomes — not just another set of recommendations collecting dust.",
+  "mission": "Helping businesses move from scattered, hero-led growth to a commercial system that is visible, governable, and built to improve over time.",
   "credentials": [
     "PMP Certified (Project Management Institute)",
     "B.S. in Marketing (Jacksonville State University, 2008)",
@@ -10,12 +10,12 @@
     "Candidate: Google Professional Solution Architect"
   ],
   "expertise": [
-    "Commercial EKG Diagnostics (Stage-by-Stage Audit)",
-    "Managed Nervous System (MNS) Orchestration",
-    "Information Fusion & Automated Signal Capture",
-    "Revenue Performance (Volume × Conversion × Velocity)",
-    "Governance, Incentive Design & Tool Rationalization",
-    "Bowtie Model & Retention Architecture"
+    "Revenue System Design & Diagnostics",
+    "Commercial Operations & Process Architecture",
+    "Cross-Team Alignment (Marketing, Sales, Delivery, Retention)",
+    "Buyer Journey Optimization",
+    "Governance, Tooling & Workflow Rationalization",
+    "Data-Informed Decision Frameworks"
   ],
   "image": "/images/richard-norwood.jpg"
 }
