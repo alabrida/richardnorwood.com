@@ -17,7 +17,7 @@
     "ai": "^6.0.141",
     "downshift": "^9.3.2",
     "motion": "^12.38.0",
-    "next": "16.2.1",
+    "next": "^16.2.4",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "recharts": "^3.8.1",
@@ -32,8 +32,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.1",
+    "eslint-config-next": "^16.2.4",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }

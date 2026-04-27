@@ -844,3 +844,25 @@
 ✓ Compiled in 42.9s
 ✓ Finished filesystem cache database compaction in 19.3s
 ✓ Compiled in 187.7s
+ GET / 200 in 11.4min (next.js: 6.0min, proxy.ts: 67s, application-code: 4.3min)
+ GET / 200 in 11.4min (next.js: 6.0min, proxy.ts: 67s, application-code: 4.3min)
+ GET / 200 in 14.1min (next.js: 11.5s, proxy.ts: 130ms, application-code: 13.9min)
+ GET / 200 in 11.4min (next.js: 6.0min, proxy.ts: 67s, application-code: 4.3min)
+ GET / 200 in 11.4min (next.js: 5.9min, proxy.ts: 67s, application-code: 4.3min)
+✓ Finished writing to filesystem cache in 11.8s
+✓ Finished filesystem cache database compaction in 13.0s
+✓ Compiled in 244.1s
+ GET / 200 in 13.2min (next.js: 6.0min, proxy.ts: 67s, application-code: 6.1min)
+ GET / 200 in 13.2min (next.js: 5.9min, proxy.ts: 67s, application-code: 6.1min)
+ GET / 200 in 13.2min (next.js: 6.0min, proxy.ts: 67s, application-code: 6.1min)
+○ Compiling proxy ...
+✓ Compiled in 8.1s
+○ Compiling middleware ...
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://172.28.112.1:3001
+- Environments: .env.local
+✓ Ready in 982ms
+
+○ Compiling / ...
+ GET / 200 in 12.0s (next.js: 9.6s, proxy.ts: 894ms, application-code: 1512ms)
