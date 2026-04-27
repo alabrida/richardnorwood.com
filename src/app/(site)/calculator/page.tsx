@@ -3,8 +3,8 @@ import CalculatorForm from '@/components/forms/CalculatorForm'
 import { Toaster } from 'sonner'
 
 export const metadata = {
-  title: 'Diagnostic Calculator | Alabrida Revenue Architecture',
-  description: 'Compute your commercial viability and identify your precise leak score across your sales perimeter.',
+  title: 'Commercial EKG | Richard Norwood, PMP',
+  description: 'Answer a few diagnostic questions to identify where friction, weak handoffs, and missing proof are interrupting your revenue journey.',
 }
 
 export default function CalculatorPage() {
@@ -17,8 +17,8 @@ export default function CalculatorPage() {
             The Commercial EKG
           </h1>
           <p style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-lg)', lineHeight: 'var(--leading-relaxed)' }}>
-            We&apos;ve developed a proprietary 250+ point diagnostic sequence to objectively grade your revenue flow. 
-            Before we enter the boardroom, answer these 5 calibrator signals to arm our team with your operational baseline.
+            The Commercial EKG identifies where friction, weak handoffs, and missing proof are interrupting your revenue journey.
+            Answer these diagnostic questions to establish your baseline and determine what to fix first.
           </p>
         </div>
 

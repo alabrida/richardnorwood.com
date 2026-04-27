@@ -14,10 +14,9 @@ interface MobileDrawerProps {
   isOpen: boolean;
   onClose: () => void;
   navItems: NavItem[];
-  isDesktopView: boolean;
 }
 
-export default function MobileDrawer({ isOpen, onClose, navItems, isDesktopView }: MobileDrawerProps) {
+export default function MobileDrawer({ isOpen, onClose, navItems }: MobileDrawerProps) {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -76,11 +75,11 @@ export default function MobileDrawer({ isOpen, onClose, navItems, isDesktopView 
 
             <div className={styles.drawerFooter}>
               <Link 
-                href={isDesktopView ? "/calculator" : "/desktop"} 
+                href="/calculator" 
                 onClick={onClose} 
                 className={styles.drawerCta}
               >
-                {isDesktopView ? "Run Diagnostic" : "Experience the Engine"}
+                Run Your Commercial EKG
               </Link>
             </div>
           </motion.div>

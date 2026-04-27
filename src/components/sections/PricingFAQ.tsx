@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
-  { q: "What is the difference between Phase II and Phase III?", a: "Phase II is focused on generating intent through landing pages and active marketing. Phase III transfers everything over to your own sovereign AWS/Cloud infrastructure so you own the code explicitly without Alabrida holding it." },
+  { q: "What is the difference between Phase II and Phase III?", a: "Phase II focuses on installing the Managed Nervous System — creating the first reliable layer of visibility, automation, and structured follow-through using the tools your business already has. Phase III strengthens governance, rationalizes the tool stack, and prepares the transition to deeper architecture work or owned infrastructure when the business is ready." },
   { q: "Can I cancel at any time?", a: "Yes. Phase engagements are month-to-month after the initial commitment period is met." },
-  { q: "Do I get access to a client portal?", a: "Yes, all active partnership clients receive a dedicated client portal with project tracking, asset delivery, and direct communication channels with your Revenue Architect." }
+  { q: "Do I get access to a client portal?", a: "Yes, all active partnership clients receive a dedicated client portal with project tracking, asset delivery, and direct communication channels with your Guide." }
 ]
 
 export default function PricingFAQ() {

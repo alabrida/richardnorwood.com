@@ -2,10 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useMotionValueEvent, useScroll, motion } from 'framer-motion';
-import { useWMSStore } from '@/lib/wms/WindowManager';
-import { useIsMobile } from '@/hooks/useIsMobile';
+import { motion } from 'framer-motion';
 import MobileDrawer from './MobileDrawer';
 import styles from './Header.module.css';
 
@@ -17,19 +14,8 @@ const NAV_ITEMS = [
 ];
 
 export default function Header() {
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [hideHeader, setHideHeader] = useState(false);
-  const headerVisible = useWMSStore((s) => s.headerVisible);
-  const isDesktopView = pathname === '/desktop';
-  const { scrollYProgress } = useScroll();
-  const isMobile = useIsMobile();
-
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (isDesktopView) setHideHeader(latest > 0.75);
-    else setHideHeader(false);
-  });
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -45,18 +31,14 @@ export default function Header() {
   const toggleDrawer = useCallback(() => setDrawerOpen(prev => !prev), []);
   const closeDrawer = useCallback(() => setDrawerOpen(false), []);
 
-  if (isDesktopView && (!headerVisible || isMobile)) return null;
-
-  const headerClass = isDesktopView 
-      ? `${styles.header} ${scrolled ? styles.scrolled : ''}` 
-      : `${styles.traditionalHeader} ${scrolled ? styles.scrolled : ''}`;
+  const headerClass = `${styles.traditionalHeader} ${scrolled ? styles.scrolled : ''}`;
 
   return (
     <>
       <motion.header
         className={headerClass}
-        initial={isDesktopView ? { y: -80, opacity: 0 } : { y: 0, opacity: 1 }}
-        animate={isDesktopView ? { y: hideHeader ? -120 : 0, opacity: hideHeader ? 0 : 1 } : { y: 0, opacity: 1 }}
+        initial={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
         <Link href="/" className={styles.logo} aria-label="Richard Norwood — Home">
@@ -71,9 +53,9 @@ export default function Header() {
         </nav>
 
         <div className={styles.actions}>
-          <Link href={isDesktopView ? "/calculator" : "/desktop"} className={styles.ctaButton}>
+          <Link href="/calculator" className={styles.ctaButton}>
             <span className={styles.ctaPulse} aria-hidden="true" />
-            {isDesktopView ? "Run Diagnostic" : "Experience the Engine"}
+            Run Your Commercial EKG
           </Link>
 
           <button className={styles.menuButton} onClick={toggleDrawer} aria-label={drawerOpen ? 'Close menu' : 'Open menu'} aria-expanded={drawerOpen}>
@@ -86,7 +68,7 @@ export default function Header() {
         </div>
       </motion.header>
 
-      <MobileDrawer isOpen={drawerOpen} onClose={closeDrawer} navItems={NAV_ITEMS} isDesktopView={isDesktopView} />
+      <MobileDrawer isOpen={drawerOpen} onClose={closeDrawer} navItems={NAV_ITEMS} />
     </>
   );
 }

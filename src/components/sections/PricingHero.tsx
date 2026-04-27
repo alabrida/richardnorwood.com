@@ -13,7 +13,7 @@ export default function PricingHero() {
         transition={{ duration: 0.6 }}
         className={styles.heroTitle}
       >
-        Simple, Transparent Pricing
+        Simple, Transparent Partnership
       </motion.h1>
       <motion.p 
         initial={{ opacity: 0 }}
@@ -21,7 +21,7 @@ export default function PricingHero() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className={styles.heroSubtitle}
       >
-        Select the level of orchestration required to untangle your engine. All phases compound symmetrically.
+        Choose the partnership length that fits where your business is today. Each phase builds naturally on the last.
       </motion.p>
     </section>
   )

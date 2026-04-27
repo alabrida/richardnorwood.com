@@ -16,12 +16,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Richard Norwood, PMP — Revenue Architect',
-  description: 'Install a Unified Commercial Engine that transforms digital presence from recurring overhead into high-value financial assets.',
+  title: 'Richard Norwood, PMP — Guide & Revenue Architecture Advisor',
+  description: 'Helping agencies and service businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.',
   metadataBase: new URL('https://richardnorwood.com'),
   openGraph: {
-    title: 'Richard Norwood, PMP — Revenue Architect',
-    description: 'Transform your agency from fragmented operations into orchestrated, compounding growth.',
+    title: 'Richard Norwood, PMP — Guide & Revenue Architecture Advisor',
+    description: 'Helping agencies and service businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.',
     url: 'https://richardnorwood.com',
     siteName: 'Richard Norwood',
     locale: 'en_US',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Richard Norwood, PMP — Revenue Architect',
-    description: 'Transform your agency from fragmented operations into orchestrated, compounding growth.',
+    title: 'Richard Norwood, PMP — Guide & Revenue Architecture Advisor',
+    description: 'Helping agencies and service businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.',
   },
   icons: {
     icon: '/icons/icons/wheel.png',
@@ -44,8 +44,8 @@ const globalSchema = {
       "@type": "Person",
       "@id": "https://richardnorwood.com/#person",
       "name": "Richard Norwood",
-      "jobTitle": "Revenue Architect",
-      "description": "Certified PMP and Revenue Architect specializing in Commercial Strategy, Data Analytics, and Managed Nervous Systems.",
+      "jobTitle": "Guide & Revenue Architecture Advisor",
+      "description": "Certified PMP and Guide who helps agencies move from fragmented growth to visible, governable commercial systems.",
       "url": "https://richardnorwood.com",
       "sameAs": [
         "https://www.linkedin.com/in/richardnorwoodpmp/",
@@ -80,18 +80,18 @@ const globalSchema = {
       "knowsAbout": [
         "Revenue Architecture",
         "Commercial Strategy",
-        "Go-To-Market Strategy",
         "Managed Nervous Systems",
+        "Information Fusion",
         "Data Analytics",
-        "Systems Thinking"
+        "Governance & Tool Rationalization"
       ]
     },
     {
       "@type": "ProfessionalService",
       "@id": "https://richardnorwood.com/#organization",
-      "name": "Richard Norwood, PMP - Revenue Architecture",
+      "name": "Richard Norwood, PMP - Guide & Revenue Architecture Advisor",
       "url": "https://richardnorwood.com",
-      "description": "Strategic consulting for revenue architecture, commercial infrastructure, and operational sovereignty. 90-day to 12-month partnership engagements.",
+      "description": "Strategic consulting for revenue architecture, commercial system design, and operational improvement. 90-day to 12-month partnership engagements.",
       "founder": { "@id": "https://richardnorwood.com/#person" },
       "areaServed": { "@type": "Country", "name": "United States" },
       "serviceType": [
@@ -106,18 +106,18 @@ const globalSchema = {
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "Phase I: Diagnostic EKG",
-            "description": "90-day foundational engagement for revenue infrastructure assessment and optimization."
+            "name": "Phase I: Diagnostic & Stabilization",
+            "description": "90-day engagement for commercial system assessment, clarity, and first-layer improvements."
           },
           {
             "@type": "Offer",
-            "name": "Phase II: Engine Orchestration",
-            "description": "6-month engagement for full revenue engine orchestration and marketing infrastructure."
+            "name": "Phase II: Orchestration",
+            "description": "6-month engagement for Managed Nervous System installation and structured follow-through."
           },
           {
             "@type": "Offer",
-            "name": "Phase III: Unified Engine",
-            "description": "12-month engagement for sovereign infrastructure migration and operational independence."
+            "name": "Phase III: Transition",
+            "description": "12-month engagement for governance strengthening and deeper architecture readiness."
           }
         ]
       }

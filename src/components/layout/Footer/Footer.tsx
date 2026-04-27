@@ -16,7 +16,7 @@ const SYSTEM_LINKS = [
   { label: 'Client Portal', href: '/portal' },
   { label: 'Blog', href: '/blog' },
   { label: 'EKG Calculator', href: '/calculator' },
-  { label: 'The Architect', href: '/#about' },
+  { label: 'The Guide', href: '/#about' },
 ];
 
 export default function Footer() {

@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = blogData.find((p) => p.slug === params.slug)
   if (!post) return { title: 'Post Not Found' }
   return {
-    title: `${post.title} | Alabrida Field Notes`,
+    title: `${post.title} | Field Notes — Richard Norwood, PMP`,
     description: post.excerpt,
   }
 }
@@ -53,7 +53,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-surface-elevated)' }} />
             <div>
               <div style={{ color: 'var(--color-text)', fontWeight: 'bold' }}>{post.author}</div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Chief Revenue Architect</div>
+              <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Guide & Revenue Architecture Advisor</div>
             </div>
           </div>
         </header>

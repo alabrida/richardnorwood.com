@@ -12,9 +12,9 @@ const baseSchema = {
     {
       '@type': 'ProfessionalService',
       '@id': 'https://richardnorwood.com/#organization',
-      name: 'Richard Norwood, PMP - Revenue Architecture',
+      name: 'Richard Norwood, PMP - Guide & Revenue Architecture Advisor',
       url: 'https://richardnorwood.com',
-      description: 'Strategic consulting for revenue architecture, commercial infrastructure, and operational sovereignty. 90-day to 12-month partnership engagements.',
+      description: 'Strategic consulting for revenue architecture, commercial system design, and operational improvement. 90-day to 12-month partnership engagements.',
       areaServed: {
         '@type': 'Country',
         name: 'United States',
@@ -34,18 +34,18 @@ const baseSchema = {
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Phase I: Diagnostic EKG',
-            description: 'Foundational 90-day engagement for revenue infrastructure assessment and optimization.',
+            name: 'Phase I: Diagnostic & Stabilization',
+            description: '90-day engagement for commercial system assessment, clarity, and first-layer improvements.',
           },
           {
             '@type': 'Offer',
-            name: 'Phase II: Engine Orchestration',
-            description: '6-month engagement for full revenue engine orchestration and marketing infrastructure.',
+            name: 'Phase II: Orchestration',
+            description: '6-month engagement for Managed Nervous System installation and structured follow-through.',
           },
           {
             '@type': 'Offer',
-            name: 'Phase III: Unified Engine',
-            description: '12-month engagement for complete sovereign infrastructure migration and operational independence.',
+            name: 'Phase III: Transition',
+            description: '12-month engagement for governance strengthening and deeper architecture readiness.',
           },
         ],
       },
@@ -54,7 +54,7 @@ const baseSchema = {
       '@type': 'Person',
       '@id': 'https://richardnorwood.com/#person',
       name: 'Richard Norwood',
-      jobTitle: 'Revenue Architect & PMP',
+      jobTitle: 'Guide & Revenue Architecture Advisor',
       url: 'https://richardnorwood.com',
       sameAs: [
         'https://linkedin.com/in/richardnorwood',

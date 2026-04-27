@@ -14,10 +14,10 @@ export default function ServicesCTA() {
         viewport={{ once: true }}
       >
         <h2 style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'var(--text-4xl)', marginBottom: 'var(--space-4)' }}>
-          Ready to Orchestrate?
+          Ready to See Where Friction Lives?
         </h2>
         <p style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-xl)', maxWidth: '600px', margin: '0 auto' }}>
-          Stop guessing and start measuring. Take the Commercial EKG to define your baseline.
+          Stop guessing and start with a clear diagnosis. Take the Commercial EKG to identify what to fix first.
         </p>
         
         <Link href="/calculator" className={styles.ctaBtn}>

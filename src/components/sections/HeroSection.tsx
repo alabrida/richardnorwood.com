@@ -52,10 +52,6 @@ export default function HeroSection({ data }: HeroProps) {
             {data.cta_text}
             <span className={styles.ctaArrow}>→</span>
           </Link>
-          
-          <Link href="/desktop" className={styles.secondaryCta}>
-            Experience the Engine
-          </Link>
         </motion.div>
       </div>
     </section>

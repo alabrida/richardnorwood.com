@@ -19,7 +19,7 @@ export default function PricingPage() {
         name: 'What is the difference between Phase II and Phase III?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Phase II is focused on generating intent through landing pages and active marketing. Phase III transfers everything over to your own sovereign AWS/Cloud infrastructure so you own the code explicitly without Alabrida holding it.'
+          text: 'Phase II focuses on installing the Managed Nervous System — creating the first reliable layer of visibility, automation, and structured follow-through using the tools your business already has. Phase III strengthens governance, rationalizes the tool stack, and prepares the transition to deeper architecture work or owned infrastructure when the business is ready.'
         }
       },
       {
@@ -35,7 +35,7 @@ export default function PricingPage() {
         name: 'Do I get access to a client portal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, all active partnership clients receive a dedicated client portal with project tracking, asset delivery, and direct communication channels with your Revenue Architect.'
+          text: 'Yes, all active partnership clients receive a dedicated client portal with project tracking, asset delivery, and direct communication channels with your Guide.'
         }
       }
     ]

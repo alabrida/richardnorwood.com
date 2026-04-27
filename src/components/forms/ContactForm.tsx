@@ -177,7 +177,7 @@ export default function ContactForm() {
                 onChange={(e) => field.handleChange(e.target.value)}
                 className={styles.inputField}
                 style={{ height: '120px', padding: 'var(--space-3)', resize: 'vertical' }}
-                placeholder="How can we orchestrate your engine?"
+                placeholder="Tell us about your business and what you're working on."
                 disabled={isSubmitting}
               />
               {field.state.meta.errors ? (
@@ -196,7 +196,7 @@ export default function ContactForm() {
               disabled={!canSubmit || isSubmitting} 
               className={styles.submitBtn}
             >
-              {isSubmitting ? 'Transmitting...' : 'Dispatch Signal'}
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
           )}
         </form.Subscribe>

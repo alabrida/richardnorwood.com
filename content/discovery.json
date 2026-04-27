@@ -3,24 +3,24 @@
     "title": "Phase I: Diagnostic Discovery",
     "questions": [
       { "id": "q1", "text": "What is your primary revenue bottleneck today?", "type": "text" },
-      { "id": "q2", "text": "How many hours per week does your team spend on manual data entry?", "type": "number" },
-      { "id": "q3", "text": "List the top 3 tools in your current 'Frankenstein' stack.", "type": "text" }
+      { "id": "q2", "text": "How many hours per week does your team spend on manual data entry and follow-up?", "type": "number" },
+      { "id": "q3", "text": "List the top 3 tools in your current stack.", "type": "text" }
     ]
   },
   "phase-2": {
     "title": "Phase II: Orchestration Discovery",
     "questions": [
       { "id": "q1", "text": "What percentage of your current lead flow is automated?", "type": "text" },
-      { "id": "q2", "text": "Do you have active Clarity or Google Tag Manager implementations?", "type": "text" },
+      { "id": "q2", "text": "Do you have active analytics or tag management implementations?", "type": "text" },
       { "id": "q3", "text": "What is your target lead-to-conversion velocity?", "type": "text" }
     ]
   },
   "phase-3": {
-    "title": "Phase III: Sovereignty Discovery",
+    "title": "Phase III: Transition Discovery",
     "questions": [
       { "id": "q1", "text": "What is your total annual spend on recurring SaaS vendors?", "type": "text" },
       { "id": "q2", "text": "Who is your current cloud hosting provider (AWS, GCP, Azure, None)?", "type": "text" },
-      { "id": "q3", "text": "Are you prepared for a full migration to proprietary infrastructure?", "type": "text" }
+      { "id": "q3", "text": "Are you ready to explore deeper infrastructure ownership?", "type": "text" }
     ]
   }
 }

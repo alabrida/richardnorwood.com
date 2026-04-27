@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
-@import "../styles/xp-theme.css";
+
 
 @theme inline {
   --color-background: var(--color-bg);

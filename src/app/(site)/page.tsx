@@ -1,12 +1,11 @@
 import HeroSection from '@/components/sections/HeroSection'
 import IdeologySection from '@/components/sections/IdeologySection'
-import SocialProofSection from '@/components/sections/SocialProofSection'
 import AboutSection from '@/components/sections/AboutSection'
 import homepageData from '../../../content/homepage.json'
 
 export const metadata = {
-  title: 'Revenue Architect | Unified Commercial Engine | Richard Norwood, PMP',
-  description: 'Richard Norwood, PMP — Revenue Architect installing Unified Commercial Engines that use Information Fusion to eliminate the Manual Entry Tax and turn your digital presence into a high-value financial asset.',
+  title: 'Guide & Revenue Architecture Advisor | Richard Norwood, PMP',
+  description: 'Richard Norwood, PMP — Guide who helps agencies and service businesses move from scattered activity to an orchestrated commercial system that is visible, governable, and easier to improve over time.',
 }
 
 export default function HomePage() {
@@ -14,7 +13,6 @@ export default function HomePage() {
     <>
       <HeroSection data={homepageData.hero} />
       <IdeologySection data={homepageData.ideology} />
-      <SocialProofSection data={homepageData.social_proof} />
       <AboutSection data={homepageData.about} />
     </>
   )

@@ -2,58 +2,58 @@
   "tiers": [
     {
       "id": "phase-1",
-      "name": "Phase I: Diagnostic EKG",
-      "tagline": "Emerging Cohesion",
+      "name": "Phase I: Diagnostic & Stabilization",
+      "tagline": "Fragmented to Emerging",
       "term": "90 Days",
       "features": [
-        "Commercial EKG (250+ point Revenue Journey Rubric)",
-        "Perimeter Architecture (2 social Signal Nodes)",
-        "Gateway Microsite (friction-free intent routing)",
-        "Digital Sales Channel (Authority Engine)",
-        "Custom CRM eliminating Manual Entry Tax",
-        "O2O Entry Points (signatures, cards, lead magnets)",
-        "Reclaim 15+ hours/week of administrative waste"
+        "Commercial EKG — full stage-by-stage audit",
+        "Clear positioning across profiles and owned properties",
+        "Gateway routing for low-friction buyer entry",
+        "Website structure built for buyer evaluation",
+        "First-layer visibility and follow-through improvements",
+        "Offline-to-online entry points (signatures, cards, lead magnets)",
+        "Messaging and proof cleanup across the journey"
       ],
       "locked_features": [
-        "Phase II: Engine Orchestration",
-        "Phase III: Unified Engine"
+        "Phase II: Orchestration",
+        "Phase III: Transition"
       ],
       "cta_text": "Schedule Discovery",
       "highlighted": false
     },
     {
       "id": "phase-2",
-      "name": "Phase II: Engine Orchestration",
-      "tagline": "Orchestrated Cohesion — Recommended",
+      "name": "Phase II: Orchestration",
+      "tagline": "Emerging to Orchestrated — Recommended",
       "term": "6 Months",
       "features": [
         "Everything in Phase I",
         "Managed Nervous System (MNS) installation",
-        "Information Fusion via Clarity + Google Tags",
-        "4 Siloed Gateway Microsites for ad campaigns",
-        "90-Day Content Calendar & Operational Cadence",
-        "Lead Nurture & Reputation Management automation",
-        "Real-time Situation Awareness dashboard"
+        "Information Fusion for automated signal capture",
+        "Website or microsite restructuring around the canonical journey",
+        "Nurture, review, and follow-up automation",
+        "Recurring operating reviews tied to buyer and customer signals",
+        "Stronger stage definitions and handoff improvements"
       ],
       "locked_features": [
-        "Phase III: Unified Engine"
+        "Phase III: Transition"
       ],
       "cta_text": "Apply for Partnership",
       "highlighted": true
     },
     {
       "id": "phase-3",
-      "name": "Phase III: Unified Engine",
-      "tagline": "Commercial Sovereignty",
+      "name": "Phase III: Transition",
+      "tagline": "Orchestrated to Unified",
       "term": "12 Months",
       "features": [
         "Everything in Phase II",
-        "Sovereign Engine proof-of-concept deployment",
-        "Migration to proprietary managed hosting",
-        "Frankenstein Stack rationalization (replace legacy vendors)",
-        "Custom Architecture for CPQ/Billing",
-        "The Alabrida Bridge handoff preparation",
-        "Full path to Commercial Sovereignty"
+        "Stronger governance and ownership rules",
+        "Tool rationalization and workflow simplification",
+        "Data model hardening and system documentation",
+        "Transition planning for deeper architecture work",
+        "The Alabrida Bridge — readiness for owned infrastructure",
+        "Full path to a Unified Commercial Engine"
       ],
       "locked_features": [],
       "cta_text": "Request Architecture Review",

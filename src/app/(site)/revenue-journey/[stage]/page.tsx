@@ -85,10 +85,10 @@ export default async function RevenueJourneyPage({ params }: { params: Promise<{
         {/* CTA Section */}
         <div className="text-center p-12 bg-gradient-to-b from-[#0f1a2e] to-[#060b16] border border-[rgba(136,153,180,0.15)] rounded-3xl space-y-8">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#e8edf5]">
-            Ready to transition to a Unified Engine?
+            Ready to strengthen this stage?
           </h2>
           <p className="text-[#8899b4] max-w-2xl mx-auto text-lg">
-            Stop running fragmented operations. Apply the Revenue Architecture standards to your {stage} phase today.
+            See where friction lives and what to fix first in your {stage} phase.
           </p>
           <Link 
             href={stageData.cta_url}

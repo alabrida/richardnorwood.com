@@ -1,6 +1,0 @@
-.compose { display: flex; flex-direction: column; height: 100%; }
-.composeFields { padding: 8px; display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid var(--xp-button-shadow); }
-.composeFieldRow { display: flex; align-items: center; gap: 8px; }
-.composeFieldRow label { width: 60px; font-weight: bold; font-size: 11px; text-align: right; }
-.composeFieldRow input { flex: 1; height: 22px; border: 1px inset; padding: 0 4px; font-family: var(--xp-font-family); font-size: var(--xp-font-size); }
-.composeBody { flex: 1; resize: none; border: none; outline: none; padding: 8px; font-family: var(--xp-font-family); font-size: 12px; line-height: 1.5; }

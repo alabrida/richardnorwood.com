@@ -7,8 +7,8 @@ import ServicesCTA from '@/components/sections/ServicesCTA'
 import servicesData from '../../../../content/services.json'
 
 export const metadata = {
-  title: 'The Partnership | Alabrida Revenue Architecture',
-  description: 'The definitive 90-Day Partnership to transition out of Frankenstein Stacks and into a Unified Sovereign Engine.',
+  title: 'Strategic Partnership | Richard Norwood, PMP',
+  description: 'Strategic partnership engagements — 90-day diagnostic, 6-month orchestration, and 12-month transition to a stronger commercial system.',
 }
 
 export default function ServicesPage() {

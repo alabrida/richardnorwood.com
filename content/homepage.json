@@ -1,60 +1,51 @@
 {
   "hero": {
-    "headline": "Your Revenue Engine Is an Architecture Problem.",
-    "subhead": "I'm Richard Norwood — a certified PMP and Revenue Architect. I install Unified Commercial Engines that use Information Fusion to automate perception, eliminate the Manual Entry Tax, and turn your digital presence into a high-value financial asset on your balance sheet.",
+    "headline": "Revenue Problems Are Structural Before They Are Tactical.",
+    "subhead": "I'm Richard Norwood, PMP — a Guide who helps agencies and service businesses see where commercial friction lives, what to fix first, and how to move from scattered activity to an orchestrated system that grows with confidence.",
     "cta_text": "Run Your Commercial EKG",
     "cta_url": "/calculator"
   },
   "ideology": {
     "title": "The 5-Stage Revenue Journey",
-    "subtitle": "The Unified Commercial Engine accompanies your buyer through a non-linear journey — from invisible signal to compounding advocacy. Each stage is powered by Information Fusion and engineered to maximize Information Velocity.",
+    "subtitle": "A Unified Commercial Engine accompanies your buyer through a complete journey — from early awareness to long-term retention. Each stage is supported by Information Fusion and designed to keep the system coherent.",
     "stages": [
       {
         "title": "Awareness",
         "subtitle": "The Perimeter",
-        "description": "83% of the buyer journey happens before you're ever contacted. We deploy Perimeter Architecture — optimized social profiles and link-in-bio hubs — as Signal Nodes that capture intent from the Dark Funnel without friction.",
+        "description": "Buyers do substantial research before they ever speak with a seller. We help you become visible, relevant, and easy to understand at the discovery surfaces where the right buyers are already looking.",
         "icon": "awareness"
       },
       {
         "title": "Consideration",
         "subtitle": "The Gateway",
-        "description": "We bridge the Maturity Gap with Gateway Microsites — precision-engineered deliberation sandboxes that teach buyers how to evaluate their own architecture using your proprietary rubric. This is where the 'Aha Moment' is manufactured.",
+        "description": "Your digital presence needs to act like a guide, not a brochure. We build evaluation-ready structures that teach buyers how to think about the problem and assess whether your approach is the right fit.",
         "icon": "consideration"
       },
       {
         "title": "Decision",
         "subtitle": "The Core",
-        "description": "Your Digital Sales Channel replaces the static brochure with an Authority Engine — housing case studies, diagnostic tools, and Proof-as-a-Service widgets that resolve objections before they're ever voiced. The Risk Tax is eliminated.",
+        "description": "Decision is about risk removal. We replace static pages with transparent proof, practical FAQs, and simple next steps that resolve buyer objections before they become blockers.",
         "icon": "decision"
       },
       {
         "title": "Conversion",
-        "subtitle": "Seamless Activation",
-        "description": "Speed to Lead is the most unforgiving variable. We automate Quote-to-Cash with Information Velocity — a 5-minute response delay causes 10x decay in qualification. Your engine activates instantly at the moment of Mutual Commit.",
+        "subtitle": "The Fulcrum",
+        "description": "Conversion is the center of the bowtie — where commitment becomes a clean start. We make sure quote-to-cash, onboarding, and internal ownership are clear so momentum is never lost at the handoff.",
         "icon": "conversion"
       },
       {
         "title": "Retention",
-        "subtitle": "The Infinity Loop",
-        "description": "The close is the center of the Bowtie, not the finish line. We install a Managed Nervous System that monitors usage telemetry, triggers expansion playbooks at peak impact, and drives 110%+ Net Revenue Retention.",
+        "subtitle": "The Right Side",
+        "description": "The sale is the midpoint, not the finish line. We help protect adoption, surface recovery needs early, and create responsible expansion — because if the right side is weak, the left side becomes more expensive.",
         "icon": "retention"
       }
     ]
   },
-  "social_proof": {
-    "title": "From Frankenstein Stack to Unified Engine",
-    "description": "Every agency we guide serves as a living case study — documenting the ascent from Fragmented operations through the Maturity Staircase to Commercial Sovereignty. The data doesn't lie; the architecture works.",
-    "metrics": [
-      { "label": "Manual Entry Tax Eliminated", "value": "15 hrs/wk" },
-      { "label": "Information Velocity Increase", "value": "6x" },
-      { "label": "Commercial Sovereignty", "value": "100%" }
-    ]
-  },
   "about": {
-    "title": "The Navigator",
+    "title": "The Guide",
     "name": "Richard Norwood, PMP",
-    "role": "Revenue Architect",
-    "bio": "Most consultants fix your marketing — the paint job. I fix your Architecture — the engine. Operating as your Air Traffic Controller, I merge PMBOK governance with the Revenue Journey Framework to install the Managed Nervous System that gives you Situation Awareness, kills the Manual Entry Tax, and proves the Unified Commercial Engine philosophy before a single line of sovereign infrastructure is deployed.",
+    "role": "Guide & Revenue Architecture Advisor",
+    "bio": "Most consultants optimize isolated tactics. I help fix the system those tactics live inside. As a certified PMP, I merge delivery discipline with Revenue Architecture thinking to help businesses move from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.",
     "cta_text": "Read My Full Bio"
   }
 }
