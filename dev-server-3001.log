@@ -840,3 +840,7 @@
 ○ Compiling / ...
  GET / 200 in 57s (next.js: 13.8s, proxy.ts: 25ms, application-code: 43s)
  GET / 200 in 57s (next.js: 12.9s, proxy.ts: 22ms, application-code: 44s)
+✓ Finished writing to filesystem cache in 15.0s
+✓ Compiled in 42.9s
+✓ Finished filesystem cache database compaction in 19.3s
+✓ Compiled in 187.7s
