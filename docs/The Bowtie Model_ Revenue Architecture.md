@@ -1,27 +1,19 @@
-In the Alabrida Revenue Architecture framework, founded by **Richard Norwood, PMP**, the **Bowtie Model** is a strategic framework that replaces the traditional, linear sales funnel. It recognizes that in a recurring revenue business, the transaction (the "close") is not the finish line, but rather the center point—the fulcrum—of a continuous, compounding relationship.
+# The Bowtie Model in Revenue Architecture
 
-The model is shaped like a bowtie to illustrate the two distinct but connected halves of the 5-Stage Revenue Journey:
+The Bowtie Model replaces the idea that the sale is the end of the journey. In this doctrine, Conversion is the midpoint that connects pre-sale trust-building to post-sale value realization.
 
-### **1\. The Acquisition Side (Left Side)**
+## Left Side: Awareness, Consideration, Decision
 
-This represents the journey from **Awareness** through **Consideration** to the **Decision** phase. The objective is to navigate the prospect through their independent research (the 83% of the journey that happens before contact) and arrive at a point of **Mutual Commit**. In this phase, the **Unified Commercial Engine** focuses on efficiency and education to reduce the cost of acquisition (CAC).
+The left side of the bowtie covers how a buyer discovers the problem, evaluates possible approaches, and reduces enough risk to move forward. A strong left side makes the business easier to understand and easier to trust before a conversation ever becomes urgent.
 
-### **2\. The Fulcrum: The "Close"**
+## Fulcrum: Conversion
 
-In the Alabrida doctrine, the "close" is the transition point. It is where the **Managed Nervous System** ensures a seamless data handoff from the sales process to the delivery process. This is the center of the bowtie, where the promise of value made to the prospect must be converted into the delivery of results for the customer.
+Conversion is the center point of the model. It is where interest becomes commitment and where promised value must be translated into a real onboarding path, a real owner, and a real next step.
 
-### **3\. The Retention & Expansion Side (Right Side)**
+## Right Side: Retention
 
-This is where the true valuation of a firm is built. It encompasses the **Infinity Loop** of onboarding, adoption, and expansion.
+Retention includes the work earlier drafts described as "Impact." It covers onboarding, adoption, value realization, renewal, expansion, and advocacy. If the right side is weak, the left side eventually becomes more expensive because the system is forced to replace value it failed to keep.
 
-* **Onboarding & Adoption:** Ensuring the client reaches "Time to First Value" as quickly as possible.  
-* **Impact:** The stage where the customer achieves the specific business outcomes they purchased.  
-* **Expansion:** Leveraging the trust built through proven impact to trigger upsells, cross-sells, and referrals.
+## Why the Bowtie Matters
 
-### **4\. The Strategic Metric: Net Revenue Retention (NRR)**
-
-The Bowtie Model is the mathematical foundation for **Net Revenue Retention (NRR)**. While a traditional funnel focuses on "gross" new revenue, the Bowtie Architect focuses on compounding revenue. If the right side of the bowtie is engineered correctly, the business achieves a state where it grows naturally from its existing base, transforming the customer list into a **Sovereign Asset**.
-
-### **Summary**
-
-The Bowtie Model is the visual representation of **Revenue as an Operating System**. It proves that sustainable growth is a result of the entire journey—not just the initial hunt. By architecting for the full bowtie, Richard Norwood ensures that the **Unified Commercial Engine** is balanced, durable, and optimized for long-term impact rather than short-term "heroics."
+A business that only optimizes the left side can win signatures and still lose value. The bowtie keeps the system accountable for both promises and outcomes, which is why the doctrine treats the relationship after Conversion as part of the same commercial design.

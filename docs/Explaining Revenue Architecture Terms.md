@@ -1,57 +1,45 @@
-This is a common hurdle. When a prospect is looking for a "marketing consultant," they are usually looking for a **decorator**—someone to pick the paint colors and arrange the furniture. When they find a **Revenue Architect**, they’ve accidentally hired the **Structural Engineer**.
+# Explaining Revenue Architecture Terms
 
-To smooth out that friction, we need to translate "Architect-speak" into "Business-value." Here is a curated glossary of terms from your doctrine that might feel like "foreign code" to a newcomer, defined to move them from confusion to conviction.
+This glossary translates doctrine language into plain business language. It is intentionally guide-first: simple on the surface, structurally accurate underneath.
 
-### ---
+## Role Terms
 
-**The Strategy: Why "Architecture" Matters**
+- **Guide:** Richard's client-facing role. He helps a leader see the problem clearly, sequence the work, and build early momentum.
+- **Navigator:** A description of the Guide's working style. It is not a separate offer or a second persona.
+- **Revenue Architect:** The deeper structural role responsible for system design, governance, incentives, tooling choices, and long-term operating logic.
 
-* **Revenue Architecture:** \* *The Friction:* Sounds like a buzzword for "sales plan."  
-  * *The Translation:* The structural design of how your company generates and keeps money. It’s the blueprint that ensures your teams, tools, and processes aren’t fighting each other.  
-* **Commercial Sovereignty:** \* *The Friction:* Sounds like a political stance.  
-  * *The Translation:* **Digital Independence.** It means you own your data, your code, and your customer relationships, rather than "renting" your business from expensive SaaS platforms that can raise prices or change the rules at any time.  
-* **The Bowtie Model (Infinity Loop):** \* *The Friction:* "I thought we were just talking about a funnel?"  
-  * *The Translation:* A framework that proves the "Close" isn't the finish line. It treats the journey after the sale (onboarding and growth) as just as important as the sale itself.
+## System Terms
 
-### ---
+- **Revenue Architecture:** The design of how a business attracts, wins, activates, and keeps the right customers.
+- **Unified Commercial Engine (UCE):** The coordinated operating system that aligns marketing, sales, delivery, and retention around one journey.
+- **Managed Nervous System (MNS):** The bridge phase that creates visibility and automation with the current stack before a larger rebuild is necessary.
+- **Sovereign Engine:** The more owned, durable version of the system for businesses that need tighter control over infrastructure, data, and operating logic.
+- **Information Fusion:** Automatic capture of buyer and customer signals so the business does not rely on late, incomplete manual updates.
+- **Commercial EKG:** The diagnostic used to show where friction, weak handoffs, and missing proof are interrupting the journey.
+- **Bowtie Model:** The reminder that the sale is the midpoint, not the finish line. The relationship must work on both sides of conversion.
+- **Digital Sales Channel:** A website or microsite estate designed to help buyers learn, validate, and act, not just browse.
+- **65kb Threshold:** An internal performance discipline for keeping high-intent pages lean, fast, and easy to use.
 
-**The System: The Mechanics of the Engine**
+## Canonical Stage Translation
 
-* **Unified Commercial Engine (UCE):** \* *The Friction:* Sounds like a heavy piece of machinery.  
-  * *The Translation:* A single, synchronized system where Marketing, Sales, and Customer Success operate as one unit. No more silos; everyone is looking at the same map and using the same engine.  
-* **Managed Nervous System (MNS):** \* *The Friction:* Sounds like a medical condition.  
-  * *The Translation:* **The Bridge Phase.** It’s the "Radar" we install to give you visibility (Situation Awareness) while we build your permanent engine in the background.  
-* **Information Fusion (IF):** \* *The Friction:* Sounds like a sci-fi concept.  
-  * *The Translation:* **Automated Perception.** It’s a system that "sees" what your customers are doing (emails, calls, clicks) and records it automatically. It kills the "Manual Entry Tax" where your staff wastes hours typing data into a CRM.  
-* **65kb Threshold:** \* *The Friction:* "Why are we talking about file sizes?"  
-  * *The Translation:* **The Speed Limit for Growth.** High-performance websites and tools must be incredibly lean to load instantly. If your site is "heavy," you are losing buyers to friction before they even see your offer.
+Earlier drafts used a different vocabulary. This doc set now standardizes on the canonical five stages below.
 
-### ---
+| Historical term | Canonical term |
+| :---- | :---- |
+| Learn | Awareness |
+| Education | Consideration |
+| Selection | Decision |
+| Impact | Retention |
 
-**The Problems: Diagnosing the "Dysfunction"**
+Conversion remains the fulcrum between the left and right side of the bowtie.
 
-* **Technical Plaque:** \* *The Friction:* Sounds gross.  
-  * *The Translation:* **Digital Cholesterol.** It’s the accumulation of unused tracking scripts, bloated code, and redundant software that slows your business down and clogs your data.  
-* **Frankenstein Tech Stack:** \* *The Friction:* A bit dramatic.  
-  * *The Translation:* A "monster" built of 10+ disconnected SaaS subscriptions that were duct-taped together over time. It’s expensive, hard to manage, and usually the root cause of your revenue leaks.  
-* **Maturity Gap:** \* *The Friction:* Sounds like an insult.  
-  * *The Translation:* The distance between **how you sell** and **how your customers actually buy**. If 83% of their research happens before they talk to you, and you have no content for that 83%, you have a Maturity Gap.
+## Working Metrics
 
-### ---
+- **Volume:** How much qualified attention or activity is entering a stage.
+- **Conversion:** How efficiently people move from one stage to the next.
+- **Velocity:** How quickly the business helps a buyer or customer move forward.
+- **Net Revenue Retention (NRR):** Whether existing customers stay, expand, and continue to compound value.
 
-**The Metrics: Measuring the Engine**
+## Plain-English Summary
 
-| Term | What the Prospect Thinks | What the Architect Knows |
-| :---- | :---- | :---- |
-| **$VM$ (Volume)** | "How many leads did we get?" | The raw input of energy into the system at any given stage. |
-| **$CR$ (Conversion)** | "Did they buy?" | The efficiency of the "Gate" between stages (e.g., Lead to Discovery). |
-| **$Δt$ (Velocity)** | "How fast was that?" | **Information Velocity.** The time it takes for a buyer to move from "Hello" to "Impact." |
-| **NRR (Net Revenue Retention)** | "Did they stay?" | The compounding value of your existing customers (Expansions \- Churn). |
-
-### ---
-
-**Summary for the Prospect**
-
-"Most consultants try to fix your **Marketing** (the paint job). I’m here to fix your **Architecture** (the engine). We use **Information Fusion** to stop the **Manual Entry Tax**, clear out your **Technical Plaque**, and build you a **Sovereign Engine** that you actually own."
-
-**Would you like me to create a "Guide’s Cheat Sheet"—a one-page PDF script you can use to explain these terms naturally during a discovery call?**
+Most consultants optimize isolated tactics. Revenue Architecture fixes the system that those tactics live inside.

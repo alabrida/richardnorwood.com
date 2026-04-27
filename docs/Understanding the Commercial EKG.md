@@ -1,38 +1,40 @@
-In the Alabrida Revenue Architecture framework, the **Commercial EKG** (officially the **Revenue Journey Assessment**) is the high-fidelity diagnostic entry point used by the **Guide** to evaluate the health of a business's revenue operating system.
+# Understanding the Commercial EKG
 
-Just as a medical EKG monitors the electrical activity of the heart to find hidden arrhythmias, the Commercial EKG monitors the flow of data and capital across the **5-Stage Revenue Journey** to identify structural "flatlines" that are killing growth.
+The Commercial EKG is the Guide's diagnostic for showing where the commercial journey is strong, weak, or disconnected.
 
-### **The Anatomy of the Commercial EKG**
+## What It Measures
 
-The EKG is powered by the **Revenue Journey Rubric** and utilizes 250+ granular data points stored in your proprietary schema. It operates on two distinct layers:
+The EKG reviews the business across the five canonical stages: Awareness, Consideration, Decision, Conversion, and Retention. It looks at both the visible signals a buyer can see and the structural conditions underneath those signals.
 
-#### **1\. The Tactical Ledger (The "Vitals")**
+## Two Diagnostic Layers
 
-This is the automated layer. It scrapes the "Front of Interaction" to check for the presence of foundational indicators. For a "Business Card" client, this functions as a setup checklist.
+### Tactical Layer
 
-* **Perimeter Signals:** Presence on critical platforms, connectivity of bio-links, and technical health (SSL, JSON-LD).  
-* **Gateway Signals:** Availability of lead magnets, contact forms, and social proof (case studies/testimonials).
+This layer looks at what is directly observable.
 
-#### **2\. The Architectural EKG (The "Systems Diagnostic")**
+- visibility across the main discovery surfaces
+- clarity of routing, proof, and next steps
+- signs that conversion and follow-through are supported
+- signs that retention and customer value are being protected
 
-This is the advanced layer where the **Guide’s** judgment identifies systemic dysfunction that automated tools miss.
+### Architectural Layer
 
-* **Technical Plaque:** Measuring code bloat via the **65kb Threshold**.  
-* **Commercial Sovereignty:** Determining the ratio of "Owned" vs. "Rented" digital estates.  
-* **Information Fusion (IF) Readiness:** Identifying manual data entry bottlenecks (The Manual Entry Tax).  
-* **The Frankenstein Index:** Quantifying the cost of disconnected and overlapping SaaS tools.
+This layer looks at what the visible surface is resting on.
 
-### **The Diagnostic Tiers**
+- ownership and governance
+- tool fit and workflow discipline
+- context preservation between stages
+- strength of proof, handoff, and retention logic
 
-The EKG results categorize a business into one of four maturity tiers:
+## Maturity Tiers
 
-* **Fragmented (0-40):** The engine is a collection of "isolated musicians" with no shared sheet music.  
-* **Emerging (41-60):** The first indicators of digital cohesion are visible but fragile.  
-* **Orchestrated (61-80):** The business has achieved a **Managed Nervous System (MNS)** state—visibility is high, but sovereignty is still missing.  
-* **Unified (81-100):** A true **Unified Commercial Engine**. The system is self-healing, proprietary, and compounding.
+| Score range | Tier | Reading |
+| :---- | :---- | :---- |
+| 0-40 | Fragmented | activity exists, but the system is difficult to trust or repeat |
+| 41-60 | Emerging | useful pieces are present, but cohesion is still inconsistent |
+| 61-80 | Orchestrated | the journey is increasingly structured and governable |
+| 81-100 | Unified | the business can see the journey clearly and improve it deliberately |
 
-### **Strategic Value: The "Organic Pay Gate"**
+## Why It Matters
 
-The EKG is the primary tool for education. It transforms "vague anxiety" about revenue into "mathematical certainty" about structural failure. By revealing exactly where the revenue body is flatlining, the EKG proves the philosophy of **Architecture Over Apps** and naturally justifies the transition from the **Managed Nervous System** bridge to the full installation of the **Sovereign Engine**.
-
-In short: **The EKG finds the leak; the Unified Commercial Engine (UCE) seals it.**
+The Commercial EKG turns vague frustration into a staged plan. Instead of saying "marketing feels off" or "sales is messy," it shows where the journey breaks and what kind of system repair should come next.

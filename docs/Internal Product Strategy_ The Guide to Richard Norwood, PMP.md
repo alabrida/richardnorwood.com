@@ -1,77 +1,72 @@
-# **Internal Product Strategy: Richard Norwood, PMP (The Guide)**
+# Internal Product Strategy: Richard Norwood, PMP
 
-## **Mission: Bridging the Maturity Gap for Solopreneurs & Startups**
+This document defines how the Guide brand introduces the doctrine, where it creates value, and where the handoff to Alabrida begins.
 
-### **1\. Strategic Context: The Doctrine of the Moat**
+## Strategic Role
 
-This document outlines the operational plan for the **Guide** persona (Richard Norwood, PMP). The Guide identifies "Revenue Leaks," educates the leader, and provides the diagnostic assessment. The exit point of the Guide’s engagement is the entry point for the **Architect** (Alabrida), which builds and manages sovereign infrastructure.
+Richard's public role is the Guide. He helps a client understand their current commercial friction, creates an early operating rhythm, and proves the value of structure before a deeper infrastructure decision is required.
 
-### **2\. The Productized Asset Staircase**
+- Guide = client-facing, diagnostic, educational, and operational
+- Navigator = the tone of the Guide role: calm, practical, and stage-aware
+- Revenue Architect = the deeper design discipline underneath the work
+- Alabrida = the escalation path when the client needs broader system design or more owned infrastructure
 
-#### **Phase I: The 90-Day "Diagnostic EKG" (Foundations)**
+## Offer Ladder
 
-**Target:** Emerging Cohesion (Maturity 41-60).
+### Phase I: 90-Day Diagnostic and Stabilization
 
-**Internal Focus:** Asset Creation & Initial Perception.
+Best fit: Fragmented to Emerging businesses.
 
-**Reassurance Layer:** Reclaiming 15 hours/week of administrative waste.
+Primary outcome: clarity, prioritized fixes, and a first operating rhythm.
 
-| Asset Type | Specific Deliverable | Strategic Role |
+Typical scope:
+- Commercial EKG and stage-by-stage audit
+- messaging and proof cleanup
+- basic routing, capture, and follow-up improvements
+- first-pass dashboard or reporting setup
+
+### Phase II: Six-Month Orchestration
+
+Best fit: Emerging to Orchestrated businesses.
+
+Primary outcome: a Managed Nervous System that improves visibility, handoffs, and follow-through.
+
+Typical scope:
+- tighter stage definitions
+- microsite or website restructuring around the canonical journey
+- nurture, review, and follow-up automation
+- recurring operating reviews tied to buyer and customer signals
+
+### Phase III: Twelve-Month Transition
+
+Best fit: Orchestrated businesses moving toward a Unified state.
+
+Primary outcome: a cleaner handoff into deeper Revenue Architecture or owned infrastructure work.
+
+Typical scope:
+- stronger governance and ownership rules
+- tool rationalization and workflow simplification
+- data model hardening and system documentation
+- transition planning for Alabrida-led build work where required
+
+## Pricing Logic
+
+The Guide brand should stay easier to buy than the deeper architecture brand. Pricing bands below are internal planning assumptions, not public claims, and supporting evidence belongs in [Internal Evidence Notes](Internal Evidence Notes.md).
+
+| Offer | Working monthly band | Commercial promise |
 | :---- | :---- | :---- |
-| **Perimeter** | 2 Optimized Social Profiles | Awareness & Signal Capture. |
-| **Gateway** | Branded Microsite (Carrd) | Friction-free intent routing. |
-| **Core** | Full HTML Website | The "Authority Engine" for deliberation. |
-| **Nervous System** | Custom CRM (Airtable/Supabase) | Removing manual data entry bias. |
-| **Entry Points** | Signature, Business Card, Lead Magnet | Digitizing offline networking instantly. |
-| **Academy** | 3 Classes (UCE, Lead Magnets, Ads) | Market education & Trust building. |
+| Diagnostic and Stabilization | ~$2,500 | clarity, prioritization, and first-system discipline |
+| Orchestration | ~$4,500 | stronger visibility, handoffs, and stage execution |
+| Transition | ~$8,000 | readiness for deeper architecture or owned infrastructure |
 
-* **Pricing Logic:** Entry-level pricing (Maturity level 1\) aimed at clearing the "Information Gap."
+## Operating Guardrails
 
-#### **Phase II: The 6-Month "Engine Orchestration" (Harmony) \- *RECOMMENDED***
+- Architecture before tools: define the rule set before recommending software.
+- Start with the signals the client already has before proposing a rebuild.
+- Keep the personal brand approachable: outcomes first, system logic second.
+- Use the Managed Nervous System as a bridge, not as a permanent substitute for stronger design where it is clearly needed.
+- Move a client to Alabrida when sovereignty, custom infrastructure, or complex data ownership becomes the real constraint.
 
-**Target:** Orchestrated Cohesion (Maturity 61-80).
+## Persona Notes
 
-**Internal Focus:** Execution & Managed Perception.
-
-**Strategic Pivot:** Balancing 60% Brand Building / 40% Sales Activation.
-
-* **Expanded Perimeter:** 3 additional optimized socials (Total 5).  
-* **Ad Strategy:** 4 siloed microsite landing pages for specific ad campaigns.  
-* **Operations:** 90-day content calendar \+ templates.  
-* **Ad Management:** 90 days of active management.  
-* **Automation:** Lead nurture sequences & Reputation Management install.  
-* **True IF:** Installation of **Microsoft Clarity** and **Google Tags** for real-time buyer behavior perception.
-
-#### **Phase III: The 12-Month "Unified Engine" (Sovereignty Proof)**
-
-**Target:** Unified State (Maturity 81-100).
-
-**Internal Focus:** Transition to Sovereign Infrastructure.
-
-**Strategic Goal:** Replacing six-figure SaaS dependencies.
-
-* **Managed Hosting:** Migration to Guide-managed cloud hosting (Proof of Concept).  
-* **Asset held Transition:** Replacing legacy SaaS for CPQ/Billing with custom architecture.  
-* **The Alabrida Bridge:** Final 90 days focused on preparing the client for full cloud sovereignty as an Alabrida customer.
-
-### **3\. Financial Benchmarks (USD)**
-
-| Tier | Monthly Rate | Replacement Value (Annual) |
-| :---- | :---- | :---- |
-| **Diagnostic EKG** | \~$2,500 | Reclaims \~720 hours of admin labor. |
-| **Orchestration** | \~$4,500 | Eliminates "Frankenstein" stack inefficiencies (\~10% Rev). |
-| **Unified Engine** | \~$8,000 | Replaces $50k-$100k legacy SaaS contracts. |
-
-### **4\. Operational Guardrails**
-
-* **Architecture First:** Never recommend a tool before defining the governance.  
-* **Progress over Perfection:** Start with the data the client has (GA4, existing logs) before investing in heavy API perception.  
-* **The Exit Point:** At the end of 12 months, the client must choose to either remain on managed assets or cross the line to **Alabrida** for full Sovereign Infrastructure management.  
-* **Custom Scenarios:** Used to "pre-sell" infrastructure. We secure the client for the solution before investing in the underlying GCP/VPS cost.
-
-### **5\. Persona: The Insightful Navigator**
-
-The "Richard Norwood, PMP" brand operates as the "Air Traffic Controller."
-
-* **The Hook:** "Did you see that? I think your revenue engine just misfired."  
-* **The Promise:** We don't build websites; we build proprietary machines that sit on your balance sheet.
+The voice of this brand is practical and confidence-building. It should make structural work feel understandable, not intimidating.

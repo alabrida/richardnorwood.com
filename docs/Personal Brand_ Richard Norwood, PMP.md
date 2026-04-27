@@ -1,53 +1,42 @@
-This is the "Navigator’s" brief. Where Alabrida is the industrial shipyard, **Richard Norwood, PMP** is the professional captain and guide. This brand is designed to be the high-trust, low-friction entry point for agencies who know they have a problem but aren't yet ready to rebuild their entire cloud infrastructure.
+# Richard Norwood, PMP
 
-# ---
+Richard Norwood, PMP is the approachable front door to the broader Revenue Architecture doctrine. The personal brand is built for agencies and service businesses that know revenue feels harder than it should, but are not ready to start with a full infrastructure rebuild.
 
-**Brand Profile: Richard Norwood, PMP**
+## Positioning
 
-**The Revenue Journey Guide & Navigator**
+Richard is the Guide. "Navigator" describes how he works, not a separate offer: practical, diagnostic, and steady. He helps leaders see where commercial friction lives, what to fix first, and how to move from scattered activity to an orchestrated system.
 
-### **The Mission**
+## Mission
 
-Richard Norwood, PMP, is a certified Project Management Professional and Revenue Architect dedicated to guiding agencies through the transition from fragmented, "hero-led" operations to orchestrated growth. By merging the rigor of the **PMBOK (Project Management Body of Knowledge)** with the **Revenue Journey Framework**, Richard provides the governance and judgment required to steer businesses out of data chaos and toward structural clarity.
+Guide businesses from fragmented, hero-led growth toward a commercial system that is visible, governable, and easier to improve over time.
 
-### **The Role: The Navigator of the MNS**
+## Core Credentials and Strengths
 
-Richard operates primarily in the **Managed Nervous System (MNS)** phase. He provides the "Conducting Architect" services that allow agencies to gain **Situation Awareness (SA)** using simple, intuitive platforms. He proves that the philosophy of Revenue Architecture works by implementing the initial "connective tissue" that stops revenue leaks before a full-scale cloud migration is required.
+- PMP governance rooted in delivery discipline and decision clarity
+- marketing training that keeps the work tied to buyer behavior rather than internal opinion
+- data and operations fluency focused on signal quality, handoffs, and system health
+- Revenue Architecture thinking that connects brand, sales, delivery, and retention into one model
 
-### **Core Credentials & Expertise**
+## What Richard Delivers
 
-* **PMP Certified:** Professional governance through the Project Management Institute (PMI).  
-* **B.S. in Marketing (2008):** A foundational understanding of market dynamics and consumer behavior from Jacksonville State University.  
-* **Google Data Analytics Certified:** Expert-level capability in identifying the "signals" within the "noise" of commercial data.  
-* **Solution Architect (Candidate):** Currently pursuing Google Professional Solution Architect certification to bridge the gap between strategy and engineering.
+- a Commercial EKG that shows where the current journey breaks across Awareness, Consideration, Decision, Conversion, and Retention
+- a Managed Nervous System that creates visibility and automation using the tools the business already has
+- stage-by-stage guidance that improves handoffs, messaging, proof, and follow-through
+- a bridge to deeper architecture work when the business is ready for a Unified Commercial Engine or a more owned technical estate
 
-### **The Guide’s Workflow: The Path to Orchestration**
+## Working Method
 
-1. **The Self-Assessment (The EKG):** Richard utilizes the **Revenue Journey Rubric** and a 250+ point schema to provide an immediate "Commercial EKG."  
-2. **MNS Orchestration:** Setting up the "Radar." Richard helps agencies establish a **Managed Nervous System**—orchestrating their current tools to act as a unified source of truth.  
-3. **Governance via PMBOK:** Applying global project management standards to ensure that revenue initiatives are delivered on time, within scope, and with zero "Manual Entry Tax."  
-4. **The Living Case Study:** Every agency Richard guides serves as a living proof of the Alabrida philosophy, documenting the transition from a "Frankenstein Stack" to a "Unified Engine."
+1. Diagnose the current system and identify the biggest sources of revenue friction.
+2. Clarify stage definitions, buyer signals, and ownership across the journey.
+3. Install the first layer of visibility and automation through a Managed Nervous System.
+4. Turn the engagement into a repeatable operating model, not a collection of one-off fixes.
 
-### **The Guide’s Product Suite**
+## Strategic Role in the Ecosystem
 
-* **The Diagnostic Audit:** A high-fidelity report identifying the "Missing Indicators" in an agency's presence.  
-* **MNS Onboarding:** A guided implementation of the foundational blocks of the Unified Commercial Engine.  
-* **Revenue Architecture Training:** Educating agency leaders on how to stop "Marketing Decorating" and start "Revenue Engineering."
-
-### **Strategic Position in the Ecosystem**
-
-Richard Norwood is the **"Entry Brand."** He meets the prospect in their current pain—usually the Fragmented or Emerging tiers—and provides the human judgment and professional project management needed to stabilize the business. Once Richard has successfully "Navigated" the agency to the Orchestrated tier, the client is naturally prepared for the institutional services of **Alabrida Revenue Architects**.
+Richard Norwood is the entry layer of the doctrine: human, practical, and easier to buy. Alabrida is the deeper architecture layer that takes over when the business needs more custom infrastructure, stronger ownership, or a broader system rebuild.
 
 **Domain:** [richardnorwood.com](https://richardnorwood.com)
 
 **Microsite:** [pmp.richardnorwood.com](https://pmp.richardnorwood.com)
 
-**Role:** The Navigator, Educator, & Case Study Author
-
-### ---
-
-**Strategic Commentary for Richard:**
-
-* **Trust Multiplier:** By leading with your **PMP** and **PMBOK** alignment, you differentiate yourself from "marketing gurus." You are selling **Project Governance**, which agencies desperately need.  
-* **The "Simple Platform" Hook:** Notice the emphasis on "simple, intuitive platforms." This makes you approachable. You aren't scaring them with Google Cloud on day one; you are fixing their current mess using tools they understand.  
-* **The Case Study Bridge:** This sheet explicitly states that you are a "Living Case Study" for Alabrida. This makes the transition to the LLC feel like a natural graduation rather than a new sales pitch.
+**Role:** Guide, Navigator, and Revenue Architecture advisor
