@@ -1,5 +1,5 @@
 import React from 'react'
-import PricingHero from '@/components/sections/PricingHero'
+import PageHero from '@/components/sections/PageHero'
 import PricingGrid from '@/components/sections/PricingGrid'
 import PricingFAQ from '@/components/sections/PricingFAQ'
 import pricingData from '../../../../content/pricing.json'
@@ -63,7 +63,7 @@ export default function PricingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offerLd) }}
       />
-      <PricingHero />
+      <PageHero title="Align. Build. Command." subtitle="Choose the engagement that matches where your business is today." />
       <PricingGrid data={pricingData.tiers} />
       <PricingFAQ />
     </>

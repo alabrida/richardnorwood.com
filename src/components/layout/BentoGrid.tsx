@@ -42,6 +42,8 @@ const spanClasses: Record<number, string> = {
   3: styles.colSpan3,
 };
 
+import GlowCard from '@/components/ui/GlowCard';
+
 export function BentoCard({
   children,
   colSpan = 1,
@@ -61,7 +63,6 @@ export function BentoCard({
 
   return (
     <motion.div
-      className={classes}
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
@@ -70,8 +71,13 @@ export function BentoCard({
         delay: index * 0.08,
         ease: [0.16, 1, 0.3, 1],
       }}
+      className={classes}
     >
-      {children}
+      <GlowCard className={styles.bentoGlowCard} glowColor={featured ? 'var(--color-secondary)' : undefined}>
+        <div className={styles.bentoContent}>
+          {children}
+        </div>
+      </GlowCard>
     </motion.div>
   );
 }

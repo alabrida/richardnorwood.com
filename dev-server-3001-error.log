@@ -14946,3 +14946,3299 @@ https://react.dev/link/hydration-mismatch
                   ...
  
 [browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068232"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/revenue-j..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068230"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/components/forms/AuthForm.tsx:208:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  206 |     </div>
+  207 |   )
+> 208 | }
+      | ^
+  209 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/forms/AuthForm.tsx
+    ./src/app/(auth)/login/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/components/forms/AuthForm.tsx:208:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  206 |     </div>
+  207 |   )
+> 208 | }
+      | ^
+  209 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/forms/AuthForm.tsx
+    ./src/app/(auth)/login/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/components/forms/AuthForm.tsx:208:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  206 |     </GlowCard>
+  207 |   )
+> 208 | }
+      | ^
+  209 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/forms/AuthForm.tsx
+    ./src/app/(auth)/login/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/components/forms/AuthForm.tsx:208:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  206 |     </GlowCard>
+  207 |   )
+> 208 | }
+      | ^
+  209 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/forms/AuthForm.tsx
+    ./src/app/(auth)/login/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/components/forms/AuthForm.tsx:208:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  206 |     </GlowCard>
+  207 |   )
+> 208 | }
+      | ^
+  209 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/forms/AuthForm.tsx
+    ./src/app/(auth)/login/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/components/forms/AuthForm.tsx:208:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  206 |     </GlowCard>
+  207 |   )
+> 208 | }
+      | ^
+  209 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/forms/AuthForm.tsx
+    ./src/app/(auth)/login/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+⨯ ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  [90m64 |[0m   data: [33mStageData[0m;
+  [90m65 |[0m   stage: string;
+[31m[1m>[0m [90m66 |[0m   [36mconst[0m currentGlow = stageGlowMap[stage.toLowerCase()] || { r: [35m240[0m, g: [35m180[0m, b: [35m41[0m };
+  [90m   |[0m         [31m[1m^^^^^^^^^^^[0m
+  [90m67 |[0m
+  [90m68 |[0m   [36mreturn[0m (
+  [90m69 |[0m     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+⨯ ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  [90m64 |[0m   data: [33mStageData[0m;
+  [90m65 |[0m   stage: string;
+[31m[1m>[0m [90m66 |[0m   [36mconst[0m currentGlow = stageGlowMap[stage.toLowerCase()] || { r: [35m240[0m, g: [35m180[0m, b: [35m41[0m };
+  [90m   |[0m         [31m[1m^^^^^^^^^^^[0m
+  [90m67 |[0m
+  [90m68 |[0m   [36mreturn[0m (
+  [90m69 |[0m     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+⨯ ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  [90m64 |[0m   data: [33mStageData[0m;
+  [90m65 |[0m   stage: string;
+[31m[1m>[0m [90m66 |[0m   [36mconst[0m currentGlow = stageGlowMap[stage.toLowerCase()] || { r: [35m240[0m, g: [35m180[0m, b: [35m41[0m };
+  [90m   |[0m         [31m[1m^^^^^^^^^^^[0m
+  [90m67 |[0m
+  [90m68 |[0m   [36mreturn[0m (
+  [90m69 |[0m     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+⨯ ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  [90m64 |[0m   data: [33mStageData[0m;
+  [90m65 |[0m   stage: string;
+[31m[1m>[0m [90m66 |[0m   [36mconst[0m currentGlow = stageGlowMap[stage.toLowerCase()] || { r: [35m240[0m, g: [35m180[0m, b: [35m41[0m };
+  [90m   |[0m         [31m[1m^^^^^^^^^^^[0m
+  [90m67 |[0m
+  [90m68 |[0m   [36mreturn[0m (
+  [90m69 |[0m     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+⨯ ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  [90m64 |[0m   data: [33mStageData[0m;
+  [90m65 |[0m   stage: string;
+[31m[1m>[0m [90m66 |[0m   [36mconst[0m currentGlow = stageGlowMap[stage.toLowerCase()] || { r: [35m240[0m, g: [35m180[0m, b: [35m41[0m };
+  [90m   |[0m         [31m[1m^^^^^^^^^^^[0m
+  [90m67 |[0m
+  [90m68 |[0m   [36mreturn[0m (
+  [90m69 |[0m     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+⨯ ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  [90m64 |[0m   data: [33mStageData[0m;
+  [90m65 |[0m   stage: string;
+[31m[1m>[0m [90m66 |[0m   [36mconst[0m currentGlow = stageGlowMap[stage.toLowerCase()] || { r: [35m240[0m, g: [35m180[0m, b: [35m41[0m };
+  [90m   |[0m         [31m[1m^^^^^^^^^^^[0m
+  [90m67 |[0m
+  [90m68 |[0m   [36mreturn[0m (
+  [90m69 |[0m     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/services" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068235"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068230"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/services" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068235"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/contact" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068235"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068235"
+                        >
+                  ...
+ 
+[browser] Uncaught Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9
+Expected ';', got 'ident'
+  64 |   data: StageData;
+  65 |   stage: string;
+> 66 |   const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+     |         ^^^^^^^^^^^
+  67 |
+  68 |   return (
+  69 |     <main className={styles.stagePage}>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx
+    ./src/app/(site)/revenue-journey/[stage]/page.tsx
+
+
+    at <unknown> (Error: ./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+    at <unknown> (Error: (./src/app/(site)/revenue-journey/[stage]/StagePageClient.tsx:66:9)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068235"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068353"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068354"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068354"
+                        >
+                  ...
+ 
+[browser] Unable to access iframe: SecurityError: Failed to read a named property 'document' from 'Window': Blocked a frame with origin "http://localhost:3001" from accessing a cross-origin frame.
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at buildDomTree (file://:290:30)
+    at eval (file://:290:30)
+    at UtilityScript.evaluate (<anonymous>:297:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44) (file://:290:30)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] Uncaught Error: ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3
+
+
+    at <unknown> (Error: ./content/about.json:5:3)
+    at <unknown> (Error: (./content/about.json:5:3)
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] Uncaught Error: ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3
+
+
+    at <unknown> (Error: ./content/about.json:5:3)
+    at <unknown> (Error: (./content/about.json:5:3)
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] Uncaught Error: ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3
+
+
+    at <unknown> (Error: ./content/about.json:5:3)
+    at <unknown> (Error: (./content/about.json:5:3)
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] Uncaught Error: ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3
+
+
+    at <unknown> (Error: ./content/about.json:5:3)
+    at <unknown> (Error: (./content/about.json:5:3)
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+⨯ ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  [90m3 |[0m     [32m"title"[0m: [32m"About Richard Norwood"[0m,
+  [90m4 |[0m     [32m"subtitle"[0m: [32m"Revenue Enablement & Conversion Journey Optimization"[0m
+[31m[1m>[0m [90m5 |[0m   [32m"bio"[0m: [
+  [90m  |[0m   [31m[1m^[0m
+  [90m6 |[0m     [32m"My commercial perspective didn't start in a boardroom; it started in community outreac...[0m
+  [90m7 |[0m     [32m"There, I learned the mechanics of continuous improvement within a culture of sales ena...[0m
+  [90m8 |[0m     [32m"Throughout every managerial role, one principle remained primary: managing businesses ...[0m
+
+expected `,` or `}` at line 5 column 3
+
+
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] Uncaught Error: ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3
+
+
+    at <unknown> (Error: ./content/about.json:5:3)
+    at <unknown> (Error: (./content/about.json:5:3)
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] ./content/about.json:5:3
+Unable to make a module from invalid JSON
+  3 |     "title": "About Richard Norwood",
+  4 |     "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+> 5 |   "bio": [
+    |   ^
+  6 |     "My commercial perspective didn't start in a boardroom; it started in community outreac...
+  7 |     "There, I learned the mechanics of continuous improvement within a culture of sales ena...
+  8 |     "Throughout every managerial role, one principle remained primary: managing businesses ...
+
+expected `,` or `}` at line 5 column 3 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068354"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068353"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+⨯ The requested resource isn't a valid image for /images/richard-headshot.jpg received null
+⨯ The requested resource isn't a valid image for /images/richard-headshot.jpg received null
+⨯ The requested resource isn't a valid image for /images/richard-headshot.jpg received null
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068354"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068354"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068361"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068354"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068361"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068361"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068361"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="inter_c15e96cb-module__0bjUvq__variable outfit_9f4f9187-module__4LtYgq__variable"
+-                         data-jetski-tab-id="1992068361"
+                        >
+                  ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

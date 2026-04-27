@@ -6,6 +6,7 @@ import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import styles from './AuthForm.module.css'
+import GlowCard from '@/components/ui/GlowCard'
 
 interface AuthFormProps {
   type: 'login' | 'forgot-password' | 'reset-password'
@@ -65,7 +66,8 @@ export default function AuthForm({ type }: AuthFormProps) {
   })
 
   return (
-    <div className={styles.authCard}>
+    <GlowCard className={styles.authCard} glowColor="var(--color-secondary)">
+      <div className={styles.authContent}>
       <div className={styles.authHeader}>
         <h1 className={styles.authTitle}>
           {type === 'login' && 'Client Sign In'}
@@ -200,7 +202,8 @@ export default function AuthForm({ type }: AuthFormProps) {
         {(type === 'forgot-password' || type === 'reset-password') && (
           <Link href="/login" className={styles.linkClass}>Return to Sign In</Link>
         )}
+        </div>
       </div>
-    </div>
+    </GlowCard>
   )
 }

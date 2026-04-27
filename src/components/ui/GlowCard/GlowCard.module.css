@@ -1,0 +1,53 @@
+.glowCardWrapper {
+  perspective: 800px;
+}
+
+.glowCard {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: transform var(--duration-normal) var(--ease-out),
+    border-color var(--duration-slow) var(--ease-out),
+    box-shadow var(--duration-slow) var(--ease-out);
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.glowCard:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.edgeGlow,
+.innerGlow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  transition: opacity var(--duration-slow) var(--ease-out);
+}
+
+.borderPulse {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-out);
+}
+
+.borderPulseActive {
+  opacity: 1;
+  border-color: var(--glow-color, var(--color-border-hover));
+  animation: glowBorderPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glowBorderPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

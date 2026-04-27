@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesHero from '@/components/sections/ServicesHero'
+import PageHero from '@/components/sections/PageHero'
 import ServiceTiers from '@/components/sections/ServiceTiers'
 import TimelineSection from '@/components/sections/TimelineSection'
 import ServicesCTA from '@/components/sections/ServicesCTA'
@@ -13,7 +13,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <ServicesHero data={servicesData.hero} />
+      <PageHero title={servicesData.hero.title} subtitle={servicesData.hero.subtitle} />
       <ServiceTiers data={servicesData.tiers} />
       <TimelineSection data={servicesData.timeline} />
       <ServicesCTA />

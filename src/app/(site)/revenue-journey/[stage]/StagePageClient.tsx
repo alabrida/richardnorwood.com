@@ -4,6 +4,16 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from './StagePage.module.css';
+import GlowCard from '@/components/ui/GlowCard';
+
+const stageGlowMap: Record<string, { r: number; g: number; b: number }> = {
+  awareness: { r: 59, g: 130, b: 246 },
+  consideration: { r: 168, g: 85, b: 247 },
+  decision: { r: 245, g: 158, b: 11 },
+  conversion: { r: 16, g: 185, b: 129 },
+  retention: { r: 239, g: 68, b: 68 },
+};
+
 
 interface FAB {
   feature: string;
@@ -54,6 +64,8 @@ export default function StagePageClient({
   data: StageData;
   stage: string;
 }) {
+  const currentGlow = stageGlowMap[stage.toLowerCase()] || { r: 240, g: 180, b: 41 };
+
   return (
     <main className={styles.stagePage}>
       {/* ── Hero ── */}
@@ -98,7 +110,6 @@ export default function StagePageClient({
         </motion.div>
       </motion.section>
 
-      {/* ── Problem Section ── */}
       <motion.section
         className={styles.problemSection}
         initial="hidden"
@@ -107,36 +118,42 @@ export default function StagePageClient({
         variants={fadeUp}
         transition={{ duration: 0.6 }}
       >
-        <div className={styles.problemCard}>
-          <p
-            className={styles.problemLabel}
-            style={{ color: data.color }}
-          >
-            Sound familiar?
-          </p>
-          <h2 className={styles.problemHook}>{data.problem_hook}</h2>
+        <GlowCard 
+          className={styles.problemCard} 
+          glow={currentGlow}
+          glowColor={data.color}
+        >
+          <div className={styles.stageCardContent}>
+            <p
+              className={styles.problemLabel}
+              style={{ color: data.color }}
+            >
+              Sound familiar?
+            </p>
+            <h2 className={styles.problemHook}>{data.problem_hook}</h2>
 
-          <ul className={styles.symptomList}>
-            {data.symptoms.map((symptom, i) => (
-              <motion.li
-                key={i}
-                className={styles.symptomItem}
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.08 }}
-              >
-                <span
-                  className={styles.symptomCheck}
-                  style={{ color: data.color }}
+            <ul className={styles.symptomList}>
+              {data.symptoms.map((symptom, i) => (
+                <motion.li
+                  key={i}
+                  className={styles.symptomItem}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.08 }}
                 >
-                  ✓
-                </span>
-                <span>{symptom}</span>
-              </motion.li>
-            ))}
-          </ul>
-        </div>
+                  <span
+                    className={styles.symptomCheck}
+                    style={{ color: data.color }}
+                  >
+                    ✓
+                  </span>
+                  <span>{symptom}</span>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
+        </GlowCard>
       </motion.section>
 
       {/* ── Stat Callout ── */}
@@ -190,26 +207,33 @@ export default function StagePageClient({
           {data.fabs.map((fab, i) => (
             <motion.div
               key={i}
-              className={styles.fabCard}
               variants={fadeUp}
               transition={{ duration: 0.5 }}
             >
-              <div
-                className={styles.fabNumber}
-                style={{
-                  backgroundColor: `color-mix(in srgb, ${data.color} 15%, transparent)`,
-                  color: data.color,
-                }}
+              <GlowCard 
+                className={styles.fabCard}
+                glow={currentGlow}
+                glowColor={data.color}
               >
-                0{i + 1}
-              </div>
+                <div className={styles.stageCardContent}>
+                  <div
+                    className={styles.fabNumber}
+                    style={{
+                      backgroundColor: `color-mix(in srgb, ${data.color} 15%, transparent)`,
+                      color: data.color,
+                    }}
+                  >
+                    0{i + 1}
+                  </div>
 
-              <h3 className={styles.fabFeatureTitle}>{fab.feature}</h3>
-              <p className={styles.fabAdvantage}>{fab.advantage}</p>
+                  <h3 className={styles.fabFeatureTitle}>{fab.feature}</h3>
+                  <p className={styles.fabAdvantage}>{fab.advantage}</p>
 
-              <div className={styles.fabDivider} />
+                  <div className={styles.fabDivider} />
 
-              <p className={styles.fabBenefit}>{fab.benefit}</p>
+                  <p className={styles.fabBenefit}>{fab.benefit}</p>
+                </div>
+              </GlowCard>
             </motion.div>
           ))}
         </motion.div>
@@ -217,23 +241,33 @@ export default function StagePageClient({
 
       {/* ── CTA Section ── */}
       <motion.section
-        className={styles.ctaSection}
+        className={styles.ctaSectionWrapper}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-60px' }}
         variants={fadeUp}
         transition={{ duration: 0.6 }}
       >
-        <h2 className={styles.ctaTitle}>
-          Ready to strengthen this stage?
-        </h2>
-        <p className={styles.ctaSubtitle}>
-          See where friction lives and what to fix first in your{' '}
-          {stage.charAt(0).toUpperCase() + stage.slice(1)} stage.
-        </p>
-        <Link href={data.cta_url} className={styles.ctaButton}>
-          {data.cta} →
-        </Link>
+        <GlowCard 
+          className={styles.ctaSection}
+          glow={currentGlow}
+          glowColor={data.color}
+        >
+          <div className={styles.stageCardContent}>
+            <h2 className={styles.ctaTitle}>
+              Ready to strengthen this stage?
+            </h2>
+            <p className={styles.ctaSubtitle}>
+              See where friction lives and what to fix first in your{' '}
+              {stage.charAt(0).toUpperCase() + stage.slice(1)} stage.
+            </p>
+            <div className="flex justify-center">
+              <Link href={data.cta_url} className={styles.ctaButton}>
+                {data.cta} →
+              </Link>
+            </div>
+          </div>
+        </GlowCard>
       </motion.section>
 
       {/* ── Stage Navigation ── */}

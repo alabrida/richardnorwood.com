@@ -18,59 +18,22 @@ interface SocialProofProps {
   }
 }
 
+import GlowCard from '@/components/ui/GlowCard'
+
 function GlowMetricCard({ metric, index }: { metric: Metric; index: number }) {
-  const cardRef = useRef<HTMLDivElement>(null)
-  const [glowPos, setGlowPos] = useState({ x: 50, y: 50 })
-  const [hovering, setHovering] = useState(false)
-
-  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    const card = cardRef.current
-    if (!card) return
-    const rect = card.getBoundingClientRect()
-    setGlowPos({
-      x: ((e.clientX - rect.left) / rect.width) * 100,
-      y: ((e.clientY - rect.top) / rect.height) * 100,
-    })
-  }, [])
-
   return (
     <motion.div
       initial={{ scale: 0.9, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.15, type: 'spring' }}
-      className={styles.metricCardWrapper}
     >
-      <div
-        ref={cardRef}
-        className={styles.metricCard}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={() => setHovering(true)}
-        onMouseLeave={() => {
-          setHovering(false)
-          setGlowPos({ x: 50, y: 50 })
-        }}
-      >
-        <div
-          className={styles.metricEdgeGlow}
-          style={{
-            opacity: hovering ? 1 : 0,
-            mask: `radial-gradient(ellipse at ${glowPos.x}% ${glowPos.y}%, transparent 20%, black 70%)`,
-            WebkitMask: `radial-gradient(ellipse at ${glowPos.x}% ${glowPos.y}%, transparent 20%, black 70%)`,
-          }}
-        />
-
-        <div
-          className={styles.metricInnerGlow}
-          style={{
-            opacity: hovering ? 1 : 0,
-            background: `radial-gradient(circle at ${glowPos.x}% ${glowPos.y}%, rgba(255,255,255,0.04) 0%, transparent 50%)`,
-          }}
-        />
-
-        <div className={styles.metricValue}>{metric.value}</div>
-        <div className={styles.metricLabel}>{metric.label}</div>
-      </div>
+      <GlowCard className={styles.metricCard}>
+        <div className={styles.metricContent}>
+          <div className={styles.metricValue}>{metric.value}</div>
+          <div className={styles.metricLabel}>{metric.label}</div>
+        </div>
+      </GlowCard>
     </motion.div>
   )
 }
