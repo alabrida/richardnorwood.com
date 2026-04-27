@@ -150,7 +150,6 @@ export default function ContactForm() {
                   onChange={(e) => field.handleChange(e.target.value)}
                   className={styles.inputField}
                   style={{ 
-                    height: '42px', 
                     appearance: 'none', 
                     colorScheme: 'dark', 
                     textOverflow: 'ellipsis', 

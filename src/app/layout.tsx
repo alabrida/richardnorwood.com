@@ -53,9 +53,15 @@ const globalSchema = {
         "https://x.com/richnorwoodpmp",
         "https://www.youtube.com/@richardnorwoodpmp",
         "https://www.instagram.com/richardnorwoodpmp/",
-        "https://www.facebook.com/profile.php?id=61574711377210",
         "https://www.tiktok.com/@richardnorwoodpmp",
         "https://share.google/njwSUidXoDAXya4ui"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Jacksonville State University",
+          "sameAs": "https://en.wikipedia.org/wiki/Jacksonville_State_University"
+        }
       ],
       "hasCredential": [
         {
@@ -75,6 +81,15 @@ const globalSchema = {
             "name": "Google"
           },
           "url": "https://coursera.org/share/380889997f4b4bcf04d4a250d5ce7df9"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Project Management Certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Google"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/SNZ6T6MJZSVH"
         }
       ],
       "knowsAbout": [

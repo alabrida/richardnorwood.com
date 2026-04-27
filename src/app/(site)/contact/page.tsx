@@ -5,15 +5,50 @@ import { Toaster } from 'sonner'
 import GlowCard from '@/components/ui/GlowCard'
 import PageHero from '@/components/sections/PageHero'
 import styles from '@/components/forms/AuthForm.module.css'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Contact | Richard Norwood, PMP',
   description: 'Book a discovery session or send a message to start a conversation about your commercial system.',
-}
+  path: '/contact',
+})
 
 export default function ContactPage() {
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Richard Norwood',
+    description: metadata.description,
+    url: 'https://richardnorwood.com/contact',
+    mainEntity: {
+      '@type': 'Person',
+      '@id': 'https://richardnorwood.com/#person'
+    }
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://richardnorwood.com'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Contact',
+        item: 'https://richardnorwood.com/contact'
+      }
+    ]
+  }
+
   return (
     <>
+      <JsonLd data={[contactSchema, breadcrumbSchema]} />
       <Toaster position="bottom-right" theme="dark" richColors />
       
       <main style={{ maxWidth: 1200, margin: '0 auto', padding: '0 var(--space-4) var(--space-12)' }}>

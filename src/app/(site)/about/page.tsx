@@ -1,11 +1,14 @@
 import React from 'react'
 import AboutPageClient from '@/components/sections/AboutPageClient'
 import aboutData from '../../../../content/about.json'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'About Richard Norwood, PMP | Revenue Enablement & Marketing Consultant',
   description: 'Richard Norwood is a certified Project Management Professional (PMP) and Revenue Architecture Advisor helping businesses optimize their buyer journey and commercial systems.',
-}
+  path: '/about',
+})
 
 export default function AboutPage() {
   const jsonLd = {
@@ -13,11 +16,19 @@ export default function AboutPage() {
     '@type': 'ProfilePage',
     mainEntity: {
       '@type': 'Person',
+      '@id': 'https://richardnorwood.com/#person',
       name: 'Richard Norwood',
       jobTitle: 'Revenue Architecture Advisor',
       url: 'https://richardnorwood.com/about',
       sameAs: [
         'https://www.linkedin.com/in/richardnorwoodpmp'
+      ],
+      alumniOf: [
+        {
+          '@type': 'CollegeOrUniversity',
+          name: 'Jacksonville State University',
+          sameAs: 'https://en.wikipedia.org/wiki/Jacksonville_State_University'
+        }
       ],
       hasCredential: [
         {
@@ -39,6 +50,16 @@ export default function AboutPage() {
             name: 'Google'
           },
           url: 'https://www.coursera.org/account/accomplishments/specialization/certificate/E7WYXFS85H79'
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'certification',
+          name: 'Google Project Management',
+          recognizedBy: {
+            '@type': 'Organization',
+            name: 'Google'
+          },
+          url: 'https://www.coursera.org/account/accomplishments/specialization/certificate/SNZ6T6MJZSVH'
         }
       ],
       knowsAbout: [
@@ -53,10 +74,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <AboutPageClient data={aboutData} />
     </>
   )

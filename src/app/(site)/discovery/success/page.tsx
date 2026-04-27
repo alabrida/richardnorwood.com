@@ -1,5 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import { buildMetadata } from '@/lib/metadata';
+
+export const metadata = buildMetadata({
+  title: 'Intake Received | Richard Norwood, PMP',
+  description: 'Your discovery intake has been received. Your dashboard is being provisioned.',
+  path: '/discovery/success',
+  noIndex: true,
+});
 
 export default function DiscoverySuccessPage() {
   return (

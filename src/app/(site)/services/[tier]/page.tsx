@@ -3,6 +3,22 @@ import { notFound } from 'next/navigation';
 import fs from 'fs/promises';
 import path from 'path';
 import IntakeForm from '@/components/forms/IntakeForm';
+import { buildMetadata } from '@/lib/metadata';
+
+export async function generateMetadata({ params }: { params: Promise<{ tier: string }> }) {
+  const { tier } = await params;
+  const data = await getServicesData();
+  const tierData = data.tiers.find((t: any) => t.id === tier);
+
+  if (!tierData) return { title: 'Not Found' };
+
+  return buildMetadata({
+    title: `${tierData.name} Partnership | Richard Norwood, PMP`,
+    description: tierData.subtitle,
+    path: `/services/${tier}`,
+    noIndex: true, // Intake funnel page, should not be indexed
+  });
+}
 
 interface PageProps {
   params: Promise<{ tier: string }>;

@@ -3,11 +3,14 @@ import PageHero from '@/components/sections/PageHero'
 import PricingGrid from '@/components/sections/PricingGrid'
 import PricingFAQ from '@/components/sections/PricingFAQ'
 import pricingData from '../../../../content/pricing.json'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Pricing | Richard Norwood, PMP',
   description: 'Align. Build. Command. Choose the engagement that matches where your business is today.',
-}
+  path: '/pricing',
+})
 
 export default function PricingPage() {
   const jsonLd = {
@@ -55,14 +58,8 @@ export default function PricingPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(offerLd) }}
-      />
+      <JsonLd data={jsonLd} />
+      <JsonLd data={offerLd} />
       <PageHero title="Align. Build. Command." subtitle="Choose the engagement that matches where your business is today." />
       <PricingGrid data={pricingData.tiers} />
       <PricingFAQ />

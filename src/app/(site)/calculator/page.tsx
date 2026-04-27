@@ -2,11 +2,13 @@ import React from 'react'
 import CalculatorForm from '@/components/forms/CalculatorForm'
 import PageHero from '@/components/sections/PageHero'
 import { Toaster } from 'sonner'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Revenue Health Check | Richard Norwood, PMP',
   description: 'A short diagnostic to identify where your commercial system is strongest — and where friction is costing you the most.',
-}
+  path: '/calculator',
+})
 
 export default function CalculatorPage() {
   return (

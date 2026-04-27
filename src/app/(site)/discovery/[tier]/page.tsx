@@ -3,7 +3,14 @@ import { notFound, redirect } from 'next/navigation';
 import fs from 'fs/promises';
 import path from 'path';
 import DiscoveryForm from '@/components/forms/DiscoveryForm';
+import { buildMetadata } from '@/lib/metadata';
 
+export const metadata = buildMetadata({
+  title: 'Discovery Intake | Richard Norwood, PMP',
+  description: 'Complete your partnership intake to begin the onboarding process.',
+  path: '/discovery',
+  noIndex: true,
+});
 interface PageProps {
   params: Promise<{ tier: string }>;
   searchParams: Promise<{ email?: string }>;

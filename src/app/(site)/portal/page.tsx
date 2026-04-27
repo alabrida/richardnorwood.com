@@ -1,11 +1,14 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import PortalContent from '@/components/sections/PortalContent'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata = {
-  title: 'Client Portal - Richard Norwood, PMP',
+export const metadata = buildMetadata({
+  title: 'Client Portal | Richard Norwood, PMP',
   description: 'Access your partnership dashboard, project assets, and communication channels.',
-}
+  path: '/portal',
+  noIndex: true,
+})
 
 export default async function PortalPage() {
   const supabase = await createClient()

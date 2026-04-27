@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Page Not Found | Richard Norwood, PMP',
+  description: 'The page you requested could not be found.',
+};
 export default function NotFound() {
   return (
     <main style={{

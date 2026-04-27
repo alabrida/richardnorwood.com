@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import blogData from '../../../../../content/blog-stub.json'
 import styles from './BlogPost.module.css'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { buildMetadata } from '@/lib/metadata'
 
 // Generate static params for all stubbed posts to ensure edge delivery
 export async function generateStaticParams() {
@@ -14,10 +16,12 @@ export async function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = blogData.find((p) => p.slug === params.slug)
   if (!post) return { title: 'Post Not Found' }
-  return {
+  return buildMetadata({
     title: `${post.title} | Field Notes — Richard Norwood, PMP`,
     description: post.excerpt,
-  }
+    path: `/blog/${post.slug}`,
+    type: 'article',
+  })
 }
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
@@ -28,8 +32,46 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     year: 'numeric', month: 'long', day: 'numeric'
   })
 
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: {
+      '@id': 'https://richardnorwood.com/#person'
+    },
+    url: `https://richardnorwood.com/blog/${post.slug}`
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://richardnorwood.com'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Field Notes',
+        item: 'https://richardnorwood.com/blog'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: `https://richardnorwood.com/blog/${post.slug}`
+      }
+    ]
+  }
+
   return (
     <main style={{ maxWidth: 800, margin: '0 auto', padding: 'var(--space-20) var(--space-4) var(--space-24)' }}>
+      <JsonLd data={[blogPostingSchema, breadcrumbSchema]} />
       <Link href="/blog" style={{ color: 'var(--color-text-subtle)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-12)' }}>
         ← Back to Field Notes
       </Link>
