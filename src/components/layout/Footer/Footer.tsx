@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { Player } from '@remotion/player';
+import { VideoPlaceholder } from '@/components/remotion/VideoPlaceholder';
 import NewsletterForm from './NewsletterForm';
 import styles from './Footer.module.css';
 
@@ -56,7 +58,24 @@ export default function Footer() {
 
           <div className={styles.videoColumn}>
             <div className={styles.videoWrapper}>
-              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Revenue Architect Intro" frameBorder="0" allowFullScreen className={styles.videoFrame}></iframe>
+              <Player
+                component={VideoPlaceholder}
+                durationInFrames={120}
+                compositionWidth={1920}
+                compositionHeight={1080}
+                fps={30}
+                autoPlay
+                loop
+                acknowledgeRemotionLicense
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  borderRadius: '12px',
+                }}
+              />
             </div>
           </div>
 
