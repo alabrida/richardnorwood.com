@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
-import blogData from '../../content/blog-stub.json';
+import { getAllPosts } from '@/lib/wp';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://richardnorwood.com';
 
   const staticRoutes = [
@@ -19,7 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  const blogRoutes = blogData.map((post) => ({
+  const wpPosts = await getAllPosts();
+  const blogRoutes = wpPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: post.date,
     changeFrequency: 'monthly' as const,

@@ -1,9 +1,9 @@
 import React from 'react'
 import BlogCard from '@/components/blog/BlogCard'
 import PageHero from '@/components/sections/PageHero'
-import blogData from '../../../../content/blog-stub.json'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
+import { getAllPosts } from '@/lib/wp'
 
 export const metadata = buildMetadata({
   title: 'Field Notes | Richard Norwood, PMP',
@@ -11,7 +11,20 @@ export const metadata = buildMetadata({
   path: '/blog',
 })
 
-export default function BlogIndex() {
+export default async function BlogIndex() {
+  const wpPosts = await getAllPosts()
+  
+  // Map WordPress REST API format to the expected UI format
+  const blogData = wpPosts.map(post => ({
+    id: post.id,
+    title: post.title.rendered,
+    slug: post.slug,
+    date: post.date,
+    excerpt: post.excerpt.rendered.replace(/<[^>]*>?/gm, ''), // strip html tags from excerpt
+    category: 'Field Notes', // Fallback since WP meta wasn't registered
+    author: 'Richard Norwood'
+  }))
+
   const blogSchema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
@@ -58,11 +71,15 @@ export default function BlogIndex() {
       />
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 var(--space-4) var(--space-16)' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 'var(--space-8)' }}>
-          {blogData.map((post, idx) => (
-            <BlogCard key={post.id} post={post} idx={idx} />
-          ))}
-        </div>
+        {blogData.length > 0 ? (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 'var(--space-8)' }}>
+            {blogData.map((post, idx) => (
+              <BlogCard key={post.id} post={post} idx={idx} />
+            ))}
+          </div>
+        ) : (
+          <p style={{ textAlign: 'center', color: 'var(--color-text-muted)' }}>No field notes published yet.</p>
+        )}
       </div>
     </main>
   )
