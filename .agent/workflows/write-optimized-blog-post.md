@@ -23,7 +23,7 @@ When users ask AI complex questions, the model breaks them into smaller sub-quer
 ## Phase 2: Content Creation & Depth
 
 ### 4. Inject Human Experience and Anecdotes
-- **Action**: To separate this post from purely AI-written content, you must inject real-world experience and human elements. **You must always reference the author's LinkedIn profile in `d:\richardnorwood.com\docs\linkedin-profile.pdf`**. 
+- **Action**: To separate this post from purely AI-written content, you must inject real-world experience and human elements. **You must always reference the author's LinkedIn profile in `d:\richardnorwood.com\docs\blog\linkedin-profile.pdf`**. 
 - **Action**: Find relevant experiences, past roles (e.g., Continuous Improvement Manager, PMP methodology), or metrics, and weave them naturally into the narrative to ground theoretical concepts in practical reality.
 
 ### 5. Write Original, Human-Authored Content

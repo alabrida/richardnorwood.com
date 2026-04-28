@@ -1,0 +1,110 @@
+# Blog Post 1 — Citation Review
+
+**Post Title:** Revenue Architecture: The System Behind Predictable Growth
+
+I've reviewed all 5 articles. Here is how they map to the post's argument and where I recommend citing each.
+
+---
+
+## Article Assessment
+
+### 1. ✅ "Death of the (Traditional) Salesperson"
+**Authors:** Ryan, Swartz, Ageyeva-Furman, & Norström · **Source:** *Ivey Business Journal*, May/June 2020
+
+**Relevance: HIGH — Citation Slot 1 (Buyer Self-Education Shift)**
+
+This is your strongest article. It directly argues that B2B selling organizations are being supplanted by smaller, integrated commercial teams that unify marketing, sales, and service. Key citable findings:
+
+- *"Information needed prior to purchasing is readily available through multiple reliable sources"* — validates the buyer self-education thesis
+- *"Large B2B selling organizations [will be] supplanted by smaller commercial organizations that integrate marketing, sales, and service activities"* — directly supports the Unified Commercial Engine concept
+- Case study results: **25% growth in sales conversion, 30% reduction in turnaround time, 20% growth in sales productivity, 50% reduction in technology costs** — concrete proof that unification works
+- The three pillars (Reimagined Customer Experience, Tech-Enabled Sales Execution, Digital-Ready Commercial Organization) mirror your doctrine's supporting disciplines
+
+> **Suggested placement:** Use in the opening section to frame why the traditional model is broken, then reference the case study metrics when introducing the UCE as the solution.
+
+---
+
+### 2. ✅ "Three Drivers of the Best B2B Growth Engines"
+**Author:** John Arnold (Forrester Research) · **Source:** *CRM Magazine*, May 2023
+
+**Relevance: HIGH — Citation Slot 2 (Cross-Functional Alignment)**
+
+This is Forrester's own research, which gives it strong institutional authority. Key citable findings:
+
+- *"83% of buyers in 2022 said they were dissatisfied with the winning provider after completing a purchase"* — validates the Bowtie argument (post-sale matters)
+- *"Customer-obsessed organizations are 3x more likely to achieve 10%+ growth in revenue, profits, and customer retention"*
+- Three drivers: **buyer value, revenue team alignment, technology integration** — almost a 1:1 map to your doctrine
+- *"Companies that stop growing tend to lose focus on three key fundamentals"* and *"over-rotate on short-term strategies that aim to extract value from customers instead of prioritizing customer value creation"* — validates your argument against tactical fixes
+
+> **Suggested placement:** Cite the 83% buyer dissatisfaction stat in the Retention section to reinforce why the journey doesn't end at conversion. Use the 3x growth stat when arguing for alignment over isolated optimization.
+
+---
+
+### 3. ⚠️ "Influence of Digital Literacy on Customer Purchase Intention"
+**Authors:** Azad, Malik, Irfan, & Qamar · **Source:** *Jinnah Business Review*, Dec 2025
+
+**Relevance: LOW — Not recommended for this post**
+
+This is a quantitative academic study on consumer-level digital literacy and social media's influence on purchase decisions. While the topic is adjacent, the issues are:
+
+- **Scope mismatch:** It studies individual consumer behavior (B2C-oriented), not B2B commercial systems
+- **Geographic limitation:** Data from Rawalpindi/Islamabad with 185 respondents — narrow generalizability
+- **No connection to revenue architecture:** The findings (digital literacy → social media → purchase intent) don't support any of the three citation slots
+
+> **Recommendation:** Skip for Post 1. Could potentially support a future non-evergreen post about digital buyer behavior or social media strategy.
+
+---
+
+### 4. ⚠️ "Research and Markets: Global B2C & B2B E-Commerce 2025"
+**Source:** *Health & Beauty Close-Up* (via Research and Markets), Apr 2025
+
+**Relevance: MEDIUM — Use selectively for a single data point**
+
+This is a market research summary, not a peer-reviewed article. However, it contains useful industry data:
+
+- *"B2B E-Commerce sales expected to exceed $40 trillion by 2026"*
+- *"50% of global B2B buyers prefer manufacturer-owned platforms"*
+- *"Over 30% of B2B transactions experience order errors"* — supports friction/handoff arguments
+- *"More than half of purchases involved digital transactions"*
+
+> **Suggested placement:** If you want a market-sizing anchor, cite the $40T figure or the 30% order error rate. But use sparingly — this is a press release summary, not original research. Consider using it as a footnote rather than a primary citation.
+
+---
+
+### 5. ✅ "Omnichannel as a Consumer-Based Marketing Strategy"
+**Authors:** Gasparin & Slongo · **Source:** *Revista de Administração Contemporânea*, 2023
+
+**Relevance: HIGH — Citation Slot 2 (Cross-Functional Alignment) + Slot 3 (Systems Thinking)**
+
+This is a rigorous peer-reviewed literature review (29 studies analyzed) with strong conceptual authority. Key citable insights:
+
+- The central thesis — that firms have a *"myopic view of the customer"* by focusing on individual channels instead of the full journey — directly mirrors your doctrine's core argument
+- *"The focus of any channel strategy should be to understand how people buy"* (Palmatier et al., 2020, cited within) — aligns with your buyer-journey-first philosophy
+- The finding that customer journeys include *"firm-controlled and non-firm-controlled touchpoints across online and offline channels"* — supports your Perimeter/Gateway/Core commercial estate model
+- The argument that *"companies need to move from channel integration to understanding how customers experience multiple channels"* — validates systems thinking over tactical optimization
+
+> **Suggested placement:** Cite in the section on why tactical optimization fails. The "myopic view" language is a powerful anchor phrase that reinforces your own argument.
+
+---
+
+## Final Citation Map
+
+| Citation Slot | Recommended Article(s) | Key Data Point |
+|---|---|---|
+| **Slot 1: Buyer self-education** | Ryan et al. (2020), *Ivey Business Journal* | Buyers no longer need salespeople for information; unified commercial teams replace traditional sales orgs |
+| **Slot 2: Cross-functional alignment** | Arnold (2023), *CRM Magazine* (Forrester) | Customer-obsessed orgs are 3x more likely to hit 10%+ growth; 83% post-purchase buyer dissatisfaction |
+| **Slot 3: Systems thinking** | Gasparin & Slongo (2023), *RAC* | Firms have a "myopic view" of the customer; channel strategy must start with how people buy |
+| **Supporting data (optional)** | Research and Markets (2025) | 30% of B2B transactions have order errors; B2B e-commerce to exceed $40T |
+| **Not used** | Azad et al. (2025) | Hold for future social media/digital literacy post |
+
+---
+
+## Formatted References (APA 7th)
+
+Ryan, S., Swartz, J., Ageyeva-Furman, Y., & Norström, J. (2020). Death of the (traditional) salesperson. *Ivey Business Journal*, May/June 2020.
+
+Arnold, J. (2023). Three drivers of the best B2B growth engines. *CRM Magazine*, May 2023, 5.
+
+Gasparin, I., & Slongo, L. A. (2023). Omnichannel as a consumer-based marketing strategy. *Revista de Administração Contemporânea*, *27*(4), e220327. https://doi.org/10.1590/1982-7849rac2023220327.en
+
+Research and Markets. (2025). Global B2C & B2B E-Commerce 2025: Digital trends and consumer shifts. *Health & Beauty Close-Up*, April 15, 2025.

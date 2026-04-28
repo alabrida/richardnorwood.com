@@ -920,3 +920,8 @@
  GET / 200 in 322ms (next.js: 34ms, proxy.ts: 25ms, application-code: 263ms)
  GET / 200 in 309ms (next.js: 162ms, proxy.ts: 35ms, application-code: 112ms)
  GET / 200 in 313ms (next.js: 94ms, proxy.ts: 32ms, application-code: 188ms)
+✓ Compiled in 126ms
+✓ Compiled in 79ms
+ GET /blog 200 in 2.5s (next.js: 2.2s, proxy.ts: 36ms, application-code: 261ms)
+ GET /services 200 in 1642ms (next.js: 1531ms, proxy.ts: 17ms, application-code: 93ms)
+✓ Compiled in 444ms
