@@ -1,0 +1,375 @@
+Disclaimer: This is a machine generated PDF of selected content from our products. This functionality is provided solely for your
+convenience and is in no way intended to replace original scanned PDF. Neither Cengage Learning nor its licensors make any
+representations or warranties with respect to the machine generated PDF. The PDF is automatically generated "AS IS" and "AS
+AVAILABLE" and are not retained in our systems. CENGAGE LEARNING AND ITS LICENSORS SPECIFICALLY DISCLAIM ANY
+AND ALL EXPRESS OR IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES FOR AVAILABILITY,
+ACCURACY, TIMELINESS, COMPLETENESS, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE. Your use of the machine generated PDF is subject to all use restrictions contained in The Cengage Learning
+Subscription and License Agreement and/or the Gale OneFile: Business Terms and Conditions and by using the machine
+generated PDF functionality you agree to forgo any and all claims against Cengage Learning or its licensors for your use of the
+machine generated PDF functionality and any output derived therefrom.
+Influence of Digital Literacy on Customer Purchase Intention:
+The Mediating Role of Social Media Usage and Moderating
+Impact of User Engagement and e-Word of Mouth.
+Date: Dec. 31, 2025 
+From: Jinnah Business Review(Vol. 13, Issue 2)
+Publisher: Knowledge Bylanes
+Document Type: Article 
+Length: 4,336 words
+Lexile Measure: 1350L
+Full Text: 
+Byline: S. Azad, F. Malik, S. Irfan and A. Qamar
+Key words: Digital Literacy, Consumer Purchase Intention, Social Media Usage, User Engagement
+1 Introduction
+In the modern digital era, digital literacy has become one of the primary drivers of consumer behavior. Understanding information
+from diverse resources displayed by device is skill to access content Tinmaz et al. (2023); Toquero and Talidong (2020), which can
+be considered an import skill for use in our society based on knowledge and the information that deluges society (Imjai et al., 2024;
+Martin and Madigan, 2006; Mart'inez-Bravo et al., 2022). As more consumers use digital platforms to learn and purchase goods and
+services, knowing the intricacies of digital literacy is an important weapon for marketers and businesses trying to connect with
+customers and sell products. The integration of digital literacy into the consumer decision-making process is particularly significant
+when considering the mediating role of social media usage.
+Social media has changed the way consumers directly interact with brands, find information, and even make purchase decisions.
+These platforms not only provide a wealth of information but also foster interactive and customized experiences, which have the
+power to completely change consumer behavior. Studies suggest that increased digital literacy results in a more proficient use of
+social media means and several other advantages for consumers who take well-considered shopping actions (Van Deursen and Van
+Dijk, 2014; ?).
+Furthermore, it is also important to consider the moderating effect of user engagement on the relationship between digital literacy and
+purchase intention. For example, user engagement such as the interaction, participation, and emotional attachment of a consumer to
+digital content may strengthen even moderate-the effects of digital literacy on purchase behavior. Engaged users search, elaboration
+and application behaviors that contribute positively to the effect of digital literacy on decisions related to buying (Brodie et al., 2011;
+Kozyreva et al., 2020). This study is intended to investigate complex relationships among digital literacy, social media use and user
+engagement on influencing purchase intention through customer experience.
+It can provide valuable information to marketers and businesses about these interrelationships example of the effects they can
+generate are enhancing customer engagement and sales through digital literacy. Understanding these factors is crucial for
+developing effective digital marketing strategies that resonate with the digitally literate consumer base.
+2 Literature Review
+2.1 Digital Literacy
+Digital literacy is an essential skill to enable people to actively engage in a digital society. It includes the skills, competencies, and
+knowledge required to successfully navigate digital environments. Digital literacy skills are essential for economic growth, digital
+participation, social inclusion, and personal employability (Arslantas et al., 2024; Ferrari et al., 2012). As digital technology continues
+to permeate daily life and many economic sectors, the importance of digital literacy has grown significantly for most employees. While
+many jobs face the risk of becoming obsolete, many roles are commencing to require new knowledge, skills, and competencies.
+These changes depend on factors such as the specific industry, region, and occupation, as well as the role of stakeholders in
+handling social, economic, and political changes, all affect these changes.
+
+According to numerous surveys and research, the need for digital literacy has grown because of the rise in digitalization (Curtarelli et
+al., 2016). One of the main obstacles for integrating technology into academic courses is digital literacy (Blau et al., 2020). According
+to recent research, it is the collection of abilities and proficiencies required to successfully navigate a complicated and dispersed
+information landscape (Eshet, 2004).
+Six categories defined by Eshet-Alkalai and Soffer (2012), Digital Literacy Framework: (a) photo-visual thinking, which entails
+comprehending and utilizing visual information; (b) real-time thinking, which refers to processing multiple stimuli at once; (c)
+information thinking, which focuses on assessing and integrating information from multiple digital sources; (d) branching thinking,
+which is related to navigating through non-linear hypermedia environments; (e) reproduction thinking, which entails using
+technological tools to create new content or remix existing content; and (f) socialemotional thinking, which is concerned with
+comprehending and putting online interactions into practice.
+2.2 Purchase Intention
+Digital marketing (DM) has come to be as an essential tool for companies seeking to improve their online presence (Narayanan et al.,
+2022). Online shopping has become a commonplace aspect of people's lives due to the extensive usage of the Internet and the quick
+development of technology. People's shopping habits and decision-making processes are changing because of this transformation,
+which presents both opportunities and difficulties in figuring out why they plan to shop online (Yones et al., 2023). Purchase intention
+is one of the primary areas addressed in business research, especially in marketing and management. It is noted that someone's
+intent to purchase online indicates their willingness to look for relevant information and select their desired goods or services.
+Numerous empirical studies have emphasized the significance of comprehending people's intention to adopt online purchasing in the
+arena of online shopping research (Savitri et al., 2022). Numerous elements that impact the intention to make an online purchase
+have also been uncovered by these studies.
+2.3 Social Media Usage
+The notion of social media encompasses social networking sites (SNSs) such as Facebook, LinkedIn, and Twitter, which enable
+users to establish relationships by creating personal profiles in addition to its networking capabilities, social media has transformed
+into an interactive platform that allows users to produce and share content more efficiently. Social media is "an online application,
+platform, and media that allow interaction, collaborative work, and content sharing," Social media marketing initiatives give
+companies great chances to establish individualized connections with customers and become closer to them (Kelly et al., 2013).
+According to their viewpoints, social media studies in the travel and tourism sector can be separated into customer and supplier
+studies, or by the factors, into studies that determine the requirements for social media use and its effects (Leung et al., 2013).
+Social media has an impact on social interactions and behaviors, making it an essential component of daily life (Gan and Wang,
+2015). On the one hand, using social media makes it easier for knowledge to disseminate and foster interpersonal connections.
+2.4 eWord of Mouth
+The quality of electronic word-of-mouth (eWOM) defined as a persuasive impact of reviews or comments included in an informational
+message (Bhattacherjee and Sanford, 2006). When customers search for information, the quality of that information can influence
+their acceptance of it, concerning eWOM communication channels (Al-Ja'afreh and Al-Adaileh, 2020). The utility, clarity, and
+simplicity of the information offered are critical in determining how buyers perceive the quality of the information, which is an
+important factor when evaluating their potential purchase intentions. The purchasing intentions of consumers are significantly
+influenced by the quality of electronic word-of-mouth (eWOM). When browsing through the vast amount of information shared online,
+many customers look for references to support their decisions and minimize their risk of making inaccurate choices.
+The number of online reviews or comments frequently serves as a measure for the value and popularity of a product. Park and Lee
+(2008), argues that consumer intentions to buy products or services are impacted by the amount of information they obtain and that
+they are more likely to trust product review websites. Surprisingly, customers are more likely to believe negative feedback than
+favorable ones. Sher and Lee (2009), conducted a study in which undergraduate students were asked to read product review
+websites to assess their attitudes. The results showed that students with lower levels of curiosity were more easily influenced by
+product reviews after reading several review sites.
+2.5 User Engagement
+Every month, around 4 billion people use Facebook and Instagram (Statista, 2020). Research indicates that 50% of Millennials and
+Generation Z plan to travel because of Social Networking Platforms (SNPs) like Facebook (Statista, 2020). Social media (SM) has an
+enormous effect on how customers evaluate products and services, share their thoughts and experiences, including tourism
+destinations and suppliers (Zeng et al., 2018). Customers are becoming more interested in material on social media platforms, such
+as peer-shared text, video, and visual posts on goods and services on social media networks like Facebook, Instagram (Filieri et al.,
+2021). Friends by disseminating product information and sharing unique events that help them to express (Wang et al., 2021).
+According to Lusch and Vargo (2006), customers concrete 'value-in-use,' which encompasses the advantages they derive from
+utilizing goods and services, by sharing their consumption experiences on SNPs.
+2.6 Theoretical Framework
+H1: Digital literacy has a positive impact on purchase intention.
+H2: Digital literacy has a positive impact on social media usage.
+
+H3: Social media usage has a positive impact on purchase intention.
+H4: Social media usage mediates the relationship between digital literacy and purchase intention.
+H5: e-word of mouth moderates the relationship between digital literacy and purchase intention.
+H6: User engagement moderates the relationship between digital literacy and social media usage.
+3 Research Methods
+3.1 Data Collection and Sample
+The population of study was general consumers from whom questions related to technology usage; internet usage and devise usage
+were inquired in the demographic section of the question. The online survey was employed for data collection through a convenience
+sampling technique and quantitative analysis was conducted using Hayes process. Data was collected via social media platforms
+within a period of one month via a cross-sectional data collection method. A survey questionnaire was floated online through social
+media channels such as WhatsApp, Instagram, and Facebook. The survey was divided into two parts namely the demographic
+questions (gender, qualification, age, Internet usage, Device usage, and technology) and the study other variables. 350
+questionnaires were distributed; however, the final sample size was 185 which shows 52% response rate from a respondent.
+Table 1: Demographic Analysis: Descriptive Frequencies
+Variables###Categories###Frequency###Percentages
+###Male###63###34.4
+Gender###Female###120###65.6
+###18-24###79###43.2
+###25-34###67###36.6
+Age in Years###35-44###29###15.8
+###45-54###8###4.4
+###Above 54###0###0
+###High School###40###16
+###Bachelors###80###64
+Qualification###Masters###60###36
+###PhD###3###0.9
+###Beginner###8###4.4
+Technology Usage###Intermediate###65###35.5
+###Advanced###110###6.6
+###Smart phone###146###79.8
+###Laptop###23###12.6
+Internet Usage###Tablet###7###3.8
+###Desktop Computer###7###3.8
+###Several time a day###138###75.4
+###Once a day###8###4.4
+Device Usage###Few Times a week###29###15.8
+###Rarely###8###4.4
+From descriptive statistics Table 1 summarizes that total number of sample size was 184 a majority of the respondents in our study
+were female (65.5%) who are young adults in the age group of 18-24 years (43.2.%) and rest belong to other age groups, holding a
+
+bachelor 's degree (64%) Intermediate level of usage of Technology was (35.5%) and 79.8% of the participants use smart phone and
+rest other gadgets. And the people who use the internet several times a day were (75.4%).
+3.2 Study Measures
+The previous studies validated measurement scales (shown in Appendix 1) were used in this research. First, digital literacy based on
+10 items scale was adopted from (Ng, 2012; Serap Kurbanoglu et al., 2006). Second, the validated 06 items were used to measure
+the purchase intention taken from McKnight et al. (2002); Wang and Chang (2013); Yoo and Donthu (2001), third, social media usage
+was measured through 10 items adopted by (Tuck and Thompson, 2024). Fourth, user engagement was measured through 09 items
+adopted by (Weman et al., 2011). And lastly, electronic word of mouth measure on 05 items were adopted by (Bambauer-Sachse and
+Mangold, 2011). Using point Likert scale ranging from 1 (Strongly Agree) to 5 (Strongly Disagree) scale, respondents were asked to
+rate their level of strong agreement or disagreement with a set of statements on a particular topic.
+Table 2: Descriptive Statistics of Variables
+###Mean###Std. Deviation
+DL###2.01###0.732
+PI###2.29###0.837
+UE###2.38###0.839
+EWOM###2.06###0.675
+SMU###2.33###0.714
+Descriptive statistics of the variables are shown in Table 2, including the mean values of digital literacy, purchase intention, user
+engagement, electronic word of mouth (e-WOM), and social media usage (SMU). The table reveals that digital literacy has the lowest
+mean value of 2.01 among all the constructs, indicating that the general sample population exhibits lower levels of digital literacy.
+Purchase Intention, with a mean of 2.29, and social media usage, with a mean of 2.33, is slightly higher but still relatively moderate.
+User engagement shows a higher mean value of 2.38, suggesting active engagement among users. Electronic word of mouth has a
+mean value of 2.06, indicating a moderate tendency to share opinions and recommendations online. Overall, these statistics provide
+an insight into the varying levels of these constructions within the sample population.
+3.3 Tools for Analysis
+We used the IBM statistical package for social sciences (SPSS 23.0) for data analysis, to meet the aim and to test hypotheses of this
+study. Descriptive analysis in SPSS 23.0 was used for preliminary results and details of the sample are presented in the following
+table. The reliability of the measurement items was tested using Cronbach's [alpha] coefficient. Further, correlation and regression
+analysis were carried out.
+4 Results and Discussion
+4.1 Reliability Analysis
+Reliability is the measure of internal consistency of constructs in the study. Cronbach's alpha coefficient is the most reliable and
+useful model to measure the reliability and internal consistency of constructs. A construct is more reliable when the alpha ([alpha])
+value is greater than 0.70 (Hair et al., 2013). Hence, we assessed the reliability of items by using Cronbach's alpha ([alpha]). The
+results of the study revealed that digital literacy with 10 item scale ([alpha]=.901) and social media usage with 10 item scale
+([alpha]=.841) has good reliability and internal consistency. Similarly, the user engagement with 09 item scale and purchase intention
+with 6 item scale were also found to be reliable at ([alpha]=.898), ([alpha]=.857) respectively. And electronic word of mouth with 05
+item scale ([alpha]=.715) has good reliability results are summarized in Table 3.
+Table 3: Reliability Statistics
+Constructs###No. of Items###Alpha ([alpha])
+DL###10###0.901
+SMU###10###0.841
+UE###9###0.898
+PI###6###0.857
+EWOM###5###0.715
+4.2 Correlation Analysis
+In Table 4, a two-tailed Pearson correlation test to check the strength and direction of the linear correlation between the two variables
+
+is presented. There are only three potential correlation coefficients: 1 for perfect positive correlation, 1 for perfect negative correlation,
+and 0 for no correlation at all. Yet a variable with an r of one is always simply the file itself (Ratner, 2009). As such, the findings of the
+study uncovered that there was positive relationship between digital literacy and their purchase intention (r=.351, p <. 001). The
+correlation value between social media usage and purchase intention is 0.412 which is significant at 0.01 level. The correlation value
+of user engagement and purchase intention is 0.646 with p<0.05 level, whereas the relationship between e-WOM and purchase
+intention is 0.506 which is significant at 0.01 level. Hence, all study variables are positively and significantly correlated with each
+other.
+Table 4: Correlation Analysis
+###PI###DL###SMU###UE###WOM
+PI###1
+DL###.351**###1
+SMU###.412**###.479**###1
+UE###.646**###.477**###.568**###1
+e-WOM###.506**###.543**###.421**###.375**###1
+4.3 Direct Relationship Analysis
+Table 5: Direct Path Results
+###Coefficient###SE###t value###P value###LLCI###ULCI
+DL-PI###0.2279###0.0796###2.6249###0###0.2444###0.5584
+DL-SMU###0.4671###0.0636###7.3468###0###0.3416###0.5925
+SMU-PI###0.3715###0.0891###4.1708###0###0.1958###0.5473
+The direct effect in Table 5 is showing that all direct relationships are positive and significant. The results indicate that digital literacy
+has a positive and significant impact on purchase intention ([beta]=.2279, P<0.05), the relationship between digital literacy and social
+media usage is positive and statistically significant as [beta] value is.4671, P-value is less than 0.05. The impact of social media
+usage on purchase intention is also reported as positive and significant ([beta]=.3715, P<0.05). Hence, all three direct relationship
+results are positive and significant which depicts that consumers who are digital literate are creating a positive and significant impact
+of purchase intention and social media usage. At the same time, social media usage also lead towards purchase intention as many
+companies are promoting and selling on a social media.
+Table 6: Mediation Analysis (DL-SMU-PI)
+###Total effects###Direct effects###Indirect effects
+Coefficient T value P value###Coefficient###T value###P value###Coefficient BootLLCI###BootULCI
+0.4014###5.048###0###0.2279###2.6249###0###0.1735###0.0758###0.2751
+Mediation results (see table 6) indicate that both total and direct effects are positive and significant as all coefficients show positive
+values and p<0.05. The bootstrap results for mediation analysis indicate that both Bootstrap lower and upper-level confidence
+intervals are in same direction and there is no zero-value shown, hence, resulted in partial mediation. Therefore, social media usage
+partially mediates the relationship between digital literacy and purchase intention.
+4.4 Moderation Analysis
+Table 7: Moderation Analysis (User Engagement)
+###coeff###Se###t###p###LLCI###ULCI
+constant###-0.0786###0.3237###-0.2404###0.8103###-0.7144###0.5593
+DL###0.8402###0.1809###4.6442###0###0.4832###1.1972
+UE###0.7676###0.1281###5.9918###0###0.5148###1.0203
+Int 1###-0.2177###0.0639###-3.4058###0###-0.3439###-0.0916
+The moderation analysis through Hayes process Model 1 in Table 7 shows that digital literacy has a significant effect (coeff = 0.8402,
+p = 0.000). User Engagement (UE) also shows a significant positive effect (coeff = 0.7676, p<0.05). Although, the p value interaction
+
+term (Int 1) is significant (coeff=-.21, p<0.05), indicating that UE is moderating the relationship between DL and social media usage
+such that it weakens the relationship
+Table 8: Moderation Analysis (e-word of mouth)
+###coeff###se###t###p###LLCI###ULCI
+constant###-0.3387###0.5278###-0.6418###0.5218###-1.3802###0.7027
+DL###0.7658###0.2706###2.8304###0.0052###0.2319###1.2998
+e-WOM###1.1495###0.2555###4.4984###0###0.6452###1.6537
+Int 1###-0.29###0.1159###-2.5013###0.0133###-0.5187###-0.0612
+The moderation analysis through Hayes process Model 1 in Table 8 shows that digital literacy has a significant effect (coeff = 0.7658,
+p =0.0052). e-WOM also shows a significant positive effect (coeff=1.1495, p<0.05). While the moderating variable between digital
+literacy and purchase intention the results are coeff=-.29, p-value=0.0133 is significant, hence approving the moderating relationship
+such that it weakens the relationship.
+5 Discussion
+The purpose of this research was to analyze the influence of digital literacy on customer purchase intention with the mediating role of
+social media usage and moderating impact of user engagement and e-word of mouth. The study employed Cronbach's alpha
+coefficients to ensure the reliability of its measurement scales, revealing strong internal consistency across digital literacy ([alpha] =
+0.901), social media usage ([alpha] = 0.841), user engagement ([alpha] = 0.898), and purchase intention ([alpha] = 0.857). These
+results show robustness in measuring these constructions within the study, aligning with established standards (Hair et al., 2013).
+Digital literacy was found to be significantly positively correlated with both purchase intention (r = 0.351, p < 0.001) and social media
+usage (r = 0.4671, p < 0.001). This suggests that higher levels of digital literacy correspond to increased engagement with social
+media platforms and stronger purchase intentions among consumers.
+Furthermore, digital literacy has shown a clear positive impact when controlling social media usage, digital literacy exhibited a direct
+positive effect on purchase intention (coefficient = 0.2279, t = 2.6249).
+All three direct relationship hypotheses as shown in table 5 show positive and significant impact. These results help to clarify how
+important digital literacy is in influencing modern consumer behavior in digital environments. As consumers become more proficient in
+utilizing digital tools and platforms, their engagement with social media emerges as a crucial mechanism through which digital literacy
+influences purchasing decisions. Further investigation into indirect relationships highlighted that social media usage serves as a
+partial mediator between digital literacy and purchase intention. The mediation analysis indicated a partial mediation as shown in
+table 6, highlighting the role of social media engagement in translating digital literacy into consumer purchase decisions. Furthermore,
+both moderating variables show the moderating results are approved (see table 7 and 8) as p-value is significant.
+This shows that consumers are becoming more digitally self-literate, therefore, consumers also rely on word of mouth, hence, directly
+taking purchase decisions.
+6 Conclusion
+Based on the study's findings, it is evident that digital literacy plays a significant role in influencing consumer behavior through social
+media usage. The study reveals a positive correlation between digital literacy and both social media usage and consumer purchase
+intention. This suggests that consumers with higher digital literacy levels are more likely to indulge into social media platforms and
+demonstrate stronger intentions to make purchases. Moreover, the study highlights that social media usage partially mediates the
+relationship between digital literacy and purchase intention, underscoring the importance of effective digital strategies in consumer
+decision-making processes. This study contributes valuable insights into how digital literacy and social media usage collectively
+shape consumer purchase intentions in the digital age.
+6.1 Limitations and Future Implications
+It is important to acknowledge limitations in the study. The research data was collected from only Rawalpindi and Islamabad,
+therefore, potentially limiting the generalizability of findings. Future studies could expand the scope to include other cities of Pakistan,
+as well as explore additional variables that may influence the relationships identified in this study. Due to time constraints, the sample
+size is small and may reduce the generalizability of the results too, so future studies can gain more generalizability of the research on
+large sample size. This research has only used quantitative approach from Pakistani consumers. So, further qualitative research may
+be carried out to explore whether this may differ in other cultural and religious contexts to assess the generalizability of the findings
+on a global scale.
+References
+Al-Ja'afreh, A. and Al-Adaileh, R. (2020). The impact of electronic word of mouth on consumers purchasing intention. Journal of
+Theoretical and Applied Information Technology, 98(02):183-193.
+Arslantas, T. K., Yaylaci, M. E., and OA" zkaya, M. (2024). Association between digital literacy, internet addiction, and cyberloafing
+
+among higher education students: A structural equation modeling. E-learning and Digital Media, 21(4):310-328.
+Bambauer-Sachse, S. and Mangold, S. (2011). Brand equity dilution through negative online wordof-mouth communication. Journal
+of retailing and consumer services, 18(1):38-45.
+Bhattacherjee, A. and Sanford, C. (2006). Influence processes for information technology acceptance: An elaboration likelihood
+model. MIS quarterly, pages 805-825.
+Blau, I., Shamir-Inbal, T., and Avdiel, O. (2020). How does the pedagogical design of a technology-enhanced collaborative academic
+course promote digital literacies, self-regulation, and perceived learning of students? The internet and higher education, 45:100722.
+Brodie, R. J., Hollebeek, L. D., Juric', B., and Ilic', A. (2011). Customer engagement: Conceptual domain, fundamental propositions,
+and implications for research. Journal of service research, 14(3):252-271.
+Curtarelli, M., Gualtieri, V., Jannati, M. S., and Donlevy, V. (2016). Ict for work: Digital skills in the workplace. Study for the EC, DG
+CONNECT. https://ec. europa. eu/digital-singlemarket/en/news/ict-work-digital-skills-workplace.
+Eshet, Y. (2004). Digital literacy: A conceptual framework for survival skills in the digital era. Journal of educational multimedia and
+hypermedia, 13(1):93-106.
+Eshet-Alkalai, Y. and Soffer, O. (2012). Guest editorial-navigating in the digital era: Digital literacy: Socio-cultural and educational
+aspects. Educational Technology and Society, 15(2):1-2.
+Ferrari, A. et al. (2012). Digital competence in practice: An analysis of frameworks, volume 10. Publications Office of the European
+Union Luxembourg.
+Filieri, R., Lin, Z., Pino, G., Alguezaui, S., and Inversini, A. (2021). The role of visual cues in ewom on consumers' behavioral
+intention and decisions. Journal of Business Research, 135:663-675.
+Gan, C. and Wang, W. (2015). Uses and gratifications of social media: a comparison of microblog and wechat. Journal of systems
+and information technology, 17(4):351-363.
+Hair, J. F., Ringle, C. M., and Sarstedt, M. (2013). Partial least squares structural equation modeling: Rigorous applications, better
+results and higher acceptance. Long range planning, 46(1-2):1-12.
+Imjai, N., Promma, W., Usman, B., and Aujirapongpan, S. (2024). The intertwined effects of digital literacy, agile mindset on design
+thinking skill and management control competency: Insights from thai young accountants. International Journal of Information
+Management Data Insights, 4(2):100244.
+Kelly, L. A., McMillan, D. G., Anderson, A., Fippinger, M., Fillerup, G., and Rider, J. (2013). Validity of actigraphs uniaxial and triaxial
+accelerometers for assessment of physical activity in adults in laboratory conditions. BMC medical physics, 13(1):5.
+Kozyreva, A., Lewandowsky, S., and Hertwig, R. (2020). Citizens versus the internet: Confronting digital challenges with cognitive
+tools. Psychological Science in the Public Interest, 21(3):103-156.
+Leung, D., Law, R., Van Hoof, H., and Buhalis, D. (2013). Social media in tourism and hospitality: A literature review. Journal of travel
+and tourism marketing, 30(1-2):3-22.
+Lusch, R. F. and Vargo, S. L. (2006). Servicedominant logic: reactions, reflections and refinements. Marketing theory, 6(3):281-288.
+Martin, A. and Madigan, D. (2006). Digital literacies for learning. Facet Publishing.
+Martinez-Bravo, M. C., Sa' daba Chalezquer, C., and Serrano-Puche, J. (2022). Dimensions of digital literacy in the 21st century
+competency frameworks. Sustainability, 14(3):1867.
+McKnight, D. H., Choudhury, V., and Kacmar, C. (2002). The impact of initial consumer trust on intentions to transact with a web site:
+a trust building model. The journal of strategic information systems, 11(3-4):297-323.
+Narayanan, S., Gruber, J., Liedtke, G., and Antoniou, C. (2022). Purchase intention and actual purchase of cargo cycles: Influencing
+factors and policy insights. Transportation Research Part A: Policy and Practice, 155:31-45.
+Ng, W. (2012). Can we teach digital natives digital literacy? Computers and education, 59(3):1065-1078.
+Park, D.-H. and Lee, J. (2008). ewom overload and its effect on consumer behavioral intention depending on consumer involvement.
+Electronic commerce research and applications, 7(4):386-398.
+Savitri, C., Hurriyati, R., Wibowo, L. A., and Hendrayati, H. (2022). The role of social media marketing and brand image on
+smartphone purchase intention. International Journal of Data and Network Science, 6(1).
+Serap Kurbanoglu, S., Akkoyunlu, B., and Umay, A. (2006). Developing the information literacy self-efficacy scale. Journal of
+documentation, 62(6):730-743.
+
+Sher, P. J. and Lee, S.-H. (2009). Consumer skepticism and online reviews: An elaboration likelihood model perspective. Social
+Behavior and Personality: an international journal, 37(1):137-143.
+Statista, T. R. (2020). 28.03. 2020 tarihinde https://www. statista. com/statistics/1108088/products-and-servicespeople-spend-more-
+ondue-to-the-covid-19pandemic/. adresinden erisA,ilmisA,tir. su, s., wong, g. ve shi, w.(2016). epidemiology, combination and
+pathogenesis of coronavirus. Journal of Trends Microbiol, 24:490-502.
+Tinmaz, H., Fanea-Ivanovici, M., and Baber, H. (2023). A snapshot of digital literacy. Library Hi Tech News, 40(1):20-23.
+Toquero, C. M. and Talidong, K. J. (2020). Webinar technology: Developing teacher training programs for emergency remote
+teaching amid covid-19. Interdisciplinary Journal of Virtual Learning in Medical Sciences, 11(3):200-203.
+Tuck, A. B. and Thompson, R. J. (2024). The social media use scale: Development and validation. Assessment, 31(3):617-636.
+Van Deursen, A. J. and Van Dijk, J. A. (2014). The digital divide shifts to differences in usage. New media and society,
+16(3):507-526.
+Wang, J.-C. and Chang, C.-H. (2013). How online social ties and product-related risks influence purchase intentions: A facebook
+experiment. Electronic Commerce Research and Applications, 12(5):337-346.
+Wang, T., Mai, X. T., and Thai, T. D.-H. (2021). Approach or avoid? the dualistic effects of envy on social media users' behavioral
+intention. International Journal of Information Management, 60:102374.
+Weman, E. A. et al. (2011). Consumer motivations to join a brand community on facebook. Master 's thesis, Hanken School of
+Economics.
+Yones, P. C. P., Muthaiyah, S., et al. (2023). ewom via the tiktok application and its influence on the purchase intention of somethinc
+products. Asia Pacific Management Review, 28(2):174-184.
+Yoo, B. and Donthu, N. (2001). Developing and validating a multidimensional consumer-based brand equity scale. Journal of
+business research, 52(1):1-14.
+Zeng, X., He, S., Liu, K., and Zhao, J. (2018). Large scaled relation extraction with reinforcement learning. In Proceedings of the
+AAAI Conference on Artificial Intelligence, volume 32.
+Copyright:  COPYRIGHT 2025 Jinnah Business Review 
+http://jbrc.pk/
+Source Citation (MLA 9th Edition)    
+"Influence of Digital Literacy on Customer Purchase Intention: The Mediating Role of Social Media Usage and Moderating Impact of
+User Engagement and e-Word of Mouth." Jinnah Business Review, vol. 13, no. 2, 31 Dec. 2025, p. 58. Gale OneFile: Business,
+link.gale.com/apps/doc/A868328263/ITBC?u=21667_hbplc&sid=bookmark-ITBC&xid=ce9c186e. Accessed 28 Apr. 2026.
+Gale Document Number: GALE|A868328263

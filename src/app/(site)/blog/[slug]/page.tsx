@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
 import { getAllPosts, getPostBySlug } from '@/lib/wp'
+import { TableOfContents } from '@/components/blog/TableOfContents'
+import { AuthorBio } from '@/components/blog/AuthorBio'
+import { BrandDoctrine } from '@/components/blog/BrandDoctrine'
 import styles from './BlogPost.module.css'
 
 // Generate static params for all posts to ensure edge delivery
@@ -76,42 +79,49 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   }
 
   return (
-    <main style={{ maxWidth: 800, margin: '0 auto', padding: 'var(--space-20) var(--space-4) var(--space-24)' }}>
+    <main style={{ maxWidth: 1200, margin: '0 auto', padding: 'var(--space-20) var(--space-4) var(--space-24)' }}>
       <JsonLd data={[blogPostingSchema, breadcrumbSchema]} />
       <Link href="/blog" style={{ color: 'var(--color-text-subtle)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-12)' }}>
         ← Back to Field Notes
       </Link>
 
-      <article>
-        <header style={{ marginBottom: 'var(--space-12)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
-            <span style={{ color: 'var(--color-secondary)', fontSize: 'var(--text-sm)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: 'var(--tracking-wide)' }}>
-              {category}
-            </span>
-            <span style={{ color: 'var(--color-border)' }}>|</span>
-            <span style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-sm)' }}>
-              {formattedDate}
-            </span>
-          </div>
-          <h1 
-            style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: 'var(--color-text)', lineHeight: 'var(--leading-tight)', marginBottom: 'var(--space-6)' }}
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
-            <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-surface-elevated)' }} />
-            <div>
-              <div style={{ color: 'var(--color-text)', fontWeight: 'bold' }}>{author}</div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Guide & Revenue Architecture Advisor</div>
-            </div>
-          </div>
-        </header>
+      <div className={styles.blogLayout}>
+        <TableOfContents />
 
-        <div 
-          className={styles.article}
-          style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-lg)', lineHeight: '1.8', fontFamily: 'var(--font-body)' }}
-          dangerouslySetInnerHTML={{ __html: post.content.rendered }} 
-        />
-      </article>
+        <article className={styles.blogContent}>
+          <header style={{ marginBottom: 'var(--space-12)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
+              <span style={{ color: 'var(--color-secondary)', fontSize: 'var(--text-sm)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: 'var(--tracking-wide)' }}>
+                {category}
+              </span>
+              <span style={{ color: 'var(--color-border)' }}>|</span>
+              <span style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-sm)' }}>
+                {formattedDate}
+              </span>
+            </div>
+            <h1 
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: 'var(--color-text)', lineHeight: 'var(--leading-tight)', marginBottom: 'var(--space-6)' }}
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
+              <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-surface-elevated)' }} />
+              <div>
+                <div style={{ color: 'var(--color-text)', fontWeight: 'bold' }}>{author}</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Guide & Revenue Architecture Advisor</div>
+              </div>
+            </div>
+          </header>
+
+          <div 
+            className={styles.article}
+            style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-lg)', lineHeight: '1.8', fontFamily: 'var(--font-body)' }}
+            dangerouslySetInnerHTML={{ __html: post.content.rendered }} 
+          />
+
+          <AuthorBio />
+          <BrandDoctrine />
+        </article>
+      </div>
     </main>
   )
 }

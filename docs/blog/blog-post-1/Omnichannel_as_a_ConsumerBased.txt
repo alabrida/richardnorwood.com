@@ -1,0 +1,1922 @@
+Revista de
+Administração
+Contemporânea
+Journal of Contemporary Administration
+e-ISSN: 1982-7849
+1
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+     RESUMO
+Objetivo: estratégias omnichannel requerem entender como clientes usam 
+múltiplos canais. Porém, a experiência do cliente nesse ambiente é pouco 
+investigada, dificultando o desenvolvimento de diretrizes estratégicas e o 
+avanço de teoria omnichannel. Este artigo oferece um panorama da literatura 
+omnichannel e reflete sobre o conhecimento gerado da perspectiva do cliente. 
+Marco teórico: baseamos a análise na pesquisa em experiência do cliente 
+e jornada do cliente. Método: usando análise de conteúdo, revisamos 
+criticamente 29 estudos sobre clientes omnichannel. Resultados: o foco na 
+experiência do cliente em lojas físicas e on-line de uma empresa nos estágios 
+de pré-compra e compra leva a uma noção limitada das jornadas envolvendo 
+contatos dentro e fora do controle da empresa. Para lidar com a miopia, 
+defendemos uma perspectiva do consumidor que se afaste do relacionamento 
+com uma única empresa para enfatizar que consumidores interagem com 
+vários atores para alcançar não apenas objetivos de compra, mas também de 
+ordem superior (e.g., bem-estar). Conclusões: por meio da perspectiva do 
+consumidor, delineamos caminhos de pesquisa para gerar insights sobre o 
+consumidor. A agenda contribui para promover o marketing omnichannel 
+como uma estratégia baseada no consumidor que seja sensível a questões 
+atuais de consumidores e da sociedade.
+Palavras-chave: omnichannel; experiência do cliente; jornada do cliente; 
+estratégia de marketing.
+    ABSTRACT
+Objective: creating omnichannel strategies requires understanding how 
+customers use multiple channels in their journeys. Yet the customer 
+experience in this environment is under-researched, hindering the 
+development of strategic guidelines and the progress of omnichannel 
+theory. This article offers an overview of the omnichannel literature and 
+reflects on the knowledge produced from the customer’s perspective. 
+Theoretical approach: we base our analysis on customer experience and 
+customer journey research. Method: using content analysis, we critically 
+review 29 studies on omnichannel customers. Results: the focus on the 
+customer experience within one firm’s offline and online stores during 
+the prepurchase and purchase stages leads to a limited picture of journeys 
+involving touchpoints within and outside the firm’s control. To address 
+this myopia, we call for a consumer perspective that moves away from the 
+relationship with a single firm to emphasize that consumers interact with 
+various actors to achieve not only purchase objectives but also higher-order 
+goals (e.g., well-being). Conclusions: through a consumer perspective, 
+we outline research paths for generating consumer insights. The agenda 
+contributes to fostering omnichannel marketing as a consumer-based 
+strategy that is sensitive to contemporary consumer and societal issues.
+Keywords: omnichannel; customer experience; customer journey; 
+marketing strategy.
+Omnichannel como Estratégia de Marketing Baseada no Consumidor
+Omnichannel as a Consumer-Based Marketing 
+Strategy
+1.	Universidade Federal do Rio Grande do Sul, Escola de Administração, Porto Alegre, RS, Brazil. 
+JEL Code: M31.
+Editor-in-chief: Marcelo de Souza Bispo (Universidade Federal da Paraíba, PPGA, Brazil) 
+Guest Editors: Valter Afonso Vieira (Universidade Estadual de Maringá, Brazil)
+Maria Carolina Zanette (Neoma Business School, France)
+Marcos Inácio Severo de Almeida (Universidade Federal de Goiás, Brazil)
+Reviewers: Agnaldo Higuchi (Universidade Federal dos Vales do Jequitinhonha e Mucuri, Brazil)
+Marco Ocke (Universidade Federal de Santa Catarina, Brazil)
+Peer Review Report: The Peer Review Report is available at this external URL.
+Received: November 30, 2022
+Last version received: June 29, 2023
+Accepted: July 02, 2023
+# of invited reviewers until the decision:
+Isadora Gasparin*1
+Luiz Antonio Slongo1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1st round
+Cite as: Gasparin, I., & Slongo, L. A. (2023). Omnichannel as a consumer-based marketing strategy. Revista de 
+Administração Contemporânea, 27(4), e220327. https://doi.org/10.1590/1982-7849rac2023220327.en
+* Corresponding Author.
+Published as Early Access: July 27, 2023.
+Assigned to this issue: July 31, 2023.
+       Theoretical-empirical article
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+2
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+INTRODUCTION
+INTRODUCTION
+About a decade ago, a Harvard Business Review article 
+inaugurated a promising research stream in marketing. 
+Rigby (2011) wrote that digital retailing was evolving to 
+“something so different that it requires a new name” (Rigby, 
+2011, p. 65). The author argued that it — omnichannel 
+retailing — would disrupt the industry, guarantee firms’ 
+survival, and revolutionize the customer experience in an 
+integrated physical and digital world.
+Since then, researchers have investigated channel 
+integration strategies to overcome a ‘silo’ mentality 
+that separates online and offline worlds (Piotrowicz & 
+Cuthbertson, 2014; Verhoef et al., 2015). A growing body 
+of literature explores the drivers and barriers to integration 
+(Cao & Li, 2018; Picot-Coupey et al., 2016). However, 
+mixed findings on the effects of marketing mix alignment 
+across channels suggest that integration still faces significant 
+challenges in omnichannel marketing (see Timoumi et al., 
+2022, for a review). 
+In contrast with the initial optimism, researchers 
+often consider omnichannel marketing an ideal (Cui et al., 
+2020) and even suggest it might be utopic for some firms 
+(Hajdas et al., 2022). An emerging view is that omnichannel 
+marketing is a continuum of channel integration intensity 
+where firms align their objectives (Neslin, 2022), rather than 
+a strategy that always aims for full integration. While work 
+is still in progress to define what omnichannel phenomena 
+are, there are no clear guidelines for implementing 
+omnichannel strategies.
+Meanwhile, the customer experience in this evolving 
+environment received less attention, despite its fundamental 
+role in value exchange (Grewal et al., 2009). One reason for 
+this might be that literature has treated superior customer 
+experience as a natural consequence of omnichannel 
+strategies (Rigby, 2011; Verhoef et al., 2015). However, 
+recent studies challenge the assumption that customers 
+want uniformity across channels (Gasparin et al., 2022; 
+Mencarelli et al., 2021), suggesting that understanding 
+customer experience is a crucial step before determining 
+the level of channel integration. As Palmatier et al. (2020) 
+recommend: “the focus of any channel strategy should be 
+to understand how people buy” (Palmatier et al., 2020, p. 
+319).
+An awakening to explore the customer side of 
+omnichannel marketing is underway, with increasing 
+prominence given to customer-focused papers. A turning 
+point was the publication of Lemon and Verhoef’s (2016) 
+article summarizing findings on customer experience and 
+calling researchers to advance knowledge on complex 
+journeys across multiple channels. Yet, a narrow focus 
+persists, as studies focus on the customer’s relationship with 
+specific firms and their physical store and website (e.g., 
+Flavián et al., 2020; Swoboda & Winters, 2021). In reality, 
+journeys are much more complex than that. They include 
+firm-controlled and non-firm-controlled touchpoints across 
+online and offline channels and are embedded not only 
+in individual but also in environmental (e.g., economic, 
+political) contexts (De Keyser et al., 2020). Thus, a change 
+in priorities — from how firms integrate channels to how 
+customers experience multiple channels — could provide 
+better input to guide integration strategies.
+To this end, we ask: What do we know about the 
+customer in omnichannel marketing? What do we need to 
+know to frame a more realistic customer journey and then 
+provide more valuable insights for strategy development? 
+Our aim with this article is to reflect on these fundamental 
+questions. We present a critical review of how the customer 
+side has been addressed in omnichannel literature, identify 
+gaps in the extant research, and discuss considerations and 
+paths to fulfill these gaps. More importantly, we delineate 
+why we believe it is time for omnichannel research to 
+embrace not only a customer, but a consumer approach 
+to move the field forward. A consumer approach broadens 
+the current view by moving the focus from customers 
+interacting with a specific firm across online and offline 
+channels to consumers pursuing multilevel objectives in 
+online-offline journeys involving multiple firms and actors 
+(Hamilton & Price, 2019). This shift can provide insights 
+into the broader consumer context, where individuals play 
+multiple roles (e.g., shopper, patient, citizen) and pursue 
+individual and collective higher-order goals (e.g., improving 
+well-being, reducing waste). These insights are fundamental 
+for firms to develop strategies that help consumers meet 
+these goals while assuming their responsibilities to address 
+concerns such as making consumption more sustainable 
+(United Nations, n.d.).
+This critical review makes a revising contribution 
+to the marketing discipline (MacInnis, 2011) as it offers a 
+comprehensive evaluation of an emerging research area and 
+introduces a fresh perspective to understanding the customer 
+side of omnichannel marketing. Further, it proposes future 
+research paths to build theory for omnichannel phenomena 
+(Salvietti et al., 2022) and align omnichannel strategies 
+with contemporary consumer issues, thus responding to 
+calls for advancing consumer-based strategies (Hamilton, 
+2016; Marketing Science Institute, 2020). Hence, we 
+firmly believe that advancing omnichannel marketing 
+as a consumer-based strategy will enhance its theoretical 
+robustness and offer valuable implications for marketing 
+practitioners.
+This article follows the spirit of reflection and 
+dialogue of theoretical essays (Barros, 2011; Bertero, 2011; 
+Meneghetti, 2011a; 2011b). We introduce our objectives, 
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+3
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+explore the emergence of omnichannel marketing, and 
+define key customer concepts. When analyzing the papers, 
+we found that a myopic view of the customer prevails. 
+To address this, we propose a shift in perspective, from 
+customers to consumers, and discuss its implications. 
+Finally, we outline research paths for the future.
+THE EMERGENCE OF OMNICHANNEL 
+THE EMERGENCE OF OMNICHANNEL 
+MARKETING
+MARKETING
+A traditional view defines a channel as a way of selling 
+and delivering merchandise and services to customers (Levy 
+et al., 2013). Reflecting this transaction-focused perspective, 
+omnichannel retailing involves using various channels to sell 
+products or services, “whereby the customer can trigger full 
+channel interaction and/or the retailer controls full channel 
+integration” (Beck & Rygl, 2015, p. 175). Omnichannel 
+allows consumers to choose whatever channel they prefer 
+at any moment, with perceived interaction centered on 
+the brand rather than a specific channel (Piotrowicz & 
+Cuthbertson, 2014). 
+As functional distinctions blur in omnichannel 
+retailing, the concept of a channel has expanded to include 
+not only transactions but also interactions with customers 
+(Neslin et al., 2006). That is, consumers switch channels 
+and devices not only for purchasing but also for gathering 
+information (Verhoef et al., 2015), urging researchers to 
+broaden the channel scope to include touchpoints such as 
+traditional mass advertising channels, social media, and 
+even consumer-to-consumer communications.
+Touchpoints can be internal or external, which 
+means that firms have different levels of control over what 
+happens at these points (Lemon & Verhoef, 2016). Internal 
+touchpoints, such as physical stores and websites, offer higher 
+levels of firm control. In contrast, external touchpoints, such 
+as payment platforms and customer forums, are subject 
+to lower levels of control. It is important to note that the 
+internal-external separation is not categorical, but exists on 
+a continuum, allowing firms to have differing degrees of 
+control over partner-owned touchpoints, for example. Cui et 
+al. (2020) offer a comprehensive definition of omnichannel 
+marketing as
+"the synergistic management of all customer 
+touchpoints and channels both internal and external 
+to the firm to ensure that the customer experience 
+across channels as well as firm-side marketing 
+activity, including marketing-mix and marketing 
+communication (owned, paid, and earned), is 
+optimized for both firms and their customers" (Cui 
+et al., 2020, p. 104).
+As 
+literature 
+advanced 
+omnichannel 
+conceptualization, research interest moved to channel 
+integration (Mirzabeiki & Saghiri, 2020; Timoumi et al., 
+2022). Studies demonstrate that omnichannel strategies 
+often improve firm performance. For example, integrating 
+channel functions such as promotion, price, and assortment 
+positively impacts sales growth (Cao & Li, 2015) and 
+cost efficiency (Tagashira & Minami, 2019). Research 
+also indicates that reducing delivery times benefits online 
+and offline sales (Fisher et al., 2019), as well as the use of 
+multimedia advertising (Danaher et al., 2020). Furthermore, 
+scholars explore various internal and external barriers to 
+achieving omnichannel marketing. Picot-Coupey et al. 
+(2016) identify organizational challenges, including cultural 
+change, during the transformation of an e-tailer into an 
+omnichannel retailer. Song et al. (2020) examine the role of 
+human capital, such as skills and interpersonal relationships, 
+in supply chain integration success, while Hajdas et al. 
+(2022) highlight the significance of external factors, such 
+as market and legal environments, in a firm’s potential to 
+implement omnichannel retailing. 
+The literature makes clear that there is no universal 
+solution for integration. Hence, finding the optimal level of 
+channel integration remains an important issue (Thaichon 
+et al., 2022). In the subsequent sections, we argue that a 
+comprehensive understanding of the customer perspective 
+is essential in addressing this matter.
+KEY CUSTOMER CONCEPTS
+KEY CUSTOMER CONCEPTS
+Our customer perspective of omnichannel marketing 
+combines two research streams: customer experience and 
+customer journey. Academics and practitioners recognize 
+that understanding customer concepts is crucial to 
+achieving management objectives (Lemon & Verhoef, 2016; 
+Rosenbaum et al., 2017).
+Customer experiences are responses to a firm 
+throughout pre-purchase, purchase, and post-purchase 
+phases (Homburg et al., 2017). These responses are 
+subjective and consist of cognitive, emotional, behavioral, 
+sensorial, and social elements (Lemon & Verhoef, 2016; 
+Meyer & Schwager, 2007). Customer experience is the 
+result of interactions with market actors, thus “constituting 
+the ‘raw’ data underlying and driving the specific processes 
+that shape consumer behavior” (De Keyser et al., 2015, p. 
+14). It differs from evaluative concepts such as satisfaction 
+and service quality, as it encompasses spontaneous, non-
+deliberate responses (Becker & Jaakkola, 2020). De Keyser 
+et al. (2020) emphasize three building blocks of customer 
+experience: touchpoints (i.e., individual firm-customer 
+contacts), context (i.e., time and/or place), and qualities 
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+4
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+(i.e., attributes of customer responses and reactions). These 
+elements collectively contribute to customers’ value judgment.
+Closely related to the customer experience, the 
+customer journey represents the process of purchasing specific 
+products or services. It encompasses multiple touchpoints, 
+some of them external to the firm such as partner-owned and 
+customer-owned touchpoints (Lemon & Verhoef, 2016). A 
+hierarchical view of customer journeys considers that they are 
+embedded in a broader system of various actors and activities, 
+with consumers striving to achieve higher-order goals linked 
+to purchase goals (Becker et al., 2020).
+REVIEWING OMNICHANNEL CUSTOMER-
+REVIEWING OMNICHANNEL CUSTOMER-
+FOCUSED PAPERS
+FOCUSED PAPERS
+Omnichannel marketing objectives are providing 
+a seamless customer experience across touchpoints and 
+optimizing firm performance over channels (Verhoef et al., 
+2015). As previously noted, firm-focused papers address 
+transformations such as channel addition and integration 
+(Timoumi et al., 2022), thus linked to the second objective of 
+omnichannel marketing. The first objective, however, did not 
+receive the same level of attention. We review this literature to 
+figure out why.
+More than just describing past research, literature 
+reviews evaluate the field, provide new insights, and guide 
+future inquiry (Palmatier et al., 2018; Paul & Criado, 2020). 
+Critical reviews prove particularly valuable for emerging 
+topics, as they creatively synthesize and assess current 
+literature, leading to novel perspectives and theories (Snyder, 
+2019). Although there is no strict standard for critical reviews 
+(Torraco, 2005), authors should transparently communicate 
+criteria for paper selection and analysis, as recommended for 
+any literature review. Next, we describe the procedures for 
+selecting articles and using content analysis methods (Bardin, 
+2011; Bos & Tarnai, 1999; Seuring & Gold, 2012; White 
+& Marsh, 2006).
+Following literature review guidelines (Snyder, 2019), 
+we defined a protocol for searching customer-focused articles 
+in omnichannel literature. Using Scopus database, we searched 
+for empirical articles published between 2011 and 2021 
+with the terms ‘omnichannel’ or ‘omni-channel’ or ‘channel 
+integration’ and ‘customer’ or ‘consumer’ in the title, abstract, 
+or keywords. To focus on high-impact marketing journals, we 
+targeted the top 10 journals in Scopus CiteScore 2020, a free 
+alternative to Web of Science Journal Impact Factor (Harzing, 
+2022). The journals and scores are Journal of the Academy of 
+Marketing Science (17.0), Journal of Service Research (14.1), 
+Journal of Marketing (12.3), Journal of Consumer Research 
+(11.8), Journal of Retailing (11.8), Journal of Interactive 
+Marketing (11.4), Journal of Advertising (11.3), Journal of 
+Marketing Research (9.6), Journal of Business Research (9.2), 
+and Journal of Retailing and Consumer Services (9.0). The first 
+search yielded 50 articles. After reading titles, abstracts, and 
+keywords, we excluded 32 papers outside the analysis scope 
+(e.g., conceptual papers or single-channel empirical papers). 
+We conducted a qualitative content analysis to interpret 
+the manifest and latent content of articles (Bos & Tarnai, 
+1999; White & Marsh, 2006). Manifest content came from 
+self-reported information, while latent content was implied by 
+references, frameworks, and methods. The process had three 
+phases based on Bardin (2011): pre-analysis, exploration, and 
+interpretation. In the first phase, we conducted a preliminary 
+reading to ensure articles addressed the customer side of 
+omnichannel marketing. This initial impression was a less 
+structured activity referred to as ‘fluctuant reading’ (Bardin, 
+2011). Through iterations, we identified another 11 empirical 
+articles providing contributions into omnichannel customers, 
+albeit using alternative labels such as ‘multichannel shoppers’ 
+(Frasquet et al., 2019; Harris et al., 2018), ‘webroomers,’ and 
+‘showroomers’ (Fernández et al., 2018; Flavián et al., 2020). 
+As these articles met relevance criteria and were published in 
+high-impact journals, we included them. In total, our final set 
+consisted of 29 articles.
+In the second phase, we systematically examined the 
+articles, employing analytical categories to explore manifest 
+and latent content. Following Seuring and Gold’s (2012)
+recommendations, we initially derived categories from 
+existing literature reviews (e.g., objectives, theory, methods, 
+findings). Subsequently, we refined the categories inductively 
+while coding the data, focusing on touchpoint approach and 
+scope, stages of the customer journey explored, and customer 
+outcomes of interest. We documented relevant excerpts and 
+our observations for each category in a spreadsheet. Next, we 
+identified research themes by jointly analyzing at least three 
+categories: objectives, customer outcomes, and findings, 
+grouping the articles accordingly.
+In the third phase, we interpreted the spreadsheet, 
+considering each category in relation to essential customer 
+concepts. In the next section, we discuss how this literature 
+answers the question of what we know about the customer in 
+omnichannel marketing.
+A MYOPIC VIEW OF THE CUSTOMER
+A MYOPIC VIEW OF THE CUSTOMER
+Despite omnichannel research being a decade old, 
+articles on the customer side are still scarce (see Table 1). 
+We reviewed this literature and grouped the articles around 
+four themes: (1) customer response to omnichannel stimuli, 
+(2) customer decision-making in this environment, (3) new 
+customer behaviors, and (4) omnichannel customer segments.
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+5
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+Table 1. Customer-focused empirical papers.
+Reference
+Research topic
+Scope of 
+touchpointsa
+Stages of the 
+customer 
+journey
+Customer outcomes
+Methods
+Theoretical 
+background
+Int. 
+Ext.
+Li and Kannan (2014)
+Customers’ touches through 
+multiple online channels before 
+conversion
+✓
+✓
+P1; P2
+NA
+Secondary data
+Attribution models
+Herhausen et al. (2015)
+Customer outcomes of online-
+offline channel integration
+✓
+P2
+Perceived service quality; Perceived 
+risk; Purchase intention
+Experiment
+Technology adoption 
+models; Innovation 
+diffusion theory
+Blom et al. (2017)
+Customer response to 
+omnichannel promotions
+✓
+P1; P2
+Entertainment; Enjoyment; Brand 
+attitude
+Experiment
+Congruity theory
+Huré et al. (2017)
+Omnichannel shopping value
+✓
+P1; P2; P3
+Shopping value
+Interview; 
+Survey
+Shopping value
+Barwitz and Maas 
+(2018)
+Customer’s choice of channels to 
+interact with a service provider
+✓
+✓
+P1; P2; P3
+NA
+Focus group; 
+Interview
+Means-end theory
+Fernández et al. (2018)
+Showrooming and webrooming 
+behaviors
+✓
+✓
+P1; P2
+NA
+Survey
+Elaboration likelihood 
+model
+Harris et al. (2018)
+Shopping motivation in 
+omnichannel retailing
+✓
+P1; P2
+NA
+Interview
+Goal theory
+Flavián et al. (2019)
+Webrooming behavior
+✓
+P1; P2
+Confidence; Smart shopping 
+feelings; Search process satisfaction
+Interview; 
+Survey; 
+Experiment
+Customer experience; 
+Cognitive fit theory
+Frasquet et al. (2019)
+Customer segmentation by 
+patterns of channel usage to voice 
+complaints
+✓
+P3
+NA
+Survey
+Customer complaint 
+behavior
+Hallikainen et al. (2019) Customer segmentation by digital 
+touchpoints preference
+✓
+✓
+NS
+NA
+Survey
+Technology readiness; 
+Innovation diffusion 
+theory
+Herhausen et al. (2019)
+Customer segmentation by 
+touchpoints usage
+✓
+✓
+P1; P2
+Satisfaction; Loyalty
+Survey
+Anticipated utility 
+theory
+De Vries and Zhang 
+(2020)
+Customer response to channel 
+migration stimuli
+✓
+P1; P2
+Likelihood to switch channels
+Experiment
+Theory of 
+psychological 
+reactance
+Farah and Ramadan 
+(2020)
+Customer response to 
+omnichannel solutions
+✓
+ NS
+Purchase impulsiveness; Affective 
+experience; Word-of-mouth
+Survey
+Customer experience
+Flavián et al. (2020)
+Showrooming and webrooming 
+behaviors
+✓
+P1; P2
+Smart shopping perceptions and 
+feelings 
+Experiment
+Customer experience
+Goraya et al. (2020)
+Customer response to channel 
+integration
+✓
+P1; P2
+Empowerment; Patronage 
+intention
+Survey
+Self-determination 
+theory
+Hu and Tracogna (2020) Determinants of customer journeys 
+in omnichannel retailing
+✓
+✓
+P1; P2
+NA
+Survey
+Customer journey
+Miquel-Romero et al. 
+(2020)
+Customer choice of channels to 
+voice post-purchase complaints
+✓
+P3
+NA
+Survey; 
+Experiment
+Customer complaint 
+behavior; Stimulus-
+organism-response 
+model
+Quach et al. (2020)
+Customer response to 
+omnichannel service integration
+✓
+NS
+Flow; Perceived privacy risk; 
+Loyalty
+Survey
+Flow theory; 
+Hyperbolic 
+discounting theory 
+Tyrväinen et al. (2020)
+Customer response to 
+omnichannel personalization
+✓
+NS
+Cognitive and emotional 
+experience; Word-of-mouth;
+Purchase intention
+Interview; 
+Survey
+Customer experience
+Valentini et al. (2020)
+Customer segmentation by 
+channels used to procure and use 
+promotions
+✓
+✓
+P1; P2
+NA
+Survey
+Motivation-
+opportunity-ability 
+framework
+Dahl et al. (2021)
+Customer response to 
+omnichannel information
+✓
+✓
+NS
+Health self-awareness
+Survey
+Service dominant logic
+Fiestas and Tuzovic 
+(2021)
+Showrooming behavior
+✓
+✓
+P1; P2
+NA
+Interview
+Theory of planned 
+behavior
+Gao and Huang (2021)
+Customer response to 
+omnichannel integration quality
+✓
+NS
+Engagement; Loyalty
+Survey
+Customer engagement
+Continues
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+6
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+The first group examines customer response to 
+omnichannel stimuli, such as uniformizing the retail mix 
+across channels (Goraya et al., 2020; Huré et al., 2017), 
+integrating information access (Herhausen et al., 2015), and 
+promoting consistency and transparency of services (Quach et 
+al., 2020). These studies provide insights into how firms can 
+use omnichannel strategies to positively influence outcomes 
+such as shopping value perceptions (Huré et al., 2017), 
+purchase intention (Herhausen et al., 2015; Tyrväinen et al., 
+2020), and customer loyalty (Gao & Huang, 2021; Swoboda 
+& Winters, 2021).
+The second group explores customer decision-making 
+in omnichannel environments. This group is more customer-
+oriented than the previous one, as it addresses the influence 
+of psychographics and situational factors. For instance, Hu 
+and Tracogna (2020) focus on the determinants of different 
+customer journeys, including the need for information, 
+shopping innovation, and convenience. Harris et al. (2018)
+explore the customer motivations to configure their journeys 
+and shed light on the higher-order goals that they pursue (e.g., 
+being a good citizen). Other papers examine how customers 
+choose channels for interacting with firms (Barwitz & Maas, 
+2018; Miquel-Romero et al., 2020).
+The third group focuses on new customer behaviors 
+resulting from channel combinations. Two of the most 
+known omnichannel behaviors are webrooming (i.e., research 
+online, purchase offline) and showrooming (i.e., research 
+offline, purchase online) (Verhoef et al., 2015). Studies 
+from this group show that webroomers seek in-depth online 
+information, go to the physical store with a firm idea, and are 
+not easily influenced by sellers (Fernández et al., 2018). In the 
+luxury consumption context, webroomers value the usefulness 
+of online channels to gather information but choose the 
+physical store to touch and feel high-end products and fulfill 
+socialization needs (Shankar & Jain, 2021). Showroomers 
+seek the best price at a certain quality level and are more easily 
+influenced (Fernández et al., 2018), but do not necessarily 
+feel they save more money than webroomers (Flavián et al., 
+2020). Both behaviors influence customer perceptions and 
+feelings of shopping in a smart way (Fiestas & Tuzovic, 2021; 
+Flavián et al., 2019, 2020).
+The fourth group encompasses segmentation studies 
+based on channel usage patterns. For example, Tueanrat et 
+al. (2021a) and Herhausen et al. (2019) explore satisfaction 
+in different customer segments. Tueanrat et al. (2021a) argue 
+that omnichannel customers are more sensitive than single-
+channel segments. In the same vein, Herhausen et al. (2019)
+show that satisfaction with the journey is more relevant than 
+product satisfaction for omnishoppers. Valentini et al. (2020)
+find that customers who use online and offline channels 
+respond more strongly in consumption than single-channel 
+customers. Moreover, Hallikainen et al. (2019) explore the 
+relevance of technology readiness in customer segmentation 
+based on digital touchpoints. Overall, these papers provide 
+valuable insights into the behaviors and characteristics of 
+omnichannel customer segments.
+However, a closer look at Table 1, beyond the research 
+themes, reveals a myopic view: (1) customer response to 
+omnichannel stimuli has been treated superficially; (2) the 
+scope of touchpoints under consideration has been narrow; 
+(3) the stages of the customer journey have not been fully 
+addressed.
+First, the majority of papers from Table 1 focus on 
+the customer response to omnichannel stimuli, in line with 
+the definition of customer experience (Homburg et al., 
+Reference
+Research topic
+Scope of 
+touchpointsa
+Stages of the 
+customer 
+journey
+Customer outcomes
+Methods
+Theoretical 
+background
+Int. 
+Ext.
+Gao, Fan et al. (2021)
+Customer experience in integrated 
+channels
+✓
+NS
+Cognitive and affective experience; 
+Usage intention
+Survey
+Stimulus-organism-
+response model
+Gao, Li, et al. (2021)
+Congruence between online and 
+offline customer experience
+✓
+NS
+Retention
+Survey
+Goal theory
+Mencarelli et al. (2021)
+Customer response to e-channel 
+combinations
+✓
+P3
+Perceived value
+Survey
+Customer journey
+Shankar and Jain (2021)
+Webrooming behavior
+✓
+NS
+Hedonic and utilitarian value; 
+Online risk perceptions
+Survey
+Technology acceptance 
+model
+Swoboda and Winters 
+(2021)
+Customers’ perceptions and 
+attitudes toward online and offline 
+channels
+✓
+NS
+Loyalty
+Survey
+Categorization theory
+Tueanrat et al. (2021a)
+Customer segmentation by 
+channel choice
+✓
+P1; P2; P3
+Satisfaction
+Survey
+Customer journey
+Note. NS = Not specified; NA = Not applicable; P1 = Pre-purchase; P2 = Purchase; P3 = Post-purchase. a Internal touchpoint = controlled by the firm; External touchpoint = not 
+controlled by the firm.
+Table 1. Customer-focused empirical papers (continued).
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+7
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+2017). However, an examination of the authors’ approach 
+to customer outcomes indicates that they often fail to delve 
+into how customers react to omnichannel stimuli. Although 
+undeniably relevant, papers from Herhausen et al. (2015) and 
+Tueanrat et al. (2021a) are examples of a superficial approach 
+as they investigate evaluative concepts (i.e., perceived service 
+quality, satisfaction) as customer outcomes. That is, they do 
+not explore which internal processes drive these evaluations 
+and what is the role of different experience dimensions 
+(e.g., cognitive, emotional, social) in shaping the customers’ 
+response.
+Nonetheless, there are exceptions. For instance, 
+Tyrväinen et al. (2020) and Gao, Fan et al. (2021) explore 
+experiential responses to the integration of online and physical 
+stores. They show that integrating functions (e.g., promotion, 
+price, customer data) positively influences customer cognitive 
+and emotional reactions, leading to an increase in purchase 
+intention. In the same vein, Flavián et al. (2020) find that 
+webrooming and showrooming activities impact customers’ 
+perceptions of saving time/effort and making the right 
+purchase (i.e., cognitive experiences) and also their feelings of 
+smart shopping (i.e., affective experiences). 
+Second, Table 1 shows that the scope of touchpoints 
+investigated in these papers is surprisingly narrow. The 
+majority of the papers focus only on touchpoints that occur 
+through physical and online stores (Blom et al., 2017; 
+Goraya et al., 2020; Huré et al., 2017; Swoboda & Winters, 
+2021). Others analyze firms’ official profiles on social media 
+(Frasquet et al., 2019; Miquel-Romero et al., 2020). Few 
+papers look at external touchpoints. Exceptions address 
+search engines (Herhausen et al., 2019; Li & Kannan, 2014), 
+comparison and review websites (Barwitz & Maas, 2018; Hu 
+& Tracogna, 2020), earned media (Fernández et al., 2018; 
+Valentini et al., 2020), and word-of-mouth from friends 
+and family (Herhausen et al., 2019; Hu & Tracogna, 2020). 
+Only Herhausen et al. (2019) add competitors to the scope of 
+channels under consideration. 
+Third, customer literature in omnichannel marketing 
+has been exploring mainly the pre-purchase and purchase 
+stages of the journey, thus focusing on customer activities 
+such as search, order, and payment, that happen in firm-
+controlled touchpoints. As Table 1 shows, few papers 
+explore activities in the post-purchase phase when customer-
+controlled touchpoints became relevant for activities such as 
+consumption and engagement (Lemon & Verhoef, 2016). 
+Nonetheless, papers that address post-purchase moments such 
+as complaints (Frasquet et al., 2019; Miquel-Romero et al., 
+2020) and product usage (Mencarelli et al., 2021) still only 
+focus on internal touchpoints. These observations reinforce 
+the existence of a gap in the post-purchase stage (Tueanrat et 
+al., 2021b). 
+In sum, customer-focused omnichannel literature so 
+far provides valuable insights. However, a closer look at this 
+body of research reveals gaps that need to be addressed. Little is 
+known about how different dimensions of customer experience 
+shape customer response — this is especially true for the social 
+dimension. In addition, the role of external touchpoints in the 
+customer journey remains largely unexplored, particularly in 
+the post-purchase stage. In the same spirit as Levitt’s (1960)
+call for firms to overcome marketing myopia and be customer-
+centric rather than product-centric, we believe there is room 
+for substantial progress in the literature if researchers broaden 
+their perspective on the customer.
+THE NEED FOR A CONSUMER PERSPECTIVE
+THE NEED FOR A CONSUMER PERSPECTIVE
+Omnichannel strategies aim to enhance the customer 
+experience, which is a subjective and context-specific 
+process (Becker & Jaakkola, 2020). To achieve this goal, 
+marketers and scholars need to adopt a customer-centric 
+perspective. However, previous customer-centric studies have 
+had a narrow focus, limiting themselves to moments when 
+customers interact with specific firms while ignoring the 
+impact of a broader context on such interactions (De Keyser 
+et al., 2020). To fill this gap, we propose that omnichannel 
+marketing research needs to adopt a consumer perspective 
+(Figure 1).
+It is worth distinguishing two concepts that are often 
+used interchangeably. Customers have a relationship with 
+a specific organization (e.g., a pharmacy chain) and are 
+motivated by more concrete goals, such as getting medication. 
+Consumers have contact with multiple actors (e.g., various 
+pharmacy chains, healthcare providers, other consumers) and 
+are motivated by more abstract goals, such as feeling good 
+(Hamilton & Price, 2019). Abstract goals reflect not only an 
+individual context, but also societal issues (De Keyser et al., 
+2020).
+Researchers have called for a more consumer-centric 
+view of the journey to foster the development of consumer-
+based organizational strategies (Hamilton, 2016). This means 
+shedding light on the different roles that individuals play (e.g., 
+patient, consumer, producer), their multiple interactions 
+with other consumers, firms, and objects over time, and the 
+sociocultural context of value creation (Hamilton & Price, 
+2019; Schau & Akaka, 2021).
+The difference between consumer research and 
+consumer-based strategy is that the former generates insights 
+into consumption phenomena (Deighton, 2007); the latter 
+uses these insights to develop strategies. Because consumer 
+insights are not specific to one firm, a consumer perspective 
+on omnichannel could help researchers understand how 
+consumers react to a variety of stimuli in their customer and 
+consumer journeys.
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+8
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+How this perspective could help advance omnichannel 
+research? To answer this question, it is important to reflect 
+on how knowledge expands in a discipline. We do so by 
+following the framework proposed by Brinberg and 
+McGrath (1985). According to them, the research process 
+is the identification, selection, combination, and use of 
+elements and relations from three interrelated domains: 
+the substantive domain (i.e., the content), the conceptual 
+domain (i.e., the ideas that give meaning to content), and 
+the methodological domain (i.e., the procedures to study 
+content and ideas). A combination of two domains results 
+in alternative paths that researchers follow in a given project. 
+Taken together, the domains and paths provide a unique 
+perspective and advance a discipline over time (Grewal et 
+al., 2016; Yadav, 2010).
+SUBSTANTIVE CONSIDERATIONS
+SUBSTANTIVE CONSIDERATIONS
+The substantive domain comprises practical issues that 
+need to be explored (Grewal et al., 2016). It refers to real-
+world phenomena, such as actors behaving in some context 
+and patterns of events — in other words, “what is ‘there’ 
+prior to and independent of the intellectual enterprise we call 
+research” (Brinberg & McGrath, 1985, p. 33).
+From a customer perspective, the substantive domain 
+of omnichannel marketing includes individuals who are on a 
+customer journey across multiple touchpoints with a specific 
+firm and its partners to purchase products or services (Lemon 
+& Verhoef, 2016; Salvietti et al., 2022). These phenomena 
+evolve around concrete purchase goals and are influenced 
+by situational factors such as journey duration and risk 
+Figure 1. Customer vs. consumer perspective.
+Source: Developed by the authors.
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+9
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+perception (Herhausen et al., 2019; Shankar & Jain, 2021). 
+In contrast, a consumer perspective considers individuals who 
+are on consumer journeys that involve multiple touchpoints 
+with various firms and other actors to achieve higher-order 
+goals linked to concrete goals (Becker et al., 2020; Hamilton 
+& Price, 2019). These phenomena are embedded in larger 
+contexts (e.g., social, environmental) that influence consumer 
+behavior (De Keyser et al., 2020).
+It is important to identify omnichannel phenomena 
+from the consumer’s point of view to advance knowledge in 
+the substantive domain. For example, previous literature has 
+focused on how consumers use a given retailer’s online and 
+offline stores to search and purchase, limiting insights to a 
+market context. Less is known about consumer behaviors, 
+such as picking up products bought online at a physical 
+location (Ortlinghaus & Zielke, 2019), or returning online 
+purchases to a physical store (Robertson et al., 2020), that 
+have broader implications (e.g., reducing the carbon footprint 
+of each purchase). It is also worth analyzing the actors that 
+influence the consumer experience beyond specific firms, 
+as consumers rely on a much larger set of external actors to 
+achieve concrete and abstract goals, from other consumers 
+to artificial intelligence. Thus, the study of omnichannel 
+phenomena should integrate social influences such as 
+‘traveling companions’ (Hamilton et al., 2021) and collective 
+journeys (Thomas et al., 2020).
+CONCEPTUAL CONSIDERATIONS
+CONCEPTUAL CONSIDERATIONS
+The conceptual domain encompasses theoretical 
+frameworks that connect various concepts underlying a 
+particular phenomenon (Grewal et al., 2016). It is the abstract 
+representation of substantive phenomena in terms of their 
+attributes or properties, which, in turn, are guided by theories 
+and paradigmatic assumptions (Brinberg & McGrath, 1985).
+From a customer perspective, the conceptual domain 
+of omnichannel marketing is based on the customer journey 
+as a process in which customers interact with a firm using 
+multiple touchpoints (Lemon & Verhoef, 2016; Verhoef et 
+al., 2015). These touchpoints occur across online and offline 
+channels that are managed in a synergistic, integrated manner 
+(Cui et al., 2020; Neslin, 2022). As the focus is on the contact 
+between the customer and a specific firm, touchpoints are 
+conceptualized as owned or controlled by the firm (or its 
+partners) or independent (De Keyser et al., 2020; Lemon & 
+Verhoef, 2016). Furthermore, the conceptual domain includes 
+evaluative outcomes of such contacts that are of interest to 
+a specific firm (e.g., service quality perceptions, customer 
+satisfaction). In contrast, a consumer perspective expands the 
+conceptual domain to the consumer journey, which is based 
+on consumers’ goals rather than their relationship with a firm 
+(Hamilton & Price, 2019; Schau & Akaka, 2021). As such, it 
+helps broaden the conceptual domain of touchpoints beyond 
+a specific firm to emphasize, for example, consumer-to-
+consumer interactions (Verhoef et al., 2015). It also shifts the 
+focus from evaluations to experiences, which are the internal 
+processes that shape evaluations (De Keyser et al., 2020).
+Table 1 shows that researchers have used a variety of 
+theoretical backgrounds borrowed from other disciplines (e.g., 
+psychology, sociology) to study the customer in omnichannel 
+marketing. However, recent developments in the marketing 
+discipline, such as the concept of consumer journeys, can 
+help advance models and theories to explain and predict 
+consumers’ omnichannel attitudes and behaviors (Salvietti 
+et al., 2022) and even develop organic marketing theories 
+(Hunt, 2020; Zeithaml et al., 2020).
+METHODOLOGICAL CONSIDERATIONS
+METHODOLOGICAL CONSIDERATIONS
+The methodological domain comprises techniques and 
+data (Grewal et al., 2016). It refers to the methods to interpret 
+phenomena, including the modes of treatment of variables 
+(e.g., scales) and the procedures to examine the relations 
+among them (e.g., regression analysis) given a research strategy 
+(e.g., experiment, survey) (Brinberg & McGrath, 1985). 
+Omnichannel 
+marketing 
+from 
+the 
+customer 
+perspective has been focused on describing phenomena using 
+elements from the substantive and conceptual domains. 
+As Table 1 shows, the majority of studies have employed 
+surveys, using new or adapted scales and conceptual models 
+to test relationships between variables (e.g., perceptions and 
+evaluations of omnichannel). However, this strategy may 
+not be appropriate to study new and complex phenomena 
+and to capture subjective concepts such as consumer goals. 
+Therefore, shifting to a consumer perspective means giving 
+space to exploratory research designs that allow for free 
+expression and better cover processes that unfold over time. 
+Exploratory research can be associated with the analysis of 
+secondary data from multiple sources to capture consumer 
+information throughout the journey (Li & Kannan, 2014).
+Following the considerations about the three domains, 
+we present three research paths to develop omnichannel 
+marketing as a consumer-based strategy.
+RESEARCH PATHS FOR DEVELOPING 
+RESEARCH PATHS FOR DEVELOPING 
+CONSUMER-BASED OMNICHANNEL 
+CONSUMER-BASED OMNICHANNEL 
+MARKETING
+MARKETING
+Each path for the research process is a combination 
+of two domains with an application in the third domain 
+(Brinberg & McGrath, 1985). Following this framework, we 
+propose a research agenda based on three paths for developing 
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+10
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+consumer-based 
+omnichannel 
+marketing: 
+theoretical, 
+experimental, and empirical.
+Theoretical path
+In the theoretical path, researchers combine elements 
+and relations from the conceptual and substantive domains 
+to form a set of hypotheses. Then, they test the hypotheses by 
+applying measures and techniques from the methodological 
+domain (Brinberg & McGrath, 1985). In other words, 
+this path involves associating theories and constructs to 
+phenomena issues, and developing and testing predictions 
+(Grewal et al., 2016).
+Future research should connect the conceptual 
+domains of customer (consumer) journeys and omnichannel 
+marketing, as “conceptual thinking is at the heart of the 
+scientific enterprise” (MacInnis, 2011, p. 141). There is 
+room to improve the conceptualization of omnichannel 
+experiences and journeys (Barwitz & Maas, 2018; Gasparin 
+et al., 2022; Gao, Fan et al., 2021). For instance, researchers 
+could explore a more nuanced view of the stages of an 
+omnichannel customer journey and their relationship 
+with consumer journeys motivated by higher-order goals. 
+Future studies could identify how different dimensions of 
+experience manifest in omnichannel settings, as well as what 
+constitutes extraordinary and ordinary experiences in this 
+environment. It is also worth exploring the relationship 
+between customer experience and evaluative concepts such 
+as channel integration quality (Gao & Huang, 2021), as 
+well as examining how customers perceive their movement 
+across touchpoints (Huré et al., 2017).
+In addition, the theoretical path involves exploring 
+what is new to consumer behavior as a result of major 
+shifts in contextual factors. Thus, researchers could draw 
+from different disciplines to develop theoretical models 
+aimed at explaining omnichannel consumer phenomena 
+given contemporary themes such as hyperconnectivity 
+(Swaminathan et al., 2020) and sustainable consumption 
+(White et al., 2019). Examples of questions include: How 
+does being connected to multiple online and offline channels 
+impact consumer decision-making? Can omnichannel 
+strategies enable consumers to choose more sustainable last-
+mile delivery options?
+Findings of the theoretical path should help retailers 
+take a more active role in driving experiences and behaviors 
+by mapping ways to reach customers across multiple media 
+and channels at different stages of the journey. Hence, they 
+can better identify where the customer is in the journey 
+when they connect with specific touchpoints and which 
+consumer goals are active. For example, firms can provide 
+cross-channel guidance on product disposal or recycling, 
+which are often neglected post-purchase touchpoints.
+Experimental path
+In the experimental path, researchers combine elements 
+and relations from the conceptual and methodological 
+domains to design a study. Then, they implement the design 
+by selecting phenomena from the substantive domain 
+(Brinberg & McGrath, 1985). In other words, this path 
+involves associating theories and constructs with methods to 
+test theory in a given context (Grewal et al., 2016). 
+Future research should expand the development 
+of measures of customer constructs used in omnichannel 
+marketing. For instance, the extant literature exploring 
+the customer perception of channel integration issues is 
+conceptually fragmented into perceived channel integration 
+(Zhang et al., 2018), service integration (Quach et al., 
+2020), channel integration quality (Gao & Huang, 2021), 
+and effective customer journey design (Kuehnl et al., 2019). 
+Future studies would benefit from a unified measurement of 
+integration (Neslin, 2022). 
+Moreover, the touchpoint concept should be explored 
+beyond an extension of retail channels (Herhausen et al., 2019) 
+so that the role of external touchpoints in the omnichannel 
+customer journey could be clarified. For instance, consumer 
+feedback platforms can facilitate consumer empowerment 
+(Kozinets et al., 2021), and third-party touchpoints can 
+make consumers disassociate a specific firm from dissatisfying 
+points in the journey (Kranzbühler et al., 2019). Researchers 
+could better understand the interplay between touchpoints 
+within and outside the firm’s control. In addition, an in-
+depth investigation of omnichannel journeys should analyze 
+the roles that consumers assume (e.g., activists, citizens, 
+shoppers) in different touchpoints and how these roles can be 
+encouraged or discouraged. 
+Findings of the experimental path are relevant to 
+developing more effective omnichannel strategies because 
+they are likely to shed light on often-ignored parts of journeys, 
+such as interactions with external touchpoints, and also reveal 
+the consumer view on channel integration. Understanding 
+the interplay between these two aspects seems imperative to 
+answer how firms remove barriers across channels.
+Empirical path
+In the empirical path, researchers combine elements 
+and relations from the methodological and substantive 
+domains to form a set of observations and, then, interpret 
+these observations by selecting concepts from the conceptual 
+domain (Brinberg & McGrath, 1985). This path involves 
+associating phenomena with methods to make empirical 
+observations and develop concepts (Grewal et al., 2016).
+Future research should track real-time omnichannel 
+journeys to determine how the experience evolves. To do this, 
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+11
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+methods such as interviews and diaries are recommended 
+(Becker, 2018). Other designs rely on mobile technologies to 
+capture every encounter a consumer has with a brand in a 
+given period (Baxendale et al., 2015). 
+An extended approach to customer journeys could also 
+provide insights into underdeveloped themes such as service 
+failures and recovery across channels. Van Vaerenbergh et al. 
+(2019) argue that service recovery is a separate journey and 
+call for more research on how customers navigate across these 
+specific touchpoints. Moreover, observations of the customer 
+may unveil the harmful effects of omnichannel marketing. For 
+instance, there is evidence that privacy concerns are associated 
+with the perceived risk of omnichannel shopping (Chatterjee 
+et al., 2021; Kazancoglu & Aydin, 2018). More research is 
+needed to understand how omnichannel consumers deal 
+with privacy and intrusiveness issues, particularly over online 
+touchpoints (Cui et al., 2020).
+In addition, there are opportunities for future 
+research by expanding the use of secondary data from several 
+touchpoints. Data-driven understanding of the customer 
+is a pillar of omnichannel strategies (Palmatier et al., 2020; 
+Timoumi et al., 2022). However, integrating data from 
+different sources, especially from external touchpoints, is 
+still a challenge. This is a problem that machine learning 
+development in retailing is likely to resolve (Wang et al., 
+2020). For instance, algorithms could analyze data available 
+from multiple sources, including unstructured data (e.g., 
+text, images, video; Liu et al., 2016), to predict outcomes of 
+interest, such as conversion rate and sales, or even to identify 
+cues of customer experience dimensions.
+The findings of the empirical path will shed light 
+on the dynamics of customer experience (De Keyser et 
+al., 2020) in omnichannel environments, which can help 
+managers develop long-term customer relationships. Other 
+important development is likely to be new methods and tools 
+to aid managerial decisions by, for instance, sophisticating 
+attribution modeling (Li & Kannan, 2014; Wang et al., 
+2020).
+CONCLUSION
+CONCLUSION
+This paper critically reviews the customer-focused 
+omnichannel literature and finds that a myopic view 
+prevails. 
+Specifically, 
+existing 
+research 
+superficially 
+addresses customer response to omnichannel stimuli and 
+focuses on interactions with a single firm, mostly in the 
+pre-purchase and purchase stages of the customer journey. 
+We argue that this view is disconnected from the complex 
+landscape of touchpoints that surrounds customers and 
+also ignores the larger context in which the contacts occur.
+To overcome this myopic view, we propose that 
+researchers should adopt a consumer rather than a customer 
+perspective on omnichannel marketing. Such a perspective 
+emphasizes that individuals have multidimensional (e.g., 
+affective, cognitive) reactions to stimuli during their 
+customer journeys, which need to be further understood 
+in light of other consumer motivations, such as living 
+more sustainably. It also departs from the relationship with 
+a single firm, as consumers interact with multiple actors 
+within and outside the firm’s control at all stages of the 
+journey.
+This shift in perspective has several implications 
+for understanding holistic channel management. In the 
+substantive domain, researchers need to identify consumer 
+phenomena that encompass multiple touchpoints with 
+different actors and broaden the range of outcomes studied. 
+In doing so, research can provide insights not only for the 
+market context (e.g., how to improve satisfaction across 
+channels), but also for the environmental context (e.g., 
+how to promote sustainable consumption across channels). 
+In the conceptual domain, the focus should shift from 
+evaluations and concrete purchase goals to experiences and 
+abstract goals so that consumer-based strategies can help 
+consumers achieve them. In the methodological domain, 
+the consumer experience should be at the heart of the 
+research design.
+This article offers three research paths (i.e., 
+theoretical, experimental, empirical) for the future. They 
+represent a collective effort to move the field forward. 
+Regardless of individual research paths, the focus needs 
+to be on generating novel insights about omnichannel 
+phenomena, and, more importantly, using this knowledge 
+to inform strategic decisions so channel integration can 
+serve not only performance objectives but also the greater 
+challenges of today’s world.
+REFERENCES
+Bardin, L. (2011). Análise de conteúdo. Edições 70.
+Barros, K. S. M. de. (2011). Réplica 1 - o que é um ensaio? Revista 
+de 
+Administração 
+Contemporânea, 
+15(2), 
+333-337. 
+https://doi.org/10.1590/S1415-65552011000200011
+Barwitz, N., & Maas, P. (2018). Understanding the omnichannel 
+customer journey: Determinants of interaction choice. 
+Journal 
+of 
+Interactive 
+Marketing, 
+43(1), 
+116-133. 
+https://doi.org/10.1016/j.intmar.2018.02.001
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+12
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+Baxendale, S., Macdonald, E. K., & Wilson, H. N. (2015). 
+The 
+impact 
+of 
+different 
+touchpoints 
+on 
+brand 
+consideration. Journal of Retailing, 91(2), 235-253. 
+https://doi.org/10.1016/j.jretai.2014.12.008
+Beck, N., & Rygl, D. (2015). Categorization of multiple channel retailing 
+in multi-, cross-, and omni‐channel retailing for retailers 
+and retailing. Journal of Retailing and Consumer Services, 27, 
+170-178. https://doi.org/10.1016/j.jretconser.2015.08.001
+Becker, L. (2018). Methodological proposals for the study of 
+consumer experience. Qualitative Market Research, 21(4), 
+465-490. https://doi.org/10.1108/QMR-01-2017-0036
+Becker, L., & Jaakkola, E. (2020). Customer experience: 
+Fundamental premises and implications for research. 
+Journal of the Academy of Marketing Science, 48, 630-648. 
+https://doi.org/10.1007/s11747-019-00718-x
+Becker, L., Jaakkola, E., & Halinen, A. (2020). Toward 
+a 
+goal-oriented 
+view 
+of 
+customer 
+journeys. 
+Journal 
+of 
+Service 
+Management, 
+31(4), 
+767-790. 
+https://doi.org/10.1108/JOSM-11-2019-0329
+Bertero, C. O. (2011). Réplica 2 - o que é um ensaio teórico? 
+Réplica 
+a 
+Francis 
+Kanashiro 
+Meneghetti. 
+Revista 
+de 
+Administração 
+Contemporânea, 
+15(2), 
+338-342. 
+https://doi.org/10.1590/S1415-65552011000200012
+Blom, A., Lange, F., & Hess, R. L., Jr. (2017). Omnichannel-based 
+promotions’ effects on purchase behavior and brand image. 
+Journal of Retailing and Consumer Services, 39, 286-295. 
+https://doi.org/10.1016/j.jretconser.2017.08.008
+Bos, W. , & Tarnai, C. (1999). Content analysis in 
+empirical 
+social 
+research. 
+International 
+Journal 
+of 
+Educational 
+Research, 
+31(8), 
+659-671. 
+https://doi.org/10.1016/S0883-0355(99)00032-4
+Brinberg, D., & McGrath, J. E. (1985). Validity and the research 
+process. Sage Publications.
+Cao, L., & Li, L. (2015). The impact of cross-channel integration on 
+retailers’ sales growth. Journal of Retailing, 91(2), 198-216. 
+https://doi.org/10.1016/j.jretai.2014.12.005
+Cao, L., & Li, L. (2018). Determinants of retailers’ cross-channel 
+integration: An innovation diffusion perspective on omni-
+channel retailing. Journal of Interactive Marketing, 44(1), 
+1-16. https://doi.org/10.1016/j.intmar.2018.04.003
+Chatterjee, S., Chaudhuri, R., & Vrontis, D. (2021). Examining 
+the global retail apocalypse during the COVID-19 
+pandemic using strategic omnichannel management: A 
+consumers’ data privacy and data security perspective. 
+Journal 
+of 
+Strategic 
+Marketing, 
+29(7), 
+617-632. 
+https://doi.org/10.1080/0965254X.2021.1936132
+Cui, T. H., Ghose, A., Halaburda, H., Iyengar, R., Pauwels, K., 
+Sriram, S., Tucker, C., & Venkataraman, S. (2020). 
+Informational challenges in omnichannel marketing: 
+Remedies and future research. Journal of Marketing, 85(1), 
+103-120. https://doi.org/10.1177/0022242920968810
+Dahl, A. J., Milne, G. R., & Peltier, J. W. (2021). Digital health 
+information seeking in an omni-channel environment: 
+A shared decision-making and service-dominant logic 
+perspective. Journal of Business Research, 125, 840-850. 
+https://doi.org/10.1016/j.jbusres.2019.02.025
+Danaher, P. J., Danaher, T. S., Smith, M. S., & Loaiza-Maya, R. 
+(2020). Advertising effectiveness for multiple retailer-
+brands in a multimedia and multichannel environment. 
+Journal 
+of 
+Marketing 
+Research, 
+57(3), 
+445-467. 
+https://doi.org/10.1177/0022243720910104
+De Keyser, A., Lemon, K. N., Klaus, P., & Keiningham, T. L. 
+(2015). A framework for understanding and managing the 
+customer experience [Working Paper n° 15-121]. Marketing 
+Science Institute Working Paper Series. New York, NY. 
+https://www.msi.org/?post_type=resources&p=1716
+De Keyser, A., Verleye, K., Lemon, K. N., Keiningham, T. L., & 
+Klaus, P. (2020). Moving the customer experience field 
+forward: Introducing the Touchpoints, Context, Qualities 
+(TCQ) nomenclature. Journal of Service Research, 23(4), 
+433-455. https://doi.org/10.1177/1094670520928390
+De Vries, E. L. E., & Zhang, S. (2020). The effectiveness of 
+random discounts for migrating customers to the mobile 
+channel. Journal of Business Research, 110, 272-281. 
+https://doi.org/10.1016/j.jbusres.2020.01.041
+Deighton, J. (2007). From the editor: The territory of consumer 
+research: Walking the fences. Journal of Consumer Research, 
+34(3), 279-282. https://doi.org/10.1086/522653
+Farah, M. F., & Ramadan, Z. B. (2020). Viability of Amazon’s 
+driven innovations targeting shoppers’ impulsiveness. 
+Journal of Retailing and Consumer Services, 53, 101973. 
+https://doi.org/10.1016/j.jretconser.2019.101973
+Fernández, N. V., Pérez, M. J. S., & Vázquez-Casielles, R. 
+(2018). Webroomers versus showroomers: Are they 
+the same? Journal of Business Research, 92, 300-320. 
+https://doi.org/10.1016/j.jbusres.2018.08.004
+Fiestas, J. C., & Tuzovic, S. (2021). Mobile-assisted showroomers: 
+Understanding their purchase journey and personalities. 
+Journal of Retailing and Consumer Services, 58, 102280. 
+https://doi.org/10.1016/j.jretconser.2020.102280
+Fisher, M. L., Gallino, S., & Xu, J. J. (2019). The value of rapid delivery in 
+omnichannel retailing. Journal of Marketing Research, 56(5), 
+732-748. https://doi.org/10.1177/0022243719849940
+Flavián, C., Gurrea, R., & Orús, C. (2019). Feeling confident and 
+smart with webrooming: Understanding the consumer’s 
+path to satisfaction. Journal of Interactive Marketing, 47(1), 
+1-15. https://doi.org/10.1016/j.intmar.2019.02.002
+Flavián, C., Gurrea, R., & Orús, C. (2020). Combining channels 
+to make smart purchases: The role of webrooming and 
+showrooming. Journal of Retailing and Consumer Services, 52, 
+101923. https://doi.org/10.1016/j.jretconser.2019.101923
+Frasquet, M., Ieva, M., & Ziliani, C. (2019). Understanding 
+complaint channel usage in multichannel retailing. 
+Journal of Retailing and Consumer Services, 47, 94-103. 
+https://doi.org/10.1016/j.jretconser.2018.11.007
+Gao, M., & Huang, L. (2021). Quality of channel integration and 
+customer loyalty in omnichannel retailing: The mediating 
+role of customer engagement and relationship program 
+receptiveness. Journal of Retailing and Consumer Services, 63, 
+102688. https://doi.org/10.1016/j.jretconser.2021.102688
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+13
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+Gao, W., Fan, H., Li, W., & Wang, H. (2021). Crafting the customer 
+experience in omnichannel contexts: The role of channel 
+integration. Journal of Business Research, 126, 12-22. 
+https://doi.org/10.1016/j.jbusres.2020.12.056
+Gao, W., Li, W., Fan, H., & Jia, X. (2021). How customer 
+experience incongruence affects omnichannel customer 
+retention: The moderating role of channel characteristics. 
+Journal of Retailing and Consumer Services, 60, 102487. 
+https://doi.org/10.1016/j.jretconser.2021.102487
+Gasparin, I., Panina, E., Becker, L., Yrjölä, M., Jaakkola, E., 
+& Pizzutti, C. (2022). Challenging the “integration 
+imperative”: A customer perspective on omnichannel 
+journeys. Journal of Retailing and Consumer Services, 64, 
+102829. https://doi.org/10.1016/j.jretconser.2021.102829
+Goraya, M. A. S., Zhu, J., Akram, M. S., Shareef, M. A., Malik, A., 
+& Bhatti, Z. A. (2020). The impact of channel integration 
+on consumers’ channel preferences: Do showrooming 
+and webrooming behaviors matter? Journal of Retailing 
+and Consumer Services, Advance online publication. 
+https://doi.org/10.1016/j.jretconser.2020.102130
+Grewal, D., Levy, M., & Kumar, V. (2009). Customer 
+experience management in retailing: An organizing 
+framework. 
+Journal 
+of 
+Retailing, 
+85(1), 
+1-14. 
+https://doi.org/10.1016/j.jretai.2009.01.001
+Grewal, D., Roggeveen, A. L., & Nordfält, J. (2016). Roles of 
+retailer tactics and customer-specific factors in shopper 
+marketing: Substantive, methodological, and conceptual 
+issues. Journal of Business Research, 69(3), 1009-1013. 
+https://doi.org/10.1016/j.jbusres.2015.08.012
+Hajdas, M., Radomska, J., & Silva, S. C. (2022). The omni-
+channel approach: A utopia for companies? Journal 
+of Retailing and Consumer Services, 65, 102131. 
+https://doi.org/10.1016/j.jretconser.2020.102131
+Hallikainen, H., Alamäki, A., & Laukkanen, T. (2019). Individual 
+preferences of digital touchpoints: A latent class analysis. 
+Journal of Retailing and Consumer Services, 50, 386-393. 
+https://doi.org/10.1016/j.jretconser.2018.07.014
+Hamilton, R. (2016). Consumer-based strategy: Using multiple 
+methods to generate consumer insights that inform strategy. 
+Journal of the Academy of Marketing Science, 44, 281-285. 
+https://doi.org/10.1007/s11747-016-0476-7
+Hamilton, R., & Price, L. L. (2019). Consumer journeys: 
+Developing 
+consumer-based 
+strategy. 
+Journal 
+of 
+the Academy of Marketing Science, 47, 187-191. 
+https://doi.org/10.1007/s11747-019-00636-y
+Hamilton, R., Ferraro, R., Haws, K. L., & Mukhopadhyay, 
+A. (2021). Traveling with companions: The social 
+customer journey. Journal of Marketing, 85(1), 68-92. 
+https://doi.org/10.1177/0022242920908227
+Harris, P., Riley, F. D., & Hand, C. (2018). Understanding 
+multichannel shopper journey configuration: An application 
+of goal theory. Journal of Retailing and Consumer Services, 44, 
+108-117. https://doi.org/10.1016/j.jretconser.2018.06.005
+Harzing. (2022). Journal Quality List (69th edition, 1 July 2022). 
+https://harzing.com/download/jql69_subject_2.pdf
+Herhausen, D., Binder, J., Schoegel, M., & Herrmann, A. 
+(2015). Integrating bricks with clicks: Retailer-level 
+and channel-level outcomes of online-offline channel 
+integration. 
+Journal 
+of 
+Retailing, 
+91(2), 
+309-325. 
+https://doi.org/10.1016/j.jretai.2014.12.009
+Herhausen, D., Kleinlercher, K., Verhoef, P. C., Emrich, O., & 
+Rudolph, T. (2019). Loyalty formation for different 
+customer journey segments. Journal of Retailing, 95(3), 
+9-29. https://doi.org/10.1016/j.jretai.2019.05.001
+Homburg, C., Jozić, D., & Kuehnl, C. (2017). Customer experience 
+management: Toward implementing an evolving marketing 
+concept. Journal of the Academy of Marketing Science, 45(3), 
+377-401. https://doi.org/10.1007/s11747-015-0460-7
+Hu, T. I., & Tracogna, A. (2020). Multichannel customer journeys 
+and their determinants: Evidence from motor insurance. 
+Journal of Retailing and Consumer Services, 54, 102022. 
+https://doi.org/10.1016/j.jretconser.2019.102022
+Hunt, S. D. (2020). Indigenous theory development in marketing: 
+The foundational premises approach. AMS Review, 10, 
+8-17. https://doi.org/10.1007/s13162-020-00165-w
+Huré, E., Picot-Coupey, K., & Ackermann, C.-L. (2017). 
+Understanding omni-channel shopping value: A mixed-
+method study. Journal of Retailing and Consumer Services, 39, 
+314-330. https://doi.org/10.1016/j.jretconser.2017.08.011
+Kazancoglu, I., & Aydin, H. (2018). An investigation of consumers’ 
+purchase intentions towards omni-channel shopping: 
+A qualitative exploratory study. International Journal of 
+Retail and Distribution Management, 46(10), 959-976. 
+https://doi.org/10.1108/IJRDM-04-2018-0074
+Kozinets, R. V, Ferreira, D. A., & Chimenti, P. (2021). How do platforms 
+empower consumers? Insights from the affordances and 
+constraints of Reclame Aqui. Journal of Consumer Research, 
+48(3), 428-455. https://doi.org/10.1093/jcr/ucab014
+Kranzbühler, A. M., Kleijnen, M. H. P., & Verlegh, P. W. J. (2019). 
+Outsourcing the pain, keeping the pleasure: Effects 
+of outsourced touchpoints in the customer journey. 
+Journal of the Academy of Marketing Science, 47, 308-327. 
+https://doi.org/10.1007/s11747-018-0594-5
+Kuehnl, C., Jozic, D., & Homburg, C. (2019). Effective customer 
+journey design: Consumers’ conception, measurement, and 
+consequences. Journal of the Academy of Marketing Science, 47, 
+551-568. https://doi.org/10.1007/s11747-018-00625-7
+Lemon, K. N., & Verhoef, P. C. (2016). Understanding 
+customer 
+experience 
+throughout 
+the 
+customer 
+journey. 
+Journal 
+of 
+Marketing, 
+80(6), 
+69-96. 
+https://doi.org/10.1509/jm.15.0420
+Levitt, T. (1960). Marketing myopia. Harvard Business Review, 38, 
+45-56.
+Levy, M., Weitz, B. A., & Grewal, D. (2013). Retailing management 
+(9th edition). McGraw-Hill Education.
+Li, H., & Kannan, P. K. (2014). Attributing conversions in a 
+multichannel online marketing environment: An empirical 
+model and a field experiment. Journal of Marketing Research, 
+51(1), 40-56. https://doi.org/10.1509/jmr.13.0050
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+14
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+Liu, X., Singh, P. V., & Srinivasan, K. (2016). A structured 
+analysis of unstructured big data by leveraging cloud 
+computing. 
+Marketing 
+Science, 
+35(3), 
+363–388. 
+https://doi.org/10.1287/mksc.2015.0972
+MacInnis, D. J. (2011). A framework for conceptual contributions 
+in marketing. Journal of Marketing, 75(4), 136-154. 
+https://doi.org/10.1509/jmkg.75.4.136
+Marketing Science Institute. (2020). Research priorities 2020-2022. 
+https://www.msi.org/wp-content/uploads/2021/07/MSI-
+2020-22-Research-Priorities-final.pdf-WORD.pdf
+Mencarelli, R., Rivière, A., & Lombart, C. (2021). Do myriad e-channels 
+always create value for customers? A dynamic analysis of the 
+perceived value of a digital information product during the 
+usage phase. Journal of Retailing and Consumer Services, 63, 
+102674. https://doi.org/10.1016/j.jretconser.2021.102674
+Meneghetti, F. K. (2011a). O que é um ensaio-teórico? Revista 
+de 
+Administração 
+Contemporânea, 
+15(2), 
+320-332. 
+https://doi.org/10.1590/S1415-65552011000200010
+Meneghetti, F. K. (2011b). Tréplica - o que é um ensaio-
+teórico? Tréplica à professora Kazue Saito Monteiro de 
+Barros e ao professor Carlos Osmar Bertero. Revista 
+de 
+Administração 
+Contemporânea, 
+15(2), 
+343-348. 
+https://doi.org/10.1590/S1415-65552011000200013
+Meyer, C., & Schwager, A. (2007). Understanding customer 
+experience. Harvard Business Review, 85(6), 137. 
+https://hbr.org/2007/02/understanding-customer-experience
+Miquel-Romero, M. J., Frasquet, M., & Molla-Descals, A. (2020). 
+The role of the store in managing postpurchase complaints 
+for omnichannel shoppers. Journal of Business Research, 109, 
+288-296. https://doi.org/10.1016/j.jbusres.2019.09.057
+Mirzabeiki, V., & Saghiri, S. S. (2020). From ambition 
+to action: How to achieve integration in omni-
+channel? Journal of Business Research, 110, 1-11. 
+https://doi.org/10.1016/j.jbusres.2019.12.028
+Neslin, S. A. (2022). The omnichannel continuum: Integrating 
+online and offline channels along the customer 
+journey. 
+Journal 
+of 
+Retailing, 
+98(1), 
+111-132. 
+https://doi.org/10.1016/j.jretai.2022.02.003
+Neslin, S. A., Grewal, D., Leghorn, R., Shankar, V., Teerling, 
+M. L., Thomas, J. S., & Verhoef, P. C. (2006). 
+Challenges and opportunities in multichannel customer 
+management. Journal of Service Research, 9(2), 95-112. 
+https://doi.org/10.1177/1094670506293559
+Ortlinghaus, A., & Zielke, S. (2019). Designing multi-
+channel 
+technologies–the 
+mediating 
+role 
+of 
+risk 
+perceptions. 
+International 
+Review 
+of 
+Retail, 
+Distribution and Consumer Research, 29(5), 518-536. 
+https://doi.org/10.1080/09593969.2019.1664610
+Palmatier, R. W., Houston, M. B., & Hulland, J. (2018). 
+Review 
+articles: 
+Purpose, 
+process, 
+and 
+structure. 
+Journal of the Academy of Marketing Science, 46(1), 1-5. 
+https://doi.org/10.1007/s11747-017-0563-4
+Palmatier, R. W., Sivadas, E., Stern, L. W., & El-Ansary, A. I. (2020). 
+Marketing channel strategy: An omni-channel approach (9th 
+Edition). Routledge.
+Paul, J., & Criado, A. R. (2020). The art of writing literature 
+review: What do we know and what do we need to 
+know? International Business Review, 29(4), 101717. 
+https://doi.org/10.1016/j.ibusrev.2020.101717
+Picot-Coupey, K., Huré, E., & Piveteau, L. (2016). Channel 
+design to enrich customers’ shopping experiences: 
+Synchronizing clicks with bricks in an omni-channel 
+perspective – the Direct Optic case. International 
+Journal of Retail and Distribution Management, 44(3). 
+https://doi.org/10.1108/IJRDM-04-2015-0056
+Piotrowicz, W., & Cuthbertson, R. (2014). Introduction to 
+the Special Issue Information Technology in Retail: 
+Toward 
+Omnichannel 
+Retailing. 
+International 
+Journal 
+of 
+Electronic 
+Commerce, 
+18(4), 
+5-16. 
+https://doi.org/10.2753/jec1086-4415180400
+Quach, S., Barari, M., Moudrý, D. V., & Quach, K. (2020). 
+Service 
+integration 
+in 
+omnichannel 
+retailing 
+and its impact on customer experience. Journal 
+of Retailing and Consumer Services, 65, 102267. 
+https://doi.org/10.1016/j.jretconser.2020.102267
+Rigby, D. (2011). The future of shopping. Harvard Business Review, 
+89, 65-76. https://hbr.org/2011/12/the-future-of-shopping
+Robertson, T. S., Hamilton, R., & Jap, S. D. (2020). Many (un)happy 
+returns? The changing nature of retail product returns and 
+future research directions. Journal of Retailing, 96(2), 172-
+177. https://doi.org/10.1016/j.jretai.2020.04.001
+Rosenbaum, M. S., Otalora, M. L., & Ramírez, G. C. 
+(2017). 
+How 
+to 
+create 
+a 
+realistic 
+customer 
+journey 
+map. 
+Business 
+Horizons, 
+60(1), 
+143-150. 
+https://doi.org/10.1016/j.bushor.2016.09.010
+Salvietti, G., Ziliani, C., Teller, C., Ieva, M., & Ranfagni, S. (2022). 
+Omnichannel retailing and post-pandemic recovery: 
+Building a research agenda. International Journal of 
+Retail & Distribution Management, 50(8-9), 1156-1181. 
+https://doi.org/10.1108/IJRDM-10-2021-0485
+Schau, H. J., & Akaka, M. A. (2021). From customer journeys 
+to 
+consumption 
+journeys: 
+A 
+consumer 
+culture 
+approach to investigating value creation in practice-
+embedded consumption. AMS Review, 11(1-2), 9-22. 
+https://doi.org/10.1007/s13162-020-00177-6
+Seuring, S., & Gold, S. (2012). Conducting content-analysis 
+based literature reviews in supply chain management. 
+Supply 
+Chain 
+Management, 
+17(5), 
+544-555. 
+https://doi.org/10.1108/13598541211258609
+Shankar, A., & Jain, S. (2021). Factors affecting luxury consumers’ 
+webrooming intention: A moderated-mediation approach. 
+Journal of Retailing and Consumer Services, 58, 102306. 
+https://doi.org/10.1016/j.jretconser.2020.102306
+Snyder, H. (2019). Literature review as a research methodology: An 
+overview and guidelines. Journal of Business Research, 104, 
+333-339. https://doi.org/10.1016/j.jbusres.2019.07.039
+Song, S., Shi, X., & Song, G. (2020). Supply chain integration 
+in 
+omni-channel 
+retailing: 
+A 
+human 
+resource 
+management perspective. International Journal of Physical 
+Distribution & Logistics Management, 50(1), 101-121. 
+https://doi.org/10.1108/IJPDLM-04-2019-0115
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+15
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+Swaminathan, V., Sorescu, A., Steenkamp, J-B. E. M., 
+O’Guinn, T. C. G., & Schmitt, B. (2020). Branding 
+in a hyperconnected world: Refocusing theories and 
+rethinking boundaries. Journal of Marketing, 84(2), 24-46. 
+https://doi.org/10.1177/0022242919899905
+Swoboda, B., & Winters, A. (2021). Reciprocity within major retail 
+purchase channels and their effects on overall, offline and 
+online loyalty. Journal of Business Research, 125, 279-294. 
+https://doi.org/10.1016/j.jbusres.2020.12.024
+Tagashira, T., & Minami, C. (2019). The effect of cross-channel 
+integration on cost efficiency. Journal of Interactive Marketing, 
+47(1), 68-83. https://doi.org/10.1016/j.intmar.2019.03.002
+Thaichon, P., Phau, I., & Weaven, S. (2022). Moving from 
+multi-channel to Omni-channel retailing: Special issue 
+introduction. Journal of Retailing and Consumer Services, 65, 
+102311. https://doi.org/10.1016/j.jretconser.2020.102311
+Thomas, T. C., Epp, A. M., & Price, L. L. (2020). Journeying 
+together: Aligning retailer and service provider roles with 
+collective consumer practices. Journal of Retailing, 96(1), 
+9-24. https://doi.org/10.1016/j.jretai.2019.11.008
+Timoumi, A., Gangwar, M., & Mantrala, M. K. (2022). Cross-channel 
+effects of omnichannel retail marketing strategies: A review 
+of extant data-driven research. Journal of Retailing, 98(1), 
+133-151. https://doi.org/10.1016/j.jretai.2022.02.008
+Torraco, R. (2005). Writing integrative literature reviews: Guidelines 
+and examples. Human Resource Development Review, 4(3), 
+356-367. https://doi.org/10.1177/1534484305278283
+Tueanrat, Y., Papagiannidis, S., & Alamanos, E. (2021a). A 
+conceptual framework of the antecedents of customer 
+journey satisfaction in omnichannel retailing. Journal 
+of Retailing and Consumer Services, 61, 102550. 
+https://doi.org/10.1016/j.jretconser.2021.102550
+Tueanrat, Y., Papagiannidis, S., & Alamanos, E. (2021b). 
+Going on a journey: A review of the customer journey 
+literature. Journal of Business Research, 125, 336-353. 
+https://doi.org/10.1016/j.jbusres.2020.12.028
+Tyrväinen, O., Karjaluoto, H., & Saarijärvi, H. (2020). 
+Personalization and hedonic motivation in creating 
+customer experiences and loyalty in omnichannel retail. 
+Journal of Retailing and Consumer Services, 57, 102223. 
+https://doi.org/10.1016/j.jretconser.2020.102233
+United Nations. (n. d.). Sustainable development goals. Department of 
+Economic and Social Affairs. https://sdgs.un.org/goals
+Valentini, S., Neslin, S. A., & Montaguti, E. (2020). Identifying 
+omnichannel deal prone segments, their antecedents, and 
+their consequences. Journal of Retailing, 96(3), 310-327. 
+https://doi.org/10.1016/j.jretai.2020.01.003
+Van Vaerenbergh, Y., Varga, D., De Keyser, A., & Orsingher, C. 
+(2019). The service recovery journey: Conceptualization, 
+integration, 
+and 
+directions 
+for 
+future 
+research. 
+Journal 
+of 
+Service 
+Research, 
+22(2), 
+103-119. 
+https://doi.org/10.1177/1094670518819852
+Verhoef, P. C., Kannan, P. K., & Inman, J. J. (2015). From 
+multi-channel 
+retailing 
+to 
+omni-channel 
+retailing: 
+Introduction to the Special Issue on Multi-Channel 
+Retailing. 
+Journal 
+of 
+Retailing, 
+91(2), 
+174-181. 
+https://doi.org/10.1016/j.jretai.2015.02.005
+Wang, X., Ryoo, J. H., Bendle, N., & Kopalle, P. K. (2020). 
+The role of machine learning analytics and metrics in 
+retailing research. Journal of Retailing, 97(4), 658-675. 
+https://doi.org/10.1016/j.jretai.2020.12.001
+White, K., Habib, R., & Hardisty, D. J. (2019). How to SHIFT 
+consumer behaviors to be more sustainable: A literature 
+review and guiding framework. Journal of Marketing, 83(3), 
+22-49. https://doi.org/10.1177/0022242919825649
+White, M., & Marsh, E. (2006). Content analysis: A 
+flexible methodology. Library Trends, 55(1), 22-45. 
+https://doi.org/10.1353/lib.2006.0053
+Yadav, M. S. (2010). The decline of conceptual articles and implications 
+for knowledge development. Journal of Marketing, 74(1), 
+1-19. https://doi.org/10.1509/jmkg.74.1.1
+Zeithaml, V. A., Jaworski, B. J., Kohli, A. K., Tuli, K. R., Ulaga, 
+W., & Zaltman, G. (2020). A theories-in-use approach to 
+building marketing theory. Journal of Marketing, 84(1), 32-
+51. https://doi.org/10.1177/0022242919888477
+Zhang, M., Ren, C., Wang, G. A., & He, Z. (2018). The impact of 
+channel integration on consumer responses in omni-channel 
+retailing: The mediating effect of consumer empowerment. 
+Electronic Commerce Research and Applications, 28, 181-193. 
+https://doi.org/10.1016/j.elerap.2018.02.002
+
+I. Gasparin, L. A. Slongo
+Omnichannel as a consumer-based marketing strategy
+16
+Revista de Administração Contemporânea, v. 27, n. 4, e220327, 2023 | doi.org/10.1590/1982-7849rac2023220327.en| e-ISSN 1982-7849 | rac.anpad.org.br
+Authorship
+Isadora Gasparin*
+Universidade Federal do Rio Grande do Sul, Escola de Administração
+Rua Washington Luiz, n. 855, CEP 90010-460, Porto Alegre, RS, 
+Brazil
+E-mail: isadora.gasparin@ufrgs.br
+ https://orcid.org/0000-0002-8799-7098
+Luiz Antonio Slongo
+Universidade Federal do Rio Grande do Sul, Escola de Administração
+Rua Washington Luiz, n. 855, CEP 90010-460, Porto Alegre, RS, 
+Brazil
+E-mail: luiz.slongo@ufrgs.br
+ https://orcid.org/0000-0002-8269-4338
+* Corresponding Author
+Funding
+The authors thank the Brazilian National Council for Scientific 
+and Technological Development - CNPq (research grant 
+#141759/2020-8), for the financial support for this work.
+Plagiarism Check
+RAC maintains the practice of submitting all documents 
+approved for publication to the plagiarism check, using 
+specific tools, e.g.: iThenticate.
+Copyrights
+The authors retain the copyright relating to their article 
+and grant the journal RAC, from ANPAD, the right of first 
+publication, with the work simultaneously licensed under 
+the Creative Commons Attribution 4.0 International license 
+(CC BY 4.0).
+Authors' Contributions
+1st author: conceptualization (lead); visualization (lead); 
+writing – original draft (lead); writing – review & editing 
+(supporting).
+2nd 
+author: 
+conceptualization 
+(supporting); 
+project 
+administration (supporting); supervision (lead); writing – 
+review & editing (lead).
+Conflict of Interests
+The authors have stated that there is no conflict of interest.
+Peer Review Method
+This content was evaluated using the double-blind peer 
+review process. The disclosure of the reviewers’ information 
+on the first page, as well as the Peer Review Report, is made 
+only after concluding the evaluation process, and with the 
+voluntary consent of the respective reviewers and authors.
+Data Availability
+The authors claim that all data used in the research have 
+been made publicly available through the Harvard Dataverse 
+platform and can be accessed at:
+Gasparin, Isadora; Slongo, Luiz Antonio, 2023, 
+"Replication Data for: "Omnichannel as a 
+consumer-based marketing strategy" published by 
+RAC-Revista de Administração Contemporânea", 
+Harvard Dataverse, V1. 
+https://doi.org/10.7910/DVN/S3DHMF
+RAC encourages data sharing but, in compliance with 
+ethical principles, it does not demand the disclosure of any 
+means of identifying research subjects, preserving the privacy 
+of research subjects. The practice of open data is to enable 
+the reproducibility of results, and to ensure the unrestricted 
+transparency of the results of the published research, without 
+requiring the identity of research subjects.
+RAC is a member of, and subscribes to the principles of the Committee on Publication Ethics (COPE) for scholarly publication
