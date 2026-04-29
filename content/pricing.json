@@ -5,56 +5,62 @@
       "name": "Align",
       "tagline": "See Clearly. Fix First.",
       "term": "90 Days",
+      "badge": "Diagnostic",
       "features": [
-        "Full revenue system diagnostic",
+        "Full 5-stage revenue system diagnostic",
         "Positioning and messaging clarity",
         "Website restructured for buyer evaluation",
-        "Buyer-facing proof and trust signals",
+        "22+ Buyer-facing proof and trust signals",
         "First-layer visibility improvements",
-        "Prioritized action plan"
+        "Prioritized action plan with 100% specificity"
       ],
       "locked_features": [
-        "Build",
-        "Command"
+        "Automated OS",
+        "Team Ownership"
       ],
       "cta_text": "Schedule Discovery",
-      "highlighted": false
+      "highlighted": false,
+      "value_nudge": "Perfect for diagnosing immediate leaks."
     },
     {
       "id": "build",
       "name": "Build",
-      "tagline": "Activate the Engine — Recommended",
+      "tagline": "Activate the Engine",
       "term": "6 Months",
+      "badge": "Recommended / Best Value",
       "features": [
         "Everything in Align",
         "Operating system for visibility and automation",
-        "Automated signal capture across the journey",
+        "Automated signal capture across 12+ touchpoints",
         "Nurture, follow-up, and review automation",
-        "Cross-team handoff improvements",
-        "Recurring reviews tied to real signals"
+        "Cross-team handoff protocol improvements",
+        "Recurring reviews tied to 8+ real-time signals"
       ],
       "locked_features": [
-        "Command"
+        "Full Team Independence"
       ],
       "cta_text": "Apply for Partnership",
-      "highlighted": true
+      "highlighted": true,
+      "value_nudge": "The fastest path to a connected commercial system."
     },
     {
       "id": "command",
       "name": "Command",
       "tagline": "Own It. Run It. Scale It.",
       "term": "12 Months",
+      "badge": "Sovereign Scale",
       "features": [
         "Everything in Build",
         "Governance framework and ownership rules",
-        "Tool rationalization and workflow simplification",
+        "Tool rationalization (Stack efficiency audit)",
         "System documentation and data model hardening",
-        "Transition to full team independence",
-        "A system that improves without outside help"
+        "Transition to 100% team independence",
+        "A system that improves via feedback loops"
       ],
       "locked_features": [],
       "cta_text": "Request Consultation",
-      "highlighted": false
+      "highlighted": false,
+      "value_nudge": "For businesses ready for total system independence."
     }
   ]
 }

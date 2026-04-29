@@ -1,37 +1,37 @@
 {
   "hero": {
     "headline": "Revenue Problems Are Structural Before They Are Tactical.",
-    "subhead": "I help agencies and service businesses find the friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.",
-    "cta_text": "Take the Assessment",
+    "subhead": "We bridge the 'Imagination Gap' between abstract strategy and measurable revenue. Using a 22-point structural diagnostic, I help you find the friction, fix what matters first, and build a system your team actually owns.",
+    "cta_text": "Take the 22-Point Assessment",
     "cta_url": "/calculator"
   },
   "ideology": {
-    "title": "Five Stages. One System.",
-    "subtitle": "Most businesses optimize individual tactics. We align the entire buyer journey — from first impression to long-term relationship — into one coherent commercial system.",
+    "title": "Five Stages. One Sovereign Engine.",
+    "subtitle": "Stop optimizing individual tactics. We align your entire buyer journey into one coherent system that captures 12+ real-time signals across every stage.",
     "stages": [
       {
         "title": "Awareness",
-        "description": "Get found by the right buyers in the right places — before they ever talk to a salesperson.",
+        "description": "Bridge the gap between unknown and found. Get discovered by high-intent buyers before they ever talk to sales.",
         "icon": "awareness"
       },
       {
         "title": "Consideration",
-        "description": "Make it easy for buyers to evaluate your approach, understand the problem, and see why you're the right fit.",
+        "description": "Replace 'lazy design' with visual proof. Make it effortless for buyers to evaluate your approach and trust your process.",
         "icon": "consideration"
       },
       {
         "title": "Decision",
-        "description": "Remove the friction that stalls deals — unclear proof, unanswered objections, and complicated next steps.",
+        "description": "Remove the friction that stalls 70% of deals. Clear trust anchors and answering objections before they're asked.",
         "icon": "decision"
       },
       {
         "title": "Conversion",
-        "description": "Turn a signed deal into a clean start — clear ownership, smooth onboarding, and zero lost momentum.",
+        "description": "Turn signed deals into momentum. Smooth handoffs and behavior-based onboarding that protects the relationship.",
         "icon": "conversion"
       },
       {
         "title": "Retention",
-        "description": "Protect the relationship after the sale. Surface risks early, strengthen adoption, and grow accounts responsibly.",
+        "description": "Scale via system, not heroics. Surface risks early and grow accounts through orchestrated customer health signals.",
         "icon": "retention"
       }
     ]

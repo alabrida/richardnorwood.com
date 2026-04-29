@@ -1,12 +1,12 @@
 .glowCardWrapper {
-  perspective: 800px;
+  perspective: 1200px;
 }
 
 .glowCard {
   position: relative;
   overflow: hidden;
   cursor: default;
-  transition: transform var(--duration-normal) var(--ease-out),
+  transition: transform 0.1s ease-out,
     border-color var(--duration-slow) var(--ease-out),
     box-shadow var(--duration-slow) var(--ease-out);
   will-change: transform;
@@ -14,7 +14,8 @@
 }
 
 .glowCard:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .edgeGlow,
@@ -23,7 +24,8 @@
   inset: 0;
   pointer-events: none;
   border-radius: inherit;
-  transition: opacity var(--duration-slow) var(--ease-out);
+  transition: opacity 0.4s ease-out;
+  z-index: 2;
 }
 
 .borderPulse {
@@ -33,21 +35,25 @@
   border: 1px solid transparent;
   pointer-events: none;
   opacity: 0;
-  transition: opacity var(--duration-slow) var(--ease-out);
+  transition: opacity 0.5s ease-out;
+  z-index: 3;
 }
 
 .borderPulseActive {
   opacity: 1;
   border-color: var(--glow-color, var(--color-border-hover));
-  animation: glowBorderPulse 2.5s ease-in-out infinite;
+  animation: glowBorderPulse 3s ease-in-out infinite;
 }
 
 @keyframes glowBorderPulse {
   0%,
   100% {
-    opacity: 0.4;
+    opacity: 0.3;
+    border-color: rgba(240, 180, 41, 0.3);
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.7;
+    border-color: rgba(240, 180, 41, 0.6);
+    box-shadow: 0 0 15px rgba(240, 180, 41, 0.2);
   }
 }

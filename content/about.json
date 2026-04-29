@@ -1,29 +1,29 @@
 {
   "hero": {
     "title": "About Richard Norwood",
-    "subtitle": "Revenue Enablement & Conversion Journey Optimization"
+    "subtitle": "Certified PMP® | Revenue Enablement & Conversion Journey Architect"
   },
   "bio": [
-    "My commercial perspective didn't start in a boardroom; it started in community outreach, where I targeted stakeholders and built relationships to facilitate access to care for indigent youth in Alabama. That foundation in relationship-building evolved into a focus on systematic performance when I became a Continuous Improvement Manager.",
-    "There, I learned the mechanics of continuous improvement within a culture of sales enablement. By coaching to specific behaviors, we set a foundation that carried into my role as a Regional Sales Manager, where I supported business units and sales teams in establishing and cultivating their online presence.",
-    "Throughout every managerial role, one principle remained primary: managing businesses as metrics. Most consultants optimize a single channel, but I look at the system those channels live inside.",
-    "Ever wondered why leads vanish or revenue doesn't match expectations? It often comes down to hidden friction points in your customer journey. As a certified Project Management Professional (PMP), I bring the delivery discipline to uncover these revenue leaks, fix the system, and turn strategy into measurable outcomes."
+    "My commercial perspective didn't start in a boardroom; it started in community outreach, bridging the gap between stakeholders and access to care for thousands of youth in Alabama. That foundation in relationship-building evolved into a focus on systematic performance when I became a Continuous Improvement Manager.",
+    "There, I learned to replace 'lazy management' with behavior-based coaching, setting a foundation that carried into my role as a Regional Sales Manager. I didn't just 'support' teams; I built the online presence and signal-capture frameworks that turned abstract activity into 52% conversion lift.",
+    "Throughout every managerial role, one principle remained primary: managing businesses as metrics. Most consultants optimize a single channel, but I bridge the 'Imagination Gap' by showing you the entire system those channels live inside.",
+    "Ever wondered why leads vanish? It's usually a structural friction point. As a certified Project Management Professional (PMP), I bring 15+ years of delivery discipline to uncover these revenue leaks, fix the system, and turn 22+ structural checkpoints into measurable, predictable outcomes."
   ],
   "metrics": [
     {
       "value": "+52%",
-      "label": "Conversion Lift",
+      "label": "Direct Conversion Lift",
       "context": "FrankCrum Staffing"
     },
     {
-      "value": "+35%",
-      "label": "Lead Quality",
-      "context": "American Car Center"
+      "value": "15+ Years",
+      "label": "System Architecture",
+      "context": "Driving Revenue Outcomes"
     },
     {
-      "value": "15+",
-      "label": "Years Experience",
-      "context": "Driving Revenue Architecture"
+      "value": "22+",
+      "label": "Structural Checkpoints",
+      "context": "Per Diagnostic Session"
     }
   ],
   "certifications": [

@@ -1,90 +1,93 @@
 {
   "hero": {
     "title": "A System, Not a Campaign.",
-    "subtitle": "Marketing, sales, delivery, and retention should work as one system — not four departments with four dashboards. We help you build that system."
+    "subtitle": "Stop guessing why your revenue is stalling. We bridge the gap between abstract strategy and a high-performance commercial engine."
   },
   "tiers": [
     {
       "id": "align",
       "name": "Align",
+      "badge": "Diagnostic First",
       "subtitle": "See Clearly. Fix First.",
-      "description": "A focused 90-day engagement to diagnose where your revenue system is losing momentum, establish clear positioning, and make the first high-impact improvements.",
+      "description": "A focused 90-day engagement to diagnose where your revenue system is losing momentum. We bridge the 'Imagination Gap' by turning invisible leaks into a prioritized visual roadmap.",
       "includes": [
-        "Full revenue system diagnostic",
+        "Full 5-stage revenue system diagnostic",
         "Positioning and messaging clarity",
         "Website restructured for buyer evaluation",
         "First-layer visibility improvements",
-        "Prioritized action plan based on actual system conditions"
+        "A 90-day prioritized action plan based on 22+ structural checkpoints"
       ],
       "cta": "Schedule a Discovery Call"
     },
     {
       "id": "build",
       "name": "Build",
+      "badge": "Most Popular",
       "subtitle": "Activate the Engine.",
-      "description": "A 6-month partnership to install the operating layer your business is missing — structured follow-through, automated signals, and clear handoffs between teams.",
+      "description": "A 6-month partnership to install the operating layer your business is missing. This isn't just a plan—it's the automated infrastructure that captures signals and nurtures leads without manual effort.",
       "includes": [
         "Everything in Align",
-        "Operating system for visibility and automation",
+        "Custom Operating OS for visibility and automation",
         "Automated signal capture across the buyer journey",
         "Nurture, follow-up, and review automation",
-        "Cross-team handoff improvements",
-        "Recurring operating reviews tied to real signals"
+        "Cross-team handoff protocol improvements",
+        "Monthly operating reviews tied to 12+ real-time signals"
       ],
       "cta": "Schedule a Discovery Call"
     },
     {
       "id": "command",
       "name": "Command",
+      "badge": "Total Ownership",
       "subtitle": "Own It. Run It. Scale It.",
-      "description": "A 12-month engagement to strengthen governance, simplify your tool stack, and make your commercial system durable enough to run without outside help.",
+      "description": "A 12-month engagement for businesses ready to scale independently. We simplify your tool stack and harden your data model so the system runs predictably without outside help.",
       "includes": [
         "Everything in Build",
-        "Governance framework and ownership rules",
-        "Tool rationalization and workflow simplification",
-        "System documentation and data model hardening",
-        "Transition planning for full team independence"
+        "Governance framework and clear ownership rules",
+        "Tool rationalization (Stop paying for tools you don't use)",
+        "System documentation and 'Sovereign Engine' hardening",
+        "Transition planning for 100% team independence"
       ],
       "cta": "Request a Consultation"
     }
   ],
   "timeline": {
-    "title": "How It Works",
+    "title": "The Path to 3.5x Better Systems",
     "phases": [
       {
         "name": "Align",
         "days": "90 Days",
-        "description": "Diagnose the current system. Identify the biggest sources of friction. Build the first action plan.",
+        "description": "Diagnose the system and bridge the imagination gap. We identify the friction points you can't see.",
         "milestones": [
-          "Revenue system diagnostic across all five stages",
-          "Identify weak handoffs, missing proof, and structural gaps",
+          "System diagnostic across Awareness to Retention",
+          "Identify weak handoffs and missing social proof",
           "Establish clear positioning and messaging",
-          "Restructure the website for buyer evaluation",
-          "Deliver a prioritized roadmap based on real conditions"
+          "Restructure site UI for buyer evaluation",
+          "Deliver roadmap with 100% specificity"
         ]
       },
       {
         "name": "Build",
         "days": "6 Months",
-        "description": "Install the operating layer. Create visibility, automate follow-through, and connect the teams.",
+        "description": "Activate the engine. We replace 'lazy design' and manual processes with visual swatches and automated signals.",
         "milestones": [
-          "Create a shared source of truth across teams",
-          "Automate signal capture across the buyer journey",
-          "Improve handoffs between marketing, sales, delivery, and retention",
-          "Build structured follow-up that continues conversations naturally",
-          "Establish operating reviews tied to real buyer and customer signals"
+          "Create a single source of truth for commercial data",
+          "Automate buyer signal capture (No more guessing)",
+          "Connect Marketing, Sales, and Delivery teams",
+          "Build structured, natural follow-up sequences",
+          "Establish operating reviews tied to behavioral signals"
         ]
       },
       {
         "name": "Command",
         "days": "12 Months",
-        "description": "Strengthen governance. Simplify the stack. Hand the system to your team to own and improve.",
+        "description": "Total Independence. Your team owns the system. You own the results.",
         "milestones": [
-          "Define shared rules, stage definitions, and ownership",
-          "Rationalize the tool stack to serve the operating model",
-          "Document the system and harden the data model",
-          "Prepare transition planning for full independence",
-          "Build a system that improves without relying on heroics"
+          "Define shared rules and stage definitions",
+          "Rationalize tools to serve the system, not vice-versa",
+          "Document and harden the Sovereign Engine",
+          "Finalize transition for full independence",
+          "Build a system that improves via feedback loops"
         ]
       }
     ]
