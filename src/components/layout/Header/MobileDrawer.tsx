@@ -79,7 +79,7 @@ export default function MobileDrawer({ isOpen, onClose, navItems }: MobileDrawer
                 onClick={onClose} 
                 className={styles.drawerCta}
               >
-                Take the Assessment
+                Run the Assessment
               </Link>
             </div>
           </motion.div>

@@ -49,6 +49,14 @@
   padding-top: var(--space-8);
 }
 
+.phaseLink {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  outline: none;
+}
+
+
 @media (min-width: 768px) {
   .timelinePhase {
     width: calc(50% - 40px);

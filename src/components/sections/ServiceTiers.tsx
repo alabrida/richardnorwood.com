@@ -60,7 +60,7 @@ export default function ServiceTiers({ data }: TiersProps) {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 + (i * 0.1) }}
                     >
-                      <span className="text-secondary mr-2">✓</span>
+                    <span className="text-accent mr-2">✓</span>
                       {item}
                     </motion.li>        
                   ))}

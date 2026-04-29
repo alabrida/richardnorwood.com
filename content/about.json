@@ -96,7 +96,7 @@
     "date": "2006 - 2008"
   },
   "links": [
-    { "label": "Take the Assessment", "url": "/calculator", "primary": true },
+    { "label": "Run the Assessment", "url": "/calculator", "primary": true },
     { "label": "Explore Services", "url": "/services", "primary": false },
     { "label": "View Pricing", "url": "/pricing", "primary": false },
     { "label": "Read Field Notes (Blog)", "url": "/blog", "primary": false },

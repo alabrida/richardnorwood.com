@@ -55,6 +55,7 @@
     "title": "The Path to 3.5x Better Systems",
     "phases": [
       {
+        "id": "align",
         "name": "Align",
         "days": "90 Days",
         "description": "Diagnose the system and bridge the imagination gap. We identify the friction points you can't see.",
@@ -67,6 +68,7 @@
         ]
       },
       {
+        "id": "build",
         "name": "Build",
         "days": "6 Months",
         "description": "Activate the engine. We replace 'lazy design' and manual processes with visual swatches and automated signals.",
@@ -79,6 +81,7 @@
         ]
       },
       {
+        "id": "command",
         "name": "Command",
         "days": "12 Months",
         "description": "Total Independence. Your team owns the system. You own the results.",

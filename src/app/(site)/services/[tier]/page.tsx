@@ -41,7 +41,13 @@ export default async function ServiceTierPage({ params }: PageProps) {
     <main className="min-h-screen pt-32 pb-20 px-4 bg-[#060b16]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-8">
-          <div>
+          <div className="relative pt-2">
+            {tier === 'build' && (
+              <div className="absolute top-0 right-0 inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-[#f0b429] text-[#060b16] rounded-full text-[10px] font-black uppercase tracking-widest shadow-[0_4px_12px_rgba(240,180,41,0.2)]">
+                <span>★</span>
+                Recommended / Best Value
+              </div>
+            )}
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-[#e8edf5] mb-4">
               {tierData.name}
             </h1>
@@ -59,7 +65,7 @@ export default async function ServiceTierPage({ params }: PageProps) {
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {tierData.includes.map((item: string, i: number) => (
                 <li key={i} className="flex items-start gap-2 text-[#5a6a84]">
-                  <span className="text-[#f0b429] mt-1">✓</span>
+                  <span className="text-[#20c997] mt-1">✓</span>
                   {item}
                 </li>
               ))}

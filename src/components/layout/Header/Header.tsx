@@ -55,7 +55,7 @@ export default function Header() {
         <div className={styles.actions}>
           <Link href="/calculator" className={styles.ctaButton}>
             <span className={styles.ctaPulse} aria-hidden="true" />
-            Take the Assessment
+            Run the Assessment
           </Link>
 
           <button className={styles.menuButton} onClick={toggleDrawer} aria-label={drawerOpen ? 'Close menu' : 'Open menu'} aria-expanded={drawerOpen}>

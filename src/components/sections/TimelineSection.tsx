@@ -2,10 +2,12 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import styles from './Timeline.module.css'
 import GlowCard from '@/components/ui/GlowCard'
 
 interface Milestone {
+  id: string
   name: string
   days: string
   description: string
@@ -40,27 +42,29 @@ export default function TimelineSection({ data }: TimelineProps) {
             className={styles.timelinePhase}
           >
             <GlowCard className={styles.phaseCard} glowColor="var(--color-secondary)">
-              <div className={styles.phaseMarker} />
-              <div className={styles.phaseContent}>
-                <div className={styles.phaseDays}>{phase.days}</div>
-                <h3 className={styles.phaseName}>{phase.name}</h3>
-                <p className={styles.phaseDesc}>
-                  {phase.description}
-                </p>
-                <ul className={styles.milestonesList}>
-                  {phase.milestones.map((ms, j) => (
-                    <motion.li 
-                      key={j}
-                      initial={{ opacity: 0, x: -5 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.3 + (j * 0.1) }}
-                    >
-                      <span>✓</span>
-                      {ms}
-                    </motion.li>
-                  ))}
-                </ul>
-              </div>
+              <div className={styles.phaseMarker} aria-hidden="true" />
+              <Link href={`/services/${phase.id}`} className={styles.phaseLink}>
+                <div className={styles.phaseContent}>
+                  <div className={styles.phaseDays}>{phase.days}</div>
+                  <h3 className={styles.phaseName}>{phase.name}</h3>
+                  <p className={styles.phaseDesc}>
+                    {phase.description}
+                  </p>
+                  <ul className={styles.milestonesList}>
+                    {phase.milestones.map((ms, j) => (
+                      <motion.li 
+                        key={j}
+                        initial={{ opacity: 0, x: -5 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.3 + (j * 0.1) }}
+                      >
+                        <span>✓</span>
+                        {ms}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+              </Link>
             </GlowCard>
           </motion.div>
         ))}
