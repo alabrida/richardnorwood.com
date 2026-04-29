@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://richardnorwood.com/blog/crm-adoption-crisis-why-sales-team-hates-reporting/#article",
+      "headline": "The CRM Adoption Crisis: Why Your Sales Team Hates Your Reporting and How to Fix the Flow",
+      "description": "Shifting from 'Command and Control' to 'Boundary Spanning' systems that empower rather than encumber your revenue-generating talent.",
+      "author": {
+        "@type": "Person",
+        "name": "Richard Norwood, PMP",
+        "url": "https://richardnorwood.com/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/richardnorwood"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Richard Norwood | Revenue Architecture",
+        "url": "https://richardnorwood.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://richardnorwood.com/blog/crm-adoption-crisis-why-sales-team-hates-reporting/"
+      },
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://richardnorwood.com/blog/crm-adoption-crisis-why-sales-team-hates-reporting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do sales teams resist CRM usage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Resistance is usually a rational response to a high administrative burden. When a CRM requires significant manual data entry but provides little immediate value to the salesperson, it is viewed as a 'reporting tool' for management rather than a 'selling tool' for the rep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are 'Boundary Spanners'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boundary spanners are employees who act as the interface between your organization and external partners or clients. They are responsible for managing the interpersonal trust and information sharing that make long-term B2B relationships possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Information Fusion reduce administrative waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Information Fusion uses automation to capture data 'in the flow of work.' Instead of a salesperson manually typing a summary of a call, an AI agent synthesizes the transcript and updates the CRM automatically, removing non-value-added steps."
+          }
+        }
+      ]
+    }
+  ]
+}

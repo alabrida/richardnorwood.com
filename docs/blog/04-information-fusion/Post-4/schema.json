@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://richardnorwood.com/blog/information-fusion-solving-revenue-to-nowhere-problem/#article",
+      "headline": "Information Fusion: Solving the \"Revenue to Nowhere\" Problem",
+      "description": "Why \"Swiss cheese\" policies and data hoarding are killing your customer experience — and how AI turns silos into systems of action.",
+      "author": {
+        "@type": "Person",
+        "name": "Richard Norwood, PMP",
+        "url": "https://richardnorwood.com/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/richardnorwood"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Richard Norwood | Revenue Architecture",
+        "url": "https://richardnorwood.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://richardnorwood.com/blog/information-fusion-solving-revenue-to-nowhere-problem/"
+      },
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://richardnorwood.com/blog/information-fusion-solving-revenue-to-nowhere-problem/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Information Fusion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Information Fusion is the operational core of a Unified Commercial Engine. It consolidates siloed data (spreadsheets, emails, notes) into an automated, centralized system that provides real-time visibility into every stage of the customer journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Information Fusion prevent revenue leaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By making data transparent and automated, it eliminates the 'Accountability Abyss.' When a deal or a customer issue is logged in a centralized system, it cannot be 'hoarded' or forgotten. The system triggers alerts and follow-ups automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need AI to implement Information Fusion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, but Information Fusion is the prerequisite for AI. You can start by unifying your data manually using the tools you already have (a Managed Nervous System). Once the information is fused, you can then deploy AI agents to turn that data into a 'system of action.'"
+          }
+        }
+      ]
+    }
+  ]
+}

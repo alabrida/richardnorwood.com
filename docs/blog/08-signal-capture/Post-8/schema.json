@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://richardnorwood.com/blog/automated-signal-capture-closing-decision-quality-gap/#article",
+      "headline": "Automated Signal Capture: Closing the Decision Quality Gap",
+      "description": "Why manual reporting is the enemy of high-velocity growth — and how 'systems integration' turns data hoarding into shared intelligence.",
+      "author": {
+        "@type": "Person",
+        "name": "Richard Norwood, PMP",
+        "url": "https://richardnorwood.com/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/richardnorwood"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Richard Norwood | Revenue Architecture",
+        "url": "https://richardnorwood.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://richardnorwood.com/blog/automated-signal-capture-closing-decision-quality-gap/"
+      },
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://richardnorwood.com/blog/automated-signal-capture-closing-decision-quality-gap/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is 'Automated Signal Capture'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automated Signal Capture is the process of using technology to record and log customer interactions and deal stages without requiring manual entry from a staff member. Examples include syncing emails to a CRM, auto-logging phone calls, and tracking website behavior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a big budget to integrate my systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. As researched by Jumah and Arumugam (2023), small businesses are increasingly using budget-friendly AI and automation tools to augment their staff. The focus should be on 'practical integration'—connecting your existing tools (like your email and your CRM) to ensure information flows freely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a 'System of Conversation' and a 'System of Action'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A System of Conversation (like email or Slack) is where people discuss work. A System of Action (a Unified Commercial Engine) is where the system itself triggers the next step in the process based on the signals it captures, ensuring that follow-up happens automatically and responsibility never falls into the abyss."
+          }
+        }
+      ]
+    }
+  ]
+}

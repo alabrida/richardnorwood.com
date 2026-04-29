@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://richardnorwood.com/blog/revenue-maturity-model-escaping-fragmented-sales-trap/#article",
+      "headline": "The Revenue Maturity Model: Escaping the Fragmented Sales Trap",
+      "description": "Why returning to \"legacy\" sales feels like a shock to the system — and how to map your path to a Unified Commercial Engine.",
+      "author": {
+        "@type": "Person",
+        "name": "Richard Norwood, PMP",
+        "url": "https://richardnorwood.com/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/richardnorwood"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Richard Norwood | Revenue Architecture",
+        "url": "https://richardnorwood.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://richardnorwood.com/blog/revenue-maturity-model-escaping-fragmented-sales-trap/"
+      },
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://richardnorwood.com/blog/revenue-maturity-model-escaping-fragmented-sales-trap/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a small business be \"Unified\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Maturity is about the coordination of your system, not the size of your budget. The dental organization I worked for in 2009 could have been Unified today by simply integrating their community outreach with a resource-rich website and active social presence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the first step in moving from Fragmented to Emerging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The first step is a Commercial EKG. You have to identify exactly where the information flow is breaking down. Usually, it starts with defining your stages (Awareness, Consideration, Decision, Conversion, Retention) and ensuring everyone uses the same vocabulary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is individual social presence important in a Unified engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because buyers trust people more than brands. A Unified engine empowers your team to be the face of the business while the organization provides the \"back-end\" support, proof, and automation to make those individual efforts scale."
+          }
+        }
+      ]
+    }
+  ]
+}

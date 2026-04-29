@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://richardnorwood.com/blog/saaspocalypse-why-tech-stack-is-technical-debt/#article",
+      "headline": "The SAASpocalypse: Why Your Tech Stack Is Actually Technical Debt",
+      "description": "How disconnected tools are sabotaging your sales team and why 'Information Fusion' is the only path to a Unified Commercial Engine.",
+      "author": {
+        "@type": "Person",
+        "name": "Richard Norwood, PMP",
+        "url": "https://richardnorwood.com/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/richardnorwood"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Richard Norwood | Revenue Architecture",
+        "url": "https://richardnorwood.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://richardnorwood.com/blog/saaspocalypse-why-tech-stack-is-technical-debt/"
+      },
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://richardnorwood.com/blog/saaspocalypse-why-tech-stack-is-technical-debt/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is 'Technical Debt' in a sales context?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technical Debt refers to the implied cost of not modernizing or integrating your systems. In sales, it manifests as disconnected CRMs, manual data entry, and systems that force customers to repeat information (like filling out two separate applications). It is an 'invisible tax' on your efficiency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 'SAASpocalypse'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A term used by analysts (and rating agencies like Fitch) to describe the moment when businesses realize they are overpaying for a massive sprawl of disconnected Software-as-a-Service tools that are being displaced by more integrated, AI-driven solutions (Gillers, 2026)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Information Fusion solve SaaS sprawl?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Information Fusion acts as the 'nervous system' that connects disparate tools. Instead of buying a new tool to bridge a gap, Information Fusion integrates the existing databases (e.g., website forms, inventory, and CRM) so that the data flows automatically, giving the sales team a single, unified view of the customer journey."
+          }
+        }
+      ]
+    }
+  ]
+}
