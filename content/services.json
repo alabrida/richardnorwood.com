@@ -8,6 +8,7 @@
       "id": "align",
       "name": "Align",
       "badge": "Diagnostic First",
+      "badge_tooltip": "Uncover where your system is losing revenue before adding new tactics.",
       "subtitle": "See Clearly. Fix First.",
       "description": "A focused 90-day engagement to diagnose where your revenue system is losing momentum. We bridge the 'Imagination Gap' by turning invisible leaks into a prioritized visual roadmap.",
       "includes": [
@@ -23,6 +24,7 @@
       "id": "build",
       "name": "Build",
       "badge": "Most Popular",
+      "badge_tooltip": "The most effective path to automate visibility and lead capture.",
       "subtitle": "Activate the Engine.",
       "description": "A 6-month partnership to install the operating layer your business is missing. This isn't just a plan—it's the automated infrastructure that captures signals and nurtures leads without manual effort.",
       "includes": [
@@ -38,15 +40,17 @@
     {
       "id": "command",
       "name": "Command",
-      "badge": "Total Ownership",
-      "subtitle": "Own It. Run It. Scale It.",
-      "description": "A 12-month engagement for businesses ready to scale independently. We simplify your tool stack and harden your data model so the system runs predictably without outside help.",
+      "badge": "Managed Independence",
+      "badge_tooltip": "Total operational independence while I manage the technical estate on your behalf.",
+      "subtitle": "Harden. Run. Scale.",
+      "description": "A 12-month transition to long-term governance. I harden your data model and document every rule, ensuring your team owns the process while the engine remains hosted and managed on my secure infrastructure.",
       "includes": [
         "Everything in Build",
+        "Managed hosting on my high-performance cloud infrastructure",
         "Governance framework and clear ownership rules",
-        "Tool rationalization (Stop paying for tools you don't use)",
-        "System documentation and 'Sovereign Engine' hardening",
-        "Transition planning for 100% team independence"
+        "System documentation and 'Sovereign Logic' hardening",
+        "Stack rationalization and cost efficiency audit",
+        "Quarterly performance audits and strategic steering"
       ],
       "cta": "Request a Consultation"
     }

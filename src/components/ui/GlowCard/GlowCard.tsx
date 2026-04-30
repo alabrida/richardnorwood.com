@@ -1,10 +1,11 @@
 'use client'
 
 import React, { useRef, useCallback, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import styles from './GlowCard.module.css'
 
-/* ── Default gold glow (site accent) ── */
-const DEFAULT_GLOW = { r: 240, g: 180, b: 41 }
+/* ── Default green glow (site accent) ── */
+const DEFAULT_GLOW = { r: 32, g: 201, b: 151 }
 
 interface GlowCardProps {
   children: React.ReactNode
@@ -21,6 +22,50 @@ interface GlowCardProps {
   /** Pass-through style */
   style?: React.CSSProperties
 }
+
+const NitrousMist = ({ active }: { active: boolean }) => (
+  <AnimatePresence>
+    {active && (
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        {/* Left Puff */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5, x: -10, y: 10 }}
+          animate={{ 
+            opacity: [0, 0.15, 0], 
+            scale: [0.8, 2.5], 
+            x: [-10, -50], 
+            y: [10, 40] 
+          }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="absolute bottom-0 left-0 w-32 h-32 bg-white/20 blur-3xl rounded-full"
+        />
+        {/* Right Puff */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5, x: 10, y: 10 }}
+          animate={{ 
+            opacity: [0, 0.15, 0], 
+            scale: [0.8, 2.5], 
+            x: [10, 50], 
+            y: [10, 40] 
+          }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.05 }}
+          className="absolute bottom-0 right-0 w-32 h-32 bg-white/20 blur-3xl rounded-full"
+        />
+        {/* Bottom Spill */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, y: 0 }}
+          animate={{ 
+            opacity: [0, 0.1, 0], 
+            scale: [1, 2], 
+            y: [0, 50] 
+          }}
+          transition={{ duration: 1.5, ease: "easeOut", delay: 0.1 }}
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 h-24 bg-white/10 blur-3xl rounded-full"
+        />
+      </div>
+    )}
+  </AnimatePresence>
+)
 
 export default function GlowCard({
   children,
@@ -68,6 +113,7 @@ export default function GlowCard({
 
   return (
     <div className={`${styles.glowCardWrapper} ${wrapperClassName}`}>
+      <NitrousMist active={hovering} />
       <div
         ref={cardRef}
         className={`${styles.glowCard} ${className}`}
@@ -75,7 +121,7 @@ export default function GlowCard({
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={handleMouseLeave}
         style={{
-          transform: `perspective(800px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
+          transform: `perspective(1200px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
           borderColor: hovering && glowColor ? glowColor : undefined,
           ...style,
         }}

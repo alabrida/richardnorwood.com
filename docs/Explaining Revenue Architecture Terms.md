@@ -4,7 +4,7 @@ This glossary translates doctrine language into plain business language. It is i
 
 ## Role Terms
 
-- **Guide:** Richard's client-facing role. He helps a leader see the problem clearly, sequence the work, and build early momentum.
+- **Guide:** The client-facing personal brand (DBA Richard Norwood, PMP). Richard helps a leader see the problem clearly, sequence the work, and build early momentum.
 - **Navigator:** A description of the Guide's working style. It is not a separate offer or a second persona.
 - **Revenue Architect:** The deeper structural role responsible for system design, governance, incentives, tooling choices, and long-term operating logic.
 
@@ -19,6 +19,14 @@ This glossary translates doctrine language into plain business language. It is i
 - **Bowtie Model:** The reminder that the sale is the midpoint, not the finish line. The relationship must work on both sides of conversion.
 - **Digital Sales Channel:** A website or microsite estate designed to help buyers learn, validate, and act, not just browse.
 - **65kb Threshold:** An internal performance discipline for keeping high-intent pages lean, fast, and easy to use.
+
+## The Three-Phase Journey
+
+Clients move through three tiers of maturity to go from fragmented activity to a Unified state.
+
+- **Align:** The 90-day entry point to diagnose friction and establish a first operating rhythm.
+- **Build:** The 6-month partnership to install a Managed Nervous System for visibility and automation.
+- **Command:** The 12-month transition to long-term governance and an installed commercial engine.
 
 ## Canonical Stage Translation
 

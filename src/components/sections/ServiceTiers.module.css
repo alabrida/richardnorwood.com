@@ -13,6 +13,11 @@
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
   position: relative;
+  overflow: visible !important; /* Force visibility for tooltips */
+}
+
+.tierCard:hover {
+  z-index: 50; /* Bring hovered card to front */
 }
 
 .highlightedCard {
@@ -21,13 +26,10 @@
   box-shadow: 0 10px 40px rgba(240, 180, 41, 0.1);
 }
 
-.topRightBadge {
+.topRightBadge, .popularBadge {
   position: absolute;
   top: var(--space-4);
   right: var(--space-4);
-  background: var(--color-surface-elevated);
-  color: var(--color-text-subtle);
-  border: 1px solid var(--color-border);
   padding: 2px 10px;
   border-radius: var(--radius-full);
   font-size: 9px;
@@ -37,24 +39,56 @@
   display: flex;
   align-items: center;
   z-index: 10;
+  cursor: help;
+  transform-style: preserve-3d; /* Support 3D depth for children */
+}
+
+.topRightBadge {
+  background: var(--color-surface-elevated);
+  color: var(--color-text-subtle);
+  border: 1px solid rgba(32, 201, 151, 0.3);
+  box-shadow: 0 0 15px rgba(32, 201, 151, 0.15);
+  animation: pulseGreenGlow 3s ease-in-out infinite;
 }
 
 .popularBadge {
-  position: absolute;
-  top: var(--space-4);
-  right: var(--space-4);
   background: var(--color-secondary);
   color: var(--color-text-inverse);
-  padding: 2px 10px;
-  border-radius: var(--radius-full);
-  font-size: 9px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  display: flex;
-  align-items: center;
-  z-index: 10;
   box-shadow: 0 4px 12px rgba(240, 180, 41, 0.2);
+}
+
+.topRightBadge::after, .popularBadge::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 180%; /* Move higher to escape card boundary */
+  right: 0;
+  transform: translateY(10px) translateZ(50px); /* translateZ pushes it above 3D layers */
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  width: 220px;
+  text-align: left; /* Better readability */
+  white-space: normal;
+  line-height: 1.5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-normal);
+  z-index: 100;
+  pointer-events: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.topRightBadge:hover::after, .popularBadge:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) translateZ(50px);
 }
 
 .tierContent {
@@ -130,6 +164,9 @@
   transition: all var(--duration-fast);
   background: var(--color-text);
   color: var(--color-text-inverse);
+  border: 1px solid rgba(32, 201, 151, 0.3);
+  box-shadow: 0 0 15px rgba(32, 201, 151, 0.15);
+  animation: pulseGreenGlow 3s ease-in-out infinite;
 }
 
 .tierCta:hover {
@@ -141,7 +178,19 @@
   background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
   color: var(--color-text-inverse);
 }
+
 .highlightedBtn:hover {
   background: var(--color-secondary);
   box-shadow: 0 4px 15px rgba(240, 180, 41, 0.4);
+}
+
+@keyframes pulseGreenGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(32, 201, 151, 0.1);
+    border-color: rgba(32, 201, 151, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(32, 201, 151, 0.25);
+    border-color: rgba(32, 201, 151, 0.4);
+  }
 }

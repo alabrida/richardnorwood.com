@@ -19343,3 +19343,2390 @@ Import traces:
     ./src/app/(site)/services/page.tsx [Server Component] 
 [browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
 [browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+⨯ ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m91 |[0m
+  [90m92 |[0m [90m// Map icons to links based on label or index[0m
+[31m[1m>[0m [90m93 |[0m [36mconst[0m getIcon = (label: string) => {
+  [90m   |[0m                                  [31m[1m^[0m
+  [90m94 |[0m   [36mif[0m (label.includes([32m'Assessment'[0m)) [36mreturn[0m <[33mClipboardDocumentCheckIcon[0m className=[32m"w-6 h-6"[0m />
+  [90m95 |[0m   [36mif[0m (label.includes([32m'Services'[0m)) [36mreturn[0m <[33mSparklesIcon[0m className=[32m"w-6 h-6"[0m />
+  [90m96 |[0m   [36mif[0m (label.includes([32m'Pricing'[0m)) [36mreturn[0m <[33mCurrencyDollarIcon[0m className=[32m"w-6 h-6"[0m />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+⨯ ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m91 |[0m
+  [90m92 |[0m [90m// Map icons to links based on label or index[0m
+[31m[1m>[0m [90m93 |[0m [36mconst[0m getIcon = (label: string) => {
+  [90m   |[0m                                  [31m[1m^[0m
+  [90m94 |[0m   [36mif[0m (label.includes([32m'Assessment'[0m)) [36mreturn[0m <[33mClipboardDocumentCheckIcon[0m className=[32m"w-6 h-6"[0m />
+  [90m95 |[0m   [36mif[0m (label.includes([32m'Services'[0m)) [36mreturn[0m <[33mSparklesIcon[0m className=[32m"w-6 h-6"[0m />
+  [90m96 |[0m   [36mif[0m (label.includes([32m'Pricing'[0m)) [36mreturn[0m <[33mCurrencyDollarIcon[0m className=[32m"w-6 h-6"[0m />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  [90m91 |[0m
+  [90m92 |[0m [90m// Map icons to links based on label or index[0m
+[31m[1m>[0m [90m93 |[0m [36mconst[0m getIcon = (label: string) => {
+  [90m   |[0m                                  [31m[1m^[0m
+  [90m94 |[0m   [36mif[0m (label.includes([32m'Assessment'[0m)) [36mreturn[0m <[33mClipboardDocumentCheckIcon[0m className=[32m"w-6 h-6"[0m />
+  [90m95 |[0m   [36mif[0m (label.includes([32m'Services'[0m)) [36mreturn[0m <[33mSparklesIcon[0m className=[32m"w-6 h-6"[0m />
+  [90m96 |[0m   [36mif[0m (label.includes([32m'Pricing'[0m)) [36mreturn[0m <[33mCurrencyDollarIcon[0m className=[32m"w-6 h-6"[0m />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:93:34)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:93:34)
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:93:34)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:93:34)
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:93:34)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:93:34)
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+[browser] ./src/components/sections/AboutPageClient.tsx:93:34
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+  91 |
+  92 | // Map icons to links based on label or index
+> 93 | const getIcon = (label: string) => {
+     |                                  ^
+  94 |   if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  95 |   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
+  96 |   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx 
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+⨯ ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+  [90m 8 |[0m [36mimport[0m styles [36mfrom[0m [32m'./AboutPage.module.css'[0m
+  [90m 9 |[0m [36mimport[0m { [33mBentoGrid[0m, [33mBentoCard[0m, [33mBentoCardIcon[0m, [33mBentoCardTitle[0m, [33mBentoCardDescription[0m } [36mfrom[0m [32m...[0m
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { 
+  [90m   |[0m [31m[1m^^^^^^^^[0m
+[31m[1m>[0m [90m11 |[0m   [33mClipboardDocumentCheckIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m12 |[0m   [33mSparklesIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m13 |[0m   [33mCurrencyDollarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m14 |[0m   [33mBookOpenIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m15 |[0m   [33mCalendarIcon[0m, 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   [33mUserGroupIcon[0m 
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m } [36mfrom[0m [32m'@heroicons/react/24/outline'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m18 |[0m
+  [90m19 |[0m [90m// Map icons to links based on label or index[0m
+  [90m20 |[0m [36mconst[0m getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Uncaught Error: ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/AboutPageClient.tsx:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/sections/AboutPageClient.tsx:10:1
+Module not found: Can't resolve '@heroicons/react/24/outline'
+   8 | import styles from './AboutPage.module.css'
+   9 | import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from ...
+> 10 | import { 
+     | ^^^^^^^^
+> 11 |   ClipboardDocumentCheckIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |   SparklesIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 13 |   CurrencyDollarIcon, 
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 14 |   BookOpenIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 15 |   CalendarIcon, 
+     | ^^^^^^^^^^^^^^^^
+> 16 |   UserGroupIcon 
+     | ^^^^^^^^^^^^^^^^
+> 17 | } from '@heroicons/react/24/outline'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | // Map icons to links based on label or index
+  20 | const getIcon = (label: string) => {
+
+Import trace:
+  Server Component:
+    ./src/components/sections/AboutPageClient.tsx
+    ./src/app/(site)/about/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] ./src/components/sections/Pricing.module.css
+Transforming CSS failed
+Selector "over" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/sections/Pricing.module.css [Client Component Browser]
+    ./src/components/sections/PricingGrid.tsx [Client Component Browser]
+    ./src/components/sections/PricingGrid.tsx [Server Component]
+    ./src/app/(site)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/sections/Pricing.module.css [Client Component SSR]
+    ./src/components/sections/PricingGrid.tsx [Client Component SSR]
+    ./src/components/sections/PricingGrid.tsx [Server Component]
+    ./src/app/(site)/pricing/page.tsx [Server Component] 
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] You are trying to animate opacity from "undefined" to "1". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable (<anonymous>)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] ./src/components/sections/Pricing.module.css
+Transforming CSS failed
+Selector "over" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/sections/Pricing.module.css [Client Component Browser]
+    ./src/components/sections/PricingGrid.tsx [Client Component Browser]
+    ./src/components/sections/PricingGrid.tsx [Server Component]
+    ./src/app/(site)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/sections/Pricing.module.css [Client Component SSR]
+    ./src/components/sections/PricingGrid.tsx [Client Component SSR]
+    ./src/components/sections/PricingGrid.tsx [Server Component]
+    ./src/app/(site)/pricing/page.tsx [Server Component] 
+[browser] ./src/components/sections/Pricing.module.css
+Transforming CSS failed
+Selector "over" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/sections/Pricing.module.css [Client Component Browser]
+    ./src/components/sections/PricingGrid.tsx [Client Component Browser]
+    ./src/components/sections/PricingGrid.tsx [Server Component]
+    ./src/app/(site)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/sections/Pricing.module.css [Client Component SSR]
+    ./src/components/sections/PricingGrid.tsx [Client Component SSR]
+    ./src/components/sections/PricingGrid.tsx [Server Component]
+    ./src/app/(site)/pricing/page.tsx [Server Component] 

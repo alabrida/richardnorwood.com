@@ -30,7 +30,14 @@ export default function HeroSection({ data }: HeroProps) {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={styles.titleWrapper}
         >
-          <h1 className={styles.heroTitle}>{data.headline}</h1>
+          <motion.h1 
+            className={styles.heroTitle}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            {data.headline}
+          </motion.h1>
         </motion.div>
 
         <motion.p

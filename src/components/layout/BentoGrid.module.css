@@ -6,7 +6,9 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: var(--space-4);
+  grid-auto-flow: row dense;
 }
 
 @media (min-width: 640px) {
@@ -26,7 +28,9 @@
 .grid4 {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: var(--space-4);
+  grid-auto-flow: row dense;
 }
 
 @media (min-width: 640px) {
@@ -48,6 +52,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-4);
+  grid-auto-flow: row dense;
 }
 
 @media (min-width: 768px) {
@@ -61,6 +66,11 @@
 .card, .featured {
   position: relative;
   overflow: visible;
+  height: 100%;
+}
+
+.bentoWrapper {
+  height: 100%;
 }
 
 .bentoGlowCard {
@@ -70,10 +80,23 @@
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-xl);
   height: 100%;
+  animation: pulseGreenGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGreenGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(32, 201, 151, 0.1);
+    border-color: rgba(32, 201, 151, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(32, 201, 151, 0.25);
+    border-color: rgba(32, 201, 151, 0.4);
+  }
 }
 
 .featured .bentoGlowCard {
-  border-color: var(--color-border-accent);
+  border-color: var(--color-accent);
+  animation-duration: 2s; /* Slightly faster pulse for the primary card */
 }
 
 .bentoContent {

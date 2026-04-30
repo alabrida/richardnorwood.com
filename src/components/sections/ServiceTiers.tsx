@@ -10,6 +10,7 @@ interface Tier {
   id: string
   name: string
   badge?: string
+  badge_tooltip?: string
   subtitle: string
   description: string
   includes: string[]
@@ -34,6 +35,7 @@ export default function ServiceTiers({ data }: TiersProps) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
             whileHover={{ y: -8, scale: 1.01 }}
+            style={{ overflow: 'visible' }}
           >
             <GlowCard 
               className={`${styles.tierCard} ${isBuild ? styles.highlightedCard : ''}`} 
@@ -41,7 +43,10 @@ export default function ServiceTiers({ data }: TiersProps) {
               glow={isBuild ? { r: 240, g: 180, b: 41 } : { r: 32, g: 201, b: 151 }}
             >
               {tier.badge && (
-                <div className={isBuild ? styles.popularBadge : styles.topRightBadge}>
+                <div 
+                  className={isBuild ? styles.popularBadge : styles.topRightBadge}
+                  data-tooltip={tier.badge_tooltip}
+                >
                   {isBuild && <span className="mr-1.5">★</span>}
                   {!isBuild && <span className="mr-1.5">✦</span>}
                   {tier.badge}

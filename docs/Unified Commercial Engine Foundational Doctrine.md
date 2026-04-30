@@ -29,9 +29,17 @@ Every engagement starts with a Commercial EKG. The purpose of the assessment is 
 
 The Managed Nervous System is the first operating layer of the doctrine. It uses the current stack to improve visibility, protect context, and automate the most important follow-through work without requiring a full rebuild on day one.
 
-## Boundary to Alabrida
+## The Three-Phase Journey
 
-When a business needs deeper data ownership, custom infrastructure, or more durable workflow logic, the work moves from Guide-led orchestration into Alabrida-led architecture.
+1. **Align:** audit the current state and establish the first operating rhythm.
+2. **Build:** install a Managed Nervous System using the tools the business already has.
+3. **Command:** harden governance and transition to long-term orchestration.
+
+## Boundary to Alabrida (The Choice Fork)
+
+When a client completes the **Command** phase, they reach a strategic boundary. They can choose to **Stay Managed** under the Guide brand (hosted infrastructure managed by Richard) or **Migrate to Sovereign** under the Alabrida brand if they require enterprise-level data ownership and custom architecture.
+
+Migration to Alabrida is an internal referral process, not a public offer of the Guide brand.
 
 ## Bowtie Result
 

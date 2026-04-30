@@ -29,6 +29,49 @@
   border-radius: var(--radius-full);
   text-decoration: none;
   transition: all var(--duration-fast);
+  position: relative;
+  animation: pulseGreenGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGreenGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(32, 201, 151, 0.1);
+    border-color: rgba(32, 201, 151, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(32, 201, 151, 0.25);
+    border-color: rgba(32, 201, 151, 0.4);
+  }
+}
+
+.certBadge::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+  font-size: var(--text-xs);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  width: 200px;
+  text-align: center;
+  white-space: normal;
+  line-height: var(--leading-normal);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-normal);
+  z-index: 10;
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.certBadge:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .certBadge:hover {

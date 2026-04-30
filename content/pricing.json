@@ -6,6 +6,7 @@
       "tagline": "See Clearly. Fix First.",
       "term": "90 Days",
       "badge": "Diagnostic",
+      "badge_tooltip": "A zero-risk entry point to identify exactly where your journey is stalling.",
       "features": [
         "Full 5-stage revenue system diagnostic",
         "Positioning and messaging clarity",
@@ -28,6 +29,7 @@
       "tagline": "Activate the Engine",
       "term": "6 Months",
       "badge": "Recommended / Best Value",
+      "badge_tooltip": "Combines deep strategy with the automated infrastructure your team needs.",
       "features": [
         "Everything in Align",
         "Operating system for visibility and automation",
@@ -46,21 +48,22 @@
     {
       "id": "command",
       "name": "Command",
-      "tagline": "Own It. Run It. Scale It.",
+      "tagline": "Own the Process. Offload the Tech.",
       "term": "12 Months",
-      "badge": "Sovereign Scale",
+      "badge": "Managed Infrastructure",
+      "badge_tooltip": "Built for teams that want full internal mastery while I manage the technical estate on my infrastructure.",
       "features": [
-        "Everything in Build",
-        "Governance framework and ownership rules",
-        "Tool rationalization (Stack efficiency audit)",
-        "System documentation and data model hardening",
-        "Transition to 100% team independence",
-        "A system that improves via feedback loops"
+        "Managed hosting on my secure cloud infrastructure",
+        "Sovereign data model and process logic",
+        "Full system documentation and rulebooks",
+        "Stack rationalization (Efficiency audit)",
+        "Quarterly strategic performance steering",
+        "Continuous feedback-driven optimization"
       ],
       "locked_features": [],
       "cta_text": "Request Consultation",
       "highlighted": false,
-      "value_nudge": "For businesses ready for total system independence."
+      "value_nudge": "Total system independence with zero technical overhead."
     }
   ]
 }

@@ -73,7 +73,11 @@ export function BentoCard({
       }}
       className={classes}
     >
-      <GlowCard className={styles.bentoGlowCard} glowColor={featured ? 'var(--color-secondary)' : undefined}>
+      <GlowCard 
+        className={styles.bentoGlowCard} 
+        wrapperClassName={styles.bentoWrapper}
+        glowColor="var(--color-accent)"
+      >
         <div className={styles.bentoContent}>
           {children}
         </div>

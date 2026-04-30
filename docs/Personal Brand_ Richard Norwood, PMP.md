@@ -1,6 +1,6 @@
-# Richard Norwood, PMP
+# Richard Norwood, PMP (DBA)
 
-Richard Norwood, PMP is the approachable front door to the broader Revenue Architecture doctrine. The personal brand is built for agencies and service businesses that know revenue feels harder than it should, but are not ready to start with a full infrastructure rebuild.
+Richard Norwood, PMP is the approachable front door to the broader Revenue Architecture doctrine. The personal brand (DBA Richard Norwood, PMP) is built for agencies and service businesses that know revenue feels harder than it should, but are not ready to start with a full infrastructure rebuild.
 
 ## Positioning
 
@@ -19,24 +19,18 @@ Guide businesses from fragmented, hero-led growth toward a commercial system tha
 
 ## What Richard Delivers
 
-- a Commercial EKG that shows where the current journey breaks across Awareness, Consideration, Decision, Conversion, and Retention
-- a Managed Nervous System that creates visibility and automation using the tools the business already has
-- stage-by-stage guidance that improves handoffs, messaging, proof, and follow-through
-- a bridge to deeper architecture work when the business is ready for a Unified Commercial Engine or a more owned technical estate
-
-## Working Method
-
-1. Diagnose the current system and identify the biggest sources of revenue friction.
-2. Clarify stage definitions, buyer signals, and ownership across the journey.
-3. Install the first layer of visibility and automation through a Managed Nervous System.
-4. Turn the engagement into a repeatable operating model, not a collection of one-off fixes.
+- **Commercial EKG:** identifies where the journey breaks across Awareness, Consideration, Decision, Conversion, and Retention.
+- **Managed Nervous System (Build phase):** creates visibility and automation using the tools the business already has.
+- **Stage-by-Stage Guidance (Align phase):** improves handoffs, messaging, proof, and follow-through.
+- **Long-term Governance (Command phase):** provides the final layer of control and an installed commercial engine.
+- **Post-Command Support:** manages the commercial infrastructure on the Guide's cloud infrastructure for clients who choose "Stay Managed."
 
 ## Strategic Role in the Ecosystem
 
-Richard Norwood is the entry layer of the doctrine: human, practical, and easier to buy. Alabrida is the deeper architecture layer that takes over when the business needs more custom infrastructure, stronger ownership, or a broader system rebuild.
+Richard Norwood is the approachable entry layer of the doctrine. The Guide brand is built for clients who need to go from fragmented activity to an installed commercial engine without the immediate overhead of enterprise-level technical ownership.
+
+**Silent Referral:** This website does not promote Alabrida. Migration to Alabrida is an internal referral process reserved for clients who outgrow the Guide's managed infrastructure and require sovereign, enterprise-level architecture.
 
 **Domain:** [richardnorwood.com](https://richardnorwood.com)
-
-**Microsite:** [pmp.richardnorwood.com](https://pmp.richardnorwood.com)
-
 **Role:** Guide, Navigator, and Revenue Architecture advisor
+

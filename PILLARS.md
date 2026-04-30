@@ -1,7 +1,7 @@
 # PILLARS.md: richardnorwood.com (Brand & Positioning)
 
 ## 1. Project Mission & Objectives
-- **Mission**: Personal website and consulting acquisition funnel for Revenue Architecture.
+- **Mission**: Personal website (DBA Richard Norwood, PMP) and consulting acquisition funnel for Revenue Architecture.
 - **Revenue Journey Alignment**: Awareness, Consideration, Decision, Conversion, Retention.
 
 ## 2. Core Pillars (Revenue Architecture Manifesto)

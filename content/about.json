@@ -11,19 +11,19 @@
   ],
   "metrics": [
     {
-      "value": "+52%",
+      "value": "52.4%",
       "label": "Direct Conversion Lift",
-      "context": "FrankCrum Staffing"
+      "context": "FrankCrum Staffing (90-Day Case Study)"
     },
     {
-      "value": "15+ Years",
+      "value": "15+ Yrs",
       "label": "System Architecture",
-      "context": "Driving Revenue Outcomes"
+      "context": "Managing Businesses as Metrics"
     },
     {
-      "value": "22+",
+      "value": "22",
       "label": "Structural Checkpoints",
-      "context": "Per Diagnostic Session"
+      "context": "Proprietary Revenue Diagnostic"
     }
   ],
   "certifications": [
@@ -34,7 +34,8 @@
       "date": "May 2024",
       "expires": "May 2027",
       "url": "https://www.credly.com/badges/08947dff-1909-4bc0-97c5-3228020092f8/public_url",
-      "shortName": "PMP®"
+      "shortName": "PMP®",
+      "description": "Ensures structured delivery and project accountability—turning abstract advice into measurable outcomes."
     },
     {
       "id": "gda",
@@ -42,7 +43,8 @@
       "issuer": "Google Career Certificates",
       "date": "Apr 2024",
       "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/E7WYXFS85H79",
-      "shortName": "Data Analytics"
+      "shortName": "Data Analytics",
+      "description": "Evidence-based decision making using statistical analysis to uncover hidden revenue leaks."
     },
     {
       "id": "gpm",
@@ -50,7 +52,8 @@
       "issuer": "Google Career Certificates",
       "date": "Aug 2022",
       "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/SNZ6T6MJZSVH",
-      "shortName": "Project Management"
+      "shortName": "Project Management",
+      "description": "Foundational discipline in Agile methodology and continuous improvement workflows."
     }
   ],
   "experience": [
@@ -96,11 +99,11 @@
     "date": "2006 - 2008"
   },
   "links": [
-    { "label": "Run the Assessment", "url": "/calculator", "primary": true },
-    { "label": "Explore Services", "url": "/services", "primary": false },
-    { "label": "View Pricing", "url": "/pricing", "primary": false },
-    { "label": "Read Field Notes (Blog)", "url": "/blog", "primary": false },
-    { "label": "Contact / Book a Session", "url": "/contact", "primary": false },
-    { "label": "LinkedIn Profile", "url": "https://www.linkedin.com/in/richardnorwoodpmp", "primary": false }
+    { "label": "Run the Assessment", "url": "/calculator", "primary": true, "colSpan": 2, "rowSpan": 1 },
+    { "label": "View Pricing", "url": "/pricing", "primary": false, "colSpan": 1, "rowSpan": 1 },
+    { "label": "Read Field Notes (Blog)", "url": "/blog", "primary": false, "colSpan": 1, "rowSpan": 2 },
+    { "label": "Contact / Book a Session", "url": "/contact", "primary": false, "colSpan": 2, "rowSpan": 1 },
+    { "label": "Explore Services", "url": "/services", "primary": false, "colSpan": 1, "rowSpan": 1 },
+    { "label": "LinkedIn Profile", "url": "https://www.linkedin.com/in/richardnorwoodpmp", "primary": false, "colSpan": 1, "rowSpan": 1 }
   ]
 }

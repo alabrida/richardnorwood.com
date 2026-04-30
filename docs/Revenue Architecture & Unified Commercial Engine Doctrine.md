@@ -99,14 +99,21 @@ These layers exist to support the buyer's movement through the five stages, not 
 
 ## Progression of the Work
 
-The work usually moves in a practical sequence.
+The engagement follows a three-tier progression to move a business from fragmentation to a Unified state.
 
-1. The Guide uses a Commercial EKG to identify where the journey is weak or disconnected.
-2. A Managed Nervous System creates the first reliable layer of visibility and automation.
-3. The Unified Commercial Engine aligns the full commercial journey around shared rules and cleaner handoffs.
-4. A Sovereign Engine becomes relevant only when the business needs greater ownership over infrastructure, data, or workflow logic.
+1. **Align:** The Guide uses a Commercial EKG to identify where the journey is weak or disconnected and establishes the first operating rhythm.
+2. **Build:** A Managed Nervous System is installed to create reliable visibility and automation using existing tools.
+3. **Command:** The commercial engine is fully installed, governance rules are hardened, and the business transitions to long-term orchestration.
+
+## The Decision Fork
+
+At the end of the primary journey (post-Command), the client reaches a critical decision point based on their maturity and needs:
+
+- **Stay Managed:** The client continues as a partner of the Guide brand. Their infrastructure remains on the Guide's cloud infrastructure, providing long-term stability without technical debt.
+- **Migrate to Sovereign (Enterprise):** If the business requires deep data ownership, custom infrastructure, or complex architecture, they are referred internally to Alabrida to build and own a Sovereign Engine.
 
 ## Maturity Model
+
 
 This doctrine uses four maturity tiers to describe the health of the commercial system.
 

@@ -1,10 +1,11 @@
 .glowCardWrapper {
   perspective: 1200px;
+  position: relative;
 }
 
 .glowCard {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   cursor: default;
   transition: transform 0.1s ease-out,
     border-color var(--duration-slow) var(--ease-out),

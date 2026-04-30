@@ -12,6 +12,7 @@ interface Tier {
   tagline: string
   term: string
   badge?: string
+  badge_tooltip?: string
   value_nudge?: string
   features: string[]
   locked_features: string[]
@@ -31,6 +32,7 @@ export default function PricingGrid({ data }: { data: Tier[] }) {
           transition={{ duration: 0.5, delay: i * 0.15 }}
           whileHover={{ y: -10, scale: 1.02 }}
           className="relative"
+          style={{ overflow: 'visible' }}
         >
           <GlowCard
             className={`${styles.pricingCard} ${tier.highlighted ? styles.highlightedCard : ''}`}
@@ -38,7 +40,10 @@ export default function PricingGrid({ data }: { data: Tier[] }) {
             glow={tier.highlighted ? { r: 240, g: 180, b: 41 } : { r: 32, g: 201, b: 151 }}
           >
             {tier.badge && (
-              <div className={`${styles.popularBadge} ${!tier.highlighted ? styles.neutralBadge : ''}`}>
+              <div 
+                className={`${styles.popularBadge} ${!tier.highlighted ? styles.neutralBadge : ''}`}
+                data-tooltip={tier.badge_tooltip}
+              >
                 <span className="mr-1.5">{tier.highlighted ? '★' : '✦'}</span>
                 {tier.badge}
               </div>
