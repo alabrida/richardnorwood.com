@@ -121,11 +121,27 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 <div style={{ color: 'var(--color-text)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                   {author}
                   <div style={{ display: 'flex', gap: '4px' }}>
-                    <div style={{ padding: '1px 6px', background: 'rgba(32, 201, 151, 0.1)', border: '1px solid rgba(32, 201, 151, 0.3)', borderRadius: '4px', fontSize: '8px', color: 'var(--color-accent)', fontWeight: 'bold' }}>PMP</div>
-                    <div style={{ padding: '1px 6px', background: 'rgba(32, 201, 151, 0.1)', border: '1px solid rgba(32, 201, 151, 0.3)', borderRadius: '4px', fontSize: '8px', color: 'var(--color-accent)', fontWeight: 'bold' }}>GDA</div>
+                    <a 
+                      href="https://www.credly.com/badges/08947dff-1909-4bc0-97c5-3228020092f8/public_url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.badgeLink}
+                      data-benefit="Ensures structured delivery and project accountability."
+                    >
+                      PMP
+                    </a>
+                    <a 
+                      href="https://coursera.org/share/380889997f4b4bcf04d4a250d5ce7df9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.badgeLink}
+                      data-benefit="Uncovers hidden revenue leaks via statistical analysis."
+                    >
+                      GDA
+                    </a>
                   </div>
                 </div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Revenue Architect</div>
+                <div style={{ color: 'var(--color-secondary)', fontSize: 'var(--text-sm)', fontWeight: 'bold' }}>Revenue Architect</div>
               </div>
             </div>
           </header>

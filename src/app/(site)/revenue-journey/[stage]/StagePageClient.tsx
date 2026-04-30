@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from './StagePage.module.css';
 import GlowCard from '@/components/ui/GlowCard';
+import CallButton from '@/components/ui/CallButton';
 
 const stageGlowMap: Record<string, { r: number; g: number; b: number }> = {
   awareness: { r: 59, g: 130, b: 246 },
@@ -261,9 +262,16 @@ export default function StagePageClient({
               See where friction lives and what to fix first in your{' '}
               {stage.charAt(0).toUpperCase() + stage.slice(1)} stage.
             </p>
-            <div className="flex justify-center">
+            <div className={styles.ctaButtonGroup}>
               <Link href={data.cta_url} className={styles.ctaButton}>
                 {data.cta} →
+              </Link>
+              <CallButton size="large" />
+              <Link 
+                href="/blueprint" 
+                className={styles.ctaButtonSecondary}
+              >
+                Get the Blueprint (PDF)
               </Link>
             </div>
           </div>
