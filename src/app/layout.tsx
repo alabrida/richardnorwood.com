@@ -54,7 +54,7 @@ const globalSchema = {
         "https://www.youtube.com/@richardnorwoodpmp",
         "https://www.instagram.com/richardnorwoodpmp/",
         "https://www.tiktok.com/@richardnorwoodpmp",
-        "https://share.google/njwSUidXoDAXya4ui"
+        "https://share.google/nPvEH2o5m4Lc7Gfbk"
       ],
       "alumniOf": [
         {

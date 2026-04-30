@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import CallButton from '@/components/ui/CallButton'
 import styles from './About.module.css'
 
 interface AboutProps {
@@ -80,9 +81,12 @@ export default function AboutSection({ data }: AboutProps) {
 
             <p className={styles.aboutBio}>{data.bio}</p>
             
-            <Link href="/about" className={styles.secondaryCta}>
-              {data.cta_text}
-            </Link>
+            <div className={styles.aboutActions}>
+              <CallButton />
+              <Link href="/about" className={styles.secondaryCta}>
+                {data.cta_text}
+              </Link>
+            </div>
           </motion.div>
         </div>
       </div>

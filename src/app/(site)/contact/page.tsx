@@ -3,6 +3,7 @@ import ContactForm from '@/components/forms/ContactForm'
 import GoogleCalendarEmbed from '@/components/ui/GoogleCalendarEmbed'
 import { Toaster } from 'sonner'
 import GlowCard from '@/components/ui/GlowCard'
+import CallButton from '@/components/ui/CallButton'
 import PageHero from '@/components/sections/PageHero'
 import styles from '@/components/forms/AuthForm.module.css'
 import { JsonLd } from '@/components/seo/JsonLd'
@@ -96,6 +97,10 @@ export default function ContactPage() {
                 </ul>
               </div>
             </GlowCard>
+
+            <div style={{ padding: '0 var(--space-6)', display: 'flex', justifyContent: 'flex-end' }}>
+              <CallButton />
+            </div>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>

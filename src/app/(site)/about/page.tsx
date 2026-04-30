@@ -21,7 +21,8 @@ export default function AboutPage() {
       jobTitle: 'Revenue Architecture Advisor',
       url: 'https://richardnorwood.com/about',
       sameAs: [
-        'https://www.linkedin.com/in/richardnorwoodpmp'
+        'https://www.linkedin.com/in/richardnorwoodpmp',
+        'https://share.google/nPvEH2o5m4Lc7Gfbk'
       ],
       alumniOf: [
         {

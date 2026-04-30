@@ -2,6 +2,7 @@ import React from 'react'
 import PageHero from '@/components/sections/PageHero'
 import PricingGrid from '@/components/sections/PricingGrid'
 import PricingFAQ from '@/components/sections/PricingFAQ'
+import CallButton from '@/components/ui/CallButton'
 import pricingData from '../../../../content/pricing.json'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
@@ -63,6 +64,16 @@ export default function PricingPage() {
       <PageHero title="Align. Build. Command." subtitle="Choose the engagement that matches where your business is today." />
       <PricingGrid data={pricingData.tiers} />
       <PricingFAQ />
+      
+      <section style={{ textAlign: 'center', padding: 'var(--space-16) var(--space-4) var(--space-24)', background: 'var(--color-bg)' }}>
+        <h2 style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-text)', fontSize: 'var(--text-3xl)', marginBottom: 'var(--space-4)' }}>
+          Still Have Questions?
+        </h2>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-lg)', marginBottom: 'var(--space-8)', maxWidth: '600px', margin: '0 auto var(--space-8)' }}>
+          If you need a custom scope or have specific questions about the partnership tiers, let's talk.
+        </p>
+        <CallButton size="large" />
+      </section>
     </>
   )
 }

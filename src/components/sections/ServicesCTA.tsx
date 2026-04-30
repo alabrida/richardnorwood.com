@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import CallButton from '@/components/ui/CallButton'
 import styles from './ServicesCTA.module.css'
 
 export default function ServicesCTA() {
@@ -20,9 +21,12 @@ export default function ServicesCTA() {
           A short diagnostic to identify what's working, what's stalling, and where to focus first.
         </p>
         
-        <Link href="/calculator" className={styles.ctaBtn}>
-          Run the Assessment
-        </Link>
+        <div style={{ display: 'flex', gap: 'var(--space-4)', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'var(--space-8)' }}>
+          <Link href="/calculator" className={styles.ctaBtn} style={{ marginTop: 0 }}>
+            Run the Assessment
+          </Link>
+          <CallButton size="large" />
+        </div>
       </motion.div>
     </section>
   )

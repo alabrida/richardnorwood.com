@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import CallButton from '@/components/ui/CallButton'
 import PageHero from '@/components/sections/PageHero'
 import styles from './AboutPage.module.css'
 import { BentoGrid, BentoCard, BentoCardIcon, BentoCardTitle, BentoCardDescription } from '@/components/layout/BentoGrid'
@@ -103,6 +104,7 @@ export default function AboutPageClient({ data }: { data: AboutData }) {
                 <span className={styles.certBadgeText}>{cert.shortName} Certified</span>
               </a>
             ))}
+            <CallButton className="ml-auto" />
           </motion.div>
 
           {data.bio.map((paragraph, idx) => (
