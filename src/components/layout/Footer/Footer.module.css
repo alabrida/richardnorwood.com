@@ -20,6 +20,16 @@
 @media (min-width: 1024px) { .footerTop { flex-direction: row; justify-content: space-between; align-items: flex-start; gap: var(--space-12); } }
 
 .brand { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.pitch {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-subtle);
+  margin-bottom: var(--space-2);
+  max-width: 320px;
+  line-height: var(--leading-relaxed);
+}
+
 .brandLogo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; color: var(--color-text); }
 .logoMark { width: 36px; height: 36px; border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark)); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: var(--font-weight-bold); font-size: 0.875rem; color: var(--color-text-inverse); letter-spacing: var(--tracking-tight); flex-shrink: 0; }
 .logoText { font-family: var(--font-heading); font-weight: var(--font-weight-semibold); font-size: var(--text-sm); }

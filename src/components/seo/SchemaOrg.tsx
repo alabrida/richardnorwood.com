@@ -12,7 +12,7 @@ const baseSchema = {
     {
       '@type': 'ProfessionalService',
       '@id': 'https://richardnorwood.com/#organization',
-      name: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+      name: 'Richard Norwood, PMP — Revenue Architect',
       url: 'https://richardnorwood.com',
       description: 'Strategic consulting to align, build, and hand off commercial systems that connect marketing, sales, delivery, and retention into one revenue engine.',
       areaServed: {
@@ -54,7 +54,7 @@ const baseSchema = {
       '@type': 'Person',
       '@id': 'https://richardnorwood.com/#person',
       name: 'Richard Norwood',
-      jobTitle: 'Revenue Architecture Advisor',
+      jobTitle: 'Revenue Architect',
       url: 'https://richardnorwood.com',
       sameAs: [
         'https://linkedin.com/in/richardnorwood',

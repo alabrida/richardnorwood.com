@@ -16,11 +16,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+  title: 'Richard Norwood, PMP — Revenue Architect',
   description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
   metadataBase: new URL('https://richardnorwood.com'),
   openGraph: {
-    title: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+    title: 'Richard Norwood, PMP — Revenue Architect',
     description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
     url: 'https://richardnorwood.com',
     siteName: 'Richard Norwood',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Richard Norwood, PMP — Revenue Architecture Advisor',
+    title: 'Richard Norwood, PMP — Revenue Architect',
     description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
   },
   icons: {
@@ -44,7 +44,8 @@ const globalSchema = {
       "@type": "Person",
       "@id": "https://richardnorwood.com/#person",
       "name": "Richard Norwood",
-      "jobTitle": "Revenue Architecture Advisor",
+      "jobTitle": "Revenue Architect",
+      "image": "https://richardnorwood.com/images/author_pic.jpg",
       "description": "Certified PMP who helps agencies and service businesses build commercial systems that connect marketing, sales, delivery, and retention.",
       "url": "https://richardnorwood.com",
       "sameAs": [
@@ -104,7 +105,7 @@ const globalSchema = {
     {
       "@type": "ProfessionalService",
       "@id": "https://richardnorwood.com/#organization",
-      "name": "Richard Norwood, PMP — Revenue Architecture Advisor",
+      "name": "Richard Norwood, PMP — Revenue Architect",
       "url": "https://richardnorwood.com",
       "description": "Strategic consulting to align, build, and hand off commercial systems that connect marketing, sales, delivery, and retention into one revenue engine.",
       "founder": { "@id": "https://richardnorwood.com/#person" },
@@ -141,7 +142,7 @@ const globalSchema = {
       "@type": "WebSite",
       "@id": "https://richardnorwood.com/#website",
       "url": "https://richardnorwood.com/",
-      "name": "Richard Norwood — Revenue Architecture Advisor",
+      "name": "Richard Norwood — Revenue Architect",
       "publisher": {
         "@id": "https://richardnorwood.com/#person"
       }

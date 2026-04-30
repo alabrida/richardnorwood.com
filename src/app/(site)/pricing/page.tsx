@@ -41,6 +41,14 @@ export default function PricingPage() {
           '@type': 'Answer',
           text: 'Yes. All active clients receive a dedicated portal with project tracking, asset delivery, and direct communication.'
         }
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens in the first 7 days?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Within 48 hours, we establish your secure client portal and communication hub. By day 7, we complete the initial Commercial EKG scan and identify the first 3 "High-Friction" points to fix immediately.'
+        }
       }
     ]
   }
@@ -62,6 +70,13 @@ export default function PricingPage() {
       <JsonLd data={jsonLd} />
       <JsonLd data={offerLd} />
       <PageHero title="Align. Build. Command." subtitle="Choose the engagement that matches where your business is today." />
+
+      <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto var(--space-12)', textAlign: 'center', padding: '0 var(--space-4)' }}>
+        <p style={{ color: 'var(--color-accent)', fontStyle: 'italic', fontSize: 'var(--text-lg)', fontWeight: 'bold' }}>
+          "{pricingData.risk_reversal}"
+        </p>
+      </div>
+
       <PricingGrid data={pricingData.tiers} />
       <PricingFAQ />
       

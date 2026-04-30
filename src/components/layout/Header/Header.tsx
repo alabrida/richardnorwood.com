@@ -53,9 +53,13 @@ export default function Header() {
         </nav>
 
         <div className={styles.actions}>
-          <Link href="/calculator" className={styles.ctaButton}>
+          <Link href="/contact" className={styles.ctaButton}>
             <span className={styles.ctaPulse} aria-hidden="true" />
-            Run the Assessment
+            Book a Call
+          </Link>
+          
+          <Link href="/calculator" className={styles.secondaryHeaderCta}>
+            Assessment
           </Link>
 
           <button className={styles.menuButton} onClick={toggleDrawer} aria-label={drawerOpen ? 'Close menu' : 'Open menu'} aria-expanded={drawerOpen}>

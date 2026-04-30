@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 interface PostProps {
@@ -58,6 +59,21 @@ export default function BlogCard({ post, idx }: PostProps) {
       <p style={{ color: 'var(--color-text-muted)', lineHeight: 'var(--leading-relaxed)', marginBottom: 'var(--space-6)', flexGrow: 1 }}>
         {post.excerpt}
       </p>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-6)', borderTop: '1px solid var(--color-border)', paddingTop: 'var(--space-4)' }}>
+        <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--color-surface-elevated)', overflow: 'hidden', position: 'relative' }}>
+          <Image 
+            src="/images/author_pic.jpg" 
+            alt="Richard Norwood" 
+            fill 
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+        <div>
+          <div style={{ color: 'var(--color-text)', fontSize: 'var(--text-xs)', fontWeight: 'bold' }}>Richard Norwood</div>
+          <div style={{ color: 'var(--color-text-muted)', fontSize: '10px' }}>Revenue Architect</div>
+        </div>
+      </div>
 
       <Link 
         href={`/blog/${post.slug}`}

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Player } from '@remotion/player';
 import { VideoPlaceholder } from '@/components/remotion/VideoPlaceholder';
+import CallButton from '@/components/ui/CallButton';
 import NewsletterForm from './NewsletterForm';
 import styles from './Footer.module.css';
 
@@ -42,6 +43,12 @@ export default function Footer() {
       <div className={styles.footerInner}>
         <div className={styles.footerTop}>
           <div className={styles.brand}>
+            <p className={styles.pitch}>
+              Helping leaders transition from fragmented growth to an orchestrated commercial system.
+            </p>
+            <div style={{ marginBottom: 'var(--space-8)' }}>
+              <CallButton />
+            </div>
             <NewsletterForm embedded />
             <div className={styles.socials}>
               <div className={`${styles.pmpBadge} ${styles.pmpBadgeEmbedded}`}>

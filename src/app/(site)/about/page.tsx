@@ -6,7 +6,7 @@ import { buildMetadata } from '@/lib/metadata'
 
 export const metadata = buildMetadata({
   title: 'About Richard Norwood, PMP | Revenue Enablement & Marketing Consultant',
-  description: 'Richard Norwood is a certified Project Management Professional (PMP) and Revenue Architecture Advisor helping businesses optimize their buyer journey and commercial systems.',
+  description: 'Richard Norwood is a certified Project Management Professional (PMP) and Revenue Architect helping businesses optimize their buyer journey and commercial systems.',
   path: '/about',
 })
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
       '@type': 'Person',
       '@id': 'https://richardnorwood.com/#person',
       name: 'Richard Norwood',
-      jobTitle: 'Revenue Architecture Advisor',
+      jobTitle: 'Revenue Architect',
       url: 'https://richardnorwood.com/about',
       sameAs: [
         'https://www.linkedin.com/in/richardnorwoodpmp',

@@ -8,6 +8,7 @@ import { TableOfContents } from '@/components/blog/TableOfContents'
 import { AuthorBio } from '@/components/blog/AuthorBio'
 import { BrandDoctrine } from '@/components/blog/BrandDoctrine'
 import styles from './BlogPost.module.css'
+import Image from 'next/image'
 
 // Generate static params for all posts to ensure edge delivery
 export async function generateStaticParams() {
@@ -17,8 +18,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
   if (!post) return { title: 'Post Not Found' }
   return buildMetadata({
     title: `${post.title.rendered} | Field Notes — Richard Norwood, PMP`,
@@ -28,8 +30,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   })
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug)
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
   if (!post) notFound()
 
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
@@ -48,7 +51,9 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     description: cleanExcerpt,
     datePublished: post.date,
     author: {
-      '@id': 'https://richardnorwood.com/#person'
+      '@id': 'https://richardnorwood.com/#person',
+      'name': 'Richard Norwood',
+      'image': 'https://richardnorwood.com/images/author_pic.jpg'
     },
     url: `https://richardnorwood.com/blog/${post.slug}`
   }
@@ -104,10 +109,23 @@ export default async function BlogPost({ params }: { params: { slug: string } })
               dangerouslySetInnerHTML={{ __html: title }}
             />
             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
-              <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-surface-elevated)' }} />
+              <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-surface-elevated)', overflow: 'hidden', position: 'relative' }}>
+                <Image 
+                  src="/images/author_pic.jpg" 
+                  alt="Richard Norwood" 
+                  fill 
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
               <div>
-                <div style={{ color: 'var(--color-text)', fontWeight: 'bold' }}>{author}</div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Guide & Revenue Architecture Advisor</div>
+                <div style={{ color: 'var(--color-text)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                  {author}
+                  <div style={{ display: 'flex', gap: '4px' }}>
+                    <div style={{ padding: '1px 6px', background: 'rgba(32, 201, 151, 0.1)', border: '1px solid rgba(32, 201, 151, 0.3)', borderRadius: '4px', fontSize: '8px', color: 'var(--color-accent)', fontWeight: 'bold' }}>PMP</div>
+                    <div style={{ padding: '1px 6px', background: 'rgba(32, 201, 151, 0.1)', border: '1px solid rgba(32, 201, 151, 0.3)', borderRadius: '4px', fontSize: '8px', color: 'var(--color-accent)', fontWeight: 'bold' }}>GDA</div>
+                  </div>
+                </div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Revenue Architect</div>
               </div>
             </div>
           </header>

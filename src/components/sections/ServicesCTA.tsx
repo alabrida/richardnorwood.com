@@ -26,6 +26,13 @@ export default function ServicesCTA() {
             Run the Assessment
           </Link>
           <CallButton size="large" />
+          <Link 
+            href="/blueprint" 
+            className={styles.ctaBtn} 
+            style={{ marginTop: 0, background: 'transparent', border: '1px solid var(--color-border)', color: 'var(--color-text)' }}
+          >
+            Get the Blueprint (PDF)
+          </Link>
         </div>
       </motion.div>
     </section>

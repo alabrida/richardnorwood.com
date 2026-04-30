@@ -83,6 +83,7 @@ export function TableOfContents() {
                   display: 'block',
                   lineHeight: '1.4'
                 }}
+                className="toc-link"
                 onClick={(e) => {
                   e.preventDefault()
                   document.getElementById(heading.id)?.scrollIntoView({ behavior: 'smooth' })
@@ -97,6 +98,10 @@ export function TableOfContents() {
       <style jsx>{`
         .toc-container {
           display: none;
+        }
+
+        .toc-link:hover {
+          color: var(--color-accent) !important;
         }
         
         /* Show inline on mobile (collapsible could be added here, but showing it normally top of post) */
@@ -121,8 +126,8 @@ export function TableOfContents() {
           }
           .toc-sticky {
             position: sticky;
-            top: var(--space-24);
-            max-height: calc(100vh - var(--space-32));
+            top: var(--space-32);
+            max-height: calc(100vh - var(--space-40));
             overflow-y: auto;
             padding-right: var(--space-4);
           }

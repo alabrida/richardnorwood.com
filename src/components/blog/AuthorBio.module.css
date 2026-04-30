@@ -21,6 +21,56 @@
   font-size: var(--text-2xl);
   font-weight: bold;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.certBadges {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.certBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(32, 201, 151, 0.05);
+  border: 1px solid rgba(32, 201, 151, 0.2);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--duration-fast);
+}
+
+.certBadge:hover {
+  background: rgba(32, 201, 151, 0.1);
+  border-color: var(--color-accent);
+}
+
+.certIcon {
+  width: 14px;
+  height: 14px;
+  background: var(--color-bg);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: bold;
+  border-radius: 2px;
+  border: 1px solid rgba(32, 201, 151, 0.3);
+}
+
+.certLabel {
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
 }
 
 .authorInfo h3 {
