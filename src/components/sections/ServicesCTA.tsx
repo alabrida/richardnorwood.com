@@ -26,13 +26,6 @@ export default function ServicesCTA() {
             Run the Health Check
           </Link>
           <CallButton size="large" />
-          <Link 
-            href="/blueprint" 
-            className={`${styles.ctaBtn} pulse-green-glow`} 
-            style={{ marginTop: 0, background: 'transparent', border: '1px solid var(--color-border)', color: 'var(--color-text)' }}
-          >
-            Get the Blueprint
-          </Link>
         </div>
       </motion.div>
     </section>

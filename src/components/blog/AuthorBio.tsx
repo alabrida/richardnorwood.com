@@ -59,6 +59,13 @@ export function AuthorBio() {
           Connect on LinkedIn →
         </Link>
       </div>
+
+      <Link 
+        href="/contact" 
+        className={styles.bookingBtn}
+      >
+        Book a Diagnostic
+      </Link>
     </div>
   )
 }
