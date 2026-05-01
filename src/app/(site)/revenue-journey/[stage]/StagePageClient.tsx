@@ -269,9 +269,9 @@ export default function StagePageClient({
               <CallButton size="large" />
               <Link 
                 href="/blueprint" 
-                className={styles.ctaButtonSecondary}
+                className={`${styles.ctaButtonSecondary} pulse-green-glow`}
               >
-                Get the Blueprint (PDF)
+                Get the Blueprint
               </Link>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useForm } from '@tanstack/react-form'
 import { toast } from 'sonner'
 import styles from './AuthForm.module.css'
+import GlowCard from '@/components/ui/GlowCard'
 
 const questions = [
   { id: 'q1', text: 'How much time per week does your team spend manually migrating data between tools?', options: ['0-5 Hours', '5-15 Hours', '15+ Hours (Critical Leak)'] },
@@ -14,41 +15,52 @@ const questions = [
   { id: 'q5', text: 'Identify your estimated Annual Revenue (AARR)', options: ['$0 - $1MM (Emerging)', '$1MM - $5MM (Orchestrating)', '$5MM+ (Scale)'] },
 ]
 
-import GlowCard from '@/components/ui/GlowCard'
-
 export default function CalculatorForm() {
   const [step, setStep] = useState(0)
   const [analyzing, setAnalyzing] = useState(false)
   
   const form = useForm({
-    defaultValues: { q1: '', q2: '', q3: '', q4: '', q5: '' },
+    defaultValues: { email: '', q1: '', q2: '', q3: '', q4: '', q5: '' },
     onSubmit: async ({ value }) => {
       setAnalyzing(true)
       
-      // Calculate qualification score and route to appropriate next step
-      setTimeout(() => {
+      try {
+        const response = await fetch('/api/health-check', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: value.email, responses: value }),
+        });
+
+        if (!response.ok) throw new Error('Failed to send report');
+
         setAnalyzing(false)
-        toast.message('Analysis Complete', {
-          description: 'Your results are ready. Redirecting you to book a review...'
+        toast.message('Health Check Complete', {
+          description: 'Your report is being generated. Check your email shortly.'
         })
         
         // Push user to contact to book with payload
         setTimeout(() => {
           const formattedPayload = `[ REVENUE HEALTH CHECK RESULTS ]
+Email: ${value.email}
 Data Migration: ${value.q1}
 Central Repository: ${value.q2}
 Attribution: ${value.q3}
 Infrastructure: ${value.q4}
 Estimated AARR: ${value.q5}
 
-I'd like to review my results together.`
+I'd like to review my maturity category together.`
 
           const params = new URLSearchParams()
-          params.set('source', 'ekg')
+          params.set('source', 'health-check')
           params.set('payload', formattedPayload)
           window.location.href = `/contact?${params.toString()}`
         }, 3000)
-      }, 5000)
+      } catch (error) {
+        setAnalyzing(false)
+        toast.error('Submission Failed', {
+          description: 'Please try again or contact me directly.'
+        })
+      }
     }
   })
 
@@ -58,8 +70,8 @@ I'd like to review my results together.`
         {analyzing ? (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={styles.inputGroup} style={{ textAlign: 'center' }}>
             <div style={{ color: 'var(--color-secondary)', fontSize: 'var(--text-4xl)', marginBottom: 'var(--space-4)' }}>⟳</div>
-            <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)' }}>Analyzing Your Responses...</h2>
-            <p style={{ color: 'var(--color-text-subtle)', marginTop: 'var(--space-2)' }}>Building your personalized assessment based on your answers.</p>
+            <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)' }}>Running Health Check...</h2>
+            <p style={{ color: 'var(--color-text-subtle)', marginTop: 'var(--space-2)' }}>Analyzing your system signals to determine your Revenue Maturity Category.</p>
           </motion.div>
         ) : (
           <form 
@@ -118,15 +130,39 @@ I'd like to review my results together.`
               </AnimatePresence>
             ) : (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ textAlign: 'center' }}>
-                <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)' }}>All Set.</h2>
-                <p style={{ color: 'var(--color-text-subtle)', margin: 'var(--space-4) 0 var(--space-8)' }}>Submit your answers to see where your commercial system is strongest — and where to focus next.</p>
+                <h2 style={{ color: 'var(--color-text)', fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)' }}>Health Check Complete.</h2>
+                <p style={{ color: 'var(--color-text-subtle)', margin: 'var(--space-4) 0 var(--space-8)' }}>Enter your professional email to receive your Maturity Category report and see if you qualify for the full 22-point diagnostic.</p>
                 
+                <form.Field name="email">
+                  {(field) => (
+                    <div style={{ marginBottom: 'var(--space-8)' }}>
+                      <input
+                        type="email"
+                        value={field.state.value}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        placeholder="Enter your professional email"
+                        required
+                        style={{
+                          width: '100%',
+                          background: 'var(--color-bg-alt)',
+                          border: '1px solid var(--color-border)',
+                          color: 'var(--color-text)',
+                          padding: 'var(--space-4)',
+                          borderRadius: 'var(--radius-md)',
+                          fontSize: 'var(--text-base)',
+                          marginBottom: 'var(--space-2)'
+                        }}
+                      />
+                    </div>
+                  )}
+                </form.Field>
+
                 <form.Subscribe
                   selector={(state) => [state.canSubmit, state.isSubmitting]}
                 >
                   {([canSubmit, isSubmitting]) => (
                     <button type="submit" disabled={!canSubmit || isSubmitting} className={styles.submitBtn} style={{ width: '100%', maxWidth: 300, margin: '0 auto' }}>
-                      See My Results
+                      {isSubmitting ? 'Sending...' : 'Get My Results'}
                     </button>
                   )}
                 </form.Subscribe>

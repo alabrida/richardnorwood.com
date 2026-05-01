@@ -72,7 +72,7 @@ export default function PricingPage() {
       <PageHero title="Align. Build. Command." subtitle="Choose the engagement that matches where your business is today." />
 
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto var(--space-12)', textAlign: 'center', padding: '0 var(--space-4)' }}>
-        <p style={{ color: 'var(--color-accent)', fontStyle: 'italic', fontSize: 'var(--text-lg)', fontWeight: 'bold' }}>
+        <p style={{ color: 'var(--color-accent)', fontStyle: 'italic', fontSize: '1rem', fontWeight: '500' }}>
           "{pricingData.risk_reversal}"
         </p>
       </div>

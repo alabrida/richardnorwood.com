@@ -37,7 +37,7 @@
         "benefit": "Captures interest without creating friction."
       }
     ],
-    "cta": "Take the Assessment",
+    "cta": "Take the Health Check",
     "cta_url": "/calculator",
     "color": "var(--stage-awareness)",
     "next_stage": { "slug": "consideration", "label": "Consideration" },
@@ -125,7 +125,7 @@
         "benefit": "Protects both sides from a poor fit."
       }
     ],
-    "cta": "Take the Assessment",
+    "cta": "Take the Health Check",
     "cta_url": "/calculator",
     "color": "var(--stage-decision)",
     "next_stage": { "slug": "conversion", "label": "Conversion" },
@@ -213,7 +213,7 @@
         "benefit": "Turns satisfied customers into a reliable source of referrals and revenue."
       }
     ],
-    "cta": "Take the Assessment",
+    "cta": "Take the Health Check",
     "cta_url": "/calculator",
     "color": "var(--stage-retention)",
     "next_stage": null,

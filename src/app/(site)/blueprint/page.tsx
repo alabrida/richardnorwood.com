@@ -17,7 +17,7 @@ export default function BlueprintPage() {
     <>
       <PageHero 
         title={blueprintData.hero.title} 
-        subtitle={blueprintData.hero.subtitle}
+        subtitle="The exact structural map I use to diagnose and fix commercial engines. This is the architecture you need to understand before running the Health Check pre-qualifier."
       />
       
       <section style={{ padding: 'var(--space-20) 0', background: 'var(--color-bg)' }}>

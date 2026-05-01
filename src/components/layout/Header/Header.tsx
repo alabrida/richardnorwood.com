@@ -59,7 +59,7 @@ export default function Header() {
           </Link>
           
           <Link href="/calculator" className={styles.secondaryHeaderCta}>
-            Assessment
+            Health Check
           </Link>
 
           <button className={styles.menuButton} onClick={toggleDrawer} aria-label={drawerOpen ? 'Close menu' : 'Open menu'} aria-expanded={drawerOpen}>

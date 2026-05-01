@@ -62,9 +62,9 @@ export default function HeroSection({ data }: HeroProps) {
             </Link>
             <Link 
               href="/blueprint" 
-              className={styles.secondaryCta}
+              className={`${styles.secondaryCta} pulse-green-glow`}
             >
-              Get the 5-Stage Blueprint (PDF)
+              Get the 5-Stage Blueprint
             </Link>
           </motion.div>
         </div>

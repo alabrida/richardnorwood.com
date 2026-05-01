@@ -7,6 +7,7 @@ import { getAllPosts, getPostBySlug } from '@/lib/wp'
 import { TableOfContents } from '@/components/blog/TableOfContents'
 import { AuthorBio } from '@/components/blog/AuthorBio'
 import { BrandDoctrine } from '@/components/blog/BrandDoctrine'
+import StarRating from '@/components/blog/StarRating'
 import styles from './BlogPost.module.css'
 import Image from 'next/image'
 
@@ -84,7 +85,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <main style={{ maxWidth: 1200, margin: '0 auto', padding: 'var(--space-20) var(--space-4) var(--space-24)' }}>
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: 'var(--space-20) var(--space-4) var(--space-24)' }}>
       <JsonLd data={[blogPostingSchema, breadcrumbSchema]} />
       <Link href="/blog" style={{ color: 'var(--color-text-subtle)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-12)' }}>
         ← Back to Field Notes
@@ -144,6 +145,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 <div style={{ color: 'var(--color-secondary)', fontSize: 'var(--text-sm)', fontWeight: 'bold' }}>Revenue Architect</div>
               </div>
             </div>
+            
+            <StarRating postId={post.id} />
           </header>
 
           <div 
@@ -156,6 +159,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <BrandDoctrine />
         </article>
       </div>
-    </main>
+    </div>
   )
 }

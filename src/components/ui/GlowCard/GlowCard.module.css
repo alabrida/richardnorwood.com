@@ -1,6 +1,9 @@
 .glowCardWrapper {
   perspective: 1200px;
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .glowCard {
@@ -12,6 +15,9 @@
     box-shadow var(--duration-slow) var(--ease-out);
   will-change: transform;
   transform-style: preserve-3d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .glowCard:hover {

@@ -31,7 +31,7 @@ export default function PricingGrid({ data }: { data: Tier[] }) {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: i * 0.15 }}
           whileHover={{ y: -10, scale: 1.02 }}
-          className="relative"
+          className="relative h-full"
           style={{ overflow: 'visible' }}
         >
           <GlowCard

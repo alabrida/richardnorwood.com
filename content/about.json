@@ -99,7 +99,7 @@
     "date": "2006 - 2008"
   },
   "links": [
-    { "label": "Run the Assessment", "url": "/calculator", "primary": true, "colSpan": 2, "rowSpan": 1 },
+    { "label": "Run the Health Check", "url": "/calculator", "primary": true, "colSpan": 2, "rowSpan": 1 },
     { "label": "View Pricing", "url": "/pricing", "primary": false, "colSpan": 1, "rowSpan": 1 },
     { "label": "Read Field Notes (Blog)", "url": "/blog", "primary": false, "colSpan": 1, "rowSpan": 2 },
     { "label": "Contact / Book a Session", "url": "/contact", "primary": false, "colSpan": 2, "rowSpan": 1 },

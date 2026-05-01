@@ -19,7 +19,7 @@ import {
 
 // Map icons to links based on label or index
 const getIcon = (label: string) => {
-  if (label.includes('Assessment')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
+  if (label.includes('Health Check')) return <ClipboardDocumentCheckIcon className="w-6 h-6" />
   if (label.includes('Services')) return <SparklesIcon className="w-6 h-6" />
   if (label.includes('Pricing')) return <CurrencyDollarIcon className="w-6 h-6" />
   if (label.includes('Blog')) return <BookOpenIcon className="w-6 h-6" />
@@ -28,7 +28,7 @@ const getIcon = (label: string) => {
 }
 
 const getDescription = (label: string) => {
-  if (label.includes('Assessment')) return 'Determine your revenue maturity across 22 structural checkpoints.'
+  if (label.includes('Health Check')) return 'Determine your revenue maturity across 22 structural checkpoints.'
   if (label.includes('Services')) return 'Strategy, implementation, and fractional leadership.'
   if (label.includes('Pricing')) return 'Flexible partnership tiers for every growth stage.'
   if (label.includes('Blog')) return 'Field notes on project management and commercial engines.'

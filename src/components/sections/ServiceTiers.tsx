@@ -35,6 +35,7 @@ export default function ServiceTiers({ data }: TiersProps) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
             whileHover={{ y: -8, scale: 1.01 }}
+            className="h-full"
             style={{ overflow: 'visible' }}
           >
             <GlowCard 

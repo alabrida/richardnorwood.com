@@ -79,7 +79,7 @@ export default function MobileDrawer({ isOpen, onClose, navItems }: MobileDrawer
                 onClick={onClose} 
                 className={styles.drawerCta}
               >
-                Run the Assessment
+                Run the Health Check
               </Link>
             </div>
           </motion.div>

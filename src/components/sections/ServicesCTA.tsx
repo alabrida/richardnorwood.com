@@ -23,15 +23,15 @@ export default function ServicesCTA() {
         
         <div style={{ display: 'flex', gap: 'var(--space-4)', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'var(--space-8)' }}>
           <Link href="/calculator" className={styles.ctaBtn} style={{ marginTop: 0 }}>
-            Run the Assessment
+            Run the Health Check
           </Link>
           <CallButton size="large" />
           <Link 
             href="/blueprint" 
-            className={styles.ctaBtn} 
+            className={`${styles.ctaBtn} pulse-green-glow`} 
             style={{ marginTop: 0, background: 'transparent', border: '1px solid var(--color-border)', color: 'var(--color-text)' }}
           >
-            Get the Blueprint (PDF)
+            Get the Blueprint
           </Link>
         </div>
       </motion.div>

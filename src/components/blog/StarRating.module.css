@@ -1,0 +1,56 @@
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.ratingLabel {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-subtle);
+  font-weight: bold;
+}
+
+.stars {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.starButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starButton:disabled {
+  cursor: default;
+}
+
+.starIcon, .starIconActive {
+  width: 20px;
+  height: 20px;
+  transition: color var(--duration-fast);
+}
+
+.starIcon {
+  color: var(--color-border);
+}
+
+.starIconActive {
+  color: var(--color-secondary);
+}
+
+.submittedValue {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--color-secondary);
+  font-size: var(--text-sm);
+}

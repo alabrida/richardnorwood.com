@@ -36,7 +36,7 @@ export default function Footer() {
               <Link key={link.href} href={link.href} className={styles.footerNavLink}>{link.label}</Link>
             ))}
           </nav>
-          <Link href="/calculator" className={styles.footerCta}>Run the Assessment</Link>
+          <Link href="/calculator" className={styles.footerCta}>Run the Health Check</Link>
         </div>
       </div>
 
