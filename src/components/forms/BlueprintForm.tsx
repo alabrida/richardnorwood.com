@@ -12,12 +12,25 @@ export default function BlueprintForm() {
     e.preventDefault();
     setStatus('submitting');
     
-    // Simulate lead capture - in reality, this would hit /api/leads or Supabase
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/blueprint', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) throw new Error('Failed to capture lead');
+
+      const data = await response.json();
       setStatus('success');
+      
       // After success, redirect to the actual PDF
-      window.location.href = 'https://drive.google.com/your-blueprint-placeholder';
-    }, 1500);
+      setTimeout(() => {
+        window.location.href = data.downloadUrl;
+      }, 1000);
+    } catch (error) {
+      setStatus('error');
+    }
   };
 
   if (status === 'success') {

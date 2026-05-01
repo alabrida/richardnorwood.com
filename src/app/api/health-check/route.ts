@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { createClient } from '@/lib/supabase/server';
 
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { email, responses } = await request.json();
 
     if (!email) {
@@ -12,9 +12,6 @@ export async function POST(request: Request) {
     }
 
     // Determine Maturity Category based on responses
-    // q5 is the AARR question which is a strong indicator
-    // q1-q4 are friction indicators
-    
     let category = 'Emerging';
     let recommendations = 'Focus on building foundational visibility and capturing first-layer signals.';
     
@@ -26,7 +23,21 @@ export async function POST(request: Request) {
       recommendations = 'Focus on cross-team alignment and automating signal capture across the middle-of-funnel touchpoints.';
     }
 
-    // Deliver the email
+    // 1. Store in Supabase
+    const supabase = await createClient();
+    const { error: dbError } = await supabase
+      .from('health_checks')
+      .insert([{ 
+        email, 
+        responses, 
+        category 
+      }]);
+
+    if (dbError) {
+      console.error('Supabase Error (health_checks):', dbError);
+    }
+
+    // 2. Deliver the email
     const { data, error } = await resend.emails.send({
       from: 'Richard Norwood <richard@richardnorwood.com>',
       to: [email],

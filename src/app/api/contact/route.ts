@@ -1,10 +1,27 @@
 import { NextResponse } from 'next/server'
+import { createClient } from '@/lib/supabase/server'
 
 export async function POST(request: Request) {
   try {
     const data = await request.json()
 
-    // The webhook URL is stored securely in environment variables
+    // 1. Store in Supabase
+    const supabase = await createClient()
+    const { error: dbError } = await supabase
+      .from('website_leads')
+      .insert([{
+        full_name: data.name,
+        email: data.email,
+        business_url: data.website,
+        message: data.message,
+        source: 'contact_form'
+      }])
+
+    if (dbError) {
+      console.error('Supabase Error (website_leads):', dbError)
+    }
+
+    // 2. Dispatch to n8n
     const webhookUrl = process.env.N8N_WEBHOOK_URL
 
     if (!webhookUrl) {

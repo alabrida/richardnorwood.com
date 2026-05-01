@@ -15,11 +15,19 @@ export default function StarRating({ postId }: StarRatingProps) {
   const [hover, setHover] = useState(0)
   const [submitted, setSubmitted] = useState(false)
 
-  const handleRating = (value: number) => {
+  const handleRating = async (value: number) => {
     setRating(value)
     setSubmitted(true)
-    // In a real implementation, we would persist this to Supabase
-    console.log(`Rated post ${postId}: ${value} stars`)
+    
+    try {
+      await fetch('/api/blog-rating', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ postId, rating: value }),
+      });
+    } catch (error) {
+      console.error('Failed to persist rating');
+    }
   }
 
   return (
