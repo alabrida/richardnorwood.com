@@ -30,7 +30,7 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
 
         if (!response.ok) throw new Error('Submission failed');
 
-        toast.success('Intake complete. Starting analysis...');
+        toast.success('Information received. Preparing your session context...');
         router.push(`/discovery/${value.tier}?email=${encodeURIComponent(value.email)}`);
       } catch (err) {
         toast.error('Something went wrong. Please try again.');

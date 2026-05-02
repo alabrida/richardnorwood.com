@@ -23,44 +23,101 @@ export async function POST(request: Request) {
       recommendations = 'Focus on cross-team alignment and automating signal capture across the middle-of-funnel touchpoints.';
     }
 
-    // 1. Store in Supabase
+    // 1. Store in Supabase and get the UUID
     const supabase = await createClient();
-    const { error: dbError } = await supabase
+    const { data: dbData, error: dbError } = await supabase
       .from('health_checks')
       .insert([{ 
         email, 
         responses, 
         category 
-      }]);
+      }])
+      .select('id')
+      .single();
 
     if (dbError) {
       console.error('Supabase Error (health_checks):', dbError);
     }
 
-    // 2. Deliver the email
+    const leadUuid = dbData?.id || '';
+
+    // 2. Deliver the email with embedded form and tiered CTAs
     const { data, error } = await resend.emails.send({
       from: 'Richard Norwood <richard@richardnorwood.com>',
       to: [email],
-      subject: 'Your Revenue Health Check Report',
+      subject: 'Your Revenue Health Check Report & Next Steps',
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #111; line-height: 1.6;">
           <div style="border-bottom: 2px solid #20c997; padding-bottom: 10px; margin-bottom: 30px;">
-            <h1 style="color: #111; margin: 0; font-size: 24px;">Revenue Health Check Report</h1>
+            <h1 style="color: #111; margin: 0; font-size: 24px;">Revenue Health Check: Preliminary Results</h1>
             <p style="color: #666; margin: 5px 0 0;">Prepared for ${email}</p>
           </div>
           
           <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
             <h2 style="margin-top: 0; font-size: 18px; color: #f0b429;">Maturity Category: ${category}</h2>
-            <p style="margin-bottom: 0;">Based on your responses, your commercial system is currently in the <strong>${category}</strong> stage.</p>
+            <p style="margin-bottom: 0;">Based on your current signals, your business is operating in the <strong>${category}</strong> stage.</p>
           </div>
 
-          <h3 style="font-size: 16px; margin-bottom: 10px;">Strategic Recommendations:</h3>
+          <h3 style="font-size: 16px; margin-bottom: 10px;">Strategic Direction:</h3>
           <p style="margin-bottom: 30px;">${recommendations}</p>
 
           <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
-            <h3 style="margin-top: 0; font-size: 16px;">Next Step: The Full 22-Point Diagnostic</h3>
-            <p style="font-size: 14px; color: #444;">This health check is a pre-qualifier for my proprietary structural assessment. To see your specific scores across all 22 checkpoints and identify exactly where your revenue is leaking, let's review these results together.</p>
-            <a href="https://richardnorwood.com/contact" style="display: inline-block; background: #f0b429; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px;">Book a Diagnostic Review</a>
+            <h3 style="margin-top: 0; font-size: 18px;">Unlock Your Full 22-Point Structural Audit</h3>
+            <p style="font-size: 14px; color: #444;">We have established a preliminary overview, but the detailed structural review requires a deeper look. You have two options to receive your comprehensive 22-point diagnostic report and access your secure client portal:</p>
+            
+            <div style="margin-top: 20px; margin-bottom: 20px;">
+              <strong>Option 1: Guided Discovery (Free)</strong><br/>
+              Book a 20-minute strategic review. We will go over your custom audit results live on the call.
+              <br/><br/>
+              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules?email=${encodeURIComponent(email)}" style="display: inline-block; background: #f0b429; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Book Free Review</a>
+            </div>
+
+            <div style="border-top: 1px solid #eee; padding-top: 20px;">
+              <strong>Option 2: Instant Access ($497)</strong><br/>
+              Skip the call. Receive your full structural map and results instantly. 
+              <br/><em style="font-size: 12px; color: #666;">Note: Completion of the security clearance below is required for accurate results.</em>
+              <br/><br/>
+              <a href="https://richardnorwood.com/purchase/audit?id=${leadUuid}&email=${encodeURIComponent(email)}" style="display: inline-block; background: #20c997; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Get Results Instantly</a>
+            </div>
+          </div>
+
+          <div style="background: #0f1a2e; color: #e8edf5; padding: 25px; border-radius: 8px; margin-bottom: 30px;">
+            <h3 style="margin-top: 0; font-size: 18px; color: #f0b429;">Step 1: Security Clearance</h3>
+            <p style="font-size: 13px; color: #8899b4; margin-bottom: 20px;">Please complete this brief clearance directly in this email. This information is required to finalize your diagnostic results prior to our session.</p>
+            
+            <form action="https://richardnorwood.com/api/clearance" method="POST">
+              <input type="hidden" name="lead_id" value="${leadUuid}" />
+              <input type="hidden" name="email" value="${email}" />
+              
+              <div style="margin-bottom: 15px;">
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">What is your primary revenue bottleneck?</label>
+                <textarea name="bottleneck" required rows="2" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;"></textarea>
+              </div>
+
+              <div style="margin-bottom: 15px;">
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Does the business own its main discovery paths?</label>
+                <select name="owns_paths" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;">
+                  <option value="yes">Yes, fully sovereign</option>
+                  <option value="partially">Partially, some platform dependency</option>
+                  <option value="no">No, totally dependent on 3rd party ads/algos</option>
+                </select>
+              </div>
+
+              <div style="margin-bottom: 15px;">
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Can a buyer validate fit without unnecessary back-and-forth?</label>
+                <select name="validate_fit" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;">
+                  <option value="yes">Yes, self-serve paths exist</option>
+                  <option value="no">No, requires human intervention for basic fit</option>
+                </select>
+              </div>
+
+              <div style="margin-bottom: 15px;">
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">What CRM or systems are you currently using?</label>
+                <input type="text" name="systems" required style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;" />
+              </div>
+
+              <button type="submit" style="background: #f0b429; color: #000; border: none; padding: 12px 20px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%;">Submit Clearance</button>
+            </form>
           </div>
 
           <p style="font-size: 12px; color: #999; border-top: 1px solid #eee; padding-top: 20px;">

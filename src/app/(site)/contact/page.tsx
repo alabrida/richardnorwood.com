@@ -109,7 +109,7 @@ export default function ContactPage() {
                 Book a Discovery Session
               </h2>
               <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-6)' }}>
-                Schedule a 30-minute session with Richard Norwood, PMP to discuss your commercial system.
+                Schedule a 20-minute session with Richard Norwood, PMP to discuss your commercial system.
               </p>
             </div>
             

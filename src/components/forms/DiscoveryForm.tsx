@@ -33,7 +33,7 @@ export default function DiscoveryForm({ tier, email, title, questions }: Discove
 
         if (!response.ok) throw new Error('Submission failed');
 
-        toast.success('Discovery complete! Your dashboard is being provisioned.');
+        toast.success('Information received. Preparing your strategic results.');
         router.push('/discovery/success');
       } catch (err) {
         toast.error('Something went wrong. Please try again.');
@@ -96,7 +96,7 @@ export default function DiscoveryForm({ tier, email, title, questions }: Discove
               disabled={!canSubmit}
               className="w-full mt-8 py-4 px-8 bg-[#f0b429] text-[#060b16] font-heading font-bold text-lg rounded-full hover:bg-[#d49a1a] disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-xl hover:shadow-[#f0b429]/20"
             >
-              {isSubmitting ? 'Provisioning Dashboard...' : 'Complete Discovery'}
+              {isSubmitting ? 'Preparing Your Results...' : 'Finalize Discovery'}
             </button>
           )}
         />

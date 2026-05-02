@@ -1,0 +1,165 @@
+'use client';
+
+import React from 'react';
+import { useForm } from '@tanstack/react-form';
+import { toast } from 'sonner';
+
+interface ClearanceFormProps {
+  leadId: string;
+  email: string;
+  isPaidFlow?: boolean;
+  onLocalSuccess?: () => void;
+}
+
+export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLocalSuccess }: ClearanceFormProps) {
+  const form = useForm({
+    defaultValues: {
+      bottleneck: '',
+      systems: '',
+      owns_paths: 'yes',
+      validate_fit: 'yes',
+    },
+    onSubmit: async ({ value }) => {
+      try {
+        const formData = new FormData();
+        formData.append('lead_id', leadId);
+        formData.append('email', email);
+        formData.append('bottleneck', value.bottleneck);
+        formData.append('systems', value.systems);
+        formData.append('owns_paths', value.owns_paths);
+        formData.append('validate_fit', value.validate_fit);
+
+        const response = await fetch('/api/clearance', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (!response.ok) throw new Error('Clearance failed');
+
+        if (onLocalSuccess) {
+          onLocalSuccess();
+        } else if (isPaidFlow) {
+          toast.success('Information received. Redirecting to secure checkout...');
+          setTimeout(() => {
+            window.location.href = 'https://buy.stripe.com/mock-audit-purchase';
+          }, 1500);
+        } else {
+          window.location.href = `/clearance/success?email=${encodeURIComponent(email)}`;
+        }
+      } catch (err) {
+        toast.error('Submission failed. Please try again.');
+      }
+    },
+  });
+
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        form.handleSubmit();
+      }}
+      style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}
+    >
+      <form.Field
+        name="bottleneck"
+        children={(field) => (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+            <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
+              What is your primary revenue bottleneck?
+            </label>
+            <textarea
+              value={field.state.value}
+              onChange={(e) => field.handleChange(e.target.value)}
+              placeholder="e.g. Lead conversion in CRM is manual, data is fragmented..."
+              required
+              rows={4}
+              style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)', resize: 'none' }}
+            />
+          </div>
+        )}
+      />
+
+      <form.Field
+        name="owns_paths"
+        children={(field) => (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+            <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
+              Does the business own its main discovery paths?
+            </label>
+            <select
+              value={field.state.value}
+              onChange={(e) => field.handleChange(e.target.value)}
+              style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)' }}
+            >
+              <option value="yes">Yes, fully sovereign</option>
+              <option value="partially">Partially, some platform dependency</option>
+              <option value="no">No, totally dependent on 3rd party ads/algos</option>
+            </select>
+          </div>
+        )}
+      />
+
+      <form.Field
+        name="validate_fit"
+        children={(field) => (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+            <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
+              Can a buyer validate fit without unnecessary back-and-forth?
+            </label>
+            <select
+              value={field.state.value}
+              onChange={(e) => field.handleChange(e.target.value)}
+              style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)' }}
+            >
+              <option value="yes">Yes, self-serve paths exist</option>
+              <option value="no">No, requires human intervention for basic fit</option>
+            </select>
+          </div>
+        )}
+      />
+
+      <form.Field
+        name="systems"
+        children={(field) => (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+            <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
+              What CRM or systems are you currently using?
+            </label>
+            <input
+              type="text"
+              value={field.state.value}
+              onChange={(e) => field.handleChange(e.target.value)}
+              placeholder="e.g. HubSpot, Salesforce, custom DB..."
+              required
+              style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)' }}
+            />
+          </div>
+        )}
+      />
+
+      <form.Subscribe
+        selector={(state) => [state.canSubmit, state.isSubmitting]}
+        children={([canSubmit, isSubmitting]) => (
+          <button
+            type="submit"
+            disabled={!canSubmit}
+            style={{ 
+              background: isPaidFlow ? 'var(--color-accent)' : 'var(--color-secondary)', 
+              color: 'var(--color-text-inverse)', 
+              padding: '16px', 
+              borderRadius: 'var(--radius-full)', 
+              fontWeight: 'bold', 
+              border: 'none', 
+              cursor: 'pointer',
+              marginTop: 'var(--space-4)',
+              transition: 'opacity 0.2s'
+            }}
+          >
+            {isSubmitting ? 'Verifying...' : (isPaidFlow ? 'Confirm & Proceed to Payment' : 'Complete Review')}
+          </button>
+        )}
+      />
+    </form>
+  );
+}
