@@ -1,12 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Container from '@/components/layout/Container';
 import ClearanceForm from '@/components/forms/ClearanceForm';
 import PayPalCheckout from '@/components/forms/PayPalCheckout';
 
-export default function PurchaseAuditPage() {
+function PurchaseAuditContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const leadId = searchParams.get('id');
@@ -83,5 +83,21 @@ export default function PurchaseAuditPage() {
         }
       `}</style>
     </main>
+  );
+}
+
+export default function PurchaseAuditPage() {
+  return (
+    <Suspense fallback={
+      <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', background: '#060b16' }}>
+        <Container>
+          <div style={{ textAlign: 'center', color: '#fff' }}>
+            <p>Initializing secure checkout...</p>
+          </div>
+        </Container>
+      </main>
+    }>
+      <PurchaseAuditContent />
+    </Suspense>
   );
 }

@@ -13,10 +13,10 @@ export default function PayPalCheckout({ leadId, onSuccess }: PayPalCheckoutProp
   const [loading, setLoading] = useState(false);
 
   const initialOptions = {
-    "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID!,
-    "enable-funding": "venmo,paylater",
-    "data-sdk-integration-source": "button-factory",
-    "currency": "USD",
+    clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID!,
+    enableFunding: "venmo,paylater",
+    dataSdkIntegrationSource: "button-factory",
+    currency: "USD",
   };
 
   const createOrder = async () => {
