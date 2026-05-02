@@ -5,23 +5,23 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/cms/:path*",
-        destination: "http://212.1.212.41/:path*",
+        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/:path*",
       },
       {
         source: "/wp-admin/:path*",
-        destination: "http://212.1.212.41/cms/wp-admin/:path*",
+        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-admin/:path*",
       },
       {
         source: "/wp-json/:path*",
-        destination: "http://212.1.212.41/cms/wp-json/:path*",
+        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-json/:path*",
       },
       {
         source: "/wp-content/:path*",
-        destination: "http://212.1.212.41/cms/wp-content/:path*",
+        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-content/:path*",
       },
       {
         source: "/wp-includes/:path*",
-        destination: "http://212.1.212.41/cms/wp-includes/:path*",
+        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-includes/:path*",
       }
     ]
   },
