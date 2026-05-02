@@ -3,7 +3,7 @@ import BlogCard from '@/components/blog/BlogCard'
 import PageHero from '@/components/sections/PageHero'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
-import { getAllPosts } from '@/lib/wp'
+import { getAllPosts, decodeHtml } from '@/lib/wp'
 
 export const metadata = buildMetadata({
   title: 'Field Notes | Richard Norwood, PMP',
@@ -17,10 +17,10 @@ export default async function BlogIndex() {
   // Map WordPress REST API format to the expected UI format
   const blogData = wpPosts.map(post => ({
     id: post.id,
-    title: post.title.rendered,
+    title: decodeHtml(post.title.rendered),
     slug: post.slug,
     date: post.date,
-    excerpt: post.excerpt.rendered.replace(/<[^>]*>?/gm, ''), // strip html tags from excerpt
+    excerpt: decodeHtml(post.excerpt.rendered.replace(/<[^>]*>?/gm, '')), // strip html tags and decode
     category: 'Field Notes', // Fallback since WP meta wasn't registered
     author: 'Richard Norwood'
   }))

@@ -51,14 +51,16 @@ export default function BlogCard({ post, idx }: PostProps) {
       </div>
 
       <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
-        <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', color: 'var(--color-text)', marginBottom: 'var(--space-4)', lineHeight: 'var(--leading-tight)' }}>
-          {post.title}
-        </h2>
+        <h2 
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', color: 'var(--color-text)', marginBottom: 'var(--space-4)', lineHeight: 'var(--leading-tight)' }}
+          dangerouslySetInnerHTML={{ __html: post.title }}
+        />
       </Link>
       
-      <p style={{ color: 'var(--color-text-muted)', lineHeight: 'var(--leading-relaxed)', marginBottom: 'var(--space-6)', flexGrow: 1 }}>
-        {post.excerpt}
-      </p>
+      <p 
+        style={{ color: 'var(--color-text-muted)', lineHeight: 'var(--leading-relaxed)', marginBottom: 'var(--space-6)', flexGrow: 1 }}
+        dangerouslySetInnerHTML={{ __html: post.excerpt }}
+      />
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-6)', borderTop: '1px solid var(--color-border)', paddingTop: 'var(--space-4)' }}>
         <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--color-surface-elevated)', overflow: 'hidden', position: 'relative' }}>

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
-import { getAllPosts, getPostBySlug } from '@/lib/wp'
+import { getAllPosts, getPostBySlug, decodeHtml } from '@/lib/wp'
 import { TableOfContents } from '@/components/blog/TableOfContents'
 import { AuthorBio } from '@/components/blog/AuthorBio'
 import { BrandDoctrine } from '@/components/blog/BrandDoctrine'
@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await getPostBySlug(slug)
   if (!post) return { title: 'Post Not Found' }
   return buildMetadata({
-    title: `${post.title.rendered} | Field Notes — Richard Norwood, PMP`,
-    description: post.excerpt.rendered.replace(/<[^>]*>?/gm, ''),
+    title: `${decodeHtml(post.title.rendered)} | Field Notes — Richard Norwood, PMP`,
+    description: decodeHtml(post.excerpt.rendered.replace(/<[^>]*>?/gm, '')),
     path: `/blog/${post.slug}`,
     type: 'article',
   })
@@ -40,8 +40,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     year: 'numeric', month: 'long', day: 'numeric'
   })
   
-  const cleanExcerpt = post.excerpt.rendered.replace(/<[^>]*>?/gm, '')
-  const title = post.title.rendered
+  const title = decodeHtml(post.title.rendered)
+  const cleanExcerpt = decodeHtml(post.excerpt.rendered.replace(/<[^>]*>?/gm, ''))
   const author = 'Richard Norwood'
   const category = 'Field Notes'
 
@@ -107,7 +107,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </div>
             <h1 
               style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: 'var(--color-text)', lineHeight: 'var(--leading-tight)', marginBottom: 'var(--space-6)' }}
-              dangerouslySetInnerHTML={{ __html: title }}
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
             />
             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
               <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-surface-elevated)', overflow: 'hidden', position: 'relative' }}>

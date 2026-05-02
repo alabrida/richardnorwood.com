@@ -7,7 +7,7 @@ import homepageData from '../../../content/homepage.json'
 import socialProofData from '../../../content/social-proof.json'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
-import { getAllPosts } from '@/lib/wp'
+import { getAllPosts, decodeHtml } from '@/lib/wp'
 
 export const metadata = buildMetadata({
   title: 'Guide & Revenue Architect | Richard Norwood, PMP',
@@ -20,10 +20,10 @@ export default async function HomePage() {
   
   const blogTeaserPosts = wpPosts.map(post => ({
     id: post.id,
-    title: post.title.rendered,
+    title: decodeHtml(post.title.rendered),
     slug: post.slug,
     date: post.date,
-    excerpt: post.excerpt.rendered.replace(/<[^>]*>?/gm, ''),
+    excerpt: decodeHtml(post.excerpt.rendered.replace(/<[^>]*>?/gm, '')),
     category: 'Field Notes'
   }))
 

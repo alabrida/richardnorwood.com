@@ -13,6 +13,25 @@ export interface WPPost {
 const WP_ORIGIN = process.env.WP_ORIGIN_URL || 'https://paleturquoise-butterfly-387959.hostingersite.com'
 const API_URL = `${WP_ORIGIN}/wp-json/wp/v2`
 
+/**
+ * Basic HTML entity decoder for common WordPress characters
+ */
+export function decodeHtml(text: string): string {
+  if (!text) return ''
+  return text
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&#8217;/g, "'")
+    .replace(/&#8211;/g, '–')
+    .replace(/&#8220;/g, '“')
+    .replace(/&#8221;/g, '”')
+    .replace(/&#8230;/g, '…')
+    .replace(/&#160;/g, ' ')
+}
+
 export async function getAllPosts(): Promise<WPPost[]> {
   try {
     const res = await fetch(`${API_URL}/posts?_embed&per_page=100`, {
