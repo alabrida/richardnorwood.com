@@ -8,9 +8,10 @@ export interface WPPost {
   _embedded?: any
 }
 
-// HARD-CODED ORIGIN: This ensures the blog renders even if Vercel has an old WP_API_URL environment variable.
-// We are using the verified Hostinger Preview URL to break the redirect loop.
-const API_URL = 'https://paleturquoise-butterfly-387959.hostingersite.com/wp-json/wp/v2'
+// Using Secure Hostinger Preview URL to bypass domain conflicts and redirect loops
+// This can be overridden in production by setting the WP_ORIGIN_URL environment variable
+const WP_ORIGIN = process.env.WP_ORIGIN_URL || 'https://paleturquoise-butterfly-387959.hostingersite.com'
+const API_URL = `${WP_ORIGIN}/wp-json/wp/v2`
 
 export async function getAllPosts(): Promise<WPPost[]> {
   try {

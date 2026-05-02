@@ -2,26 +2,27 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   async rewrites() {
+    const origin = process.env.WP_ORIGIN_URL || "https://paleturquoise-butterfly-387959.hostingersite.com";
     return [
       {
         source: "/cms/:path*",
-        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/:path*",
+        destination: `${origin}/:path*`,
       },
       {
         source: "/wp-admin/:path*",
-        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-admin/:path*",
+        destination: `${origin}/wp-admin/:path*`,
       },
       {
         source: "/wp-json/:path*",
-        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-json/:path*",
+        destination: `${origin}/wp-json/:path*`,
       },
       {
         source: "/wp-content/:path*",
-        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-content/:path*",
+        destination: `${origin}/wp-content/:path*`,
       },
       {
         source: "/wp-includes/:path*",
-        destination: "https://paleturquoise-butterfly-387959.hostingersite.com/wp-includes/:path*",
+        destination: `${origin}/wp-includes/:path*`,
       }
     ]
   },
