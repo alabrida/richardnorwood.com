@@ -42,3 +42,11 @@ next-env.d.ts
 
 # credentials
 credentials/*.json
+
+# Internal Strategy & Docs
+docs/
+
+# Temporary SQL & Logs
+*.sql
+*.log
+huge_table_row.json
