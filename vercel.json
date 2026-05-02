@@ -48,5 +48,27 @@
       "destination": "/portal",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/cms/:path*",
+      "destination": "https://origin.richardnorwood.com/:path*"
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "https://origin.richardnorwood.com/cms/wp-admin/:path*"
+    },
+    {
+      "source": "/wp-json/:path*",
+      "destination": "https://origin.richardnorwood.com/cms/wp-json/:path*"
+    },
+    {
+      "source": "/wp-content/:path*",
+      "destination": "https://origin.richardnorwood.com/cms/wp-content/:path*"
+    },
+    {
+      "source": "/wp-includes/:path*",
+      "destination": "https://origin.richardnorwood.com/cms/wp-includes/:path*"
+    }
   ]
 }

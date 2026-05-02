@@ -8,8 +8,8 @@ export interface WPPost {
   _embedded?: any
 }
 
-// Fallback to Next.js env var locally, or use process.env inside the fetch
-const API_URL = process.env.WP_API_URL || 'https://cms.richardnorwood.com/wp-json/wp/v2'
+// Using local proxied path for True Headless (Vercel -> Hostinger)
+const API_URL = process.env.WP_API_URL || 'https://www.richardnorwood.com/wp-json/wp/v2'
 
 export async function getAllPosts(): Promise<WPPost[]> {
   try {
