@@ -9,19 +9,18 @@ import GlowCard from '@/components/ui/GlowCard'
 interface Tier {
   id: string
   name: string
+  tagline: string
   term: string
-  price?: string
+  badge?: string
+  badge_tooltip?: string
+  value_nudge?: string
   features: string[]
+  locked_features: string[]
   cta_text: string
-  cta_url?: string
   highlighted: boolean
 }
 
-interface PricingGridProps {
-  data: Tier[]
-}
-
-export default function PricingGrid({ data }: PricingGridProps) {
+export default function PricingGrid({ data }: { data: Tier[] }) {
   return (
     <section className={styles.pricingGrid}>
       {data.map((tier, i) => (
@@ -38,38 +37,65 @@ export default function PricingGrid({ data }: PricingGridProps) {
           <GlowCard
             className={`${styles.pricingCard} ${tier.highlighted ? styles.highlightedCard : ''}`}
             glowColor={tier.highlighted ? 'var(--color-secondary)' : 'var(--color-accent)'}
+            glow={tier.highlighted ? { r: 240, g: 180, b: 41 } : { r: 32, g: 201, b: 151 }}
           >
-            <div className={styles.pricingContent}>
-              <div style={{ marginBottom: 'var(--space-8)' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-2)' }}>
-                  <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', color: 'var(--color-text)' }}>{tier.name}</h3>
-                  {tier.highlighted && (
-                    <span style={{ fontSize: '10px', background: 'rgba(240, 180, 41, 0.1)', color: 'var(--color-secondary)', padding: '2px 8px', borderRadius: 'var(--radius-full)', fontWeight: 'bold', textTransform: 'uppercase' }}>
-                      Recommended
-                    </span>
-                  )}
-                </div>
-                <p style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-sm)' }}>{tier.term}</p>
+            {tier.badge && (
+              <div 
+                className={`${styles.popularBadge} ${!tier.highlighted ? styles.neutralBadge : ''}`}
+                data-tooltip={tier.badge_tooltip}
+              >
+                <span className="mr-1.5">{tier.highlighted ? '★' : '✦'}</span>
+                {tier.badge}
               </div>
+            )}
+            <div className={styles.pricingContent}>
+              <p className={styles.tierTagline}>{tier.tagline}</p>
+              <h3 className={styles.tierName}>{tier.name}</h3>
 
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', flexGrow: 1 }}>
+              {tier.value_nudge && (
+                <p className={styles.tierDesc}>
+                  {tier.value_nudge}
+                </p>
+              )}
+              
+              <div className={styles.priceBlock}>
+                <span className={styles.termLabel}>Commitment</span>
+                <span className={styles.price}>{tier.term}</span>
+              </div>
+              
+              <ul className={styles.featuresList}>
                 {tier.features.map((feature, idx) => (
-                  <li key={idx} style={{ display: 'flex', gap: 'var(--space-3)', color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)', lineHeight: 1.5 }}>
-                    <span style={{ color: tier.highlighted ? 'var(--color-secondary)' : 'var(--color-accent)', flexShrink: 0 }}>✓</span>
-                    {feature}
+                  <motion.li 
+                    key={`f-${idx}`} 
+                    className={styles.featureItem}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.4 + (idx * 0.05) }}
+                  >
+                    <span className={styles.featureIcon}>✓</span>
+                    <span>{feature}</span>
+                  </motion.li>
+                ))}
+                {tier.locked_features.map((locked, idx) => (
+                  <li key={`l-${idx}`} className={`${styles.featureItem} ${styles.lockedItem}`}>
+                    <span className={styles.lockedIcon}>✕</span>
+                    <span>{locked}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <motion.div whileTap={{ scale: 0.98 }} className={styles.pricingBtn}>
-              <Link
-                href={tier.cta_url || '/calculator'}
-                className={`${styles.primaryBtn} ${tier.highlighted ? styles.highlightedBtn : ''}`}
+              
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
               >
-                {tier.cta_text}
-              </Link>
-            </motion.div>
+                <Link 
+                  href={`/services/${tier.id}`} 
+                  className={`${styles.ctaBtn} ${tier.highlighted ? styles.highlightedBtn : styles.primaryBtn}`}
+                >
+                  {tier.cta_text}
+                </Link>
+              </motion.div>
+            </div>
           </GlowCard>
         </motion.div>
       ))}
