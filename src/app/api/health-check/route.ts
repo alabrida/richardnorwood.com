@@ -83,40 +83,40 @@ export async function POST(request: Request) {
 
           <div style="background: #0f1a2e; color: #e8edf5; padding: 25px; border-radius: 8px; margin-bottom: 30px;">
             <h3 style="margin-top: 0; font-size: 18px; color: #f0b429;">Step 1: Security Clearance</h3>
-            <p style="font-size: 13px; color: #8899b4; margin-bottom: 20px;">Please complete this brief clearance directly in this email. This information is required to finalize your diagnostic results prior to our session.</p>
+            <p style="font-size: 13px; color: #8899b4; margin-bottom: 20px;">Please complete this brief clearance to align our technical findings with your business goals.</p>
             
             <form action="https://richardnorwood.com/api/clearance" method="POST">
               <input type="hidden" name="lead_id" value="${leadUuid}" />
               <input type="hidden" name="email" value="${email}" />
               
               <div style="margin-bottom: 15px;">
-                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">What is your primary revenue bottleneck?</label>
-                <textarea name="bottleneck" required rows="2" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;"></textarea>
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Primary Revenue Bottleneck</label>
+                <textarea name="bottleneck" required rows="2" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;" placeholder="Where is the system leaking?"></textarea>
               </div>
 
               <div style="margin-bottom: 15px;">
-                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Does the business own its main discovery paths?</label>
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Infrastructure Sovereignty</label>
                 <select name="owns_paths" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;">
-                  <option value="yes">Yes, fully sovereign</option>
-                  <option value="partially">Partially, some platform dependency</option>
-                  <option value="no">No, totally dependent on 3rd party ads/algos</option>
+                  <option value="sovereign">We own our data & discovery paths</option>
+                  <option value="platform_dependent">Dependent on 3rd party algorithms/ads</option>
+                  <option value="locked_in">Totally locked into proprietary vendor stacks</option>
                 </select>
               </div>
 
               <div style="margin-bottom: 15px;">
-                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Can a buyer validate fit without unnecessary back-and-forth?</label>
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Buyer Validation</label>
                 <select name="validate_fit" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;">
-                  <option value="yes">Yes, self-serve paths exist</option>
-                  <option value="no">No, requires human intervention for basic fit</option>
+                  <option value="self_serve">Buyers can validate fit without talking to us</option>
+                  <option value="human_required">Requires human intervention for basic fit</option>
                 </select>
               </div>
 
               <div style="margin-bottom: 15px;">
-                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">What CRM or systems are you currently using?</label>
-                <input type="text" name="systems" required style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;" />
+                <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Current Tech Stack / CRM</label>
+                <input type="text" name="systems" required placeholder="e.g. HubSpot, Salesforce, Custom..." style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #2a3a5a; background: #0a1628; color: #fff; font-family: sans-serif; box-sizing: border-box;" />
               </div>
 
-              <button type="submit" style="background: #f0b429; color: #000; border: none; padding: 12px 20px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%;">Submit Clearance</button>
+              <button type="submit" style="background: #f0b429; color: #000; border: none; padding: 12px 20px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%;">Submit & Finalize Results</button>
             </form>
           </div>
 

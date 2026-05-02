@@ -9,24 +9,25 @@ import GlowCard from '@/components/ui/GlowCard'
 interface Tier {
   id: string
   name: string
-  badge?: string
-  badge_tooltip?: string
+  badge: string
+  badge_tooltip: string
   subtitle: string
   description: string
   includes: string[]
   cta: string
-  highlighted?: boolean
 }
 
-interface TiersProps {
+interface ServiceTiersProps {
   data: Tier[]
 }
 
-export default function ServiceTiers({ data }: TiersProps) {
+export default function ServiceTiers({ data }: ServiceTiersProps) {
   return (
-    <section className={styles.tiersGrid}>   
+    <section className={styles.tiersGrid}>
       {data.map((tier, index) => {
         const isBuild = tier.id === 'build'
+        const isAlign = tier.id === 'align'
+        
         return (
           <motion.div
             key={tier.id}
@@ -41,50 +42,35 @@ export default function ServiceTiers({ data }: TiersProps) {
             <GlowCard 
               className={`${styles.tierCard} ${isBuild ? styles.highlightedCard : ''}`} 
               glowColor={isBuild ? 'var(--color-secondary)' : 'var(--color-accent)'}
-              glow={isBuild ? { r: 240, g: 180, b: 41 } : { r: 32, g: 201, b: 151 }}
             >
-              {tier.badge && (
-                <div 
-                  className={isBuild ? styles.popularBadge : styles.topRightBadge}
-                  data-tooltip={tier.badge_tooltip}
-                >
-                  {isBuild && <span className="mr-1.5">★</span>}
-                  {!isBuild && <span className="mr-1.5">✦</span>}
-                  {tier.badge}
-                </div>
-              )}
-              <div className={styles.tierContent}>
-                <div className={styles.tierSubtitle}>{tier.subtitle}</div>
-                <h2 className={styles.tierName}>{tier.name}</h2>
-                <p className={styles.tierDesc}>{tier.description}</p>
+              {/* Badge with Tooltip */}
+              <div 
+                className={isBuild ? styles.popularBadge : styles.topRightBadge}
+                data-tooltip={tier.badge_tooltip}
+              >
+                {tier.badge}
+              </div>
 
+              <div className={styles.tierContent}>
+                <h3 className={styles.tierName}>{tier.name}</h3>
+                <div className={styles.tierSubtitle}>{tier.subtitle}</div>
+                <p className={styles.tierDesc}>{tier.description}</p>
+                
                 <ul className={styles.tierIncludesList}>
                   {tier.includes.map((item, i) => (
-                    <motion.li 
-                      key={i}
-                      initial={{ opacity: 0, x: -5 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.3 + (i * 0.1) }}
-                    >
-                    <span className="text-accent mr-2">✓</span>
-                      {item}
-                    </motion.li>        
+                    <li key={i}><span>✓</span> {item}</li>
                   ))}
                 </ul>
-
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="mt-auto"
-                >
-                  <Link 
-                    href={`/services/${tier.id}`}
-                    className={`${styles.tierCta} ${isBuild ? styles.highlightedBtn : ''}`}
-                  >
-                    {tier.cta}
-                  </Link>
-                </motion.div>
               </div>
+
+              <motion.div whileTap={{ scale: 0.98 }} className={styles.tierBtn}>
+                <Link 
+                  href={`/services/${tier.id}`}
+                  className={`${styles.tierCta} ${isBuild ? styles.highlightedBtn : ''}`}
+                >
+                  {tier.cta}
+                </Link>
+              </motion.div>
             </GlowCard>
           </motion.div>
         )
