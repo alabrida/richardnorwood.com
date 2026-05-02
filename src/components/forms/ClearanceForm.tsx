@@ -16,8 +16,8 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
     defaultValues: {
       bottleneck: '',
       systems: '',
-      owns_paths: 'yes',
-      validate_fit: 'yes',
+      owns_paths: 'sovereign',
+      validate_fit: 'self_serve',
     },
     onSubmit: async ({ value }) => {
       try {
@@ -66,12 +66,12 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
         children={(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
-              What is your primary revenue bottleneck?
+              Primary Revenue Bottleneck
             </label>
             <textarea
               value={field.state.value}
               onChange={(e) => field.handleChange(e.target.value)}
-              placeholder="e.g. Lead conversion in CRM is manual, data is fragmented..."
+              placeholder="Where is the system leaking? (e.g. Lead conversion is manual, data is fragmented...)"
               required
               rows={4}
               style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)', resize: 'none' }}
@@ -85,16 +85,16 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
         children={(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
-              Does the business own its main discovery paths?
+              Infrastructure Sovereignty
             </label>
             <select
               value={field.state.value}
               onChange={(e) => field.handleChange(e.target.value)}
               style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)' }}
             >
-              <option value="yes">Yes, fully sovereign</option>
-              <option value="partially">Partially, some platform dependency</option>
-              <option value="no">No, totally dependent on 3rd party ads/algos</option>
+              <option value="sovereign">We own our data & discovery paths</option>
+              <option value="platform_dependent">Dependent on 3rd party algorithms/ads</option>
+              <option value="locked_in">Totally locked into proprietary vendor stacks</option>
             </select>
           </div>
         )}
@@ -105,15 +105,15 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
         children={(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
-              Can a buyer validate fit without unnecessary back-and-forth?
+              Buyer Validation
             </label>
             <select
               value={field.state.value}
               onChange={(e) => field.handleChange(e.target.value)}
               style={{ width: '100%', padding: 'var(--space-4)', background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', color: 'var(--color-text)' }}
             >
-              <option value="yes">Yes, self-serve paths exist</option>
-              <option value="no">No, requires human intervention for basic fit</option>
+              <option value="self_serve">Buyers can validate fit without talking to us</option>
+              <option value="human_required">Requires human intervention for basic fit</option>
             </select>
           </div>
         )}
@@ -124,7 +124,7 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
         children={(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
-              What CRM or systems are you currently using?
+              Current Tech Stack / CRM
             </label>
             <input
               type="text"
