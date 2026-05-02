@@ -8,10 +8,17 @@ export async function proxy(request: NextRequest) {
 
   const url = request.nextUrl.clone()
   
+  const sbUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const sbKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+  if (!sbUrl || !sbKey) {
+    return response
+  }
+
   // explicit client for validation
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_AUTH_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_AUTH_ANON_KEY!,
+    sbUrl,
+    sbKey,
     {
       cookies: {
         getAll() { return request.cookies.getAll() },
