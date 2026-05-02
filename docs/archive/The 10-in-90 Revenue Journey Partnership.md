@@ -52,7 +52,7 @@ We execute the plan together with a goal of **1 new qualified client per week on
 
 **What happens each week:**
 
-- **90-minute partnership session** (review metrics, teach strategy, optimize tactics, keep momentum)
+- **20-minute partnership session** (review metrics, teach strategy, optimize tactics, keep momentum)
 - Real-time adjustments based on what's working
 - Modest ad spend testing (\$250–\$500/month) to validate messaging
 - Systematic integration of offline efforts (events, referrals, networking) into your online funnel
@@ -69,7 +69,7 @@ We execute the plan together with a goal of **1 new qualified client per week on
 ✅ **AI Readiness Setup** (Optimizing content for search agents)
 ✅ **Buyer Intent Tracking** (Installation of approved SaaS deanonymization tools)
 ✅ **Friction Removal** (Deployment of instant booking workflows)
-✅ **Weekly 90-minute Strategy Sessions** (12 total)
+✅ **Weekly 20-minute Strategy Sessions** (12 total)
 ✅ **Ad Campaign Setup & Management** (Google/Meta, modest budget)
 ✅ **Review & Referral System Activation**
 
@@ -128,7 +128,7 @@ This partnership is designed for **service-based business owners** who:
 
 ## Next Steps
 
-**1. Schedule a 90-minute discovery call**
+**1. Schedule a 20-minute discovery call**
 We'll discuss your business, current efforts, revenue goals, and whether the 10-in-90 model is the right fit.
 
 **2. Receive your custom proposal**
