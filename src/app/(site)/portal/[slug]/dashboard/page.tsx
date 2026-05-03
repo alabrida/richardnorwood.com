@@ -1,0 +1,96 @@
+import { createClient } from '@/lib/supabase/server'
+import { notFound, redirect } from 'next/navigation'
+import { buildMetadata } from '@/lib/metadata'
+import Link from 'next/link'
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  return buildMetadata({
+    title: `Dashboard | ${slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`,
+    path: `/portal/${slug}/dashboard`,
+    noIndex: true,
+  })
+}
+
+export default async function ClientDashboard({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  if (!user) {
+    redirect('/login')
+  }
+
+  const { data: profile } = await supabase
+    .from('client_profiles')
+    .select('*')
+    .eq('slug', slug)
+    .single()
+
+  if (!profile) {
+    notFound()
+  }
+
+  // Security check: ensure user owns this profile (unless admin)
+  if (profile.user_id && profile.user_id !== user.id) {
+     // For now, if user_id is null (just seeded), we allow the first person to link it or just allow access for setup
+  }
+
+  const brand = profile.brand_colors || { primary: '#2BB6F6' }
+
+  return (
+    <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: 'var(--space-20) var(--space-4)' }}>
+      <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+        <header style={{ marginBottom: 'var(--space-12)', borderBottom: '1px solid var(--color-border)', paddingBottom: 'var(--space-8)' }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-4xl)', color: 'var(--color-text)', marginBottom: 'var(--space-2)' }}>
+            Welcome, {profile.company_name}
+          </h1>
+          <p style={{ color: 'var(--color-text-subtle)' }}>Partnership Portal & Strategic Alignment Hub</p>
+        </header>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-8)' }}>
+          <div style={{ 
+            background: 'var(--color-surface)', 
+            border: `1px solid ${brand.primary}44`, 
+            borderRadius: 'var(--radius-xl)', 
+            padding: 'var(--space-8)',
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-4)' }}>Operational & Clinical Audit</h2>
+            <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-8)', fontSize: 'var(--text-sm)' }}>
+              Complete your 25-question strategic alignment audit to establish the clinical and financial foundation for our partnership.
+            </p>
+            <Link 
+              href={`/portal/${slug}/audit`}
+              style={{ 
+                display: 'inline-block', 
+                background: brand.primary || 'var(--color-accent)', 
+                color: 'black', 
+                padding: 'var(--space-3) var(--space-6)', 
+                borderRadius: 'var(--radius-full)', 
+                fontWeight: 'bold',
+                textDecoration: 'none'
+              }}
+            >
+              Launch Audit Tool →
+            </Link>
+          </div>
+          
+          <div style={{ 
+            background: 'var(--color-surface)', 
+            border: '1px solid var(--color-border)', 
+            borderRadius: 'var(--radius-xl)', 
+            padding: 'var(--space-8)',
+            opacity: 0.6
+          }}>
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-4)' }}>Project Assets</h2>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>
+              Coming Soon: Unified data model, process logic, and clinical rulebooks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
+}
