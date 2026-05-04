@@ -23,7 +23,12 @@ export default async function PortalPage() {
     .from('client_profiles')
     .select('*')
     .eq('user_id', user.id)
-    .single()
+    .maybeSingle()
+
+  // Auto-redirect to their specific dashboard if profile exists
+  if (profile?.slug) {
+    redirect(`/portal/${profile.slug}/dashboard`)
+  }
 
   return <PortalContent user={user} profile={profile} />
 }
