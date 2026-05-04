@@ -30,15 +30,44 @@ body { background: var(--color-bg); }
 }
 
 .glass-card {
+  position: relative;
+  overflow: hidden;
   background: var(--glass-bg); backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border); border-radius: var(--radius-xl);
 }
 
 .glass-card-heavy {
+  position: relative;
+  overflow: hidden;
   background: var(--glass-bg-heavy); backdrop-filter: blur(var(--glass-blur-heavy));
   -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
   border: 1px solid var(--glass-border); border-radius: var(--radius-xl);
+}
+
+.glass-card::before,
+.glass-card-heavy::before,
+.blogCard::before,
+.toc-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blogCard,
+.toc-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.blogCard > *,
+.toc-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .stage-bar {

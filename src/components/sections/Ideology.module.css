@@ -85,10 +85,21 @@
               box-shadow var(--duration-slow) var(--ease-out);
   will-change: transform;
   transform-style: preserve-3d;
+  isolation: isolate;
 }
 
 .tiltCard:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.tiltCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .tiltEdgeGlow, .tiltInnerGlow {
@@ -121,12 +132,29 @@
 .stageDescription { font-family: var(--font-body); font-size: var(--text-base); color: var(--color-text-subtle); line-height: var(--leading-relaxed); }
 
 .bentoCta {
+  position: relative;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   text-align: center; gap: var(--space-3); height: 100%; min-height: 220px;
   padding: var(--space-8); border-radius: var(--radius-lg); border: 1px solid var(--color-primary);
   background: linear-gradient(135deg, rgba(234, 179, 8, 0.06) 0%, rgba(234, 179, 8, 0.02) 100%);
   text-decoration: none; cursor: pointer;
   transition: transform var(--duration-normal) var(--ease-out), border-color var(--duration-slow) var(--ease-out), background var(--duration-slow) var(--ease-out);
+  isolation: isolate;
+}
+
+.bentoCta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bentoCta > * {
+  position: relative;
+  z-index: 1;
 }
 
 .bentoCta:hover { transform: scale(1.02); border-color: var(--color-primary); background: linear-gradient(135deg, rgba(234, 179, 8, 0.12) 0%, rgba(234, 179, 8, 0.04) 100%); }

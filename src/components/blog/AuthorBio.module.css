@@ -9,6 +9,22 @@
   align-items: flex-start;
   position: relative;
   overflow: visible;
+  isolation: isolate;
+}
+
+.authorBio::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.authorBio > * {
+  position: relative;
+  z-index: 1;
 }
 
 .authorAvatar {

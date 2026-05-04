@@ -292,6 +292,22 @@
   border-radius: var(--radius-2xl);
   position: relative;
   z-index: var(--z-base);
+  isolation: isolate;
+}
+
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ctaSection > * {
+  position: relative;
+  z-index: 1;
 }
 
 .ctaTitle {

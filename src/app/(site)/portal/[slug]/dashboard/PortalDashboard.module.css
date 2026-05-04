@@ -99,6 +99,7 @@
 }
 
 .card {
+  position: relative;
   background: var(--glass-bg-heavy);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
@@ -109,11 +110,27 @@
   flex-direction: column;
   justify-content: space-between;
   transition: transform var(--duration-normal) var(--ease-out), border-color var(--duration-normal);
+  isolation: isolate;
 }
 
 .card:hover {
   transform: translateY(-2px);
   border-color: rgba(136, 153, 180, 0.28);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .activeCard {
@@ -218,10 +235,27 @@
 }
 
 .footerNote {
+  position: relative;
   text-align: center;
   padding: var(--space-8);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  isolation: isolate;
+}
+
+.footerNote::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footerNote > * {
+  position: relative;
+  z-index: 1;
 }
 
 .footerText {

@@ -135,17 +135,34 @@
 }
 
 .metricCard {
+  position: relative;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: var(--space-8) var(--space-6);
   text-align: center;
   transition: transform var(--duration-normal), border-color var(--duration-normal);
+  isolation: isolate;
 }
 
 .metricCard:hover {
   transform: translateY(-2px);
   border-color: var(--color-secondary);
+}
+
+.metricCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.metricCard > * {
+  position: relative;
+  z-index: 1;
 }
 
 .metricValue {
@@ -210,6 +227,22 @@
   text-decoration: none;
   transition: all var(--duration-fast);
   position: relative;
+  isolation: isolate;
+}
+
+.certCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--card-surface-fade);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.certCard > * {
+  position: relative;
+  z-index: 1;
 }
 
 .certCard::after {
