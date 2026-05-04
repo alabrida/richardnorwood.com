@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic'
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   return buildMetadata({
-    title: `Dashboard | ${slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`,
+    title: `Dashboard | Root Impact Wellness`,
     description: 'Secure partnership dashboard for active client work.',
     path: `/portal/${slug}/dashboard`,
     noIndex: true,
@@ -52,12 +52,12 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
         <motion.header 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          style={{ marginBottom: 'var(--space-16)', borderBottom: `1px solid ${brand.primary}33`, paddingBottom: 'var(--space-8)' }}
+          style={{ marginBottom: 'var(--space-16)', borderBottom: `1px solid ${brand.primary}33`, paddingBottom: 'var(--space-12)' }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-4xl)', color: 'white', marginBottom: 'var(--space-2)' }}>
-                {profile.company_name}
+                Root Impact Wellness
               </h1>
               <p style={{ color: brand.primary, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: 'var(--text-sm)' }}>
                 Strategic Alignment Hub
@@ -105,12 +105,12 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-6)' }}>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', color: 'white' }}>Immediate Next Step</h3>
                 {!isAuditComplete && (
-                  <span className="pulse-green-glow" style={{ width: 8, height: 8, borderRadius: '50%', background: brand.primary }} />
+                  <span style={{ width: 8, height: 8, borderRadius: '50%', background: brand.primary, boxShadow: `0 0 10px ${brand.primary}` }} />
                 )}
               </div>
-              <h4 style={{ color: 'white', marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>The Operational & Clinical Audit</h4>
+              <h4 style={{ color: 'white', marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>Operational & Clinical Audit</h4>
               <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-8)', fontSize: 'var(--text-base)', lineHeight: '1.6' }}>
-                To architect your revenue engine, we must first map the current friction. Please launch the audit tool below to complete the 25-question strategic diagnostic.
+                To architect your revenue engine, we must first map the current friction. Complete the 25-question strategic diagnostic to finalize your baseline metrics.
               </p>
             </div>
             <Link 
@@ -128,7 +128,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
                 fontSize: 'var(--text-lg)'
               }}
             >
-              {isAuditComplete ? 'Review Your Audit' : 'Start Strategic Audit →'}
+              {isAuditComplete ? 'Review Your Responses' : 'Start Strategic Audit →'}
             </Link>
           </motion.div>
           
