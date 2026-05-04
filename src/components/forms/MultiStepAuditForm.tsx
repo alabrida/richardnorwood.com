@@ -66,7 +66,16 @@ const steps: AuditStep[] = [
   }
 ]
 
-export default function MultiStepAuditForm({ profile }: { profile: any }) {
+interface ClientProfile {
+  id: string
+  slug: string
+  company_name: string
+  brand_colors?: {
+    primary: string
+  }
+}
+
+export default function MultiStepAuditForm({ profile }: { profile: ClientProfile }) {
   const [currentStep, setCurrentStep] = useState(0)
   const [isSaving, setIsSaving] = useState(false)
   const supabase = createClient()
@@ -74,7 +83,7 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
   const brand = profile.brand_colors || { primary: '#2BB6F6' }
 
   const form = useForm({
-    defaultValues: {} as Record<string, any>,
+    defaultValues: {} as Record<string, string | number>,
     onSubmit: async ({ value }) => {
       await saveToDatabase(value, true)
       // Trigger notification
@@ -98,13 +107,13 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
         .maybeSingle()
       
       if (data?.responses) {
-        form.reset(data.responses)
+        form.reset(data.responses as Record<string, string | number>)
       }
     }
     loadData()
-  }, [profile.id])
+  }, [profile.id, supabase, form])
 
-  async function saveToDatabase(values: any, isFinal = false) {
+  async function saveToDatabase(values: Record<string, string | number>, isFinal = false) {
     setIsSaving(true)
     const { error } = await supabase
       .from('audit_responses')
@@ -118,8 +127,6 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
     if (error) {
       console.error('Save error:', error)
       toast.error('Error auto-saving progress')
-    } else if (!isFinal) {
-      // toast.success('Progress saved')
     }
     setIsSaving(false)
   }
@@ -132,7 +139,7 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
       }
     }, 2000)
     return () => clearTimeout(timer)
-  }, [form.state.values])
+  }, [form.state.values, profile.id])
 
   const currentStepData = steps[currentStep]
 
@@ -157,10 +164,8 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
         >
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-10)' }}>
             {currentStepData.questions.map((q) => (
-              <form.Field
-                key={q.id}
-                name={q.id}
-                children={(field) => (
+              <form.Field key={q.id} name={q.id}>
+                {(field) => (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
                     <label style={{ color: 'var(--color-text)', fontWeight: 'bold', fontSize: 'var(--text-sm)' }}>
                       {q.label}
@@ -168,7 +173,7 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
                     
                     {q.type === 'textarea' ? (
                       <textarea
-                        value={field.state.value || ''}
+                        value={(field.state.value as string) || ''}
                         onBlur={field.handleBlur}
                         onChange={(e) => field.handleChange(e.target.value)}
                         style={{ background: 'black', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--space-4)', color: 'white', minHeight: 120, fontFamily: 'inherit' }}
@@ -218,7 +223,7 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
                     ) : (
                       <input
                         type="text"
-                        value={field.state.value || ''}
+                        value={(field.state.value as string) || ''}
                         onBlur={field.handleBlur}
                         onChange={(e) => field.handleChange(e.target.value)}
                         placeholder={q.type === 'percentage' ? '%' : q.type === 'hours' ? 'hours/week' : ''}
@@ -227,7 +232,7 @@ export default function MultiStepAuditForm({ profile }: { profile: any }) {
                     )}
                   </div>
                 )}
-              />
+              </form.Field>
             ))}
           </div>
 
