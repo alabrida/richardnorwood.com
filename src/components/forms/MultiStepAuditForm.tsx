@@ -22,6 +22,18 @@ interface AuditStep {
   questions: Question[]
 }
 
+function splitQuestionLabel(label: string) {
+  const separatorIndex = label.indexOf(':')
+  if (separatorIndex === -1) {
+    return { lead: '', prompt: label }
+  }
+
+  return {
+    lead: label.slice(0, separatorIndex),
+    prompt: label.slice(separatorIndex + 1).trim()
+  }
+}
+
 const steps: AuditStep[] = [
   {
     title: 'Part 1: Revenue & Financial Mechanics',
@@ -469,6 +481,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                     field.state.value !== null &&
                     String(field.state.value).trim() !== ''
                   const controlClass = `audit-control ${hasValue ? 'audit-control-complete' : ''}`
+                  const { lead, prompt } = splitQuestionLabel(q.label)
 
                   return (
                     <motion.div
@@ -477,8 +490,15 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                       transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
                       style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}
                     >
-                      <label style={{ color: 'white', fontWeight: 'bold', fontSize: 'var(--text-sm)' }}>
-                        {q.label}
+                      <label style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-1)' }}>
+                        {lead && (
+                          <span style={{ color: brand.primary, fontWeight: 800, fontSize: 'var(--text-xs)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                            {lead}
+                          </span>
+                        )}
+                        <span style={{ color: 'white', fontWeight: 500, fontSize: 'var(--text-base)', lineHeight: 'var(--leading-snug)' }}>
+                          {prompt}
+                        </span>
                       </label>
 
                       {q.type === 'textarea' ? (
@@ -649,8 +669,8 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
         }
 
         .audit-control::placeholder {
-          color: var(--color-accent);
-          opacity: 0.72;
+          color: var(--color-text-subtle);
+          opacity: 0.82;
         }
 
         .audit-control:hover {
