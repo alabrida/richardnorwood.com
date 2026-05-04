@@ -52,18 +52,15 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
         <motion.header 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          style={{ marginBottom: 'var(--space-16)', borderBottom: `1px solid ${brand.primary}33`, paddingBottom: 'var(--space-12)' }}
+          style={{ marginBottom: 'var(--space-16)', borderBottom: `1px solid ${brand.primary}33`, paddingBottom: 'var(--space-8)' }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
             <div>
-              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-4xl)', color: 'white', marginBottom: 'var(--space-4)' }}>
-                Welcome, Verrick Taylor
+              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-4xl)', color: 'white', marginBottom: 'var(--space-2)' }}>
+                {profile.company_name}
               </h1>
-              <h2 style={{ fontSize: 'var(--text-xl)', color: brand.primary, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 'var(--space-4)' }}>
-                Root Impact Wellness × Richard Norwood
-              </h2>
-              <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', lineHeight: '1.6', fontSize: 'var(--text-lg)' }}>
-                We are officially moving from scattered activity to an orchestrated commercial system. This portal is your command center for our 30-Day Strategic Alignment.
+              <p style={{ color: brand.primary, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: 'var(--text-sm)' }}>
+                Strategic Alignment Hub
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>

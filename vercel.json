@@ -42,11 +42,6 @@
       "source": "/admin",
       "destination": "https://www.richardnorwood.com/wp-admin",
       "permanent": true
-    },
-    {
-      "source": "/login",
-      "destination": "/portal",
-      "permanent": false
     }
   ]
 }
