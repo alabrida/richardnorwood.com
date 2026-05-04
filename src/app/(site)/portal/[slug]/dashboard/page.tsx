@@ -57,10 +57,13 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <div>
               <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-4xl)', color: 'white', marginBottom: 'var(--space-2)' }}>
-                Root Impact Wellness
+                Strategic Alignment Dashboard
               </h1>
-              <p style={{ color: brand.primary, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: 'var(--text-sm)' }}>
-                Strategic Alignment Hub
+              <p style={{ color: brand.primary, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: 'var(--text-lg)', marginBottom: 'var(--space-6)' }}>
+                {profile.company_name}
+              </p>
+              <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', lineHeight: '1.6', fontSize: 'var(--text-base)' }}>
+                Welcome to your partnership portal, {profile.contact_name?.split(' ')[0] || 'Verrick'}. Below is your current alignment roadmap and immediate action items.
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>
@@ -110,7 +113,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
               </div>
               <h4 style={{ color: 'white', marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>Operational & Clinical Audit</h4>
               <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-8)', fontSize: 'var(--text-base)', lineHeight: '1.6' }}>
-                To architect your revenue engine, we must first map the current friction. Complete the 25-question strategic diagnostic to finalize your baseline metrics.
+                To architect your revenue engine, we must first map the current friction. Launch the diagnostic below to finalize your Phase I metrics.
               </p>
             </div>
             <Link 
@@ -128,7 +131,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
                 fontSize: 'var(--text-lg)'
               }}
             >
-              {isAuditComplete ? 'Review Your Responses' : 'Start Strategic Audit →'}
+              {isAuditComplete ? 'Review Your Responses' : 'Launch Strategic Audit →'}
             </Link>
           </motion.div>
           
@@ -151,15 +154,15 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)', color: 'white' }}>Partnership Roadmap</h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
                 <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center' }}>
-                  <div style={{ width: 20, height: 20, borderRadius: '50%', border: `1px solid ${brand.primary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: brand.primary }}>1</div>
-                  <span style={{ color: 'white', fontWeight: 'bold' }}>Diagnostic EKG (Current)</span>
+                  <div style={{ width: 24, height: 24, borderRadius: '50%', border: `1px solid ${brand.primary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, color: brand.primary, fontWeight: 'bold' }}>1</div>
+                  <span style={{ color: 'white', fontWeight: 'bold' }}>Diagnostic EKG (Active)</span>
                 </li>
                 <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.4 }}>
-                  <div style={{ width: 20, height: 20, borderRadius: '50%', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>2</div>
+                  <div style={{ width: 24, height: 24, borderRadius: '50%', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12 }}>2</div>
                   <span style={{ color: 'var(--color-text-muted)' }}>Engine Orchestration</span>
                 </li>
                 <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.4 }}>
-                  <div style={{ width: 20, height: 20, borderRadius: '50%', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>3</div>
+                  <div style={{ width: 24, height: 24, borderRadius: '50%', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12 }}>3</div>
                   <span style={{ color: 'var(--color-text-muted)' }}>Unified Commercial Launch</span>
                 </li>
               </ul>
@@ -168,7 +171,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
               </p>
             </div>
             <div style={{ marginTop: 'var(--space-8)', fontSize: 'var(--text-xs)', color: 'var(--color-text-subtle)', fontWeight: 'bold', textAlign: 'center', border: '1px dashed var(--color-border)', padding: 'var(--space-4)', borderRadius: 'var(--radius-lg)' }}>
-              Awaiting Audit Completion
+              Awaiting Diagnostic Data
             </div>
           </motion.div>
         </div>
