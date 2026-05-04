@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useCallback, useMemo } from 'react'
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useForm } from '@tanstack/react-form'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
@@ -80,14 +80,30 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
   const [currentStep, setCurrentStep] = useState(0)
   const [isSaving, setIsSaving] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showFloatingNav, setShowFloatingNav] = useState(true)
   const [showScrollTop, setShowScrollTop] = useState(false)
   const supabase = createClient()
   const router = useRouter()
   const brand = profile.brand_colors || { primary: '#2BB6F6' }
+  const containerRef = useRef<HTMLDivElement>(null)
 
-  // Monitor scroll for "Back to Top"
+  // Monitor scroll for "Back to Top" and "Footer Collision"
   useEffect(() => {
-    const handleScroll = () => setShowScrollTop(window.scrollY > 300)
+    const handleScroll = () => {
+      const scrollPos = window.scrollY
+      const windowHeight = window.innerHeight
+      const bodyHeight = document.body.offsetHeight
+      const footerElement = document.querySelector('footer')
+      const footerHeight = footerElement?.offsetHeight || 0
+      
+      // Show back to top if scrolled enough
+      setShowScrollTop(scrollPos > 300)
+      
+      // Hide floating elements if we're reaching the footer
+      const threshold = bodyHeight - footerHeight - windowHeight + 100
+      setShowFloatingNav(scrollPos < threshold)
+    }
+    
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -114,7 +130,6 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
     defaultValues: {} as Record<string, string | number>,
     onSubmit: async ({ value }) => {
       if (!isSubmitting) return;
-
       await saveToDatabase(value, true)
       await fetch('/api/audit/submit', {
         method: 'POST',
@@ -192,35 +207,40 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
   }
 
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto', paddingBottom: 'var(--space-20)', position: 'relative' }}>
+    <div ref={containerRef} style={{ maxWidth: 800, margin: '0 auto', paddingBottom: 'var(--space-20)', position: 'relative' }}>
       
-      {/* FLOATING LEFT: DASHBOARD NAV */}
-      <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        style={{ position: 'fixed', left: '2rem', top: '150px', width: '200px', zIndex: 100 }}
-        className="hidden-mobile"
-      >
-        <div style={{ background: 'var(--glass-bg-heavy)', backdropFilter: 'blur(var(--glass-blur))', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-xl)', padding: 'var(--space-6)', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-          <p style={{ color: 'var(--color-text-subtle)', fontSize: 10, fontWeight: 'bold', textTransform: 'uppercase', marginBottom: 'var(--space-4)', letterSpacing: '0.1em' }}>Navigation</p>
-          <Link 
-            href={`/portal/${profile.slug}/dashboard`}
-            style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: 'var(--text-sm)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}
-          >
-            ← Portal Home
-          </Link>
-          <div style={{ marginTop: 'var(--space-8)' }}>
-             <p style={{ color: brand.primary, fontSize: 10, fontWeight: 'bold' }}>Progress Saved</p>
-             <div style={{ width: '100%', height: 2, background: 'var(--color-border)', marginTop: 4 }}>
-                <div style={{ width: `${progress}%`, height: '100%', background: brand.primary }} />
-             </div>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* FLOATING RIGHT: BACK TO TOP */}
+      {/* FLOATING LEFT: DASHBOARD NAV - THEMED REFINEMENT */}
       <AnimatePresence>
-        {showScrollTop && (
+        {showFloatingNav && (
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            style={{ position: 'fixed', left: '1.5rem', top: '50%', transform: 'translateY(-50%)', width: '160px', zIndex: 100 }}
+            className="hidden-mobile"
+          >
+            <div style={{ background: 'var(--glass-bg-heavy)', backdropFilter: 'blur(var(--glass-blur))', border: '1px solid var(--color-secondary-light)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5)', boxShadow: '0 10px 40px rgba(0,0,0,0.6)' }}>
+              <p style={{ color: 'var(--color-secondary)', fontSize: 9, fontWeight: 'bold', textTransform: 'uppercase', marginBottom: 'var(--space-3)', letterSpacing: '0.1em' }}>Navigation</p>
+              <Link 
+                href={`/portal/${profile.slug}/dashboard`}
+                style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: 'var(--text-xs)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}
+              >
+                ← Portal Home
+              </Link>
+              <div style={{ marginTop: 'var(--space-6)', borderTop: '1px solid var(--color-border)', paddingTop: 'var(--space-4)' }}>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: 9, fontWeight: 'bold' }}>Progress Saved</p>
+                <div style={{ width: '100%', height: 2, background: 'var(--color-border)', marginTop: 4, borderRadius: 1 }}>
+                    <div style={{ width: `${progress}%`, height: '100%', background: brand.primary, transition: 'width 0.5s ease' }} />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* FLOATING RIGHT: BACK TO TOP - THEMED REFINEMENT */}
+      <AnimatePresence>
+        {(showScrollTop && showFloatingNav) && (
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -228,19 +248,21 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             style={{ 
               position: 'fixed', 
-              right: '2rem', 
+              right: '1.5rem', 
               bottom: '2rem', 
-              width: 50, height: 50, 
+              width: 44, height: 44, 
               borderRadius: '50%', 
-              background: 'var(--color-surface-elevated)', 
-              border: `1px solid ${brand.primary}44`,
-              color: brand.primary,
+              background: 'linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))',
+              border: 'none',
+              color: 'var(--color-text-inverse)',
               cursor: 'pointer',
               zIndex: 100,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.5)'
+              boxShadow: '0 10px 30px rgba(240, 180, 41, 0.3)',
+              fontSize: '1.2rem',
+              fontWeight: 'bold'
             }}
           >
             ↑
@@ -403,11 +425,12 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
               )}
             </div>
 
-            {/* SAVE AND FINISH LATER */}
             <button
               type="button"
               onClick={handleSaveAndExit}
-              style={{ alignSelf: 'center', background: 'transparent', border: 'none', color: 'var(--color-text-subtle)', fontSize: 'var(--text-sm)', cursor: 'pointer', textDecoration: 'underline' }}
+              style={{ alignSelf: 'center', background: 'transparent', border: 'none', color: 'var(--color-secondary)', fontSize: 'var(--text-sm)', cursor: 'pointer', textDecoration: 'none', fontWeight: 'bold' }}
+              onMouseOver={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
             >
               Save and finish later
             </button>
@@ -416,9 +439,9 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
       </div>
 
       <style jsx>{`
-        @media (max-width: 1024px) {
+        @media (max-width: 1240px) {
           .hidden-mobile {
-            display: none;
+            display: none !important;
           }
         }
       `}</style>
