@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react'
 import { useForm } from '@tanstack/react-form'
-import { motion, AnimatePresence } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
@@ -78,6 +77,7 @@ interface ClientProfile {
 export default function MultiStepAuditForm({ profile }: { profile: ClientProfile }) {
   const [currentStep, setCurrentStep] = useState(0)
   const [isSaving, setIsSaving] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const supabase = createClient()
   const router = useRouter()
   const brand = profile.brand_colors || { primary: '#2BB6F6' }
@@ -85,6 +85,9 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
   const form = useForm({
     defaultValues: {} as Record<string, string | number>,
     onSubmit: async ({ value }) => {
+      // Manual guard to prevent auto-submission without explicit click
+      if (!isSubmitting) return;
+
       await saveToDatabase(value, true)
       // Trigger notification
       await fetch('/api/audit/submit', {
@@ -134,14 +137,23 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
   // Auto-save logic (debounced)
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (Object.keys(form.state.values).length > 0) {
+      // Only auto-save if we are NOT in the final submission phase
+      if (!isSubmitting && Object.keys(form.state.values).length > 0) {
         saveToDatabase(form.state.values)
       }
     }, 2000)
     return () => clearTimeout(timer)
-  }, [form.state.values, profile.id])
+  }, [form.state.values, profile.id, isSubmitting])
 
   const currentStepData = steps[currentStep]
+
+  const handleCompleteClick = () => {
+    setIsSubmitting(true)
+    // Defer the handle submit call to ensure state update for isSubmitting is processed
+    setTimeout(() => {
+      form.handleSubmit()
+    }, 10)
+  }
 
   return (
     <div style={{ maxWidth: 800, margin: '0 auto', paddingBottom: 'var(--space-20)' }}>
@@ -159,7 +171,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
           onSubmit={(e) => {
             e.preventDefault()
             e.stopPropagation()
-            form.handleSubmit()
+            // Form is now controlled via manual buttons to prevent auto-events
           }}
         >
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-10)' }}>
@@ -256,10 +268,12 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
               </button>
             ) : (
               <button
-                type="submit"
+                type="button"
+                onClick={handleCompleteClick}
+                disabled={isSubmitting}
                 style={{ background: brand.primary, color: 'black', border: 'none', padding: 'var(--space-3) var(--space-12)', borderRadius: 'var(--radius-full)', fontWeight: 'bold', cursor: 'pointer' }}
               >
-                Complete Audit
+                {isSubmitting ? 'Submitting...' : 'Complete Audit'}
               </button>
             )}
           </div>

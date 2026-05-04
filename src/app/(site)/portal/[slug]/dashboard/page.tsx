@@ -63,7 +63,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
                 {profile.company_name}
               </p>
               <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', lineHeight: '1.6', fontSize: 'var(--text-base)' }}>
-                Welcome to your partnership portal, {profile.contact_name?.split(' ')[0] || 'Verrick'}. Below is your current alignment roadmap and immediate action items.
+                Welcome to your partnership portal, {profile.contact_name?.split(' ')[0] || 'Verrick'}. Below is your 30-day alignment agenda and immediate action items.
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>
@@ -135,7 +135,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
             </Link>
           </motion.div>
           
-          {/* THE PARTNERSHIP ROADMAP */}
+          {/* THE 30-DAY AGENDA */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -151,27 +151,28 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
             }}
           >
             <div>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)', color: 'white' }}>Partnership Roadmap</h3>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)', color: 'white' }}>30-Day Alignment Agenda</h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
                 <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center' }}>
-                  <div style={{ width: 24, height: 24, borderRadius: '50%', border: `1px solid ${brand.primary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, color: brand.primary, fontWeight: 'bold' }}>1</div>
-                  <span style={{ color: 'white', fontWeight: 'bold' }}>Diagnostic EKG (Active)</span>
+                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: `1px solid ${brand.primary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: brand.primary, fontWeight: 'bold' }}>WK1</div>
+                  <span style={{ color: 'white', fontWeight: 'bold' }}>Friction Mapping & EKG Diagnostic</span>
                 </li>
-                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.4 }}>
-                  <div style={{ width: 24, height: 24, borderRadius: '50%', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12 }}>2</div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>Engine Orchestration</span>
+                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.5 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK2</div>
+                  <span style={{ color: 'var(--color-text-muted)' }}>Revenue & Financial Mechanics Re-sync</span>
                 </li>
-                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.4 }}>
-                  <div style={{ width: 24, height: 24, borderRadius: '50%', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12 }}>3</div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>Unified Commercial Launch</span>
+                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.5 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK3</div>
+                  <span style={{ color: 'var(--color-text-muted)' }}>Facility & Physical Footprint Governance</span>
+                </li>
+                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.5 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK4</div>
+                  <span style={{ color: 'var(--color-text-muted)' }}>Clinical Standards & Strategic Handoff</span>
                 </li>
               </ul>
-              <p style={{ color: 'var(--color-text-subtle)', marginTop: 'var(--space-8)', fontSize: 'var(--text-sm)', fontStyle: 'italic' }}>
-                Next Phase unlocks: Custom data models and clinical rulebooks.
-              </p>
             </div>
             <div style={{ marginTop: 'var(--space-8)', fontSize: 'var(--text-xs)', color: 'var(--color-text-subtle)', fontWeight: 'bold', textAlign: 'center', border: '1px dashed var(--color-border)', padding: 'var(--space-4)', borderRadius: 'var(--radius-lg)' }}>
-              Awaiting Diagnostic Data
+              Current Status: Week 1 Diagnostic
             </div>
           </motion.div>
         </div>
