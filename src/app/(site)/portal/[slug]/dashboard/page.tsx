@@ -7,6 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   return buildMetadata({
     title: `Dashboard | ${slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`,
+    description: 'Secure partnership dashboard for active client work.',
     path: `/portal/${slug}/dashboard`,
     noIndex: true,
   })
