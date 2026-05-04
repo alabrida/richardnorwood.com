@@ -33,7 +33,7 @@ export default async function AuditPage({ params }: { params: Promise<{ slug: st
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: 'var(--space-20) var(--space-4)' }}>
+    <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: 'var(--space-32) var(--space-4) var(--space-20)' }}>
       <MultiStepAuditForm profile={profile} />
     </main>
   )
