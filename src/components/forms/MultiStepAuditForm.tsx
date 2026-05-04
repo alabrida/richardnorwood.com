@@ -5,6 +5,7 @@ import { useForm } from '@tanstack/react-form'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 interface Question {
   id: string
@@ -85,11 +86,8 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
   const form = useForm({
     defaultValues: {} as Record<string, string | number>,
     onSubmit: async ({ value }) => {
-      // Manual guard to prevent auto-submission without explicit click
       if (!isSubmitting) return;
-
       await saveToDatabase(value, true)
-      // Trigger notification
       await fetch('/api/audit/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -100,7 +98,6 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
     }
   })
 
-  // Load existing data
   useEffect(() => {
     async function loadData() {
       const { data } = await supabase
@@ -134,22 +131,20 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
     setIsSaving(false)
   }
 
-  // Auto-save logic (debounced)
   useEffect(() => {
     const timer = setTimeout(() => {
-      // Only auto-save if we are NOT in the final submission phase
       if (!isSubmitting && Object.keys(form.state.values).length > 0) {
         saveToDatabase(form.state.values)
       }
     }, 2000)
     return () => clearTimeout(timer)
-  }, [form.state.values, profile.id, isSubmitting])
+  }, [form.state.values, profile.id])
 
   const currentStepData = steps[currentStep]
+  const progress = ((currentStep + 1) / steps.length) * 100
 
   const handleCompleteClick = () => {
     setIsSubmitting(true)
-    // Defer the handle submit call to ensure state update for isSubmitting is processed
     setTimeout(() => {
       form.handleSubmit()
     }, 10)
@@ -157,8 +152,26 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
 
   return (
     <div style={{ maxWidth: 800, margin: '0 auto', paddingBottom: 'var(--space-20)' }}>
+      {/* Site Themed Progress Bar with Brand Hint */}
+      <div style={{ width: '100%', height: 4, background: 'var(--color-surface-elevated)', borderRadius: 'var(--radius-full)', marginBottom: 'var(--space-8)', overflow: 'hidden' }}>
+        <motion.div 
+          initial={{ width: 0 }}
+          animate={{ width: `${progress}%` }}
+          transition={{ duration: 0.5 }}
+          style={{ height: '100%', background: brand.primary }}
+        />
+      </div>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-8)' }}>
-        <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', color: brand.primary }}>
+        {/* Site Themed Gradient Title */}
+        <h1 style={{ 
+          fontFamily: 'var(--font-heading)', 
+          fontSize: 'var(--text-2xl)', 
+          background: 'linear-gradient(180deg, var(--color-text) 0%, var(--color-text-muted) 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          fontWeight: 'bold'
+        }}>
           {currentStepData.title}
         </h1>
         <div style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-subtle)' }}>
@@ -166,14 +179,8 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
         </div>
       </div>
 
-      <div style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-xl)', padding: 'var(--space-10)' }}>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault()
-            e.stopPropagation()
-            // Form is now controlled via manual buttons to prevent auto-events
-          }}
-        >
+      <div style={{ background: 'var(--glass-bg-heavy)', backdropFilter: 'blur(var(--glass-blur))', WebkitBackdropFilter: 'blur(var(--glass-blur))', border: `1px solid ${brand.primary}33`, borderRadius: 'var(--radius-xl)', padding: 'var(--space-10)' }}>
+        <form onSubmit={(e) => { e.preventDefault(); e.stopPropagation(); }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-10)' }}>
             {currentStepData.questions.map((q) => (
               <form.Field key={q.id} name={q.id}>
@@ -188,7 +195,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                         value={(field.state.value as string) || ''}
                         onBlur={field.handleBlur}
                         onChange={(e) => field.handleChange(e.target.value)}
-                        style={{ background: 'black', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--space-4)', color: 'white', minHeight: 120, fontFamily: 'inherit' }}
+                        style={{ background: '#000', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--space-4)', color: 'white', minHeight: 120, fontFamily: 'inherit', outline: 'none' }}
                       />
                     ) : q.type === 'scale' ? (
                       <div style={{ display: 'flex', gap: 'var(--space-2)' }}>
@@ -200,11 +207,12 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                             style={{ 
                               flex: 1, 
                               padding: 'var(--space-3)', 
-                              background: field.state.value === num ? brand.primary : 'black', 
-                              border: '1px solid var(--color-border)',
+                              background: field.state.value === num ? brand.primary : '#000', 
+                              border: `1px solid ${field.state.value === num ? brand.primary : 'var(--color-border)'}`,
                               borderRadius: 'var(--radius-md)',
                               color: field.state.value === num ? 'black' : 'white',
-                              fontWeight: 'bold'
+                              fontWeight: 'bold',
+                              cursor: 'pointer'
                             }}
                           >
                             {num}
@@ -221,11 +229,12 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                             style={{ 
                               flex: 1, 
                               padding: 'var(--space-3)', 
-                              background: field.state.value === opt ? brand.primary : 'black', 
-                              border: '1px solid var(--color-border)',
+                              background: field.state.value === opt ? brand.primary : '#000', 
+                              border: `1px solid ${field.state.value === opt ? brand.primary : 'var(--color-border)'}`,
                               borderRadius: 'var(--radius-md)',
                               color: field.state.value === opt ? 'black' : 'white',
-                              fontWeight: 'bold'
+                              fontWeight: 'bold',
+                              cursor: 'pointer'
                             }}
                           >
                             {opt}
@@ -239,7 +248,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                         onBlur={field.handleBlur}
                         onChange={(e) => field.handleChange(e.target.value)}
                         placeholder={q.type === 'percentage' ? '%' : q.type === 'hours' ? 'hours/week' : ''}
-                        style={{ background: 'black', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--space-4)', color: 'white' }}
+                        style={{ background: '#000', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--space-4)', color: 'white', outline: 'none' }}
                       />
                     )}
                   </div>
@@ -251,9 +260,9 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
           <div style={{ marginTop: 'var(--space-12)', display: 'flex', justifyContent: 'space-between' }}>
             <button
               type="button"
-              onClick={() => setCurrentStep(prev => Math.max(0, prev - 1))}
+              onClick={() => { setCurrentStep(prev => Math.max(0, prev - 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               disabled={currentStep === 0}
-              style={{ opacity: currentStep === 0 ? 0 : 1, background: 'transparent', border: '1px solid var(--color-border)', color: 'white', padding: 'var(--space-3) var(--space-8)', borderRadius: 'var(--radius-full)', cursor: 'pointer' }}
+              style={{ opacity: currentStep === 0 ? 0 : 1, background: 'transparent', border: '1px solid var(--color-border)', color: 'white', padding: 'var(--space-3) var(--space-8)', borderRadius: 'var(--radius-full)', cursor: 'pointer', fontFamily: 'var(--font-heading)', fontWeight: 'bold' }}
             >
               Back
             </button>
@@ -261,8 +270,18 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
             {currentStep < steps.length - 1 ? (
               <button
                 type="button"
-                onClick={() => setCurrentStep(prev => prev + 1)}
-                style={{ background: brand.primary, color: 'black', border: 'none', padding: 'var(--space-3) var(--space-12)', borderRadius: 'var(--radius-full)', fontWeight: 'bold', cursor: 'pointer' }}
+                onClick={() => { setCurrentStep(prev => prev + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                style={{ 
+                  background: 'linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))', 
+                  color: 'var(--color-text-inverse)', 
+                  border: 'none', 
+                  padding: 'var(--space-3) var(--space-12)', 
+                  borderRadius: 'var(--radius-full)', 
+                  fontWeight: 'bold', 
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-heading)',
+                  boxShadow: '0 4px 14px rgba(240, 180, 41, 0.3)'
+                }}
               >
                 Next Step
               </button>
@@ -271,7 +290,17 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                 type="button"
                 onClick={handleCompleteClick}
                 disabled={isSubmitting}
-                style={{ background: brand.primary, color: 'black', border: 'none', padding: 'var(--space-3) var(--space-12)', borderRadius: 'var(--radius-full)', fontWeight: 'bold', cursor: 'pointer' }}
+                style={{ 
+                  background: 'linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))', 
+                  color: 'var(--color-text-inverse)', 
+                  border: 'none', 
+                  padding: 'var(--space-3) var(--space-12)', 
+                  borderRadius: 'var(--radius-full)', 
+                  fontWeight: 'bold', 
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-heading)',
+                  boxShadow: '0 4px 14px rgba(240, 180, 41, 0.3)'
+                }}
               >
                 {isSubmitting ? 'Submitting...' : 'Complete Audit'}
               </button>

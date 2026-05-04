@@ -3,6 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import { buildMetadata } from '@/lib/metadata'
 import Link from 'next/link'
 import * as motion from 'framer-motion/client'
+import styles from './PortalDashboard.module.css'
 
 export const dynamic = 'force-dynamic'
 
@@ -47,89 +48,57 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
   const isAuditComplete = auditResponse?.is_submitted || false
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: 'var(--space-32) var(--space-4) var(--space-20)' }}>
-      <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+    <main className={styles.dashboard} style={{ '--brand-primary': brand.primary, '--brand-primary-glow': `${brand.primary}33` } as React.CSSProperties}>
+      <div className={styles.container}>
         <motion.header 
+          className={styles.header}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          style={{ marginBottom: 'var(--space-16)', borderBottom: `1px solid ${brand.primary}33`, paddingBottom: 'var(--space-12)' }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <div>
-              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-4xl)', color: 'white', marginBottom: 'var(--space-2)' }}>
+              <h1 className={styles.title}>
                 Strategic Alignment Dashboard
               </h1>
-              <p style={{ color: brand.primary, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: 'var(--text-lg)', marginBottom: 'var(--space-6)' }}>
+              <p className={styles.subHeadline}>
                 {profile.company_name}
               </p>
-              <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', lineHeight: '1.6', fontSize: 'var(--text-base)' }}>
+              <p className={styles.welcomeText}>
                 Welcome to your partnership portal, {profile.contact_name?.split(' ')[0] || 'Verrick'}. Below is your 30-day alignment agenda and immediate action items.
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>
-              <div style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-xs)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>Partnership Status</div>
-              <div style={{ 
-                padding: '6px 12px', 
-                borderRadius: 'var(--radius-md)', 
-                background: 'rgba(32, 201, 151, 0.1)', 
-                color: 'var(--color-accent)', 
-                fontWeight: 'bold',
-                border: '1px solid rgba(32, 201, 151, 0.2)',
-                display: 'inline-block'
-              }}>
+              <div className={styles.statusLabel}>Partnership Status</div>
+              <div className={styles.statusValue}>
                 Active Alignment
               </div>
             </div>
           </div>
         </motion.header>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--space-8)', marginBottom: 'var(--space-16)' }}>
+        <div className={styles.grid}>
           {/* PRIMARY CALL TO ACTION: THE AUDIT */}
           <motion.div 
+            className={`${styles.card} ${!isAuditComplete ? styles.activeCard : ''}`}
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            style={{ 
-              background: 'var(--glass-bg-heavy)', 
-              backdropFilter: 'blur(var(--glass-blur))',
-              WebkitBackdropFilter: 'blur(var(--glass-blur))',
-              border: `2px solid ${brand.primary}`, 
-              borderRadius: 'var(--radius-xl)', 
-              padding: 'var(--space-10)',
-              position: 'relative',
-              overflow: 'hidden',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              boxShadow: `0 20px 50px -12px ${brand.primary}33`
-            }}
           >
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-6)' }}>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', color: 'white' }}>Immediate Next Step</h3>
+                <h3 className={styles.cardTitle}>Immediate Next Step</h3>
                 {!isAuditComplete && (
-                  <span style={{ width: 8, height: 8, borderRadius: '50%', background: brand.primary, boxShadow: `0 0 10px ${brand.primary}` }} />
+                  <span className="pulse-green-glow" style={{ width: 8, height: 8, borderRadius: '50%', background: brand.primary, boxShadow: `0 0 10px ${brand.primary}` }} />
                 )}
               </div>
-              <h4 style={{ color: 'white', marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>Operational & Clinical Audit</h4>
-              <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-8)', fontSize: 'var(--text-base)', lineHeight: '1.6' }}>
+              <h4 className={styles.cardSubTitle}>Operational & Clinical Audit</h4>
+              <p className={styles.cardText}>
                 To architect your revenue engine, we must first map the current friction. Launch the diagnostic below to finalize your Phase I metrics.
               </p>
             </div>
             <Link 
               href={`/portal/${slug}/audit`}
-              style={{ 
-                display: 'block', 
-                background: brand.primary, 
-                color: 'black', 
-                padding: 'var(--space-4) var(--space-8)', 
-                borderRadius: 'var(--radius-full)', 
-                fontWeight: 'bold',
-                textDecoration: 'none',
-                textAlign: 'center',
-                boxShadow: `0 4px 14px ${brand.primary}44`,
-                fontSize: 'var(--text-lg)'
-              }}
+              className={styles.primaryBtn}
             >
               {isAuditComplete ? 'Review Your Responses' : 'Launch Strategic Audit →'}
             </Link>
@@ -137,37 +106,29 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
           
           {/* THE PARTNERSHIP ROADMAP */}
           <motion.div 
+            className={styles.card}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            style={{ 
-              background: 'var(--color-surface)', 
-              border: '1px solid var(--color-border)', 
-              borderRadius: 'var(--radius-xl)', 
-              padding: 'var(--space-10)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between'
-            }}
           >
             <div>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)', color: 'white' }}>Partnership Roadmap</h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
-                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center' }}>
-                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: `1px solid ${brand.primary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: brand.primary, fontWeight: 'bold' }}>WK1</div>
-                  <span style={{ color: 'white', fontWeight: 'bold' }}>Friction Mapping & EKG Diagnostic</span>
+              <h3 className={styles.cardTitle}>Partnership Roadmap</h3>
+              <ul className={styles.roadmapList}>
+                <li className={styles.roadmapItem}>
+                  <div className={`${styles.roadmapWeek} ${styles.activeWeek}`}>WK1</div>
+                  <span className={styles.roadmapText}>Friction Mapping & EKG Diagnostic</span>
                 </li>
-                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.5 }}>
-                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK2</div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>Revenue & Financial Mechanics Re-sync</span>
+                <li className={styles.roadmapItem}>
+                  <div className={styles.roadmapWeek}>WK2</div>
+                  <span className={styles.lockedText}>Revenue & Financial Mechanics Re-sync</span>
                 </li>
-                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.5 }}>
-                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK3</div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>Facility & Physical Footprint Governance</span>
+                <li className={styles.roadmapItem}>
+                  <div className={styles.roadmapWeek}>WK3</div>
+                  <span className={styles.lockedText}>Facility & Physical Footprint Governance</span>
                 </li>
-                <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', opacity: 0.5 }}>
-                  <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK4</div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>Clinical Standards & Strategic Handoff</span>
+                <li className={styles.roadmapItem}>
+                  <div className={styles.roadmapWeek}>WK4</div>
+                  <span className={styles.lockedText}>Clinical Standards & Strategic Handoff</span>
                 </li>
               </ul>
             </div>
@@ -179,13 +140,13 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
 
         {/* SUPPORT / CONTACT */}
         <motion.div 
+          className={styles.footerNote}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          style={{ textAlign: 'center', padding: 'var(--space-8)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-lg)' }}
         >
-          <p style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>
-            Need technical support with the portal? <a href="mailto:mail@alabrida.org" style={{ color: brand.primary, fontWeight: 'bold', textDecoration: 'none' }}>Contact the Architect</a>
+          <p className={styles.footerText}>
+            Need technical support with the portal? <a href="mailto:mail@alabrida.org" className={styles.architectLink}>Contact the Architect</a>
           </p>
         </motion.div>
       </div>

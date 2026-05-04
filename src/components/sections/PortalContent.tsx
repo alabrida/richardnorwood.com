@@ -5,22 +5,38 @@ import Link from 'next/link'
 import GlowCard from '@/components/ui/GlowCard'
 import styles from './PortalContent.module.css'
 
-interface PortalContentProps {
-  user: any;
-  profile: any;
+interface User {
+  id: string;
+  email?: string;
 }
+
+interface Profile {
+  contact_name?: string;
+  company_name: string;
+  partnership_tier: string;
+  status: string;
+  partnership_start?: string;
+  dashboard_url?: string;
+  slug?: string;
+}
+
+interface PortalContentProps {
+  user: User;
+  profile: Profile | null;
+}
+
 export default function PortalContent({ user, profile }: PortalContentProps) {
   if (!user) {
     return (
       <main className={styles.portal}>
-        <div style={{ textAlign: 'center', padding: 'var(--space-20)' }}>
+        <div style={{ textAlign: 'center', padding: 'var(--space-20)', color: 'var(--color-text-muted)' }}>
           <p>Loading your portal session...</p>
         </div>
       </main>
     )
   }
 
-  const brandPrimary = '#2BB6F6' // Default to client brand color
+  const brandPrimary = '#2BB6F6' // Client brand color
 
   return (
     <main className={styles.portal}>
@@ -32,8 +48,18 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
         <GlowCard className={styles.portalCard} glowColor={brandPrimary}>
           <div className={styles.portalContent}>
             <div className={styles.header}>
-              <h1 className={styles.title}>Partnership Portal</h1>
-              <p className={styles.welcome}>
+              <h1 style={{ 
+                fontFamily: 'var(--font-heading)', 
+                fontSize: 'var(--text-3xl)', 
+                background: 'linear-gradient(180deg, var(--color-text) 0%, var(--color-text-muted) 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                marginBottom: 'var(--space-2)',
+                fontWeight: 'bold'
+              }}>
+                Partnership Portal
+              </h1>
+              <p style={{ color: 'var(--color-secondary)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: 'var(--text-sm)' }}>
                 {profile?.company_name || 'Strategic Alignment Hub'}
               </p>
             </div>
@@ -70,7 +96,7 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
               </div>
             )}
 
-            {/* PARTNERSHIP ROADMAP CARD */}
+            {/* PARTNERSHIP ROADMAP */}
             <div style={{ marginTop: 'var(--space-8)', borderTop: '1px solid var(--color-border)', paddingTop: 'var(--space-8)' }}>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-6)', color: 'white' }}>
                 Partnership Roadmap
@@ -103,13 +129,15 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
                   style={{ 
                     marginTop: 'var(--space-10)',
                     display: 'block', 
-                    background: brandPrimary, 
-                    color: 'black', 
-                    padding: 'var(--space-3) var(--space-6)', 
+                    background: 'linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))', 
+                    color: 'var(--color-text-inverse)', 
+                    padding: 'var(--space-4) var(--space-8)', 
                     borderRadius: 'var(--radius-full)', 
                     fontWeight: 'bold',
                     textDecoration: 'none',
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    fontFamily: 'var(--font-heading)',
+                    boxShadow: '0 4px 14px rgba(240, 180, 41, 0.3)'
                   }}
                 >
                   Launch Strategic Audit →
