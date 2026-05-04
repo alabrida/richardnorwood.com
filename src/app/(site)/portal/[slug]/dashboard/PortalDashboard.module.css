@@ -1,11 +1,11 @@
 .dashboard {
   min-height: 100vh;
   background: var(--color-bg);
-  padding: var(--space-32) var(--space-4) var(--space-20);
+  padding: var(--space-32) clamp(var(--space-6), 5vw, var(--space-16)) var(--space-20);
 }
 
 .container {
-  maxWidth: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -218,6 +218,10 @@
 }
 
 @media (max-width: 760px) {
+  .dashboard {
+    padding-inline: var(--space-5);
+  }
+
   .headerContent {
     flex-direction: column;
   }
