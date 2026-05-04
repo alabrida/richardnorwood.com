@@ -1,9 +1,8 @@
 'use client'
 
-import React, { useRef, useState, useCallback } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import styles from './SocialProof.module.css'
-import common from './SectionCommon.module.css'
 
 interface Metric {
   label: string

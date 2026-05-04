@@ -32,7 +32,7 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
 
         toast.success('Information received. Preparing your session context...');
         router.push(`/discovery/${value.tier}?email=${encodeURIComponent(value.email)}`);
-      } catch (err) {
+      } catch {
         toast.error('Something went wrong. Please try again.');
       }
     },
@@ -49,9 +49,8 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
         }}
         className="space-y-4"
       >
-        <form.Field
-          name="name"
-          children={(field) => (
+        <form.Field name="name">
+          {(field) => (
             <div>
               <label htmlFor={field.name} className="block text-xs font-medium text-[#8899b4] uppercase mb-1">Name</label>
               <input
@@ -65,10 +64,9 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
               />
             </div>
           )}
-        />
-        <form.Field
-          name="email"
-          children={(field) => (
+        </form.Field>
+        <form.Field name="email">
+          {(field) => (
             <div>
               <label htmlFor={field.name} className="block text-xs font-medium text-[#8899b4] uppercase mb-1">Work Email</label>
               <input
@@ -83,10 +81,9 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
               />
             </div>
           )}
-        />
-        <form.Field
-          name="company"
-          children={(field) => (
+        </form.Field>
+        <form.Field name="company">
+          {(field) => (
             <div>
               <label htmlFor={field.name} className="block text-xs font-medium text-[#8899b4] uppercase mb-1">Company</label>
               <input
@@ -100,10 +97,9 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
               />
             </div>
           )}
-        />
-        <form.Field
-          name="websiteUrl"
-          children={(field) => (
+        </form.Field>
+        <form.Field name="websiteUrl">
+          {(field) => (
             <div>
               <label htmlFor={field.name} className="block text-xs font-medium text-[#8899b4] uppercase mb-1">Website URL</label>
               <input
@@ -118,11 +114,12 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
               />
             </div>
           )}
-        />
+        </form.Field>
         
         <form.Subscribe
           selector={(state) => [state.canSubmit, state.isSubmitting]}
-          children={([canSubmit, isSubmitting]) => (
+        >
+          {([canSubmit, isSubmitting]) => (
             <button
               type="submit"
               disabled={!canSubmit}
@@ -131,7 +128,7 @@ export default function IntakeForm({ defaultTier = 'phase-1' }: IntakeFormProps)
               {isSubmitting ? 'Processing...' : 'Next Step: Discovery'}
             </button>
           )}
-        />
+        </form.Subscribe>
       </form>
     </div>
   );

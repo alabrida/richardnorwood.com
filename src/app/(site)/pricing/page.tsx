@@ -73,7 +73,7 @@ export default function PricingPage() {
 
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto var(--space-12)', textAlign: 'center', padding: '0 var(--space-4)' }}>
         <p style={{ color: 'var(--color-accent)', fontStyle: 'italic', fontSize: '1rem', fontWeight: '500' }}>
-          "{pricingData.risk_reversal}"
+          &quot;{pricingData.risk_reversal}&quot;
         </p>
       </div>
 
@@ -85,7 +85,7 @@ export default function PricingPage() {
           Still Have Questions?
         </h2>
         <p style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-lg)', marginBottom: 'var(--space-8)', maxWidth: '600px', margin: '0 auto var(--space-8)' }}>
-          If you need a custom scope or have specific questions about the partnership tiers, let's talk.
+          If you need a custom scope or have specific questions about the partnership tiers, let&apos;s talk.
         </p>
         <CallButton size="large" />
       </section>

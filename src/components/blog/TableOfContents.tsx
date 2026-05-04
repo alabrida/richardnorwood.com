@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 interface Heading {
   id: string
@@ -32,7 +32,9 @@ export function TableOfContents() {
       }
     })
 
-    setHeadings(parsedHeadings)
+    const headingFrame = window.requestAnimationFrame(() => {
+      setHeadings(parsedHeadings)
+    })
 
     // 2. Set up Intersection Observer for active state
     const observer = new IntersectionObserver(
@@ -48,7 +50,10 @@ export function TableOfContents() {
 
     elements.forEach((elem) => observer.observe(elem))
 
-    return () => observer.disconnect()
+    return () => {
+      window.cancelAnimationFrame(headingFrame)
+      observer.disconnect()
+    }
   }, [])
 
   if (headings.length === 0) return null

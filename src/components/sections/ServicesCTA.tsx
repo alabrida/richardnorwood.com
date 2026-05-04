@@ -18,7 +18,7 @@ export default function ServicesCTA() {
           Ready to See Where the Friction Lives?
         </h2>
         <p style={{ color: 'var(--color-text-subtle)', fontSize: 'var(--text-xl)', maxWidth: '600px', margin: '0 auto' }}>
-          A short diagnostic to identify what's working, what's stalling, and where to focus first.
+          A short diagnostic to identify what&apos;s working, what&apos;s stalling, and where to focus first.
         </p>
         
         <div style={{ display: 'flex', gap: 'var(--space-4)', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'var(--space-8)' }}>

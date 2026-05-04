@@ -35,7 +35,7 @@ export default function DiscoveryForm({ tier, email, title, questions }: Discove
 
         toast.success('Information received. Preparing your strategic results.');
         router.push('/discovery/success');
-      } catch (err) {
+      } catch {
         toast.error('Something went wrong. Please try again.');
       }
     },
@@ -55,10 +55,8 @@ export default function DiscoveryForm({ tier, email, title, questions }: Discove
         className="space-y-6"
       >
         {questions.map((q) => (
-          <form.Field
-            key={q.id}
-            name={q.id}
-            children={(field) => (
+          <form.Field key={q.id} name={q.id}>
+            {(field) => (
               <div className="space-y-2">
                 <label htmlFor={field.name} className="block text-sm font-semibold text-[#e8edf5]">
                   {q.text}
@@ -85,12 +83,13 @@ export default function DiscoveryForm({ tier, email, title, questions }: Discove
                 )}
               </div>
             )}
-          />
+          </form.Field>
         ))}
 
         <form.Subscribe
           selector={(state) => [state.canSubmit, state.isSubmitting]}
-          children={([canSubmit, isSubmitting]) => (
+        >
+          {([canSubmit, isSubmitting]) => (
             <button
               type="submit"
               disabled={!canSubmit}
@@ -99,7 +98,7 @@ export default function DiscoveryForm({ tier, email, title, questions }: Discove
               {isSubmitting ? 'Preparing Your Results...' : 'Finalize Discovery'}
             </button>
           )}
-        />
+        </form.Subscribe>
       </form>
     </div>
   );

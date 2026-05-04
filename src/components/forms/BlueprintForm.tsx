@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import styles from './BlueprintForm.module.css';
 
 export default function BlueprintForm() {
@@ -28,7 +27,7 @@ export default function BlueprintForm() {
       setTimeout(() => {
         window.location.href = data.downloadUrl;
       }, 1000);
-    } catch (error) {
+    } catch {
       setStatus('error');
     }
   };

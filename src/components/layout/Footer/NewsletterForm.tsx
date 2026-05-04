@@ -26,7 +26,7 @@ export default function NewsletterForm({ embedded = false }: NewsletterFormProps
 
       setStatus('success');
       setEmail('');
-    } catch (error) {
+    } catch {
       setStatus('error');
     }
   };

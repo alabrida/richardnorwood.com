@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useStarLogic } from './useStarLogic';
 import { 
   CURSOR_RADIUS, GATHER_STRENGTH, DISPERSE_STRENGTH,
@@ -11,13 +11,9 @@ export default function StarField() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const mouseRef = useRef({ x: -9999, y: -9999, active: false });
   const rafRef = useRef<number>(0);
-  const [mounted, setMounted] = useState(false);
   const { starsRef, bodiesRef, initStars, spawnBody } = useStarLogic();
 
-  useEffect(() => { setMounted(true); }, []);
-
   useEffect(() => {
-    if (!mounted) return;
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (motionQuery.matches) return;
 
@@ -112,8 +108,7 @@ export default function StarField() {
       document.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('resize', handleResize);
     };
-  }, [mounted, initStars, spawnBody, starsRef, bodiesRef]);
+  }, [initStars, spawnBody, starsRef, bodiesRef]);
 
-  if (!mounted) return null;
   return <canvas ref={canvasRef} aria-hidden="true" className="starfield-canvas" />;
 }

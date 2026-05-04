@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import BlogCard from '@/components/blog/BlogCard';
 import styles from './BlogTeaser.module.css';

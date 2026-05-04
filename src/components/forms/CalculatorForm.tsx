@@ -13,7 +13,9 @@ const questions = [
   { id: 'q3', text: 'How do you measure marketing attribution today?', options: ['First/Last touch deterministic accuracy', 'Rough heuristics and guesswork', 'No systematic attribution'] },
   { id: 'q4', text: 'How secure is your infrastructure sovereignty? If a vendor doubled rates tomorrow, could you easily port away?', options: ['Fully sovereign (Own DB/Cloud)', 'Slightly entangled', 'Totally locked into third-party vendors'] },
   { id: 'q5', text: 'Identify your estimated Annual Revenue (AARR)', options: ['$0 - $1MM (Emerging)', '$1MM - $5MM (Orchestrating)', '$5MM+ (Scale)'] },
-]
+] as const
+
+type QuestionId = (typeof questions)[number]['id']
 
 export default function CalculatorForm() {
   const [step, setStep] = useState(0)
@@ -55,7 +57,7 @@ I'd like to review my maturity category together.`
           params.set('payload', formattedPayload)
           window.location.href = `/contact?${params.toString()}`
         }, 3000)
-      } catch (error) {
+      } catch {
         setAnalyzing(false)
         toast.error('Submission Failed', {
           description: 'Please try again or contact me directly.'
@@ -96,7 +98,7 @@ I'd like to review my maturity category together.`
                   </h3>
     
                   <form.Field
-                    name={questions[step].id as "q1"|"q2"|"q3"|"q4"|"q5"}
+                    name={questions[step].id as QuestionId}
                   >
                     {(field) => (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
@@ -105,8 +107,7 @@ I'd like to review my maturity category together.`
                             key={i}
                             type="button"
                             onClick={() => {
-                              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                              field.handleChange(opt as any)
+                              field.handleChange(opt)
                               setTimeout(() => setStep(step + 1), 300)
                             }}
                             style={{

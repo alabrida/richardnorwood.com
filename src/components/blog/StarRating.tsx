@@ -25,7 +25,7 @@ export default function StarRating({ postId }: StarRatingProps) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ postId, rating: value }),
       });
-    } catch (error) {
+    } catch {
       console.error('Failed to persist rating');
     }
   }

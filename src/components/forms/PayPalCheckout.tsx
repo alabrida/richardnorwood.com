@@ -2,11 +2,17 @@
 
 import React, { useState } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
+import type { OnApproveData } from '@paypal/paypal-js';
 import { toast } from 'sonner';
+
+type PayPalOrderResponse = {
+  id?: string;
+  status?: string;
+};
 
 interface PayPalCheckoutProps {
   leadId: string;
-  onSuccess: (data: any) => void;
+  onSuccess: (data: PayPalOrderResponse) => void;
 }
 
 export default function PayPalCheckout({ leadId, onSuccess }: PayPalCheckoutProps) {
@@ -19,22 +25,26 @@ export default function PayPalCheckout({ leadId, onSuccess }: PayPalCheckoutProp
     currency: "USD",
   };
 
-  const createOrder = async () => {
+  const createOrder = async (): Promise<string> => {
     try {
       const response = await fetch("/api/paypal/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ lead_id: leadId }),
       });
-      const order = await response.json();
+      const order = await response.json() as PayPalOrderResponse;
+      if (!order.id) {
+        throw new Error('Missing PayPal order ID');
+      }
       return order.id;
     } catch (err) {
       console.error(err);
       toast.error("Failed to initialize checkout.");
+      throw err;
     }
   };
 
-  const onApprove = async (data: any) => {
+  const onApprove = async (data: OnApproveData) => {
     setLoading(true);
     try {
       const response = await fetch("/api/paypal/orders", {
@@ -42,7 +52,7 @@ export default function PayPalCheckout({ leadId, onSuccess }: PayPalCheckoutProp
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ orderID: data.orderID, lead_id: leadId }),
       });
-      const orderData = await response.json();
+      const orderData = await response.json() as PayPalOrderResponse;
 
       if (orderData.status === 'COMPLETED') {
         toast.success("Payment successful. Provisioning your audit...");

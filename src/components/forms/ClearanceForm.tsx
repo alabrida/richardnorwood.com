@@ -46,7 +46,7 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
         } else {
           window.location.href = `/clearance/success?email=${encodeURIComponent(email)}`;
         }
-      } catch (err) {
+      } catch {
         toast.error('Submission failed. Please try again.');
       }
     },
@@ -61,9 +61,8 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
       }}
       style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}
     >
-      <form.Field
-        name="bottleneck"
-        children={(field) => (
+      <form.Field name="bottleneck">
+        {(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
               Primary Revenue Bottleneck
@@ -78,11 +77,10 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
             />
           </div>
         )}
-      />
+      </form.Field>
 
-      <form.Field
-        name="owns_paths"
-        children={(field) => (
+      <form.Field name="owns_paths">
+        {(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
               Infrastructure Sovereignty
@@ -98,11 +96,10 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
             </select>
           </div>
         )}
-      />
+      </form.Field>
 
-      <form.Field
-        name="validate_fit"
-        children={(field) => (
+      <form.Field name="validate_fit">
+        {(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
               Buyer Validation
@@ -117,11 +114,10 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
             </select>
           </div>
         )}
-      />
+      </form.Field>
 
-      <form.Field
-        name="systems"
-        children={(field) => (
+      <form.Field name="systems">
+        {(field) => (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
             <label style={{ fontSize: 'var(--text-sm)', fontWeight: 'bold', color: 'var(--color-text)' }}>
               Current Tech Stack / CRM
@@ -136,11 +132,12 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
             />
           </div>
         )}
-      />
+      </form.Field>
 
       <form.Subscribe
         selector={(state) => [state.canSubmit, state.isSubmitting]}
-        children={([canSubmit, isSubmitting]) => (
+      >
+        {([canSubmit, isSubmitting]) => (
           <button
             type="submit"
             disabled={!canSubmit}
@@ -159,7 +156,7 @@ export default function ClearanceForm({ leadId, email, isPaidFlow = false, onLoc
             {isSubmitting ? 'Verifying...' : (isPaidFlow ? 'Confirm & Proceed to Payment' : 'Complete Review')}
           </button>
         )}
-      />
+      </form.Subscribe>
     </form>
   );
 }

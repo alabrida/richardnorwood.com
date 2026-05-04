@@ -5,7 +5,7 @@ export interface WPPost {
   title: { rendered: string }
   content: { rendered: string }
   excerpt: { rendered: string }
-  _embedded?: any
+  _embedded?: Record<string, unknown>
 }
 
 // Using Secure Origin Subdomain for direct WordPress data access

@@ -1,9 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 
 export const VideoPlaceholder: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
   // Slow pulse effect
   const pulse = Math.sin(frame / 20) * 0.5 + 0.5; // 0 to 1

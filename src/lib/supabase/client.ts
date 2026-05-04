@@ -9,7 +9,7 @@ export function createClient() {
     // Return a dummy client or throw a descriptive error that we can catch
     // But since this is a client component, it will run in the browser where they should be present.
     // For prerendering, we can return null and handle it in the component.
-    return null as any;
+    return null as unknown as ReturnType<typeof createBrowserClient>;
   }
 
   return createBrowserClient(url, key)

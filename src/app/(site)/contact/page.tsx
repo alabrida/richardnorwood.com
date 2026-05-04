@@ -68,7 +68,7 @@ export default function ContactPage() {
                   Send a Message
                 </h2>
                 <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-6)' }}>
-                  Tell us about your business and what you're working on. We'll follow up within 24 hours.
+                  Tell us about your business and what you&apos;re working on. We&apos;ll follow up within 24 hours.
                 </p>
                 
                 <ContactForm />

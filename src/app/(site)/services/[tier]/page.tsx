@@ -5,10 +5,22 @@ import path from 'path';
 import IntakeForm from '@/components/forms/IntakeForm';
 import { buildMetadata } from '@/lib/metadata';
 
+interface ServiceTier {
+  id: string;
+  name: string;
+  subtitle: string;
+  description: string;
+  includes: string[];
+}
+
+interface ServicesData {
+  tiers: ServiceTier[];
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ tier: string }> }) {
   const { tier } = await params;
   const data = await getServicesData();
-  const tierData = data.tiers.find((t: any) => t.id === tier);
+  const tierData = data.tiers.find((item) => item.id === tier);
 
   if (!tierData) return { title: 'Not Found' };
 
@@ -24,16 +36,16 @@ interface PageProps {
   params: Promise<{ tier: string }>;
 }
 
-async function getServicesData() {
+async function getServicesData(): Promise<ServicesData> {
   const filePath = path.join(process.cwd(), 'content', 'services.json');
   const fileContent = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContent);
+  return JSON.parse(fileContent) as ServicesData;
 }
 
 export default async function ServiceTierPage({ params }: PageProps) {
   const { tier } = await params;
   const data = await getServicesData();
-  const tierData = data.tiers.find((t: any) => t.id === tier);
+  const tierData = data.tiers.find((item) => item.id === tier);
 
   if (!tierData) notFound();
 
@@ -61,7 +73,7 @@ export default async function ServiceTierPage({ params }: PageProps) {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-bold text-[#e8edf5] uppercase tracking-wider">What's Included:</h3>
+            <h3 className="text-lg font-bold text-[#e8edf5] uppercase tracking-wider">What&apos;s Included:</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {tierData.includes.map((item: string, i: number) => (
                 <li key={i} className="flex items-start gap-2 text-[#5a6a84]">

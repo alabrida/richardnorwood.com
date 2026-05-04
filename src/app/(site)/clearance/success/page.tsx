@@ -30,7 +30,7 @@ export default function ClearanceSuccessPage() {
               Next Step: Strategic Review
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>
-              If you haven't booked your discovery session yet, please do so now to finalize the review.
+              If you haven&apos;t booked your discovery session yet, please do so now to finalize the review.
             </p>
             <div style={{ marginTop: 'var(--space-4)' }}>
               <a 

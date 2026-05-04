@@ -30,7 +30,7 @@ function PurchaseAuditContent() {
     setIsClearanceComplete(true);
   };
 
-  const handlePaymentSuccess = (data: any) => {
+  const handlePaymentSuccess = () => {
     router.push(`/purchase/success?email=${encodeURIComponent(email)}&id=${leadId}`);
   };
 
