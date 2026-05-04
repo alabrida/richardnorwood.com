@@ -557,7 +557,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
                           animate={{ opacity: hasValue ? 0.62 : 0.92 }}
                           style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-xs)', lineHeight: '1.5', margin: 0 }}
                         >
-                          <span style={{ color: 'var(--color-accent)', fontWeight: 'bold' }}>Guidance:</span> {q.helperText}
+                          <span style={{ color: brand.primary, fontWeight: 'bold' }}>Guidance:</span> {q.helperText}
                         </motion.p>
                       )}
                     </motion.div>
