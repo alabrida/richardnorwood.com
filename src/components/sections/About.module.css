@@ -1,4 +1,9 @@
 .aboutSection { background: rgba(15, 26, 46, 0.5); border-top: 1px solid var(--color-border); padding: var(--space-16) 0; }
+.sectionContainer {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-inline: clamp(var(--space-5), 5vw, var(--space-12));
+}
 .aboutGrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center; }
 
 @media (max-width: 768px) { .aboutGrid { grid-template-columns: 1fr; } .aboutText { padding-right: 0; } }

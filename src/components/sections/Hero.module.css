@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: var(--space-20) var(--space-4) var(--space-12);
+  padding: var(--space-20) clamp(var(--space-5), 5vw, var(--space-12)) var(--space-12);
 }
 
 .heroBackground {

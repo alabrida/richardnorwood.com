@@ -1,4 +1,9 @@
 .socialProofSection { background: transparent; padding: var(--space-12) 0; }
+.sectionContainer {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-inline: clamp(var(--space-5), 5vw, var(--space-12));
+}
 .socialProofHeader { text-align: center; display: flex; flex-direction: column; align-items: center; }
 .metricsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-8); }
 
