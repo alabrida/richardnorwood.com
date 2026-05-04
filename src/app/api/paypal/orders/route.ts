@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { isRecord, normalizeText, normalizeUuid, readJsonObject } from '@/lib/api/security';
 
 const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
 const PAYPAL_CLIENT_SECRET = process.env.PAYPAL_CLIENT_SECRET;
@@ -23,8 +24,41 @@ async function generateAccessToken() {
     },
   });
 
-  const data = await response.json();
+  const data = await response.json() as Record<string, unknown>;
+  if (!response.ok || typeof data.access_token !== 'string') {
+    throw new Error('PAYPAL_TOKEN_REQUEST_FAILED');
+  }
+
   return data.access_token;
+}
+
+function firstPurchaseUnit(data: Record<string, unknown>) {
+  return Array.isArray(data.purchase_units) && isRecord(data.purchase_units[0])
+    ? data.purchase_units[0]
+    : null;
+}
+
+function getCapturedReferenceId(data: Record<string, unknown>) {
+  const purchaseUnit = firstPurchaseUnit(data);
+  return typeof purchaseUnit?.reference_id === 'string' ? purchaseUnit.reference_id : undefined;
+}
+
+function firstCapture(data: Record<string, unknown>) {
+  const purchaseUnit = firstPurchaseUnit(data);
+  if (!purchaseUnit || !isRecord(purchaseUnit.payments)) return null;
+  return Array.isArray(purchaseUnit.payments.captures) && isRecord(purchaseUnit.payments.captures[0])
+    ? purchaseUnit.payments.captures[0]
+    : null;
+}
+
+function isExpectedCapture(data: Record<string, unknown>, leadId: string) {
+  const capture = firstCapture(data);
+  const amount = isRecord(capture?.amount) ? capture.amount : null;
+  return data.status === 'COMPLETED'
+    && getCapturedReferenceId(data) === leadId
+    && capture?.status === 'COMPLETED'
+    && amount?.currency_code === 'USD'
+    && amount?.value === '497.00';
 }
 
 /**
@@ -32,7 +66,16 @@ async function generateAccessToken() {
  */
 export async function POST(request: Request) {
   try {
-    const { lead_id } = await request.json();
+    const body = await readJsonObject(request);
+    if (!body) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
+
+    const lead_id = normalizeUuid(body.lead_id);
+    if (!lead_id) {
+      return NextResponse.json({ error: 'Valid lead ID is required' }, { status: 400 });
+    }
+
     const accessToken = await generateAccessToken();
     const url = `${PAYPAL_API}/v2/checkout/orders`;
 
@@ -57,7 +100,11 @@ export async function POST(request: Request) {
       }),
     });
 
-    const data = await response.json();
+    const data = await response.json() as Record<string, unknown>;
+    if (!response.ok) {
+      return NextResponse.json({ error: 'Failed to create order' }, { status: 502 });
+    }
+
     return NextResponse.json(data);
   } catch (error) {
     console.error('PayPal Order Creation Error:', error);
@@ -70,7 +117,18 @@ export async function POST(request: Request) {
  */
 export async function PATCH(request: Request) {
   try {
-    const { orderID, lead_id } = await request.json();
+    const body = await readJsonObject(request);
+    if (!body) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
+
+    const orderID = normalizeText(body.orderID, 128);
+    const lead_id = normalizeUuid(body.lead_id);
+
+    if (!orderID || !lead_id || !/^[A-Z0-9-]+$/i.test(orderID)) {
+      return NextResponse.json({ error: 'Valid order and lead IDs are required' }, { status: 400 });
+    }
+
     const accessToken = await generateAccessToken();
     const url = `${PAYPAL_API}/v2/checkout/orders/${orderID}/capture`;
 
@@ -82,9 +140,22 @@ export async function PATCH(request: Request) {
       },
     });
 
-    const data = await response.json();
+    const data = await response.json() as Record<string, unknown>;
+    if (!response.ok) {
+      return NextResponse.json({ error: 'Failed to capture order' }, { status: 502 });
+    }
 
     if (data.status === 'COMPLETED') {
+      if (!isExpectedCapture(data, lead_id)) {
+        console.error('PayPal capture validation failed:', {
+          orderID,
+          lead_id,
+          reference_id: getCapturedReferenceId(data),
+          status: data.status,
+        });
+        return NextResponse.json({ error: 'Payment validation failed' }, { status: 400 });
+      }
+
       const supabase = await createClient();
       
       // 1. Mark as paid in Supabase

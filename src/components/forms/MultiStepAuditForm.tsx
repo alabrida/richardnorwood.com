@@ -296,7 +296,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
       await fetch('/api/audit/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ profile, responses: value })
+        body: JSON.stringify({ client_id: profile.id, responses: value })
       })
       toast.success('Audit submitted successfully!')
       router.push(`/portal/${profile.slug}/dashboard`)

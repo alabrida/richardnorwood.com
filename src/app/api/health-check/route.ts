@@ -1,24 +1,35 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { createClient } from '@/lib/supabase/server';
+import { escapeHtml, normalizeEmail, readJsonObject, sanitizeJsonObject } from '@/lib/api/security';
 
 export async function POST(request: Request) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const { email, responses } = await request.json();
+    const body = await readJsonObject(request);
+    if (!body) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
 
+    const email = normalizeEmail(body.email);
+    const responses = sanitizeJsonObject(body.responses);
     if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
+      return NextResponse.json({ error: 'Valid email is required' }, { status: 400 });
+    }
+
+    if (!responses) {
+      return NextResponse.json({ error: 'Responses are required' }, { status: 400 });
     }
 
     // Determine Maturity Category based on responses
     let category = 'Emerging';
     let recommendations = 'Focus on building foundational visibility and capturing first-layer signals.';
+    const maturitySignal = typeof responses.q5 === 'string' ? responses.q5 : '';
     
-    if (responses.q5.includes('Scale')) {
+    if (maturitySignal.includes('Scale')) {
       category = 'Scale';
       recommendations = 'Focus on stack rationalization, sovereign data models, and automated feedback loops to maintain independent growth.';
-    } else if (responses.q5.includes('Orchestrating')) {
+    } else if (maturitySignal.includes('Orchestrating')) {
       category = 'Orchestrating';
       recommendations = 'Focus on cross-team alignment and automating signal capture across the middle-of-funnel touchpoints.';
     }
@@ -40,6 +51,11 @@ export async function POST(request: Request) {
     }
 
     const leadUuid = dbData?.id || '';
+    const safeEmail = escapeHtml(email);
+    const safeCategory = escapeHtml(category);
+    const safeRecommendations = escapeHtml(recommendations);
+    const calendarUrl = `https://calendar.google.com/calendar/u/0/appointments/schedules?email=${encodeURIComponent(email)}`;
+    const purchaseUrl = `https://richardnorwood.com/purchase/audit?id=${encodeURIComponent(leadUuid)}&email=${encodeURIComponent(email)}`;
 
     // 2. Deliver the email with embedded form and tiered CTAs
     const { data, error } = await resend.emails.send({
@@ -50,16 +66,16 @@ export async function POST(request: Request) {
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #111; line-height: 1.6;">
           <div style="border-bottom: 2px solid #20c997; padding-bottom: 10px; margin-bottom: 30px;">
             <h1 style="color: #111; margin: 0; font-size: 24px;">Revenue Health Check: Preliminary Results</h1>
-            <p style="color: #666; margin: 5px 0 0;">Prepared for ${email}</p>
+            <p style="color: #666; margin: 5px 0 0;">Prepared for ${safeEmail}</p>
           </div>
           
           <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
-            <h2 style="margin-top: 0; font-size: 18px; color: #f0b429;">Maturity Category: ${category}</h2>
-            <p style="margin-bottom: 0;">Based on your current signals, your business is operating in the <strong>${category}</strong> stage.</p>
+            <h2 style="margin-top: 0; font-size: 18px; color: #f0b429;">Maturity Category: ${safeCategory}</h2>
+            <p style="margin-bottom: 0;">Based on your current signals, your business is operating in the <strong>${safeCategory}</strong> stage.</p>
           </div>
 
           <h3 style="font-size: 16px; margin-bottom: 10px;">Strategic Direction:</h3>
-          <p style="margin-bottom: 30px;">${recommendations}</p>
+          <p style="margin-bottom: 30px;">${safeRecommendations}</p>
 
           <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
             <h3 style="margin-top: 0; font-size: 18px;">Unlock Your Full 22-Point Structural Audit</h3>
@@ -69,7 +85,7 @@ export async function POST(request: Request) {
               <strong>Option 1: Guided Discovery (Free)</strong><br/>
               Book a 20-minute strategic review. We will go over your custom audit results live on the call.
               <br/><br/>
-              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules?email=${encodeURIComponent(email)}" style="display: inline-block; background: #f0b429; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Book Free Review</a>
+              <a href="${calendarUrl}" style="display: inline-block; background: #f0b429; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Book Free Review</a>
             </div>
 
             <div style="border-top: 1px solid #eee; padding-top: 20px;">
@@ -77,7 +93,7 @@ export async function POST(request: Request) {
               Skip the call. Receive your full structural map and results instantly. 
               <br/><em style="font-size: 12px; color: #666;">Note: Completion of the security clearance below is required for accurate results.</em>
               <br/><br/>
-              <a href="https://richardnorwood.com/purchase/audit?id=${leadUuid}&email=${encodeURIComponent(email)}" style="display: inline-block; background: #20c997; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Get Results Instantly</a>
+              <a href="${purchaseUrl}" style="display: inline-block; background: #20c997; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Get Results Instantly</a>
             </div>
           </div>
 
@@ -87,7 +103,7 @@ export async function POST(request: Request) {
             
             <form action="https://richardnorwood.com/api/clearance" method="POST">
               <input type="hidden" name="lead_id" value="${leadUuid}" />
-              <input type="hidden" name="email" value="${email}" />
+              <input type="hidden" name="email" value="${safeEmail}" />
               
               <div style="margin-bottom: 15px;">
                 <label style="display: block; font-size: 12px; text-transform: uppercase; color: #8899b4; margin-bottom: 5px;">Primary Revenue Bottleneck</label>

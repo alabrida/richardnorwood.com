@@ -1,9 +1,26 @@
 import { NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { normalizeEmail, normalizeOptionalText, normalizeText, normalizeUrl, readJsonObject } from '@/lib/api/security'
 
 export async function POST(request: Request) {
   try {
-    const data = await request.json()
+    const body = await readJsonObject(request)
+    if (!body) {
+      return NextResponse.json({ success: false, error: 'Invalid request body' }, { status: 400 })
+    }
+
+    const data = {
+      name: normalizeText(body.name, 160),
+      email: normalizeEmail(body.email),
+      company: normalizeOptionalText(body.company, 200),
+      inquiryType: normalizeOptionalText(body.inquiryType, 80),
+      website: normalizeUrl(body.website),
+      message: normalizeOptionalText(body.message, 3000),
+    }
+
+    if (!data.name || !data.email || !data.message) {
+      return NextResponse.json({ success: false, error: 'Name, valid email, and message are required' }, { status: 400 })
+    }
 
     // 1. Store in Supabase
     const supabase = await createClient()

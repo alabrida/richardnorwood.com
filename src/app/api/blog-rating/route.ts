@@ -1,9 +1,16 @@
 import { NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { normalizeInteger, normalizeText, readJsonObject } from '@/lib/api/security'
 
 export async function POST(request: Request) {
   try {
-    const { postId, rating } = await request.json()
+    const body = await readJsonObject(request)
+    if (!body) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 })
+    }
+
+    const postId = normalizeText(body.postId, 200)
+    const rating = normalizeInteger(body.rating, 1, 5)
 
     if (!postId || !rating) {
       return NextResponse.json({ error: 'Post ID and rating are required' }, { status: 400 })

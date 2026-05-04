@@ -1,12 +1,23 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { normalizeEmail, normalizeOptionalText, normalizeText, normalizeUrl, readJsonObject } from '@/lib/api/security';
+
+const ALLOWED_TIERS = new Set(['align', 'build', 'command']);
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const { name, email, company, websiteUrl, tier } = body;
+    const body = await readJsonObject(req);
+    if (!body) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
 
-    if (!email || !tier) {
+    const name = normalizeOptionalText(body.name, 160);
+    const email = normalizeEmail(body.email);
+    const company = normalizeOptionalText(body.company, 200);
+    const websiteUrl = normalizeUrl(body.websiteUrl);
+    const tier = normalizeText(body.tier, 40);
+
+    if (!email || !tier || !ALLOWED_TIERS.has(tier)) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 

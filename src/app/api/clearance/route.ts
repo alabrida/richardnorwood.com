@@ -1,17 +1,18 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { normalizeEmail, normalizeOptionalText, normalizeUuid } from '@/lib/api/security';
 
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
-    const leadId = formData.get('lead_id') as string;
-    const email = formData.get('email') as string;
-    const bottleneck = formData.get('bottleneck') as string;
-    const systems = formData.get('systems') as string;
-    const ownsPaths = formData.get('owns_paths') as string;
-    const validateFit = formData.get('validate_fit') as string;
+    const leadId = normalizeUuid(formData.get('lead_id'));
+    const email = normalizeEmail(formData.get('email'));
+    const bottleneck = normalizeOptionalText(formData.get('bottleneck'), 2000);
+    const systems = normalizeOptionalText(formData.get('systems'), 1000);
+    const ownsPaths = normalizeOptionalText(formData.get('owns_paths'), 80);
+    const validateFit = normalizeOptionalText(formData.get('validate_fit'), 80);
 
-    if (!leadId) {
+    if (!leadId || !email) {
       return NextResponse.json({ error: 'Missing Lead ID' }, { status: 400 });
     }
 
@@ -29,7 +30,8 @@ export async function POST(request: Request) {
         },
         updated_at: new Date().toISOString()
       })
-      .eq('id', leadId);
+      .eq('id', leadId)
+      .eq('email', email);
 
     if (error) {
       console.error('Supabase Error (clearance):', error);

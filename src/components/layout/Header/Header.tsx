@@ -64,9 +64,9 @@ export default function Header() {
 
           <button className={styles.menuButton} onClick={toggleDrawer} aria-label={drawerOpen ? 'Close menu' : 'Open menu'} aria-expanded={drawerOpen}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-              <motion.path d="M3 5H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" animate={drawerOpen ? { d: 'M4 4L16 16' } : { d: 'M3 5H17' }} />
-              <motion.path d="M3 10H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" animate={drawerOpen ? { opacity: 0 } : { opacity: 1 }} />
-              <motion.path d="M3 15H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" animate={drawerOpen ? { d: 'M4 16L16 4' } : { d: 'M3 15H17' }} />
+              <path d={drawerOpen ? 'M4 4L16 16' : 'M3 5H17'} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              <path d="M3 10H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity={drawerOpen ? 0 : 1} />
+              <path d={drawerOpen ? 'M4 16L16 4' : 'M3 15H17'} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </button>
         </div>

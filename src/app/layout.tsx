@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
   },
   icons: {
-    icon: '/icons/icons/wheel.png',
+    icon: [{ url: '/images/author_pic.jpg', type: 'image/jpeg' }],
   },
 };
 
