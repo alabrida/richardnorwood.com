@@ -15,6 +15,37 @@
   padding-bottom: var(--space-12);
 }
 
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-8);
+}
+
+.brandHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  min-width: 0;
+}
+
+.logoFrame {
+  position: relative;
+  width: 132px;
+  height: 74px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.statusBlock {
+  text-align: right;
+  flex-shrink: 0;
+}
+
 .title {
   font-family: var(--font-heading);
   font-size: var(--text-4xl);
@@ -184,4 +215,24 @@
   color: var(--color-secondary);
   font-weight: var(--font-weight-bold);
   text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .headerContent {
+    flex-direction: column;
+  }
+
+  .brandHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .logoFrame {
+    width: 116px;
+    height: 66px;
+  }
+
+  .statusBlock {
+    text-align: left;
+  }
 }

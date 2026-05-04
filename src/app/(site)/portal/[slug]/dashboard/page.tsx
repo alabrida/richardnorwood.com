@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { notFound, redirect } from 'next/navigation'
 import { buildMetadata } from '@/lib/metadata'
 import Link from 'next/link'
+import Image from 'next/image'
 import * as motion from 'framer-motion/client'
 import styles from './PortalDashboard.module.css'
 
@@ -55,19 +56,31 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <div>
-              <h1 className={styles.title}>
-                Strategic Alignment Dashboard
-              </h1>
-              <p className={styles.subHeadline}>
-                {profile.company_name}
-              </p>
-              <p className={styles.welcomeText}>
-                Welcome to your partnership portal, {profile.contact_name?.split(' ')[0] || 'Verrick'}. Below is your 30-day alignment agenda and immediate action items.
-              </p>
+          <div className={styles.headerContent}>
+            <div className={styles.brandHeader}>
+              <div className={styles.logoFrame}>
+                <Image
+                  src="/images/riw-logo.png"
+                  alt={`${profile.company_name} logo`}
+                  fill
+                  sizes="132px"
+                  style={{ objectFit: 'contain', padding: 8 }}
+                  priority={false}
+                />
+              </div>
+              <div>
+                <h1 className={styles.title}>
+                  Strategic Alignment Dashboard
+                </h1>
+                <p className={styles.subHeadline}>
+                  {profile.company_name}
+                </p>
+                <p className={styles.welcomeText}>
+                  Welcome to your partnership portal, {profile.contact_name?.split(' ')[0] || 'Verrick'}. Below is your 30-day alignment agenda and immediate action items.
+                </p>
+              </div>
             </div>
-            <div style={{ textAlign: 'right' }}>
+            <div className={styles.statusBlock}>
               <div className={styles.statusLabel}>Partnership Status</div>
               <div className={styles.statusValue}>
                 Active Alignment
