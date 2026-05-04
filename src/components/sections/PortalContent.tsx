@@ -10,11 +10,17 @@ interface PortalContentProps {
   profile: any;
 }
 export default function PortalContent({ user, profile }: PortalContentProps) {
-  const tierLabels: Record<string, string> = {
-    'phase-1': 'Phase I: Diagnostic EKG',
-    'phase-2': 'Phase II: Engine Orchestration',
-    'phase-3': 'Phase III: Unified Engine',
+  if (!user) {
+    return (
+      <main className={styles.portal}>
+        <div style={{ textAlign: 'center', padding: 'var(--space-20)' }}>
+          <p>Loading your portal session...</p>
+        </div>
+      </main>
+    )
   }
+
+  const brandPrimary = '#2BB6F6' // Default to client brand color
 
   return (
     <main className={styles.portal}>
@@ -23,12 +29,12 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <GlowCard className={styles.portalCard} glowColor="var(--color-secondary)">
+        <GlowCard className={styles.portalCard} glowColor={brandPrimary}>
           <div className={styles.portalContent}>
             <div className={styles.header}>
-              <h1 className={styles.title}>Client Portal</h1>
+              <h1 className={styles.title}>Partnership Portal</h1>
               <p className={styles.welcome}>
-                Welcome back{profile ? `, ${profile.contact_name}` : ''}
+                {profile?.company_name || 'Strategic Alignment Hub'}
               </p>
             </div>
 
@@ -40,10 +46,12 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
                     <span className={styles.value}>{profile.company_name}</span>
                   </div>
                   <div className={styles.infoItem}>
-                    <span className={styles.label}>Partnership</span>
-                    <span className={styles.value}>
-                      {tierLabels[profile.partnership_tier] || profile.partnership_tier}
-                    </span>
+                    <span className={styles.label}>Agreement</span>
+                    <span className={styles.value}>30-Day Strategic Alignment</span>
+                  </div>
+                  <div className={styles.infoItem}>
+                    <span className={styles.label}>Current Week</span>
+                    <span className={styles.value}>WK1: Diagnostic</span>
                   </div>
                   <div className={styles.infoItem}>
                     <span className={styles.label}>Status</span>
@@ -51,65 +59,67 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
                       {profile.status || 'Active'}
                     </span>
                   </div>
-                  {profile.partnership_start && (
-                    <div className={styles.infoItem}>
-                      <span className={styles.label}>Start Date</span>
-                      <span className={styles.value}>
-                        {new Date(profile.partnership_start).toLocaleDateString('en-US', { 
-                          year: 'numeric', month: 'long', day: 'numeric' 
-                        })}
-                      </span>
-                    </div>
-                  )}
                 </div>
-
-                {profile.dashboard_url && (
-                  <motion.a
-                    href={profile.dashboard_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.dashboardLink}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Open Your Dashboard →
-                  </motion.a>
-                )}
               </div>
             ) : (
               <div className={styles.noProfle}>
                 <p className={styles.noProfileText}>
-                  Your client profile is being set up. If you believe this is an error, 
-                  please <Link href="/contact" className={styles.contactLink}>contact us</Link>.
+                  Your profile is being provisioned for the 30-day alignment. 
+                  If you have questions, please <Link href="/contact" className={styles.contactLink}>contact us</Link>.
                 </p>
               </div>
             )}
 
-            <div className={styles.quickLinks}>
-              <h2 className={styles.sectionTitle}>Quick Links</h2>
-              <div className={styles.linkGrid}>
-                <Link href="/contact" className={styles.quickLink}>
-                  <span className={styles.linkIcon}>💬</span>
-                  <span>Contact Your Architect</span>
-                </Link>
-                <Link href="/services" className={styles.quickLink}>
-                  <span className={styles.linkIcon}>📋</span>
-                  <span>Partnership Details</span>
-                </Link>
-                <Link href="/blog" className={styles.quickLink}>
-                  <span className={styles.linkIcon}>📖</span>
-                  <span>Latest Insights</span>
-                </Link>
-                <Link href="/calculator" className={styles.quickLink}>
-                  <span className={styles.linkIcon}>🔬</span>
-                  <span>Run New EKG</span>
-                </Link>
+            {/* PARTNERSHIP ROADMAP CARD */}
+            <div style={{ marginTop: 'var(--space-8)', borderTop: '1px solid var(--color-border)', paddingTop: 'var(--space-8)' }}>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-6)', color: 'white' }}>
+                Partnership Roadmap
+              </h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+                <div style={{ display: 'flex', gap: 'var(--space-4)', alignItems: 'center' }}>
+                  <div style={{ width: 24, height: 24, borderRadius: '4px', border: `1px solid ${brandPrimary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: brandPrimary, fontWeight: 'bold' }}>WK1</div>
+                  <div style={{ flexGrow: 1 }}>
+                    <div style={{ color: 'white', fontWeight: 'bold', fontSize: 'var(--text-sm)' }}>Friction Mapping & EKG Diagnostic</div>
+                    <div style={{ fontSize: 10, color: brandPrimary, fontWeight: 'bold' }}>ACTIVE PHASE</div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: 'var(--space-4)', alignItems: 'center', opacity: 0.4 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: '4px', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK2</div>
+                  <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Revenue & Financial Mechanics</div>
+                </div>
+                <div style={{ display: 'flex', gap: 'var(--space-4)', alignItems: 'center', opacity: 0.4 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: '4px', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK3</div>
+                  <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Facility & Physical Footprint</div>
+                </div>
+                <div style={{ display: 'flex', gap: 'var(--space-4)', alignItems: 'center', opacity: 0.4 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: '4px', border: '1px solid var(--color-text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10 }}>WK4</div>
+                  <div style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}>Clinical Standards & Strategic Handoff</div>
+                </div>
               </div>
+
+              {profile?.slug && (
+                <Link 
+                  href={`/portal/${profile.slug}/audit`}
+                  style={{ 
+                    marginTop: 'var(--space-10)',
+                    display: 'block', 
+                    background: brandPrimary, 
+                    color: 'black', 
+                    padding: 'var(--space-3) var(--space-6)', 
+                    borderRadius: 'var(--radius-full)', 
+                    fontWeight: 'bold',
+                    textDecoration: 'none',
+                    textAlign: 'center'
+                  }}
+                >
+                  Launch Strategic Audit →
+                </Link>
+              )}
             </div>
 
-            <div className={styles.footer}>
+            <div className={styles.footer} style={{ marginTop: 'var(--space-12)' }}>
               <span className={styles.footerText}>
-                Signed in as {user.email}
+                Secure Session: {user.email}
               </span>
               <form action="/api/auth/signout" method="post">
                 <button type="submit" className={styles.signOutBtn}>

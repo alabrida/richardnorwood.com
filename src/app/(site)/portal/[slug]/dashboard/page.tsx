@@ -135,7 +135,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
             </Link>
           </motion.div>
           
-          {/* THE 30-DAY AGENDA */}
+          {/* THE PARTNERSHIP ROADMAP */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -151,7 +151,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
             }}
           >
             <div>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)', color: 'white' }}>30-Day Alignment Agenda</h3>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)', color: 'white' }}>Partnership Roadmap</h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
                 <li style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center' }}>
                   <div style={{ width: 24, height: 24, borderRadius: 'var(--radius-sm)', border: `1px solid ${brand.primary}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: brand.primary, fontWeight: 'bold' }}>WK1</div>
