@@ -14,7 +14,7 @@ export default function CallButton({ className = '', size = 'default' }: CallBut
   return (
     <a href="tel:8138071193" className={`${styles.callButton} ${sizeClass} ${className}`}>
       <PhoneIcon className={styles.icon} />
-      <span>Call (813) 807-1193</span>
+      <span className={styles.buttonText}>Call (813) 807-1193</span>
     </a>
   )
 }

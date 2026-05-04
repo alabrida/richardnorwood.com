@@ -111,6 +111,11 @@
   transition: transform var(--duration-normal) var(--ease-out), border-color var(--duration-normal);
 }
 
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(136, 153, 180, 0.28);
+}
+
 .activeCard {
   border: 2px solid var(--brand-primary);
   box-shadow: 0 20px 50px -12px var(--brand-primary-glow);
@@ -154,6 +159,19 @@
 .primaryBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(240, 180, 41, 0.5);
+}
+
+.primaryBtn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.primaryBtnText {
+  display: inline-block;
+  transition: transform var(--duration-fast) var(--ease-spring);
+}
+
+.primaryBtn:hover .primaryBtnText {
+  transform: translateY(-1px);
 }
 
 .roadmapList {

@@ -435,6 +435,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
       {/* Progress Bar */}
       <div style={{ width: '100%', height: 4, background: 'var(--color-surface-elevated)', borderRadius: 'var(--radius-full)', marginBottom: 'var(--space-8)', overflow: 'hidden' }}>
         <motion.div
+          className="audit-progress-fill"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.5 }}
@@ -652,6 +653,30 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
       </div>
 
       <style jsx>{`
+        .audit-progress-fill {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .audit-progress-fill::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+          transform: translateX(-100%);
+          animation: auditProgressSheen 2.6s ease-in-out infinite;
+        }
+
+        @keyframes auditProgressSheen {
+          0%, 45% {
+            transform: translateX(-100%);
+          }
+
+          100% {
+            transform: translateX(100%);
+          }
+        }
+
         .audit-control {
           width: 100%;
           background: #000;
@@ -700,6 +725,12 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
         .audit-choice-button:focus-visible {
           border-color: var(--color-accent) !important;
           box-shadow: 0 0 0 1px rgba(32, 201, 151, 0.12), 0 10px 24px rgba(0, 0, 0, 0.28);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .audit-progress-fill::after {
+            animation: none;
+          }
         }
 
         @media (max-width: 1240px) {

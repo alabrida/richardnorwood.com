@@ -90,6 +90,17 @@
 }
 @media (min-width: 768px) { .ctaButton { display: inline-flex; } }
 .ctaButton:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow-gold); }
+.ctaButton:active { transform: translateY(0) scale(0.98); }
+
+.buttonText {
+  display: inline-block;
+  transition: transform var(--duration-fast) var(--ease-spring);
+}
+
+.ctaButton:hover .buttonText,
+.secondaryHeaderCta:hover .buttonText {
+  transform: translateY(-1px);
+}
 
 .secondaryHeaderCta {
   font-family: var(--font-heading);
@@ -114,6 +125,10 @@
   color: var(--color-text);
   border-color: var(--color-text-subtle);
   background: rgba(255, 255, 255, 0.05);
+}
+
+.secondaryHeaderCta:active {
+  transform: scale(0.98);
 }
 
 .ctaPulse { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--color-text-inverse); animation: pulse 2s ease-in-out infinite; }

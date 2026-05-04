@@ -55,11 +55,11 @@ export default function Header() {
         <div className={styles.actions}>
           <Link href="/contact" className={styles.ctaButton}>
             <span className={styles.ctaPulse} aria-hidden="true" />
-            Book a Call
+            <span className={styles.buttonText}>Book a Call</span>
           </Link>
           
           <Link href="/calculator" className={styles.secondaryHeaderCta}>
-            Health Check
+            <span className={styles.buttonText}>Health Check</span>
           </Link>
 
           <button className={styles.menuButton} onClick={toggleDrawer} aria-label={drawerOpen ? 'Close menu' : 'Open menu'} aria-expanded={drawerOpen}>

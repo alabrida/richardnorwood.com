@@ -47,6 +47,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
 
   const brand = profile.brand_colors || { primary: '#2BB6F6' }
   const isAuditComplete = auditResponse?.is_submitted || false
+  const auditCtaLabel = isAuditComplete ? 'Review Your Responses' : 'Launch Strategic Audit →'
 
   return (
     <main className={styles.dashboard} style={{ '--brand-primary': brand.primary, '--brand-primary-glow': `${brand.primary}33` } as React.CSSProperties}>
@@ -113,7 +114,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
               href={`/portal/${slug}/audit`}
               className={styles.primaryBtn}
             >
-              {isAuditComplete ? 'Review Your Responses' : 'Launch Strategic Audit →'}
+              <span className={styles.primaryBtnText}>{auditCtaLabel}</span>
             </Link>
           </motion.div>
           

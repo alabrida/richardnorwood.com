@@ -148,6 +148,21 @@
   box-shadow: 0 15px 40px rgba(240, 180, 41, 0.4);
 }
 
+.primaryCta:active,
+.secondaryCta:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.ctaText {
+  display: inline-block;
+  transition: transform var(--duration-fast) var(--ease-spring);
+}
+
+.primaryCta:hover .ctaText,
+.secondaryCta:hover .ctaText {
+  transform: translateY(-1px);
+}
+
 .ctaArrow {
   transition: transform var(--duration-fast);
 }
@@ -168,10 +183,11 @@
   font-weight: var(--font-weight-medium);
   font-size: var(--text-base);
   text-decoration: none;
-  transition: background var(--duration-fast), border-color var(--duration-fast);
+  transition: background var(--duration-fast), border-color var(--duration-fast), transform var(--duration-fast) var(--ease-spring);
 }
 
 .secondaryCta:hover {
   background: var(--color-surface);
   border-color: var(--color-primary-light);
+  transform: translateY(-1px);
 }

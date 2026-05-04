@@ -57,14 +57,14 @@ export default function HeroSection({ data }: HeroProps) {
             className={styles.ctaWrapper}
           >
             <Link href={data.cta_url} className={styles.primaryCta}>
-              {data.cta_text}
+              <span className={styles.ctaText}>{data.cta_text}</span>
               <span className={styles.ctaArrow}>→</span>
             </Link>
             <Link 
               href="/blueprint" 
               className={`${styles.secondaryCta} pulse-green-glow`}
             >
-              Get the 5-Stage Blueprint
+              <span className={styles.ctaText}>Get the 5-Stage Blueprint</span>
             </Link>
           </motion.div>
         </div>
