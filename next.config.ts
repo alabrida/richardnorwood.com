@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   async rewrites() {
-    const origin = process.env.WP_ORIGIN_URL || "https://paleturquoise-butterfly-387959.hostingersite.com";
+    const origin = process.env.WP_ORIGIN_URL || "https://origin.richardnorwood.com";
     return [
       {
         source: "/cms/:path*",

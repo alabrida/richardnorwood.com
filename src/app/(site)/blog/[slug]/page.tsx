@@ -10,6 +10,7 @@ import { BrandDoctrine } from '@/components/blog/BrandDoctrine'
 import StarRating from '@/components/blog/StarRating'
 import styles from './BlogPost.module.css'
 import Image from 'next/image'
+import BackToTop from '@/components/ui/BackToTop'
 
 // Generate static params for all posts to ensure edge delivery
 export async function generateStaticParams() {
@@ -159,6 +160,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <BrandDoctrine />
         </article>
       </div>
+      <BackToTop />
     </div>
   )
 }

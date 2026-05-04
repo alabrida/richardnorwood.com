@@ -22,7 +22,7 @@
 - This website is a standalone microservice within the larger platform.
 - Auth is for onboarded partnership clients only (admin-created accounts).
 - Client portal links to externally-provisioned dashboards (Terraform).
-- No SaaS subscription logic, BlurGate, or credit-based unlocks on this site.
+- SaaS product access and gating logic live outside this repo; this site is the consulting funnel and portfolio surface.
 
 ## 2. Execution Model (Dependency Graph)
 ```

@@ -8,9 +8,9 @@ export interface WPPost {
   _embedded?: any
 }
 
-// Using Secure Hostinger Preview URL to bypass domain conflicts and redirect loops
+// Using Secure Origin Subdomain for direct WordPress data access
 // This can be overridden in production by setting the WP_ORIGIN_URL environment variable
-const WP_ORIGIN = process.env.WP_ORIGIN_URL || 'https://paleturquoise-butterfly-387959.hostingersite.com'
+const WP_ORIGIN = process.env.WP_ORIGIN_URL || 'https://origin.richardnorwood.com'
 const API_URL = `${WP_ORIGIN}/wp-json/wp/v2`
 
 /**

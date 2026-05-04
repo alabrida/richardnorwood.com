@@ -2,9 +2,6 @@
 
 - Use Next.js Server Components for data fetching.
 - Show skeleton loaders during data fetch, never blank states.
-- BlurGate logic must match tier definitions:
-  - Free: Blur all except Top 5 leaks
-  - Standard: Unblur dashboard + history
-  - Pro: Unblur all + Chat + Generator
-  - Battleship: Credit-based unlock
+- SaaS product gating, subscriptions, and unlock logic live outside this repo.
+- This site remains focused on consulting acquisition, portfolio proof, client intake, and authenticated consulting portal access.
 - Real-time updates via Supabase subscriptions where applicable.
