@@ -95,12 +95,14 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
       const bodyHeight = document.body.offsetHeight
       const footerElement = document.querySelector('footer')
       const footerHeight = footerElement?.offsetHeight || 0
+      const footerTop = bodyHeight - footerHeight
       
       // Show back to top if scrolled enough
       setShowScrollTop(scrollPos > 300)
       
-      // Hide floating elements if we're reaching the footer
-      const threshold = bodyHeight - footerHeight - windowHeight + 120
+      // Hide floating elements exactly 20 pixels before reaching the footer
+      // Threshold: ScrollPos where (Viewport Bottom + 20) hits Footer Top
+      const threshold = footerTop - windowHeight - 20
       setShowFloatingNav(scrollPos < threshold)
     }
     
