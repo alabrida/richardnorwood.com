@@ -7,6 +7,7 @@
 .ctaBtn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
   color: var(--color-text-inverse);
   padding: var(--space-4) var(--space-10);
@@ -16,7 +17,15 @@
   font-size: var(--text-lg);
   text-decoration: none;
   margin-top: var(--space-8);
+  white-space: nowrap;
   transition: transform var(--duration-fast);
+}
+
+@media (max-width: 420px) {
+  .ctaBtn {
+    padding-inline: var(--space-5);
+    font-size: var(--text-base);
+  }
 }
 
 .ctaBtn:hover {

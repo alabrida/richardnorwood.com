@@ -36,11 +36,14 @@
 }
 
 .viewAll {
+  display: inline-flex;
+  align-items: center;
   color: var(--color-accent);
   text-decoration: none;
   font-family: var(--font-heading);
   font-weight: bold;
   font-size: var(--text-sm);
+  white-space: nowrap;
   transition: transform var(--duration-fast);
 }
 

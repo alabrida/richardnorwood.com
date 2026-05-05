@@ -115,6 +115,7 @@
 .secondaryCta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background: transparent;
   color: var(--color-text);
   padding: var(--space-3) var(--space-6);
@@ -124,10 +125,25 @@
   font-weight: var(--font-weight-medium);
   font-size: var(--text-sm);
   text-decoration: none;
+  white-space: nowrap;
   transition: background var(--duration-fast), border-color var(--duration-fast);
 }
 
 .secondaryCta:hover {
   background: var(--color-surface);
   border-color: var(--color-primary-light);
+}
+
+@media (max-width: 520px) {
+  .aboutActions {
+    align-items: stretch;
+  }
+
+  .aboutActions > * {
+    width: 100%;
+  }
+
+  .secondaryCta {
+    padding-inline: var(--space-4);
+  }
 }

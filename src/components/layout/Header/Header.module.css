@@ -94,6 +94,7 @@
 
 .buttonText {
   display: inline-block;
+  white-space: nowrap;
   transition: transform var(--duration-fast) var(--ease-spring);
 }
 
@@ -111,6 +112,8 @@
   padding: var(--space-2) var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-full);
+  align-items: center;
+  white-space: nowrap;
   transition: all var(--duration-fast);
   display: none;
 }

@@ -162,6 +162,7 @@
   font-weight: bold;
   font-size: var(--text-base);
   text-decoration: none;
+  white-space: nowrap;
   transition: all var(--duration-fast);
   background: var(--color-text);
   color: var(--color-text-inverse);
@@ -183,6 +184,13 @@
 .highlightedBtn:hover {
   background: var(--color-secondary);
   box-shadow: 0 4px 15px rgba(240, 180, 41, 0.4);
+}
+
+@media (max-width: 420px) {
+  .tierCta {
+    padding-inline: var(--space-3);
+    font-size: var(--text-sm);
+  }
 }
 
 @keyframes pulseGreenGlow {

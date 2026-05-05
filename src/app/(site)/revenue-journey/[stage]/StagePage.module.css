@@ -53,6 +53,7 @@
 .heroCta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   padding: var(--space-4) var(--space-10);
   font-family: var(--font-heading);
@@ -62,6 +63,7 @@
   background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
   border-radius: var(--radius-full);
   text-decoration: none;
+  white-space: nowrap;
   transition: transform var(--duration-fast) var(--ease-spring), box-shadow var(--duration-fast);
   box-shadow: 0 10px 30px rgba(240, 180, 41, 0.2);
 }
@@ -344,6 +346,7 @@
 .ctaButton {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   padding: var(--space-4) var(--space-10);
   font-family: var(--font-heading);
@@ -353,6 +356,7 @@
   background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
   border-radius: var(--radius-full);
   text-decoration: none;
+  white-space: nowrap;
   transition: transform var(--duration-fast) var(--ease-spring), box-shadow var(--duration-fast);
   box-shadow: 0 10px 30px rgba(240, 180, 41, 0.2);
 }
@@ -365,6 +369,7 @@
 .ctaButtonSecondary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: var(--space-4) var(--space-10);
   font-family: var(--font-heading);
   font-weight: var(--font-weight-bold);
@@ -374,6 +379,7 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-full);
   text-decoration: none;
+  white-space: nowrap;
   transition: all var(--duration-fast);
 }
 
@@ -461,5 +467,14 @@
   .stageNav {
     flex-direction: column;
     gap: var(--space-4);
+  }
+}
+
+@media (max-width: 420px) {
+  .heroCta,
+  .ctaButton,
+  .ctaButtonSecondary {
+    padding-inline: var(--space-5);
+    font-size: var(--text-base);
   }
 }

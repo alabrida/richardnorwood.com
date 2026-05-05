@@ -130,6 +130,7 @@
 .primaryCta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
   color: var(--color-text-inverse);
@@ -139,6 +140,7 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--text-base);
   text-decoration: none;
+  white-space: nowrap;
   transition: transform var(--duration-fast) var(--ease-spring), box-shadow var(--duration-fast);
   box-shadow: 0 10px 30px rgba(240, 180, 41, 0.2);
 }
@@ -155,6 +157,7 @@
 
 .ctaText {
   display: inline-block;
+  white-space: nowrap;
   transition: transform var(--duration-fast) var(--ease-spring);
 }
 
@@ -174,6 +177,7 @@
 .secondaryCta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background: transparent;
   color: var(--color-text);
   padding: var(--space-4) var(--space-8);
@@ -183,6 +187,7 @@
   font-weight: var(--font-weight-medium);
   font-size: var(--text-base);
   text-decoration: none;
+  white-space: nowrap;
   transition: background var(--duration-fast), border-color var(--duration-fast), transform var(--duration-fast) var(--ease-spring);
 }
 
@@ -190,4 +195,12 @@
   background: var(--color-surface);
   border-color: var(--color-primary-light);
   transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .primaryCta,
+  .secondaryCta {
+    padding-inline: var(--space-4);
+    font-size: var(--text-sm);
+  }
 }

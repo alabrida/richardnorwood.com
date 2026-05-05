@@ -31,10 +31,11 @@
 
 .drawerFooter { margin-top: auto; padding-top: var(--space-8); }
 .drawerCta {
-  display: block; padding: var(--space-3) var(--space-6);
+  display: flex; align-items: center; justify-content: center; padding: var(--space-3) var(--space-6);
   font-family: var(--font-body); font-size: var(--text-base); font-weight: var(--font-weight-semibold);
   color: var(--color-text-inverse); background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
   border: none; border-radius: var(--radius-lg); cursor: pointer; text-decoration: none; text-align: center;
+  white-space: nowrap;
   transition: transform var(--duration-fast) var(--ease-spring), box-shadow var(--duration-fast) var(--ease-out);
 }
 .drawerCta:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow-gold); }
