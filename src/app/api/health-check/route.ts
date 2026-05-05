@@ -3,6 +3,7 @@ import { Resend } from 'resend';
 import { escapeHtml, normalizeEmail, readJsonObject, sanitizeJsonObject } from '@/lib/api/security';
 import { siteUrl } from '@/lib/site';
 import { createAdminClient } from '@/lib/supabase/admin';
+import { monitorBcc } from '@/lib/email/monitoring';
 
 const HEALTH_CHECK_OPTIONS = {
   q1: ['0-5 Hours', '5-15 Hours', '15+ Hours (Critical Leak)'],
@@ -138,6 +139,8 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: 'Richard Norwood <richard@richardnorwood.com>',
       to: [email],
+      bcc: monitorBcc(email),
+      replyTo: email,
       subject: 'Your Revenue Health Check Report & Next Steps',
       text,
       html: `

@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { createClient } from '@/lib/supabase/server'
 import { escapeHtml, normalizeUuid, readJsonObject, sanitizeJsonObject } from '@/lib/api/security'
+import { monitorBcc } from '@/lib/email/monitoring'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -53,6 +54,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: 'System <notifications@richardnorwood.com>',
       to: 'mail@alabrida.org',
+      bcc: monitorBcc('mail@alabrida.org'),
       subject: `Audit Completed: ${profile.company_name}`,
       html: emailContent
     })
