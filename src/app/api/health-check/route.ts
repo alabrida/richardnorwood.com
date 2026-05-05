@@ -1,41 +1,92 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { createClient } from '@/lib/supabase/server';
 import { escapeHtml, normalizeEmail, readJsonObject, sanitizeJsonObject } from '@/lib/api/security';
+import { siteUrl } from '@/lib/site';
+import { createAdminClient } from '@/lib/supabase/admin';
+
+const HEALTH_CHECK_OPTIONS = {
+  q1: ['0-5 Hours', '5-15 Hours', '15+ Hours (Critical Leak)'],
+  q2: ['Yes', 'Partially, but fragmented', 'No, strictly isolated tools'],
+  q3: ['First/Last touch deterministic accuracy', 'Rough heuristics and guesswork', 'No systematic attribution'],
+  q4: ['Fully sovereign (Own DB/Cloud)', 'Slightly entangled', 'Totally locked into third-party vendors'],
+  q5: ['$0 - $1MM (Emerging)', '$1MM - $5MM (Orchestrating)', '$5MM+ (Scale)'],
+} as const;
+
+type HealthCheckQuestionId = keyof typeof HEALTH_CHECK_OPTIONS;
+type HealthCheckResponses = Record<HealthCheckQuestionId, string>;
+
+function validateResponses(responses: Record<string, string | number | boolean | null>) {
+  const validated = {} as HealthCheckResponses;
+
+  for (const [questionId, options] of Object.entries(HEALTH_CHECK_OPTIONS) as Array<[HealthCheckQuestionId, readonly string[]]>) {
+    const answer = responses[questionId];
+    if (typeof answer !== 'string' || !options.includes(answer)) {
+      return null;
+    }
+    validated[questionId] = answer;
+  }
+
+  return validated;
+}
+
+function getMaturityCategory(responses: HealthCheckResponses) {
+  if (responses.q5.includes('Scale')) {
+    return {
+      category: 'Scale',
+      recommendations: 'Focus on stack rationalization, sovereign data models, and automated feedback loops to maintain independent growth.',
+    };
+  }
+
+  if (responses.q5.includes('Orchestrating')) {
+    return {
+      category: 'Orchestrating',
+      recommendations: 'Focus on cross-team alignment and automating signal capture across the middle-of-funnel touchpoints.',
+    };
+  }
+
+  return {
+    category: 'Emerging',
+    recommendations: 'Focus on building foundational visibility and capturing first-layer signals.',
+  };
+}
 
 export async function POST(request: Request) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!resendApiKey) {
+      console.error('Health check email misconfigured: RESEND_API_KEY is missing');
+      return NextResponse.json({ error: 'Email service is not configured' }, { status: 503 });
+    }
+
     const body = await readJsonObject(request);
     if (!body) {
       return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
     }
 
     const email = normalizeEmail(body.email);
-    const responses = sanitizeJsonObject(body.responses);
+    const sanitizedResponses = sanitizeJsonObject(body.responses);
     if (!email) {
       return NextResponse.json({ error: 'Valid email is required' }, { status: 400 });
     }
 
-    if (!responses) {
+    if (!sanitizedResponses) {
       return NextResponse.json({ error: 'Responses are required' }, { status: 400 });
     }
 
-    // Determine Maturity Category based on responses
-    let category = 'Emerging';
-    let recommendations = 'Focus on building foundational visibility and capturing first-layer signals.';
-    const maturitySignal = typeof responses.q5 === 'string' ? responses.q5 : '';
-    
-    if (maturitySignal.includes('Scale')) {
-      category = 'Scale';
-      recommendations = 'Focus on stack rationalization, sovereign data models, and automated feedback loops to maintain independent growth.';
-    } else if (maturitySignal.includes('Orchestrating')) {
-      category = 'Orchestrating';
-      recommendations = 'Focus on cross-team alignment and automating signal capture across the middle-of-funnel touchpoints.';
+    const responses = validateResponses(sanitizedResponses);
+    if (!responses) {
+      return NextResponse.json({ error: 'Health check responses are incomplete or invalid' }, { status: 400 });
     }
 
+    const { category, recommendations } = getMaturityCategory(responses);
+
     // 1. Store in Supabase and get the UUID
-    const supabase = await createClient();
+    const supabase = createAdminClient();
+    if (!supabase) {
+      console.error('Health check persistence misconfigured: Supabase admin credentials are missing');
+      return NextResponse.json({ error: 'Lead storage is not configured' }, { status: 503 });
+    }
+
     const { data: dbData, error: dbError } = await supabase
       .from('health_checks')
       .insert([{ 
@@ -48,20 +99,47 @@ export async function POST(request: Request) {
 
     if (dbError) {
       console.error('Supabase Error (health_checks):', dbError);
+      return NextResponse.json({ error: 'Unable to save health check' }, { status: 502 });
     }
 
-    const leadUuid = dbData?.id || '';
+    if (!dbData?.id) {
+      console.error('Supabase Error (health_checks): insert succeeded without an id');
+      return NextResponse.json({ error: 'Unable to save health check' }, { status: 502 });
+    }
+
+    const resend = new Resend(resendApiKey);
+    const leadUuid = dbData.id;
     const safeEmail = escapeHtml(email);
     const safeCategory = escapeHtml(category);
     const safeRecommendations = escapeHtml(recommendations);
     const calendarUrl = `https://calendar.google.com/calendar/u/0/appointments/schedules?email=${encodeURIComponent(email)}`;
-    const purchaseUrl = `https://www.richardnorwood.com/purchase/audit?id=${encodeURIComponent(leadUuid)}&email=${encodeURIComponent(email)}`;
+    const purchaseUrl = `${siteUrl('/purchase/audit')}?id=${encodeURIComponent(leadUuid)}&email=${encodeURIComponent(email)}`;
+    const clearanceUrl = siteUrl('/api/clearance');
+    const safeCalendarUrl = escapeHtml(calendarUrl);
+    const safePurchaseUrl = escapeHtml(purchaseUrl);
+    const safeClearanceUrl = escapeHtml(clearanceUrl);
+    const safeLeadUuid = escapeHtml(leadUuid);
+    const text = [
+      'Revenue Health Check: Preliminary Results',
+      '',
+      `Prepared for ${email}`,
+      `Maturity Category: ${category}`,
+      '',
+      'Strategic Direction:',
+      recommendations,
+      '',
+      `Book your free review: ${calendarUrl}`,
+      `Get instant access: ${purchaseUrl}`,
+      '',
+      'Richard Norwood, PMP - Revenue Architect',
+    ].join('\n');
 
     // 2. Deliver the email with embedded form and tiered CTAs
     const { data, error } = await resend.emails.send({
       from: 'Richard Norwood <richard@richardnorwood.com>',
       to: [email],
       subject: 'Your Revenue Health Check Report & Next Steps',
+      text,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #111; line-height: 1.6;">
           <div style="border-bottom: 2px solid #20c997; padding-bottom: 10px; margin-bottom: 30px;">
@@ -85,7 +163,7 @@ export async function POST(request: Request) {
               <strong>Option 1: Guided Discovery (Free)</strong><br/>
               Book a 20-minute strategic review. We will go over your custom audit results live on the call.
               <br/><br/>
-              <a href="${calendarUrl}" style="display: inline-block; background: #f0b429; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Book Free Review</a>
+              <a href="${safeCalendarUrl}" style="display: inline-block; background: #f0b429; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Book Free Review</a>
             </div>
 
             <div style="border-top: 1px solid #eee; padding-top: 20px;">
@@ -93,7 +171,7 @@ export async function POST(request: Request) {
               Skip the call. Receive your full structural map and results instantly. 
               <br/><em style="font-size: 12px; color: #666;">Note: Completion of the security clearance below is required for accurate results.</em>
               <br/><br/>
-              <a href="${purchaseUrl}" style="display: inline-block; background: #20c997; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Get Results Instantly</a>
+              <a href="${safePurchaseUrl}" style="display: inline-block; background: #20c997; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Get Results Instantly</a>
             </div>
           </div>
 
@@ -101,8 +179,8 @@ export async function POST(request: Request) {
             <h3 style="margin-top: 0; font-size: 18px; color: #f0b429;">Step 1: Security Clearance</h3>
             <p style="font-size: 13px; color: #8899b4; margin-bottom: 20px;">Please complete this brief clearance to align our technical findings with your business goals.</p>
             
-            <form action="https://www.richardnorwood.com/api/clearance" method="POST">
-              <input type="hidden" name="lead_id" value="${leadUuid}" />
+            <form action="${safeClearanceUrl}" method="POST">
+              <input type="hidden" name="lead_id" value="${safeLeadUuid}" />
               <input type="hidden" name="email" value="${safeEmail}" />
               
               <div style="margin-bottom: 15px;">
@@ -146,7 +224,7 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error('Resend Error:', error);
-      return NextResponse.json({ error: error.message }, { status: 500 });
+      return NextResponse.json({ error: 'Unable to send health check email' }, { status: 502 });
     }
 
     return NextResponse.json({ success: true, data });
