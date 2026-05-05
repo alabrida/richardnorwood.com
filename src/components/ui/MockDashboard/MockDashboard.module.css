@@ -98,6 +98,21 @@
   height: 100%;
 }
 
+.ekgPath {
+  stroke-dasharray: 620;
+  stroke-dashoffset: 620;
+  animation: drawEkg 3s linear infinite, pulseEkg 2s ease-in-out infinite;
+}
+
+@keyframes drawEkg {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes pulseEkg {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
 .dashboardFooter {
   display: flex;
   align-items: center;

@@ -33,7 +33,7 @@ export default function CookieBanner() {
         >
           <div className={styles.bannerInner}>
             <div className={styles.textContent}>
-              <h4 className={styles.title}>Cookie Consent</h4>
+              <p className={styles.title}>Cookie Consent</p>
               <p className={styles.disclaimer}>
                 We use cookies for essential site operations and analytics to improve your experience. 
                 You may opt out, but doing so may limit personalized features.

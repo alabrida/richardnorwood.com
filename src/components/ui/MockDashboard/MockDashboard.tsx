@@ -1,7 +1,3 @@
-'use client'
-
-import React from 'react'
-import { motion } from 'framer-motion'
 import styles from './MockDashboard.module.css'
 
 const metrics = [
@@ -22,34 +18,26 @@ export default function MockDashboard() {
         {metrics.map((m, i) => (
           <div key={i} className={styles.metricItem}>
             <span className={styles.metricLabel}>{m.label}</span>
-            <motion.span 
+            <span 
               className={styles.metricValue}
               style={{ color: m.color }}
-              initial={{ opacity: 0, y: 5 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 + (i * 0.2) }}
             >
               {m.value}
-            </motion.span>
+            </span>
           </div>
         ))}
       </div>
 
       <div className={styles.ekgContainer}>
         <svg viewBox="0 0 400 100" className={styles.ekgSvg} preserveAspectRatio="none">
-          <motion.path
+          <path
             d="M0,50 L40,50 L50,20 L60,80 L70,50 L120,50 L130,10 L145,90 L160,50 L220,50 L230,30 L240,70 L250,50 L300,50 L315,5 L330,95 L345,50 L400,50"
             fill="transparent"
             stroke="var(--color-accent)"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            initial={{ pathLength: 0, opacity: 0.3 }}
-            animate={{ pathLength: 1, opacity: [0.3, 1, 0.3] }}
-            transition={{ 
-              pathLength: { duration: 3, repeat: Infinity, ease: "linear" },
-              opacity: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-            }}
+            className={styles.ekgPath}
           />
         </svg>
       </div>

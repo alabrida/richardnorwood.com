@@ -35,18 +35,25 @@
   text-decoration: none;
   transition: all var(--duration-fast);
   position: relative;
-  animation: pulseGreenGlow 3s ease-in-out infinite;
+  isolation: isolate;
 }
 
-@keyframes pulseGreenGlow {
-  0%, 100% {
-    box-shadow: 0 0 12px rgba(32, 201, 151, 0.1);
-    border-color: rgba(32, 201, 151, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(32, 201, 151, 0.25);
-    border-color: rgba(32, 201, 151, 0.4);
-  }
+.certBadge::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  border: 1px solid rgba(32, 201, 151, 0.32);
+  box-shadow: 0 0 20px rgba(32, 201, 151, 0.24);
+  opacity: 0.3;
+  transform: scale(0.98);
+  animation: certBadgeGlow 3s ease-in-out infinite;
+}
+
+@keyframes certBadgeGlow {
+  0%, 100% { opacity: 0.3; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
 }
 
 .certBadge::after {

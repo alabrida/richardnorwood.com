@@ -93,16 +93,24 @@ body { background: var(--color-bg); }
 .starfield-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
 
 .pulse-green-glow {
-  animation: pulseGreenGlow 3s ease-in-out infinite !important;
+  position: relative;
+  isolation: isolate;
+}
+
+.pulse-green-glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  border: 1px solid rgba(32, 201, 151, 0.42);
+  box-shadow: 0 0 24px rgba(32, 201, 151, 0.34);
+  opacity: 0.35;
+  transform: scale(0.98);
+  animation: pulseGreenGlow 3s ease-in-out infinite;
 }
 
 @keyframes pulseGreenGlow {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(32, 201, 151, 0.2);
-    border-color: rgba(32, 201, 151, 0.4) !important;
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(32, 201, 151, 0.5);
-    border-color: rgba(32, 201, 151, 0.8) !important;
-  }
+  0%, 100% { opacity: 0.35; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
 }
