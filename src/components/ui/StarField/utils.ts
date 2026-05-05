@@ -1,4 +1,7 @@
 export const STAR_COUNT = 600;
+export const MIN_ADAPTIVE_STAR_COUNT = 180;
+export const STAR_DENSITY_DIVISOR = 2500;
+export const MAX_CANVAS_DPR = 1.5;
 export const CURSOR_RADIUS = 120;
 export const GATHER_STRENGTH = 0.015;
 export const DISPERSE_STRENGTH = 0.008;

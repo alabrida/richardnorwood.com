@@ -1,9 +1,5 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
-import { Player } from '@remotion/player';
-import { VideoPlaceholder } from '@/components/remotion/VideoPlaceholder';
 import CallButton from '@/components/ui/CallButton';
 import NewsletterForm from './NewsletterForm';
 import styles from './Footer.module.css';
@@ -65,24 +61,18 @@ export default function Footer() {
 
           <div className={styles.videoColumn}>
             <div className={styles.videoWrapper}>
-              <Player
-                component={VideoPlaceholder}
-                durationInFrames={120}
-                compositionWidth={1920}
-                compositionHeight={1080}
-                fps={30}
-                autoPlay
-                loop
-                acknowledgeRemotionLicense
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  borderRadius: '12px',
-                }}
-              />
+              <div className={styles.videoAura} aria-hidden="true" />
+              <div className={styles.videoContent}>
+                <div className={styles.playMark} aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+                <div className={styles.videoCopy}>
+                  <span className={styles.videoTitle}>System Overview</span>
+                  <span className={styles.videoKicker}>Video Under Construction</span>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { useStarLogic } from './useStarLogic';
 import { 
   CURSOR_RADIUS, GATHER_STRENGTH, DISPERSE_STRENGTH,
-  MAX_BODIES, BODY_SPAWN_CHANCE, starColor, glowColor 
+  MAX_BODIES, BODY_SPAWN_CHANCE, MAX_CANVAS_DPR, starColor, glowColor 
 } from './utils';
 
 export default function StarField() {
@@ -20,7 +20,7 @@ export default function StarField() {
     const canvas = canvasRef.current;
     if (!canvas || !canvas.getContext('2d')) return;
     const ctx = canvas.getContext('2d')!;
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = Math.min(window.devicePixelRatio || 1, MAX_CANVAS_DPR);
 
     const setCanvasSize = () => {
       const w = window.innerWidth;

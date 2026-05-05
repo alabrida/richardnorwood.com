@@ -2,7 +2,7 @@ import { useRef, useCallback } from 'react';
 import { Star, MovingBody } from './types';
 import { 
   STAR_COUNT, MIN_STAR_SIZE, MAX_STAR_SIZE, 
-  METEOR_CHANCE, 
+  METEOR_CHANCE, MIN_ADAPTIVE_STAR_COUNT, STAR_DENSITY_DIVISOR,
 } from './utils';
 
 export function useStarLogic() {
@@ -11,7 +11,11 @@ export function useStarLogic() {
 
   const initStars = useCallback((w: number, h: number) => {
     const stars: Star[] = [];
-    for (let i = 0; i < STAR_COUNT; i++) {
+    const adaptiveStarCount = Math.min(
+      STAR_COUNT,
+      Math.max(MIN_ADAPTIVE_STAR_COUNT, Math.round((w * h) / STAR_DENSITY_DIVISOR)),
+    );
+    for (let i = 0; i < adaptiveStarCount; i++) {
       const x = Math.random() * w;
       const y = Math.random() * h;
       const bright = Math.random();
