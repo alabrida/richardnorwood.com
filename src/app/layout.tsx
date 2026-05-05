@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_URL, SOCIAL_IMAGE_URL } from '@/lib/site';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,11 +27,20 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: SOCIAL_IMAGE_URL,
+        width: 2736,
+        height: 2740,
+        alt: 'Richard Norwood, PMP, Revenue Architect',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Richard Norwood, PMP — Revenue Architect',
     description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
+    images: [SOCIAL_IMAGE_URL],
   },
   icons: {
     icon: [{ url: '/images/author_pic.jpg', type: 'image/jpeg' }],
