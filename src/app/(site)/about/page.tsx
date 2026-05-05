@@ -16,10 +16,10 @@ export default function AboutPage() {
     '@type': 'ProfilePage',
     mainEntity: {
       '@type': 'Person',
-      '@id': 'https://richardnorwood.com/#person',
+      '@id': 'https://www.richardnorwood.com/#person',
       name: 'Richard Norwood',
       jobTitle: 'Revenue Architect',
-      url: 'https://richardnorwood.com/about',
+      url: 'https://www.richardnorwood.com/about',
       sameAs: [
         'https://www.linkedin.com/in/richardnorwoodpmp',
         'https://share.google/nPvEH2o5m4Lc7Gfbk'

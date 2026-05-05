@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_NAME, siteUrl } from '@/lib/site'
 
 interface MetadataInput {
   title: string
@@ -8,8 +9,6 @@ interface MetadataInput {
   noIndex?: boolean
 }
 
-const BASE_URL = 'https://richardnorwood.com'
-
 export function buildMetadata({
   title,
   description,
@@ -17,7 +16,7 @@ export function buildMetadata({
   type = 'website',
   noIndex,
 }: MetadataInput): Metadata {
-  const url = `${BASE_URL}${path}`
+  const url = siteUrl(path)
   return {
     title,
     description,
@@ -25,7 +24,7 @@ export function buildMetadata({
       title,
       description,
       url,
-      siteName: 'Richard Norwood',
+      siteName: SITE_NAME,
       locale: 'en_US',
       type,
     },

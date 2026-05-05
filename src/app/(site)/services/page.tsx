@@ -21,7 +21,7 @@ export default function ServicesPage() {
     name: 'Revenue Architecture Consulting',
     description: metadata.description,
     provider: {
-      '@id': 'https://richardnorwood.com/#organization'
+      '@id': 'https://www.richardnorwood.com/#organization'
     },
     serviceType: 'Consulting',
     areaServed: { '@type': 'Country', name: 'United States' },
@@ -44,13 +44,13 @@ export default function ServicesPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://richardnorwood.com'
+        item: 'https://www.richardnorwood.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Services',
-        item: 'https://richardnorwood.com/services'
+        item: 'https://www.richardnorwood.com/services'
       }
     ]
   }

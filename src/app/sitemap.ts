@@ -1,9 +1,8 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/wp';
+import { SITE_URL, siteUrl } from '@/lib/site';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://richardnorwood.com';
-
   const staticRoutes = [
     '',
     '/about',
@@ -12,8 +11,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/contact',
     '/calculator',
     '/blog',
+    '/privacy',
+    '/terms',
   ].map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: route === '' ? SITE_URL : siteUrl(route),
     lastModified: new Date().toISOString(),
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1.0 : 0.8,
@@ -21,7 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const wpPosts = await getAllPosts();
   const blogRoutes = wpPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: siteUrl(`/blog/${post.slug}`),
     lastModified: post.date,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
@@ -34,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'conversion',
     'retention',
   ].map((stage) => ({
-    url: `${baseUrl}/revenue-journey/${stage}`,
+    url: siteUrl(`/revenue-journey/${stage}`),
     lastModified: new Date().toISOString(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,

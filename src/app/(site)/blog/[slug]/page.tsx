@@ -53,11 +53,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     description: cleanExcerpt,
     datePublished: post.date,
     author: {
-      '@id': 'https://richardnorwood.com/#person',
+      '@id': 'https://www.richardnorwood.com/#person',
       'name': 'Richard Norwood',
-      'image': 'https://richardnorwood.com/images/author_pic.jpg'
+      'image': 'https://www.richardnorwood.com/images/author_pic.jpg'
     },
-    url: `https://richardnorwood.com/blog/${post.slug}`
+    url: `https://www.richardnorwood.com/blog/${post.slug}`
   }
 
   const breadcrumbSchema = {
@@ -68,19 +68,19 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://richardnorwood.com'
+        item: 'https://www.richardnorwood.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Field Notes',
-        item: 'https://richardnorwood.com/blog'
+        item: 'https://www.richardnorwood.com/blog'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: title,
-        item: `https://richardnorwood.com/blog/${post.slug}`
+        item: `https://www.richardnorwood.com/blog/${post.slug}`
       }
     ]
   }

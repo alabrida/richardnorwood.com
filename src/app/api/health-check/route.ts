@@ -55,7 +55,7 @@ export async function POST(request: Request) {
     const safeCategory = escapeHtml(category);
     const safeRecommendations = escapeHtml(recommendations);
     const calendarUrl = `https://calendar.google.com/calendar/u/0/appointments/schedules?email=${encodeURIComponent(email)}`;
-    const purchaseUrl = `https://richardnorwood.com/purchase/audit?id=${encodeURIComponent(leadUuid)}&email=${encodeURIComponent(email)}`;
+    const purchaseUrl = `https://www.richardnorwood.com/purchase/audit?id=${encodeURIComponent(leadUuid)}&email=${encodeURIComponent(email)}`;
 
     // 2. Deliver the email with embedded form and tiered CTAs
     const { data, error } = await resend.emails.send({
@@ -101,7 +101,7 @@ export async function POST(request: Request) {
             <h3 style="margin-top: 0; font-size: 18px; color: #f0b429;">Step 1: Security Clearance</h3>
             <p style="font-size: 13px; color: #8899b4; margin-bottom: 20px;">Please complete this brief clearance to align our technical findings with your business goals.</p>
             
-            <form action="https://richardnorwood.com/api/clearance" method="POST">
+            <form action="https://www.richardnorwood.com/api/clearance" method="POST">
               <input type="hidden" name="lead_id" value="${leadUuid}" />
               <input type="hidden" name="email" value="${safeEmail}" />
               

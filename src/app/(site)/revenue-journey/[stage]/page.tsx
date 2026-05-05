@@ -75,7 +75,7 @@ export async function generateMetadata({
     openGraph: {
       title: stageData.seo_title,
       description: stageData.og_description,
-      url: `https://richardnorwood.com/revenue-journey/${stage}`,
+      url: `https://www.richardnorwood.com/revenue-journey/${stage}`,
       type: 'article',
       siteName: 'Richard Norwood',
     },
@@ -85,7 +85,7 @@ export async function generateMetadata({
       description: stageData.og_description,
     },
     alternates: {
-      canonical: `https://richardnorwood.com/revenue-journey/${stage}`,
+      canonical: `https://www.richardnorwood.com/revenue-journey/${stage}`,
     },
   };
 }
@@ -111,7 +111,7 @@ export default async function RevenueJourneyPage({
     provider: {
       '@type': 'Person',
       name: 'Richard Norwood',
-      url: 'https://richardnorwood.com',
+      url: 'https://www.richardnorwood.com',
     },
     serviceType: 'Revenue Architecture Consulting',
     areaServed: { '@type': 'Country', name: 'United States' },
@@ -138,19 +138,19 @@ export default async function RevenueJourneyPage({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://richardnorwood.com',
+        item: 'https://www.richardnorwood.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Revenue Journey',
-        item: 'https://richardnorwood.com/#ideology',
+        item: 'https://www.richardnorwood.com/#ideology',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: stageData.headline,
-        item: `https://richardnorwood.com/revenue-journey/${stage}`,
+        item: `https://www.richardnorwood.com/revenue-journey/${stage}`,
       },
     ],
   };

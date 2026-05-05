@@ -32,12 +32,12 @@ export default async function HomePage() {
     '@type': 'WebPage',
     name: metadata.title,
     description: metadata.description,
-    url: 'https://richardnorwood.com/',
+    url: 'https://www.richardnorwood.com/',
     isPartOf: {
-      '@id': 'https://richardnorwood.com/#website'
+      '@id': 'https://www.richardnorwood.com/#website'
     },
     about: {
-      '@id': 'https://richardnorwood.com/#organization'
+      '@id': 'https://www.richardnorwood.com/#organization'
     }
   }
 

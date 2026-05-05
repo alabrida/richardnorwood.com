@@ -30,15 +30,15 @@ export default async function BlogIndex() {
     '@type': 'Blog',
     name: metadata.title,
     description: metadata.description,
-    url: 'https://richardnorwood.com/blog',
+    url: 'https://www.richardnorwood.com/blog',
     blogPost: blogData.map(post => ({
       '@type': 'BlogPosting',
       headline: post.title,
       description: post.excerpt,
-      url: `https://richardnorwood.com/blog/${post.slug}`,
+      url: `https://www.richardnorwood.com/blog/${post.slug}`,
       datePublished: post.date,
       author: {
-        '@id': 'https://richardnorwood.com/#person'
+        '@id': 'https://www.richardnorwood.com/#person'
       }
     }))
   }
@@ -51,13 +51,13 @@ export default async function BlogIndex() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://richardnorwood.com'
+        item: 'https://www.richardnorwood.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Field Notes',
-        item: 'https://richardnorwood.com/blog'
+        item: 'https://www.richardnorwood.com/blog'
       }
     ]
   }

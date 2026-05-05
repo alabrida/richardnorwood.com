@@ -47,7 +47,7 @@ export async function POST(req: Request) {
       <h2>Responses:</h2>
       <pre>${escapeHtml(JSON.stringify(responses, null, 2))}</pre>
       
-      <p>View details in the portal: https://richardnorwood.com/portal/${safeSlug}/dashboard</p>
+      <p>View details in the portal: https://www.richardnorwood.com/portal/${safeSlug}/dashboard</p>
     `
 
     await resend.emails.send({

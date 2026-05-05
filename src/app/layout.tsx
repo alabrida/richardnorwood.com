@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,12 +19,12 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: 'Richard Norwood, PMP — Revenue Architect',
   description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
-  metadataBase: new URL('https://richardnorwood.com'),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: 'Richard Norwood, PMP — Revenue Architect',
     description: 'I help agencies and service businesses find friction in their commercial system, fix what matters first, and build a revenue engine their team can actually run.',
-    url: 'https://richardnorwood.com',
-    siteName: 'Richard Norwood',
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: 'en_US',
     type: 'website',
   },
@@ -42,12 +43,12 @@ const globalSchema = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://richardnorwood.com/#person",
+      "@id": "https://www.richardnorwood.com/#person",
       "name": "Richard Norwood",
       "jobTitle": "Revenue Architect",
-      "image": "https://richardnorwood.com/images/author_pic.jpg",
+      "image": "https://www.richardnorwood.com/images/author_pic.jpg",
       "description": "Certified PMP who helps agencies and service businesses build commercial systems that connect marketing, sales, delivery, and retention.",
-      "url": "https://richardnorwood.com",
+      "url": "https://www.richardnorwood.com",
       "sameAs": [
         "https://www.linkedin.com/in/richardnorwoodpmp/",
         "https://github.com/richwood911",
@@ -104,11 +105,11 @@ const globalSchema = {
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://richardnorwood.com/#organization",
+      "@id": "https://www.richardnorwood.com/#organization",
       "name": "Richard Norwood, PMP — Revenue Architect",
-      "url": "https://richardnorwood.com",
+      "url": "https://www.richardnorwood.com",
       "description": "Strategic consulting to align, build, and hand off commercial systems that connect marketing, sales, delivery, and retention into one revenue engine.",
-      "founder": { "@id": "https://richardnorwood.com/#person" },
+      "founder": { "@id": "https://www.richardnorwood.com/#person" },
       "areaServed": { "@type": "Country", "name": "United States" },
       "serviceType": [
         "Revenue Architecture",
@@ -140,11 +141,11 @@ const globalSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://richardnorwood.com/#website",
-      "url": "https://richardnorwood.com/",
+      "@id": "https://www.richardnorwood.com/#website",
+      "url": "https://www.richardnorwood.com/",
       "name": "Richard Norwood — Revenue Architect",
       "publisher": {
-        "@id": "https://richardnorwood.com/#person"
+        "@id": "https://www.richardnorwood.com/#person"
       }
     }
   ]

@@ -11,9 +11,9 @@ const baseSchema = {
   '@graph': [
     {
       '@type': 'ProfessionalService',
-      '@id': 'https://richardnorwood.com/#organization',
+      '@id': 'https://www.richardnorwood.com/#organization',
       name: 'Richard Norwood, PMP — Revenue Architect',
-      url: 'https://richardnorwood.com',
+      url: 'https://www.richardnorwood.com',
       description: 'Strategic consulting to align, build, and hand off commercial systems that connect marketing, sales, delivery, and retention into one revenue engine.',
       areaServed: {
         '@type': 'Country',
@@ -26,7 +26,7 @@ const baseSchema = {
         'Digital Infrastructure',
       ],
       founder: {
-        '@id': 'https://richardnorwood.com/#person',
+        '@id': 'https://www.richardnorwood.com/#person',
       },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
@@ -52,10 +52,10 @@ const baseSchema = {
     },
     {
       '@type': 'Person',
-      '@id': 'https://richardnorwood.com/#person',
+      '@id': 'https://www.richardnorwood.com/#person',
       name: 'Richard Norwood',
       jobTitle: 'Revenue Architect',
-      url: 'https://richardnorwood.com',
+      url: 'https://www.richardnorwood.com',
       sameAs: [
         'https://linkedin.com/in/richardnorwood',
         'https://x.com/richardnorwood',
@@ -81,10 +81,10 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Richard Norwood, PMP',
-  url: 'https://richardnorwood.com',
+  url: 'https://www.richardnorwood.com',
   description: 'Revenue Architecture & Commercial Strategy Consulting',
   publisher: {
-    '@id': 'https://richardnorwood.com/#organization',
+    '@id': 'https://www.richardnorwood.com/#organization',
   },
 }
 
@@ -117,10 +117,10 @@ export default function SchemaOrg({ type = 'website', data }: SchemaOrgProps) {
         '@type': 'Article',
         ...data,
         author: {
-          '@id': 'https://richardnorwood.com/#person',
+          '@id': 'https://www.richardnorwood.com/#person',
         },
         publisher: {
-          '@id': 'https://richardnorwood.com/#organization',
+          '@id': 'https://www.richardnorwood.com/#organization',
         },
       }
       break

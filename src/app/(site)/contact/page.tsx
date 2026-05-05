@@ -21,10 +21,10 @@ export default function ContactPage() {
     '@type': 'ContactPage',
     name: 'Contact Richard Norwood',
     description: metadata.description,
-    url: 'https://richardnorwood.com/contact',
+    url: 'https://www.richardnorwood.com/contact',
     mainEntity: {
       '@type': 'Person',
-      '@id': 'https://richardnorwood.com/#person'
+      '@id': 'https://www.richardnorwood.com/#person'
     }
   }
 
@@ -36,13 +36,13 @@ export default function ContactPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://richardnorwood.com'
+        item: 'https://www.richardnorwood.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Contact',
-        item: 'https://richardnorwood.com/contact'
+        item: 'https://www.richardnorwood.com/contact'
       }
     ]
   }
