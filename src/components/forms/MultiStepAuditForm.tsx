@@ -82,9 +82,6 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
     onSubmit: async ({ value }) => {
       if (!isSubmitting) return
 
-      const saved = await saveToDatabase(value, true)
-      if (!saved) return
-
       const notificationResponse = await fetch('/api/audit/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -92,7 +89,7 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
       })
 
       if (!notificationResponse.ok) {
-        toast.error('Audit saved, but the completion notification failed. Please contact support.')
+        toast.error('Audit submission failed. Please save your progress and contact support.')
         return
       }
 

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { escapeHtml, normalizeUuid, readJsonObject, sanitizeJsonObject } from '@/lib/api/security'
 import { EMAIL_MONITOR_RECIPIENT, monitorBcc } from '@/lib/email/monitoring'
 import { siteUrl } from '@/lib/site'
@@ -41,6 +42,28 @@ export async function POST(req: Request) {
 
     if (profileError || !profile) {
       return NextResponse.json({ error: 'Not found' }, { status: 404 })
+    }
+
+    const admin = createAdminClient()
+    if (!admin) {
+      console.error('Audit submit misconfigured: Supabase admin client is unavailable')
+      return NextResponse.json({ error: 'Database service is not configured' }, { status: 503 })
+    }
+
+    const { data: savedAudit, error: saveError } = await admin
+      .from('audit_responses')
+      .upsert({
+        client_id: profile.id,
+        responses,
+        is_submitted: true,
+        updated_at: new Date().toISOString(),
+      }, { onConflict: 'client_id' })
+      .select('id')
+      .single()
+
+    if (saveError || !savedAudit) {
+      console.error('Audit submit database save failed:', saveError)
+      return NextResponse.json({ error: 'Failed to save audit before notification' }, { status: 502 })
     }
 
     const safeCompanyName = escapeHtml(profile.company_name)
