@@ -11,6 +11,7 @@ import {
   getAuditResponseGroups,
   normalizeAuditResponses,
 } from '@/lib/audit'
+import HeadwayZipRepairTool from './HeadwayZipRepairTool'
 import styles from './PortalDashboard.module.css'
 
 export const dynamic = 'force-dynamic'
@@ -187,6 +188,14 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
             <div style={{ marginTop: 'var(--space-8)', fontSize: 'var(--text-xs)', color: 'var(--color-text-subtle)', fontWeight: 'bold', textAlign: 'center', border: '1px dashed var(--color-border)', padding: 'var(--space-4)', borderRadius: 'var(--radius-lg)' }}>
               Current Status: Week 1 Diagnostic
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25 }}
+          >
+            <HeadwayZipRepairTool />
           </motion.div>
         </div>
 
