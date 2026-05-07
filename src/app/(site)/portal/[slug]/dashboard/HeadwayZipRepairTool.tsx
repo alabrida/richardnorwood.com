@@ -108,21 +108,20 @@ export default function HeadwayZipRepairTool() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
   const [result, setResult] = useState<RepairResult | null>(null)
   const [status, setStatus] = useState<'idle' | 'working' | 'ready' | 'error'>('idle')
-  const [message, setMessage] = useState('Select a Headway ZIP report to inspect the internal filenames.')
+  const [message, setMessage] = useState('Choose a Headway ZIP report to create a clean copy.')
 
   const repairSummary = useMemo(() => {
     if (!result) return null
 
     return {
       changedCount: result.repairedEntries.length,
-      samples: result.repairedEntries.slice(0, 3),
     }
   }, [result])
 
   const resetResult = () => {
     setResult(null)
     setStatus('idle')
-    setMessage('Select a Headway ZIP report to inspect the internal filenames.')
+    setMessage('Choose a Headway ZIP report to create a clean copy.')
   }
 
   const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
@@ -137,12 +136,12 @@ export default function HeadwayZipRepairTool() {
 
     if (!file.name.toLowerCase().endsWith('.zip')) {
       setStatus('error')
-      setMessage('Select a .zip file exported from Headway.')
+      setMessage('Choose a .zip file exported from Headway.')
       return
     }
 
     setStatus('working')
-    setMessage('Inspecting the ZIP locally in your browser...')
+    setMessage('Preparing your clean ZIP...')
 
     try {
       const [{ default: JSZip }, buffer] = await Promise.all([
@@ -193,12 +192,12 @@ export default function HeadwayZipRepairTool() {
       setStatus('ready')
       setMessage(
         repairedEntries.length > 0
-          ? `Repaired ${repairedEntries.length} internal filename${repairedEntries.length === 1 ? '' : 's'}.`
-          : 'This ZIP already appears Windows-safe. You can still download a clean copy.'
+          ? 'Your clean ZIP is ready to download.'
+          : 'Your ZIP is ready to download.'
       )
     } catch {
       setStatus('error')
-      setMessage('This ZIP could not be repaired in the browser. It may be corrupt, encrypted, or unsupported.')
+      setMessage('This ZIP could not be prepared. Try a fresh export from Headway.')
     }
   }
 
@@ -219,12 +218,12 @@ export default function HeadwayZipRepairTool() {
     <div className={`${styles.card} ${styles.toolCard}`}>
       <div>
         <div className={styles.cardHeaderRow}>
-          <h3 className={styles.cardTitle}>Headway ZIP Repair</h3>
+          <h3 className={styles.cardTitle}>Headway ZIP Cleaner</h3>
           <span className={styles.localOnlyBadge}>Local Only</span>
         </div>
-        <h4 className={styles.cardSubTitle}>Windows-safe internal filenames</h4>
+        <h4 className={styles.cardSubTitle}>Clean report download</h4>
         <p className={styles.cardText}>
-          Select a Headway ZIP report. The tool repairs timestamp colons inside the archive in your browser only. Nothing is uploaded or saved.
+          Choose the Headway report ZIP and download a clean copy. Processing stays on this device.
         </p>
 
         <input
@@ -256,24 +255,13 @@ export default function HeadwayZipRepairTool() {
             <div className={styles.zipRepairStats}>
               <div>
                 <strong>{result.entryCount}</strong>
-                <span>entries scanned</span>
+                <span>items checked</span>
               </div>
               <div>
                 <strong>{repairSummary.changedCount}</strong>
-                <span>names repaired</span>
+                <span>updates made</span>
               </div>
             </div>
-
-            {repairSummary.samples.length > 0 && (
-              <div className={styles.zipSampleList}>
-                {repairSummary.samples.map((entry) => (
-                  <div key={`${entry.original}-${entry.repaired}`} className={styles.zipSampleItem}>
-                    <span>{entry.original}</span>
-                    <strong>{entry.repaired}</strong>
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         )}
       </div>
@@ -284,7 +272,7 @@ export default function HeadwayZipRepairTool() {
         onClick={handleDownload}
         disabled={!result || status !== 'ready'}
       >
-        <span className={styles.primaryBtnText}>Download repaired ZIP</span>
+        <span className={styles.primaryBtnText}>Download clean ZIP</span>
       </button>
     </div>
   )
