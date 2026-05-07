@@ -36,7 +36,7 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
     )
   }
 
-  const brandPrimary = '#2BB6F6' // Client brand color
+  const brandPrimary = '#2BB6F6'
 
   return (
     <main className={styles.portal}>
@@ -48,14 +48,14 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
         <GlowCard className={styles.portalCard} glowColor={brandPrimary}>
           <div className={styles.portalContent}>
             <div className={styles.header}>
-              <h1 style={{ 
-                fontFamily: 'var(--font-heading)', 
-                fontSize: 'var(--text-3xl)', 
+              <h1 style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'var(--text-3xl)',
                 background: 'linear-gradient(180deg, var(--color-text) 0%, var(--color-text-muted) 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 marginBottom: 'var(--space-2)',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}>
                 Partnership Portal
               </h1>
@@ -90,13 +90,12 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
             ) : (
               <div className={styles.noProfle}>
                 <p className={styles.noProfileText}>
-                  Your profile is being provisioned for the 30-day alignment. 
+                  Your profile is being provisioned for the 30-day alignment.
                   If you have questions, please <Link href="/contact" className={styles.contactLink}>contact us</Link>.
                 </p>
               </div>
             )}
 
-            {/* PARTNERSHIP ROADMAP */}
             <div style={{ marginTop: 'var(--space-8)', borderTop: '1px solid var(--color-border)', paddingTop: 'var(--space-8)' }}>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-6)', color: 'white' }}>
                 Partnership Roadmap
@@ -124,23 +123,23 @@ export default function PortalContent({ user, profile }: PortalContentProps) {
               </div>
 
               {profile?.slug && (
-                <Link 
-                  href={`/portal/${profile.slug}/audit`}
-                  style={{ 
+                <Link
+                  href={`/portal/${profile.slug}/dashboard`}
+                  style={{
                     marginTop: 'var(--space-10)',
-                    display: 'block', 
-                    background: 'linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))', 
-                    color: 'var(--color-text-inverse)', 
-                    padding: 'var(--space-4) var(--space-8)', 
-                    borderRadius: 'var(--radius-full)', 
+                    display: 'block',
+                    background: 'linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))',
+                    color: 'var(--color-text-inverse)',
+                    padding: 'var(--space-4) var(--space-8)',
+                    borderRadius: 'var(--radius-full)',
                     fontWeight: 'bold',
                     textDecoration: 'none',
                     textAlign: 'center',
                     fontFamily: 'var(--font-heading)',
-                    boxShadow: '0 4px 14px rgba(240, 180, 41, 0.3)'
+                    boxShadow: '0 4px 14px rgba(240, 180, 41, 0.3)',
                   }}
                 >
-                  Launch Strategic Audit →
+                  Open Partnership Dashboard
                 </Link>
               )}
             </div>
