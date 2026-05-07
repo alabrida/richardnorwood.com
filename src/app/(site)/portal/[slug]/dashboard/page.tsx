@@ -3,6 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import { buildMetadata } from '@/lib/metadata'
 import Image from 'next/image'
 import * as motion from 'framer-motion/client'
+import FrameworkAlterationsCard from './FrameworkAlterationsCard'
 import HeadwayZipRepairTool from './HeadwayZipRepairTool'
 import styles from './PortalDashboard.module.css'
 
@@ -39,7 +40,6 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
   }
 
   const brand = profile.brand_colors || { primary: '#2BB6F6' }
-  const revisionHref = `mailto:mail@alabrida.org?subject=${encodeURIComponent(`${profile.company_name} contractor framework draft revisions`)}`
 
   return (
     <main className={styles.dashboard} style={{ '--brand-primary': brand.primary, '--brand-primary-glow': `${brand.primary}33` } as React.CSSProperties}>
@@ -83,29 +83,11 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
         </motion.header>
 
         <div className={styles.grid}>
-          <motion.div 
-            className={`${styles.card} ${styles.activeCard}`}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1 }}
-          >
-            <div>
-              <div className={styles.cardHeaderRow}>
-                <h3 className={styles.cardTitle}>Immediate Next Step</h3>
-                <span className="pulse-green-glow" style={{ width: 8, height: 8, borderRadius: '50%', background: brand.primary, boxShadow: `0 0 10px ${brand.primary}` }} />
-              </div>
-              <h4 className={styles.cardSubTitle}>First Contractor Framework Draft</h4>
-              <p className={styles.cardText}>
-                Review the first contractor framework draft and submit any requested alterations so we can lock the week-one working version.
-              </p>
-            </div>
-            <a
-              href={revisionHref}
-              className={styles.primaryBtn}
-            >
-              <span className={styles.primaryBtnText}>Submit framework alterations</span>
-            </a>
-          </motion.div>
+          <FrameworkAlterationsCard
+            clientId={profile.id}
+            companyName={profile.company_name}
+            brandPrimary={brand.primary}
+          />
           
           <motion.div 
             className={styles.card}
