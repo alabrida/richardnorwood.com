@@ -174,10 +174,10 @@ export async function POST(req: Request) {
 
     if (error) {
       console.error('Resend Error (audit notification):', error)
-      return NextResponse.json({ error: 'Failed to send notification' }, { status: 502 })
+      return NextResponse.json({ success: true, notification_sent: false })
     }
 
-    return NextResponse.json({ success: true })
+    return NextResponse.json({ success: true, notification_sent: true })
   } catch (error) {
     console.error('Email error:', error)
     return NextResponse.json({ error: 'Failed to send notification' }, { status: 500 })

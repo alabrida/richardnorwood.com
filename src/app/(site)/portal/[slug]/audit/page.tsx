@@ -1,7 +1,9 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { notFound, redirect } from 'next/navigation'
 import { buildMetadata } from '@/lib/metadata'
 import MultiStepAuditForm from '@/components/forms/MultiStepAuditForm'
+import { normalizeAuditResponses } from '@/lib/audit'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -32,9 +34,22 @@ export default async function AuditPage({ params }: { params: Promise<{ slug: st
     notFound()
   }
 
+  const admin = createAdminClient()
+  const { data: auditResponse } = admin
+    ? await admin
+        .from('audit_responses')
+        .select('responses, is_submitted')
+        .eq('client_id', profile.id)
+        .maybeSingle()
+    : { data: null }
+
   return (
     <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: 'var(--space-32) var(--space-4) var(--space-20)' }}>
-      <MultiStepAuditForm profile={profile} />
+      <MultiStepAuditForm
+        profile={profile}
+        initialResponses={normalizeAuditResponses(auditResponse?.responses)}
+        initialIsSubmitted={Boolean(auditResponse?.is_submitted)}
+      />
     </main>
   )
 }

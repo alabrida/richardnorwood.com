@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useForm } from '@tanstack/react-form'
-import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -12,7 +11,6 @@ import {
   auditSteps as steps,
   getFirstIncompleteAuditStepIndex,
   isAuditAnswered,
-  normalizeAuditResponses,
   splitQuestionLabel,
   type AuditResponses,
 } from '@/lib/audit'
@@ -26,15 +24,24 @@ interface ClientProfile {
   }
 }
 
-export default function MultiStepAuditForm({ profile }: { profile: ClientProfile }) {
-  const [currentStep, setCurrentStep] = useState(0)
+interface MultiStepAuditFormProps {
+  profile: ClientProfile
+  initialResponses?: AuditResponses
+  initialIsSubmitted?: boolean
+}
+
+export default function MultiStepAuditForm({
+  profile,
+  initialResponses = {},
+  initialIsSubmitted = false,
+}: MultiStepAuditFormProps) {
+  const [currentStep, setCurrentStep] = useState(() => getFirstIncompleteAuditStepIndex(initialResponses))
   const [isSaving, setIsSaving] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isAlreadySubmitted, setIsAlreadySubmitted] = useState(false)
+  const [isAlreadySubmitted, setIsAlreadySubmitted] = useState(initialIsSubmitted)
   const [isEditingSubmitted, setIsEditingSubmitted] = useState(false)
   const [showFloatingNav, setShowFloatingNav] = useState(true)
   const [showScrollTop, setShowScrollTop] = useState(false)
-  const supabase = createClient()
   const router = useRouter()
   const brand = profile.brand_colors || { primary: '#2BB6F6' }
   const containerRef = useRef<HTMLDivElement>(null)
@@ -59,67 +66,66 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
 
   const saveToDatabase = useCallback(async (values: AuditResponses, isFinal = false) => {
     setIsSaving(true)
-    const { error } = await supabase
-      .from('audit_responses')
-      .upsert({
-        client_id: profile.id,
-        responses: values,
-        is_submitted: isFinal,
-        updated_at: new Date().toISOString()
-      }, { onConflict: 'client_id' })
-
-    if (error) {
-      console.error('Save error:', error)
-      toast.error('Error auto-saving progress')
-    }
-
-    setIsSaving(false)
-    return !error
-  }, [profile.id, supabase])
-
-  const form = useForm({
-    defaultValues: {} as AuditResponses,
-    onSubmit: async ({ value }) => {
-      if (!isSubmitting) return
-
-      const notificationResponse = await fetch('/api/audit/submit', {
+    try {
+      const response = await fetch('/api/audit/save', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ client_id: profile.id, responses: value })
+        body: JSON.stringify({
+          client_id: profile.id,
+          responses: values,
+          is_submitted: isFinal,
+        }),
       })
 
-      if (!notificationResponse.ok) {
-        toast.error('Audit submission failed. Please save your progress and contact support.')
-        return
+      if (!response.ok) {
+        toast.error('Progress could not be saved. Please try again before leaving this page.')
+        return false
       }
 
-      setIsAlreadySubmitted(true)
-      setIsEditingSubmitted(false)
-      toast.success('Audit submitted successfully!')
-      router.push(`/portal/${profile.slug}/dashboard`)
+      return true
+    } catch {
+      toast.error('Error auto-saving progress')
+      return false
+    } finally {
+      setIsSaving(false)
+    }
+  }, [profile.id])
+
+  const form = useForm({
+    defaultValues: initialResponses,
+    onSubmit: async ({ value }) => {
+      if (isSubmitting) return
+
+      setIsSubmitting(true)
+      try {
+        const notificationResponse = await fetch('/api/audit/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ client_id: profile.id, responses: value })
+        })
+
+        const result = await notificationResponse.json().catch(() => null) as { notification_sent?: boolean } | null
+
+        if (!notificationResponse.ok) {
+          toast.error('Audit submission failed. Your answers are still on this page. Please save your progress before leaving.')
+          return
+        }
+
+        setIsAlreadySubmitted(true)
+        setIsEditingSubmitted(false)
+        toast.success(
+          result?.notification_sent === false
+            ? 'Audit submitted successfully. Notification delivery will be reviewed.'
+            : 'Audit submitted successfully!'
+        )
+        router.push(`/portal/${profile.slug}/dashboard`)
+      } catch {
+        toast.error('Audit submission failed. Your answers are still on this page. Please save your progress before leaving.')
+      } finally {
+        setIsSubmitting(false)
+      }
     }
   })
-
-  useEffect(() => {
-    async function loadData() {
-      const { data } = await supabase
-        .from('audit_responses')
-        .select('responses, is_submitted')
-        .eq('client_id', profile.id)
-        .maybeSingle()
-
-      const savedResponses = normalizeAuditResponses(data?.responses)
-      setIsAlreadySubmitted(Boolean(data?.is_submitted))
-      setIsEditingSubmitted(false)
-
-      if (Object.keys(savedResponses).length > 0) {
-        form.reset(savedResponses)
-        setCurrentStep(getFirstIncompleteAuditStepIndex(savedResponses))
-      }
-    }
-
-    loadData()
-  }, [profile.id, supabase, form])
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -150,21 +156,22 @@ export default function MultiStepAuditForm({ profile }: { profile: ClientProfile
   }
 
   const handleSaveAndExit = async () => {
-    await saveToDatabase(form.state.values, isAlreadySubmitted)
+    const saved = await saveToDatabase(form.state.values, isAlreadySubmitted)
+    if (!saved) return
+
     toast.success('Progress saved. Returning to dashboard...')
     router.push(`/portal/${profile.slug}/dashboard`)
   }
 
   const handleCompleteClick = () => {
+    if (isSubmitting) return
+
     if (!isCurrentStepValid) {
       toast.error('Please answer all questions before submitting.')
       return
     }
 
-    setIsSubmitting(true)
-    setTimeout(() => {
-      form.handleSubmit()
-    }, 10)
+    form.handleSubmit()
   }
 
   return (
