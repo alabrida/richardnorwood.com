@@ -4,7 +4,7 @@ import { buildMetadata } from '@/lib/metadata'
 import Image from 'next/image'
 import * as motion from 'framer-motion/client'
 import FrameworkAlterationsCard from './FrameworkAlterationsCard'
-import HeadwayZipRepairTool from './HeadwayZipRepairTool'
+import ZipFileCleanerTool from './ZipFileCleanerTool'
 import styles from './PortalDashboard.module.css'
 
 export const dynamic = 'force-dynamic'
@@ -128,7 +128,7 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25 }}
             >
-              <HeadwayZipRepairTool />
+              <ZipFileCleanerTool />
             </motion.div>
           </div>
         </div>

@@ -103,12 +103,12 @@ function getOutputZipName(name: string) {
   return `${sanitizePathSegment(baseName)}-windows-safe.zip`
 }
 
-export default function HeadwayZipRepairTool() {
+export default function ZipFileCleanerTool() {
   const inputRef = useRef<HTMLInputElement>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
   const [result, setResult] = useState<RepairResult | null>(null)
   const [status, setStatus] = useState<'idle' | 'working' | 'ready' | 'error'>('idle')
-  const [message, setMessage] = useState('Choose a Headway ZIP report to create a clean copy.')
+  const [message, setMessage] = useState('Choose a ZIP file to create a clean copy.')
 
   const repairSummary = useMemo(() => {
     if (!result) return null
@@ -121,7 +121,7 @@ export default function HeadwayZipRepairTool() {
   const resetResult = () => {
     setResult(null)
     setStatus('idle')
-    setMessage('Choose a Headway ZIP report to create a clean copy.')
+    setMessage('Choose a ZIP file to create a clean copy.')
   }
 
   const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
@@ -136,7 +136,7 @@ export default function HeadwayZipRepairTool() {
 
     if (!file.name.toLowerCase().endsWith('.zip')) {
       setStatus('error')
-      setMessage('Choose a .zip file exported from Headway.')
+      setMessage('Choose a .zip file.')
       return
     }
 
@@ -197,7 +197,7 @@ export default function HeadwayZipRepairTool() {
       )
     } catch {
       setStatus('error')
-      setMessage('This ZIP could not be prepared. Try a fresh export from Headway.')
+      setMessage('This ZIP could not be prepared. Try a fresh ZIP export.')
     }
   }
 
@@ -218,12 +218,12 @@ export default function HeadwayZipRepairTool() {
     <div className={`${styles.card} ${styles.toolCard}`}>
       <div>
         <div className={styles.cardHeaderRow}>
-          <h3 className={styles.cardTitle}>Headway ZIP Cleaner</h3>
+          <h3 className={styles.cardTitle}>ZIP File Cleaner</h3>
           <span className={styles.localOnlyBadge}>Local Only</span>
         </div>
-        <h4 className={styles.cardSubTitle}>Clean report download</h4>
+        <h4 className={styles.cardSubTitle}>Clean ZIP download</h4>
         <p className={styles.cardText}>
-          Choose the Headway report ZIP and download a clean copy. Processing stays on this device.
+          Choose a ZIP file and download a clean copy. Processing stays on this device.
         </p>
 
         <input
