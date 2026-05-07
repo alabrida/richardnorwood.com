@@ -166,7 +166,7 @@ export default function FrameworkAlterationsCard({
 
   return (
     <motion.div
-      className={`${styles.card} ${styles.activeCard}`}
+      className={`${styles.card} ${styles.activeCard} ${styles.frameworkCard}`}
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.1 }}

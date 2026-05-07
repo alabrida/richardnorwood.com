@@ -88,46 +88,49 @@ export default async function ClientDashboard({ params }: { params: Promise<{ sl
             companyName={profile.company_name}
             brandPrimary={brand.primary}
           />
-          
-          <motion.div 
-            className={styles.card}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            <div>
-              <h3 className={styles.cardTitle}>Partnership Roadmap</h3>
-              <ul className={styles.roadmapList}>
-                <li className={styles.roadmapItem}>
-                  <div className={`${styles.roadmapWeek} ${styles.activeWeek}`}>WK1</div>
-                  <span className={styles.roadmapText}>Friction Mapping & EKG Diagnostic</span>
-                </li>
-                <li className={styles.roadmapItem}>
-                  <div className={styles.roadmapWeek}>WK2</div>
-                  <span className={styles.lockedText}>Revenue & Financial Mechanics Re-sync</span>
-                </li>
-                <li className={styles.roadmapItem}>
-                  <div className={styles.roadmapWeek}>WK3</div>
-                  <span className={styles.lockedText}>Facility & Physical Footprint Governance</span>
-                </li>
-                <li className={styles.roadmapItem}>
-                  <div className={styles.roadmapWeek}>WK4</div>
-                  <span className={styles.lockedText}>Clinical Standards & Strategic Handoff</span>
-                </li>
-              </ul>
-            </div>
-            <div style={{ marginTop: 'var(--space-8)', fontSize: 'var(--text-xs)', color: 'var(--color-text-subtle)', fontWeight: 'bold', textAlign: 'center', border: '1px dashed var(--color-border)', padding: 'var(--space-4)', borderRadius: 'var(--radius-lg)' }}>
-              Current Status: Week 1 Diagnostic
-            </div>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.25 }}
-          >
-            <HeadwayZipRepairTool />
-          </motion.div>
+          <div className={styles.sideStack}>
+            <motion.div
+              className={`${styles.card} ${styles.compactCard}`}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <div>
+                <h3 className={styles.cardTitle}>Partnership Roadmap</h3>
+                <ul className={styles.roadmapList}>
+                  <li className={styles.roadmapItem}>
+                    <div className={`${styles.roadmapWeek} ${styles.activeWeek}`}>WK1</div>
+                    <span className={styles.roadmapText}>Friction Mapping & EKG Diagnostic</span>
+                  </li>
+                  <li className={styles.roadmapItem}>
+                    <div className={styles.roadmapWeek}>WK2</div>
+                    <span className={styles.lockedText}>Revenue & Financial Mechanics Re-sync</span>
+                  </li>
+                  <li className={styles.roadmapItem}>
+                    <div className={styles.roadmapWeek}>WK3</div>
+                    <span className={styles.lockedText}>Facility & Physical Footprint Governance</span>
+                  </li>
+                  <li className={styles.roadmapItem}>
+                    <div className={styles.roadmapWeek}>WK4</div>
+                    <span className={styles.lockedText}>Clinical Standards & Strategic Handoff</span>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.currentStatus}>
+                Current Status: Week 1 Diagnostic
+              </div>
+            </motion.div>
+
+            <motion.div
+              className={styles.sideStackItem}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25 }}
+            >
+              <HeadwayZipRepairTool />
+            </motion.div>
+          </div>
         </div>
 
         <motion.div 
