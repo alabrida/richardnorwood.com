@@ -123,7 +123,6 @@ export default function FrameworkAlterationsCard({
   companyName,
   brandPrimary,
 }: FrameworkAlterationsCardProps) {
-  const [isOpen, setIsOpen] = useState(false)
   const [message, setMessage] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -234,7 +233,7 @@ export default function FrameworkAlterationsCard({
           </div>
         )}
 
-        {isOpen && !isSubmitted && (
+        {!isSubmitted && (
           <form className={styles.alterationForm} onSubmit={handleSubmit}>
             <label className={styles.alterationLabel} htmlFor="framework-alterations">
               Requested alterations
@@ -258,16 +257,6 @@ export default function FrameworkAlterationsCard({
           </form>
         )}
       </div>
-
-      {!isOpen && !isSubmitted && (
-        <button
-          type="button"
-          className={styles.primaryBtn}
-          onClick={() => setIsOpen(true)}
-        >
-          <span className={styles.primaryBtnText}>Submit framework alterations</span>
-        </button>
-      )}
     </motion.div>
   )
 }
