@@ -12,7 +12,7 @@ const HEADER_LINKS = [
 ];
 
 const SYSTEM_LINKS = [
-  { label: 'Client Portal', href: '/portal' },
+  { label: 'Client Portal', href: '/login' },
   { label: 'Blog', href: '/blog' },
   { label: 'Health Check', href: '/calculator' },
   { label: 'The Guide', href: '/about' },
